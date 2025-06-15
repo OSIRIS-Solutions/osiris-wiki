@@ -50,6 +50,7 @@ theme:
     # - navigation.indexes
 plugins:
   - privacy
+  - search
 extra_css:
   - stylesheets/extra.css
 extra:
