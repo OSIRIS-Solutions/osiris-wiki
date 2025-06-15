@@ -3,7 +3,7 @@ title: Willkommen in der OSIRIS-Dokumentation
 # template: home.html
 ---
 
-![Hero Image](/images/Hero_desktop.svg){ loading=lazy }
+![Hero Image](assets/images/Hero_desktop.svg)
 
 # Willkommen bei OSIRIS
 

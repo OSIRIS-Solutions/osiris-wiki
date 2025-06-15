@@ -37,7 +37,7 @@ nav:
 theme:
   name: material
   logo: assets/logo_white.png
-  favicon: images/favicon.ico
+  favicon: assets/images/favicon.ico
   font:
     text: Rubik
   language: de
