@@ -1,0 +1,707 @@
+{#-
+This file was automatically generated - do not edit
+-#}
+{% extends "main.html" %}
+{% block tabs %}
+{{ super() }}
+
+<style>
+    .md-header {
+        position: initial
+    }
+
+    .md-main__inner {
+        margin: 0
+    }
+
+    .md-content {
+        display: none
+    }
+
+    @media screen and (min-width:60em) {
+        .md-sidebar--secondary {
+            display: none
+        }
+    }
+
+    @media screen and (min-width:76.25em) {
+        .md-sidebar--primary {
+            display: none
+        }
+    }
+
+    
+#hero {
+    font-size: 2rem;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image:
+        url(../img/Hero_desktop2.svg);
+    height: calc(80vh - 20rem);
+}
+
+#hero div img {
+    width: 20rem;
+}
+
+#hero div {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(0, -50%);
+    max-width: 30rem;
+}
+
+.hero-img {
+    max-height: calc(100vw - 16rem);
+    margin: 0 auto;
+}
+
+#hero p {
+    background-color: #ffffffcb;
+    margin: 0;
+}
+</style>
+<section class="mdx-container">
+    <div class="md-grid md-typeset">
+        <div class="mdx-hero">
+            <div class="mdx-hero__image">
+                <img src="images/Hero_desktop2.svg" alt="" width="1659" height="1200" draggable="false">
+            </div>
+            <div class="mdx-hero__content">
+                <div>
+                    <img src="/images/logo.svg" alt="OSIRIS" id="hero-logo" class="max-width: 200px">
+                    <p class="my-10">
+                        Das offene, smarte und intuitive
+                        Forschungsinformationssystem
+                    </p>
+                    <p class="">
+                        Ihr macht die Forschung, <br>OSIRIS behält den Überblick.
+                    </p>
+                    <!-- Image by <a href="https://www.freepik.com/free-vector/isometric-university-landing-page_4635569.htm#query=flat%20science%20library%20web&position=1&from_view=search&track=ais&uuid=2f000214-0a76-4b91-9030-decbba6feda2">Freepik</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="mdx-container md-typeset">
+    <div id="hero">
+        <div>
+            <img src="/images/logo.svg" alt="OSIRIS" id="hero-logo">
+            <p class="my-10">
+                Das offene, smarte und intuitive
+                Forschungsinformationssystem
+            </p>
+            <p class="">
+                Ihr macht die Forschung, <br>OSIRIS behält den Überblick.
+            </p>
+            <!-- Image by <a href="https://www.freepik.com/free-vector/isometric-university-landing-page_4635569.htm#query=flat%20science%20library%20web&position=1&from_view=search&track=ais&uuid=2f000214-0a76-4b91-9030-decbba6feda2">Freepik</a> -->
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="row row-eq-spacing">
+            <div class="col-sm">
+                <div class="box px-20 py-10 cover-icon" style="background-image: url(/images/icon_open.svg);">
+                    <!-- <i class="ph ph-2x ph-lock-key-open text-osiris d-block"></i> -->
+                    <h3 class="my-20">Open</h3>
+                    OSIRIS ist eine quelloffene und frei verfügbare Software - ganz ohne Kosten.
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="box px-20 py-10 cover-icon" style="background-image: url(/images/icon_smart.svg);">
+                    <!-- <i class="ph ph-2x ph-person-arms-spread text-osiris d-block"></i> -->
+                    <h3 class="my-20">Smart</h3>
+                    Sammeln, Analysieren, Berichten - OSIRIS nimmt Euch möglichst viel Arbeit ab.
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="box px-20 py-10 cover-icon" style="background-image: url(/images/icon_intuitive.svg);">
+                    <!-- <i class="ph ph-2x ph-puzzle-piece text-osiris d-block"></i> -->
+                    <h3 class="my-20">Intuitive</h3>
+                    OSIRIS wurde für Nutzer entworfen: es ist einfach und intuitiv zu bedienen.
+                </div>
+
+            </div>
+        </div>
+
+        <a class="box d-block px-20 py-10 mb-0 colorless" href="https://forms.office.com/e/RS8Nay2CLw" target="_blank">
+            <i class="ph ph-2x ph-megaphone text-osiris"></i>
+            <b>Interesse?</b>
+            Melde dich jetzt bei der OSIRIS Community an und bleibe auf dem Laufenden.
+            <i class="ph ph-arrow-right text-osiris"></i>
+        </a>
+    </div>
+</section>
+
+
+<section class="section" id="update">
+    <div class="container">
+        <div class="alert secondary">
+            <h2 class="title" style="color:var(--text-color)">
+                <i class="ph ph-sparkle text-secondary"></i>
+                Zeigt eure Forschung mit OSIRIS Portfolio
+            </h2>
+            OSIRIS Portfolio bietet euch eine all-umfassende Lösung, um eure Forschung nach außen zu zeigen. Mit OSIRIS
+            Portfolio könnt ihr eure Forschungsaktivitäten in einem modernen und ansprechenden Design präsentieren. <br>
+            <a href="/portfolio" class="btn secondary">Mehr erfahren</a>
+        </div>
+    </div>
+</section>
+
+<div class="float-right"
+    style=" background: url(/images/examples/activity_header.png) 0 50% no-repeat;width: 30%;height: 50rem;background-size: cover;margin:7rem 0 2rem 3rem">
+</div>
+<section class="section" id="about">
+    <div class="container">
+        <h1>Was ist OSIRIS?</h1>
+
+        <p>
+            OSIRIS ist ein offenes und frei verfügbares <b class="highlight">Forschungsinformations<span
+                    class="d-sm-none">-</span>system (FIS)</b>, das heißt es sammelt Daten zu Forschungsaktivitäten,
+            z.B. Publikationen und Vorträge, bereitet sie auf und stellt sie dar. Es hilft dabei, den Überblick über die
+            Forschung an Eurem Institut zu behaltet und bietet sowohl den Berichterstattenden als auch den Forschenden
+            Personen Einblicke.
+        </p>
+
+        <p>
+            OSIRIS wurde in Zusammenarbeit mit dem <a href="http://dsmz.de" target="_blank"
+                rel="noopener noreferrer">Leibniz-Insitut DSMZ</a> entworfen und entwickelt.
+
+            Es ist speziell für <b>kleinere Institute</b> ohne eigene Bibliothek gedacht.
+            Deshalb setzt OSIRIS auf ein <b class="highlight">Selbstmeldesystem</b>, bei dem die Forschenden ihre
+            Aktivitäten selbst hinzufügen.
+            Wir wissen, dass jedes Institut einzigartig ist. Deshalb lässt sich OSIRIS auf einzigartige Weise an eure
+            Bedürfnisse anpassen.
+        </p>
+
+        <p>
+            Einen großes Fokus setzen wir bei OSIRIS auch auf die Nutzbarkeit (<em>Usability</em>) und zwar für jeden.
+            Deshalb setzen wir neben intuitiven Interfaces auch auf verschiedene Accessibility-Funktionen und neben
+            deutscher auch auf englische Sprache. Immer ganz getreu dem Motto:
+        </p>
+
+        <blockquote class="alert primary" style="max-width: 70%">
+            <p>
+                "A user interface is like a joke. If you have to explain it, it’s not that good”.
+                <br>
+
+                <small>
+                    (Ein Nutzerinterface ist wie ein Witz. Wenn du's erklären musst, ist es nicht besonders gut.)
+                </small>
+            </p>
+
+            <em>— Martin Leblanc</em>
+        </blockquote>
+
+
+        <h2>Warum ein neues FIS?</h2>
+
+        <p>
+            OSIRIS schlummerte als Idee schon länger in den Köpfen herum.
+            Der Hintergund liegt in unserem Daytime-Job bei einem Leibniz-Institut.
+            Dort wurde nämlich bis 2021 für das Reporting der Forschungsaktivitäten noch auf Excel-Tabellen gesetzt.
+            Als wir uns nach einer Alternative umgeschaut haben, fanden wir viele Forschungsinformationssysteme (FIS)
+            auf dem Markt, doch keins wollte so richtig passen. Zu schwergewichtig, zu teuer, zu altbacken, zu
+            unflexibel oder für große Universitäten mit eigener Bibliothek entwickelt.
+        </p>
+
+
+        <h3>Unsere Anforderungen an ein FIS</h3>
+
+        <p>
+            Für uns musste das perfekte System ...
+        </p>
+
+        <ul class="list">
+            <li>
+                <b>einfach und intuitiv zu bedienen sein. </b><br>
+                <small>Was umständlich und kompliziert ist, wird nicht benutzt.</small>
+            </li>
+            <li>
+                <b>möglichst viel Arbeit abnehmen. </b><br>
+                <small>Wiederkehrende Arbeit zu automatisieren spart Zeit und Nerven.</small>
+            </li>
+            <li>
+                <b>viel Flexibilität bieten. </b><br>
+                <small>Unterschiedliche Institute haben unterschiedliche Anforderungen.</small>
+            </li>
+            <li>
+                <b>einfach zu erweitern sein. </b><br>
+                <small>Wenn die Anforderungen wachsen, muss es mitwachsen.</small>
+            </li>
+            <li>
+                <b>in unsere Systeme integrierbar sein. </b><br>
+                <small>Niemand will >200 Nutzer manuell pflegen.</small>
+            </li>
+            <li>
+                <b>Einblick gewähren. </b><br>
+                <small>Metriken und Berichte sollten generiert werden können, ohne zu viele Ressourcen zu verbrauchen.
+                </small>
+            </li>
+            <li>
+                <b>auch für Wissenschaftler:innen nützlich sein. </b><br>
+                <small>Wer die Arbeit wiederverwenden kann, macht sie gern.</small>
+            </li>
+            <li>
+                <b>Spaß machen und gut aussehen. </b><br>
+                <small>Auch das gehört dazu.</small>
+            </li>
+        </ul>
+
+        <h2>
+            Was unsere Nutzenden sagen
+        </h2>
+
+        <div class="row row-eq-spacing">
+            <div class="col">
+                <blockquote class="alert primary">
+                    Bei OSIRIS macht es sogar richtig Spaß, seine Sachen einzutragen.
+                    <br>
+                    <em>— Dr. Judith Boldt, Wissenschaftlerin</em>
+                </blockquote>
+            </div>
+            <div class="col">
+                <blockquote class="alert primary">
+                    Mit OSIRIS wird die Pflege der Forschungsaktivitäten zur angenehmen Nebensache.
+                    <br>
+                    <em>— Dr. Lorenz Reimer, Wissenschaftler</em>
+                </blockquote>
+            </div>
+            <div class="col">
+                <blockquote class="alert primary">
+                    OSIRIS ermöglicht es mir den Überblick über all meine beruflichen Aktivitäten […] zu behalten und
+                    erstellt dazu noch hilfreiche Darstellungen meiner Einträge.
+                    <br>
+                    <em>— Dr. Martinique Frentrup, Wissenschaftlerin</em>
+                </blockquote>
+            </div>
+        </div>
+
+        <h3>Was als nächstes kommt</h3>
+        <p>
+            Wir sind nicht fertig. Noch lange nicht. Mehr zu weiteren Plänen in der <a href="/roadmap">Roadmap</a>.
+        </p>
+
+    </div>
+</section>
+
+
+<!-- 
+<section class="section" id="about">
+    <div class="container">
+        <h1>
+            Partner
+        </h1>
+
+        <div class="tiles">
+            <a href="https://www.dsmz.de/" target="_blank" class="tile tile-link" style="max-width:35rem">
+                <img src="/images/dsmz.svg" alt="DSMZ" class="img-fluid">
+            </a>
+        </div>
+
+        <p>
+            Seid ihr dabei, OSIRIS bei euch zu installieren, probiert ihr es aus oder nutzt ihr es vielleicht schon aktiv?
+            Meldet euch bei uns und wir fügen euch gern zu dieser Liste hinzu.
+        </p>
+    </div>
+</section> -->
+
+
+<section class="section section-dark section-image" id="features">
+    <div class="container">
+        <div class="text-white">
+            <h1>Features</h1>
+            <p>Diese Übersicht zeigt nur ein paar der Features auf, die OSIRIS bietet:</p>
+        </div>
+
+        <div class="row row-eq-spacing">
+            <?php
+
+            $features = file_get_contents('features.json');
+            $features = json_decode($features, true);
+
+            foreach ($features as $f) { ?>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="box px-20 py-10">
+                    <i class="ph ph-2x ph-<?= $f['icon'] ?> text-osiris d-block"></i>
+                    <h4 class="title">
+                        <?= $f['name'] ?>
+                    </h4>
+                    <small class="text-muted">
+                        <?= $f['description'] ?>
+                    </small>
+                </div>
+            </div>
+            <?php } ?>
+
+        </div>
+
+        <div class="content">
+            <a href="/features" class="btn primary">Schau dir die Features im Detail an <i
+                    class="ph ph-arrow-right "></i></a>
+        </div>
+    </div>
+
+</section>
+
+
+<section class="section" id="activities">
+    <div class="container">
+        <h1>Aktivitäten</h1>
+        <p>Per Default sind in OSIRIS die folgenden Aktivitätsarten abgebildet:</p>
+
+        <div class="row row-eq-spacing">
+
+            <div class="col-6 col-md-3 col-lg">
+                <a onclick="activity_show('publication');" class="tile tile-link h-full text-publication"
+                    id="publication-tile">
+                    <i class="ph ph-2x text-publication ph-book-bookmark d-block"></i>
+                    <b>Publikation</b>
+                </a>
+            </div>
+            <div class="col-6 col-md-3 col-lg">
+                <a onclick="activity_show('poster');" class="tile tile-link h-full text-poster" id="poster-tile">
+                    <i class="ph ph-2x text-poster ph-presentation-chart d-block"></i>
+                    <b>Poster</b>
+                </a>
+            </div>
+            <div class="v-spacer d-md-none"></div>
+            <div class="col-6 col-md-3 col-lg">
+                <a onclick="activity_show('lecture');" class="tile tile-link h-full text-lecture" id="lecture-tile">
+                    <i class="ph ph-2x text-lecture ph-chalkboard-teacher d-block"></i>
+                    <b>Vorträge</b>
+                </a>
+            </div>
+            <div class="col-6 col-md-3 col-lg">
+                <a onclick="activity_show('review');" class="tile tile-link h-full text-review" id="review-tile">
+                    <i class="ph ph-2x text-review ph-article d-block"></i>
+                    <b>Reviews &amp; Editorials</b>
+                </a>
+            </div>
+            <div class="v-spacer d-lg-none"></div>
+            <div class="col-6 col-md-3 col-lg">
+                <a onclick="activity_show('teaching');" class="tile tile-link h-full text-teaching" id="teaching-tile">
+                    <i class="ph ph-2x text-teaching ph-chalkboard-simple d-block"></i>
+                    <b>Lehre</b>
+                </a>
+            </div>
+            <div class="col-6 col-md-3 col-lg">
+                <a onclick="activity_show('students');" class="tile tile-link h-full text-students" id="students-tile">
+                    <i class="ph ph-2x text-students ph-student d-block"></i>
+                    <b>Studierende &amp; Gäste</b>
+                </a>
+            </div>
+            <div class="v-spacer d-md-none"></div>
+            <div class="col-6 col-md-3 col-lg">
+                <a onclick="activity_show('software');" class="tile tile-link h-full text-software" id="software-tile">
+                    <i class="ph ph-2x text-software ph-desktop-tower d-block"></i>
+                    <b>Software &amp; Daten</b>
+                </a>
+            </div>
+            <div class="col-6 col-md-3 col-lg">
+                <a onclick="activity_show('misc');" class="tile tile-link h-full text-misc" id="misc-tile">
+                    <i class="ph ph-2x text-misc ph-shapes d-block"></i>
+                    <b>Sonstiges</b>
+                </a>
+            </div>
+
+        </div>
+        <div id="examples" class="p-20 box overflow-x-auto">
+            <b>Beispiel</b>:
+
+            <p data-visible="publication" data-type="article">
+                <?= activity_icon('article') ?>
+                <span class="element-author" data-element="Autor(en)">Spring, S., Rohde, M., Bunk, B., Spröer, C., Will,
+                    S. E. and Neumann-Schaal, M. </span>
+                (<span class="element-time" data-element="Jahr">2022</span>)
+                <span class="element-title" data-element="Titel">New insights into the energy metabolism and taxonomy of
+                    Deferribacteres revealed by the characterization of a new isolate from a hypersaline microbial
+                    mat</span>.
+                <span class="element-cat" data-element="Journal">Environmental microbiology </span>
+                <span data-element="Issue, Volume, Pages">24(5):2543-2575</span>.
+                DOI: http://dx.doi.org/<span class="element-link" data-element="DOI">10.1111/1462-2920.15999</span>
+            </p>
+            <p data-visible="publication" data-type="magazine">
+                <?= activity_icon('magazine') ?>
+                <span class="element-author" data-element="Autor(en)">Wolf, J., Öztürk, B., Koblitz, J. and
+                    Neumann-Schaal, M.</span>
+                (<span class="element-time" data-element="Jahr">2021</span>)
+                <span class="element-title" data-element="Titel">Systembiologischer Fokus auf Nachhaltigkeit - Wie uns
+                    interdisziplinäre Forschung beim Verständnis hilft</span>.
+                <span class="element-cat" data-element="Magazine">GIT Labor-Fachzeitschrift</span>.
+                <span class="element-link"
+                    data-element="Link">https://analyticalscience.wiley.com/do/10.1002/was.000600102/full/</span>
+            </p>
+            <p data-visible="publication" data-type="book">
+                <?= activity_icon('book') ?>
+                <span class="element-author" data-element="Autor(en)">Overmann, J.</span>
+                (<span class="element-time" data-element="Jahr">2006</span>)
+                <span class="element-title" data-element="Titel">Molecular Basis of Symbiosis</span>.
+                (Vol. <span data-element="Volume">41</span>)
+                <span data-element="Ort">Berlin/Heidelberg</span>:
+                <span data-element="Verlag">Springer-Verlag</span>.
+                DOI: https://doi.org/<span class="element-link" data-element="DOI">10.1007/3-540-28221-1</span>
+            </p>
+            <p data-visible="publication" data-type="chapter">
+                <?= activity_icon('chapter') ?>
+                <span class="element-author" data-element="Autor(en)">Overmann, J.</span>
+                (<span class="element-time" data-element="Jahr">2022</span>)
+                <span class="element-title" data-element="Titel">Mikrobielle Vielfalt, Evolution und Systematik</span>.
+                In: <span class="element-author" data-element="Editor(en)">G. Fuchs, H. G. Schlegel and M.
+                    Bramkamp</span> (eds)
+                <span class="element-cat" data-element="Buchtitel">Allgemeine Mikrobiologie</span>.
+                (<span data-element="Edition">11</span>th ed.,
+                pp. <span data-element="Pages">602-674</span>).
+                <span data-element="Ort">Stuttgart</span>
+                <span data-element="Verlag">Georg Thieme Verlag</span>.
+            </p>
+
+            <p data-visible="publication" data-type="dissertation">
+                <?= activity_icon('dissertation') ?>
+                <span class="element-author" data-element="Autor(en)">Helmecke, J.</span>
+                (<span class="element-time" data-element="Jahr">2019</span>)
+                <span class="element-title" data-element="Titel">Vom Genom zum systemweiten Verständnis des
+                    Stoffwechsels thermoacidophiler Sulfolobales</span> (Dissertation).
+                <span data-element="Universität">TU Braunschweig</span>.
+                DOI: https://doi.org/<span class="element-link"
+                    data-element="DOI">10.24355/dbbs.084-201910291317-0</span>
+            </p>
+            <p data-visible="poster" style="display: none;">
+                <span class="element-author" data-element="Autor(en)">Lissin, A., Podstawka, A., Reimer, L. C., Koblitz,
+                    J., Bunk, B. and Overmann, J. </span>
+                <span class="element-title" data-element="Titel">"Who is who?" A central database for resolving
+                    microbial strain identifiers</span>.
+                <span class="element-" data-element="Konferenz">GCB 2022</span>,
+                <span class="element-" data-element="Ort">Halle (Saale)</span>.
+                <span class="element-time" data-element="Datum">06.-08.09.2022</span>.
+            </p>
+            <p data-visible="lecture" style="display: none;">
+                <span class="element-author" data-element="Autor(en)">Koblitz, J., Halama, P., Spring, S., Thiel, V.,
+                    Baschien, C., Hahnke, R., Pester, M., Reimer, L. C. and Overmann, J.</span>
+                <span class="element-title" data-element="Titel">MediaDive: the expert-curated cultivation media
+                    database</span>.
+                <span class="element-" data-element="Konferenz">ECCO 2022</span>,
+                <span class="element-" data-element="Ort">Braunschweig</span>.
+                <span class="element-time" data-element="Datum">28.09.2022</span>.
+                (<span class="element-cat" data-element="Art des Vortrages">short</span>)
+            </p>
+            <p data-visible="misc" style="display: none;">
+                <span class="badge">Stetig</span>
+                <span class="element-author" data-element="Autor(en)">Steenpaß, L.</span>
+                <span class="element-title" data-element="Titel">Mitglied im Advisory Board der Core Facility der
+                    Medizinischen Universität Graz</span>,
+                von <span class="element-time" data-element="Datum">01.08.2021</span> bis heute.
+            </p>
+            <p data-visible="misc" style="display: none;">
+                <span class="badge">Einmalig</span>
+                <span class="element-author" data-element="Autor(en)">Overmann, J.</span>
+                <span class="element-title" data-element="Titel">Teilnahme an der Podiumsdiskussion zum Thema Digitale
+                    Sequenzinformation auf der Jahrestagung der VAAM</span>,
+                <span class="element-time" data-element="Startdatum">21.02.2022</span>,
+                <span class="element-" data-element="Ort">virtuell<span>.
+                    </span></span>
+            </p>
+            <p data-visible="misc" style="display: none;">
+                <span class="badge">Einmalig</span>
+                <span class="element-author" data-element="Autor(en)">Riedel, T.</span>
+                <span class="element-title" data-element="Titel">Organisation des CD-biOmics Workshop</span>,
+                <span class="element-time" data-element="Start- und Endatum">13.-19.03.2022</span>,
+                <span class="element-" data-element="Ort">Leibniz Institut DSMZ, Braunschweig<span>.
+                    </span></span>
+            </p>
+            <p data-visible="teaching" style="display: none;">
+                <span class="element-author" data-element="Verantwortliche Person">Neumann-Schaal, M.</span>
+                <span class="element-title" data-element="Thema / Titel / Beschreibung">MI01: Grundlagen der
+                    Mikrobiologie</span>,
+                <span class="element-cat" data-element="Art des Vortrages">TU Braunschweig</span>
+                (<span class="element-time" data-element="Start- und Endatum">01.10.2022 - 31.03.2023</span>).
+
+
+            </p>
+            <p data-visible="students" style="display: none;">
+                <?= activity_icon('students') ?>
+                <span class="element-" data-element="Name des Studierenden">Halama, Philipp</span>,
+                <span class="element-" data-element="Einrichtung des Studierenden">TU Braunschweig</span>.
+                <span class="element-title" data-element="Thema / Titel / Beschreibung">Genomic Sphingomonas</span>;
+                <span class="element-cat" data-element="Kategorie">Master-Thesis</span>.
+                <span class="element-time" data-element="Start- und Endatum">01.12.2021-30.09.2022</span>
+                (<span class="element-" data-element="Status">in progress</span>),
+                betreut von <span class="element-author" data-element="Verantwortliche Person">Bunk, B.</span>
+            </p>
+            <p data-visible="students" style="display: none;">
+                <?= activity_icon('guests') ?>
+                <span class="element-" data-element="Name des Gastes">Herrera, Fabio</span>,
+                <span class="element-" data-element="Einrichtung des Gastes">Universidad de los Andes, Kolumbien</span>.
+                <span class="element-title" data-element="Thema / Titel / Beschreibung">BMBF-Projekt: Workshop
+                    AVAnce</span>;
+                <span class="element-cat" data-element="Kategorie">Gastwissenschaftler:in</span>.
+                <span class="element-time" data-element="Start- und Endatum">15.-22.07.2022</span>,
+                betreut von <span class="element-author" data-element="Verantwortliche Person">Overmann, J.</span>
+            </p>
+            <p data-visible="software" style="display: none;">
+                <span class="element-author" data-element="Autor(en)">Koblitz, J.</span>
+                (<span class="element-time" data-element="Datum">2020</span>)
+                <span class="element-title" data-element="Titel">MetaboMAPS: Pathway Sharing and Multi-omics Data
+                    Visualization in Metabolic Context</span>
+                (Version <span class="element-" data-element="Version">1.1</span>)
+                [<span class="element-cat" data-element="Art der Software">Computer software</span>].
+                <span class="element-" data-element="Ort der Veröffentlichung">Zenodo</span>.
+                DOI: https://doi.org/<span class="element-link" data-element="DOI">10.5281/zenodo.3742817</span>
+            </p>
+            <p data-visible="review" style="display: none;">
+                <?= activity_icon('review') ?>
+                <span class="element-author" data-element="Wissenschaftler:in">Pester, M.</span>
+                Reviewer for
+                <span class="element-title" data-element="Journal ">Frontiers in Microbiology</span>.
+                <span class="element-time" data-element="Datum">October 2021</span>.
+            </p>
+            <p data-visible="review" style="display: none;">
+                <?= activity_icon('editorial') ?>
+                <span class="element-author" data-element="Wissenschaftler:in">Thiel, V.</span>
+                Mitglied des Editorial Board von <span class="element-title" data-element="Journal ">Microganisms</span>
+                (<span class="element-cat" data-element="Details ">Guest Editor for Special Issue 'Phototrophic Bacteria
+                    2.0'</span>),
+                von <span class="element-time" data-element="Startdatum">Juli 2022</span> bis <span class="element-time"
+                    data-element="Enddatum">März 2023</span>.
+            </p>
+            <p data-visible="review" style="display: none;">
+                <?= activity_icon('grant-rev') ?>
+                <span class="element-author" data-element="Wissenschaftler:in">Sikorski, J.</span>
+                Reviewer of Grant Proposals:
+                <span class="element-title" data-element="Title/ Description/ Details">National Science Foundation
+                    USA</span>.
+                <span class="element-time" data-element="Datum">October 2021</span>.
+            </p>
+
+            <p data-visible="review" style="display: none;">
+                <?= activity_icon('thesis-rev') ?>
+                <span class="element-author" data-element="Wissenschaftler:in">Mast, Y.</span>
+                Reviewer for Doctoral Thesis:
+                <span class="element-title" data-element="Title/ Description/ Details ">Ira Handayani, Eberhard Karls,
+                    Universität Tübingen</span>.
+                <span class="element-time" data-element="Datum">October 2021</span>.
+            </p>
+
+
+        </div>
+
+        <p>
+            Ihr könnt OSIRIS aber auch <b class="highlight">individuell anpassen</b>, d.h. ihr könnt Aktivitäten
+            rausnehmen oder neue hinzufügen.
+            Ihr entwickelt weder Software noch Datensätze? Kein Problem, löscht die Kategorie raus. Ihr habt mehr
+            Unterkategorien bei Vorträgen? Nichts leichter als das, ihr legt einfach neue Unterkategorien an. Dadurch
+            macht ihr OSIRIS zu eurem OSIRIS. Und das beste: Updates lassen eure Einstellungen unangetastet.
+        </p>
+        <p>
+            Mehr über die Anpassung findet ihr <a href="/customize" class="link">hier</a>.
+        </p>
+
+    </div>
+
+</section>
+
+<section class="section section-dark section-image text-white" id="implementation">
+    <div class="container">
+
+        <h1 class="text-white">Wie man OSIRIS bei sich einbindet</h1>
+        <div class="">
+
+            <p>
+                Grundlegende IT-Kenntnisse sind schon notwendig, um OSIRIS zu installieren. Doch eigentlich ist es nicht
+                schwer, OSIRIS mit all seinen Komponenten zu installieren und zu konfigurieren. Da OSIRIS komplett
+                Open-Source ist, wurde es dafür entworfen, auch in anderen Instituten genutzt zu werden. Alles was ihr
+                braucht ist einen Webserver, auf dem ihr OSIRIS installieren könnt - und natürlich den Quellcode, den
+                ihr euch von <a href="https://github.com/JKoblitz/osiris" class=" text-osiris"
+                    target="_blank">Github</a> holt.
+            </p>
+
+            <p>
+                Sobald OSIRIS erst einmal installiert ist, kann man es über den Browser bedienen. Dabei können Admins
+                alle Einstellungen direkt über das Interface und <b class="highlight">ohne Programmierkenntnisse</b>
+                vornehmen. Die Nutzenden können sich dann mit ihren LDAP-Zugangsdaten einloggen und ihre Aktivitäten
+                eintragen. OSIRIS ist so konzipiert, dass es einfach zu bedienen ist und die Nutzer nicht überfordert.
+            </p>
+
+            <h3>Tech-Talk</h3>
+
+            <p>
+                OSIRIS funktioniert mit PHP im Backend und JavaScript im Frontend. Als JavaScript-Library wird dabei auf
+                jQuery gesetzt. Dadurch dass keine aufwändigen Frameworks oder Dev-Stacks verwendet werden lässt sich
+                OSIRIS einfach installieren. Die Konfiguration der App findet dabei über das Admin-Panel statt, in dem
+                alle Infos, wie zum Beispiel der Name des Instituts oder die Abteilungen angegeben werden.
+            </p>
+
+            <p>
+                Die eigentlichen Daten werden in einer Dokument-basierten MongoDB-Datenbank gespeichert. Die muss nur
+                grob initialisiert werden, alle Daten lassen sich dann über die Weboberfläche hinzufügen. Wenn eine
+                Verbindung zu LDAP hinterlegt ist, wird beim Einloggen direkt ein neuer Nutzer angelegt.
+            </p>
+
+            <a href="/install" class="btn primary">
+                Installationsanleitung
+            </a>
+
+        </div>
+    </div>
+
+</section>
+
+<section class="section" id="team">
+    <div class="container">
+
+        <h1>Das Team hinter OSIRIS </h1>
+
+        <div class="row row-eq-spacing">
+            <div class="col-md-6">
+                <div class="content">
+                    <img src="img/DraggedImage.jpeg" / class="img-fluid mw-full w-300">
+
+                    <h5 class="title">
+                        Dr. Julia Koblitz
+                    </h5>
+
+                    <p>
+                        Julia ist Wissenschaftlerin an der DSMZ. Sie leitet die Arbeitsgruppe Datenintegration in der
+                        Abteilung Bioinformatik und hat schon mehrere Datenbanken und interaktive Web-Applikationen
+                        entwickelt, beispielsweise MediaDive, CellDive und MetaboMAPS. Ihre Forschungsschwerpunkte
+                        liegen bei Mikroorganismen und künstlicher Intelligenz. In ihrer Freizeit lernt sie japanisch,
+                        schreibt Bücher und entwickelt Forschungsinformationssysteme.
+                    </p>
+
+                    <p>
+                        <a href="mailto:julia.koblitz@osiris-solutions.de">Kontaktiere Julia</a>, wenn du Fragen zur
+                        technischen Umsetzung hast.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="content">
+                    <img src="img/DraggedImage-1.jpeg" / class="img-fluid mw-full w-300">
+
+                    <h5 class="title">
+                        Dominic Koblitz
+                    </h5>
+
+                    <p>
+                        Dominic ist Betriebswirt und arbeitet im Projektcontrolling an der DSMZ. Er ist u.a. zuständig
+                        für die Berichterstattung und benötigt dazu die Daten, die in OSIRIS erhoben werden. In seiner
+                        Freizeit hackt er Holz, spielt Videospiele und entwirft Forschungsinformationssysteme.
+                    </p>
+                    <p>
+                        <a href="mailto:dominic.koblitz@osiris-solutions.de">Kontaktiere Dominic</a>, wenn du Fragen zur
+                        Berichterstattung hast.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+{% block content %}{% endblock %}
+{% block footer %}{% endblock %}
