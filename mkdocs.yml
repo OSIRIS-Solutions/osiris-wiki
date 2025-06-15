@@ -1,1 +1,85 @@
-site_name: My Docs
+site_name: OSIRIS Wiki
+site_description: OSIRIS ist ein intuitives und offenes Forschungsinformationssystem.
+site_url: https://osiris-app.de/docs
+repo_url: https://github.com/OSIRIS-Solutions/osiris
+repo_name: OSIRIS-Solutions/osiris
+nav:
+  - Überblick: 
+    - Home: index.md
+    - Features: features.md
+    - Portfolio: portfolio.md
+  - Technische Dokumentation:
+    - Einführung: techical/index.md
+    - Installation:
+      - Linux: techical/install/linux.md
+      - Docker: techical/install/docker.md
+      - Windows: techical/install/windows.md
+      - Troubleshooting: techical/troubleshooting.md
+    - Konfiguration:
+      - Generelle Einstellungen: techical/configure/index.md
+      - Datenbank: techical/configure/database.md
+      - Nutzermanagement: techical/configure/user-management.md
+      - Workflows und Jobs: techical/configure/workflows.md
+    - Backup: techical/backup.md
+    - Altdaten: techical/data.md
+    - Migrieren: techical/migrate.md
+    - Update: techical/update.md
+  - Anleitungen für Admins:
+    - Einführung: admins/index.md
+    - Allgemeine Einstellungen: admins/general.md
+    - Inhalte verwalten: admins/content.md
+    - Nutzeradministration: admins/users.md
+    - Rollen und Rechte: admins/roles.md
+  - Anleitungen für Nutzer:
+    - Einführung: users/index.md
+    - Inhalte hinzufügen: users/creating-content.md
+    - Glossar: users/glossary.md
+theme:
+  name: material
+  logo: assets/logo_white.png
+  favicon: images/favicon.ico
+  font:
+    text: Rubik
+  language: de
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.path
+    - content.tabs.link
+  custom_dir: docs/overrides
+    # - navigation.indexes
+plugins:
+  - privacy
+extra_css:
+  - stylesheets/extra.css
+extra:
+  # alternate:
+  #   - name: English
+  #     link: /en/ 
+  #     lang: en
+  #   - name: Deutsch
+  #     link: /de/
+  #     lang: de
+  consent:
+    title: Cookie consent
+    description: >- 
+      Wir verwenden Cookies, um Ihre wiederholten Besuche und Präferenzen zu erkennen, sowie
+      und um die Effektivität unserer Dokumentation zu messen und um festzustellen, ob die
+      finden, wonach sie suchen. Mit Ihrer Zustimmung helfen Sie uns, unsere
+      unsere Dokumentation zu verbessern.
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - admonition
+  - pymdownx.details
+  - def_list
+  - attr_list
