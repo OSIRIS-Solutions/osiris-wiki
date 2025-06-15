@@ -3,7 +3,7 @@ title: Willkommen in der OSIRIS-Dokumentation
 # template: home.html
 ---
 
-![Hero Image](/images/Hero_desktop.svg)
+![Hero Image](/images/Hero_desktop.svg){ loading=lazy }
 
 # Willkommen bei OSIRIS
 
@@ -63,7 +63,7 @@ Der Hintergund liegt in unserem Daytime-Job bei einem Leibniz-Institut.
 Dort wurde nämlich bis 2021 für das Reporting der Forschungsaktivitäten noch auf Excel-Tabellen gesetzt.
 Als wir uns nach einer Alternative umgeschaut haben, fanden wir viele Forschungsinformationssysteme (FIS) auf dem Markt, doch keins wollte so richtig passen. Zu schwergewichtig, zu teuer, zu altbacken, zu unflexibel oder für große Universitäten mit eigener Bibliothek entwickelt.
 
-### Unsere Anforderungen an ein FIS
+## Unsere Anforderungen an ein FIS
 
 Für uns musste das perfekte System ...
 

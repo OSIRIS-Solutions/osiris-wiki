@@ -83,3 +83,5 @@ markdown_extensions:
   - pymdownx.details
   - def_list
   - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
