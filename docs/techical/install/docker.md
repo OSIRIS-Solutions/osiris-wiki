@@ -5,7 +5,7 @@
  
 ## Voraussetzungen
 
-Um OSIRIS in einem Docker-Container zu installieren, benötigt ihr Docker auf dem Host-System. Außerdem müssen die OSIRIS-Quellcodes im aktuellen Verzeichnis liegen. Hier solltet ihr auch wie [weiter unten in Grundlegende Einstellungen beschrieben](#config) die `CONFIG.php`-Datei anpassen.
+Um OSIRIS in einem Docker-Container zu installieren, benötigt ihr Docker auf dem Host-System. Außerdem müssen die OSIRIS-Quellcodes im aktuellen Verzeichnis liegen. Hier solltet ihr auch wie [weiter unten in Grundlegende Einstellungen beschrieben](../configure/index.md) die `CONFIG.php`-Datei anpassen.
  
 
 

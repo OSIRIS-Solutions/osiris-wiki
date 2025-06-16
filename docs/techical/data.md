@@ -3,7 +3,7 @@
 ## Variante 1: Altdaten automatisch über OpenAlex importieren
 
 
-Es ist möglich, ohne großen Aufwand Altdaten in OSIRIS zu importieren. Um OSIRIS auf den Import vorzubereiten, müssen jedoch erst ein paar Installationsschritte und Konfigurationen durchgeführt werden. Am besten haltet ihr euch dafür an die Anleitung zur  [Einrichtung der Workflows](#workflows). Ihr müsst dabei das generelle Setup sowie die Vorbereitung des Queue-Workflows abarbeiten (inklusive der Konfiguration), bis zu dem Punkt, an dem steht, dass ihr bereit für den Altdaten-Import seid. Dann kehrt hierher zurück, um mit dem Import der Altdaten fortzufahren.
+Es ist möglich, ohne großen Aufwand Altdaten in OSIRIS zu importieren. Um OSIRIS auf den Import vorzubereiten, müssen jedoch erst ein paar Installationsschritte und Konfigurationen durchgeführt werden. Am besten haltet ihr euch dafür an die Anleitung zur  [Einrichtung der Workflows](configure/workflows.md). Ihr müsst dabei das generelle Setup sowie die Vorbereitung des Queue-Workflows abarbeiten (inklusive der Konfiguration), bis zu dem Punkt, an dem steht, dass ihr bereit für den Altdaten-Import seid. Dann kehrt hierher zurück, um mit dem Import der Altdaten fortzufahren.
 
 Mit dem folgenden Script werden alle Altdaten aus OpenAlex direkt in eure Datenbank importiert. Warum das eine tolle Idee ist, lest ihr am besten [hier](https://openalex.org/about).
 Das Script zum Import der Altdaten wird mit folgendem Aufruf gestartet:

@@ -43,10 +43,9 @@ Institution = I7935750
 Außerdem von Relevanz ist das `StartYear`, von dem an Aktivitäten importiert werden, sowie die `AdminMail`, mit derer die Abfragen bei OpenAlex getätigt werden.
 
 
-Falls du [Altdaten importieren](#import) willst, bist du jetzt bereit dafür.
+Falls du [Altdaten importieren](../data.md) willst, bist du jetzt bereit dafür.
 
 ### Den Cron-Job anlegen
-
 
 Zu guter Letzt können wir den Cron-Job anlegen. Ein Cron-Job ist ein geplanter, sich wiederholender Vorgang, den ein System zu einer festgelegten Zeit durchführt. Die folgenden Einstellungen bedeuten, dass der Workflow einmal pro Woche durchgeführt wird, genauer gesagt jeden Sonntag um 2 Uhr morgens.
 Wir benutzen den Editor `nano` für diese Aktion, ihr könnt aber natürlich auch jeden anderen Editor verwenden.

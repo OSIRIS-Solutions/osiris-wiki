@@ -9,7 +9,9 @@ title: Willkommen in der OSIRIS-Dokumentation
 
 > Das offene, smarte und intuitive Forschungsinformationssystem
 
-> Ihr macht die Forschung, OSIRIS behält den Überblick.
+!!! warning "Diese Dokumentation ist noch im Aufbau"
+
+    Diese Dokumentation ist noch im Aufbau und wird kontinuierlich erweitert. Wir freuen uns über Beiträge und Anregungen von der Community. Wenn du Fragen zur Dokumentation hast oder etwas vermisst, kontaktiere uns bitte über [GitHub](https://github.com/OSIRIS-Solutions/osiris-wiki).
 
 === "Open"
 
@@ -34,7 +36,7 @@ title: Willkommen in der OSIRIS-Dokumentation
 
 OSIRIS Portfolio bietet euch eine all-umfassende Lösung, um eure Forschung nach außen zu zeigen. Mit OSIRIS Portfolio könnt ihr eure Forschungsaktivitäten in einem modernen und ansprechenden Design präsentieren.
 
-[Mehr erfahren](/portfolio)
+[Mehr erfahren](portfolio.md)
 
 ## Was ist OSIRIS?
 

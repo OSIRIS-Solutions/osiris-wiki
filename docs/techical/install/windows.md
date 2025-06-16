@@ -45,6 +45,6 @@ In dem Terminal muss man jetzt in das Xampp Verzeichnis der Webseite navigieren.
 `cd C:\xampp\htdocs`
 Wenn man sich jetzt im Verzeichnis befindet, gibt man `Composer update` ein. Wenn alles funktioniert, lädt Composer die fehlenden libraries nach.
 6. Wenn nicht bereits geschehen, XAMPP starten und bei Apache auf „Start“ bzw. „Restart“ klicken. In den Browser [localhost](http://localhost) eingeben und die Webseite sollte erscheinen.
-7. In der Config Datei können noch weitere Einstellungen vorgenommen werden (wie Administrator, ldap, Auth, …). Siehe dazu die den Abschnitt [OSIRIS konfigurieren](#config).
+7. In der Config Datei können noch weitere Einstellungen vorgenommen werden (wie Administrator, ldap, Auth, …). Siehe dazu die den Abschnitt [OSIRIS konfigurieren](../configure/index.md).
 
 

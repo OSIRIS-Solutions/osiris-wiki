@@ -4,12 +4,12 @@
 
 OSIRIS ist eine Webanwendung, die auf einem Linux-Server läuft. Die Installation erfolgt über die Kommandozeile. Die Distribution müsst ihr selbst aufsetzen, doch die Installation aller Abhängigkeiten wird auch weiter unten beschrieben. OSIRIS ist getestet mit Debian 11 und CentOS 8. Die Installation sollte aber auch auf anderen Distributionen funktionieren, die die gleichen Pakete bereitstellen.
  
-* Linux-Server mit Root-Rechten
-* [Webserver](#2.1-apache-und-php-installieren) (Apache2 empfohlen)
-* [PHP 8.x](#apache)
-* [MongoDB Server](#mongodb) (getestet mit Version 5, 6 und 7)
-* [Composer](#composer)
-* [Git](#git)
+* Linux-Server mit Root-Rechten (wird hier nicht weiter beschrieben)
+* Webserver (Apache2 empfohlen)
+* PHP 8.x
+* MongoDB Server (getestet mit Version 5, 6 und 7)
+* Composer
+* Git
 
 
 ## 2. Server vorbereiten
@@ -155,7 +155,7 @@ Die Konfiguration von OSIRIS ist in der Datei `CONFIG.php` zu finden. Diese Date
 
     In der Datei `CONFIG.php` werden alle Server-seitigen Einstellungen vorgenommen. Hier kannst du die Authentifizierungsmethode, die Datenbankverbindung und viele weitere Einstellungen vornehmen. Diese Datei wird bei einem Update nicht überschrieben, sodass du deine Einstellungen nicht erneut vornehmen musst.
 
-Alle Informationen zu den Einstellungen findest du in dem Abschnitt [Basiskonfiguration](#config) weiter unten.
+Alle Informationen zu den Einstellungen findest du in dem Abschnitt [Basiskonfiguration](../configure/index.md).
  
 ## 4. Apache konfigurieren
 
