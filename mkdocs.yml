@@ -6,6 +6,9 @@ repo_name: OSIRIS-Solutions/osiris
 nav:
   - Überblick: 
     - Home: index.md
+    - Über OSIRIS: about.md
+    - Neuigkeiten: news.md
+    - Kontakt: contact.md
     - Features: features.md
     - Portfolio: portfolio.md
   - Technische Dokumentation:
