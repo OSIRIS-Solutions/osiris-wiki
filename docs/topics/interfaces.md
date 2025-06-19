@@ -21,3 +21,10 @@ Es werden zurzeit zwei PIDs (Persistent Identifier) unterstützt: DOI (Digital O
    - Falls das Journal nicht vorhanden ist, wird es aus OpenAlex importiert. Der Nutzende bekommt eine Vorschlagliste mit den Journalen, die in OpenAlex gefunden wurden, und kann das passende Journal auswählen, das dann automatisch angelegt wird.
    - Ggf. wird das Journal auch über die OSIRIS-API mit dem [Impact Faktor](impact.md) ergänzt, sofern dieser verfügbar ist.
 4. Die Daten werden in das Formular eingetragen und der Nutzer kann die Daten noch anpassen, bevor die Aktivität gespeichert wird.
+
+
+## Präsentation über Schnittstellen
+
+Am 11. Juni 2025 hat Julia eine Präsentation über die Schnittstellen und Standards in OSIRIS gehalten. Diese Präsentation gibt einen Überblick über die verschiedenen Schnittstellen und deren Funktionsweise und zeigt auch zu diesem Zeitpunkt verfügbare Standards auf, wie beispielsweise dem (KDSF 2.0)[kdsf.md].
+
+[Hier geht's zur Präsentation!](../assets/documents/OSIRIS Schnittstellen.pdf){.md-button}
