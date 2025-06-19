@@ -7,33 +7,37 @@ nav:
   - Überblick: 
     - Home: index.md
     - Über OSIRIS: about.md
-    - Neuigkeiten: news.md
-    - Kontakt: contact.md
     - Features: features.md
-    - Portfolio: portfolio.md
-  - Technische Dokumentation:
-    - Einführung: techical/index.md
+    - Changelog: news.md
+    - Kontakt: contact.md
+  - Themen:
+    - Community: topics/community.md
+    - Schnittstellen: topics/interfaces.md
+    - Portfolio: topics/portfolio.md
+    - Impact Faktoren: topics/impact.md
+  - Technik:
+    - Einführung: technical/index.md
     - Installation:
-      - Linux: techical/install/linux.md
-      - Docker: techical/install/docker.md
-      - Windows: techical/install/windows.md
-      - Troubleshooting: techical/troubleshooting.md
+      - Linux: technical/install/linux.md
+      - Docker: technical/install/docker.md
+      - Windows: technical/install/windows.md
+      - Troubleshooting: technical/troubleshooting.md
     - Konfiguration:
-      - Generelle Einstellungen: techical/configure/index.md
-      - Datenbank: techical/configure/database.md
-      - Nutzermanagement: techical/configure/user-management.md
-      - Workflows und Jobs: techical/configure/workflows.md
-    - Backup: techical/backup.md
-    - Altdaten: techical/data.md
-    - Migrieren: techical/migrate.md
-    - Update: techical/update.md
-  - Anleitungen für Admins:
+      - Generelle Einstellungen: technical/configure/index.md
+      - Datenbank: technical/configure/database.md
+      - Nutzermanagement: technical/configure/user-management.md
+      - Workflows und Jobs: technical/configure/workflows.md
+    - Backup: technical/backup.md
+    - Altdaten: technical/data.md
+    - Migrieren: technical/migrate.md
+    - Update: technical/update.md
+  - Admins:
     - Einführung: admins/index.md
     - Allgemeine Einstellungen: admins/general.md
     - Inhalte verwalten: admins/content.md
     - Nutzeradministration: admins/users.md
     - Rollen und Rechte: admins/roles.md
-  - Anleitungen für Nutzer:
+  - Nutzer:
     - Einführung: users/index.md
     - Inhalte hinzufügen: users/creating-content.md
     - Glossar: users/glossary.md
@@ -47,9 +51,11 @@ theme:
   features:
     - navigation.instant
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.path
+    # - navigation.footer
     - content.tabs.link
-  custom_dir: docs/overrides
+  custom_dir: overrides
     # - navigation.indexes
 plugins:
   - privacy
@@ -57,6 +63,16 @@ plugins:
 extra_css:
   - stylesheets/extra.css
 extra:
+  social:
+    - icon: fontawesome/brands/github 
+      link: https://github.com/OSIRIS-Solutions/osiris
+    - icon: fontawesome/solid/globe
+      link: https://osiris-app.de/
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/osiris-solutions-gmbh
+  status:
+    new: Neu hinzugefügt
+    draft: Im Aufbau
   # alternate:
   #   - name: English
   #     link: /en/ 
@@ -72,6 +88,10 @@ extra:
       finden, wonach sie suchen. Mit Ihrer Zustimmung helfen Sie uns, unsere
       unsere Dokumentation zu verbessern.
 markdown_extensions:
+  - admonition
+  - def_list
+  - attr_list
+  - md_in_html
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
@@ -83,9 +103,8 @@ markdown_extensions:
       alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
-  - admonition
   - pymdownx.details
-  - def_list
-  - attr_list
-  - md_in_html
   - pymdownx.blocks.caption
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg

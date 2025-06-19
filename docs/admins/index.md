@@ -1,3 +1,9 @@
-# Einführung
+---
+status: draft
+---
 
-> Diese Seite befindet sich noch im Aufbau. Wir bitten um Geduld.
+# Anleitung für Inhalt-Administratoren
+
+
+!!! warning "Seite im Aufbau"
+    Diese Seite befindet sich noch im Aufbau. Wir bitten um Geduld.
