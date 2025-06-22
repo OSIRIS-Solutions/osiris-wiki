@@ -15,6 +15,7 @@ nav:
     - Schnittstellen: topics/interfaces.md
     - Portfolio: topics/portfolio.md
     - Impact Faktoren: topics/impact.md
+    - Glossar: topics/glossary.md
   - Technik:
     - Einführung: technical/index.md
     - Installation:
@@ -37,10 +38,10 @@ nav:
     - Inhalte verwalten: admins/content.md
     - Nutzeradministration: admins/users.md
     - Rollen und Rechte: admins/roles.md
+    - Forschungsreisen: admins/travel.md
   - Nutzer:
     - Einführung: users/index.md
     - Inhalte hinzufügen: users/creating-content.md
-    - Glossar: users/glossary.md
 theme:
   name: material
   logo: assets/logo_white.png
