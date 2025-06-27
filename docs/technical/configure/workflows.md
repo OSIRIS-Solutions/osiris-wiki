@@ -1,3 +1,12 @@
+---
+tags:
+  - Workflows
+  - Automatisierung
+  - OpenAlex
+  - Cron-Job
+---
+
+
 # Optionale Workflows
 
 Workflows laufen regelmäßig und ermöglichen es, Arbeitsschritte zu automatisieren.

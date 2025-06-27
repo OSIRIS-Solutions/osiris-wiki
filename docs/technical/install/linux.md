@@ -1,3 +1,13 @@
+---
+tags:
+  - Linux
+  - Server
+  - Apache
+  - PHP
+  - MongoDB
+  - Installation
+---
+
 # Linux
 
 ## 1. Voraussetzungen

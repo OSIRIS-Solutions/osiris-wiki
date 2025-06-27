@@ -1,6 +1,11 @@
+---
+tags:
+  - Troubleshooting
+  - MongoDB
+---
+
 
 # Troubleshooting
-
 
 
 Für den Fall, dass etwas schief laufen sollte, sammle ich hier ein paar Tipps, die mir selbst oder anderen Nutzern schon weitergeholfen haben.
