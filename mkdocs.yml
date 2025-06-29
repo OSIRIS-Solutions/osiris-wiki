@@ -1,6 +1,5 @@
 site_name: OSIRIS Wiki
 site_description: OSIRIS ist ein intuitives und offenes Forschungsinformationssystem.
-site_url: https://osiris-app.de/docs
 repo_url: https://github.com/OSIRIS-Solutions/osiris-wiki
 edit_uri: edit/main/docs/
 repo_name: OSIRIS-Solutions/osiris
@@ -11,6 +10,7 @@ nav:
     - Features: features.md
     - Changelog: news.md
     - Kontakt: contact.md
+    - Schlagworte: tags.md
   - Themen:
     - Community: topics/community.md
     - Schnittstellen: topics/interfaces.md
@@ -44,6 +44,8 @@ nav:
   - Nutzer:
     - Einführung: users/index.md
     - Inhalte hinzufügen: users/creating-content.md
+  - Blog:
+    - blog/index.md
 theme:
   name: material
   logo: assets/logo_white.png
@@ -69,6 +71,9 @@ plugins:
       enable_creation_date: true
   - git-authors
   - tags
+  - social
+  - blog:
+      blog_toc: true
 extra_css:
   - stylesheets/extra.css
 extra:
