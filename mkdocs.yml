@@ -33,6 +33,7 @@ nav:
     - Altdaten: technical/data.md
     - Migrieren: technical/migrate.md
     - Update: technical/update.md
+    - Beta verwenden: technical/beta.md
   - Admins:
     - Einführung: admins/index.md
     - Allgemeine Einstellungen: admins/general.md
