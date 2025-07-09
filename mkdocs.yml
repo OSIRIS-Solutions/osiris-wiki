@@ -34,6 +34,7 @@ nav:
     - Migrieren: technical/migrate.md
     - Update: technical/update.md
     - Beta verwenden: technical/beta.md
+    - Testsystem einrichten: technical/test-system.md
   - Admins:
     - Einführung: admins/index.md
     - Allgemeine Einstellungen: admins/general.md
