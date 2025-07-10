@@ -10,7 +10,7 @@ tags: [Portfolio, Webseite]
 
 # Ein erster Blick auf Portfolio
 
-Im [letzten Beitrag](osiris-portfolio) habe ich schon über unsere Motivation geredet und erzählt, woher der Name *Portfolio* kommt. Dieses Mal möchte ich ein bisschen mehr auf die Features von OSIRIS Portfolio eingehen.
+Im [letzten Beitrag](osiris-portfolio.md) habe ich schon über unsere Motivation geredet und erzählt, woher der Name *Portfolio* kommt. Dieses Mal möchte ich ein bisschen mehr auf die Features von OSIRIS Portfolio eingehen.
 
 <!-- more -->
 

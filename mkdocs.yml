@@ -6,11 +6,11 @@ repo_name: OSIRIS-Solutions/osiris
 nav:
   - Überblick: 
     - Home: index.md
-    - Über OSIRIS: about.md
-    - Features: features.md
-    - Changelog: news.md
-    - Kontakt: contact.md
-    - Schlagworte: tags.md
+    - Über OSIRIS: home/about.md
+    - Features: home/features.md
+    - Changelog: home/news.md
+    - Kontakt: home/contact.md
+    - Schlagworte: home/tags.md
   - Themen:
     - Community: topics/community.md
     - Schnittstellen: topics/interfaces.md
@@ -68,13 +68,15 @@ theme:
 plugins:
   - privacy
   - search
+  - meta
   - git-revision-date-localized:
       enable_creation_date: true
-  - git-authors
+  # - git-authors
   - tags
-  - social
+  # - social
   - blog:
       blog_toc: true
+  # - awesome-nav
 extra_css:
   - stylesheets/extra.css
 extra:

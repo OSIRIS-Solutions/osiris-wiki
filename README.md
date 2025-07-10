@@ -82,6 +82,7 @@ git clone https://github.com/OSIRIS-Solutions/osiris-wiki.git osiris-wiki
 cd osiris-wiki
 
 pip install mkdocs mkdocs-material mkdocs-git-revision-date-localized-plugin mkdocs-git-authors-plugin "mkdocs-material[imaging]"
+pip install mkdocs-nav-weight
 ```
 
 Du startest den lokalen Server mit:

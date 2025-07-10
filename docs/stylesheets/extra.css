@@ -22,3 +22,9 @@
 
   background: var(--md-primary-fg-color);
 } */
+
+.md-tabs__item:last-child {
+    margin-left: auto;
+    /* padding-left: 1.3rem; */
+    /* border-left: 1px solid rgba(255, 255, 255, 0.7); */
+}
