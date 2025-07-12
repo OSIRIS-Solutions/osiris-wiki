@@ -78,7 +78,6 @@ Bedeutet, dass Forschende ihre Aktivitäten **eigenständig eintragen**, ohne ze
 Das ist ein Grundprinzip von OSIRIS, um Aufwand auf viele Schultern zu verteilen. 
 
 
-
 ## Autor:innenreihenfolge und Rolle
 
 In vielen Wissenschaftsdisziplinen ist die Reihenfolge der Autor:innen **bedeutsam** (z. B. Erstautor:in, Letztautor:in).
