@@ -38,6 +38,7 @@ nav:
   - Admins:
     - Einführung: admins/index.md
     - Allgemeine Einstellungen: admins/general.md
+    - Email-Einstellungen: admins/email.md
     - Inhalte verwalten: admins/content.md
     - Nutzeradministration: admins/users.md
     - Rollen und Rechte: admins/roles.md
