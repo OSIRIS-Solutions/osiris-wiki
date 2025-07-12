@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Holen Sie den gesamten Verlauf, um die Git-Revision-Daten zu erhalten
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -17,7 +19,7 @@ jobs:
           python-version: '3.x'
 
       - name: Install dependencies
-        run: pip install mkdocs mkdocs-material
+        run: pip install mkdocs mkdocs-material mkdocs-git-revision-date-localized-plugin mkdocs-git-authors-plugin "mkdocs-material[imaging]"  mkdocs-awesome-nav
 
       - name: Build and deploy
         run: mkdocs gh-deploy --force

@@ -3,7 +3,7 @@ title: Willkommen in der OSIRIS-Dokumentation
 # template: home.html
 ---
 
-![Hero Image](assets/images/Hero_desktop.svg)
+![Hero Image](assets/images/osiris-banner.svg)
 
 # Willkommen im OSIRIS Wiki
 

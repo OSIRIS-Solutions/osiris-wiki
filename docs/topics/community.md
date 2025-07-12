@@ -1,3 +1,10 @@
+---
+tags:
+  - Community
+  - Workshops
+  - Meetings
+---
+
 # Die OSIRIS Community
 
 OSIRIS ist ein Open Source Projekt, das von einer engagierten Community lebt. Dabei muss nicht jeder ein Entwickler sein, um zur Community beizutragen. Es gibt viele Möglichkeiten, wie du helfen kannst, sei es durch Feedback, Ideen oder aktive Mitgestaltung.

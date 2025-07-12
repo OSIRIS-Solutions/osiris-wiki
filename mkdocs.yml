@@ -1,15 +1,16 @@
 site_name: OSIRIS Wiki
 site_description: OSIRIS ist ein intuitives und offenes Forschungsinformationssystem.
-site_url: https://osiris-app.de/docs
-repo_url: https://github.com/OSIRIS-Solutions/osiris
+repo_url: https://github.com/OSIRIS-Solutions/osiris-wiki
+edit_uri: edit/main/docs/
 repo_name: OSIRIS-Solutions/osiris
 nav:
   - Überblick: 
     - Home: index.md
-    - Über OSIRIS: about.md
-    - Features: features.md
-    - Changelog: news.md
-    - Kontakt: contact.md
+    - Über OSIRIS: home/about.md
+    - Features: home/features.md
+    - Changelog: home/news.md
+    - Kontakt: home/contact.md
+    - Schlagworte: home/tags.md
   - Themen:
     - Community: topics/community.md
     - Schnittstellen: topics/interfaces.md
@@ -32,6 +33,8 @@ nav:
     - Altdaten: technical/data.md
     - Migrieren: technical/migrate.md
     - Update: technical/update.md
+    - Beta verwenden: technical/beta.md
+    - Testsystem einrichten: technical/test-system.md
   - Admins:
     - Einführung: admins/index.md
     - Allgemeine Einstellungen: admins/general.md
@@ -42,6 +45,8 @@ nav:
   - Nutzer:
     - Einführung: users/index.md
     - Inhalte hinzufügen: users/creating-content.md
+  - Blog:
+    - blog/index.md
 theme:
   name: material
   logo: assets/logo_white.png
@@ -56,11 +61,22 @@ theme:
     - navigation.path
     # - navigation.footer
     - content.tabs.link
+    - content.action.edit
+    - content.action.view
   custom_dir: overrides
     # - navigation.indexes
 plugins:
   - privacy
   - search
+  - meta
+  - git-revision-date-localized:
+      enable_creation_date: true
+  # - git-authors
+  - tags
+  # - social
+  - blog:
+      blog_toc: true
+  # - awesome-nav
 extra_css:
   - stylesheets/extra.css
 extra:

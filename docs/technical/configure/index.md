@@ -1,3 +1,10 @@
+---
+tags:
+  - Einstellungen
+  - Konfiguration
+  - PHP
+---
+
 # OSIRIS konfigurieren
 
 Damit OSIRIS läuft müssen die wichtigen Einstellungen vorgenommen werden. Dazu muss die Datei [CONFIG.default.php](https://github.com/JKoblitz/osiris/blob/master/CONFIG.default.php) kopiert und in `CONFIG.php` umbenannt werden. In dieser Datei könnt ihr grundlegende Einstellungen anpassen, die nicht durch Updates überschrieben werden.

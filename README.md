@@ -64,3 +64,29 @@ Markdown ist eine einfache Auszeichnungssprache, die für alle Dokumente in dies
 
 Mit deinem Beitrag hilfst du, OSIRIS für alle besser nutzbar zu machen.
 Bei Fragen oder Ideen melde dich gerne direkt bei uns: contact@osiris-solutions.de
+
+
+
+## 💻 Das Wiki lokal installieren
+
+Du kannst das Wiki auch lokal auf deinem Rechner installieren, um Änderungen direkt zu testen. Hier ist eine kurze Anleitung:
+
+Zuerst musst du die Abhängigkeiten für die Grafikbibliotheken installieren, die von MkDocs Material benötigt werden. Finde die Anleitungen [hier](https://squidfunk.github.io/mkdocs-material/plugins/requirements/image-processing/#cairo-graphics-linux).
+
+
+Danach lädst du dir das Repository herunter und installierst die Abhängigkeiten:
+
+```bash
+git clone https://github.com/OSIRIS-Solutions/osiris-wiki.git osiris-wiki
+
+cd osiris-wiki
+
+pip install mkdocs mkdocs-material mkdocs-git-revision-date-localized-plugin mkdocs-git-authors-plugin "mkdocs-material[imaging]"
+pip install mkdocs-nav-weight
+```
+
+Du startest den lokalen Server mit:
+
+```bash
+mkdocs serve
+```

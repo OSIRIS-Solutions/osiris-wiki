@@ -1,3 +1,12 @@
+---
+tags:
+  - Upgrade
+  - MongoDB
+  - Backup
+  - Composer
+---
+
+
 # Upgrade auf die neueste Version
 
 Um auf die neueste Version von OSIRIS zu aktualisieren, folge bitte den folgenden Schritten.

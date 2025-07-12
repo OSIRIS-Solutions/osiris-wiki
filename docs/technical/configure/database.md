@@ -1,3 +1,10 @@
+---
+tags:
+  - MongoDB
+  - Datenbank
+  - Konfiguration
+---
+
 # Datenbank-Verbindung
 
 Die Datenbank-Verbindung muss ebenfalls in der CONFIG-Datei angegeben werden. Um gegebenenfalls Servereinstellungen und Nutzernamen angeben zu können, wird direkt der Verbindungsstring übergeben. Wenn ihr MongoDB mit den Standardeinstellungen in der gleichen VM installiert habt, sollten die Voreinstellungen funktionieren:

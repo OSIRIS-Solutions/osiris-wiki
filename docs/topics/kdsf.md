@@ -1,5 +1,9 @@
 --- 
 status: draft
+tags:
+  - KDSF
+  - Schnittstellen
+  - Standard
 ---
 
 # KDSF

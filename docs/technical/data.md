@@ -1,3 +1,12 @@
+---
+tags:
+    - Daten
+    - Altdaten
+    - Import
+    - OpenAlex
+    - DOIs
+---
+
 # Altdaten importieren
 
 ## Variante 1: Altdaten automatisch über OpenAlex importieren

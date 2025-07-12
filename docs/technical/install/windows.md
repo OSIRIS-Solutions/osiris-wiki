@@ -1,3 +1,11 @@
+---
+tags:
+  - Windows
+  - Installation
+  - XAMPP
+  - MongoDB
+---
+
 # Windows
 
 ## Installation unter Windows (for Dummies)

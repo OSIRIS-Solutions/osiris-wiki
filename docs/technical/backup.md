@@ -1,3 +1,11 @@
+---
+tags:
+  - Backup
+  - Datenbank
+  - MongoDB
+---
+
+
 # Backup
 
 Um die Datenbank komplett zu speichern, benutzt du am das in MongoDB integrierte Backup-Tool wie folgt:

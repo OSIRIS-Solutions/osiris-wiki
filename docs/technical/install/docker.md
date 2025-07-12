@@ -1,3 +1,9 @@
+---
+tags:
+  - Docker
+  - Container
+  - Installation
+---
 
 ## Installieren als Docker-Container
 

@@ -1,3 +1,11 @@
+---
+tags:
+  - Migration
+  - MongoDB
+  - Backup
+---
+
+
 # OSIRIS auf einen anderen Server migrieren
 
 OSIRIS lässt sich sehr einfach auf einen anderen Server migrieren. Dazu musst du lediglich die Datenbank und die Dateien sichern und auf dem neuen Server wiederherstellen. Hier sind die Schritte, die du befolgen musst:

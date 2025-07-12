@@ -1,3 +1,11 @@
+---
+tags:
+  - Reporting
+  - Scopus
+  - SJR
+  - Web of Science
+---
+
 # Impact Faktoren
 
 Die Impact Faktoren (IF) sind auch in der heutigen Zeit noch für viele Institutionen und Forschende von Bedeutung, um die Qualität und den Einfluss von Publikationen zu bewerten. In OSIRIS werden die Impact Faktoren automatisch zu den Journals hinzugefügt, sofern sie verfügbar sind. Es ist aber anzumerken, dass es sich dabei nicht um den viel verwendeten Journal Impact Factor von Web of Science (Clarivate) handelt, sondern um den 2-Year Citedness Index von Skopus, der über den [Scimago Journal Rank](https://www.scimagojr.com/journalrank.php) (SJR) zur Verfügung gestellt wird. Dieser Index ist eine alternative Metrik, die auf der Anzahl der Zitationen in den vergangenen beiden Jahren basiert und von vielen Forschenden als nützlich erachtet wird.

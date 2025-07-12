@@ -1,3 +1,10 @@
+---
+tags:
+  - Schnittstellen
+  - Aktivitäten
+  - Import
+---
+
 # Schnittstellen in OSIRIS
 
 In OSIRIS gibt es verschiedene Schnittstellen, die es ermöglichen, Daten zu importieren und zu exportieren. Diese Schnittstellen sind wichtig, um Daten aus anderen Systemen zu integrieren oder um Daten für externe Anwendungen bereitzustellen. Hier sind die wichtigsten Standard-Schnittstellen im Überblick:

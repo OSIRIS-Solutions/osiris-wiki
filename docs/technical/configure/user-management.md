@@ -1,3 +1,12 @@
+---
+tags:
+  - Nutzerverwaltung
+  - LDAP
+  - Authentifizierung
+  - OAUTH2
+---
+
+
 # Nutzerverwaltung
 
 OSIRIS funktioniert zurzeit mit drei unterschiedlichen Möglichkeiten der Nutzerverwaltung, die über die `CONFIG.php` eingestellt werden können:
