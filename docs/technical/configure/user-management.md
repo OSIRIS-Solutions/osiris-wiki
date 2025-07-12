@@ -43,6 +43,37 @@ define("LDAP_PASSWORD", "ldap_password");
 define("LDAP_BASEDN", "OU=Users,OU=DSMZ,DC=dsmz,DC=local");
 ```
 
+#### Filtern von Nutzer:innen
+
+Ihr könnt auch festlegen, welche Nutzer:innen aus dem LDAP-Server synchronisiert werden sollen. Dazu könnt ihr den `LDAP_FILTER`-Parameter in der `CONFIG.php` setzen. Zum Beispiel:
+
+```php
+define("LDAP_FILTER", "(objectClass=person)");
+```
+
+Dieser Filter sorgt dafür, dass nur Nutzer:innen mit dem Objektklasse `person` synchronisiert werden. Ihr könnt den Filter anpassen, um andere Kriterien zu verwenden, die für eure Nutzer:innen zutreffen.
+
+Hier sind ein paar Beispiele für häufig verwendete Filter:
+
+```php
+// Nur Nutzer:innen mit der Rolle "Mitarbeiter"
+define("LDAP_FILTER", "(role=employee)");
+// Nur Nutzer:innen, die in der Abteilung "Forschung" arbeiten
+define("LDAP_FILTER", "(department=Forschung)");
+// Nur Nutzer:innen, die in der OU "Mitarbeitende" sind
+define("LDAP_FILTER", "(ou=Mitarbeitende)");
+// Nur Nutzer:innen, die Mitglied einer bestimmten Gruppe sind
+define("LDAP_FILTER", "(memberOf=CN=Forschung,OU=Gruppen,DC=example,DC=com)");
+```
+
+Ihr könnt auch mehrere Filter kombinieren, um komplexere Abfragen zu erstellen. Zum Beispiel:
+
+```php
+define("LDAP_FILTER", "(&(objectClass=person)(role=employee)(department=Forschung))");
+```
+
+Mehr Informationen zu LDAP-Filtern findet ihr in der [LDAP-Dokumentation](https://ldap.com/ldap-filters/).
+
 #### Mögliche Fallstricke
 
 
