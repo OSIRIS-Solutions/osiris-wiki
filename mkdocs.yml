@@ -11,6 +11,7 @@ nav:
     - Changelog: home/news.md
     - Kontakt: home/contact.md
     - Schlagworte: home/tags.md
+    - Konventionen: home/conventions.md
   - Themen:
     - Community: topics/community.md
     - Schnittstellen: topics/interfaces.md
@@ -46,6 +47,20 @@ nav:
   - Nutzer:
     - Einführung: users/index.md
     - Inhalte hinzufügen: users/creating-content.md
+    - Aktivitäten: 
+      - Einführung: users/activities/index.md
+      - Erweiterte Suche: users/activities/advanced-search.md
+    - Projekte:
+      - Einführung: users/projects/index.md
+      # - Projekte erstellen: users/projects/create.md
+      # - Projekte verwalten: users/projects/manage.md
+      # - Projekte suchen: users/projects/search.md
+    - Personen:
+      - Einführung: users/people/index.md
+    - Berichte:
+      - Einführung: users/reporting/index.md
+      - Report-Templates: users/reporting/report-templates.md
+      - Statistiken: users/reporting/statistics.md
   - Blog:
     - blog/index.md
 theme:
@@ -78,6 +93,8 @@ plugins:
   - blog:
       blog_toc: true
   # - awesome-nav
+hooks:
+  - overrides/hooks/shortcodes.py
 extra_css:
   - stylesheets/extra.css
 extra:

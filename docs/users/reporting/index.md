@@ -2,4 +2,4 @@
 status: draft
 ---
 
-# Report-Templates
+# Berichterstattung

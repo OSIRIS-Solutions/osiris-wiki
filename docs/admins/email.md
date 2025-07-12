@@ -1,5 +1,7 @@
 # Email-Einstellungen
 
+<!-- md:version 1.5.0 -->
+
 OSIRIS bietet eine einfache Möglichkeit, E-Mails zu für bestimmte Ereignisse zu versenden, wie z.B. Benachrichtigungen über neue Projekte oder Projektänderungen. 
 
 !!! info "Hinweis"
