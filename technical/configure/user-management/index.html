@@ -1077,6 +1077,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#filtern-von-nutzerinnen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Filtern von Nutzer:innen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#mogliche-fallstricke" class="md-nav__link">
     <span class="md-ellipsis">
       Mögliche Fallstricke
@@ -1412,6 +1421,29 @@
     </span>
   
 
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../admins/email/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Email-Einstellungen
+    
+  </span>
   
 
       </a>
@@ -1936,6 +1968,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#filtern-von-nutzerinnen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Filtern von Nutzer:innen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#mogliche-fallstricke" class="md-nav__link">
     <span class="md-ellipsis">
       Mögliche Fallstricke
@@ -2081,6 +2122,25 @@ OSIRIS kann auch mit Microsoft-SSO (Single Sign-On) verwendet werden. Dabei wird
 </span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>define(&quot;LDAP_PASSWORD&quot;, &quot;ldap_password&quot;);
 </span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>define(&quot;LDAP_BASEDN&quot;, &quot;OU=Users,OU=DSMZ,DC=dsmz,DC=local&quot;);
 </span></code></pre></div>
+<h4 id="filtern-von-nutzerinnen">Filtern von Nutzer:innen</h4>
+<p>Ihr könnt auch festlegen, welche Nutzer:innen aus dem LDAP-Server synchronisiert werden sollen. Dazu könnt ihr den <code>LDAP_FILTER</code>-Parameter in der <code>CONFIG.php</code> setzen. Zum Beispiel:</p>
+<div class="language-php highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="x">define(&quot;LDAP_FILTER&quot;, &quot;(objectClass=person)&quot;);</span>
+</span></code></pre></div>
+<p>Dieser Filter sorgt dafür, dass nur Nutzer:innen mit dem Objektklasse <code>person</code> synchronisiert werden. Ihr könnt den Filter anpassen, um andere Kriterien zu verwenden, die für eure Nutzer:innen zutreffen.</p>
+<p>Hier sind ein paar Beispiele für häufig verwendete Filter:</p>
+<div class="language-php highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="x">// Nur Nutzer:innen mit der Rolle &quot;Mitarbeiter&quot;</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="x">define(&quot;LDAP_FILTER&quot;, &quot;(role=employee)&quot;);</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="x">// Nur Nutzer:innen, die in der Abteilung &quot;Forschung&quot; arbeiten</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="x">define(&quot;LDAP_FILTER&quot;, &quot;(department=Forschung)&quot;);</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="x">// Nur Nutzer:innen, die in der OU &quot;Mitarbeitende&quot; sind</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="x">define(&quot;LDAP_FILTER&quot;, &quot;(ou=Mitarbeitende)&quot;);</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="x">// Nur Nutzer:innen, die Mitglied einer bestimmten Gruppe sind</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="x">define(&quot;LDAP_FILTER&quot;, &quot;(memberOf=CN=Forschung,OU=Gruppen,DC=example,DC=com)&quot;);</span>
+</span></code></pre></div>
+<p>Ihr könnt auch mehrere Filter kombinieren, um komplexere Abfragen zu erstellen. Zum Beispiel:</p>
+<div class="language-php highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="x">define(&quot;LDAP_FILTER&quot;, &quot;(&amp;(objectClass=person)(role=employee)(department=Forschung))&quot;);</span>
+</span></code></pre></div>
+<p>Mehr Informationen zu LDAP-Filtern findet ihr in der <a href="https://ldap.com/ldap-filters/">LDAP-Dokumentation</a>.</p>
 <h4 id="mogliche-fallstricke">Mögliche Fallstricke</h4>
 <p>Es kann zu Problemen kommen, wenn das LDAP-Password ein Zeichen enthält, das als Code interpretiert wird. Das ist zum Beispiel der Fall, wenn das Passwort ein Dollar-Zeichen ($) enthält. In diesem Fall muss das Zeichen mit einem Backslash () escaped werden oder der String mit einfachen Anführungszeichen gesetzt werden. Das Passwort würde dann so aussehen: <code>define("LDAP_PASSWORD", "\$uperSecret");</code> oder <code>define("LDAP_PASSWORD", '$uperSecret');</code>.</p>
 <p>Bei der LDAP-Domain ist entweder eine Domain mit <code>@</code> anzugeben oder eine Base-DN, bei der der Nutzername dann mit <code>%s</code> angegeben werden muss. Das sieht dann so aus:
@@ -2092,20 +2152,20 @@ OSIRIS kann auch mit Microsoft-SSO (Single Sign-On) verwendet werden. Dabei wird
 <p>Wichtig: Diese Attribute können dann nicht mehr in OSIRIS selbst bearbeitet werden. Um die Synchronisierung zu aktivieren, müsst ihr außerdem im Folgenden den CRON-Job aktivieren. Das ist wichtig, damit die Attribute regelmäßig aktualisiert werden.</p>
 <p>Damit OSIRIS die LDAP-Attribute regelmäßig aktualisiert, müsst ihr einen CRON-Job einrichten, der das entsprechende Skript täglich ausführt.</p>
 <p>Öffnet dazu die Crontab eures Systems:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>crontab<span class="w"> </span>-e
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>crontab<span class="w"> </span>-e
 </span></code></pre></div>
 <p>Fügt dann folgende Zeile hinzu, um die Synchronisation täglich um 2:30 Uhr nachts auszuführen:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>30 2 * * * /usr/bin/php /pfad/zu/osiris/jobs/synchronize_users.php &gt;&gt; /var/log/osiris_sync.log 2&gt;&amp;1
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>30 2 * * * /usr/bin/php /pfad/zu/osiris/jobs/synchronize_users.php &gt;&gt; /var/log/osiris_sync.log 2&gt;&amp;1
 </span></code></pre></div>
 <p>Hinweis: Ersetzt <code>/pfad/zu/osiris/</code> durch das Verzeichnis, in dem OSIRIS bei euch installiert ist.</p>
 <p>Ihr könnt den Befehl auch manuell testen:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>php<span class="w"> </span>/pfad/zu/osiris/jobs/synchronize_users.php
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>php<span class="w"> </span>/pfad/zu/osiris/jobs/synchronize_users.php
 </span></code></pre></div>
 <p>So könnt ihr prüfen, ob die Synchronisation korrekt läuft, bevor sie automatisch per CRON gestartet wird.</p>
 <p>Wenn die Synchronisation erfolgreich war, findet ihr genau dort, wo ihr zuvor die Felder definiert habt einen Zeitstempel mit der letzten erfolgreichen Synchronisation.</p>
 <h2 id="nutzerverwaltung-mit-auth-addon">Nutzerverwaltung mit Auth-Addon</h2>
 <p>Um die OSIRIS-eigene Nutzerauthentifizierung zu nutzen, muss nur folgende Einstellung in der <code>CONFIG.php</code> angepasst werden:</p>
-<div class="language-php highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="x">define(&#39;USER_MANAGEMENT&#39;, &#39;AUTH&#39;);</span>
+<div class="language-php highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="x">define(&#39;USER_MANAGEMENT&#39;, &#39;AUTH&#39;);</span>
 </span></code></pre></div>
 <p>Die Nutzer-Authentifizierung findet jetzt über das OSIRIS-Addon statt. LDAP-Konfiguration muss demnach nicht vorgenommen werden.</p>
 <h4 id="migration-der-nutzerverwaltung">Migration der Nutzerverwaltung</h4>
@@ -2114,15 +2174,15 @@ Das führt dazu, dass sich im Nachhinein leicht von Auth auf LDAP migriert werde
 Dadurch weiß das System später noch, welcher Nutzer zu welchem Account gehört.</p>
 <h2 id="nutzerverwaltung-mit-microsoft-sso">Nutzerverwaltung mit Microsoft-SSO</h2>
 <p>OSIRIS kann auch mit Microsoft-SSO (Single Sign-On) verwendet werden. Dabei wird die Authentifizierung über Microsoft Azure Active Directory durchgeführt. Das wird wie folgt konfiguriert:</p>
-<div class="language-php highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="x">define(&#39;USER_MANAGEMENT&#39;, &#39;OAUTH2&#39;);</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="x">// OAUTH user management:</span>
-</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="x">define(&#39;OAUTH&#39;, &#39;Microsoft&#39;);</span>
-</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="x">define(&#39;CLIENT_ID&#39;, &#39;DEINE_CLIENT_ID&#39;);</span>
-</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="x">define(&#39;CLIENT_SECRET&#39;, &#39;DEIN_CLIENT_SECRET&#39;);</span>
-</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="x">define(&#39;REDIRECT_URI&#39;, &#39;http://localhost/login-callback.php&#39;);</span>
-</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="x">define(&#39;AUTHORITY&#39;, &#39;https://login.microsoftonline.com/common&#39;);</span>
-</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="x">define(&#39;SCOPES&#39;, &#39;openid profile email User.Read&#39;);</span>
+<div class="language-php highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="x">define(&#39;USER_MANAGEMENT&#39;, &#39;OAUTH2&#39;);</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="x">// OAUTH user management:</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="x">define(&#39;OAUTH&#39;, &#39;Microsoft&#39;);</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="x">define(&#39;CLIENT_ID&#39;, &#39;DEINE_CLIENT_ID&#39;);</span>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="x">define(&#39;CLIENT_SECRET&#39;, &#39;DEIN_CLIENT_SECRET&#39;);</span>
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="x">define(&#39;REDIRECT_URI&#39;, &#39;http://localhost/login-callback.php&#39;);</span>
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="x">define(&#39;AUTHORITY&#39;, &#39;https://login.microsoftonline.com/common&#39;);</span>
+</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="x">define(&#39;SCOPES&#39;, &#39;openid profile email User.Read&#39;);</span>
 </span></code></pre></div>
 
 
@@ -2146,7 +2206,7 @@ Dadurch weiß das System später noch, welcher Nutzer zu welchem Account gehört
     <span class="md-icon" title="Letztes Update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="27. Juni 2025 14:16:02 UTC">27. Juni 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="12. Juli 2025 14:12:47 UTC">12. Juli 2025</span>
   </span>
 
     
