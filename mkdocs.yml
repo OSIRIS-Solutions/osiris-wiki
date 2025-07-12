@@ -43,6 +43,7 @@ nav:
     - Inhalte verwalten: admins/content.md
     - Nutzeradministration: admins/users.md
     - Rollen und Rechte: admins/roles.md
+		- Links im Footer, Impressum und Datenschutz: admins/legal-and-links.md
     - Forschungsreisen: admins/travel.md
   - Nutzer:
     - Einführung: users/index.md
