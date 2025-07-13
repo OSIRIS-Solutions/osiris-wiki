@@ -1,5 +1,6 @@
 site_name: OSIRIS Wiki
 site_description: OSIRIS ist ein intuitives und offenes Forschungsinformationssystem.
+site_url: https://wiki.osiris-app.de
 repo_url: https://github.com/OSIRIS-Solutions/osiris-wiki
 edit_uri: edit/main/docs/
 repo_name: OSIRIS-Solutions/osiris
