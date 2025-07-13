@@ -51,6 +51,7 @@ nav:
     - Aktivitäten: 
       - Einführung: users/activities/index.md
       - Erweiterte Suche: users/activities/advanced-search.md
+      - Pivot-Tabelle: users/activities/pivot.md
     - Projekte:
       - Einführung: users/projects/index.md
       # - Projekte erstellen: users/projects/create.md
@@ -76,6 +77,7 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.path
+    - navigation.expand
     # - navigation.footer
     - content.tabs.link
     - content.action.edit

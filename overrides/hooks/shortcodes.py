@@ -140,7 +140,7 @@ def _badge_for_feature(text: str, page: Page, files: Files):
 
 # Create badge for plugin
 def _badge_for_plugin(text: str, page: Page, files: Files):
-    icon = ":material-power-plug-outline:"
+    icon = "material-power-plug-outline"
     href = _resolve_path("conventions.md#plugin", page, files)
     return _badge(
         icon = f"[:{icon}:]({href} 'Plugin')",
