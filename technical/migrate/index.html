@@ -2612,21 +2612,21 @@
 <p>OSIRIS lässt sich sehr einfach auf einen anderen Server migrieren. Dazu musst du lediglich die Datenbank und die Dateien sichern und auf dem neuen Server wiederherstellen. Hier sind die Schritte, die du befolgen musst:</p>
 <h2 id="schritt-1-backup">Schritt 1: Backup</h2>
 <p>Dazu benutzt du am das in MongoDB integrierte Backup-Tool wie folgt:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>mongodump<span class="w"> </span>--db<span class="w"> </span>osiris
-</span></code></pre></div>
+<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>mongodump<span class="w"> </span>--db<span class="w"> </span>osiris
+</code></pre></div></td></tr></table></div>
 <p>Dieser Befehl erstellt ein Backup der Datenbank "osiris" in einem Verzeichnis namens "dump" im aktuellen Arbeitsverzeichnis. Falls deine Datenbank anders heißt, ersetze "osiris" durch den entsprechenden Namen.</p>
 <p>Du kannst das Backup auch in einem anderen Verzeichnis speichern, indem du den Parameter "--out" verwendest:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>mongodump<span class="w"> </span>--db<span class="w"> </span>osiris<span class="w"> </span>--out<span class="w"> </span>/path/to/backup
-</span></code></pre></div>
+<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>mongodump<span class="w"> </span>--db<span class="w"> </span>osiris<span class="w"> </span>--out<span class="w"> </span>/path/to/backup
+</code></pre></div></td></tr></table></div>
 <p>Da OSIRIS nicht wirklich "installiert" wird, sondern nur in ein Verzeichnis kopiert wird, kannst du auch einfach das gesamte OSIRIS-Verzeichnis kopieren und auf den neuen Server migrieren.</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>zip<span class="w"> </span>-r<span class="w"> </span>osiris_backup.zip<span class="w"> </span>/path/to/osiris
-</span></code></pre></div>
+<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>zip<span class="w"> </span>-r<span class="w"> </span>osiris_backup.zip<span class="w"> </span>/path/to/osiris
+</code></pre></div></td></tr></table></div>
 <h2 id="schritt-2-osiris-auf-dem-neuen-server-installieren">Schritt 2: OSIRIS auf dem neuen Server installieren</h2>
 <p>Folge dazu der Anleitung zur Installation von OSIRIS. Kopiere danach alle Backup-Dateien in das entsprechende Verzeichnis auf dem neuen Server.</p>
 <h2 id="schritt-3-datenbank-und-dateien-wiederherstellen">Schritt 3: Datenbank und Dateien wiederherstellen</h2>
 <p>Zu guter Letzt kannst du die Datenbank mit folgendem Befehl wiederherstellen:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>mongorestore<span class="w"> </span>--db<span class="w"> </span>osiris<span class="w"> </span>/path/to/backup/dump/osiris
-</span></code></pre></div>
+<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>mongorestore<span class="w"> </span>--db<span class="w"> </span>osiris<span class="w"> </span>/path/to/backup/dump/osiris
+</code></pre></div></td></tr></table></div>
 
 
 

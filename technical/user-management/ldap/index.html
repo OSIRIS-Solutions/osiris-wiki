@@ -2611,33 +2611,47 @@
 <h1 id="nutzerverwaltung-mit-ldap">Nutzerverwaltung mit LDAP</h1>
 <p>OSIRIS funktioniert zurzeit bevorzugt mit <a href="https://www.redhat.com/de/topics/security/what-is-ldap-authentication">LDAP-Authentifizierung</a>, die von den meisten Instituten zur Nutzerverwaltung verwendet wird.</p>
 <p>Die LDAP-Einstellungen müssen ebenfalls in der Configuration angegeben werden. Falls ihr selbst nicht wisst, welche Einstellungen ihr vornehmen müsst, fragt am besten bei eurer IT nach.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>define(&#39;USER_MANAGEMENT&#39;, &#39;LDAP&#39;);
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>define(&quot;LDAP_IP&quot;, &quot;100.10.100.0&quot;);
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>define(&quot;LDAP_PORT&quot;, 389);
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>define(&quot;LDAP_USER&quot;, &quot;osiris&quot;);
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>define(&quot;LDAP_DOMAIN&quot;, &quot;@domain.local&quot;);
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>define(&quot;LDAP_PASSWORD&quot;, &quot;ldap_password&quot;);
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>define(&quot;LDAP_BASEDN&quot;, &quot;OU=Users,OU=DSMZ,DC=dsmz,DC=local&quot;);
-</span></code></pre></div>
+<div class="language-php highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">CONFIG.php</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nb">define</span><span class="p">(</span><span class="s1">&#39;USER_MANAGEMENT&#39;</span><span class="p">,</span> <span class="s1">&#39;LDAP&#39;</span><span class="p">);</span>
+
+<span class="nb">define</span><span class="p">(</span><span class="s2">&quot;LDAP_IP&quot;</span><span class="p">,</span> <span class="s2">&quot;100.10.100.0&quot;</span><span class="p">);</span>
+<span class="nb">define</span><span class="p">(</span><span class="s2">&quot;LDAP_PORT&quot;</span><span class="p">,</span> <span class="mi">389</span><span class="p">);</span>
+<span class="nb">define</span><span class="p">(</span><span class="s2">&quot;LDAP_USER&quot;</span><span class="p">,</span> <span class="s2">&quot;osiris&quot;</span><span class="p">);</span>
+<span class="nb">define</span><span class="p">(</span><span class="s2">&quot;LDAP_DOMAIN&quot;</span><span class="p">,</span> <span class="s2">&quot;@domain.local&quot;</span><span class="p">);</span>
+<span class="nb">define</span><span class="p">(</span><span class="s2">&quot;LDAP_PASSWORD&quot;</span><span class="p">,</span> <span class="s2">&quot;ldap_password&quot;</span><span class="p">);</span>
+<span class="nb">define</span><span class="p">(</span><span class="s2">&quot;LDAP_BASEDN&quot;</span><span class="p">,</span> <span class="s2">&quot;OU=Users,OU=DSMZ,DC=dsmz,DC=local&quot;</span><span class="p">);</span>
+</code></pre></div></td></tr></table></div>
 <h2 id="filtern-von-nutzerinnen">Filtern von Nutzer:innen</h2>
 <p>Ihr könnt auch festlegen, welche Nutzer:innen aus dem LDAP-Server synchronisiert werden sollen. Dazu könnt ihr den <code>LDAP_FILTER</code>-Parameter in der <code>CONFIG.php</code> setzen. Zum Beispiel:</p>
-<div class="language-php highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="x">define(&quot;LDAP_FILTER&quot;, &quot;(objectClass=person)&quot;);</span>
-</span></code></pre></div>
+<div class="language-php highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">CONFIG.php</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nb">define</span><span class="p">(</span><span class="s2">&quot;LDAP_FILTER&quot;</span><span class="p">,</span> <span class="s2">&quot;(objectClass=person)&quot;</span><span class="p">);</span>
+</code></pre></div></td></tr></table></div>
 <p>Dieser Filter sorgt dafür, dass nur Nutzer:innen mit dem Objektklasse <code>person</code> synchronisiert werden. Ihr könnt den Filter anpassen, um andere Kriterien zu verwenden, die für eure Nutzer:innen zutreffen.</p>
 <p>Hier sind ein paar Beispiele für häufig verwendete Filter:</p>
-<div class="language-php highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="x">// Nur Nutzer:innen mit der Rolle &quot;Mitarbeiter&quot;</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="x">define(&quot;LDAP_FILTER&quot;, &quot;(role=employee)&quot;);</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="x">// Nur Nutzer:innen, die in der Abteilung &quot;Forschung&quot; arbeiten</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="x">define(&quot;LDAP_FILTER&quot;, &quot;(department=Forschung)&quot;);</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="x">// Nur Nutzer:innen, die in der OU &quot;Mitarbeitende&quot; sind</span>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="x">define(&quot;LDAP_FILTER&quot;, &quot;(ou=Mitarbeitende)&quot;);</span>
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="x">// Nur Nutzer:innen, die Mitglied einer bestimmten Gruppe sind</span>
-</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="x">define(&quot;LDAP_FILTER&quot;, &quot;(memberOf=CN=Forschung,OU=Gruppen,DC=example,DC=com)&quot;);</span>
-</span></code></pre></div>
+<div class="language-php highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">CONFIG.php</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1">// Nur Nutzer:innen mit der Rolle &quot;Mitarbeiter&quot;</span>
+<span class="nb">define</span><span class="p">(</span><span class="s2">&quot;LDAP_FILTER&quot;</span><span class="p">,</span> <span class="s2">&quot;(role=employee)&quot;</span><span class="p">);</span>
+<span class="c1">// Nur Nutzer:innen, die in der Abteilung &quot;Forschung&quot; arbeiten</span>
+<span class="nb">define</span><span class="p">(</span><span class="s2">&quot;LDAP_FILTER&quot;</span><span class="p">,</span> <span class="s2">&quot;(department=Forschung)&quot;</span><span class="p">);</span>
+<span class="c1">// Nur Nutzer:innen, die in der OU &quot;Mitarbeitende&quot; sind</span>
+<span class="nb">define</span><span class="p">(</span><span class="s2">&quot;LDAP_FILTER&quot;</span><span class="p">,</span> <span class="s2">&quot;(ou=Mitarbeitende)&quot;</span><span class="p">);</span>
+<span class="c1">// Nur Nutzer:innen, die Mitglied einer bestimmten Gruppe sind</span>
+<span class="nb">define</span><span class="p">(</span><span class="s2">&quot;LDAP_FILTER&quot;</span><span class="p">,</span> <span class="s2">&quot;(memberOf=CN=Forschung,OU=Gruppen,DC=example,DC=com)&quot;</span><span class="p">);</span>
+</code></pre></div></td></tr></table></div>
 <p>Ihr könnt auch mehrere Filter kombinieren, um komplexere Abfragen zu erstellen. Zum Beispiel:</p>
-<div class="language-php highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="x">define(&quot;LDAP_FILTER&quot;, &quot;(&amp;(objectClass=person)(role=employee)(department=Forschung))&quot;);</span>
-</span></code></pre></div>
+<div class="language-php highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">CONFIG.php</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nb">define</span><span class="p">(</span><span class="s2">&quot;LDAP_FILTER&quot;</span><span class="p">,</span> <span class="s2">&quot;(&amp;(objectClass=person)(role=employee)(department=Forschung))&quot;</span><span class="p">);</span>
+</code></pre></div></td></tr></table></div>
 <p>Mehr Informationen zu LDAP-Filtern findet ihr in der <a href="https://ldap.com/ldap-filters/">LDAP-Dokumentation</a>.</p>
 <h2 id="mogliche-fallstricke">Mögliche Fallstricke</h2>
 <p>Es kann zu Problemen kommen, wenn das LDAP-Password ein Zeichen enthält, das als Code interpretiert wird. Das ist zum Beispiel der Fall, wenn das Passwort ein Dollar-Zeichen ($) enthält. In diesem Fall muss das Zeichen mit einem Backslash () escaped werden oder der String mit einfachen Anführungszeichen gesetzt werden. Das Passwort würde dann so aussehen: <code>define("LDAP_PASSWORD", "\$uperSecret");</code> oder <code>define("LDAP_PASSWORD", '$uperSecret');</code>.</p>
@@ -2650,15 +2664,15 @@
 <p>Wichtig: Diese Attribute können dann nicht mehr in OSIRIS selbst bearbeitet werden. Um die Synchronisierung zu aktivieren, müsst ihr außerdem im Folgenden den CRON-Job aktivieren. Das ist wichtig, damit die Attribute regelmäßig aktualisiert werden.</p>
 <p>Damit OSIRIS die LDAP-Attribute regelmäßig aktualisiert, müsst ihr einen CRON-Job einrichten, der das entsprechende Skript täglich ausführt.</p>
 <p>Öffnet dazu die Crontab eures Systems:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>crontab<span class="w"> </span>-e
-</span></code></pre></div>
+<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>crontab<span class="w"> </span>-e
+</code></pre></div></td></tr></table></div>
 <p>Fügt dann folgende Zeile hinzu, um die Synchronisation täglich um 2:30 Uhr nachts auszuführen:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>30 2 * * * /usr/bin/php /pfad/zu/osiris/jobs/synchronize_users.php &gt;&gt; /var/log/osiris_sync.log 2&gt;&amp;1
-</span></code></pre></div>
+<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>30 2 * * * /usr/bin/php /pfad/zu/osiris/jobs/synchronize_users.php &gt;&gt; /var/log/osiris_sync.log 2&gt;&amp;1
+</code></pre></div></td></tr></table></div>
 <p>Hinweis: Ersetzt <code>/pfad/zu/osiris/</code> durch das Verzeichnis, in dem OSIRIS bei euch installiert ist.</p>
 <p>Ihr könnt den Befehl auch manuell testen:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>php<span class="w"> </span>/pfad/zu/osiris/jobs/synchronize_users.php
-</span></code></pre></div>
+<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>php<span class="w"> </span>/pfad/zu/osiris/jobs/synchronize_users.php
+</code></pre></div></td></tr></table></div>
 <p>So könnt ihr prüfen, ob die Synchronisation korrekt läuft, bevor sie automatisch per CRON gestartet wird.</p>
 <p>Wenn die Synchronisation erfolgreich war, findet ihr genau dort, wo ihr zuvor die Felder definiert habt einen Zeitstempel mit der letzten erfolgreichen Synchronisation.</p>
 
@@ -2683,7 +2697,7 @@
     <span class="md-icon" title="Letztes Update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="13. Juli 2025 12:27:26 UTC">13. Juli 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="13. Juli 2025 12:51:00 UTC">13. Juli 2025</span>
   </span>
 
     

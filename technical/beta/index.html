@@ -2644,28 +2644,29 @@
 <p>Im Beta-Branch von OSIRIS befinden sich die neuesten Entwicklungen, die noch nicht in der stabilen Version enthalten sind. Dieser Branch wird regelmäßig aktualisiert und enthält neue Features, Bugfixes und Verbesserungen, sobald sie bereit sind. Die Nutzung des Beta-Branches ist ideal für Nutzer:innen, die die neuesten Funktionen ausprobieren möchten und bereit sind, mögliche Instabilitäten und eventuelle Bugs in Kauf zu nehmen. Sobald eine neue Version stabil ist, wird sie in den Haupt-Branch (main) übernommen. Das kann je nach Funktionsumfang und Testphase unterschiedlich lange dauern.</p>
 <h2 id="1-in-das-projektverzeichnis-wechseln">1.   In das Projektverzeichnis wechseln</h2>
 <p>Öffne ein Terminal (bzw. Bash) und gehe in den Ordner mit dem Repository. In Apache ist dies in der Regel <code>/var/www/html/</code>. Falls du das Repository an einem anderen Ort hast, passe den Pfad entsprechend an:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">cd</span><span class="w"> </span>/var/www/html/
-</span></code></pre></div>
+<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>/var/www/html/
+</code></pre></div></td></tr></table></div>
 <h2 id="2-verfugbare-remote-branches-anzeigen-optional">2.   Verfügbare Remote-Branches anzeigen (optional)</h2>
 <p>Falls du prüfen möchtest, ob beta existiert:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>git<span class="w"> </span>fetch
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>git<span class="w"> </span>branch<span class="w"> </span>-r
-</span></code></pre></div>
+<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>git<span class="w"> </span>fetch
+git<span class="w"> </span>branch<span class="w"> </span>-r
+</code></pre></div></td></tr></table></div>
 <h2 id="3-zum-branch-beta-wechseln">3.   Zum Branch beta wechseln</h2>
 <p>Falls du den Branch noch nicht lokal hast:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>git<span class="w"> </span>checkout<span class="w"> </span>-b<span class="w"> </span>beta<span class="w"> </span>origin/beta
-</span></code></pre></div>
+<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>git<span class="w"> </span>checkout<span class="w"> </span>-b<span class="w"> </span>beta<span class="w"> </span>origin/beta
+</code></pre></div></td></tr></table></div>
 <p>Falls du ihn schon lokal hast:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>git<span class="w"> </span>checkout<span class="w"> </span>beta
-</span></code></pre></div>
+<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>git<span class="w"> </span>checkout<span class="w"> </span>beta
+</code></pre></div></td></tr></table></div>
 <h2 id="4-neuste-anderungen-vom-remote-holen">4.   Neuste Änderungen vom Remote holen</h2>
 <p>Um den aktuellen Stand von origin/beta in dein lokales beta zu holen:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>git<span class="w"> </span>pull
-</span></code></pre></div>
+<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>git<span class="w"> </span>pull
+</code></pre></div></td></tr></table></div>
 <h2 id="5-composer-dependencies-aktualisieren">5. Composer-Dependencies aktualisieren</h2>
 <p>Falls du Composer benutzt, um die Abhängigkeiten zu verwalten, führe den folgenden Befehl aus:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>composer<span class="w"> </span>update
-</span></code></pre></div>
+<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>composer<span class="w"> </span>update
+</code></pre></div></td></tr></table></div>
 <h2 id="6-osiris-aktualisieren">6. OSIRIS aktualisieren</h2>
 <p>Um OSIRIS zu aktualisieren, musst du nur die Webseite aufrufen und ggf. die Datenbankmigration durchführen. Dies geschieht in der Regel automatisch, wenn du die Seite im Browser öffnest. Dies geschieht nur, wenn die Beta bereits einen Versionssprung enthält.</p>
 

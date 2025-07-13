@@ -2576,16 +2576,24 @@
 <p>OSIRIS unterstützt die Nutzerverwaltung über OAuth2, zurzeit allerdings mit Fokus auf Microsoft-SSO (Single Sign-On). Diese Methode ermöglicht eine nahtlose Integration mit Microsoft Azure Active Directory und bietet eine einfache Möglichkeit, Nutzer zu authentifizieren, ohne dass sie separate Anmeldedaten für OSIRIS benötigen. Weitere OAuth-Provider müssen noch implementiert werden, aber die Grundstruktur ist bereits vorhanden.</p>
 <h2 id="nutzerverwaltung-mit-microsoft-sso">Nutzerverwaltung mit Microsoft-SSO</h2>
 <p>OSIRIS kann auch mit Microsoft-SSO (Single Sign-On) verwendet werden. Dabei wird die Authentifizierung über Microsoft Azure Active Directory durchgeführt. Das wird wie folgt konfiguriert:</p>
-<div class="language-php highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="x">define(&#39;USER_MANAGEMENT&#39;, &#39;OAUTH2&#39;);</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="x">// OAUTH user management:</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="x">define(&#39;OAUTH&#39;, &#39;Microsoft&#39;);</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="x">define(&#39;CLIENT_ID&#39;, &#39;DEINE_CLIENT_ID&#39;);</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="x">define(&#39;CLIENT_SECRET&#39;, &#39;DEIN_CLIENT_SECRET&#39;);</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="x">define(&#39;REDIRECT_URI&#39;, &#39;http://localhost/login-callback.php&#39;);</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="x">define(&#39;AUTHORITY&#39;, &#39;https://login.microsoftonline.com/common&#39;);</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="x">define(&#39;SCOPES&#39;, &#39;openid profile email User.Read&#39;);</span>
-</span></code></pre></div>
+<div class="language-php highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nb">define</span><span class="p">(</span><span class="s1">&#39;USER_MANAGEMENT&#39;</span><span class="p">,</span> <span class="s1">&#39;OAUTH2&#39;</span><span class="p">);</span>
+
+<span class="c1">// OAUTH user management:</span>
+<span class="nb">define</span><span class="p">(</span><span class="s1">&#39;OAUTH&#39;</span><span class="p">,</span> <span class="s1">&#39;Microsoft&#39;</span><span class="p">);</span>
+<span class="nb">define</span><span class="p">(</span><span class="s1">&#39;CLIENT_ID&#39;</span><span class="p">,</span> <span class="s1">&#39;DEINE_CLIENT_ID&#39;</span><span class="p">);</span>
+<span class="nb">define</span><span class="p">(</span><span class="s1">&#39;CLIENT_SECRET&#39;</span><span class="p">,</span> <span class="s1">&#39;DEIN_CLIENT_SECRET&#39;</span><span class="p">);</span>
+<span class="nb">define</span><span class="p">(</span><span class="s1">&#39;REDIRECT_URI&#39;</span><span class="p">,</span> <span class="s1">&#39;http://localhost/login-callback.php&#39;</span><span class="p">);</span>
+<span class="nb">define</span><span class="p">(</span><span class="s1">&#39;AUTHORITY&#39;</span><span class="p">,</span> <span class="s1">&#39;https://login.microsoftonline.com/common&#39;</span><span class="p">);</span>
+<span class="nb">define</span><span class="p">(</span><span class="s1">&#39;SCOPES&#39;</span><span class="p">,</span> <span class="s1">&#39;openid profile email User.Read&#39;</span><span class="p">);</span>
+</code></pre></div></td></tr></table></div>
 
 
 

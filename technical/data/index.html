@@ -2607,8 +2607,8 @@
 <p>Es ist möglich, ohne großen Aufwand Altdaten in OSIRIS zu importieren. Um OSIRIS auf den Import vorzubereiten, müssen jedoch erst ein paar Installationsschritte und Konfigurationen durchgeführt werden. Am besten haltet ihr euch dafür an die Anleitung zur  <a href="../configure/workflows/">Einrichtung der Workflows</a>. Ihr müsst dabei das generelle Setup sowie die Vorbereitung des Queue-Workflows abarbeiten (inklusive der Konfiguration), bis zu dem Punkt, an dem steht, dass ihr bereit für den Altdaten-Import seid. Dann kehrt hierher zurück, um mit dem Import der Altdaten fortzufahren.</p>
 <p>Mit dem folgenden Script werden alle Altdaten aus OpenAlex direkt in eure Datenbank importiert. Warum das eine tolle Idee ist, lest ihr am besten <a href="https://openalex.org/about">hier</a>.
 Das Script zum Import der Altdaten wird mit folgendem Aufruf gestartet:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>python<span class="w"> </span>jobs/import_data.py
-</span></code></pre></div>
+<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>python<span class="w"> </span>jobs/import_data.py
+</code></pre></div></td></tr></table></div>
 <p>Wenn das Skript erfolgreich ausgeführt wurde, dann müssten jetzt DOIs erscheinen, die nacheinander in die Datenbank eingepflegt werden.
 Je nachdem, wie viele Altdaten importiert werden, kann dieser Prozess eine ganze Weile dauern.</p>
 <h2 id="variante-2-altdaten-uber-eine-liste-von-dois-importieren">Variante 2: Altdaten über eine Liste von DOIs importieren</h2>
@@ -2620,8 +2620,8 @@ Dazu habe ich euch ein <a href="https://github.com/JKoblitz/osiris/blob/master/j
 <li>Falls eure Datei anders heißt oder woanders gespeichert ist, müsst ihr den Pfad in der <code>import_doi.py</code> anpassen.</li>
 <li>Das wars eigentlich auch schon. Jetzt nur noch folgenden Befehl in der Kommandozeile ausführen und ab geht die Post:</li>
 </ol>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>python<span class="w"> </span>jobs/import_doi.py
-</span></code></pre></div>
+<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>python<span class="w"> </span>jobs/import_doi.py
+</code></pre></div></td></tr></table></div>
 <div class="admonition info">
 <p class="admonition-title">Anmerkung</p>
 <p>Vorhandene Einträge, deren DOI bereits in der Datenbank hinterlegt ist, werden nicht noch einmal hinzugefügt. Dies kann auch nicht umgangen werden, denn es führt dazu, dass ein Skript, sollte es abgebrochen sein, ohne Änderungen noch mal ausgeführt werden kann.</p>

@@ -65,3 +65,15 @@
   border-left: 1px solid var(--md-default-fg-color--lightest);
   margin-left: 0.4rem;
 }
+
+
+/* Codeblock title */
+.highlighttable span.filename {
+    font-size: 12px;
+    text-align: right;
+    background: none;
+    margin: 0;
+    padding: 0 10px;
+    font-weight: 500;
+    color: var(--md-default-fg-color--light);
+}

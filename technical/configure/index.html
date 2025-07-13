@@ -2648,11 +2648,11 @@ Per Default kann dort nur ein Admin angegeben werden, dieser kann aber durch Bea
 <p>Die Variable <code>ROOTPATH</code> definiert, in welchem Unterordner euer Projekt wohnt. Sollte sich das Projekt wie oben angewiesen im Stammordner befinden, muss die Variable leer bleiben.</p>
 <h3 id="osiris-in-einem-unterordner">OSIRIS in einem Unterordner</h3>
 <p>Wenn euer Projekt in einem Unterordner angelegt werden soll, müsst ihr diese Information an zwei stellen verändern. Nehmen wir im folgenden Beispiel mal an, das System wird im Unterordner <code>osiris</code> installiert. Einmal müsst ihr in der <code>CONFIG.php</code> die folgende Zeile anpassen:</p>
-<div class="language-php highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="x">define(&#39;ROOTPATH&#39;, &#39;/osiris&#39;);</span>
-</span></code></pre></div>
+<div class="language-php highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nb">define</span><span class="p">(</span><span class="s1">&#39;ROOTPATH&#39;</span><span class="p">,</span> <span class="s1">&#39;/osiris&#39;</span><span class="p">);</span>
+</code></pre></div></td></tr></table></div>
 <p>Außerdem müsst ihr den Pfad auch in der <code>.htaccess</code>-Datei anpassen:</p>
-<div class="language-apache highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">RewriteBase</span><span class="w"> </span><span class="sx">/osiris</span>
-</span></code></pre></div>
+<div class="language-apache highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nb">RewriteBase</span><span class="w"> </span><span class="sx">/osiris</span>
+</code></pre></div></td></tr></table></div>
 
 
 

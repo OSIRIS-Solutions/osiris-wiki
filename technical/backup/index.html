@@ -2516,18 +2516,18 @@
 
 <h1 id="backup">Backup</h1>
 <p>Um die Datenbank komplett zu speichern, benutzt du am das in MongoDB integrierte Backup-Tool wie folgt:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>mongodump<span class="w"> </span>--db<span class="w"> </span>osiris
-</span></code></pre></div>
+<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>mongodump<span class="w"> </span>--db<span class="w"> </span>osiris
+</code></pre></div></td></tr></table></div>
 <p>Dieser Befehl erstellt ein Backup der Datenbank "osiris" in einem Verzeichnis namens "dump" im aktuellen Arbeitsverzeichnis. Falls deine Datenbank anders heißt, ersetze "osiris" durch den entsprechenden Namen.</p>
 <p>Du kannst das Backup auch in einem anderen Verzeichnis speichern, indem du den Parameter "--out" verwendest:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>mongodump<span class="w"> </span>--db<span class="w"> </span>osiris<span class="w"> </span>--out<span class="w"> </span>/path/to/backup
-</span></code></pre></div>
+<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>mongodump<span class="w"> </span>--db<span class="w"> </span>osiris<span class="w"> </span>--out<span class="w"> </span>/path/to/backup
+</code></pre></div></td></tr></table></div>
 <p>Da OSIRIS nicht wirklich "installiert" wird, sondern nur in ein Verzeichnis kopiert wird, kannst du auch einfach das gesamte OSIRIS-Verzeichnis kopieren und auf den neuen Server migrieren.</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>zip<span class="w"> </span>-r<span class="w"> </span>osiris_backup.zip<span class="w"> </span>/path/to/osiris
-</span></code></pre></div>
+<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>zip<span class="w"> </span>-r<span class="w"> </span>osiris_backup.zip<span class="w"> </span>/path/to/osiris
+</code></pre></div></td></tr></table></div>
 <p>Alternativ kannst du auch nur die wichtigen Dateien sichern, das sind die Konfigurationsdateien und die von Nutzenden hochgeladenen Dateien. Letzte befinden sich im Verzeichnis <code>/uploads</code>. Du kannst diese Dateien einfach kopieren:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>zip<span class="w"> </span>-r<span class="w"> </span>osiris_partial_backup.zip<span class="w"> </span>/path/to/osiris/CONFIG.php<span class="w"> </span>/path/to/osiris/uploads
-</span></code></pre></div>
+<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>zip<span class="w"> </span>-r<span class="w"> </span>osiris_partial_backup.zip<span class="w"> </span>/path/to/osiris/CONFIG.php<span class="w"> </span>/path/to/osiris/uploads
+</code></pre></div></td></tr></table></div>
 <p>Falls eure Nutzerbilder nicht in der Datenbank gespeichert werden (eine Frage der Einstellung), dann solltest du auch das Verzeichnis <code>/img/users</code> sichern.</p>
 
 

@@ -2570,8 +2570,8 @@
 <p>Für den Fall, dass etwas schief laufen sollte, sammle ich hier ein paar Tipps, die mir selbst oder anderen Nutzern schon weitergeholfen haben.</p>
 <h3 id="anscheinend-kann-osiris-keine-verbindung-zu-mongodb-aufbauen-ich-bekomme-den-fehler-no-suitable-servers-found">Anscheinend kann OSIRIS keine Verbindung zu MongoDB aufbauen. Ich bekomme den Fehler <code>No suitable servers found</code>.</h3>
 <p>Bei mir lag das an der Kommunikation von MongoDB über http. Im Detail scheint die SELinux-Policy MongoDB blockiert zu haben. Folgender Befehl hat das Problem bei mir gelöst:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>setsebool<span class="w"> </span>-P<span class="w"> </span>httpd_can_network_connect<span class="w"> </span>on
-</span></code></pre></div>
+<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>setsebool<span class="w"> </span>-P<span class="w"> </span>httpd_can_network_connect<span class="w"> </span>on
+</code></pre></div></td></tr></table></div>
 
 
 

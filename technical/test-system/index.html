@@ -2699,64 +2699,69 @@
 <p>Hier sind die Schritte, um ein Testsystem für OSIRIS einzurichten.</p>
 <h3 id="1-klonen-des-produktivsystems">1. Klonen des Produktivsystems</h3>
 <p>Zunächst musst du eine Kopie des Produktivsystems erstellen. Dies kann durch einfaches Kopieren der Verzeichnisse und Dateien erfolgen.</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>cp<span class="w"> </span>-r<span class="w"> </span>/path/to/production<span class="w"> </span>/path/to/production/test
-</span></code></pre></div>
+<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>cp<span class="w"> </span>-r<span class="w"> </span>/path/to/production<span class="w"> </span>/path/to/production/test
+</code></pre></div></td></tr></table></div>
 <h3 id="2-datenbank-kopieren-optional">2. Datenbank kopieren (optional)</h3>
 <p>Falls die Datenbank für das Testsystem am Anfang die gleichen Daten wie das Produktivsystem haben soll, kannst du ein Backup der Datenbank erstellen und diese in eine neue Testdatenbank importieren. Dies ist optional, aber empfohlen, um realistische Tests durchzuführen.</p>
 <p>Hier muss der Pfad zum Backup und ggf. der Name der Datenbank angepasst werden:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>mongodump<span class="w"> </span>--db<span class="w"> </span>osiris<span class="w"> </span>--out<span class="w"> </span>/path/to/backup
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>mongorestore<span class="w"> </span>--db<span class="w"> </span>osiris_test<span class="w"> </span>/path/to/backup/osiris
-</span></code></pre></div>
+<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>mongodump<span class="w"> </span>--db<span class="w"> </span>osiris<span class="w"> </span>--out<span class="w"> </span>/path/to/backup
+mongorestore<span class="w"> </span>--db<span class="w"> </span>osiris_test<span class="w"> </span>/path/to/backup/osiris
+</code></pre></div></td></tr></table></div>
 <p>Das könnte beispielsweise so aussehen, wenn du das Backup in deinem Home-Verzeichnis speichern möchtest:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>mongodump<span class="w"> </span>--db<span class="w"> </span>osiris<span class="w"> </span>--out<span class="w"> </span>~/backup
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>mongorestore<span class="w"> </span>--db<span class="w"> </span>osiris_test<span class="w"> </span>~/backup/osiris
-</span></code></pre></div>
+<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>mongodump<span class="w"> </span>--db<span class="w"> </span>osiris<span class="w"> </span>--out<span class="w"> </span>~/backup
+mongorestore<span class="w"> </span>--db<span class="w"> </span>osiris_test<span class="w"> </span>~/backup/osiris
+</code></pre></div></td></tr></table></div>
 <h3 id="3-htaccess-dateien-anpassen">3. .htaccess-Dateien anpassen</h3>
 <p>Zuerst musst du sicherstellen, dass der neue Testordner beim Rewrite von Apache ausgelassen wird. Ansonsten wird OSIRIS deine Testseite nicht korrekt laden sondern nur einen <code>404</code>-Fehler anzeigen.</p>
 <p>Öffne die <code>.htaccess</code>-Datei im Hauptverzeichnis des <strong>Produktivsystems</strong>:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>nano<span class="w"> </span>/path/to/production/.htaccess
-</span></code></pre></div>
+<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>nano<span class="w"> </span>/path/to/production/.htaccess
+</code></pre></div></td></tr></table></div>
 <p>Hier musst du die <code>RewriteRule</code>-Direktive anpassen, um das Testsystem auszuschließen. Füge eine neue Zeile hinzu, die den Testordner ausschließt (neu ist nur <code>|test</code>):</p>
-<div class="language-apache highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nb">RewriteRule</span><span class="w"> </span>^(css|img|js|uploads|settings.json|manifest.json|test)($|/)<span class="w"> </span>-<span class="w"> </span>[L]
-</span></code></pre></div>
+<div class="language-apache highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nb">RewriteRule</span><span class="w"> </span>^(css|img|js|uploads|settings.json|manifest.json|test)($|/)<span class="w"> </span>-<span class="w"> </span>[L]
+</code></pre></div></td></tr></table></div>
 <p>Als nächstes müssen wir sicherstellen, dass das Testsystem korrekt funktioniert. Dazu müssen wir die <code>.htaccess</code>-Datei im Testverzeichnis anpassen. Öffne die <code>.htaccess</code>-Datei im Testverzeichnis:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>nano<span class="w"> </span>/path/to/production/test/.htaccess
-</span></code></pre></div>
+<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>nano<span class="w"> </span>/path/to/production/test/.htaccess
+</code></pre></div></td></tr></table></div>
 <p>Ändere die <code>RewriteBase</code>-Direktive, um auf das Testsystem zu verweisen.</p>
-<div class="language-apache highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nb">RewriteBase</span><span class="w"> </span><span class="sx">/test</span>
-</span></code></pre></div>
+<div class="language-apache highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nb">RewriteBase</span><span class="w"> </span><span class="sx">/test</span>
+</code></pre></div></td></tr></table></div>
 <h3 id="4-konfiguration-anpassen">4. Konfiguration anpassen</h3>
 <p>Den Pfad zum Testsystem musst du außerdem in der Konfigurationsdatei anpassen. Öffne die Konfigurationsdatei des Testsystems:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>nano<span class="w"> </span>/path/to/production/test/CONFIG.php
-</span></code></pre></div>
+<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>nano<span class="w"> </span>/path/to/production/test/CONFIG.php
+</code></pre></div></td></tr></table></div>
 <p>Hier musst du die <code>ROOTPATH</code>-Konstante anpassen, damit sie auf das Testsystem verweist:</p>
-<div class="language-php highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="x">define(&#39;ROOTPATH&#39;, &#39;/test&#39;);</span>
-</span></code></pre></div>
+<div class="language-php highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nb">define</span><span class="p">(</span><span class="s1">&#39;ROOTPATH&#39;</span><span class="p">,</span> <span class="s1">&#39;/test&#39;</span><span class="p">);</span>
+</code></pre></div></td></tr></table></div>
 <p>Vergiss nicht, auch die <code>DB_NAME</code>-Konstante anzupassen, damit sie auf die Testdatenbank verweist:</p>
-<div class="language-php highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="x">define(&#39;DB_NAME&#39;, &#39;osiris_test&#39;);</span>
-</span></code></pre></div>
+<div class="language-php highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nb">define</span><span class="p">(</span><span class="s1">&#39;DB_NAME&#39;</span><span class="p">,</span> <span class="s1">&#39;osiris_test&#39;</span><span class="p">);</span>
+</code></pre></div></td></tr></table></div>
 <p>Ich empfehle außerdem auf dem Testsystem die Konstante <code>LIVE</code> auf <code>false</code> zu setzen. Dadurch erschreint oben direkt unter dem Logo ein Hinweis, dass es sich um das Testsystem handelt. Das hilft, Verwechslungen zu vermeiden.</p>
-<div class="language-php highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="x">define(&#39;LIVE&#39;, false);</span>
-</span></code></pre></div>
+<div class="language-php highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nb">define</span><span class="p">(</span><span class="s1">&#39;LIVE&#39;</span><span class="p">,</span> <span class="k">false</span><span class="p">);</span>
+</code></pre></div></td></tr></table></div>
 <h3 id="5-das-testsystem-testen">5. Das Testsystem testen</h3>
 <p>Jetzt solltest du in der Lage sein, auf das Testsystem zuzugreifen, indem du die URL deines Servers gefolgt von <code>/test</code> aufrufst:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>http://&lt;your-osiris-server&gt;/test
-</span></code></pre></div>
+<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>http://&lt;your-osiris-server&gt;/test
+</code></pre></div></td></tr></table></div>
 <p>Wenn alles korrekt eingerichtet ist, solltest du die Testversion von OSIRIS sehen, die unabhängig von deinem Produktivsystem funktioniert. Dies kannst du testen, indem du eine neue Aktivität hinzufügst und überprüfst, ob sie nur im Testsystem erscheint und nicht im Produktivsystem.</p>
 <h2 id="sicherheitshinweise">Sicherheitshinweise</h2>
 <p>Da das Testsystem auf dem gleichen Server wie das Produktivsystem läuft, teilen sie sich die sogenannte <em>Session</em>. Das bedeutet, dass du dich im Produktivsystem anmelden kann und dann auch im Testsystem angemeldet bleibst und umgekehrt. Das kann praktisch sein, vor allem, um den Testprozess zu beschleunigen, aber es kann auch zu Verwirrung führen, wenn du nicht aufpasst. </p>
 <p>Wenn du nicht möchtest, dass alle Nutzenden des Produktivsystems auch Zugriff auf das Testsystem haben, kannst du die <code>.htaccess</code>-Datei im Testverzeichnis so anpassen, dass für den Zugriff ein Passwort erforderlich ist. Hier ist ein einfaches Beispiel, wie du das machen kannst:</p>
-<div class="language-apache highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="nb">AuthType</span><span class="w"> </span>Basic
-</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="nb">AuthName</span><span class="w"> </span><span class="s2">&quot;Restricted Area&quot;</span>
-</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="nb">AuthUserFile</span><span class="w"> </span><span class="sx">/path/to/.htpasswd</span>
-</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="nb">Require</span><span class="w"> </span>valid-user
-</span></code></pre></div>
+<div class="language-apache highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nb">AuthType</span><span class="w"> </span>Basic
+<span class="nb">AuthName</span><span class="w"> </span><span class="s2">&quot;Restricted Area&quot;</span>
+<span class="nb">AuthUserFile</span><span class="w"> </span><span class="sx">/path/to/.htpasswd</span>
+<span class="nb">Require</span><span class="w"> </span>valid-user
+</code></pre></div></td></tr></table></div>
 <p>Du musst dann eine <code>.htpasswd</code>-Datei erstellen, die die Benutzernamen und Passwörter enthält. Das kannst du mit dem <code>htpasswd</code>-Befehl tun:</p>
-<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>htpasswd<span class="w"> </span>-c<span class="w"> </span>/path/to/.htpasswd<span class="w"> </span>username
-</span></code></pre></div>
+<p><div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>htpasswd<span class="w"> </span>-c<span class="w"> </span>/path/to/.htpasswd<span class="w"> </span>username
+</code></pre></div></td></tr></table></div>
 Du wirst dann aufgefordert, ein Passwort für den Benutzer festzulegen. Wenn du mehrere Benutzer hinzufügen möchtest, kannst du den <code>-c</code>-Parameter weglassen, um die Datei nicht zu überschreiben:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>htpasswd<span class="w"> </span>/path/to/.htpasswd<span class="w"> </span>anotheruser
-</span></code></pre></div>
+<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>htpasswd<span class="w"> </span>/path/to/.htpasswd<span class="w"> </span>anotheruser
+</code></pre></div></td></tr></table></div>
 
 
 

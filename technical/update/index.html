@@ -2672,28 +2672,32 @@
 <p>Um auf die neueste Version von OSIRIS zu aktualisieren, folge bitte den folgenden Schritten.</p>
 <h2 id="schritt-1-backup">Schritt 1: Backup</h2>
 <p>Bevor du mit dem Upgrade beginnst, solltest du ein Backup deiner Datenbank und deiner Dateien erstellen. Dies ist wichtig, falls etwas schief geht und du auf die vorherige Version zurückgreifen musst. Das Backup sollte auf einem externen Speichergerät gespeichert werden, um sicherzustellen, dass es nicht verloren geht. Dazu benutzt du am das in MongoDB integrierte Backup-Tool wie folgt:</p>
-<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>mongodump<span class="w"> </span>--db<span class="w"> </span>osiris
-</span></code></pre></div>
+<p><div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>mongodump<span class="w"> </span>--db<span class="w"> </span>osiris
+</code></pre></div></td></tr></table></div>
 Dieser Befehl erstellt ein Backup der Datenbank "osiris" in einem Verzeichnis namens "dump" im aktuellen Arbeitsverzeichnis. Falls deine Datenbank anders heißt, ersetze "osiris" durch den entsprechenden Namen.</p>
 <p>Du kannst das Backup auch in einem anderen Verzeichnis speichern, indem du den Parameter "--out" verwendest:</p>
-<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>mongodump<span class="w"> </span>--db<span class="w"> </span>osiris<span class="w"> </span>--out<span class="w"> </span>/path/to/backup
-</span></code></pre></div>
+<p><div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>mongodump<span class="w"> </span>--db<span class="w"> </span>osiris<span class="w"> </span>--out<span class="w"> </span>/path/to/backup
+</code></pre></div></td></tr></table></div>
 Für ein Backup der Dateien kannst du einfach das gesamte OSIRIS-Verzeichnis kopieren und an einem sicheren Ort speichern. Der wichtigste Ordner ist der "uploads"-Ordner, in dem alle Dateien, die von Nutzenden hochgeladen wurden, gespeichert sind. Falls Nutzerfotos nicht in der Datenbank gespeichert werden, solltest du auch den <code>img/users</code>-Ordner sichern.</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>zip<span class="w"> </span>-r<span class="w"> </span>osiris_backup.zip<span class="w"> </span>/path/to/osiris
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="c1"># oder einzelne Ordner</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>zip<span class="w"> </span>-r<span class="w"> </span>uploads_backup.zip<span class="w"> </span>/path/to/osiris/uploads
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>zip<span class="w"> </span>-r<span class="w"> </span>img_users_backup.zip<span class="w"> </span>/path/to/osiris/img/users
-</span></code></pre></div>
+<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>zip<span class="w"> </span>-r<span class="w"> </span>osiris_backup.zip<span class="w"> </span>/path/to/osiris
+
+<span class="c1"># oder einzelne Ordner</span>
+zip<span class="w"> </span>-r<span class="w"> </span>uploads_backup.zip<span class="w"> </span>/path/to/osiris/uploads
+zip<span class="w"> </span>-r<span class="w"> </span>img_users_backup.zip<span class="w"> </span>/path/to/osiris/img/users
+</code></pre></div></td></tr></table></div>
 <h2 id="schritt-2-herunterladen-der-neuesten-version-von-github">Schritt 2: Herunterladen der neuesten Version von GitHub</h2>
 <p>Um die neueste Version von OSIRIS herunterzuladen, kannst du das <a href="https://github.com/OSIRIS-Solutions/osiris">GitHub-Repository</a> verwenden. Navigiere dazu in das Verzeichnis, in dem OSIRIS installiert ist, und führe den folgenden Befehl aus:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>git<span class="w"> </span>pull
-</span></code></pre></div>
+<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>git<span class="w"> </span>pull
+</code></pre></div></td></tr></table></div>
 <p>Dieser Befehl lädt die neueste Version von OSIRIS herunter und aktualisiert dein lokales Repository. Falls es Konflikte gibt, musst du diese manuell lösen, bevor du fortfährst.</p>
 <h2 id="schritt-3-aktualisieren-der-abhangigkeiten-mit-composer">Schritt 3: Aktualisieren der Abhängigkeiten mit Composer</h2>
 <p>Nachdem du die neueste Version von OSIRIS heruntergeladen hast, musst du die Abhängigkeiten aktualisieren. Dazu kannst du Composer verwenden:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>composer<span class="w"> </span>install
-</span></code></pre></div>
+<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>composer<span class="w"> </span>install
+</code></pre></div></td></tr></table></div>
 <p>Dieser Befehl lädt die neuesten Versionen der Abhängigkeiten herunter und installiert sie in deinem Projekt. Falls es Probleme gibt, kannst du den Befehl <code>composer update</code> verwenden, um die Abhängigkeiten zu aktualisieren.</p>
 <h2 id="schritt-4-aktualisieren-der-datenbank-uber-die-web-oberflache">Schritt 4: Aktualisieren der Datenbank über die Web-Oberfläche</h2>
 <p>Nachdem du die Abhängigkeiten aktualisiert hast, kannst du die Datenbank auf die neueste Version migrieren. Dazu musst du die Web-Oberfläche von OSIRIS aufrufen. Dort solttest du jetzt folgende Nachricht sehen:</p>
@@ -2707,8 +2711,8 @@ Für ein Backup der Dateien kannst du einfach das gesamte OSIRIS-Verzeichnis kop
 <p>Nachdem die Migration abgeschlossen ist, solltest du die neueste Version von OSIRIS erfolgreich installiert haben. Du kannst jetzt die Web-Oberfläche von OSIRIS aufrufen und überprüfen, ob alles wie erwartet funktioniert. Falls es Probleme gibt, kannst du das Backup verwenden, um auf die vorherige Version zurückzugreifen.</p>
 <h2 id="falls-etwas-schief-geht">Falls etwas schief geht</h2>
 <p>Falls etwas schief geht und du auf die vorherige Version zurückgreifen musst, kannst du das Backup verwenden, das du im ersten Schritt erstellt hast. Du kannst die Datenbank wiederherstellen, indem du das Backup mit dem folgenden Befehl wiederherstellst:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>mongorestore<span class="w"> </span>--db<span class="w"> </span>osiris<span class="w"> </span>/path/to/backup/dump/osiris
-</span></code></pre></div>
+<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>mongorestore<span class="w"> </span>--db<span class="w"> </span>osiris<span class="w"> </span>/path/to/backup/dump/osiris
+</code></pre></div></td></tr></table></div>
 <p>Falls du die Dateien wiederherstellen musst, kannst du das Backup entpacken und die Dateien in das OSIRIS-Verzeichnis kopieren. Stelle sicher, dass du den <code>uploads</code>-Ordner und den <code>img/users</code>-Ordner wiederherstellst, falls du sie gesichert hast.</p>
 
 

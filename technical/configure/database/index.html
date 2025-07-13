@@ -2516,9 +2516,10 @@
 
 <h1 id="datenbank-verbindung">Datenbank-Verbindung</h1>
 <p>Die Datenbank-Verbindung muss ebenfalls in der CONFIG-Datei angegeben werden. Um gegebenenfalls Servereinstellungen und Nutzernamen angeben zu können, wird direkt der Verbindungsstring übergeben. Wenn ihr MongoDB mit den Standardeinstellungen in der gleichen VM installiert habt, sollten die Voreinstellungen funktionieren:</p>
-<div class="language-php highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="x">define(&quot;DB_NAME&quot;, &quot;osiris&quot;);</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="x">define(&quot;DB_STRING&quot;, &quot;mongodb://localhost:27017/&quot; . DB_NAME . &quot;?retryWrites=true&amp;w=majority&quot;);</span>
-</span></code></pre></div>
+<div class="language-php highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nb">define</span><span class="p">(</span><span class="s2">&quot;DB_NAME&quot;</span><span class="p">,</span> <span class="s2">&quot;osiris&quot;</span><span class="p">);</span>
+<span class="nb">define</span><span class="p">(</span><span class="s2">&quot;DB_STRING&quot;</span><span class="p">,</span> <span class="s2">&quot;mongodb://localhost:27017/&quot;</span> <span class="o">.</span> <span class="nx">DB_NAME</span> <span class="o">.</span> <span class="s2">&quot;?retryWrites=true&amp;w=majority&quot;</span><span class="p">);</span>
+</code></pre></div></td></tr></table></div>
 <p>Mehr über die Verbindung mit dem Server könnt ihr direkt in der <a href="https://www.mongodb.com/docs/php-library/current/tutorial/connecting/">MongoDB-Dokumentation</a> nachlesen.</p>
 
 
