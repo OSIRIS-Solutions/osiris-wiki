@@ -28,8 +28,12 @@ nav:
     - Konfiguration:
       - Generelle Einstellungen: technical/configure/index.md
       - Datenbank: technical/configure/database.md
-      - Nutzermanagement: technical/configure/user-management.md
       - Workflows und Jobs: technical/configure/workflows.md
+    - Nutzerverwaltung:
+      - Nutzerverwaltung: technical/user-management/index.md
+      - LDAP: technical/user-management/ldap.md
+      - Auth-Addon: technical/user-management/auth.md
+      - OAuth2: technical/user-management/oauth2.md
     - Backup: technical/backup.md
     - Altdaten: technical/data.md
     - Migrieren: technical/migrate.md
