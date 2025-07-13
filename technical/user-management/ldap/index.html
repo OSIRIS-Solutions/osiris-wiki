@@ -11,10 +11,10 @@
       
       
       
-        <link rel="prev" href="../database/">
+        <link rel="prev" href="../">
       
       
-        <link rel="next" href="../workflows/">
+        <link rel="next" href="../auth/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.ico">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Nutzermanagement - OSIRIS Wiki</title>
+        <title>LDAP - OSIRIS Wiki</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#nutzerverwaltung" class="md-skip">
+        <a href="#nutzerverwaltung-mit-ldap" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -101,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Nutzermanagement
+              LDAP
             
           </span>
         </div>
@@ -954,8 +954,6 @@
                 
   
   
-    
-  
   
   
     
@@ -966,11 +964,13 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_3" >
         
           
           <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
@@ -986,7 +986,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_3">
             <span class="md-nav__icon md-icon"></span>
             Konfiguration
@@ -1000,7 +1000,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../configure/" class="md-nav__link">
         
   
   
@@ -1023,12 +1023,109 @@
   
   
     <li class="md-nav__item">
-      <a href="../database/" class="md-nav__link">
+      <a href="../../configure/database/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     Datenbank
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../configure/workflows/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Workflows und Jobs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Nutzerverwaltung
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            Nutzerverwaltung
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Nutzerverwaltung
     
   </span>
   
@@ -1060,7 +1157,7 @@
   
   
   <span class="md-ellipsis">
-    Nutzermanagement
+    LDAP
     
   </span>
   
@@ -1073,7 +1170,7 @@
   
   
   <span class="md-ellipsis">
-    Nutzermanagement
+    LDAP
     
   </span>
   
@@ -1096,16 +1193,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#nutzerverwaltung-mit-ldap" class="md-nav__link">
-    <span class="md-ellipsis">
-      Nutzerverwaltung mit LDAP
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Nutzerverwaltung mit LDAP">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#filtern-von-nutzerinnen" class="md-nav__link">
     <span class="md-ellipsis">
       Filtern von Nutzer:innen
@@ -1113,8 +1200,8 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#mogliche-fallstricke" class="md-nav__link">
     <span class="md-ellipsis">
       Mögliche Fallstricke
@@ -1122,49 +1209,11 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#synchronisation-der-nutzerattribute" class="md-nav__link">
     <span class="md-ellipsis">
       Synchronisation der Nutzerattribute
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#nutzerverwaltung-mit-auth-addon" class="md-nav__link">
-    <span class="md-ellipsis">
-      Nutzerverwaltung mit Auth-Addon
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Nutzerverwaltung mit Auth-Addon">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#migration-der-nutzerverwaltung" class="md-nav__link">
-    <span class="md-ellipsis">
-      Migration der Nutzerverwaltung
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#nutzerverwaltung-mit-microsoft-sso" class="md-nav__link">
-    <span class="md-ellipsis">
-      Nutzerverwaltung mit Microsoft-SSO
     </span>
   </a>
   
@@ -1186,12 +1235,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../workflows/" class="md-nav__link">
+      <a href="../auth/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Workflows und Jobs
+    Auth-Addon
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../oauth2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    OAuth2
     
   </span>
   
@@ -2456,16 +2528,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#nutzerverwaltung-mit-ldap" class="md-nav__link">
-    <span class="md-ellipsis">
-      Nutzerverwaltung mit LDAP
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Nutzerverwaltung mit LDAP">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#filtern-von-nutzerinnen" class="md-nav__link">
     <span class="md-ellipsis">
       Filtern von Nutzer:innen
@@ -2473,8 +2535,8 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#mogliche-fallstricke" class="md-nav__link">
     <span class="md-ellipsis">
       Mögliche Fallstricke
@@ -2482,49 +2544,11 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#synchronisation-der-nutzerattribute" class="md-nav__link">
     <span class="md-ellipsis">
       Synchronisation der Nutzerattribute
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#nutzerverwaltung-mit-auth-addon" class="md-nav__link">
-    <span class="md-ellipsis">
-      Nutzerverwaltung mit Auth-Addon
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Nutzerverwaltung mit Auth-Addon">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#migration-der-nutzerverwaltung" class="md-nav__link">
-    <span class="md-ellipsis">
-      Migration der Nutzerverwaltung
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#nutzerverwaltung-mit-microsoft-sso" class="md-nav__link">
-    <span class="md-ellipsis">
-      Nutzerverwaltung mit Microsoft-SSO
     </span>
   </a>
   
@@ -2564,17 +2588,11 @@
         <a href="../../../home/tags/#tag:nutzerverwaltung" class="md-tag">Nutzerverwaltung</a>
       
     
-      
-      
-      
-        <a href="../../../home/tags/#tag:oauth2" class="md-tag">OAUTH2</a>
-      
-    
   </nav>
 
 
   
-    <a href="https://github.com/OSIRIS-Solutions/osiris-wiki/edit/main/docs/technical/configure/user-management.md" title="Seite editieren" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/OSIRIS-Solutions/osiris-wiki/edit/main/docs/technical/user-management/ldap.md" title="Seite editieren" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -2583,32 +2601,14 @@
     
       
     
-    <a href="https://github.com/OSIRIS-Solutions/osiris-wiki/raw/main/docs/technical/configure/user-management.md" title="Quellcode der Seite anzeigen" class="md-content__button md-icon">
+    <a href="https://github.com/OSIRIS-Solutions/osiris-wiki/raw/main/docs/technical/user-management/ldap.md" title="Quellcode der Seite anzeigen" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
     </a>
   
 
 
-<h1 id="nutzerverwaltung">Nutzerverwaltung</h1>
-<p>OSIRIS funktioniert zurzeit mit drei unterschiedlichen Möglichkeiten der Nutzerverwaltung, die über die <code>CONFIG.php</code> eingestellt werden können:</p>
-<dl>
-<dt><code>LDAP</code> </dt>
-<dd>
-<p><strong>LDAP</strong>: über ein Active Directory werden die Nutzer zentral verwaltet und mittels <a href="https://www.redhat.com/de/topics/security/what-is-ldap-authentication">LDAP-Authentifizierung</a> werden die Daten an OSIRIS weitergegeben. Falls es euch möglich ist, solltet ihr diese Einstellung verwenden, da sie einerseits Arbeit spart (Nutzer müssen nicht manuell angelegt werden) und andererseits auch mehr Sicherheit bietet.</p>
-</dd>
-<dt><code>AUTH</code> </dt>
-<dd>
-<p><strong>Auth-Addon</strong>:
-OSIRIS hat ein mitgeliefertes Addon zur Nutzer-Authentifizierung. Nutzer können sich dabei selbst einen Account erstellen. Dies kann aber in den Einstellungen (ab Version 1.5.0) deaktiviert werden, sodass Accounts nur noch zentral durch Admins angelegt werden können.</p>
-</dd>
-<dt><code>OAUTH2</code> </dt>
-<dd>
-<p><strong>Microsoft-SSO</strong>:
-OSIRIS kann auch mit Microsoft-SSO (Single Sign-On) verwendet werden. Dabei wird die Authentifizierung über Microsoft Azure Active Directory durchgeführt. Diese Option ist besonders nützlich, wenn ihr bereits Microsoft 365 oder andere Microsoft-Dienste nutzt und eine nahtlose Integration wünscht. In Zukunft wird es auch noch weitere OAuth-Provider geben, die OSIRIS unterstützen wird.</p>
-</dd>
-</dl>
-<h2 id="nutzerverwaltung-mit-ldap">Nutzerverwaltung mit LDAP</h2>
+<h1 id="nutzerverwaltung-mit-ldap">Nutzerverwaltung mit LDAP</h1>
 <p>OSIRIS funktioniert zurzeit bevorzugt mit <a href="https://www.redhat.com/de/topics/security/what-is-ldap-authentication">LDAP-Authentifizierung</a>, die von den meisten Instituten zur Nutzerverwaltung verwendet wird.</p>
 <p>Die LDAP-Einstellungen müssen ebenfalls in der Configuration angegeben werden. Falls ihr selbst nicht wisst, welche Einstellungen ihr vornehmen müsst, fragt am besten bei eurer IT nach.</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>define(&#39;USER_MANAGEMENT&#39;, &#39;LDAP&#39;);
@@ -2620,7 +2620,7 @@ OSIRIS kann auch mit Microsoft-SSO (Single Sign-On) verwendet werden. Dabei wird
 </span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>define(&quot;LDAP_PASSWORD&quot;, &quot;ldap_password&quot;);
 </span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>define(&quot;LDAP_BASEDN&quot;, &quot;OU=Users,OU=DSMZ,DC=dsmz,DC=local&quot;);
 </span></code></pre></div>
-<h4 id="filtern-von-nutzerinnen">Filtern von Nutzer:innen</h4>
+<h2 id="filtern-von-nutzerinnen">Filtern von Nutzer:innen</h2>
 <p>Ihr könnt auch festlegen, welche Nutzer:innen aus dem LDAP-Server synchronisiert werden sollen. Dazu könnt ihr den <code>LDAP_FILTER</code>-Parameter in der <code>CONFIG.php</code> setzen. Zum Beispiel:</p>
 <div class="language-php highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="x">define(&quot;LDAP_FILTER&quot;, &quot;(objectClass=person)&quot;);</span>
 </span></code></pre></div>
@@ -2639,11 +2639,11 @@ OSIRIS kann auch mit Microsoft-SSO (Single Sign-On) verwendet werden. Dabei wird
 <div class="language-php highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="x">define(&quot;LDAP_FILTER&quot;, &quot;(&amp;(objectClass=person)(role=employee)(department=Forschung))&quot;);</span>
 </span></code></pre></div>
 <p>Mehr Informationen zu LDAP-Filtern findet ihr in der <a href="https://ldap.com/ldap-filters/">LDAP-Dokumentation</a>.</p>
-<h4 id="mogliche-fallstricke">Mögliche Fallstricke</h4>
+<h2 id="mogliche-fallstricke">Mögliche Fallstricke</h2>
 <p>Es kann zu Problemen kommen, wenn das LDAP-Password ein Zeichen enthält, das als Code interpretiert wird. Das ist zum Beispiel der Fall, wenn das Passwort ein Dollar-Zeichen ($) enthält. In diesem Fall muss das Zeichen mit einem Backslash () escaped werden oder der String mit einfachen Anführungszeichen gesetzt werden. Das Passwort würde dann so aussehen: <code>define("LDAP_PASSWORD", "\$uperSecret");</code> oder <code>define("LDAP_PASSWORD", '$uperSecret');</code>.</p>
 <p>Bei der LDAP-Domain ist entweder eine Domain mit <code>@</code> anzugeben oder eine Base-DN, bei der der Nutzername dann mit <code>%s</code> angegeben werden muss. Das sieht dann so aus:
 <code>define("LDAP_DOMAIN", "uid=%s,ou=people,dc=stark,dc=com");</code></p>
-<h4 id="synchronisation-der-nutzerattribute">Synchronisation der Nutzerattribute</h4>
+<h2 id="synchronisation-der-nutzerattribute">Synchronisation der Nutzerattribute</h2>
 <p>Dieses Feature ist nur für die Synchronisation mit LDAP verfügbar.</p>
 <p>Im Admin-Bereich kann man in den Generellen Einstellungen unter dem Reiter "Mitarbeitende" Attribute definieren, die über LDAP synchronisiert werden sollen. Ihr gebt hier für jedes Feld den genauen Namen an, der im LDAP-Server hinterlegt ist. Wenn ihr auf "Speichern und Vorschau zeigen" klickt, zeigt OSIRIS euch eine Tabelle mit allen Nutzer:innen an und ihr könnt überprüfen, ob die Attribute korrekt ausgelesen werden.</p>
 <p>Ab Version 1.5.0 findet ihr die Einstellungen zur Synchronisation im neuen Bereich "Inhalte" &gt; "Personen" &gt; "LDAP-Attribute". Die Einstellungen sind die gleichen wie zuvor, nur dass sie jetzt in einem eigenen Bereich zu finden sind.</p>
@@ -2661,27 +2661,6 @@ OSIRIS kann auch mit Microsoft-SSO (Single Sign-On) verwendet werden. Dabei wird
 </span></code></pre></div>
 <p>So könnt ihr prüfen, ob die Synchronisation korrekt läuft, bevor sie automatisch per CRON gestartet wird.</p>
 <p>Wenn die Synchronisation erfolgreich war, findet ihr genau dort, wo ihr zuvor die Felder definiert habt einen Zeitstempel mit der letzten erfolgreichen Synchronisation.</p>
-<h2 id="nutzerverwaltung-mit-auth-addon">Nutzerverwaltung mit Auth-Addon</h2>
-<p>Um die OSIRIS-eigene Nutzerauthentifizierung zu nutzen, muss nur folgende Einstellung in der <code>CONFIG.php</code> angepasst werden:</p>
-<div class="language-php highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="x">define(&#39;USER_MANAGEMENT&#39;, &#39;AUTH&#39;);</span>
-</span></code></pre></div>
-<p>Die Nutzer-Authentifizierung findet jetzt über das OSIRIS-Addon statt. LDAP-Konfiguration muss demnach nicht vorgenommen werden.</p>
-<h4 id="migration-der-nutzerverwaltung">Migration der Nutzerverwaltung</h4>
-<p>Sowohl LDAP als auch das Auth-Addon kümmern sich um die <strong>Authentifizierung</strong> der Nutzer. Bei LDAP werden grundlegende Nutzerdaten ebenfalls aus dem Active Directory synchronisiert, beim Auth müssen diese vom Nutzer bei der Registrierung angelegt werden. <strong>Die eigentlichen Nutzerdaten werden aber immer in OSIRIS gespeichert.</strong>
-Das führt dazu, dass sich im Nachhinein leicht von Auth auf LDAP migriert werden kann. Dabei muss nur beachtet werden, dass die <strong>Nutzernamen mit denen im LDAP identisch sind</strong>.
-Dadurch weiß das System später noch, welcher Nutzer zu welchem Account gehört.</p>
-<h2 id="nutzerverwaltung-mit-microsoft-sso">Nutzerverwaltung mit Microsoft-SSO</h2>
-<p>OSIRIS kann auch mit Microsoft-SSO (Single Sign-On) verwendet werden. Dabei wird die Authentifizierung über Microsoft Azure Active Directory durchgeführt. Das wird wie folgt konfiguriert:</p>
-<div class="language-php highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="x">define(&#39;USER_MANAGEMENT&#39;, &#39;OAUTH2&#39;);</span>
-</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>
-</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="x">// OAUTH user management:</span>
-</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="x">define(&#39;OAUTH&#39;, &#39;Microsoft&#39;);</span>
-</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="x">define(&#39;CLIENT_ID&#39;, &#39;DEINE_CLIENT_ID&#39;);</span>
-</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="x">define(&#39;CLIENT_SECRET&#39;, &#39;DEIN_CLIENT_SECRET&#39;);</span>
-</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="x">define(&#39;REDIRECT_URI&#39;, &#39;http://localhost/login-callback.php&#39;);</span>
-</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="x">define(&#39;AUTHORITY&#39;, &#39;https://login.microsoftonline.com/common&#39;);</span>
-</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="x">define(&#39;SCOPES&#39;, &#39;openid profile email User.Read&#39;);</span>
-</span></code></pre></div>
 
 
 
@@ -2704,7 +2683,7 @@ Dadurch weiß das System später noch, welcher Nutzer zu welchem Account gehört
     <span class="md-icon" title="Letztes Update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="12. Juli 2025 14:12:47 UTC">12. Juli 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="13. Juli 2025 12:27:26 UTC">13. Juli 2025</span>
   </span>
 
     
