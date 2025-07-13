@@ -11,7 +11,7 @@ OSIRIS funktioniert zurzeit bevorzugt mit [LDAP-Authentifizierung](https://www.r
 
 Die LDAP-Einstellungen müssen ebenfalls in der Configuration angegeben werden. Falls ihr selbst nicht wisst, welche Einstellungen ihr vornehmen müsst, fragt am besten bei eurer IT nach.
 
-```
+```php title="CONFIG.php"
 define('USER_MANAGEMENT', 'LDAP');
 
 define("LDAP_IP", "100.10.100.0");
@@ -26,7 +26,7 @@ define("LDAP_BASEDN", "OU=Users,OU=DSMZ,DC=dsmz,DC=local");
 
 Ihr könnt auch festlegen, welche Nutzer:innen aus dem LDAP-Server synchronisiert werden sollen. Dazu könnt ihr den `LDAP_FILTER`-Parameter in der `CONFIG.php` setzen. Zum Beispiel:
 
-```php
+```php title="CONFIG.php"
 define("LDAP_FILTER", "(objectClass=person)");
 ```
 
@@ -34,7 +34,7 @@ Dieser Filter sorgt dafür, dass nur Nutzer:innen mit dem Objektklasse `person` 
 
 Hier sind ein paar Beispiele für häufig verwendete Filter:
 
-```php
+```php title="CONFIG.php"
 // Nur Nutzer:innen mit der Rolle "Mitarbeiter"
 define("LDAP_FILTER", "(role=employee)");
 // Nur Nutzer:innen, die in der Abteilung "Forschung" arbeiten
@@ -47,7 +47,7 @@ define("LDAP_FILTER", "(memberOf=CN=Forschung,OU=Gruppen,DC=example,DC=com)");
 
 Ihr könnt auch mehrere Filter kombinieren, um komplexere Abfragen zu erstellen. Zum Beispiel:
 
-```php
+```php title="CONFIG.php"
 define("LDAP_FILTER", "(&(objectClass=person)(role=employee)(department=Forschung))");
 ```
 

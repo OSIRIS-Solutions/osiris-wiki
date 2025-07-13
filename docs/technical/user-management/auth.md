@@ -9,7 +9,7 @@ tags:
 
 Um die OSIRIS-eigene Nutzerauthentifizierung zu nutzen, muss nur folgende Einstellung in der `CONFIG.php` angepasst werden:
 
-```php
+```php title="CONFIG.php"
 define('USER_MANAGEMENT', 'AUTH');
 ```
 

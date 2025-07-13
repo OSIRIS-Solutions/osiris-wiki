@@ -135,12 +135,19 @@ markdown_extensions:
   - attr_list
   - md_in_html
   - pymdownx.highlight:
-      anchor_linenums: true
-      line_spans: __span
+      linenums: true
+      use_pygments: true
+      # line_spans: __span
       pygments_lang_class: true
+      # auto_title: true
+      extend_pygments_lang:
+        - name: php
+          lang: php
+          options:
+            startinline: true
+  - pymdownx.superfences
   - pymdownx.inlinehilite
   - pymdownx.snippets
-  - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.tasklist:

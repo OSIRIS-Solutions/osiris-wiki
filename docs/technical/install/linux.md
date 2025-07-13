@@ -104,7 +104,7 @@ sudo pecl install mongodb-1.21.0
 In deiner `php.ini` folgende Zeilen hinzufügen:
 
 
-```ini
+```ini title="php.ini"
 extension=mongodb.so
 extension=zip.so
 ```
