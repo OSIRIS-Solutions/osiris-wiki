@@ -67,6 +67,8 @@ Dieses Feature ist nur für die Synchronisation mit LDAP verfügbar.
 
 Im Admin-Bereich kann man in den Generellen Einstellungen unter dem Reiter "Mitarbeitende" Attribute definieren, die über LDAP synchronisiert werden sollen. Ihr gebt hier für jedes Feld den genauen Namen an, der im LDAP-Server hinterlegt ist. Wenn ihr auf "Speichern und Vorschau zeigen" klickt, zeigt OSIRIS euch eine Tabelle mit allen Nutzer:innen an und ihr könnt überprüfen, ob die Attribute korrekt ausgelesen werden.
 
+<!-- md:version 1.5.0 -->
+
 Ab Version 1.5.0 findet ihr die Einstellungen zur Synchronisation im neuen Bereich "Inhalte" > "Personen" > "LDAP-Attribute". Die Einstellungen sind die gleichen wie zuvor, nur dass sie jetzt in einem eigenen Bereich zu finden sind.
 
 Wichtig: Diese Attribute können dann nicht mehr in OSIRIS selbst bearbeitet werden. Um die Synchronisierung zu aktivieren, müsst ihr außerdem im Folgenden den CRON-Job aktivieren. Das ist wichtig, damit die Attribute regelmäßig aktualisiert werden.
