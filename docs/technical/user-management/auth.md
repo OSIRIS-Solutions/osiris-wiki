@@ -7,6 +7,9 @@ tags:
 
 # Nutzerverwaltung mit Auth-Addon
 
+<!-- md:version 1.0.0 --> 
+<!-- md:feature -->
+
 Um die OSIRIS-eigene Nutzerauthentifizierung zu nutzen, muss nur folgende Einstellung in der `CONFIG.php` angepasst werden:
 
 ```php title="CONFIG.php"

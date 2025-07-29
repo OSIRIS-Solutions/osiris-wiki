@@ -7,6 +7,9 @@ tags:
 
 # Nutzerverwaltung mit LDAP
 
+<!-- md:version 1.0.0 --> 
+<!-- md:feature -->
+
 OSIRIS funktioniert zurzeit bevorzugt mit [LDAP-Authentifizierung](https://www.redhat.com/de/topics/security/what-is-ldap-authentication), die von den meisten Instituten zur Nutzerverwaltung verwendet wird.
 
 Die LDAP-Einstellungen müssen ebenfalls in der Configuration angegeben werden. Falls ihr selbst nicht wisst, welche Einstellungen ihr vornehmen müsst, fragt am besten bei eurer IT nach.
@@ -23,6 +26,9 @@ define("LDAP_BASEDN", "OU=Users,OU=DSMZ,DC=dsmz,DC=local");
 ```
 
 ## Filtern von Nutzer:innen
+
+
+<!-- md:version 1.3.6 -->
 
 Ihr könnt auch festlegen, welche Nutzer:innen aus dem LDAP-Server synchronisiert werden sollen. Dazu könnt ihr den `LDAP_FILTER`-Parameter in der `CONFIG.php` setzen. Zum Beispiel:
 
@@ -53,6 +59,7 @@ define("LDAP_FILTER", "(&(objectClass=person)(role=employee)(department=Forschun
 
 Mehr Informationen zu LDAP-Filtern findet ihr in der [LDAP-Dokumentation](https://ldap.com/ldap-filters/).
 
+
 ## Mögliche Fallstricke
 
 Es kann zu Problemen kommen, wenn das LDAP-Password ein Zeichen enthält, das als Code interpretiert wird. Das ist zum Beispiel der Fall, wenn das Passwort ein Dollar-Zeichen ($) enthält. In diesem Fall muss das Zeichen mit einem Backslash (\) escaped werden oder der String mit einfachen Anführungszeichen gesetzt werden. Das Passwort würde dann so aussehen: `define("LDAP_PASSWORD", "\$uperSecret");` oder `define("LDAP_PASSWORD", '$uperSecret');`.
@@ -60,8 +67,10 @@ Es kann zu Problemen kommen, wenn das LDAP-Password ein Zeichen enthält, das al
 Bei der LDAP-Domain ist entweder eine Domain mit `@` anzugeben oder eine Base-DN, bei der der Nutzername dann mit `%s` angegeben werden muss. Das sieht dann so aus:
 `define("LDAP_DOMAIN", "uid=%s,ou=people,dc=stark,dc=com");`
 
+
 ## Synchronisation der Nutzerattribute
 
+<!-- md:version 1.4.1 -->
 
 Dieses Feature ist nur für die Synchronisation mit LDAP verfügbar.
 

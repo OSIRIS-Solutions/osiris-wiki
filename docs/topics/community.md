@@ -42,10 +42,4 @@ Du kannst OSIRIS auch durch finanzielle Unterstützung helfen, zum Beispiel inde
 
 ## Beiträge aus vergangenen Community Meetings
 
-Hier findest du eine Übersicht über die Themen und Ergebnisse unserer vergangenen Community Meetings. Diese Protokolle sollen dir einen Einblick in die Diskussionen und Entscheidungen geben, die in der OSIRIS Community getroffen wurden.
-
-### 18. August 2025
-
-**Thema:** Vorstellung der neuen OSIRIS Version 1.5 mit Projekten und mehr Flexibilität
-
-[Link zum Protokoll](../assets/documents/OSIRIS 1.5.pdf)
+In unserem [Blog](/blog) findest du alles über die Themen und Ergebnisse unserer vergangenen Community Meetings. Das kann dir einen Einblick in die Diskussionen und Entscheidungen geben, die in der OSIRIS Community getroffen wurden.

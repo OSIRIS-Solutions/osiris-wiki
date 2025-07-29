@@ -45,6 +45,6 @@ Zu guter Letzt kannst du die Datenbank mit folgendem Befehl wiederherstellen:
 mongorestore --db osiris /path/to/backup/dump/osiris
 ```
 
-
+Danach unbedingt neu rendern, damit die Links zu den Aktivitäten auch funktionieren. Dazu navigiere in den Admin-Bereich und klicke auf "Neu rendern" oder navigiere auf die URL `/rerender`.
 
 
