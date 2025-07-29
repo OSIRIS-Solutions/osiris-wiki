@@ -7,7 +7,7 @@ authors:
 tags: [Release]
 ---
 
-# Community Meeting am 18.08.2025
+# Community Meeting am 18.06.2025
 
 Vielen Dank an alle, die heute am Community Meeting teilgenommen haben! Hier ist die Zusammenfassung mit den wichtigsten Infos, Ankündigungen und Diskussionspunkten.
 
