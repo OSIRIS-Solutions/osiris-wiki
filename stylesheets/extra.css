@@ -7,6 +7,23 @@
   --md-accent-fg-color: #e95709;
   --md-default-fg-color--lightest: #f7810460;
   --md-accent-fg-color--transparent: rgba(231, 87, 9, 0.1);
+
+  --secondary-color: #f78104;
+  --secondary-color-light: #faab36;
+  --secondary-color-very-light: #fde6cd;
+  --secondary-color-dark: #e95709;
+  --secondary-color-very-dark: #311a01;
+  --secondary-color-20: rgba(247, 129, 4, 0.2);
+  --secondary-color-30: rgba(247, 129, 4, 0.3);
+  --secondary-color-60: rgba(247, 129, 4, 0.6);
+  --primary-color: #008083;
+  --primary-color-light: #249ea0;
+  --primary-color-very-light: #cce6e6;
+  --primary-color-dark: #005f60;
+  --primary-color-very-dark: #001a1a;
+  --primary-color-20: rgba(0, 128, 131, 0.2);
+  --primary-color-30: rgba(0, 128, 131, 0.3);
+  --primary-color-60: rgba(0, 128, 131, 0.6);
 }
 
 .md-status--draft::after {
@@ -76,4 +93,9 @@
     padding: 0 10px;
     font-weight: 500;
     color: var(--md-default-fg-color--light);
+}
+
+[dir=ltr] .md-typeset blockquote {
+  border-left: .2rem solid var(--primary-color);
+  color: var(--primary-color);
 }
