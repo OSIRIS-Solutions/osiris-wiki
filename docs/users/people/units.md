@@ -1,4 +1,4 @@
-# Einheiten
+# Einheiten von Personen
 
 
 ## Zeitaufgelöste Organisationseinheiten

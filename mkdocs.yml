@@ -19,6 +19,8 @@ nav:
     - Portfolio: topics/portfolio.md
     - Impact Faktoren: topics/impact.md
     - Glossar: topics/glossary.md
+    - Wer verwendet OSIRIS?: topics/implementations.md
+    - KDSF: topics/kdsf.md
   - Technik:
     - Einführung: technical/index.md
     - Installation:
@@ -45,7 +47,9 @@ nav:
     - Einführung: admins/index.md
     - Allgemeine Einstellungen: admins/general.md
     - Email-Einstellungen: admins/email.md
-    - Inhalte verwalten: admins/content.md
+    - Inhalte:
+      - Einführung: admins/content/index.md
+      - Infrastrukturen: admins/content/infrastructures.md
     - Nutzeradministration: admins/users.md
     - Rollen und Rechte: admins/roles.md
     - Links im Footer, Impressum und Datenschutz: admins/legal-and-links.md
@@ -53,6 +57,9 @@ nav:
   - Nutzer:
     - Einführung: users/index.md
     - Inhalte hinzufügen: users/creating-content.md
+    - Benachrichtigungen: users/issues.md
+    - Forschungsbereiche: users/topics.md
+    - Organisationseinheiten: users/units.md
     - Aktivitäten: 
       - Einführung: users/activities/index.md
       - Erweiterte Suche: users/activities/advanced-search.md
@@ -64,10 +71,14 @@ nav:
       # - Projekte suchen: users/projects/search.md
     - Personen:
       - Einführung: users/people/index.md
+      - Einheiten von Personen: users/people/units.md
+    - Infrastrukturen:
+      - Einführung: users/infrastructures/index.md
     - Berichte:
       - Einführung: users/reporting/index.md
       - Report-Templates: users/reporting/report-templates.md
       - Statistiken: users/reporting/statistics.md
+      - Quartalsberichte: users/reporting/quarterly-reporting.md
   - Blog:
     - blog/index.md
 theme:
@@ -149,6 +160,9 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.inlinehilite
   - pymdownx.snippets
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.tasklist:
