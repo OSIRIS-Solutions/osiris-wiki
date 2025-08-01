@@ -12,7 +12,7 @@ nav:
     - Changelog: home/news.md
     - Kontakt: home/contact.md
     - Schlagworte: home/tags.md
-    - Konventionen: home/conventions.md
+    - Konventionen: conventions.md
   - Themen:
     - Community: topics/community.md
     - Schnittstellen: topics/interfaces.md
