@@ -2,7 +2,7 @@
 
 <!-- md:version 1.5.0 -->
 
-OSIRIS bietet eine einfache Möglichkeit, E-Mails zu für bestimmte Ereignisse zu versenden, wie z.B. Benachrichtigungen über neue Projekte oder Projektänderungen. 
+OSIRIS bietet eine einfache Möglichkeit, E-Mails für bestimmte Ereignisse zu versenden, wie z.B. Benachrichtigungen über neue Projekte oder Projektänderungen. 
 
 !!! info "Hinweis"
     Die E-Mail-Funktionalität ist noch relativ neu und wird kontinuierlich erweitert. Im Moment ist sie auf die Benachrichtigung zu Projekten beschränkt. Weitere Funktionen sind in Planung, zum Beispiel ein Weekly/Monthly Digest, der alle Benachrichtigungen der letzten Woche/Monat zusammenfasst oder eine Erinnerung an das quartalsweise Reporting.

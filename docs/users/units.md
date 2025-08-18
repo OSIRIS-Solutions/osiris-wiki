@@ -1,4 +1,12 @@
+---
+status: draft
+---
+
+
 # Organisationseinheiten 
+
+!!! warning "Seite im Aufbau"
+    Diese Seite befindet sich noch im Aufbau. Wir bitten um Geduld.
 
 ## Eine Einheit anlegen oder bearbeiten
 

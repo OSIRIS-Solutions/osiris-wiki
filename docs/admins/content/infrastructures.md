@@ -3,7 +3,7 @@
 <!-- md:version 1.4.1 -->
 <!-- md:feature -->
 
-Forschungsinfrastrukturen sind wie Projekte eine eigene Entität in OSIRIS, die zentral eingeschaltet werden muss.
+Forschungsinfrastrukturen sind, wie Projekte, eine eigene Entität in OSIRIS, die zentral eingeschaltet werden muss.
 
 ## Forschungsinfrastrukturen einschalten
 

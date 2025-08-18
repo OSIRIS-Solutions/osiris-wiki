@@ -9,15 +9,15 @@ status: new
 
 OSIRIS, das steht für open, smart & intuitive research information system, und die ersten drei Worte spiegeln schon ganz gut die Philosophie wieder. OSIRIS ist so **offen** wie möglich – das gilt sowohl für den Quellcode als auch für die Lizenz. OSIRIS ist so **smart** wie möglich – es nimmt euch wo es geht Arbeit ab und automatisiert, was möglich ist, aber ohne die Nutzenden zu bevormunden. OSIRIS ist auch so **intuitiv** wie es nun mal geht – sicher, das liegt oftmals im Auge des Betrachters… doch OSIRIS gibt sich die größte Mühe mit einem aufgeräumten und modernen Interface, gutem UX Design und vielen Accessibility-Funktionen diesen Ansprüchen zu genügen.
 
-Zur Kostenlosen Demo geht es [**hier**](https://www.osiris-demo.de/user/login).
+Zur kostenlosen Demo geht es [**hier**](https://www.osiris-demo.de/user/login).
 
 ### Die wichtigsten Kern-Aspekte:
 
 - OSIRIS ist ein **Selbstmeldesystem** und eignet sich am besten für Institute ohne eigene Bibliothek oder Personal, das sich dediziert um die Pflege der Forschungsaktivitäten kümmert.
-- OSIRIS funktioniert “out-of-the-box”, um es auszuprobieren, es kann aber auch **viel konfiguriert** werden, z.B. können eigene Aktivitätstypen erstellt werden, Funktionen deaktiviert und Rollen konfiguriert werden.
+- OSIRIS funktioniert “out-of-the-box” um es auszuprobieren, es kann aber auch **viel konfiguriert** werden, z.B. können eigene Aktivitätstypen erstellt werden, Funktionen deaktiviert und Rollen konfiguriert werden.
 - OSIRIS legt besonderen **Fokus auf die Forschenden**: auf eigenen Profilseiten werden alle Daten aggregiert und dargestellt, die eigene Forschung lässt sich auswerten und der eigene CV herunterladen.
-- OSIRIS lässt sich bedingt auch als Repositorium nutzen: es lassen sich Dateien zu Aktivitäten hinterlegen, um tatsächlich als Repositorium zu dienen ist OSIRIS aber (noch) nicht ausgelegt.
-- OSIRIS bietet ein Addon an, mit denen die Forschung auf einer externen Seite dargestellt werden kann (Portfolio)
+- OSIRIS lässt sich bedingt auch als Repositorium nutzen, da man Dateien zu Aktivitäten hinterlegen kann. Um tatsächlich als Repositorium zu dienen ist OSIRIS aber (noch) nicht ausgelegt.
+- OSIRIS bietet ein Addon an, mit denen die Forschung auf einer externen Seite dargestellt werden kann (Portfolio).
 - OSIRIS wird sehr aktiv weiterentwickelt, nicht zuletzt weil es auch das jüngste Mitglied der CRIS-Familie ist.
 
 ![Untitled](../assets/screenshots/activity.png)
@@ -55,7 +55,7 @@ Hier findest du eine Übersicht über die Entitäten, die in OSIRIS verwaltet we
     ///
 
 - **Journale**
-    - Werden über API automatisch eingepflegt, wenn verknüpfte Aktivität eingetragen wird
+    - Werden über API automatisch eingepflegt, wenn eine verknüpfte Aktivität eingetragen wird
     - Impact Faktoren können (zurzeit) händisch eingetragen werden
 - **Lehrveranstaltungen**
     - Über Modulnummern indiziert
@@ -73,7 +73,7 @@ Hier findest du eine Übersicht über die Entitäten, die in OSIRIS verwaltet we
     - Es kann zentral nach Forschungsbereichen aggregiert, gefiltert und exportiert werden
 - **Infrastrukturen** (ab `v1.4.2`)
     - Forschungsinfrastrukturen nach KDSF 2.0
-    - inkl. Betriebspersonal, Jahresstatistik, Verbundeinrichtungen (bei Verbundinfrastrukturen) und Statistiken
+    - Inkl. Betriebspersonal, Jahresstatistik, Verbundeinrichtungen (bei Verbundinfrastrukturen) und Statistiken
 - **Projekte**
     - Projektstammdaten
     - Verknüpfung mit mitarbeitenden Personen
@@ -103,7 +103,7 @@ Kooperationspartner eines Projektes. Links ist die Liste mit Partnern, rechts is
 
 - **Analyse und Visualisierung**
     
-    Metriken können direkt aus den Aktivitäten gezogen werden. Dafür bereitet OSIRIS eine Reihe von Visualisierung auf einem Dashboard auf. 
+    Metriken können direkt aus den Aktivitäten gezogen werden. Dafür bereitet OSIRIS eine Reihe von Visualisierungen auf einem Dashboard auf. 
     
 
 - **Quartals-zentriert**
@@ -124,7 +124,7 @@ Kooperationspartner eines Projektes. Links ist die Liste mit Partnern, rechts is
     
     Es gibt eine Vielzahl an Möglichkeiten, um Aktivitäten aus OSIRIS zu exportieren. Beispielsweise können Daten aus den o.g. Suchmöglichkeiten direkt exportiert werden: als Word-Dokument, Excel-Sheet, CSV, JSON oder BibTeX (RIS und CERIF-XML in Planung). Ihr könnt auch einzelne Aktivitäten herunterladen oder gleich mehrere für den Download auswählen und gesammelt exportieren. Auch alle zu einem Projekt verknüpfte Aktivitäten lassen sich auf diese Weise gesammelt herunterladen. 
     
-    Beim Export nach Word gibt es noch einen besonderen Kniff, denn Wissenschaftler:innen können ihren eigenen Namen im Export fett drucken lassen und für Berichterstatter:innen hebt OSIRIS einfach alle hervor, die mit dem Institut affiliiert sind.
+    Beim Export nach Word gibt es noch einen besonderen Kniff, denn Wissenschaftler:innen können ihren eigenen Namen im Export fett drucken lassen. Für Berichterstatter:innen hebt OSIRIS alle hervor, die mit dem Institut affiliiert sind.
     
     `Update v1.3.6`: Es gibt eine erste Version des **Berichte-Editors** mit dem mehrere Templates für verschiedene Berichtszwecke erstellt werden können.
     
@@ -166,7 +166,7 @@ Deshalb bietet OSIRIS viele Funktionen, die explizit auf die Bedürfnisse von Fo
 
 Dadurch haben Forschende mit OSIRIS einen besseren **Überblick über ihre eigene Forschung**. Außerdem können sie sich ihren eigenen CV oder ausgewählte Aktivitäten einfach herunterladen und beispielsweise in ihr eigenes Zitationsprogramm importieren oder im nächsten Antrag verwenden.
 
-Durch **Notizen** und **Dateiupload** lässt sich OSIRIS auch nutzen, um seine Forschung im Detail zu verwalten. So kann ich beispielsweise in der Notizen den Titel eines Papers hinterlassen, dass ich im Review hatte. Das unterstützt mich dabei, meine eigenen Aktivitäten nachzuverfolgen, ohne dass ich mich durch meine Mails wühlen muss. Ich kann auch sowohl den ersten Draft als auch das fertige Manuskript eines Papers hochladen. 
+Durch **Notizen** und **Dateiupload** lässt sich OSIRIS auch nutzen, um die eigene Forschung im Detail zu verwalten. So kann ich beispielsweise in den Notizen den Titel eines Papers hinterlassen, dass ich im Review hatte. Das unterstützt mich dabei, meine eigenen Aktivitäten nachzuverfolgen, ohne dass ich mich durch meine Mails wühlen muss. Ich kann zudem sowohl den ersten Draft als auch das fertige Manuskript eines Papers hochladen. 
 
 Mit **Coins** und **Errungenschaften** kommt außerdem ein Belohnungssystem ins Spiel. Einige Forschende lieben es, Coins zu sammeln und freuen sich immer über neue Errungenschaften im Profil. Wer es nicht mag, muss es nicht einschalten, denn **standardmäßig ist dieses Feature deaktiviert**. Man hat auch die Möglichkeit, es nur für sich selbst zu aktivieren, wenn man nicht möchte das andere die Coins sehen. Coins werden übrigens dynamisch generiert und nicht in der Datenbank gespeichert. Wenn sie also ausgeschaltet sind, können sie von niemandem eingesehen werden, nicht mal von Admins.
 
@@ -224,7 +224,7 @@ Mit dem OSIRIS-Portfolio wird es möglich sein, fertige Widgets in eure Webseite
 
 Wie detailliert ist das Rollen- und Rechtemodell? Wie viele Rollen gibt es (vielleicht mit Beispielen)? Auf welchen Ebenen können Berechtigungen festgelegt werden? Können Berechtigungen zwischen Nutzer*innen übertragen werden? Berücksichtigt das Rollen- und Rechtemodell auch Gruppen? Wie flexibel sind das Rollen- und Rechtemodell und die Möglichkeiten, Berechtigungen festzulegen?
 
-Es gibt ein mittelkomplexes Rollen und Rechtemodell. Standardmäßig gibt es 5 Rollen: User (jeder ist ein User), Wissenschaftler:innen, Personalabteilung (PA), Editor (bei uns das Controlling), und Admin.
+In OSIRIS gibt es ein mittelkomplexes Rollen und Rechtemodell. Standardmäßig gibt es fünf Rollen: User (jeder ist ein User), Wissenschaftler:innen, Personalabteilung (PA), Editor (bei uns das Controlling), und Admin.
 
 Zurzeit (Stand `v1.3.7`) gibt es 35 Rechte, die man beliebig auf die verschiedenen Rollen verteilen kann. Gibt man eine Rolle an “User”, so hat jeder Nutzende des Systems die Rechte. 
 
@@ -251,57 +251,59 @@ Bietet das System Workflows zur Kontrolle bzw. Validierung und Bestätigung von 
 
 OSIRIS geht eher der Prämisse nach, **Fehler schon bei der Dateneingabe zu vermeiden**, als im Nachhinein Workflows über die Daten laufen zu lassen. Viele Textfelder schlagen beispielsweise mit Auto-Vervollständigung bereits eingetragene Werte vor, z.B. Konferenzen, Orte, und Autoren.  
 
-Im Screenshot rechts sieht man zum Beispiel auch, wie **Journale standardisiert** hinzugefügt werden. Wenn man ein Journal einträgt, öffnet sich dieses Widget. Zuerst wird nur der obere Teil gezeigt, in dem alle bereits in OSIRIS vorhandenen Journale dargestellt werden. Falls das gesuchte Journal nicht dabei ist, kann man die Suche im Online-Katalog (OpenAlex) wiederholen und es werden mögliche Journale basierend auf der Suche vorgeschlagen. Beim Klick auf einen Haken wird nicht nur das Journal zu der Publikation hinzugefügt, sondern auch alle weiteren Informationen zu dem Journal gespeichert. Da es keinen Freitext an dieser Stelle gibt, können Journale gar nicht falsch eingetragen werden. Genauso ist es mit Lehrveranstaltungen, die ebenfalls zentral verwaltet und dann mit Aktivitäten assoziiert werden können.
+Im Screenshot unten sieht man zum Beispiel auch, wie **Journale standardisiert** hinzugefügt werden. Wenn man ein Journal einträgt, öffnet sich ein Widget. Zuerst wird nur der obere Teil gezeigt, in dem alle bereits in OSIRIS vorhandenen Journale dargestellt werden. Falls das gesuchte Journal nicht dabei ist, kann man die Suche im Online-Katalog (OpenAlex) wiederholen und es werden mögliche Journale basierend auf der Suche vorgeschlagen. Beim Klick auf einen Haken wird nicht nur das Journal zu der Publikation hinzugefügt, sondern auch alle weiteren Informationen zu dem Journal gespeichert. Da es keinen Freitext an dieser Stelle gibt, können Journale gar nicht falsch eingetragen werden. Genauso ist es mit Lehrveranstaltungen, die ebenfalls zentral verwaltet und mit Aktivitäten assoziiert werden können.
 
-![Widget, das sich beim Klick auf oben gezeigtes Datenfeld öffnet. Hier kann in OSIRIS und im Online-Katalog nach vorhanden Journalen gesucht werden. Dadurch werden Fehler vermieden.](../assets/screenshots/add-journal.png)
+![Widget, das sich beim Klick auf oben gezeigtes Datenfeld öffnet. Hier kann in OSIRIS und im Online-Katalog nach vorhandenen Journalen gesucht werden. Dadurch werden Fehler vermieden.](../assets/screenshots/add-journal.png)
 /// caption
-Widget, das sich beim Klick auf oben gezeigtes Datenfeld öffnet. Hier kann in OSIRIS und im Online-Katalog nach vorhanden Journalen gesucht werden. Dadurch werden Fehler vermieden.
+Widget, das sich beim Klick auf oben gezeigtes Datenfeld öffnet. Hier kann in OSIRIS und im Online-Katalog nach vorhandenen Journalen gesucht werden. Dadurch werden Fehler vermieden.
 ///
 
-Außerdem gibt es noch **weitere Abfrage-Mechanismen**: man kann als Jahreszahl nicht 10 Jahre in die Zukunft oder vor 1900 gehen. Man kann Pflichtfelder nicht leer lassen. Man wird gewarnt, wenn man einen Datensatz hinzufügen will, ohne dass mit dem Institut affiliierte Personen in der Autorenliste sind (man kann es dennoch tun, um beispielsweise sein persönliches Profil zu pflegen, solche Aktivitäten werden aber z.B. fürs Reporting rausgefiltert).
+Außerdem gibt es noch **weitere Abfrage-Mechanismen**: man kann keine Jahreszahl 10 Jahre in die Zukunft oder vor 1900 wählen.   Pflichtfelder können nicht leer gelassen werden. OSIRIS gibt eine Warnung aus, wenn man einen Datensatz hinzufügen will, ohne dass mit dem Institut affiliierte Personen in der Autorenliste sind (man kann es dennoch tun, um beispielsweise sein persönliches Profil zu pflegen, solche Aktivitäten werden aber z.B. fürs Reporting rausgefiltert).
 
 ### Kommentar- und Benachrichtigungsfunktionen
 
 Es gibt zwei wesentlich Kommentarfunktionen: die Notiz und den Editor-Kommentar.
 
-Die **Notiz** ist für jede Aktivität verfügbar. Sie versteckt sich hinter einer aufklappbaren Box (siehe Screenshot oben), am Ende des Formularfelds zum Hinzufügen und Bearbeiten einer Aktivität. Hier können Autor:innen Notizen für sich selbst oder Mitteilungen an Editoren hineinschreiben, die dann auf der Übersichtsseite einer Aktivität für diesen Personenkreis sichtbar ist. Wer genau diese Nachrichten außer den Autor:innen sehen kann, wird über die Rollen definiert.
+Die **Notiz** ist für jede Aktivität verfügbar. Sie versteckt sich hinter einer aufklappbaren Box (siehe Screenshot unten), am Ende des Formularfelds zum Hinzufügen und Bearbeiten einer Aktivität. Hier können Autor:innen Notizen für sich selbst oder Mitteilungen an Editoren hineinschreiben, die dann auf der Übersichtsseite einer Aktivität für diesen Personenkreis sichtbar ist. Wer genau diese Nachrichten außer den Autor:innen sehen kann, wird über die Rollen definiert.
 
 Der **Editor-Kommentar** ist nur sichtbar, wenn man eine Aktivität bearbeitet, an der noch andere Autor:innen beteiligt sind. Hier kann man diesen anderen Personen einen Kommentar hinterlassen, der erklärt, was man genau geändert hat. 
 
-Denn es gibt eine ganze Reihe von **Benachrichtigungen** in OSIRIS. Nutzende werden benachrichtigt, wenn:
+Es gibt eine ganze Reihe von **Benachrichtigungen** in OSIRIS. Nutzende werden benachrichtigt, wenn:
 
 - … es Handlungsbedarf oder Kenntnisnahme in Bezug auf Aktivitäten gibt. Darunter fällt zurzeit folgendes:
     - Eine neue Aktivität wurde für dich hinzugefügt
     - Eine deiner Aktivitäten wurde bearbeitet (dort bekommen Koautor:innen euren Editor-Kommentar zu sehen, siehe letzter Screenshot)
     - Eine Aktivität ist als “Online ahead of print” eingetragen und du wirst erinnert, diesen Status zu überprüfen
     - Eine Abschlussarbeit, die du betreust, ist abgelaufen, steht aber noch immer auf “in progress”
-    - Du hast open-end Verlaufsdaten (z.B. Gremien- oder Editormitgliedschaften) und wirst gefragt, ob die noch aktuell sind.
-    - Projekte von dir sind abgelaufen, aber noch nicht als “abgeschlossen” markiert.
+    - Du hast open-end Verlaufsdaten (z.B. Gremien- oder Editormitgliedschaften) und wirst gefragt, ob die noch aktuell sind
+    - Projekte von dir sind abgelaufen, aber noch nicht als “abgeschlossen” markiert
     
-    Ungelöste Warnungen zu Aktivitäten verhindern, dass das Quartal freigegeben werden kann.
+   :exclamation: Ungelöste Warnungen zu Aktivitäten verhindern, dass das Quartal freigegeben werden kann.
     
 - … es ein neues Update gibt, um sie zu informieren, was sich geändert hat.
 - … ein Quartal vergangen ist und die Aktivitäten nun überprüft und bestätigt werden können.
 
 ![Kommentarfunktionen im Formular zur Bearbeitung einer Aktivität.](../assets/screenshots/commentary.png)
 
-Kommentarfunktionen im Formular zur Bearbeitung einer Aktivität.
+*Kommentarfunktionen im Formular zur Bearbeitung einer Aktivität*
 
 ---
 
 ![Hinweise in der Persönlichen Profilseite auf neue Benachrichtigungen.](../assets/screenshots/notifications.png){width=300}
 
-Hinweise in der Persönlichen Profilseite auf neue Benachrichtigungen.
+*Hinweise in der persönlichen Profilseite auf neue Benachrichtigungen*
 
 ---
 
 ![Benachrichtigung eines Nutzenden über eine Bearbeitung.](../assets/screenshots/issues.png)
 
-Benachrichtigung eines Nutzenden über eine Bearbeitung.
+*Benachrichtigung eines Nutzenden über eine Bearbeitung*
+
+---
 
 ### Workflows?
 
-Als “Workflow” kann man also in OSIRIS nur so etwas wie die **Queue** bezeichnen: hier wird regelmäßig aus Online-Quellen abgegriffen, ob es neue Publikationen für Eure Forschenden geben könnte. Doch auch das wird nicht einfach in die Datenbank eingepflegt, sondern den Forschenden zur Überprüfung zugespielt. 
+Als “Workflow” kann man in OSIRIS nur so etwas wie die **Queue** bezeichnen: hier wird regelmäßig aus Online-Quellen abgegriffen, ob es neue Publikationen für Eure Forschenden geben könnte. Doch auch das wird nicht einfach in die Datenbank eingepflegt, sondern den Forschenden zur Überprüfung zugespielt. 
 
 ⚠️ Wir haben Workflows auf dem Schirm und planen, sie in einem kommenden Release hinzuzufügen. Zurzeit unterstützt OSIRIS aber keine mehrstufigen Workflows, wie ihr sie zum Beispiel in GRIS findet.
 
@@ -314,15 +316,16 @@ Als “Workflow” kann man also in OSIRIS nur so etwas wie die **Queue** bezeic
 - **Interne Systeme**
     - Die Nutzerverwaltung kann über LDAP erfolgen. Es werden Nutzende mit dem Active Directory synchronisiert, die Authentifizierung funktioniert ebenfalls darüber.
 - **Quellen für Datenimport**
-    - Schnittstelle zu CrossRef, DataCite und OpenAlex, um DOI-basierte Importe von Aktivitäten zu ermöglichen. Da nicht alle dieser Quellen alle Daten haben, wurden sie alle hinzugefügt und werden nacheinander abgegrast, sobald eine Nutzende Person eine DOI eingibt.
-        - Über die Schnittstellen werden sehr viele Daten abgegriffen und es können anhand von Förderkennziffern sogar Projekte und Publikationen automatisch verknüpft werden. Es wird also empfohlen, Literatur nicht manuell einzupflegen, sondern stets über die DOI)
-    - Schnittstelle zu Pubmed, um Literatur der biomedizinischen Forschung mittels PubMed-ID zu importieren.
-    - Schnittstelle zu OpenAlex, um automatisierten Import in eine “Queue” zu ermöglichen.
-    - Schnittstelle zu OpenAlex und DOAJ, um standardisiert Journale zu erfassen.
-    - Schnittstelle zu ROR, um Institute für die Projektkooperationen hinzuzufügen.
+    - Schnittstellen zu CrossRef, DataCite und OpenAlex, um DOI-basierte Importe von Aktivitäten zu ermöglichen
+        - Da nicht jede Quelle alle Daten umfasst, wurden sie alle hinzugefügt und werden nacheinander abgegrast, sobald eine Nutzende Person eine DOI eingibt.
+        - Über die Schnittstellen werden sehr viele Daten abgegriffen und es können anhand von Förderkennziffern sogar Projekte und Publikationen automatisch verknüpft werden. Es wird also empfohlen, Literatur nicht manuell einzupflegen, sondern stets über die DOI.
+    - Schnittstelle zu Pubmed, um Literatur der biomedizinischen Forschung mittels PubMed-ID zu importieren
+    - Schnittstelle zu OpenAlex, um automatisierten Import in eine “Queue” zu ermöglichen
+    - Schnittstelle zu OpenAlex und DOAJ, um standardisiert Journale zu erfassen
+    - Schnittstelle zu ROR, um Institute für die Projektkooperationen hinzuzufügen
 - **Exportschnittstellen**
     - Es gibt eine Schnittstelle zur IDA-Paktabfrage (siehe oben im Abschnitt Reporting)
-    - Es gibt eine API, um Daten entweder standardisiert oder fertig formatiert auf die Webseite zu Exportieren
+    - Es gibt eine API, um Daten entweder standardisiert oder fertig formatiert auf die Webseite zu exportieren
         `v1.3.2`: Eine API-Dokumentation wurde hinzugefügt, genau wie API-Keys und mehr Filtermechanismen. Push-Möglichkeiten fehlen noch.
         
     - Mit OSIRIS Portfolio gibt es außerdem eine Möglichkeit, eine komplette Forschungswebseite aus OSIRIS zu generieren. Sprecht uns gern an, um mehr darüber zu erfahren oder schaut hier: https://osiris-app.de/portfolio
@@ -365,15 +368,17 @@ Welche Möglichkeiten der Suche gibt es? Wird zwischen einfacher und erweiterter
 Es gibt in OSIRIS mehrere Suchfunktionen. Die vermutlich am häufigsten genutzte ist die in der Seite “Alle Aktivitäten”. Diese Tabelle unterstützt auf einer Seite eine Volltextsuche über einen einzigen Suchschlitz und auf der anderen Seite bietet sie folgende vorgefertigte Filtermöglichkeiten:
 
 - Nach Typ der Aktivität
+- Nach Zugehörigkeit
 - Nach Organisationseinheit
 - Nach Zeitraum
 - Weiteres (Online ahead of print)
 
 ![Ein Überblick über die einfache Suche in OSIRIS](../assets/screenshots/all-activities.png)
+*Screenshot der einfachsen Suche auf der Seite "Alle Aktivitäten"*
 
 ### Die Erweiterte Suche
 
-Für diejenigen, denen die einfachen Suchmöglichkeiten nicht ausreichen, gibt es die erweiterte Suche. Hier können komplexe Abfragen gebaut werden, die auch mit UND/ODER verschachtelt und gruppiert werden kann. Jedes Feld unterstützt entsprechende Operationen (gleich, enthält, beginnt mit, endet mit, größer als, usw.)
+Für diejenigen, denen die einfachen Suchmöglichkeiten nicht ausreichen, gibt es die erweiterte Suche. Hier können komplexe Abfragen gebaut werden, die auch mit UND/ODER verschachtelt und gruppiert werden können. Jedes Feld unterstützt entsprechende Operationen (gleich, enthält, beginnt mit, endet mit, größer als, usw.)
 
 Außerdem kann man sich den Filterstring speichern und die Abfrage erzeugt einen eindeutigen Link, den man sich abspeichern oder mit Kolleg:innen teilen kann. 
 
@@ -382,10 +387,11 @@ Außerdem kann man sich den Filterstring speichern und die Abfrage erzeugt einen
 `Update v1.4.0`: In der erweiterten Suche lassen sich nun alle **Spalten auswählen**, die im Hintergrund gespeichert sind. Diese werden dann im Interface angezeigt und können als Excel exportiert werden.
 
 ![Ein Überblick über die Erweiterte Suche in OSIRIS](../assets/screenshots/advanced-search.png)
+*Ein Überblick über die Erweiterte Suche in OSIRIS*
 
 ![Ab v1.4.0 können Spalten zur Anzeige in der Suche ausgewählt werden. Das Interface unterstützt euch dabei und zeigt, welche Spalten ihr bei welchen Aktivitätstypen verwendet und welche gar nicht befüllt sind (ausgegraut).](../assets/screenshots/advanced-search-columns.png)
 
-Ab v1.4.0 können Spalten zur Anzeige in der Suche ausgewählt werden. Das Interface unterstützt euch dabei und zeigt, welche Spalten ihr bei welchen Aktivitätstypen verwendet und welche gar nicht befüllt sind (ausgegraut).
+*Ab v1.4.0 können Spalten zur Anzeige in der Suche ausgewählt werden. Das Interface unterstützt euch dabei und zeigt, welche Spalten ihr bei welchen Aktivitätstypen verwendet und welche gar nicht befüllt sind (ausgegraut).*
 
 ---
 
@@ -407,11 +413,11 @@ Mit `v1.3.0` wurden Organisationseinheiten (OE) komplett umstrukturiert. Vorher 
 
 ![Ein Chord-Diagramm zeigt die Zusammenarbeit einer Abteilung (in diesem Fall BID) mit den anderen Abteilungen. Dabei werden Publikationen aus 5 Jahren berücksichtigt.](../assets/screenshots/collaboration-chart.png)
 
-Ein Chord-Diagramm zeigt die Zusammenarbeit einer Abteilung (in diesem Fall BID) mit den anderen Abteilungen. Dabei werden Publikationen aus 5 Jahren berücksichtigt.
+*Ein Chord-Diagramm zeigt die Zusammenarbeit einer Abteilung (in diesem Fall BID) mit den anderen Abteilungen. Dabei werden Publikationen aus fünf Jahren berücksichtigt.*
 
 ![Ein Ausschnitt der Organigramm-Ansicht von OSIRIS. Arbeitsgruppen lassen sich bei Bedarf auf- und zuklappen.](../assets/screenshots/organigram.png)
 
-Ein Ausschnitt der Organigramm-Ansicht von OSIRIS. Arbeitsgruppen lassen sich bei Bedarf auf- und zuklappen.
+*Ein Ausschnitt der Organigramm-Ansicht von OSIRIS. Arbeitsgruppen lassen sich bei Bedarf auf- und zuklappen.*
 
 ### Aktivitäten-Typen konfigurieren
 
@@ -499,7 +505,7 @@ Wie man OSIRIS aktualisiert erfahrt ihr [im OSIRIS-Wiki](https://wiki.osiris-app
 
 **OSIRIS setzt auf eine Open Source Community, es gibt aber auch eine kommerzielle Lösung für Support.**
 
-OSIRIS verfügt über mehrere Supportstufen. Das Programm selbst ist Open Source und kostenlos (siehe Abschnitt Kosten und Lizenzmodell). Wenn ihr es selbst bei euch installiert, wartet und hostet habt ihr trotzdem die Möglichkeit, **Community-Support** in Anspruch zu nehmen. Dazu erstellt man ein Ticket auf [GitHub](https://github.com/OSIRIS-Solutions/osiris) und in der Regel wird relativ schnell (innerhalb weniger Tage) darauf reagiert. Ob und wann ein größeres Ticket bearbeitet wird, hängt natürlich von Entwickler-Kapazitäten und Entwicklungszeit ab, das kann man also pauschal nicht sagen. Ich kann aber versichern, dass gemeldete Bugs (vor allem systemkritische) sehr schnell bearbeitet werden.
+OSIRIS verfügt über mehrere Supportstufen. Das Programm selbst ist Open Source und kostenlos (siehe Abschnitt Kosten und Lizenzmodell). Wenn ihr es selbst bei euch installiert, wartet und hostet habt ihr trotzdem die Möglichkeit den **Community-Support** in Anspruch zu nehmen. Dazu erstellt man ein Ticket auf [GitHub](https://github.com/OSIRIS-Solutions/osiris) und in der Regel wird relativ schnell (innerhalb weniger Tage) darauf reagiert. Ob und wann ein größeres Ticket bearbeitet wird, hängt natürlich von Entwickler-Kapazitäten und Entwicklungszeit ab, das kann man also pauschal nicht sagen. Ich kann aber versichern, dass gemeldete Bugs (vor allem systemkritische) sehr schnell bearbeitet werden.
 
 Außerdem gibt es für OSIRIS weiteren kostenpflichtigen Support durch die Firma `OSIRIS Solutions GmbH`. Zurzeit wird u.a. Unterstützung zu folgenden Themen angeboten:
 

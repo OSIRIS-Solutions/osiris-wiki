@@ -50,8 +50,9 @@ nav:
     - Inhalte:
       - Einführung: admins/content/index.md
       - Infrastrukturen: admins/content/infrastructures.md
-    - Nutzeradministration: admins/users.md
     - Rollen und Rechte: admins/roles.md
+    - Berichte: admins/reporting/index.md 
+    - Nutzerverwaltung: admins/users.md
     - Links im Footer, Impressum und Datenschutz: admins/legal-and-links.md
     - Forschungsreisen: admins/travel.md
   - Nutzer:
@@ -76,9 +77,9 @@ nav:
       - Einführung: users/infrastructures/index.md
     - Berichte:
       - Einführung: users/reporting/index.md
-      - Report-Templates: users/reporting/report-templates.md
+      - Berichte-Vorlagen: users/reporting/report-templates.md
       - Statistiken: users/reporting/statistics.md
-      - Quartalsberichte: users/reporting/quarterly-reporting.md
+      - Quartalsberichte: users/reporting/quarterly-reporting.md  
   - Blog:
     - blog/index.md
 theme:

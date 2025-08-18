@@ -1,6 +1,6 @@
 # Über OSIRIS
 
-**OSIRIS** ist ein offenes, smartes und intuitives Forschungsinformationssystem (FIS), das speziell für kleinere Institute, wissenschaftliche Einrichtungen und forschungsnahe Organisationen entwickelt wurde.
+**OSIRIS** ist ein offenes, smartes und intuitives Forschungsinformationssystem (FIS), das speziell für kleinere Institute, wissenschaftliche Einrichtungen und forschungsnahe Organisationen entwickelt wurde. 
 
 Das System unterstützt bei der **Erfassung, Verwaltung und Auswertung von Forschungsaktivitäten** wie Publikationen, Drittmittelprojekten, Vorträgen, Software oder Lehrveranstaltungen. Dabei liegt der Fokus auf einfacher Bedienung, hoher Flexibilität und vollständiger Transparenz.
 
