@@ -45,15 +45,25 @@ nav:
     - Testsystem einrichten: technical/test-system.md
   - Admins:
     - Einführung: admins/index.md
-    - Allgemeine Einstellungen: admins/general.md
-    - Email-Einstellungen: admins/email.md
+    - Einstellungen: 
+      - Allgemeine Einstellungen: admins/general.md
+      - Email-Einstellungen: admins/email.md
+      - Links im Footer, Impressum und Datenschutz: admins/legal-and-links.md
     - Inhalte:
       - Einführung: admins/content/index.md
+      - Aktivitäten: admins/content/activities.md
+      - Projekte: admins/content/projects.md
+      - Personen: admins/content/persons.md
+      - Benutzerdefinierte Felder: admins/content/custom-fields.md
+      - Vokabular: admins/content/vocabulary.md
+      - Hilfswerkzeuge: admins/content/tools.md
       - Infrastrukturen: admins/content/infrastructures.md
-    - Rollen und Rechte: admins/roles.md
+    - Rollen und Rechte:
+      - Einführung: admins/roles/index.md
+      - Standard-Rollen: admins/roles/roles.md
+      - Wichtige Rechte: admins/roles/important-rights.md
     - Berichte: admins/reporting/index.md 
     - Nutzerverwaltung: admins/users.md
-    - Links im Footer, Impressum und Datenschutz: admins/legal-and-links.md
     - Forschungsreisen: admins/travel.md
   - Nutzer:
     - Einführung: users/index.md
