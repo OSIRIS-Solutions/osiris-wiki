@@ -1728,14 +1728,6 @@
     
   </span>
   
-    
-  
-  
-    <span class="md-status md-status--draft" title="Im Aufbau">
-    </span>
-  
-
-  
 
       </a>
     </li>
@@ -1758,14 +1750,6 @@
     Aktivitäten
     
   </span>
-  
-    
-  
-  
-    <span class="md-status md-status--draft" title="Im Aufbau">
-    </span>
-  
-
   
 
       </a>
@@ -1821,14 +1805,6 @@
     
   </span>
   
-    
-  
-  
-    <span class="md-status md-status--draft" title="Im Aufbau">
-    </span>
-  
-
-  
 
       </a>
     </li>
@@ -1851,14 +1827,6 @@
     Benutzerdefinierte Felder
     
   </span>
-  
-    
-  
-  
-    <span class="md-status md-status--draft" title="Im Aufbau">
-    </span>
-  
-
   
 
       </a>
@@ -3355,24 +3323,36 @@
 </ul>
 <h2 id="anleitung">Anleitung</h2>
 <ol>
-<li><a href="https://www.apachefriends.org/download.html">XAMPP</a> downloaden und installieren. Hierbei ist wichtig, dass man eine Version mit PHP 8.1.x wählt (PHP 8.2 wird noch nicht von dem Mongo PHP Driver für Windows unterstützt). Wenn man möchte, dass die Webseite später für alle im Netzwerk/Wlan erreichbar ist, muss man am Ende der Installation den Zugriff aufs Netzwerk bei der Windows Firewall erlauben.</li>
-</ol>
-<p>Wenn XAMPP installiert ist, das Programm starten und bei Apache auf „Start“ klicken. Anschließend im Browser <a href="http://localhost">localhost</a> eingeben. Jetzt sollte die Standardseite von Apache angezeigt werden.
-2. Die <a href="https://www.mongodb.com/try/download/community">MongoDB Datenbank</a> als .msi runterladen und installieren. Die aktuellste Version (6.0) ist kompatibel mit OSIRIS. Im Installationsmenü alle Voreinstellungen so lassen.
-3. Den <a href="https://pecl.php.net/package/mongodb">MongoDB PHP Driver</a> runterladen. Dazu in der Liste zur Version 1.13.0 scrollen und auf das blaue Windows Kästchen mit „DLL“ klicken. Unten in der Liste die Version PHP 8.1 Thread Safe für euer System auswählen (in der Regel x64). Die DLL Datei muss anschließend in den folgenden Ordner in eurem Xampp Verzeichnis kopiert werden: …\xampp\php\ext</p>
-<p>Wenn das geglückt ist, muss man den Treiber noch aktivieren. Dazu sucht man in dem Verzeichnis …\xampp\php nach der Datei php.ini (Achtung: wenn man sich unter Windows die Dateiendungen nicht anzeigen lässt, heißt die Datei evtl. einfach nur „php“. Da es mehrere solcher Dateien gibt, macht es Sinn, sich die Dateiendungen anzeigen zu lassen).
-Die Datei php.ini mit dem Editor der Wahl öffnen (zum Beispiel Notepad++) und die Zeile „extension=php_mongodb.dll“ hinzufügen. Der Übersicht halber sollte man die Zeile dort einfügen, wo auch die anderen extensions gelistet werden (ungefähr Zeile 950). Das ist aber nicht zwingend notwendig.
-4. <a href="https://git-scm.com/download/win">Git for Windows</a> installieren. Im Installationsmenü alle Voreinstellungen so lassen. Anschließend den Ordner …\xampp\htdocs öffnen.</p>
-<p>In diesen Ordner wird die Webseite geladen. Dazu erst einmal alle Dateien, die sich in dem Ordner befinden, löschen. Dann Rechtsklick in das leere Verzeichnis und auf „Git Bash Here“ klicken. Es öffnet sich ein Kommandofenster. Da gibt man den folgenden Befehl ein:
+<li>
+<p><a href="https://www.apachefriends.org/download.html">XAMPP</a> downloaden und installieren. Hierbei ist wichtig, dass man eine Version mit PHP 8.1.x wählt (PHP 8.2 wird noch nicht von dem Mongo PHP Driver für Windows unterstützt). Wenn man möchte, dass die Webseite später für alle im Netzwerk/Wlan erreichbar ist, muss man am Ende der Installation den Zugriff aufs Netzwerk bei der Windows Firewall erlauben.<br />
+Wenn XAMPP installiert ist, das Programm starten und bei Apache auf „Start“ klicken. Anschließend im Browser <a href="http://localhost">localhost</a> eingeben. Jetzt sollte die Standardseite von Apache angezeigt werden.  </p>
+</li>
+<li>
+<p>Die <a href="https://www.mongodb.com/try/download/community">MongoDB Datenbank</a> als .msi runterladen und installieren. Die aktuellste Version (6.0) ist kompatibel mit OSIRIS. Im Installationsmenü alle Voreinstellungen so lassen.  </p>
+</li>
+<li>
+<p>Den <a href="https://pecl.php.net/package/mongodb">MongoDB PHP Driver</a> runterladen. Dazu in der Liste zur Version 1.13.0 scrollen und auf das blaue Windows Kästchen mit „DLL“ klicken. Unten in der Liste die Version PHP 8.1 Thread Safe für euer System auswählen (in der Regel x64). Die DLL Datei muss anschließend in den folgenden Ordner in eurem Xampp Verzeichnis kopiert werden: …\xampp\php\ext<br />
+Wenn das geglückt ist, muss man den Treiber noch aktivieren. Dazu sucht man in dem Verzeichnis …\xampp\php nach der Datei php.ini (<img alt="❗" class="twemoji" src="../../../assets/external/cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2757.svg" title=":exclamation:"> Achtung: wenn man sich unter Windows die Dateiendungen nicht anzeigen lässt, heißt die Datei evtl. einfach nur „php“. Da es mehrere solcher Dateien gibt, macht es Sinn, sich die Dateiendungen anzeigen zu lassen).<br />
+Die Datei php.ini mit dem Editor der Wahl öffnen (zum Beispiel Notepad++) und die Zeile „extension=php_mongodb.dll“ hinzufügen. Der Übersicht halber sollte man die Zeile dort einfügen, wo auch die anderen extensions gelistet werden (ungefähr Zeile 950). Das ist aber nicht zwingend notwendig.  </p>
+</li>
+<li>
+<p><a href="https://git-scm.com/download/win">Git for Windows</a> installieren. Im Installationsmenü alle Voreinstellungen so lassen. Anschließend den Ordner …\xampp\htdocs öffnen.<br />
+In diesen Ordner wird die Webseite geladen. Dazu erst einmal alle Dateien, die sich in dem Ordner befinden, löschen. Dann Rechtsklick in das leere Verzeichnis und auf „Git Bash Here“ klicken. Es öffnet sich ein Kommandofenster. Da gibt man den folgenden Befehl ein:
 <code>git clone https://github.com/JKoblitz/osiris.git</code>
-Aufpassen! Den Code kann man hier nicht mit Strg+V einfügen. Wenn man das trotzdem versucht, bildet sich ein „unsichtbares Zeichen“ und der anschließende Code funktioniert nicht mehr. Man kann aber mit Linksklick den Code einfügen.
-Jetzt sollten alle Dateien aus dem Git Repository in das Verzeichnis kopiert werden.
-5. Zu guter Letzt installiert man <a href="https://getcomposer.org/download/">Composer</a> mit der .exe Datei. Alle Voreinstellungen können so belassen werden. Anschließend die Windows Eingabeaufforderung (cmd) öffnen, indem man zum Beispiel in die Suchzeile „cmd“ eingibt.</p>
-<p>In dem Terminal muss man jetzt in das Xampp Verzeichnis der Webseite navigieren. Dies tut man mit dem Befehl <code>cd</code>. Wenn Xampp standardmäßig installiert ist lautet der Befehl
-<code>cd C:\xampp\htdocs</code>
-Wenn man sich jetzt im Verzeichnis befindet, gibt man <code>Composer update</code> ein. Wenn alles funktioniert, lädt Composer die fehlenden libraries nach.
-6. Wenn nicht bereits geschehen, XAMPP starten und bei Apache auf „Start“ bzw. „Restart“ klicken. In den Browser <a href="http://localhost">localhost</a> eingeben und die Webseite sollte erscheinen.
-7. In der Config Datei können noch weitere Einstellungen vorgenommen werden (wie Administrator, ldap, Auth, …). Siehe dazu die den Abschnitt <a href="../../configure/">OSIRIS konfigurieren</a>.</p>
+<img alt="❗" class="twemoji" src="../../../assets/external/cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2757.svg" title=":exclamation:"> Aufpassen! Den Code kann man hier nicht mit Strg+V einfügen. Wenn man das trotzdem versucht, bildet sich ein „unsichtbares Zeichen“ und der anschließende Code funktioniert nicht mehr. Man kann aber mit Linksklick den Code einfügen.
+Jetzt sollten alle Dateien aus dem Git Repository in das Verzeichnis kopiert werden.  </p>
+</li>
+<li>
+<p>Zu guter Letzt installiert man <a href="https://getcomposer.org/download/">Composer</a> mit der .exe Datei. Alle Voreinstellungen können so belassen werden. Anschließend die Windows Eingabeaufforderung (cmd) öffnen, indem man zum Beispiel in die Suchzeile „cmd“ eingibt.<br />
+In dem Terminal muss man jetzt in das Xampp Verzeichnis der Webseite navigieren. Dies tut man mit dem Befehl <code>cd</code>. Wenn Xampp standardmäßig installiert ist lautet der Befehl <code>cd C:\xampp\htdocs</code>. Wenn man sich jetzt im Verzeichnis befindet, gibt man <code>Composer update</code> ein. Wenn alles funktioniert, lädt Composer die fehlenden libraries nach.  </p>
+</li>
+<li>
+<p>Wenn nicht bereits geschehen, XAMPP starten und bei Apache auf „Start“ bzw. „Restart“ klicken. In den Browser <a href="http://localhost">localhost</a> eingeben und die Webseite sollte erscheinen.  </p>
+</li>
+<li>
+<p>In der Config Datei können noch weitere Einstellungen vorgenommen werden (wie Administrator, ldap, Auth, …). Siehe dazu die den Abschnitt <a href="../../configure/">OSIRIS konfigurieren</a>.</p>
+</li>
+</ol>
 
 
 
@@ -3395,7 +3375,7 @@ Wenn man sich jetzt im Verzeichnis befindet, gibt man <code>Composer update</cod
     <span class="md-icon" title="Letztes Update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="27. Juni 2025 14:16:02 UTC">27. Juni 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="21. August 2025 07:05:01 UTC">21. August 2025</span>
   </span>
 
     

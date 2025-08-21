@@ -1659,14 +1659,6 @@
     
   </span>
   
-    
-  
-  
-    <span class="md-status md-status--draft" title="Im Aufbau">
-    </span>
-  
-
-  
 
       </a>
     </li>
@@ -1690,6 +1682,19 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Aktivitäten
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1699,16 +1704,45 @@
     
   </span>
   
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
     
   
   
-    <span class="md-status md-status--draft" title="Im Aufbau">
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#neue-kategorie-erstellen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Neue Kategorie erstellen
     </span>
+  </a>
   
-
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#neuen-typen-erstellen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Neuen Typen erstellen
+    </span>
+  </a>
   
-
-      </a>
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1762,14 +1796,6 @@
     
   </span>
   
-    
-  
-  
-    <span class="md-status md-status--draft" title="Im Aufbau">
-    </span>
-  
-
-  
 
       </a>
     </li>
@@ -1792,14 +1818,6 @@
     Benutzerdefinierte Felder
     
   </span>
-  
-    
-  
-  
-    <span class="md-status md-status--draft" title="Im Aufbau">
-    </span>
-  
-
   
 
       </a>
@@ -3187,6 +3205,32 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#neue-kategorie-erstellen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Neue Kategorie erstellen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#neuen-typen-erstellen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Neuen Typen erstellen
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -3218,10 +3262,103 @@
 
 
 <h1 id="aktivitaten-verwalten">Aktivitäten verwalten</h1>
-<div class="admonition warning">
-<p class="admonition-title">Seite im Aufbau</p>
-<p>Diese Seite befindet sich noch im Aufbau. Wir bitten um Geduld.</p>
-</div>
+<p>Die Aktivitäten in OSIRIS sollen im besten Fall alles abdecken, womit sich Forschende in eurer Einrichtung befassen. Die <strong>Kategorien</strong> helfen dabei, die Aktivitäten sinnvoll einzuteilen und mit Überbegriffen wie <em>Publikationen</em>, <em>Vorträge</em> oder <em>Lehre</em> zu versehen. Innerhalb einer Kategorie können individuelle <strong>Typen</strong> erstellt werden, die dann die Vorlage einer Aktivität abbilden. Hierunter fallen zum Beispiel <em>Journal Article</em>, <em>Buchkapitel</em> oder <em>Preprint</em>. <br />
+Standardmäßig findest du in OSIRIS folgende Kategorien mit ihren Typen:</p>
+<ul>
+<li>
+<p>Publikationen</p>
+<ul>
+<li>Journal Article</li>
+<li>Non-refereed</li>
+<li>Buch</li>
+<li>Buchkapitel</li>
+<li>Preprint</li>
+<li>Abschlussarbeit</li>
+<li>Weitere Publikationen</li>
+</ul>
+</li>
+<li>
+<p>Vorträge</p>
+<ul>
+<li>Vortrag</li>
+</ul>
+</li>
+<li>
+<p>Reviews &amp; Editorials</p>
+<ul>
+<li>Peer-Review</li>
+<li>Editorenschaft</li>
+<li>Review einer Abschlussarbeit</li>
+<li>Sonstiges Review</li>
+</ul>
+</li>
+<li>
+<p>Poster</p>
+<ul>
+<li>Poster</li>
+</ul>
+</li>
+<li>
+<p>Studierende &amp; Gäste</p>
+<ul>
+<li>Studenten</li>
+<li>Abschlussarbeiten</li>
+<li>Gäste</li>
+</ul>
+</li>
+<li>
+<p>Lehre</p>
+<ul>
+<li>Lehre</li>
+</ul>
+</li>
+<li>
+<p>Software &amp; Daten</p>
+<ul>
+<li>Software &amp; Daten</li>
+</ul>
+</li>
+<li>
+<p>Awards</p>
+<ul>
+<li>Award</li>
+</ul>
+</li>
+</ul>
+<p>Die Kategorien sind mit einer Farbe markiert, die sich auch in der Auflistung der Typen wiederspiegelt. Du kannst die bestehenden Kategorien und Typen bearbeiten: Unter anderem Farbe und Icons können gewechselt, IDs, Namen und Beschreibungen geändert sowie Datenfelder angepasst werden. Du kannst auch neue Kategorien erstellen und Typen zu bestehenden oder neuen Kategorien hinzufügen.</p>
+<h2 id="neue-kategorie-erstellen">Neue Kategorie erstellen</h2>
+<p>Unter Inhalte &#8594; Aktivitäten kannst du eine neue Kategorie hinzufügen.</p>
+<figure>
+<p><img alt="Kategorie hinzufügen" src="../screenshots/kategorie_erstellen.png" /></p>
+<figcaption>
+<p>Seite um eine neue Kategorie zu erstellen</p>
+</figcaption>
+</figure>
+<p>Zunächst musst du eine einzigartige ID wählen. mit einem Klick auf <em>muss einzigartig sein</em> siehst du eine Liste aller vergebenen IDs. Mit einem Klick auf <em>Icon</em> kannst du dir ein passendes Icon für deine neue Kategorie aussuchen, indem du den entsprechenden Text einfach in das Feld kopierst. <br />
+Du kannst auf dieser Seite auch einstellen, welche Rollen in OSIRIS die eingetragenen Aktivitäten, die in diese Kategorie fallen, sehen können. Dies ist zum Beispiel nützlich für vertrauliche Einträge. Jeder Nutzende kann für diese Kategorie Einträge generieren und die eigenen sehen, die Einträge anderer Nutzender in dieser Kategorie aber nicht. Werden in eurem Institut beispielsweise Patente in OSIRIS eingetragen, soll vielleicht jede Person in der Lage sein ein Patent einzutragen und dies auch weiterhin im eigenen Verlauf zu sehen, andere Patent-Einträge werden aber nicht angezeigt.</p>
+<h2 id="neuen-typen-erstellen">Neuen Typen erstellen</h2>
+<p>Du kannst Kategorien neue Typen hinzufügen. Auch hier brauchst du eine einzigartige ID und kannst dir ein Icon aussuchen. Die Farbe des Typen passt sich an die Kategorie an. Diese kannst du auch noch spontan während des Erstellens des neuen Typens ändern. Die von dir gewählte Beschreibung wird den Nutzenden bei Erstellen von diesem Typen Aktivität als Infokästchen angezeigt und sollte beschreiben, für welche Einträge diese Vorlage geeignet ist. </p>
+<figure>
+<p><img alt="Typ erstellen" src="../screenshots/typen_erstellen.png" /></p>
+<figcaption>
+<p>Seite um einen neuen Typ Aktivität zu erstellen</p>
+</figcaption>
+</figure>
+<hr />
+<figure>
+<p><img alt="Typen erstellen Infofeld" src="../screenshots/typen_erstellen_infofeld.png" /></p>
+<figcaption>
+<p>So wird die von dir gewählte Beschreibung dann in der Vorlage der Aktivität aus.</p>
+</figcaption>
+</figure>
+<p>Sei dir bewusst, dass bei der Wahl <em>Diese Art von Aktivität sollte in OSIRIS Portfolio sichtbar sein</em> alle unter diesem Typen eingetragenen Aktivitäten über die Website nach außen hin sichtbar sind. </p>
+<p>Du kannst deiner Vorlage unterschiedliche Datenfelder hinzufügen. Das Feld <em>authors</em> sollte hier immer dabei sein, da die Aktivität sonst keiner Person zugeordnet werden kann und in der Datenbank nicht auffindbar ist. Das gleiche gilt für das <em>date</em> Feld. Um ein Datenfeld verpflichtend (mit * versehen) zu machen musst du einfach nur doppelt draufklicken. Nachdem du gespeichert hast sollte dein neu erstellter Typ von Aktivität in der Auflistung der Kategorie erscheinen und steht jedem Nutzenden für einen entsprechenden Eintrag zur Verfügung.</p>
+<figure>
+<p><img alt="Beispiel" src="../screenshots/neue_typen_beispiel.png" /></p>
+<figcaption>
+<p>Die neu erstellte Kategorie <strong>ehrenamtliche Engagements</strong> mit den neu erstellten Typen <strong>Betriebsrat</strong> und <strong>Beruf und Familie</strong>.</p>
+</figcaption>
+</figure>
 
 
 
@@ -3244,7 +3381,7 @@
     <span class="md-icon" title="Letztes Update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="20. August 2025 05:52:57 UTC">20. August 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="21. August 2025 07:05:01 UTC">21. August 2025</span>
   </span>
 
     
