@@ -15,11 +15,11 @@ Falls ihr den lokalen Mailserver verwenden möchtet, solltet ihr zuerst sicherst
 
 Ihr könnt dazu zum Beispiel Postfix oder Exim verwenden. Diese Mailserver sind in der Regel bereits auf den meisten Linux-Distributionen vorinstalliert und können einfach konfiguriert werden. Mehr Informationen zur Konfiguration findet ihr in der Dokumentation eurer Linux-Distribution oder auf den jeweiligen Webseiten der Mailserver.
 
-Für einen lokalen Mailserver müsst ihr im Admin-Bereich unter Einstellungen -> E-Mail keine weiteren Einstellungen vornehmen. OSIRIS verwendet dann auomatisch den lokalen Mailserver, um E-Mails zu versenden. Ihr könntet lediglich die Absenderadresse anpassen, die für alle E-Mails verwendet wird. Diese ist standardmäßig auf `noreply@osiris-app.de` gesetzt. 
+Für einen lokalen Mailserver müsst ihr im Admin-Bereich unter Einstellungen &#8594 E-Mail keine weiteren Einstellungen vornehmen. OSIRIS verwendet dann auomatisch den lokalen Mailserver, um E-Mails zu versenden. Ihr könntet lediglich die Absenderadresse anpassen, die für alle E-Mails verwendet wird. Diese ist standardmäßig auf `noreply@osiris-app.de` gesetzt. 
 
 ## SMTP-Server
 
-Die Email-Einstellungen findet ihr im Admin-Bereich unter Einstellungen -> E-Mail. Hier könnt ihr die folgenden Einstellungen vornehmen:
+Die Email-Einstellungen findet ihr im Admin-Bereich unter Einstellungen &#8594 E-Mail. Hier könnt ihr die folgenden Einstellungen vornehmen:
 
 - **SMTP-Server**: Der Hostname oder die IP-Adresse des SMTP-Servers, der für den Versand von E-Mails verwendet wird.
 - **Port**: Der Port, der für die Verbindung zum SMTP-Server verwendet wird.

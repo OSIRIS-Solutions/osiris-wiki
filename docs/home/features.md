@@ -171,12 +171,14 @@ Durch **Notizen** und **Dateiupload** lässt sich OSIRIS auch nutzen, um die eig
 Mit **Coins** und **Errungenschaften** kommt außerdem ein Belohnungssystem ins Spiel. Einige Forschende lieben es, Coins zu sammeln und freuen sich immer über neue Errungenschaften im Profil. Wer es nicht mag, muss es nicht einschalten, denn **standardmäßig ist dieses Feature deaktiviert**. Man hat auch die Möglichkeit, es nur für sich selbst zu aktivieren, wenn man nicht möchte das andere die Coins sehen. Coins werden übrigens dynamisch generiert und nicht in der Datenbank gespeichert. Wenn sie also ausgeschaltet sind, können sie von niemandem eingesehen werden, nicht mal von Admins.
 
 ![Die persönliche Profilseite bietet viele Funktionen und gibt einem immer einen Überblick über die eigene Forschung.](../assets/screenshots/profile.png)
-
+///caption
 Die persönliche Profilseite bietet viele Funktionen und gibt einem immer einen Überblick über die eigene Forschung.
+///
 
 ![Viele zusätzliche Visualisierungen geben einem einen Überblick über die eigene Forschung. ](../assets/screenshots/wordcoud.png)
-
+///caption
 Viele zusätzliche Visualisierungen geben einem einen Überblick über die eigene Forschung. 
+///
 
 > “Mit OSIRIS wird die Pflege der Forschungsaktivitäten zur angenehmen Nebensache.*”
 - Dr. Lorenz Reimer, Wissenschaftler, DSMZ*
@@ -284,20 +286,23 @@ Es gibt eine ganze Reihe von **Benachrichtigungen** in OSIRIS. Nutzende werden b
 - … ein Quartal vergangen ist und die Aktivitäten nun überprüft und bestätigt werden können.
 
 ![Kommentarfunktionen im Formular zur Bearbeitung einer Aktivität.](../assets/screenshots/commentary.png)
-
-*Kommentarfunktionen im Formular zur Bearbeitung einer Aktivität*
+///caption
+Kommentarfunktionen im Formular zur Bearbeitung einer Aktivität
+///
 
 ---
 
 ![Hinweise in der Persönlichen Profilseite auf neue Benachrichtigungen.](../assets/screenshots/notifications.png){width=300}
-
-*Hinweise in der persönlichen Profilseite auf neue Benachrichtigungen*
+///caption
+Hinweise in der persönlichen Profilseite auf neue Benachrichtigungen
+///
 
 ---
 
 ![Benachrichtigung eines Nutzenden über eine Bearbeitung.](../assets/screenshots/issues.png)
-
-*Benachrichtigung eines Nutzenden über eine Bearbeitung*
+///caption
+Benachrichtigung eines Nutzenden über eine Bearbeitung
+///
 
 ---
 
@@ -374,7 +379,9 @@ Es gibt in OSIRIS mehrere Suchfunktionen. Die vermutlich am häufigsten genutzte
 - Weiteres (Online ahead of print)
 
 ![Ein Überblick über die einfache Suche in OSIRIS](../assets/screenshots/all-activities.png)
-*Screenshot der einfachsen Suche auf der Seite "Alle Aktivitäten"*
+///caption
+Screenshot der einfachsen Suche auf der Seite "Alle Aktivitäten"
+///
 
 ### Die Erweiterte Suche
 
@@ -387,11 +394,14 @@ Außerdem kann man sich den Filterstring speichern und die Abfrage erzeugt einen
 `Update v1.4.0`: In der erweiterten Suche lassen sich nun alle **Spalten auswählen**, die im Hintergrund gespeichert sind. Diese werden dann im Interface angezeigt und können als Excel exportiert werden.
 
 ![Ein Überblick über die Erweiterte Suche in OSIRIS](../assets/screenshots/advanced-search.png)
-*Ein Überblick über die Erweiterte Suche in OSIRIS*
+///caption
+Ein Überblick über die Erweiterte Suche in OSIRIS
+///
 
 ![Ab v1.4.0 können Spalten zur Anzeige in der Suche ausgewählt werden. Das Interface unterstützt euch dabei und zeigt, welche Spalten ihr bei welchen Aktivitätstypen verwendet und welche gar nicht befüllt sind (ausgegraut).](../assets/screenshots/advanced-search-columns.png)
-
-*Ab v1.4.0 können Spalten zur Anzeige in der Suche ausgewählt werden. Das Interface unterstützt euch dabei und zeigt, welche Spalten ihr bei welchen Aktivitätstypen verwendet und welche gar nicht befüllt sind (ausgegraut).*
+///caption
+Ab v1.4.0 können Spalten zur Anzeige in der Suche ausgewählt werden. Das Interface unterstützt euch dabei und zeigt, welche Spalten ihr bei welchen Aktivitätstypen verwendet und welche gar nicht befüllt sind (ausgegraut).
+///
 
 ---
 
@@ -412,12 +422,14 @@ Neben dem Startjahr von OSIRIS kann natürlich auch das Institut angepasst werde
 Mit `v1.3.0` wurden Organisationseinheiten (OE) komplett umstrukturiert. Vorher gab es nur “Abteilungen”, jetzt kann man theoretisch das gesamte Organigramm abbilden (siehe Screenshot). Dabei kann eine Person Mitglied von mehreren OEs sein und eine OE von mehreren Personen geleitet werden. Es gibt dadurch viele Möglichkeiten, Daten zu aggregieren und zu visualisieren. Falls ihr das alles nicht braucht, reicht es alle Mitarbeitenden nur zum Institut hinzuzufügen.
 
 ![Ein Chord-Diagramm zeigt die Zusammenarbeit einer Abteilung (in diesem Fall BID) mit den anderen Abteilungen. Dabei werden Publikationen aus 5 Jahren berücksichtigt.](../assets/screenshots/collaboration-chart.png)
-
-*Ein Chord-Diagramm zeigt die Zusammenarbeit einer Abteilung (in diesem Fall BID) mit den anderen Abteilungen. Dabei werden Publikationen aus fünf Jahren berücksichtigt.*
+///caption
+Ein Chord-Diagramm zeigt die Zusammenarbeit einer Abteilung (in diesem Fall BID) mit den anderen Abteilungen. Dabei werden Publikationen aus fünf Jahren berücksichtigt.
+///
 
 ![Ein Ausschnitt der Organigramm-Ansicht von OSIRIS. Arbeitsgruppen lassen sich bei Bedarf auf- und zuklappen.](../assets/screenshots/organigram.png)
-
-*Ein Ausschnitt der Organigramm-Ansicht von OSIRIS. Arbeitsgruppen lassen sich bei Bedarf auf- und zuklappen.*
+///caption
+Ein Ausschnitt der Organigramm-Ansicht von OSIRIS. Arbeitsgruppen lassen sich bei Bedarf auf- und zuklappen.
+///
 
 ### Aktivitäten-Typen konfigurieren
 
@@ -441,7 +453,7 @@ Zuletzt könnt ihr einen Typ **deaktivieren**. Natürlich lassen sich Typen auch
 
 `Update v1.3.1`: Ihr könnt im Admin-Bereich nun komplett eigene Felder konfigurieren. Es ist auch möglich eigene Listen anzulegen, die dann zur Auswahl stehen, und Default-Werte anzugeben.
 
-`Update v1.5.0`: Ihr könnt jetzt auch bereits existierende Vokabulare anpassen, wie zum Beispiel die Zugangstypen von Infrastrukturen, die Liste möglicher Förderer von Projekten oder den Eventtyp. Diese Einstellung findet ihr im Admin-Bereich unter Inhalte > Vokabular.
+`Update v1.5.0`: Ihr könnt jetzt auch bereits existierende Vokabulare anpassen, wie zum Beispiel die Zugangstypen von Infrastrukturen, die Liste möglicher Förderer von Projekten oder den Eventtyp. Diese Einstellung findet ihr im Admin-Bereich unter Inhalte &#8594 Vokabular.
 
 ![Ein Beispiel, wie eine Aktivität konfiguriert werden kann.](../assets/screenshots/configure-activity.jpeg)
 

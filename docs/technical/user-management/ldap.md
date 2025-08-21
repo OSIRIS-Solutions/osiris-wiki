@@ -78,7 +78,7 @@ Im Admin-Bereich kann man in den Generellen Einstellungen unter dem Reiter "Mita
 
 <!-- md:version 1.5.0 -->
 
-Ab Version 1.5.0 findet ihr die Einstellungen zur Synchronisation im neuen Bereich "Inhalte" > "Personen" > "LDAP-Attribute". Die Einstellungen sind die gleichen wie zuvor, nur dass sie jetzt in einem eigenen Bereich zu finden sind.
+Ab Version 1.5.0 findet ihr die Einstellungen zur Synchronisation im neuen Bereich "Inhalte" &#8594 "Personen" &#8594 "LDAP-Attribute". Die Einstellungen sind die gleichen wie zuvor, nur dass sie jetzt in einem eigenen Bereich zu finden sind.
 
 Wichtig: Diese Attribute können dann nicht mehr in OSIRIS selbst bearbeitet werden. Um die Synchronisierung zu aktivieren, müsst ihr außerdem im Folgenden den CRON-Job aktivieren. Das ist wichtig, damit die Attribute regelmäßig aktualisiert werden.
 

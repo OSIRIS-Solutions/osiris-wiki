@@ -8,15 +8,15 @@ In den **Allgemeinen Einstellungen** kannst du alles rund um das Institut und di
 
 ## Allgemein
 
-Unter dem Tab "Allgemein" kannst du das **Startjahr** festsetzen. An diesem Jahr orientiert sich OSIRIS bei der Erstellung von Abbildungen und bezieht nur Beiträge mit ein, die während oder nach diesem Jahr hinzugefügt wurden. Es können zwar Aktivitäten hinzugefügt werden die vor diesem Jahr stattgefunden haben, diese werden aber nicht in den Abbildungen mit einbezogen.
+Unter &#8594 Allgemein kannst du das **Startjahr** festsetzen. An diesem Jahr orientiert sich OSIRIS bei der Erstellung von Abbildungen und bezieht nur Beiträge mit ein, die während oder nach diesem Jahr hinzugefügt wurden. Es können zwar Aktivitäten hinzugefügt werden die vor diesem Jahr stattgefunden haben, diese werden aber nicht in den Abbildungen mit einbezogen.
 
 Du findest hier auch den **API-Key**, bzw. kannst einen generieren um den Zugriff auf all in der Datenbank verfügbaren Daten zu schützen.
 
-Du kannst auf dieser Seite auch bestimmen, wie die **affilierten Autor:innen** in den Aktivitäten formatiert werden. Standardmäßig ist *fett* eingestellt.
+Du kannst auf dieser Seite auch bestimmen, wie die **affilierten Autor:innen** in den Aktivitäten formatiert werden. Standardmäßig ist **fett** eingestellt.
 
 ## Funktionen
 
-Hier findest du viele verschiedene Anwendungen, die mit einem Klick aktiviert bzw. deaktiviert werden können. Du kannst zum Beispiel die **Quartalsweise Berichterstattung** aktivieren, sowie **Projekte** und **Lehrveranstaltungen**.
+Hier findest du viele verschiedene Anwendungen, die mit einem Klick aktiviert bzw. deaktiviert werden können. Du kannst zum Beispiel die **Quartalsweise Berichterstattung** aktivieren, sowie **Projekte** und **Lehrveranstaltungen**. Wenn du eine Funktion aktivierst, musst du anschließend noch die entsprechenden Rechte unter &#8594 Rollen und Rechte vergeben. Per default ist zunächst kein Recht vergeben.
 
 ## Institut
 

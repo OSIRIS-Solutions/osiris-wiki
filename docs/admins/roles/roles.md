@@ -19,8 +19,9 @@ Die Rolle des Scientists ist die einzige Rolle, die von einer sich registrierend
 ---
 
 ![scientist_view](screenshots/scientist_view.png)
-
-*Startseite eines Users und eines Scientists mit den extra Schaltflächen "Mein Jahr" und "Meine Aktivitäten"*
+///caption
+Startseite eines Users und eines Scientists mit den extra Schaltflächen "Mein Jahr" und "Meine Aktivitäten"
+///
 
 Als Scientist wird der Nutzende am Ende jedes Quartals aufgefordert die eigenen Aktivitäten zu überprüfen und freizugeben.
 Zudem haben Scientists das Recht Events und Gäste hinzuzufügen. Es können eigene Projekte erstellt, bearbeitet und gelöscht werden. 
@@ -38,11 +39,10 @@ Die Rolle des Editors wird meist von Mitarbeitenden aus dem Controlling eingenom
 ---
 
 ![editor view](screenshots/editor_view.png)
-
-*Startseite eines Scientists und die erweiterte Ansicht eines Editors um die Quartalsübersicht*
-
-
+///caption
+Startseite eines Scientists und die erweiterte Ansicht eines Editors um die Quartalsübersicht
+///
 
 ## Admin
 
-Die Rolle des Admins sollte die Person/die Personen am Institut übernehmen, die OSIRIS hauptsächlich verwalten werden. Ein Admin hat per Standard alle Rechte, bis auf das der Bearbeitung der Nutzereinstellugen, welches allerdings an keine Rolle vergeben ist. Die linke Seite wird um ein Admin-Panel erweitert, wodurch viele weitere Einstellungen, unter anderem *Rollen und Rechte* bearbeitet werden können.
+Die Rolle des Admins sollte die Person/die Personen am Institut übernehmen, die OSIRIS hauptsächlich verwalten werden. Ein Admin hat per Standard alle Rechte, bis auf das der Bearbeitung der Nutzereinstellugen, welches allerdings an keine Rolle vergeben ist. Die linke Seite wird um ein Admin-Panel erweitert, wodurch viele weitere Einstellungen, unter anderem *Rollen und Rechte* bearbeitet werden können. 

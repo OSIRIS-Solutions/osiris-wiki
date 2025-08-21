@@ -41,7 +41,7 @@ Dosis sind für OSIRIS sehr wichtig, da durch sie die Erstellung von Dubletten v
 ## Open Access
 
 Bezeichnet Publikationen, die **frei zugänglich** sind.
-In OSIRIS kann entweder Open Access als boolsches Feld (ja oder nein) oder der Open-Access-Status erfasst und angezeigt werden. Im Bereich Alle Aktivitäten > Statistiken und unter Visualisierung > OpenAccess findet ihr Auswertungen dazu. 
+In OSIRIS kann entweder Open Access als boolsches Feld (ja oder nein) oder der Open-Access-Status erfasst und angezeigt werden. Im Bereich Alle Aktivitäten &#8594 Statistiken und unter Visualisierung &#8594 OpenAccess findet ihr Auswertungen dazu. 
 
 
 

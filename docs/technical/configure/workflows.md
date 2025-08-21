@@ -42,7 +42,8 @@ pip install nameparser
 pip install levenshtein
 ```
 
-Zusätzlich musst du die OpenAlex-ID Ihres Instituts in der Datei `config.ini` ändern. Um diese ID zu finden, suchst du dein Institut am besten auf der [Webseite von OpenAlex](https://explore.openalex.org/). Die ID findest du entweder als letztem Teil der URL oder unter Identifiers > openalex. Sie beginnt mit einem I, gefolgt von einer Reihe von Zahlen. Sie muss in der `config.ini` eingetragen werden:
+Zusätzlich musst du die OpenAlex-ID Ihres Instituts in der Datei `config.ini` ändern. Um diese ID zu finden, suchst du dein Institut am besten auf der [Webseite von OpenAlex](https://explore.openalex.org/). Die ID findest du entweder als letztem Teil der URL oder unter Identifiers &#8594
+ openalex. Sie beginnt mit einem I, gefolgt von einer Reihe von Zahlen. Sie muss in der `config.ini` eingetragen werden:
 
 ```ini
 [OpenAlex]
