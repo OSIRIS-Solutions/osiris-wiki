@@ -67,6 +67,7 @@ nav:
     - Forschungsreisen: admins/travel.md
   - Nutzer:
     - Einführung: users/index.md
+    - Startseite: users/profile/start.md
     - Inhalte hinzufügen: users/creating-content.md
     - Benachrichtigungen: users/issues.md
     - Forschungsbereiche: users/topics.md

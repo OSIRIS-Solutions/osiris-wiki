@@ -28,14 +28,12 @@ Für das Feld kannst du eine der hier aufgelisteten Formate wählen:
 
 ![custom fields layout](screenshots/custom_fields_layout.png)
 ///caption
-So sehen die Custom Fields aus, wenn sie einer Aktivität hinzugefügt wurden. Du siehst, dass der gewählte Name oben als Bezeichnung für das Feld verwendet wird. Um in der Liste mehrere Optionen zu wählen müssen die Nutzenden die STRG-Taste gedrückt halten.
+So sehen die Custom Fields aus, wenn sie einer Aktivität hinzugefügt wurden. Du siehst, dass der gewählte Name oben als Bezeichnung für das Feld verwendet wird. 
 ///
 
-Du kannst die Reihenfolge der Felder bei dem Erstellen der Aktivitäten-Vorlage über Drag-and-Drop der Datenfelder bestimmen.
-
-![custom fields order](screenshots/custom_fields_order.png)
+![custom fields liste](screenshots/custom_fields_liste.png)
 ///caption
-Die Reihenfolge der Felder bestimmt die Auflistung der Felder in der Vorlage.
+Nutzende können in der Liste per Dropdown eine Mehrfachauswahl treffen, wenn dies von dir zugelassen wurde.
 ///
 
-Es wird empfohlen eher mehr benutzerdefinierte Felder anzulegen als zu versuchen, zu viele Informationen mit einem Feld abzufragen. 
+Du kannst die Reihenfolge der Datenfelder mit Hilfe des [Formular-Builders](https://wiki.osiris-app.de/admins/content/activities/#formular-builder) ändern. Hier findest du deine benutzerdefinierten Felder zusammen mit allen anderen zur Verfügung stehenden Datenfelder und kannst individuelle Vorlagen für Aktivitäten erstellen. 
