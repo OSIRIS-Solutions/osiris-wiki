@@ -1,0 +1,21 @@
+{
+  // Standardsprache (Hauptsprache)
+  "ltex.language": "de-DE",
+
+  // Zusätzliche Sprachen, die geprüft werden dürfen
+  "ltex.additionalLanguages": ["en-US"],
+
+  // Muttersprache (hilft für bessere Grammatik-Erkennung)
+  "ltex.additionalRules.motherTongue": "de-DE",
+
+  // Eigene Wörter (z. B. Fachbegriffe, Namen, Abkürzungen)
+  "ltex.dictionary": {
+    "de-DE": ["VSCode", "OpenAI"],
+    "en-US": ["VSCode", "OpenAI"]
+  },
+
+  // Option: automatische Rechtschreibvorschläge bei Strg+. (Quick Fix)
+  "editor.codeActionsOnSave": {
+    "source.fixAll.ltex": "explicit"
+  }
+}

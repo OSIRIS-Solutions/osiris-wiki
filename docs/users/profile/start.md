@@ -37,7 +37,7 @@ Auf deiner Startseite befinden sich oben rechts weitere Buttons.
 Oben rechts findest du Buttons für allgemeine Einstellungen
 ///
 
-Der Glocken-Button zeigt dir Benachrichtigungen bezüglich Updates, Namenserwähnungen etc. an. Daneben findest du die Möglichkeit die Sprache von OSIRIS auf englisch zu stellen. Der Accessibilty-Button erlaubt es dir die Seite an deine Bedürfnisse anzupassen. Wurde dir die Pflege eines anderen Profils übertragen, findest du den entsprechenden Namen mit einen Klick auf den letzten Button im Dropdown-Menu.  
+Der Glocken-Button zeigt dir Benachrichtigungen bezüglich Updates, Namenserwähnungen etc. an. Daneben findest du die Möglichkeit die Sprache von OSIRIS auf Englisch zu stellen. Der Accessibility-Button erlaubt es dir die Seite an deine Bedürfnisse anzupassen. Wurde dir die Pflege eines anderen Profils übertragen, findest du den entsprechenden Namen mit einem Klick auf den letzten Button im Dropdown-Menü.  
 
 ## Profil bearbeiten
 
@@ -56,19 +56,19 @@ Angabe von Variationen deines Namens für das Autoren-Matching
 
 ### Organisation
 
-Hier kannst du organisatorische Angaben machen, wie zum Beispiel deine Raumnummer oder deine aktuelle Position im Institut. Hat die Administration Rollen vorgegeben kannst du hier aus einer Liste auswählen. Ist dies nicht der Fall kannst du die Rolle per Freitext angeben.
+Hier kannst du organisatorische Angaben machen, wie zum Beispiel deine Raumnummer oder deine aktuelle Position im Institut. Hat die Administration Rollen vorgegeben, kannst du hier aus einer Liste auswählen. Ist dies nicht der Fall, kannst du die Rolle per Freitext angeben.
 
 ### Forschung
 
-Um deine Forschung zu beschreiben, kannst du aus einer Liste vn Schlagwörtern wählen, die durch die Administration vorgegeben wurde. Deine Expertise und Forschungsinteressen kannst du etwas individueller über die Freitext-Felder angeben.
+Um deine Forschung zu beschreiben, kannst du aus einer Liste von Schlagwörtern wählen, die durch die Administration vorgegeben wurde. Deine Expertise und Forschungsinteressen kannst du etwas individueller über die Freitext-Felder angeben.
 
 ### Biografie
 
-Hier kannst du deinen Werdegang abbilden, indem du deine Stationen in das vorgegebene Formular einträgst. Füge einfach einen Beitrag hinzu wenn du mehrere Stationen angeben möchtest.
+Hier kannst du deinen Werdegang abbilden, indem du deine Stationen in das vorgegebene Formular einträgst. Füge einfach einen Beitrag hinzu, wenn du mehrere Stationen angeben möchtest.
 
 ### Portfolio
 
-Portfolio ist die Aussendarstellung der institutionellen Forschung und stellt dein Profil mit allen Errungenschaften, von Publikationen über Drittmittelprojekte bis hin zu Forschungsaktivitäten dar. Auf dieser Seite kannst du selbst bestimmen, welche Informationen nach außen gezeigt werden, oder ob dein Profil überhaupt angegeben wird. Zudem kannst du eine alternative Mail-Adresse angeben.
+Portfolio ist die Außendarstellung der institutionellen Forschung und stellt dein Profil mit allen Errungenschaften, von Publikationen über Drittmittelprojekte bis hin zu Forschungsaktivitäten dar. Auf dieser Seite kannst du selbst bestimmen, welche Informationen nach außen gezeigt werden, oder ob dein Profil überhaupt angegeben wird. Zudem kannst du eine alternative Mail-Adresse angeben.
 
 ### Kontakt
 
@@ -81,4 +81,4 @@ Du kannst einem anderen User die Pflege deines Profils übertragen. Dies ist zum
 
 ### Einstellungen
 
-Hir kannst du noch kleinere Einstellungen vornehmen, beispielsweise ob die Coins und Errungenschaften (falls aktiviert) auf deinem Profil sichtbar sind oder nicht.
+Hier kannst du noch kleinere Einstellungen vornehmen, beispielsweise ob die Coins und Errungenschaften (falls aktiviert) auf deinem Profil sichtbar sind oder nicht.

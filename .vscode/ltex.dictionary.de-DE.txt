@@ -1,0 +1,14 @@
+affiliierten
+default
+Scientists
+scientist
+authors
+authors-table
+date-range
+mandatory
+country
+countries
+status
+Article
+Factor
+affiliiert

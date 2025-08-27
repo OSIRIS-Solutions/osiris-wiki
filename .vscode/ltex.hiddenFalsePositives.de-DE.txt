@@ -1,0 +1,1 @@
+{"rule":"DE_AGREEMENT","sentence":"^\\QURL: Über das URL Feld können Nutzende bei dem Erstellen einer Aktivität eine Website hinterlegen.\\E$"}

@@ -9,3 +9,4 @@ Forschungsinfrastrukturen sind wie Projekte eine eigene Entität in OSIRIS, die 
 !!! info "Hinweis"
     Wir benutzen hier den Begriff "Forschungsinfrastrukturen", doch der Administrator kann diesen Begriff in den Einstellungen anpassen. Daher kann es sein, dass du stattdessen einen anderen Namen im OSIRIS-Interface siehst. Falls du dir unsicher bis, suche nach einem Icon, das wie ein durchsichtiger Würfel aussieht. 
 
+Forschungsinfrastrukturen sind zentrale Ressourcen wie Geräte, Anlagen, Daten, Bibliotheken oder virtuelle Plattformen, die Wissenschaftlern zur Verfügung gestellt werden, um Forschung zu ermöglichen, zu erleichtern und Innovationen zu fördern.

@@ -2,7 +2,7 @@
 status: false
 ---
 
-Wurde dir die Rolle eines:r Wissenschaftlers:in zugeordnet, befinden sich zwei weitere Schaltflächen links unter *Mein Bereich* - **Mein Jahr** und **Meine Aktivitäten**. Es handelt sich hier um die gleichen Seiten zu denen du durch die Direktlinks in deinem Profil weitergeleitet wirst. Sie sind in der Wissenschafter:innenansicht nur etwas präsenter, da hier deine Einträge quartalsweise verwaltet werden und von dir bestätigt werden müssen. 
+Wurde dir die Rolle eines:r Wissenschaftlers:in zugeordnet, befinden sich zwei weitere Schaltflächen links unter *Mein Bereich* - **Mein Jahr** und **Meine Aktivitäten**. Es handelt sich hier um die gleichen Seiten, zu denen du durch die Direktlinks in deinem Profil weitergeleitet wirst. Sie sind in der Wissenschafter:innenansicht nur etwas präsenter, da hier deine Einträge quartalsweise verwaltet werden und von dir bestätigt werden müssen. 
 
 ## Mein Jahr
 
@@ -30,7 +30,7 @@ Meldung zur Quartalsfreigabe mit Auflistung der fehlenden Überprüfungen und di
 4. Bearbeite die Aktivität
 5. Aktivität ansehen
 
-Wenn du alle Warnungen bearbeitet hast kannst du das Quartal bestätigen bzw. für die Berichterstattung frei geben.
+Wenn du alle Warnungen bearbeitet hast, kannst du das Quartal bestätigen bzw. für die Berichterstattung freigeben.
 
 ![Quartal freigeben](screenshots/quartal_bestätigen.png)
 ///caption
@@ -45,7 +45,7 @@ Wenn du beispielsweise das 3.Quartal ausgewählt hast, wird die erste Publikatio
 ///
 
 Rechts kannst du dir mit dem Pfeil die Aktivität direkt anzeigen lassen, die Aktivität in den Warenkorb legen um mehrere gesammelt herunterzuladen oder die Aktivität mit einem Klick auf den Stift bearbeiten. Zudem werden dir, wenn vom Admin aktiviert, die Anzahl der Coins die du pro Aktivität gesammelt hast, angezeigt.  
-Fällt dir hier auf, dass eine Aktivtät in einer Kategorie fehlt, kannst du diese einfach über das :heavy_plus_sign: hinzufügen.
+Fällt dir hier auf, dass eine Aktivität in einer Kategorie fehlt, kannst du diese einfach über das :heavy_plus_sign: hinzufügen.
 
 ## Meine Aktivitäten
 

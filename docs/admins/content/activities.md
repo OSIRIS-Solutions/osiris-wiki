@@ -52,7 +52,7 @@ Standardmäßig findest du in OSIRIS folgende Kategorien mit ihren Typen:
     - Award
 
 
-Die Kategorien sind mit einer Farbe markiert, die sich auch in der Auflistung der Typen wiederspiegelt. Du kannst die bestehenden Kategorien und Typen bearbeiten: Unter anderem Farbe und Icons können gewechselt, IDs, Namen und Beschreibungen geändert sowie Datenfelder angepasst werden. Du kannst auch neue Kategorien erstellen und Typen zu bestehenden oder neuen Kategorien hinzufügen.
+Die Kategorien sind mit einer Farbe markiert, die sich auch in der Auflistung der Typen widerspiegelt. Du kannst die bestehenden Kategorien und Typen bearbeiten: Unter anderem Farbe und Icons können gewechselt, IDs, Namen und Beschreibungen geändert sowie Datenfelder angepasst werden. Du kannst auch neue Kategorien erstellen und Typen zu bestehenden oder neuen Kategorien hinzufügen.
 
 ## Neue Kategorie erstellen
 
@@ -60,28 +60,28 @@ Unter Inhalte &#8594 Aktivitäten kannst du eine neue Kategorie hinzufügen.
 
 ![Kategorie hinzufügen](screenshots/kategorie_erstellen.png)
 ///caption
-Seite um eine neue Kategorie zu erstellen
+Seite, um eine neue Kategorie zu erstellen
 ///
 
-Zunächst musst du eine einzigartige ID wählen. mit einem Klick auf *muss einzigartig sein* siehst du eine Liste aller vergebenen IDs. Mit einem Klick auf *Icon* kannst du dir ein passendes Icon für deine neue Kategorie aussuchen, indem du den entsprechenden Text einfach in das Feld kopierst.   
+Zunächst musst du eine einzigartige ID wählen. Mit einem Klick auf *muss einzigartig sein* siehst du eine Liste aller vergebenen IDs. Mit einem Klick auf *Icon* kannst du dir ein passendes Icon für deine neue Kategorie aussuchen, indem du den entsprechenden Text einfach in das Feld kopierst.   
 Du kannst auf dieser Seite auch einstellen, welche Rollen in OSIRIS die eingetragenen Aktivitäten, die in diese Kategorie fallen, sehen können. Dies ist zum Beispiel nützlich für vertrauliche Einträge. Jeder Nutzende kann für diese Kategorie Einträge generieren und die eigenen sehen, die Einträge anderer Nutzender in dieser Kategorie aber nicht. Werden in eurem Institut beispielsweise Patente in OSIRIS eingetragen, soll vielleicht jede Person in der Lage sein ein Patent einzutragen und dies auch weiterhin im eigenen Verlauf zu sehen, andere Patent-Einträge werden aber nicht angezeigt.
 
 ## Neuen Typen erstellen
 
-Du kannst Kategorien neue Typen hinzufügen. Auch hier brauchst du eine einzigartige ID und kannst dir ein Icon aussuchen. Die Farbe des Typen passt sich an die Kategorie an. Diese kannst du auch noch spontan während des Erstellens des neuen Typens ändern. Die von dir gewählte Beschreibung wird den Nutzenden bei Erstellen von diesem Typen Aktivität als Infokästchen angezeigt und sollte beschreiben, für welche Einträge diese Vorlage geeignet ist. 
+Du kannst Kategorien neue Typen hinzufügen. Auch hier brauchst du eine einzigartige ID und kannst dir ein Icon aussuchen. Die Farbe des Typen passt sich an die Kategorie an. Diese kannst du auch noch spontan während des Erstellens des neuen Typen ändern. Die von dir gewählte Beschreibung wird den Nutzenden beim Erstellen von diesem Typen Aktivität als Infokästchen angezeigt und sollte beschreiben, für welche Einträge diese Vorlage geeignet ist. 
 
 ![Typ erstellen](screenshots/typen_erstellen.png)
 ///caption
-Seite um einen neuen Typ Aktivität zu erstellen
+Seite, um einen neuen Typ Aktivität zu erstellen
 ///
 ---
 ![Typen erstellen Infofeld](screenshots/typen_erstellen_infofeld.png)
 ///caption
-So wird die von dir gewählte Beschreibung dann in der Vorlage der Aktivität aus.
+So wird die von dir gewählte Beschreibung dann in der Vorlage der Aktivität aus
 ///
 
 
-Sei dir bewusst, dass bei der Wahl *Diese Art von Aktivität sollte in OSIRIS Portfolio sichtbar sein* alle unter diesem Typen eingetragenen Aktivitäten über die Website nach außen hin sichtbar sind. Nachdem du gespeichert hast sollte dein neu erstellter Typ von Aktivität in der Auflistung der Kategorie erscheinen und steht jedem Nutzenden für einen entsprechenden Eintrag zur Verfügung.
+Sei dir bewusst, dass bei der Wahl *Diese Art von Aktivität sollte in OSIRIS Portfolio sichtbar sein* alle unter diesem Typen eingetragenen Aktivitäten über die Website nach außen hin sichtbar sind. Nachdem du gespeichert hast, sollte dein neu erstellter Typ von Aktivität in der Auflistung der Kategorie erscheinen und steht jedem Nutzenden für einen entsprechenden Eintrag zur Verfügung.
 
 ![Beispiel](screenshots/neue_typen_beispiel.png)
 ///caption
@@ -100,7 +100,7 @@ Mit dem neuen Formular-Builder kannst du die Vorlagen für Aktivitäten noch fle
 Mit einem Klick auf bearbeiten gelangst du zu dem Formular-Builder.
 ///
 
-Der Formular-Builder ist in zwei Teile eingeteilt: Links die Felder und Layout-Optionen, die du deinem Formular hinzufügen kannst und rechts alle Felder, die du deinem Formular hinzugefügt hast. Hier siehst du direkt die Standard-Felder *Titel*, *Autoren* und *Datum*, welche bei jeder Aktivität angegeben werden müssen. Du kannst die Anordnung der Felder ändern indem du sie am linken Rand festhältst und zum gewünschten Platz ziehst.  
+Der Formular-Builder ist in zwei Teile eingeteilt: Links die Felder und Layout-Optionen, die du deinem Formular hinzufügen kannst und rechts alle Felder, die du deinem Formular hinzugefügt hast. Hier siehst du direkt die Standard-Felder *Titel*, *Autoren* und *Datum*, welche bei jeder Aktivität angegeben werden müssen. Du kannst die Anordnung der Felder ändern, indem du sie am linken Rand festhältst und zum gewünschten Platz ziehst.  
 Links siehst du ein Suchfeld um alle vorhandenen Datenfelder zu durchsuchen sowie Filteroptionen nach Themen. Zudem siehst du die Layout-Optionen *Überschrift*, *Trennlinie* und *Absatz*, die du deinem Formular beliebig hinzufügen kannst.  
 Die Auflistung der Datenfelder beginnt mit den von dir erstellten benutzerdefinierten Feldern. Infos zu den Datenfeldern bekommst du mit einem Klick auf das Fragezeichen rechts.  
 
@@ -112,7 +112,7 @@ Der Formular-Builder in OSIRIS mit dem du die Aktivitäten-Vorlage individuell g
 
 Du kannst dir dein erstelltes Formular immer mit einem Klick auf *Vorschau* anzeigen lassen - denke daran vorher immer zu speichern!  
 Oben rechts siehst du einen Button, der es dir ermöglicht schon bestehende Formulare aus OSIRIS zu laden und diese nach deinen Vorstellungen weiter anzupassen.  
-:warning: Dein bestehendes Formular wird durch die Auswahl einer Vorlage überschrieben - allerdings erst final wenn du speicherst.
+:warning: Dein bestehendes Formular wird durch die Auswahl einer Vorlage überschrieben - allerdings erst final, wenn du speicherst.
 
 ![Builder Poster erweitert](screenshots/builder_poster_erweitert.png)
 ///caption
@@ -125,7 +125,7 @@ Nachdem alles gespeichert wurde kannst du dir eine Vorschau deines Formulars ans
 ///
 
 In der Vorschau siehst du wie deine Formular-Bausteine durch OSIRIS umgesetzt wurden und wie die Nutzenden die Vorlage bei einem neuen Eintrag einer Aktivität sehen werden.  
-Jedes Feld kann mit einem Klick bearbeitet, als Pflichtfeld markiert oder auch gelöscht werden. Bei manchen Feldern kannst du eine Hilfe für die Nutzenden hinzufügen, die sie sehen wenn sie in das Feld klicken.
+Jedes Feld kann mit einem Klick bearbeitet, als Pflichtfeld markiert oder auch gelöscht werden. Bei manchen Feldern kannst du eine Hilfe für die Nutzenden hinzufügen, die sie sehen, wenn sie in das Feld klicken.
 
 ![Builder Location Help](screenshots/builder_help_location.png)
 
@@ -137,4 +137,4 @@ Oben siehst du das **Eigenschaften** Feld für das Datenfeld "location". Hier ka
 ///
 
 Die Eigenschaften-Felder unterscheiden sich je nach Datenfeld, beinhalten aber immer den **löschen**-Button. Zudem kannst du hier die Breite des Datenfeldes nach deinen Vorstellungen anpassen.  
-Nachdem du alle Änderungen gespeichert hast können Nutzende die geänderte Vorlage direkt bei den Aktivitäten finden.
+Nachdem du alle Änderungen gespeichert hast, können Nutzende die geänderte Vorlage direkt bei den Aktivitäten finden.
