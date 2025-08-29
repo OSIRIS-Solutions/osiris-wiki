@@ -62,14 +62,15 @@ nav:
       - Einführung: admins/roles/index.md
       - Standard-Rollen: admins/roles/roles.md
       - Wichtige Rechte: admins/roles/important-rights.md
-    - Berichte: admins/reporting/index.md 
+    - Berichterstattung: admins/reporting/index.md 
     - Nutzerverwaltung: admins/users.md
     - Forschungsreisen: admins/travel.md
   - Nutzer:
     - Einführung: users/index.md
     - Profil:
       - Startseite: users/profile/start.md
-      - Scientist Ansicht: users/profile/scientist_view.md
+      - Mein Jahr: users/profile/scientist_view.md
+      - Meine Aktivitäten: users/profile/my_activities.md
       - Quartalsübersicht: users/profile/quarter_view.md
     - Inhalte hinzufügen: users/creating-content.md
     - Benachrichtigungen: users/issues.md

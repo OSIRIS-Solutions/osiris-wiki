@@ -2,11 +2,7 @@
 status: false
 ---
 
-Wurde dir die Rolle eines:r Wissenschaftlers:in zugeordnet, befinden sich zwei weitere Schaltflächen links unter *Mein Bereich* - **Mein Jahr** und **Meine Aktivitäten**. Es handelt sich hier um die gleichen Seiten, zu denen du durch die Direktlinks in deinem Profil weitergeleitet wirst. Sie sind in der Wissenschafter:innenansicht nur etwas präsenter, da hier deine Einträge quartalsweise verwaltet werden und von dir bestätigt werden müssen. 
-
-## Mein Jahr
-
-Auf der Seite "Mein Jahr" können Wissenschaftler:innen einen Überblick über alle eigenen Forschungsaktivitäten eines Jahres gewinnen und quartalsweise bestätigen, dass alle Angaben korrekt und vollständig sind. Dabei werden die Daten an die Reportenden übermittelt.
+Auf der Seite "Mein Jahr" können Nutzende einen Überblick über alle eigenen Forschungsaktivitäten eines Jahres gewinnen und quartalsweise bestätigen, dass alle Angaben korrekt und vollständig sind. Dabei werden die Daten an die Reportenden übermittelt.
 
 ![Mein Jahr](screenshots/meinjahr.png)
 ///caption
@@ -46,14 +42,3 @@ Wenn du beispielsweise das 3.Quartal ausgewählt hast, wird die erste Publikatio
 
 Rechts kannst du dir mit dem Pfeil die Aktivität direkt anzeigen lassen, die Aktivität in den Warenkorb legen um mehrere gesammelt herunterzuladen oder die Aktivität mit einem Klick auf den Stift bearbeiten. Zudem werden dir, wenn vom Admin aktiviert, die Anzahl der Coins die du pro Aktivität gesammelt hast, angezeigt.  
 Fällt dir hier auf, dass eine Aktivität in einer Kategorie fehlt, kannst du diese einfach über das :heavy_plus_sign: hinzufügen.
-
-## Meine Aktivitäten
-
-Anders als auf der Seite *Mein Jahr* sind deine Aktivitäten hier nach Quartal sortiert, nicht nach Kategorie.
-
-![Meine Aktivitäten](screenshots/meine_aktivitäten.png)
-///caption 
-Die Seite **Meine Aktivitäten** listet all deine Aktivitäten sortiert nach Quartal auf
-///
-
-Du hast hier mehrere Möglichkeiten deine Aktivitäten zu filtern oder zu durchsuchen. Zudem kannst du die Liste als Excel- oder csv-Datei exportieren. 
