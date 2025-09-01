@@ -3717,6 +3717,10 @@ sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">en
 </div>
 </div>
 </div>
+<p><img alt="⚠" class="twemoji" src="../../../assets/external/cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/26a0.svg" title=":warning:"> Bitte achtet darauf, dass in eurer Apache-Konfiguration (/etc/apache2/sites-enabled/000-default.conf) <strong>AllowOverwrite All</strong> gesetzt ist.  </p>
+<p>Damit die Änderung wirksam wird müsst ihr Apache neu laden:</p>
+<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>sudo<span class="w"> </span>systemctl<span class="w"> </span>reload<span class="w"> </span>apache2
+</code></pre></div></td></tr></table></div>
 <h3 id="22-mongodb-installieren">2.2 MongoDB installieren</h3>
 <p>Folgt der offiziellen Anleitung:
  <a href="https://www.mongodb.com/docs/manual/administration/install-on-linux/">MongoDB Installation</a></p>
@@ -3807,7 +3811,7 @@ sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class=
 </div>
 </div>
 <h3 id="42-htaccess-beachten">4.2 .htaccess beachten</h3>
-<p>Ab OSIRIS Version 1.3.6 wird die <code>.htaccess</code>-Datei mitgeliefert. Bei Installation in einem Unterordner, passe bitte <code>RewriteBase</code> an und den <code>ROOTPATH</code> in <code>config.php</code>.</p>
+<p>Ab OSIRIS Version 1.3.6 wird die <code>.htaccess</code>-Datei mitgeliefert. Bei Installation in einem Unterordner passe bitte <code>RewriteBase</code> an und den <code>ROOTPATH</code> in <code>config.php</code>.</p>
 <div class="language-apache highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
@@ -3822,7 +3826,8 @@ sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class=
 <p>Öffne deinen Browser und gehe zu:</p>
 <div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>http://&lt;deine-server-ip&gt;/
 </code></pre></div></td></tr></table></div>
-<p>Du solltest eine rote Box sehen mit dem Hinweis, dass OSIRIS noch installiert werden muss. Keine Panik, damit ist nur die Datenbank gemeint. Klicke auf "Installieren" und OSIRIS wird die Datenbank anlegen und alles vorbereiten.</p>
+<p>Du solltest eine rote Box sehen mit dem Hinweis, dass OSIRIS noch installiert werden muss. Keine Panik, damit ist nur die Datenbank gemeint. Klicke auf "Installieren" und OSIRIS wird die Datenbank anlegen und alles vorbereiten.  </p>
+<p><img alt="⚠" class="twemoji" src="../../../assets/external/cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/26a0.svg" title=":warning:"> Wenn ihr eine Fehlermeldung bekommt und der Installationspfad nicht gefunden wird, überprüft ob die <strong>.htaccess</strong>-Datei vorhanden ist und wie unter <a href="https://wiki.osiris-app.de/technical/install/linux/#42-htaccess-beachten">4.2</a> beschrieben aussieht. Zudem sollte der Pfad auf "/" gesetzt sein. </p>
 <p>Zum Schluss sollte die Login-Seite von OSIRIS laden und die Installation somit abgeschlossen sein! 🎉</p>
 <h2 id="zusammenfassung-checkliste">Zusammenfassung: Checkliste</h2>
 <ul class="task-list">
@@ -3830,7 +3835,7 @@ sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class=
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Apache und PHP korrekt installiert</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> MongoDB PHP-Treiber Version 1.21.0 aktiv</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> OSIRIS aus Git geladen und Composer-Abhängigkeiten installiert</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> mod_rewrite aktiv und .htaccess angepasst</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> mod_rewrite aktiv, AllowOverwrite All gesetzt und .htaccess angepasst</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> OSIRIS lädt im Browser</li>
 </ul>
 
@@ -3855,7 +3860,7 @@ sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class=
     <span class="md-icon" title="Letztes Update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="13. Juli 2025 12:51:00 UTC">13. Juli 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="1. September 2025 13:57:16 UTC">1. September 2025</span>
   </span>
 
     
