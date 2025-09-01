@@ -58,6 +58,14 @@ Apache starten und aktivieren:
     sudo systemctl enable httpd
     ```
 
+:warning: Bitte achtet darauf, dass in eurer Apache-Konfiguration (/etc/apache2/sites-enabled/000-default.conf) **AllowOverwrite All** gesetzt ist.  
+
+Damit die Änderung wirksam wird müsst ihr Apache neu laden:
+
+```bash
+sudo systemctl reload apache2
+```
+
 ### 2.2 MongoDB installieren
 
 
@@ -190,7 +198,7 @@ Alle Informationen zu den Einstellungen findest du in dem Abschnitt [Basiskonfig
 ### 4.2 .htaccess beachten
 
 
-Ab OSIRIS Version 1.3.6 wird die `.htaccess`-Datei mitgeliefert. Bei Installation in einem Unterordner, passe bitte `RewriteBase` an und den `ROOTPATH` in `config.php`.
+Ab OSIRIS Version 1.3.6 wird die `.htaccess`-Datei mitgeliefert. Bei Installation in einem Unterordner passe bitte `RewriteBase` an und den `ROOTPATH` in `config.php`.
 
 ```apache
 DirectoryIndex index.php
@@ -209,7 +217,9 @@ RewriteRule ^(.*)$ index.php [QSA]
 http://<deine-server-ip>/
 ```
 
-Du solltest eine rote Box sehen mit dem Hinweis, dass OSIRIS noch installiert werden muss. Keine Panik, damit ist nur die Datenbank gemeint. Klicke auf "Installieren" und OSIRIS wird die Datenbank anlegen und alles vorbereiten.
+Du solltest eine rote Box sehen mit dem Hinweis, dass OSIRIS noch installiert werden muss. Keine Panik, damit ist nur die Datenbank gemeint. Klicke auf "Installieren" und OSIRIS wird die Datenbank anlegen und alles vorbereiten.  
+
+:warning: Wenn ihr eine Fehlermeldung bekommt und der Installationspfad nicht gefunden wird, überprüft ob die **.htaccess**-Datei vorhanden ist und wie unter [4.2](https://wiki.osiris-app.de/technical/install/linux/#42-htaccess-beachten) beschrieben aussieht. Zudem sollte der Pfad auf "/" gesetzt sein. 
  
 
 Zum Schluss sollte die Login-Seite von OSIRIS laden und die Installation somit abgeschlossen sein! 🎉
@@ -221,7 +231,7 @@ Zum Schluss sollte die Login-Seite von OSIRIS laden und die Installation somit a
 - [X] Apache und PHP korrekt installiert
 - [X] MongoDB PHP-Treiber Version 1.21.0 aktiv
 - [X] OSIRIS aus Git geladen und Composer-Abhängigkeiten installiert
-- [X] mod\_rewrite aktiv und .htaccess angepasst
+- [X] mod\_rewrite aktiv, AllowOverwrite All gesetzt und .htaccess angepasst
 - [X] OSIRIS lädt im Browser
 
 
