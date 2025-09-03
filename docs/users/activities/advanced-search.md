@@ -56,3 +56,7 @@ Hier aggregierst du die oben gezeigte Suche nach "Jahr". Die Tabelle zeigt dir d
 ```bash
 {"$and":[{"subtype":"article"},{"impact":{"$gt":2}},{"$or":[{"year":2025},{"year":2024}]}]}
 ```
+
+## Experten-Modus
+
+Neben dem orangen "Anwenden" Button findest du den *Experten-Modus*. Hier kannst du deine eigenen MongoDB-Befehle eingeben, um OSIRIS zu durchsuchen.

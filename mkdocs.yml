@@ -78,8 +78,10 @@ nav:
     - Organisationseinheiten: users/units.md
     - Aktivitäten: 
       - Einführung: users/activities/index.md
+      - Erweiterte Ansicht: users/activities/expanded_view.md
       - Erweiterte Suche: users/activities/advanced-search.md
       - Pivot-Tabelle: users/activities/pivot.md
+      - Einkaufswagen: users/activities/cart.md
     - Projekte:
       - Einführung: users/projects/index.md
       # - Projekte erstellen: users/projects/create.md
