@@ -12,6 +12,10 @@ Das Tagsymbol in Verbindung mit einer Versionsnummer zeigt an, wann ein bestimmt
 
 Einige Features sind in OSIRIS optional und können je nach Bedarf aktiviert oder deaktiviert werden. Du findest diese Einstellungen in der Regel im Admin-Bereich unter "Einstellungen" > "Funktionen".
 
+### <!-- md:auth --> – User Management { data-toc-label="User Management" }
+Einige Funktionen sind nur verfügbar, wenn eine bestimmte Art der Nutzerverwaltung (Auth, OAuth2 oder LDAP) verwendet wird. Diese Funktionen sind mit dem Benutzersymbol gekennzeichnet.
+
+
 ### <!-- md:beta --> – Beta { data-toc-label="Beta" }
 
 Einige neuere Funktionen werden noch als experimentell betrachtet, was bedeutet, dass sie sich jederzeit (wenn auch selten) ändern können, einschließlich ihrer vollständigen Entfernung (was bisher noch nicht passiert ist).

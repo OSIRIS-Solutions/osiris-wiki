@@ -43,6 +43,8 @@ def on_page_markdown(
         args = args.strip()
         if type == "version":
             return _badge_for_version(args, page, files)
+        elif type == "auth":
+            return _badge_for_auth(args, page, files)
         elif type == "flag":         return flag(args, page, files)
         elif type == "beta":         return _badge_for_beta(page, files)
         elif type == "option":       return option(args)
@@ -50,7 +52,7 @@ def on_page_markdown(
         elif type == "feature":      return _badge_for_feature(args, page, files)
         elif type == "plugin":       return _badge_for_plugin(args, page, files)
         elif type == "utility":      return _badge_for_utility(args, page, files)
-        elif type == "example": return _badge_for_example(args, page, files)
+        elif type == "example":      return _badge_for_example(args, page, files)
         elif type == "demo":         return _badge_for_demo(args, page, files)
 
         # Otherwise, raise an error
@@ -126,6 +128,20 @@ def _badge_for_version(text: str, page: Page, files: Files):
     href = _resolve_path("conventions.md#version", page, files)
     return _badge(
         icon = f"[:{icon}:]({href} 'Minimum version')",
+        text = f"[{text}]({_resolve_path(path, page, files)})" if spec else ""
+    )
+
+
+# Create badge for version
+def _badge_for_auth(text: str, page: Page, files: Files):
+    spec = text
+    path = f"technical/user-management/#{spec}"
+
+    # Return badge
+    icon = "material-account-supervisor"
+    href = _resolve_path("conventions.md#auth", page, files)
+    return _badge(
+        icon = f"[:{icon}:]({href} 'User Management Method')",
         text = f"[{text}]({_resolve_path(path, page, files)})" if spec else ""
     )
 
