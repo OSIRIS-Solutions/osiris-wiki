@@ -63,7 +63,9 @@ nav:
       - Standard-Rollen: admins/roles/roles.md
       - Wichtige Rechte: admins/roles/important-rights.md
     - Berichterstattung: admins/reporting/index.md 
-    - Nutzerverwaltung: admins/users.md
+    - Nutzerverwaltung: 
+      - Einführung: admins/users/index.md
+      - Passwörter zurücksetzen: admins/users/reset-password.md
     - Forschungsreisen: admins/travel.md
   - Nutzer:
     - Einführung: users/index.md
