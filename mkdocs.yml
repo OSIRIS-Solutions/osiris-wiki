@@ -78,6 +78,7 @@ nav:
     - Benachrichtigungen: users/issues.md
     - Forschungsbereiche: users/topics.md
     - Organisationseinheiten: users/units.md
+    - Lehrveranstaltungen: users/courses.md
     - Aktivitäten: 
       - Einführung: users/activities/index.md
       - Erweiterte Ansicht: users/activities/expanded_view.md
