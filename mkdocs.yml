@@ -92,6 +92,7 @@ nav:
     - Personen:
       - Einführung: users/people/index.md
       - Einheiten von Personen: users/people/units.md
+      - Gäste: users/people/guests.md
     - Infrastrukturen:
       - Einführung: users/infrastructures/index.md
     - Berichte:

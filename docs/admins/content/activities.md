@@ -4,6 +4,7 @@ status: false
 
 # Aktivitäten verwalten
 
+<!-- [:simple-youtube: Zum Video](https://youtu.be/PDmlmwsR3eI){.md-button} -->
 
 Die Aktivitäten in OSIRIS sollen im besten Fall alles abdecken, womit sich Forschende in eurer Einrichtung befassen. Die **Kategorien** helfen dabei, die Aktivitäten sinnvoll einzuteilen und mit Überbegriffen wie *Publikationen*, *Vorträge* oder *Lehre* zu versehen. Innerhalb einer Kategorie können individuelle **Typen** erstellt werden, die dann die Vorlage einer Aktivität abbilden. Hierunter fallen zum Beispiel *Journal Article*, *Buchkapitel* oder *Preprint*.   
 Standardmäßig findest du in OSIRIS folgende Kategorien mit ihren Typen:
@@ -92,6 +93,8 @@ Die neu erstellte Kategorie **ehrenamtliche Engagements** mit den neu erstellten
 <!-- md:version 1.5.1 -->
 
 ## Formular-Builder
+
+<!-- [:simple-youtube: Zum Video](https://youtu.be/I1ZT2vlRFeA){.md-button} -->
 
 Mit dem neuen Formular-Builder kannst du die Vorlagen für Aktivitäten noch flexibler gestalten. Du gelangst mit einem Klick auf *bearbeiten* neben den Datenfeldern zu dem Builder.
 

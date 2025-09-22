@@ -4,6 +4,8 @@ status: false
 
 # Erweiterte Aktivitäten-Suche
 
+<!-- [:simple-youtube: Zum Video](https://youtu.be/cKuugdRF-k8){.md-button} -->
+
 Du kannst die Seite **Alle Aktivitäten** mit dem Suchbalken oben links schnell und einfach durchsuchen. Reicht eine einfache Suche nicht aus, kannst du eine **erweiterte Suche** durchführen, die du direkt neben dem Suchbalken findest.
 
 
@@ -22,7 +24,7 @@ Du kannst jedes Suchfeld über den *löschen* Button rechts daneben aus deiner S
 
 ![Widget Spalte hinzufügen](screenshots/spalten_hinzufügen.png)
 ///caption
-Das Spalte hinzufügen-Widget ermöglicht es dir belieblige Spalten deiner Ergebnistabelle hinzuzufügen.
+Das Spalte hinzufügen-Widget ermöglicht es dir beliebige Spalten deiner Ergebnistabelle hinzuzufügen.
 ///
 
 ![Spalte hinzufügen Ergebnis](screenshots/spalten_hinzufügen_tabelle.png)

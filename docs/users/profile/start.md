@@ -60,7 +60,7 @@ Hier kannst du organisatorische Angaben machen, wie zum Beispiel deine Raumnumme
 
 ### Forschung
 
-Um deine Forschung zu beschreiben, kannst du aus einer Liste von Schlagwörtern wählen, die durch die Administration vorgegeben wurde. Deine Expertise und Forschungsinteressen kannst du etwas individueller über die Freitext-Felder angeben.
+Um deine Forschung zu beschreiben, kannst du aus einer Liste von Schlagwörtern wählen, die durch die Administration vorgegeben wurde. Deine Expertise und Forschungsinteressen kannst du etwas individueller über die Freitext-Felder angeben. Wenn du in das Feld zum hinzufügen einer Expertise klickst, werden dir alle schon verfügbaren Begriffe angezeigt, sodass du auch aus dieser wählen kannst. 
 
 ### Biografie
 

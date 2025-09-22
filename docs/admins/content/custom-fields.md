@@ -4,6 +4,8 @@ status: false
 
 # Benutzerdefinierte Felder
 
+<!-- [:simple-youtube: Zum Video](https://youtu.be/FxK_zLE9Cso){.md-button} -->
+
 Auf dieser Seite kannst du in OSIRIS Felder hinzufügen, die dir bei der Beschreibung einer Aktivität, eines Projekts oder auch bei den Personendaten fehlen. Wenn du einen neuen Typ von Aktivität erstellst oder einen bestehenden bearbeitest, kannst du diese Felder unter *Datenfelder* aus einem Dropdown Menü auswählen. 
 
 ![custom fields](screenshots/custom_fields.png)
