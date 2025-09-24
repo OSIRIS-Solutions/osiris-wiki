@@ -4,7 +4,7 @@ status: false
 
 # Erweiterte Aktivitäten-Suche
 
-<!-- [:simple-youtube: Zum Video](https://youtu.be/cKuugdRF-k8){.md-button} -->
+[:simple-youtube: Zum Video](https://youtu.be/cKuugdRF-k8){.md-button}
 
 Du kannst die Seite **Alle Aktivitäten** mit dem Suchbalken oben links schnell und einfach durchsuchen. Reicht eine einfache Suche nicht aus, kannst du eine **erweiterte Suche** durchführen, die du direkt neben dem Suchbalken findest.
 
