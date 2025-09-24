@@ -74,7 +74,10 @@ nav:
       - Mein Jahr: users/profile/scientist_view.md
       - Meine Aktivitäten: users/profile/my_activities.md
       - Quartalsübersicht: users/profile/quarter_view.md
-    - Inhalte hinzufügen: users/creating-content.md
+    - Inhalte:
+      - Inhalte hinzufügen: users/content/create_content.md
+      - Inhalte bearbeiten: users/content/edit_content.md
+      - weitere Funktionen: users/content/expanded_functions.md
     - Benachrichtigungen: users/issues.md
     - Forschungsbereiche: users/topics.md
     - Organisationseinheiten: users/units.md

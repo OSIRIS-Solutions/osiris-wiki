@@ -29,14 +29,14 @@ Um eine Aktivität des Typs **Lehre** einem Modul hinzuzufügen, gibt es zwei M�
 
 ![Lehr-Aktivität hinzufügen](screenshots_courses/activity_course.png)
 ///caption
-Formular um eine Lehre-Aktivität hinzuzufügen
+Formular, um eine Lehre-Aktivität hinzuzufügen
 ///
 
 Neben dem Modul musst du weitere Parameter angeben:
 
 - **Lehr-Kategorie:** Hier kannst du die Art deiner Lehr-Aktivität auswählen. Du hast die Wahl zwischen *Vorlesung*, *Praktikum*, *Seminar* oder verschiedenen Kombinationen aus diesen
 - **Betreuer:in mit SWS:** Gib hier eine oder mehrere Personen an, die diese Lehr-Aktivität betreuen. Wichtig ist die Angabe der *Semesterwochenstunden* und ob die Person mit eurem Institut affiliert ist
-- **Zeitspanne:** Hier kannst du die Daten für dein Modul eingeben. Falls es nur einen Tag dauert, kannst du das letzte Feld leer lassen. Zudem hast du links daneben eine Auswahl an Semstern, die du zum leichteren Ausfüllen der Zeitspanne anklicken kannst
+- **Zeitspanne:** Hier kannst du die Daten für dein Modul eingeben. Falls es nur einen Tag dauert, kannst du das letzte Feld leer lassen. Zudem hast du links daneben eine Auswahl an Semestern, die du zum leichteren Ausfüllen der Zeitspanne anklicken kannst
 
 Auch Lehrveranstaltungen können mit [Forschungsbereichen](https://wiki.osiris-app.de/users/topics/) verknüpft werden. Die zur Auswahl stehenden Bereiche findest du unten im Formular.  
 
