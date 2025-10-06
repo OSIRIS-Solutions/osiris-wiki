@@ -80,8 +80,13 @@ nav:
       - weitere Funktionen: users/content/expanded_functions.md
     - Benachrichtigungen: users/issues.md
     - Forschungsbereiche: users/topics.md
-    - Organisationseinheiten: users/units.md
+    - Organisationseinheiten:
+      - Einführung: users/units/index.md
+      - Einheiten hinzufügen: users/units/new_unit.md
+      - Einheiten bearbeiten: users/units/edit_units.md
+      - Zeitaufgelöste Verknüpfungen: users/units/connections.md
     - Lehrveranstaltungen: users/courses.md
+    - Organisationen: users/organisations.md
     - Aktivitäten: 
       - Einführung: users/activities/index.md
       - Erweiterte Ansicht: users/activities/expanded_view.md
@@ -95,7 +100,6 @@ nav:
       # - Projekte suchen: users/projects/search.md
     - Personen:
       - Einführung: users/people/index.md
-      - Einheiten von Personen: users/people/units.md
       - Gäste: users/people/guests.md
     - Infrastrukturen:
       - Einführung: users/infrastructures/index.md
