@@ -32,4 +32,4 @@ Wenn du auf das Feld klickst, kannst du nach einem Journal anhand des Namens ode
 Suche nach einem Journal 
 ///
 
-Wird dein gesuchtes Journal nicht gefunden, kannst du mit dem unteren Button zusätzlich den [OpenAlex-Katalog] durchsuchen. 
+Wird dein gesuchtes Journal nicht gefunden, kannst du mit dem unteren Button zusätzlich den [OpenAlex-Katalog](https://openalex.org/) durchsuchen. 

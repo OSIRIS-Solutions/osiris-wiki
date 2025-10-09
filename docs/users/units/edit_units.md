@@ -29,9 +29,9 @@ Hier kannst du weitere leitende Personen hinzufügen und die Reihenfolge anpasse
 Wenn du der Organisationseinheit weitere Personen zuordnen möchtest, kannst du dies über den Button **Person hinzufügen** machen. Hier kannst du aus einem Dropdown-Menü den Namen auswählen, das Startdatum der Zugehörigkeit angeben und bestimmen, ob die Person wissenschaftlich affiliert ist oder nicht.  
 Alle hinzugefügten Personen werden unter **Direkt zugeordnete Personen** aufgelistet. 
 
-![Zugeordnete Personen]
+![Zugeordnete Personen](screenshots_units/direkt_zugeordnete_personen.png)
 ///caption
-Liste der zugeordneten Personen mit weiteren Einstellungsmöglichkeiten
+Liste der zugeordneten Personen mit weiteren Einstellungsmöglichkeiten und der Anzeige von Admin-Rechten
 ///
 
 In der Liste kannst du sehen, welche Position die Person hat und seit wann sie der Einheit zugehörig ist. Dieses [Datum](https://wiki.osiris-app.de/users/units/connections) kann nur von der Person selbst angepasst werden.  

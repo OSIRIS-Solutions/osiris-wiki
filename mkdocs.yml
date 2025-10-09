@@ -21,6 +21,7 @@ nav:
     - Glossar: topics/glossary.md
     - Wer verwendet OSIRIS?: topics/implementations.md
     - KDSF: topics/kdsf.md
+    - Betriebsvereinbarung: topics/works_council.md
   - Technik:
     - Einführung: technical/index.md
     - Installation:
@@ -32,6 +33,7 @@ nav:
       - Generelle Einstellungen: technical/configure/index.md
       - Datenbank: technical/configure/database.md
       - Workflows und Jobs: technical/configure/workflows.md
+      - Email: technical/configure/email.md
     - Nutzerverwaltung:
       - Nutzerverwaltung: technical/user-management/index.md
       - LDAP: technical/user-management/ldap.md
@@ -58,6 +60,11 @@ nav:
       - Vokabular: admins/content/vocabulary.md
       - Hilfswerkzeuge: admins/content/tools.md
       - Infrastrukturen: admins/content/infrastructures.md
+    - Workflows:
+      - Einführung: admins/workflows/workflows.md
+      - Workflow erstellen: admins/workflows/create_workflow.md
+      - Anwendung auf Aktivitäten: admins/workflows/linked_activities.md
+      - Ablauf eines Workflows: admins/workflows/workflow_handling.md
     - Rollen und Rechte:
       - Einführung: admins/roles/index.md
       - Standard-Rollen: admins/roles/roles.md
@@ -74,12 +81,15 @@ nav:
       - Mein Jahr: users/profile/scientist_view.md
       - Meine Aktivitäten: users/profile/my_activities.md
       - Quartalsübersicht: users/profile/quarter_view.md
+      - Mail Digest: users/profile/maildigest.md
     - Inhalte:
       - Inhalte hinzufügen: users/content/create_content.md
       - Inhalte bearbeiten: users/content/edit_content.md
+      - Entwürfe: users/content/drafts.md
       - weitere Funktionen: users/content/expanded_functions.md
     - Benachrichtigungen: users/issues.md
     - Forschungsbereiche: users/topics.md
+    - Workflows: users/workflows.md
     - Organisationseinheiten:
       - Einführung: users/units/index.md
       - Einheiten hinzufügen: users/units/new_unit.md
@@ -108,6 +118,8 @@ nav:
       - Berichte-Vorlagen: users/reporting/report-templates.md
       - Statistiken: users/reporting/statistics.md
       - Quartalsberichte: users/reporting/quarterly-reporting.md  
+  - FAQs:
+    - FAQs/index.md
   - Blog:
     - blog/index.md
 theme:

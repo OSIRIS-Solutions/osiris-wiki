@@ -31,3 +31,20 @@ Die E-Mail-Einstellungen findet ihr im Admin-Bereich unter Einstellungen &#8594 
 ## Email-Versand testen
 
 Weiter unten im E-Mail-Einstellungsbereich findet ihr die Möglichkeit, eine Test-E-Mail zu versenden. Hier könnt ihr überprüfen, ob die E-Mail-Einstellungen korrekt sind und ob der Versand von E-Mails funktioniert. Dazu gebt ihr einfach eine E-Mail-Adresse ein, an die die Test-E-Mail gesendet werden soll, und klickt auf "Test-E-Mail senden". Wenn alles korrekt konfiguriert ist, sollte die E-Mail innerhalb weniger Minuten in eurem Posteingang landen.
+
+## Email-Digest
+
+<!-- md:version 1.5.0 -->
+<!-- md:feature -->
+
+OSIRIS kann automatisch Digest-Mails an Nutzende versenden, um über ausstehende Aktivitäten und Nachrichten zu informieren. Um diese Funktion zu aktivieren, gehst du im Admin-Bereich auf **Einstellungen &#8594 E-Mail**. 
+
+![mail_digest](mail_digest.png)
+///caption
+Hier kannst du bestimmen, wie oft Nutzende eine Zusammenfassung per Mail erhalten. Diese Einstellung kann von den Nutzenden bei Aktivierung noch individuell angepasst werden
+///
+
+Die Nutzenden erhalten in der von ihnen gewählten Regelmäßigkeit eine Mai mit Aktivitäts-Hinweisen, ungelesenen Nachrichten und ob OSIRIS aktualisiert wurde. 
+
+Um dieses Feature aktivieren zu können, muss ein CRON-Job konfiguriert werden. Die Anleitung dazu findest du [hier](https://wiki.osiris-app.de/technical/configure/email/).  
+Die bevorzugte Sprache (Deutsch/Englisch) wird bei Umstellung im Interface ab Version 1.6.0 ebenfalls in der Datenbank gespeichert und für die Mails verwendet.
