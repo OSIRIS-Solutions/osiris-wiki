@@ -42,7 +42,7 @@ Die Autoren können hier direkt auf den Kommentar antworten und den Schritt an d
 Seite mit dem aktuellen Status des Workflows und der Möglichkeit, den zugeordneten Schritt zu bestätigen. Hier werden auch die abgegebenen Kommentare zu diesem Prüfschritt angezeigt
 ///
 
-Wenn die zuständige Person die Aktivität jetzt freigeben möchte, kann sie dies hier direkt machen und alle Kommentare zu diesem Schritt löschen. Wenn der Schritt erneut zurückgewiesen werden soll, wird die Person erneut aufgefordert einen Kommentar abzugeben.
+Wenn die zuständige Person die Aktivität jetzt freigeben möchte, kann sie dies hier direkt machen und alle Kommentare zu diesem Schritt werden gelöscht. Wenn der Schritt erneut zurückgewiesen werden soll, wird die Person erneut aufgefordert einen Kommentar abzugeben.
 
 ## Freigeben eines Schrittes
 

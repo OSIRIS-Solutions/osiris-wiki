@@ -7,9 +7,9 @@ title: Willkommen in der OSIRIS-Dokumentation
 
 # Willkommen im OSIRIS Wiki
 
-!!! warning "Diese Dokumentation ist noch im Aufbau"
+!!! note "Diese Dokumentation wird ständig erweitert"
 
-    Diese Dokumentation ist noch im Aufbau und wird kontinuierlich erweitert. Wir freuen uns über Beiträge und Anregungen von der Community. Wenn du Fragen zur Dokumentation hast oder etwas vermisst, kontaktiere uns bitte über [GitHub](https://github.com/OSIRIS-Solutions/osiris-wiki).
+    Diese Dokumentation wird kontinuierlich erweitert. Wir freuen uns über Beiträge und Anregungen von der Community. Wenn du Fragen zur Dokumentation hast oder etwas vermisst, kontaktiere uns bitte über [GitHub](https://github.com/OSIRIS-Solutions/osiris-wiki).
 
 === "Open"
 
@@ -28,3 +28,9 @@ title: Willkommen in der OSIRIS-Dokumentation
     Wir haben eine [OSIRIS Community](https://forms.office.com/e/RS8Nay2CLw) gegründet, in der wir uns austauschen und gemeinsam an OSIRIS arbeiten. Dort findet Ihr auch die aktuellsten Informationen zu OSIRIS und könnt Euch mit anderen Nutzer:innen vernetzen.
 
     [Hier geht's zur Anmeldung!](https://forms.office.com/e/RS8Nay2CLw){ .md-button .md-button--primary }
+
+!!! info "Unser YouTube-Kanal"
+
+    Auf unserem YouTube-Kanal findest du Tutorial-Videos zu verschiedenen Themen in OSIRIS.
+
+    [Hier geht's zum YouTube Kanal!](https://www.youtube.com/channel/UC_goXCemXZu0zFgQDQTfPTw){.md-button .md-button--primary }
