@@ -23,3 +23,7 @@ status: false
 
 ??? question "Kann ich die Pflege meines Profils an eine andere Person übertragen?"
     Ja kannst du. Mehr Infos dazu [hier](https://wiki.osiris-app.de/users/profile/start/#account). Sei dir bewusst, dass diese Person auf all deine privaten Angaben und Einstellungen zugreifen, sowie Änderungen vornehmen kann.  
+
+
+??? question "Wie kann ich einer anderen Person Administratoren-Rechte geben?"
+    Wenn du als Administrator einer anderen Person Admin-Rechte geben möchtest, musst du auf die Profil-Seite der Person gehen und dann auf **Profil bearbeiten &#8594 Account**. Hier kannst du unter **Rollen** auch **Admin** auswählen. Weiteres dazu findest du [hier](http://127.0.0.1:8000/admins/roles/#rolle-an-nutzende-vergeben).

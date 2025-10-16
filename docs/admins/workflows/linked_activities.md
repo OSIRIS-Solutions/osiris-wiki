@@ -1,3 +1,10 @@
+---
+tags:
+- Aktivitäten
+- Workflows
+---
+
+
 # Workflows zu Aktivitätskategorien hinzufügen
 
 Deinen neu erstellten Workflow kannst du jetzt auf eine oder mehrere Aktivitätskategorien anwenden. Dafür musst du die Kategorie bearbeiten. Gehe dafür im Admin-Menü auf **Inhalte &#8594 Aktivitäten** und wähle deine gewünschte Kategorie aus. 

@@ -1,3 +1,8 @@
+---
+tags:
+- E-Mail
+---
+
 # E-Mail-Einstellungen
 
 <!-- md:version 1.5.0 -->
@@ -34,7 +39,7 @@ Weiter unten im E-Mail-Einstellungsbereich findet ihr die Möglichkeit, eine Tes
 
 ## Email-Digest
 
-<!-- md:version 1.5.0 -->
+<!-- md:version 1.6.0 -->
 <!-- md:feature -->
 
 OSIRIS kann automatisch Digest-Mails an Nutzende versenden, um über ausstehende Aktivitäten und Nachrichten zu informieren. Um diese Funktion zu aktivieren, gehst du im Admin-Bereich auf **Einstellungen &#8594 E-Mail**. 

@@ -1,4 +1,9 @@
-# Mail-Digest Einrichtung
+---
+tags:
+- E-Mail
+---
+
+# E-Mail-Digest Einrichtung
 
 <!-- md:version 1.6.0 -->
 

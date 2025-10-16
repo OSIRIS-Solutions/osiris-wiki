@@ -58,6 +58,7 @@ nav:
       - Personen: admins/content/persons.md
       - Benutzerdefinierte Felder: admins/content/custom-fields.md
       - Vokabular: admins/content/vocabulary.md
+      - Schlagwörter: admins/content/keywords.md
       - Hilfswerkzeuge: admins/content/tools.md
       - Infrastrukturen: admins/content/infrastructures.md
     - Workflows:
