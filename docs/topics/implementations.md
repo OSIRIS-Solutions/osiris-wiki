@@ -9,9 +9,11 @@ Hier findet ihr eine Liste von Instituten, die OSIRIS bereits nutzen oder gerade
     
 ## Aktive Installation
 
-- [DSMZ](https://dsmz.de)
-- [bicc](https://bicc.de)
+- [Leibniz Institut DSMZ - Deutsche Sammlung für Mikroorganismen und Zellkulturen](https://dsmz.de)
+- [bicc - Bonn International Centre for Conflict Studies](https://bicc.de)
+- [LIB - Leibniz-Institut zur Analyse des Biodiversitätswandels](https://leibniz-lib.de/de/ueber-das-lib.html)
+
 
 ## Zurzeit in der Einführung
 
-*Muss noch abgestimmt werden, ob ich das hier kommunizieren kann.*
+- [ZMT - Leibniz-Zentrum für Marine Tropenforschung](https://www.leibniz-zmt.de/de/)
