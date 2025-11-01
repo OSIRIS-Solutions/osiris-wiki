@@ -12,6 +12,7 @@ Hier findet ihr eine Liste von Instituten, die OSIRIS bereits nutzen oder gerade
 - [Leibniz Institut DSMZ - Deutsche Sammlung für Mikroorganismen und Zellkulturen](https://dsmz.de)
 - [bicc - Bonn International Centre for Conflict Studies](https://bicc.de)
 - [LIB - Leibniz-Institut zur Analyse des Biodiversitätswandels](https://leibniz-lib.de/de/ueber-das-lib.html)
+- [IfL - Leibniz-Institut für Länderkunde](https://leibniz-ifl.de/)
 
 
 ## Zurzeit in der Einführung

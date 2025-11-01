@@ -87,6 +87,7 @@ nav:
       - Inhalte hinzufügen: users/content/create_content.md
       - Inhalte bearbeiten: users/content/edit_content.md
       - Entwürfe: users/content/drafts.md
+      - Schlagwörter: users/content/keywords.md
       - weitere Funktionen: users/content/expanded_functions.md
     - Benachrichtigungen: users/issues.md
     - Forschungsbereiche: users/topics.md
@@ -106,9 +107,11 @@ nav:
       - Einkaufswagen: users/activities/cart.md
     - Projekte:
       - Einführung: users/projects/index.md
-      # - Projekte erstellen: users/projects/create.md
-      # - Projekte verwalten: users/projects/manage.md
-      # - Projekte suchen: users/projects/search.md
+      - Projekte erstellen: users/projects/new_project.md
+      - Projekte verwalten: users/projects/manage_projects.md
+      - Verlinkungen: users/projects/project_links.md
+      - Projekte suchen: users/projects/search.md
+      - Statistiken zu Projekten: users/projects/statistics.md
     - Personen:
       - Einführung: users/people/index.md
       - Gäste: users/people/guests.md
