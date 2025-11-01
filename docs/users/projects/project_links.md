@@ -1,3 +1,9 @@
+---
+status: false
+tags:
+    - Projekte
+    - Aktivitäten
+---
 # Projekte verlinken
 
 Wie auch in anderen Bereichen in OSIRIS, kannst du Projekte mit beteiligten Personen, Kooperationspartnern oder Aktivitäten verlinken. 

@@ -1,3 +1,9 @@
+---
+status: false
+tags:
+    - Rollen&Rechte
+---
+
 # Wichtige Rechte
 
 Dieser Abschnitt erklärt die wichtigsten zu vergebenen Rechte in OSIRIS.

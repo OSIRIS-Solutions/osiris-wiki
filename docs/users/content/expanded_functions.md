@@ -1,3 +1,10 @@
+---
+status: false
+tags:
+    - Aktivitäten
+    - Import
+---
+
 # Erweiterte Funktionen
 
 ## Dateien hochladen

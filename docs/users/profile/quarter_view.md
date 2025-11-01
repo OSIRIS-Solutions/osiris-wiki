@@ -1,5 +1,7 @@
 ---
 status: false
+tags:
+    - Reporting
 ---
 
 Sind deiner Rolle die Rechte zur Quartalsübersicht gegeben, wird deine Startseite um eine Grafik und Direktlinks erweitert.

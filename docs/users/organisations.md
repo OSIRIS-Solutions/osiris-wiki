@@ -1,5 +1,7 @@
 ---
 status: false
+tags:
+    - Organisationen
 ---
 
 # Organisationen in OSIRIS

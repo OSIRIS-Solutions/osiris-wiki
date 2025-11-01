@@ -1,3 +1,9 @@
+---
+status: false
+tags:
+    - Projekte
+---
+
 # Verwalten von Anträgen
 
 Nachdem du einen neuen Antrag angelegt hast, gibt es drei verschiedene Möglichkeiten diesen weiter zu verwalten. Diese siehst du, wenn du oben rechts auf **Beantragt** klickst.

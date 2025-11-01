@@ -1,3 +1,11 @@
+---
+status: false
+tags:
+    - Projekte
+    - Statistik
+    - Darstellung
+---
+
 # Projekt-Statistik
 
 Auf der Übersichtsseite der Projekte findest du einen Button, der dich zu verschiedenen Statistiken bezogen auf Projekte für eure Einrichtung führt. Auf der Statistik-Seite kannst du den Zeitraum, auf die sich die folgenden Tabellen und Abbildungen beziehen, anpassen.

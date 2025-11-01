@@ -4,6 +4,10 @@ status: false
 
 # FAQs
 
+Falls du Fragen an das OSIRIS-Team oder auch an die Community hast, kannst du diese gerne auf Github stellen. Häufig gestellte Fragen werden hier aufgelistet.
+
+[Hier geht's zur Q&A Seite!](https://github.com/OSIRIS-Solutions/osiris/discussions/categories/q-a){ .md-button }
+
 ??? question "Ich reviewe die gleiche Publikation mehrmals im Rahmen des gleichen Reviewprozesses (nach Änderungen der Autoren). Trage ich das mehrmals in OSIRIS ein?"
      Ja, jedes Review wird einzeln eingetragen: immer beim gleichen Journal, aber an unterschiedlichen Daten. Dabei ist immer das Datum einzutragen, an dem das Review fertiggestellt wurde. 
 

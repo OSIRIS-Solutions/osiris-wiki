@@ -1,3 +1,12 @@
+---
+status: false
+tags:
+    - Verschlagwortung
+    - Events
+    - Projekte
+    - Aktivitäten
+---
+
 # Verschlagwortung von Einträgen
 
 Um Einträge in OSIRIS besser kategorisieren und leichter thematisch finden zu können, kannst du Aktivitäten, Events und Projekte mit Schlagwörtern verlinken. Diese Funktion muss von der Administration eingeschaltet werden. Zudem werden die Schlagwörter durch die Administration vorgegeben. Sollte dir also ein Wort fehlen, kontaktiere bitte eure Admins. Weitere Erklärungen dazu findest du [hier](https://wiki.osiris-app.de/admins/content/keywords/).  

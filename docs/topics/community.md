@@ -23,6 +23,10 @@ Falls etwas nicht richtig funktioniert, du einen Fehler gefunden hast oder dir e
 
 [Hier geht's zu den Issues auf GitHub!](https://github.com/OSIRIS-Solutions/osiris/issues){.md-button }
 
+Es gibt auch die Möglichkeit an Diskussionen zu verschiedenen Themen teilzunehmen und so neue Ideen einzubringen.
+
+[Hier geht's zu den Diskussionen auf GitHub!](https://github.com/OSIRIS-Solutions/osiris/discussions){.md-button }
+
 ### Mitarbeiten
 
 Wenn du programmieren kannst oder lernen möchtest, kannst du aktiv an der Entwicklung von OSIRIS mitarbeiten. Wir freuen uns über Pull Requests, Bug Reports und Feature Requests auf GitHub.

@@ -1,7 +1,7 @@
 ---
 status: false
 tags:
-- Aktivitäten
+    - Aktivitäten
 ---
 
 # Alle Aktivitäten

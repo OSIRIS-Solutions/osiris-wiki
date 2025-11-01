@@ -1,3 +1,8 @@
+---
+status: false
+tags:
+    - Projekte
+---
 # Anlegen eines neuen Antrags oder Projekts
 
 Wenn deiner Rolle die Rechte zum Erstellen neuer Anträge/Projekte zugeteilt wurde, kannst du sowohl über den **Anträge** als auch über den **Projekte** Button links im Menü gehen und **:heavy_plus_sign: Neuen Antrag anlegen** bzw. **:heavy_plus_sign: Neues Projekt anlegen** auswählen. Es werden dir immer alle verfügbaren Projekt-Kategorien angezeigt. Wenn du eine der Kategorien auswählst, siehst du, ob du zunächst einen Antrag erstellen musst.

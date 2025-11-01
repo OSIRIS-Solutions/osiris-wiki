@@ -1,3 +1,10 @@
+---
+status: false
+tags:
+    - Workflows
+    - Aktivitäten
+---
+
 # Ablauf des Workflows
 
 Sobald du deinen Workflow eingerichtet und ihn auf Aktivitäten angewendet hast, werden betroffenen Personen unter **Überprüfungen** links im Menü die Anzahl der Aktivitäten angezeigt, für die eine Aktion von ihnen notwendig ist.

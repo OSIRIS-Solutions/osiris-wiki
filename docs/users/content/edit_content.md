@@ -1,3 +1,9 @@
+---
+status: false
+tags:
+    - Aktivitäten
+---
+
 # Inhalte bearbeiten
 
 Nachdem du die Aktivität erstellt hast, kannst du sie, solange sie noch nicht gesperrt wurde, bearbeiten. 

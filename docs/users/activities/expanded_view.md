@@ -1,3 +1,9 @@
+---
+status: false
+tags:
+    - Aktivitäten
+---
+
 # Erweiterte Ansicht der Aktivitäten
 
 In der erweiterten Ansicht einer Aktivität kannst du alle Details einsehen, die Aktivität bearbeiten, sperren oder sogar löschen (falls du die Rechte dazu hast).

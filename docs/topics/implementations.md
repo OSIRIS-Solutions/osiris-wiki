@@ -1,3 +1,8 @@
+---
+status: false
+tags:
+    - OSIRIS
+---
 # Wer verwendet OSIRIS?
 
 Hier findet ihr eine Liste von Instituten, die OSIRIS bereits nutzen oder gerade dabei sind, OSIRIS einzuführen. 

@@ -1,3 +1,7 @@
+---
+status: false
+
+---
 # Links im Footer, Impressum und Datenschutz
 
 <!-- md:version 1.5.0 -->

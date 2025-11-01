@@ -1,5 +1,7 @@
 ---
 status: false
+tags:
+    - Einstellungen
 ---
 
 # Allgemeine Einstellungen

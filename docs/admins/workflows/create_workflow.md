@@ -1,3 +1,9 @@
+---
+status: false
+tags:
+    - Workflows
+---
+
 # Erstellen eines Workflows
 
 Um einen neuen Workflow zu erstellen, gehst du im Admin-Menü auf **Inhalte &#8594 Qualitäts-Workflows**. Mit einem Klick auf **:heavy_plus_sign: Workflow hinzufügen** öffnet sich ein Formular, in dem du deinem Workflow eine einzigartige ID und einen Namen geben musst. Bitte beachte, dass die **ID** nur aus Kleinbuchstaben, Zahlen und Unter- oder Bindestrichen bestehen darf (z.B. *publication-approval*). Der **Name** des Workflows kann frei gewählt werden, da er aber in den Fortschrittsleisten angezeigt wird, sollte er möglichst kurz und prägnant sein. Um weitere Konfigurationen vorzunehmen, musst du zunächst speichern. Dadurch öffnet sich ein Formular, in dem du deinem Workflow Schritte hinzufügen kannst.
@@ -26,4 +32,4 @@ In dem gezeigten Beispiel würde der Workflow also so ablaufen:
 - **2. Schritt:** Personen mit der Rolle **PA** und mit der Rolle **Master** können die Aktivität parallel bestätigen. Erst wenn beide bestätigt haben geht es zum nächsten Schritt. Die Rollen müssen nicht deiner Organisationseinheit zugehörig sein
 - **3.Schritt:** Personen mit der Rolle **Editor** werden zur Bestätigung der Aktivität aufgefordert, auch hier wieder ohne Zugehörigkeit deiner Einheit
 
-Erst wenn alle Rollen die Aktivität bestätigt haben wechselr der Status auf *verified*.
+Erst wenn alle Rollen die Aktivität bestätigt haben wechselt der Status auf *verified*.

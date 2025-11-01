@@ -1,5 +1,7 @@
 ---
 status: false
+tags:
+    - Aktivitäten
 ---
 
 # Erweiterte Aktivitäten-Suche

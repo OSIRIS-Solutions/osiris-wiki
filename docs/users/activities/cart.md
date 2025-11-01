@@ -1,5 +1,8 @@
 ---
 status: false
+tags:
+    - Downloads
+    - Aktivitäten
 ---
 
 # Download-Sammlung

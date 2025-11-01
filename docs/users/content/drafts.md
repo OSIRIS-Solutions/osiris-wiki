@@ -1,3 +1,9 @@
+---
+status: false
+tags:
+    - Aktivitäten
+---
+
 # Entwürfe
 
 <!-- md:version 1.6.0 -->

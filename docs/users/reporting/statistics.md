@@ -1,5 +1,9 @@
 ---
 status: false
+tags:
+    - Reporting
+    - Statistik
+    - Aktivitäten
 ---
 
 # Statistiken 

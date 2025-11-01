@@ -1,5 +1,10 @@
 ---
 status: false
+tags:
+    - Verschlagwortung
+    - Aktivitäten
+    - Events
+    - Projekte
 ---
 
 # Verschlagwortung von Einträgen

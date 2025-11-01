@@ -1,5 +1,8 @@
 ---
 status: false
+tags:
+    - Benutzerdefinierte Felder
+
 ---
 
 # Benutzerdefinierte Felder
@@ -38,4 +41,4 @@ So sehen die Custom Fields aus, wenn sie einer Aktivität hinzugefügt wurden. D
 Nutzende können in der Liste per Dropdown eine Mehrfachauswahl treffen, wenn dies von dir zugelassen wurde.
 ///
 
-Du kannst die Reihenfolge der Datenfelder mithilfe des [Formular-Builders](https://wiki.osiris-app.de/admins/content/activities/#formular-builder) ändern. Hier findest du deine benutzerdefinierten Felder zusammen mit allen anderen zur Verfügung stehenden Datenfelder und kannst individuelle Vorlagen für Aktivitäten erstellen. 
+Du kannst die Reihenfolge der Datenfelder mithilfe des [Formular-Builders](https://wiki.osiris-app.de/admins/content/activities/#formular-builder) ändern. Hier findest du deine benutzerdefinierten Felder zusammen mit allen anderen zur Verfügung stehenden Datenfeldern und kannst individuelle Vorlagen für Aktivitäten erstellen. 
