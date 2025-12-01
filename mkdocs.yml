@@ -75,6 +75,7 @@ nav:
       - Einführung: admins/users/index.md
       - Passwörter zurücksetzen: admins/users/reset-password.md
     - Forschungsreisen: admins/travel.md
+    - Events: admins/events.md
   - Nutzer:
     - Einführung: users/index.md
     - Profil:
@@ -92,6 +93,7 @@ nav:
     - Benachrichtigungen: users/issues.md
     - Forschungsbereiche: users/topics.md
     - Workflows: users/workflows.md
+    - Events: users/events.md
     - Organisationseinheiten:
       - Einführung: users/units/index.md
       - Einheiten hinzufügen: users/units/new_unit.md
