@@ -6,124 +6,125 @@ edit_uri: edit/main/docs/
 repo_name: OSIRIS-Solutions/osiris
 nav:
   - Überblick: 
-    - Home: index.md
-    - Über OSIRIS: home/about.md
-    - Features: home/features.md
-    - Changelog: home/news.md
-    - Kontakt: home/contact.md
-    - Schlagworte: home/tags.md
-    - Konventionen: conventions.md
+    - index.md
+    - home/about.md
+    - home/features.md
+    - home/news.md
+    - home/contact.md
+    - home/tags.md
+    - conventions.md
   - Themen:
-    - Community: topics/community.md
-    - Schnittstellen: topics/interfaces.md
-    - Portfolio: topics/portfolio.md
-    - Impact Faktoren: topics/impact.md
-    - Glossar: topics/glossary.md
-    - Wer verwendet OSIRIS?: topics/implementations.md
-    - KDSF: topics/kdsf.md
-    - Betriebsvereinbarung: topics/works_council.md
+    - topics/community.md
+    - topics/interfaces.md
+    - topics/portfolio.md
+    - topics/impact.md
+    - topics/glossary.md
+    - topics/implementations.md
+    - topics/kdsf.md
+    - topics/works_council.md
   - Technik:
-    - Einführung: technical/index.md
+    - technical/index.md
     - Installation:
-      - Linux: technical/install/linux.md
-      - Docker: technical/install/docker.md
-      - Windows: technical/install/windows.md
-      - Troubleshooting: technical/troubleshooting.md
+      - technical/install/linux.md
+      - technical/install/docker.md
+      - technical/install/windows.md
+      - technical/troubleshooting.md
     - Konfiguration:
-      - Generelle Einstellungen: technical/configure/index.md
-      - Datenbank: technical/configure/database.md
-      - Workflows und Jobs: technical/configure/workflows.md
-      - Email: technical/configure/email.md
+      - technical/configure/index.md
+      - technical/configure/database.md
+      - technical/configure/workflows.md
+      - technical/configure/email.md
     - Nutzerverwaltung:
-      - Nutzerverwaltung: technical/user-management/index.md
-      - LDAP: technical/user-management/ldap.md
-      - Auth-Addon: technical/user-management/auth.md
-      - OAuth2: technical/user-management/oauth2.md
-    - Backup: technical/backup.md
-    - Altdaten: technical/data.md
-    - Migrieren: technical/migrate.md
-    - Update: technical/update.md
-    - Beta verwenden: technical/beta.md
-    - Testsystem einrichten: technical/test-system.md
+      - technical/user-management/index.md
+      - technical/user-management/ldap.md
+      - technical/user-management/auth.md
+      - technical/user-management/oauth2.md
+    - technical/backup.md
+    - technical/data.md
+    - technical/migrate.md
+    - technical/update.md
+    - technical/beta.md
+    - technical/test-system.md
   - Admins:
-    - Einführung: admins/index.md
+    - admins/index.md
     - Einstellungen: 
-      - Allgemeine Einstellungen: admins/general.md
-      - Email-Einstellungen: admins/email.md
-      - Links im Footer, Impressum und Datenschutz: admins/legal-and-links.md
+      - admins/general.md
+      - admins/email.md
+      - admins/legal-and-links.md
     - Inhalte:
-      - Einführung: admins/content/index.md
-      - Aktivitäten: admins/content/activities.md
-      - Projekte: admins/content/projects.md
-      - Personen: admins/content/persons.md
-      - Benutzerdefinierte Felder: admins/content/custom-fields.md
-      - Vokabular: admins/content/vocabulary.md
-      - Schlagwörter: admins/content/keywords.md
-      - Hilfswerkzeuge: admins/content/tools.md
-      - Infrastrukturen: admins/content/infrastructures.md
+      - admins/content/index.md
+      - admins/content/activities.md
+      - admins/content/projects.md
+      - admins/content/persons.md
+      - admins/content/custom-fields.md
+      - admins/content/vocabulary.md
+      - admins/content/keywords.md
+      - admins/content/tools.md
+      - admins/content/infrastructures.md
     - Workflows:
-      - Einführung: admins/workflows/workflows.md
-      - Workflow erstellen: admins/workflows/create_workflow.md
-      - Anwendung auf Aktivitäten: admins/workflows/linked_activities.md
-      - Ablauf eines Workflows: admins/workflows/workflow_handling.md
+      - admins/workflows/workflows.md
+      - admins/workflows/create_workflow.md
+      - admins/workflows/linked_activities.md
+      - admins/workflows/workflow_handling.md
     - Rollen und Rechte:
-      - Einführung: admins/roles/index.md
-      - Standard-Rollen: admins/roles/roles.md
-      - Wichtige Rechte: admins/roles/important-rights.md
-    - Berichterstattung: admins/reporting/index.md 
+      - admins/roles/index.md
+      - admins/roles/roles.md
+      - admins/roles/important-rights.md
+    - admins/reporting/index.md 
     - Nutzerverwaltung: 
-      - Einführung: admins/users/index.md
-      - Passwörter zurücksetzen: admins/users/reset-password.md
-    - Forschungsreisen: admins/travel.md
-    - Events: admins/events.md
+      - admins/users/index.md
+      - admins/users/reset-password.md
+    - admins/travel.md
+    - admins/events.md
   - Nutzer:
-    - Einführung: users/index.md
+    - users/index.md
     - Profil:
-      - Startseite: users/profile/start.md
-      - Mein Jahr: users/profile/scientist_view.md
-      - Meine Aktivitäten: users/profile/my_activities.md
-      - Quartalsübersicht: users/profile/quarter_view.md
-      - Mail Digest: users/profile/maildigest.md
+      - users/profile/start.md
+      - users/profile/scientist_view.md
+      - users/profile/my_activities.md
+      - users/profile/quarter_view.md
+      - users/profile/claim_activity.md
+      - users/profile/maildigest.md
     - Inhalte:
-      - Inhalte hinzufügen: users/content/create_content.md
-      - Inhalte bearbeiten: users/content/edit_content.md
-      - Entwürfe: users/content/drafts.md
-      - Schlagwörter: users/content/keywords.md
-      - weitere Funktionen: users/content/expanded_functions.md
-    - Benachrichtigungen: users/issues.md
-    - Forschungsbereiche: users/topics.md
-    - Workflows: users/workflows.md
-    - Events: users/events.md
+      - users/content/create_content.md
+      - users/content/edit_content.md
+      - users/content/drafts.md
+      - users/content/keywords.md
+      - users/content/expanded_functions.md
+    - users/issues.md
+    - users/topics.md
+    - users/workflows.md
+    - users/events.md
     - Organisationseinheiten:
-      - Einführung: users/units/index.md
-      - Einheiten hinzufügen: users/units/new_unit.md
-      - Einheiten bearbeiten: users/units/edit_units.md
-      - Zeitaufgelöste Verknüpfungen: users/units/connections.md
-    - Lehrveranstaltungen: users/courses.md
-    - Organisationen: users/organisations.md
+      - users/units/index.md
+      - users/units/new_unit.md
+      - users/units/edit_units.md
+      - users/units/connections.md
+    - users/courses.md
+    - users/organisations.md
     - Aktivitäten: 
-      - Einführung: users/activities/index.md
-      - Erweiterte Ansicht: users/activities/expanded_view.md
-      - Erweiterte Suche: users/activities/advanced-search.md
-      - Pivot-Tabelle: users/activities/pivot.md
-      - Einkaufswagen: users/activities/cart.md
+      - users/activities/index.md
+      - users/activities/expanded_view.md
+      - users/activities/advanced-search.md
+      - users/activities/pivot.md
+      - users/activities/cart.md
     - Projekte:
-      - Einführung: users/projects/index.md
-      - Projekte erstellen: users/projects/new_project.md
-      - Projekte verwalten: users/projects/manage_projects.md
-      - Verlinkungen: users/projects/project_links.md
-      - Projekte suchen: users/projects/search.md
-      - Statistiken zu Projekten: users/projects/statistics.md
+      - users/projects/index.md
+      - users/projects/new_project.md
+      - users/projects/manage_projects.md
+      - users/projects/project_links.md
+      - users/projects/search.md
+      - users/projects/statistics.md
     - Personen:
-      - Einführung: users/people/index.md
-      - Gäste: users/people/guests.md
+      - users/people/index.md
+      - users/people/guests.md
     - Infrastrukturen:
-      - Einführung: users/infrastructures/index.md
+      - users/infrastructures/index.md
     - Berichte:
-      - Einführung: users/reporting/index.md
-      - Berichte-Vorlagen: users/reporting/report-templates.md
-      - Statistiken: users/reporting/statistics.md
-      - Quartalsberichte: users/reporting/quarterly-reporting.md  
+      - users/reporting/index.md
+      - users/reporting/report-templates.md
+      - users/reporting/statistics.md
+      - users/reporting/quarterly-reporting.md  
   - FAQs:
     - FAQs/index.md
   - Blog:
@@ -140,7 +141,7 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.path
-    - navigation.expand
+    # - navigation.expand
     # - navigation.footer
     - content.tabs.link
     - content.action.edit

@@ -5,4 +5,3 @@ Wir freuen uns über dein Interesse an unserer Software und stehen dir gerne fü
  
 - Github Issues (empfohlen): [Hier klicken](https://github.com/OSIRIS-Solutions/osiris/issues)
 - E-Mail: contact@osiris-solutions.de
-- Kontaktformular: [Hier klicken](https://osiris-solutions.de/contact/)

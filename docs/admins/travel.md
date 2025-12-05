@@ -1,6 +1,7 @@
-# Forschungsreisen in OSIRIS auswerten
+# Forschungsreisen
 
-> ab Version 1.5.0!
+<!-- md:version 1.5.0 -->
+<!-- md:feature -->
 
 Forschungsreisen oder Aufenthalte lassen sich in OSIRIS als normale Aktivität erfassen. Doch für ihre Auswertung steht ein eigenes Modul zur Verfügung. Hier findet ihr eine kurze Erklärung und ein paar Tipps zur Anwendung.
 

@@ -1,5 +1,5 @@
 ---
-title: Willkommen in der OSIRIS-Dokumentation
+title: Willkommen
 # template: home.html
 ---
 

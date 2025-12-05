@@ -24,7 +24,7 @@ Im Folgenden werden alle wichtigen Buttons auf dieser Seite näher erklärt:
 5. Koautoren: Eine Grafik über deine Koautoren und die Organisationseinheiten, zu denen sie gehören
 6. Projekt verknüpfen: Es öffnet sich ein Widget über das du bestehende Projekte mit dieser Aktivität verknüpfen kannst. Falls die Aktivität schon mit einem verknüpft ist, wird es dir hier angezeigt
 
-    ![Projekt verknüpfen](screenshots/projekt_verknüpfen.png) 
+    ![Projekt verknüpfen](screenshots/projekt_verknuepfen.png) 
     ///caption
     Widget, um Projekte mit der Aktivität zu verknüpfen
     ///

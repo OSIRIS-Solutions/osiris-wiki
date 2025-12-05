@@ -1,4 +1,5 @@
 ---
+title: Auth-Addon
 tags:
   - Nutzerverwaltung
   - Authentifizierung

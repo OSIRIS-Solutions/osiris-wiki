@@ -1,5 +1,8 @@
 ---
 status: new
+title: Features
+tags:
+    - Features
 ---
 
 # Überblick über die Features von OSIRIS

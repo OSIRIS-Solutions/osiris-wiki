@@ -14,11 +14,11 @@ Im Folgenden werden die unterschiedlichen Buttons in deiner Startseite erklärt:
 
 1. Aktivität hinzufügen: Dieser Button leitet dich sofort auf die *Füge Aktivität hinzu* Seite
 2. Meine Aktivitäten: Hier siehst du die Auflistung aller Aktivitäten, die mit dir verknüpft sind
-3. Mein Jahr: Du wirst auf die *Mein Jahr* Seite weitergeleitet, die dir anhand einer Zeitleiste eine Übersicht über deine Aktivitäten gibt. Das aktuelle Quartal ist gelb markiert, so wie die dazugehörigen Aktivitäten. Weitere Erklärungen findest du [hier](/users/profile/scientist_view/)
+3. Mein Jahr: Du wirst auf die *Mein Jahr* Seite weitergeleitet, die dir anhand einer Zeitleiste eine Übersicht über deine Aktivitäten gibt. Das aktuelle Quartal ist gelb markiert, so wie die dazugehörigen Aktivitäten. Weitere Erklärungen findest du [hier](../scientist_view/)
 4. Vorschau: Hier siehst du eine Vorschau deines Profils, wie es im Portfolio aussehen wird
 5. Meine Errungenschaften: Falls *Errungenschaften* von der Administration aktiviert wurden kannst du deine hier sehen
 6. Bearbeite Profil: Hier kannst du dein Profil bearbeiten. Näheres dazu findest du im nächsten Abschnitt
-7. Aktivität beanspruchen:
+7. [Aktivität beanspruchen](../claim_activity/): Falls du Aktivitäten in OSIRIS findest, die dir zugeordnet werden sollten, kannst du diese hier beanspruchen
 8. CV exportieren: OSIRIS bietet dir hier die Möglichkeit, eine Auflistung aller Einträge zur Weiterverwendung runterzuladen
 
 In der nächsten Leiste stehen dir weitere Direktlinks zur Verfügung. 
