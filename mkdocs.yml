@@ -148,6 +148,16 @@ theme:
   custom_dir: overrides
     # - navigation.indexes
 plugins:
+  - i18n:
+      docs_structure: suffix
+      languages:
+        - locale: de
+          default: true
+          name: Deutsch
+          build: true
+        - locale: en
+          name: English
+          build: true
   - privacy
   - search
   - meta

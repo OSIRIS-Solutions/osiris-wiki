@@ -83,6 +83,7 @@ cd osiris-wiki
 
 pip install mkdocs mkdocs-material mkdocs-git-revision-date-localized-plugin mkdocs-git-authors-plugin "mkdocs-material[imaging]"
 pip install mkdocs-nav-weight
+pip install mkdocs-static-i18n
 ```
 
 Du startest den lokalen Server mit:
