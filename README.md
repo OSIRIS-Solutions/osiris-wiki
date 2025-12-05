@@ -47,7 +47,7 @@ Ein *Fork* ist eine eigene Kopie dieses Repositories in deinem GitHub-Konto. Än
 - Für Bilder: Speichere sie im Ordner docs/images/ und verwende relative Pfade, z. B.
 
 ```markdown
-![Screenshot](../assets/images/setup.png)
+![Screenshot](/assets/images/setup.png)
 ```
 - Verlinke auf andere Seiten im Wiki mit `[Linktext](ziel.md)`
 - Bitte halte dich an den bestehenden Stil und die Struktur der Dokumentation

@@ -9,14 +9,14 @@ tags:
 
 In OSIRIS gibt es verschiedene Schnittstellen, die es ermöglichen, Daten zu importieren und zu exportieren. Diese Schnittstellen sind wichtig, um Daten aus anderen Systemen zu integrieren oder um Daten für externe Anwendungen bereitzustellen. Hier sind die wichtigsten Standard-Schnittstellen im Überblick:
 
-![Schnittstellen Übersicht](../assets/images/interfaces.png "Schnittstellen Übersicht")
+![Schnittstellen Übersicht](/assets/images/interfaces.png "Schnittstellen Übersicht")
 
 
 ## Eine Aktivität mittels PID importieren
 
 Es werden zurzeit zwei PIDs (Persistent Identifier) unterstützt: DOI (Digital Object Identifier) und Pubmed ID. Diese PIDs können verwendet werden, um Publikationen und andere Forschungsaktivitäten in OSIRIS zu importieren. Der Import erfolgt auf der Seite "Aktivität hinzufügen", indem man in die Suchleiste die PID eingibt. OSIRIS sucht dann nach der entsprechenden Aktivität und importiert die Daten automatisch. Dabei passiert im Hintergrund folgendes:
 
-![Importieren einer Aktivität mittels PID](../assets/images/import_pid.png "Importieren einer Aktivität mittels PID")
+![Importieren einer Aktivität mittels PID](/assets/images/import_pid.png "Importieren einer Aktivität mittels PID")
 
 ### Import via DOI
 
@@ -34,4 +34,4 @@ Es werden zurzeit zwei PIDs (Persistent Identifier) unterstützt: DOI (Digital O
 
 Am 11. Juni 2025 hat Julia eine Präsentation über die Schnittstellen und Standards in OSIRIS gehalten. Diese Präsentation gibt einen Überblick über die verschiedenen Schnittstellen und deren Funktionsweise und zeigt auch zu diesem Zeitpunkt verfügbare Standards auf, wie beispielsweise dem (KDSF 2.0)[kdsf.md].
 
-[Hier geht's zur Präsentation!](../assets/documents/OSIRIS Schnittstellen.pdf){.md-button}
+[Hier geht's zur Präsentation!](/assets/documents/OSIRIS Schnittstellen.pdf){.md-button}

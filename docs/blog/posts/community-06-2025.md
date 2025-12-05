@@ -15,4 +15,4 @@ Vielen Dank an alle, die heute am Community Meeting teilgenommen haben! Hier ist
 
 Ich habe den aktuellen Stand der Entwicklung von OSIRIS Version 1.5 vorgestellt, die in den nächsten Wochen veröffentlicht wird.
 
-Ihr findet meine Präsentation hier: [Link zum Protokoll](../../assets/documents/OSIRIS 1.5.pdf)
+Ihr findet meine Präsentation hier: [Link zum Protokoll](/assets/documents/OSIRIS 1.5.pdf)

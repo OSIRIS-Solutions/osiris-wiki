@@ -22,7 +22,7 @@ Im Hintergrund greift Portfolio auf eure OSIRIS-Instanz zu, d.h. ihr stellt die 
 
 Im Zentrum von OSIRIS stehen die **Organisationseinheiten** eurer Einrichtung. Diese werden ebenfalls in OSIRIS abgebildet und gepflegt. Auf der Startseite zeigt Portfolio das gesamte Institut mit allen Organisationseinheiten. Nutzende Personen können sich dabei durch eure Organisationsstruktur klicken. Portfolio zeigt die zugehörigen Personen, Projekte, Publikationen und Forschungsaktivitäten, aber auch Forschungsinteressen können direkt in OSIRIS gepflegt werden. Hier seht ihr einen Screenshot von OSIRIS Portfolio:
 
-![OSIRIS Portfolio](../assets/images/overview_portfolio.png)
+![OSIRIS Portfolio](/assets/images/overview_portfolio.png)
 ///caption
 Übersicht über das Kernelement von OSIRIS Portfolio: gezeigt ist die Startseite der Arbeitsgruppe Datenintegration
 ///
@@ -60,7 +60,7 @@ Portfolio ist sehr flexibel aufgebaut. Ihr könnt die Inhalte selbst konfigurier
 
 Auch Farben, Schriftart und Design von Portfolio selbst sind anpassbar. 
 
-![OSIRIS Portfolio](../assets/images/person_portfolio.png)
+![OSIRIS Portfolio](/assets/images/person_portfolio.png)
 ///caption
 Übersicht über eine auf das Corporate Design der DSMZ angepasste Personen-Seite.
 ///

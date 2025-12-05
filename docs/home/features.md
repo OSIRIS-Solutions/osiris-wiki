@@ -20,7 +20,7 @@ Zur kostenlosen Demo geht es [**hier**](https://www.osiris-demo.de/user/login).
 - OSIRIS bietet ein Addon an, mit denen die Forschung auf einer externen Seite dargestellt werden kann (Portfolio).
 - OSIRIS wird sehr aktiv weiterentwickelt, nicht zuletzt weil es auch das jüngste Mitglied der CRIS-Familie ist.
 
-![Untitled](../assets/screenshots/activity.png)
+![Untitled](/assets/screenshots/activity.png)
 
 ---
 
@@ -28,7 +28,7 @@ Zur kostenlosen Demo geht es [**hier**](https://www.osiris-demo.de/user/login).
 
 Hier findest du eine Übersicht über die Entitäten, die in OSIRIS verwaltet werden können und wie sie miteinander verknüpft sind. Diese Entitäten bilden die Grundlage für die Erfassung, Verwaltung und Auswertung von Forschungsaktivitäten.
 
-![Entities Overview](../assets/images/entities.png "Entities Overview")
+![Entities Overview](/assets/images/entities.png "Entities Overview")
 
 
 - **Mitarbeitende Personen**
@@ -49,7 +49,7 @@ Hier findest du eine Übersicht über die Entitäten, die in OSIRIS verwaltet we
     - Software & Daten
     - Preise
   
-    ![Die Seite “**Aktivität hinzufügen**” ist das Herzstück von OSIRIS. Forschende können ihre Daten manuell oder automatisch via DOI- oder Pubmed-Import hinzufügen. Sowohl die Kategorien (Publikationen, Poster, usw.), als auch die Aktivitätstypen (Journal Article, Non-refereed, usw.) können individualisiert werden, genau wie der Beschreibungstext (in orange) und die Formularfelder. Mehr dazu im Abschnitt Anpassbarkeit.](../assets/screenshots/add-activity.png)
+    ![Die Seite “**Aktivität hinzufügen**” ist das Herzstück von OSIRIS. Forschende können ihre Daten manuell oder automatisch via DOI- oder Pubmed-Import hinzufügen. Sowohl die Kategorien (Publikationen, Poster, usw.), als auch die Aktivitätstypen (Journal Article, Non-refereed, usw.) können individualisiert werden, genau wie der Beschreibungstext (in orange) und die Formularfelder. Mehr dazu im Abschnitt Anpassbarkeit.](/assets/screenshots/add-activity.png)
     /// caption
     Die Seite “**Aktivität hinzufügen**” ist das Herzstück von OSIRIS. Forschende können ihre Daten manuell oder automatisch via DOI- oder Pubmed-Import hinzufügen. Sowohl die Kategorien (Publikationen, Poster, usw.), als auch die Aktivitätstypen (Journal Article, Non-refereed, usw.) können individualisiert werden, genau wie der Beschreibungstext (in orange) und die Formularfelder. Mehr dazu im Abschnitt Anpassbarkeit.
     ///
@@ -82,17 +82,17 @@ Hier findest du eine Übersicht über die Entitäten, die in OSIRIS verwaltet we
     - Statistiken (ab `v1.4.2`)
     - Anträge  (ab `v1.5.0`)
 
-![Übersicht über einen Projektantrag in OSIRIS.](../assets/screenshots/proposal.png)
+![Übersicht über einen Projektantrag in OSIRIS.](/assets/screenshots/proposal.png)
 /// caption
 Übersicht über einen Projektantrag in OSIRIS. Die verschiedenen Phasen, Finanzen und Dokumente sind hier zu sehen.
 ///
 
-![Übersicht über ein Projekt in OSIRIS. Neben den gezeigten Details kann man auch Kooperationspartner und verknüpfte Aktivitäten anzeigen lassen.](../assets/screenshots/project.png)
+![Übersicht über ein Projekt in OSIRIS. Neben den gezeigten Details kann man auch Kooperationspartner und verknüpfte Aktivitäten anzeigen lassen.](/assets/screenshots/project.png)
 /// caption
 Übersicht über ein Projekt in OSIRIS. Neben den gezeigten Details kann man auch Kooperationspartner und verknüpfte Aktivitäten anzeigen lassen.
 ///
 
-![Kooperationspartner eines Projektes. Links ist die Liste mit Partnern, rechts ist eine Übersichtskarte. Das eigene Institut wird dort automatisch eingetragen, solange es richtig konfiguriert ist.](../assets/screenshots/project-map.png)
+![Kooperationspartner eines Projektes. Links ist die Liste mit Partnern, rechts ist eine Übersichtskarte. Das eigene Institut wird dort automatisch eingetragen, solange es richtig konfiguriert ist.](/assets/screenshots/project-map.png)
 /// caption
 Kooperationspartner eines Projektes. Links ist die Liste mit Partnern, rechts ist eine Übersichtskarte. Das eigene Institut wird dort automatisch eingetragen, solange es richtig konfiguriert ist.
 ///
@@ -110,7 +110,7 @@ Kooperationspartner eines Projektes. Links ist die Liste mit Partnern, rechts is
     
     OSIRIS erfasst Aktivitäten und organisiert sie nach Quartalen und Jahren, ideal für verschiedene Berichtsabfragen. Außerdem gibt es die Seite “Mein Jahr”, über die Forschende einmal im Quartal aufgefordert werden, ihre vergangenen Aktivitäten zu überprüfen, ggf. zu ergänzen und zum Schluss zu bestätigen, dass alles in Ordnung ist. Dies wiederum wird im Reporting-Dashboard angezeigt.
 
-    ![Untitled](../assets/screenshots/my-year.png)
+    ![Untitled](/assets/screenshots/my-year.png)
     /// caption
     Die Seite "Mein Jahr" mit der Möglichkeit, das gewählte Quartal freizugeben. Hier können Forschende ihre Aktivitäten überprüfen und bestätigen, dass alles in Ordnung ist.
     ///
@@ -170,12 +170,12 @@ Durch **Notizen** und **Dateiupload** lässt sich OSIRIS auch nutzen, um die eig
 
 Mit **Coins** und **Errungenschaften** kommt außerdem ein Belohnungssystem ins Spiel. Einige Forschende lieben es, Coins zu sammeln und freuen sich immer über neue Errungenschaften im Profil. Wer es nicht mag, muss es nicht einschalten, denn **standardmäßig ist dieses Feature deaktiviert**. Man hat auch die Möglichkeit, es nur für sich selbst zu aktivieren, wenn man nicht möchte das andere die Coins sehen. Coins werden übrigens dynamisch generiert und nicht in der Datenbank gespeichert. Wenn sie also ausgeschaltet sind, können sie von niemandem eingesehen werden, nicht mal von Admins.
 
-![Die persönliche Profilseite bietet viele Funktionen und gibt einem immer einen Überblick über die eigene Forschung.](../assets/screenshots/profile.png)
+![Die persönliche Profilseite bietet viele Funktionen und gibt einem immer einen Überblick über die eigene Forschung.](/assets/screenshots/profile.png)
 ///caption
 Die persönliche Profilseite bietet viele Funktionen und gibt einem immer einen Überblick über die eigene Forschung.
 ///
 
-![Viele zusätzliche Visualisierungen geben einem einen Überblick über die eigene Forschung. ](../assets/screenshots/wordcoud.png)
+![Viele zusätzliche Visualisierungen geben einem einen Überblick über die eigene Forschung. ](/assets/screenshots/wordcoud.png)
 ///caption
 Viele zusätzliche Visualisierungen geben einem einen Überblick über die eigene Forschung. 
 ///
@@ -196,7 +196,7 @@ Viele zusätzliche Visualisierungen geben einem einen Überblick über die eigen
 
 Wie Berichterstattende Personen OSIRIS benutzen können, ist eigentlich schon sehr gut im Abschnitt Reporting-Funktionen dargestellt. Hier sei nur noch mal erwähnt, dass es in OSIRIS neben den klassischen Berichts-Dashboards auch noch eine Vielzahl weiterer Visualisierungen gibt, z.B. für einzelne Personen, Organisationseinheiten, Open Access und Kooperationen:
 
-![Untitled](../assets/screenshots/visualizations.png)
+![Untitled](/assets/screenshots/visualizations.png)
 
 ### Außensichtbarkeit unserer Forschung - OSIRIS für Institute
 
@@ -208,14 +208,14 @@ Einer der wichtigsten Aspekte eines CRIS ist die Außendarstellung. Wie repräse
 
 Portfolio ist ein Addon zu OSIRIS, das eine eigene Webseite auf Basis der Daten in eurem OSIRIS aufbaut. Ihr könnt es als zusätzliche Webseite sehen, die eure Forschung für die Öffentlichkeit aufbereitet. Portfolio befindet sich zurzeit in Entwicklung in Kooperation mit dem Leibniz-Institut DSMZ und soll im Laufe des Jahres an der DSMZ online gehen. Im Screenshot unten könnt ihr sehen, dass das Design von Portfolio sich nicht nach dem von OSIRIS richtet, sondern an eure eigene Webseite angeglichen werden kann.
 
-![Portfolio ist ein Addon von OSIRIS, mit dem man seine Forschungsinformationen für die Außendarstellung des Instituts aufbereiten kann.](../assets/images/PORTfolio.png)
+![Portfolio ist ein Addon von OSIRIS, mit dem man seine Forschungsinformationen für die Außendarstellung des Instituts aufbereiten kann.](/assets/images/PORTfolio.png)
 /// caption
 Portfolio ist ein Addon von OSIRIS, mit dem man seine Forschungsinformationen für die Außendarstellung des Instituts aufbereiten kann.
 ///
 
-![Untitled](../assets/screenshots/portfolio-profile.png)
+![Untitled](/assets/screenshots/portfolio-profile.png)
 
-![Mit dem OSIRIS-Portfolio wird es möglich sein, fertige Widgets in eure Webseite zu integrieren oder gleich eine komplette Portfolio-Seite zu generieren. Was ihr hier seht ist nur der Prototyp.](../assets/screenshots/portfolio-publications.png)
+![Mit dem OSIRIS-Portfolio wird es möglich sein, fertige Widgets in eure Webseite zu integrieren oder gleich eine komplette Portfolio-Seite zu generieren. Was ihr hier seht ist nur der Prototyp.](/assets/screenshots/portfolio-publications.png)
 /// caption
 Mit dem OSIRIS-Portfolio wird es möglich sein, fertige Widgets in eure Webseite zu integrieren oder gleich eine komplette Portfolio-Seite zu generieren. Was ihr hier seht ist nur der Prototyp.
 ///
@@ -236,7 +236,7 @@ Einer Person können mehrere Rollen zugeteilt werden. Solange eine der Rollen da
 
 Ein Nutzender kann die komplette Pflege seines Profils an eine andere Person übertragen. Diese Person könnte beispielsweise Assistent:in, Sekretär:in oder Projektmanager:in sein und hat danach vollen Zugriff auf das Profil.
 
-![Das Rollen- und Rechtemanagement im Admin-Dashboard (neue Ansicht ab `v1.5.0`)](../assets/screenshots//roles-rights.png)
+![Das Rollen- und Rechtemanagement im Admin-Dashboard (neue Ansicht ab `v1.5.0`)](/assets/screenshots//roles-rights.png)
 /// caption
 Das Rollen- und Rechtemanagement im Admin-Dashboard (neue Ansicht ab `v1.5.0`)
 ///
@@ -255,7 +255,7 @@ OSIRIS geht eher der Prämisse nach, **Fehler schon bei der Dateneingabe zu verm
 
 Im Screenshot unten sieht man zum Beispiel auch, wie **Journale standardisiert** hinzugefügt werden. Wenn man ein Journal einträgt, öffnet sich ein Widget. Zuerst wird nur der obere Teil gezeigt, in dem alle bereits in OSIRIS vorhandenen Journale dargestellt werden. Falls das gesuchte Journal nicht dabei ist, kann man die Suche im Online-Katalog (OpenAlex) wiederholen und es werden mögliche Journale basierend auf der Suche vorgeschlagen. Beim Klick auf einen Haken wird nicht nur das Journal zu der Publikation hinzugefügt, sondern auch alle weiteren Informationen zu dem Journal gespeichert. Da es keinen Freitext an dieser Stelle gibt, können Journale gar nicht falsch eingetragen werden. Genauso ist es mit Lehrveranstaltungen, die ebenfalls zentral verwaltet und mit Aktivitäten assoziiert werden können.
 
-![Widget, das sich beim Klick auf oben gezeigtes Datenfeld öffnet. Hier kann in OSIRIS und im Online-Katalog nach vorhandenen Journalen gesucht werden. Dadurch werden Fehler vermieden.](../assets/screenshots/add-journal.png)
+![Widget, das sich beim Klick auf oben gezeigtes Datenfeld öffnet. Hier kann in OSIRIS und im Online-Katalog nach vorhandenen Journalen gesucht werden. Dadurch werden Fehler vermieden.](/assets/screenshots/add-journal.png)
 /// caption
 Widget, das sich beim Klick auf oben gezeigtes Datenfeld öffnet. Hier kann in OSIRIS und im Online-Katalog nach vorhandenen Journalen gesucht werden. Dadurch werden Fehler vermieden.
 ///
@@ -285,21 +285,21 @@ Es gibt eine ganze Reihe von **Benachrichtigungen** in OSIRIS. Nutzende werden b
 - … es ein neues Update gibt, um sie zu informieren, was sich geändert hat.
 - … ein Quartal vergangen ist und die Aktivitäten nun überprüft und bestätigt werden können.
 
-![Kommentarfunktionen im Formular zur Bearbeitung einer Aktivität.](../assets/screenshots/commentary.png)
+![Kommentarfunktionen im Formular zur Bearbeitung einer Aktivität.](/assets/screenshots/commentary.png)
 ///caption
 Kommentarfunktionen im Formular zur Bearbeitung einer Aktivität
 ///
 
 ---
 
-![Hinweise in der Persönlichen Profilseite auf neue Benachrichtigungen.](../assets/screenshots/notifications.png){width=300}
+![Hinweise in der Persönlichen Profilseite auf neue Benachrichtigungen.](/assets/screenshots/notifications.png){width=300}
 ///caption
 Hinweise in der persönlichen Profilseite auf neue Benachrichtigungen
 ///
 
 ---
 
-![Benachrichtigung eines Nutzenden über eine Bearbeitung.](../assets/screenshots/issues.png)
+![Benachrichtigung eines Nutzenden über eine Bearbeitung.](/assets/screenshots/issues.png)
 ///caption
 Benachrichtigung eines Nutzenden über eine Bearbeitung
 ///
@@ -378,7 +378,7 @@ Es gibt in OSIRIS mehrere Suchfunktionen. Die vermutlich am häufigsten genutzte
 - Nach Zeitraum
 - Weiteres (Online ahead of print)
 
-![Ein Überblick über die einfache Suche in OSIRIS](../assets/screenshots/all-activities.png)
+![Ein Überblick über die einfache Suche in OSIRIS](/assets/screenshots/all-activities.png)
 ///caption
 Screenshot der einfachsen Suche auf der Seite "Alle Aktivitäten"
 ///
@@ -393,12 +393,12 @@ Außerdem kann man sich den Filterstring speichern und die Abfrage erzeugt einen
 
 `Update v1.4.0`: In der erweiterten Suche lassen sich nun alle **Spalten auswählen**, die im Hintergrund gespeichert sind. Diese werden dann im Interface angezeigt und können als Excel exportiert werden.
 
-![Ein Überblick über die Erweiterte Suche in OSIRIS](../assets/screenshots/advanced-search.png)
+![Ein Überblick über die Erweiterte Suche in OSIRIS](/assets/screenshots/advanced-search.png)
 ///caption
 Ein Überblick über die Erweiterte Suche in OSIRIS
 ///
 
-![Ab v1.4.0 können Spalten zur Anzeige in der Suche ausgewählt werden. Das Interface unterstützt euch dabei und zeigt, welche Spalten ihr bei welchen Aktivitätstypen verwendet und welche gar nicht befüllt sind (ausgegraut).](../assets/screenshots/advanced-search-columns.png)
+![Ab v1.4.0 können Spalten zur Anzeige in der Suche ausgewählt werden. Das Interface unterstützt euch dabei und zeigt, welche Spalten ihr bei welchen Aktivitätstypen verwendet und welche gar nicht befüllt sind (ausgegraut).](/assets/screenshots/advanced-search-columns.png)
 ///caption
 Ab v1.4.0 können Spalten zur Anzeige in der Suche ausgewählt werden. Das Interface unterstützt euch dabei und zeigt, welche Spalten ihr bei welchen Aktivitätstypen verwendet und welche gar nicht befüllt sind (ausgegraut).
 ///
@@ -421,12 +421,12 @@ Neben dem Startjahr von OSIRIS kann natürlich auch das Institut angepasst werde
 
 Mit `v1.3.0` wurden Organisationseinheiten (OE) komplett umstrukturiert. Vorher gab es nur “Abteilungen”, jetzt kann man theoretisch das gesamte Organigramm abbilden (siehe Screenshot). Dabei kann eine Person Mitglied von mehreren OEs sein und eine OE von mehreren Personen geleitet werden. Es gibt dadurch viele Möglichkeiten, Daten zu aggregieren und zu visualisieren. Falls ihr das alles nicht braucht, reicht es alle Mitarbeitenden nur zum Institut hinzuzufügen.
 
-![Ein Chord-Diagramm zeigt die Zusammenarbeit einer Abteilung (in diesem Fall BID) mit den anderen Abteilungen. Dabei werden Publikationen aus 5 Jahren berücksichtigt.](../assets/screenshots/collaboration-chart.png)
+![Ein Chord-Diagramm zeigt die Zusammenarbeit einer Abteilung (in diesem Fall BID) mit den anderen Abteilungen. Dabei werden Publikationen aus 5 Jahren berücksichtigt.](/assets/screenshots/collaboration-chart.png)
 ///caption
 Ein Chord-Diagramm zeigt die Zusammenarbeit einer Abteilung (in diesem Fall BID) mit den anderen Abteilungen. Dabei werden Publikationen aus fünf Jahren berücksichtigt.
 ///
 
-![Ein Ausschnitt der Organigramm-Ansicht von OSIRIS. Arbeitsgruppen lassen sich bei Bedarf auf- und zuklappen.](../assets/screenshots/organigram.png)
+![Ein Ausschnitt der Organigramm-Ansicht von OSIRIS. Arbeitsgruppen lassen sich bei Bedarf auf- und zuklappen.](/assets/screenshots/organigram.png)
 ///caption
 Ein Ausschnitt der Organigramm-Ansicht von OSIRIS. Arbeitsgruppen lassen sich bei Bedarf auf- und zuklappen.
 ///
@@ -455,7 +455,7 @@ Zuletzt könnt ihr einen Typ **deaktivieren**. Natürlich lassen sich Typen auch
 
 `Update v1.5.0`: Ihr könnt jetzt auch bereits existierende Vokabulare anpassen, wie zum Beispiel die Zugangstypen von Infrastrukturen, die Liste möglicher Förderer von Projekten oder den Eventtyp. Diese Einstellung findet ihr im Admin-Bereich unter Inhalte &#8594 Vokabular.
 
-![Ein Beispiel, wie eine Aktivität konfiguriert werden kann.](../assets/screenshots/configure-activity.jpeg)
+![Ein Beispiel, wie eine Aktivität konfiguriert werden kann.](/assets/screenshots/configure-activity.jpeg)
 
 ### Projekte
 

@@ -43,6 +43,6 @@ Mit der neuen Mail Digest Funktion können eure Nutzenden regelmäßig über Ben
 Weiterhin wurde über die Erstellung von Betriebsvereinbarungen bei der Einführung von OSIRIS gesprochen. Hierfür wird es bald Informationen im Wiki geben.  
 Ein weiteres Thema war die Motivation der Mitarbeitenden OSIRIS zu nutzen und sie von dem System zu überzeugen. Auch hier wollen wir euch in Zukunft unterstützen und Ideenanstöße geben.  
 
-Weitere Details und Änderungen findet ihr in der [Präsentation](../../assets/documents/Community-251009.pdf).
+Weitere Details und Änderungen findet ihr in der [Präsentation](/assets/documents/Community-251009.pdf).
 
 :date: Das nächste OSIRIS Community Event wird am **10.12.2025 um 13 Uhr** stattfinden. 

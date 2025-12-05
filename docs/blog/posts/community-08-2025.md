@@ -30,6 +30,6 @@ Neben denen im Blogpost vom [31.07.2025](http://127.0.0.1:8000/blog/2025/07/31/o
 
 Zudem wurde die Auswertung der Gremienumfrage vorgestellt und über geplante Entwicklungen gesprochen.
 
-Weitere Details und Änderungen findet ihr in der [Präsentation](../../assets/documents/Community-250813.pdf).
+Weitere Details und Änderungen findet ihr in der [Präsentation](/assets/documents/Community-250813.pdf).
 
 :date: Das nächste OSIRIS Community Event wird am **09.10.2025 um 13 Uhr** stattfinden. 

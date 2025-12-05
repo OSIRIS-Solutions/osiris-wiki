@@ -17,7 +17,7 @@ Endlich. Es hat `267` Commits und mehr als `32.000` Zeilen Code gebraucht, aber 
 
 In dieser Version haben wir uns mal wieder selbst übertroffen und eine Menge neuer Features, Verbesserungen und Bugfixes implementiert. Besonders stolz sind wir auf die Änderungen im Admin-Interface, die OSIRIS noch flexibler und benutzerfreundlicher machen.
 
-Die vollständige Liste der Änderungen findet ihr im [Changelog](../../home/news.md). Hier sind die Highlights:
+Die vollständige Liste der Änderungen findet ihr im [Changelog](/home/news.md). Hier sind die Highlights:
 
 - Komplett überarbeitete Projekt- und Antragverwaltung: Projekte bilden jetzt den gesamten Lebenszyklus ab, inkl. konfigurierbarer Typen, Custom Fields, Antrag-Workflow mit Status, Filter- und Statistikfunktionen sowie verbesserter Darstellung. Außerdem gibt es Anträge als neue Entität: Verwaltung von beantragten, bewilligten und abgelehnten Projekten inkl. Uploads, Rechten & Statuswechseln.
 - Custom Fields überall: Eigene Felder können jetzt für Projekte, Personen und Infrastrukturen definiert werden – über eine zentrale Konfiguration im Admin-Bereich.

@@ -35,7 +35,7 @@ Mit dem neuen Formbuilder könnt ihr die Formulare für eure Aktivitäten ganz n
 
 Multi-Select-Felder bieten jetzt ein deutlich besseres Nutzererlebnis: Statt mit gedrückter
 `Strg`-Taste könnt ihr nun einfach per Checkbox mehrere Optionen auswählen.
-Die Darstellung ist klarer, verbraucht weniger Platz, ist sprachunabhängig und funktioniert in allen Formularen zuverlässiger. Probiert es gern aus und erstellt [Custom Fields](../../admins/content/custom-fields.md) mit Mehrfachauswahl.
+Die Darstellung ist klarer, verbraucht weniger Platz, ist sprachunabhängig und funktioniert in allen Formularen zuverlässiger. Probiert es gern aus und erstellt [Custom Fields](/admins/content/custom-fields.md) mit Mehrfachauswahl.
 
 
 ## 🎓 Neues Modul zur Betreuung von Abschlussarbeiten
