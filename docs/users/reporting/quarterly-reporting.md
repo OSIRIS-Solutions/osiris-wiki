@@ -10,7 +10,7 @@ OSIRIS unterstützt die quartalsweise Berichterstattung mit einer extra Funktion
 
 ## Mein Jahr
 
-Auf der Seite [Mein Jahr](https://wiki.osiris-app.de/users/profile/scientist_view/) hat jeder Nutzende eine Übersicht über die eigenen Aktivitäten, eingeteilt nach Kategorien. Auf der verlinkten Seite wird genau erklärt wie eine Erinnerung an die quartalsweise Freigabe aussieht.  
+Auf der Seite [Mein Jahr](/users/profile/scientist_view/) hat jeder Nutzende eine Übersicht über die eigenen Aktivitäten, eingeteilt nach Kategorien. Auf der verlinkten Seite wird genau erklärt wie eine Erinnerung an die quartalsweise Freigabe aussieht.  
 
 ## Das Bestätigen des Quartals
 
@@ -44,7 +44,7 @@ Gesperrte Aktivitäten können nur noch standardmäßig vom Editor oder vom Admi
 
 ## Quartalsweise Berichte erstellen
 
-Um quartalsweise Berichte zu erstellen, kannst du dir eine [Berichte-Vorlage](https://wiki.osiris-app.de/users/reporting/report-templates/) bauen. Diese könnte beispielsweise so aussehen:
+Um quartalsweise Berichte zu erstellen, kannst du dir eine [Berichte-Vorlage](/users/reporting/report-templates/) bauen. Diese könnte beispielsweise so aussehen:
 
 ![Quartalsbericht Bausteine](screenshots/quartal_bausteine.png)
 ///caption

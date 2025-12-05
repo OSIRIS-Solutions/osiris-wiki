@@ -9,11 +9,11 @@ Links siehst du die Filteroption für Anträge, rechts für die Projekte
 
 Anträge kannst du gesondert nach dem Status filtern, Projekte wiederum nach der Zeitachse. Zudem gibt es bei Projekten einen extra Filter für Teilprojekte.  
 
-Bei den Projekten kannst du zudem die [erweiterte Suche](https://wiki.osiris-app.de/users/activities/advanced-search/) nutzen, die vom Prinzip die der erweiterten Aktivitäten-Suche gleicht.
+Bei den Projekten kannst du zudem die [erweiterte Suche](/users/activities/advanced-search/) nutzen, die vom Prinzip die der erweiterten Aktivitäten-Suche gleicht.
 
 ![erweiterte suche](screenshots/erweiterte_suche.png)
 ///caption
 Die Seite der erweiterten Suche für Projekte
 ///
 
-Rechts kannst du deine selbst erstellten Suchen abspeichern um diese erneut nutzen zu können. Unter dem Suchfeld wird dir der MongoDB Befehl deiner Suche angezeigt, falls du diesen für andere Anwendungen, wie zum Beispiel [Berichte-Vorlagen](https://wiki.osiris-app.de/users/reporting/report-templates/), in OSIRIS nutzen möchtest.
+Rechts kannst du deine selbst erstellten Suchen abspeichern um diese erneut nutzen zu können. Unter dem Suchfeld wird dir der MongoDB Befehl deiner Suche angezeigt, falls du diesen für andere Anwendungen, wie zum Beispiel [Berichte-Vorlagen](/users/reporting/report-templates/), in OSIRIS nutzen möchtest.

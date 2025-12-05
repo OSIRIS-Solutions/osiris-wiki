@@ -27,7 +27,7 @@ Dein neu erstelltes Lernmodul
 
 ## Aktivität verknüpfen
 
-Um eine Aktivität des Typs **Lehre** einem Modul hinzuzufügen, gibt es zwei Möglichkeiten. Du kannst einfach auf das :heavy_plus_sign: in der Tafel deines Lernmoduls gehen und gelangst so zu der *Aktivitäten hinzufügen* Seite. Hier wurde automatisch schon der Typ *Lehre* und das passende Modul ausgewählt. Alternativ kannst du über die [Aktivität hinzufügen](https://wiki.osiris-app.de/users/creating-content/) Seite gehen und den Typ *Lehre* auswählen. Hier musst du nach deinem Modul über den Namen oder die Modulnummer suchen.
+Um eine Aktivität des Typs **Lehre** einem Modul hinzuzufügen, gibt es zwei Möglichkeiten. Du kannst einfach auf das :heavy_plus_sign: in der Tafel deines Lernmoduls gehen und gelangst so zu der *Aktivitäten hinzufügen* Seite. Hier wurde automatisch schon der Typ *Lehre* und das passende Modul ausgewählt. Alternativ kannst du über die [Aktivität hinzufügen](/users/creating-content/) Seite gehen und den Typ *Lehre* auswählen. Hier musst du nach deinem Modul über den Namen oder die Modulnummer suchen.
 
 ![Lehr-Aktivität hinzufügen](screenshots_courses/activity_course.png)
 ///caption
@@ -40,7 +40,7 @@ Neben dem Modul musst du weitere Parameter angeben:
 - **Betreuer:in mit SWS:** Gib hier eine oder mehrere Personen an, die diese Lehr-Aktivität betreuen. Wichtig ist die Angabe der *Semesterwochenstunden* und ob die Person mit eurem Institut affiliert ist
 - **Zeitspanne:** Hier kannst du die Daten für dein Modul eingeben. Falls es nur einen Tag dauert, kannst du das letzte Feld leer lassen. Zudem hast du links daneben eine Auswahl an Semestern, die du zum leichteren Ausfüllen der Zeitspanne anklicken kannst
 
-Auch Lehrveranstaltungen können mit [Forschungsbereichen](https://wiki.osiris-app.de/users/topics/) verknüpft werden. Die zur Auswahl stehenden Bereiche findest du unten im Formular.  
+Auch Lehrveranstaltungen können mit [Forschungsbereichen](/users/topics/) verknüpft werden. Die zur Auswahl stehenden Bereiche findest du unten im Formular.  
 
 Du kannst einem Modul mehrere Lehr-Aktivitäten hinzufügen. Die Anzahl der verknüpften Aktivitäten wird dir auf der Lehrmodul-Tafel angezeigt (siehe oben). Diese kannst du dir mit einem Klick auf die Anzahl in Kurzform anzeigen lassen.
 

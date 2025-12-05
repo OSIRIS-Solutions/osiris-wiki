@@ -6,7 +6,7 @@ tags:
 
 # Inhalte erstellen
 
-OSIRIS bietet dir die Möglichkeit all deine wissenschaftlichen Aktivitäten zu dokumentieren und mit Forschungsbereichen, Organisationseinheiten oder auch Projekten zu verknüpfen. Auf deiner [Profilseite](https://wiki.osiris-app.de/users/profile/start/) findest du links einen Button, mit dem du direkt zur **Füge Aktivität hinzu** Seite gelangst. Im Menü-Bereich links wird dir der Button auch in Orange angezeigt. 
+OSIRIS bietet dir die Möglichkeit all deine wissenschaftlichen Aktivitäten zu dokumentieren und mit Forschungsbereichen, Organisationseinheiten oder auch Projekten zu verknüpfen. Auf deiner [Profilseite](/users/profile/start/) findest du links einen Button, mit dem du direkt zur **Füge Aktivität hinzu** Seite gelangst. Im Menü-Bereich links wird dir der Button auch in Orange angezeigt. 
 
 ![Füge Aktivität hinzu](screenshots_create_content/aktivität_hinzufügen.png)
 ///caption
@@ -75,7 +75,7 @@ Aktivität mit den verknüpften Forschungsbereichen
 
 ## Organisationseinheiten verknüpfen
 
-Wenn die Aktivität in den Zeitraum fällt, in dem du einer [Organisationseinheit](https://wiki.osiris-app.de/users/units/) zugeordnet bist, wird diese automatisch mit dieser verknüpft. Die Verknüpfung wird dir im unteren Bereich der erweiterten Aktivitäts-Ansicht angezeigt.
+Wenn die Aktivität in den Zeitraum fällt, in dem du einer [Organisationseinheit](/users/units/) zugeordnet bist, wird diese automatisch mit dieser verknüpft. Die Verknüpfung wird dir im unteren Bereich der erweiterten Aktivitäts-Ansicht angezeigt.
 
 ![Verknüpfung Organisationseinheit](screenshots_create_content/orgaeinheit_verknüpfung.png)
 ///caption

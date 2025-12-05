@@ -14,7 +14,7 @@ Um ein neues Event zu erstellen, kannst du entweder oben links das Dropdown-Men�
 Es öffnet sich ein Formular, in dem du folgende Angaben machen musst:
 
 - Kurztitel des Events
-- Typ: Zur Auswahl stehen Lokal, National oder International. Die Auswahl kann über das [Vokabular](https://wiki.osiris-app.de/admins/content/vocabulary/) angepasst werden
+- Typ: Zur Auswahl stehen Lokal, National oder International. Die Auswahl kann über das [Vokabular](/admins/content/vocabulary/) angepasst werden
 - Datum des Events
 - Ort des Events
 
@@ -25,7 +25,7 @@ Formular um ein Event in OSIRIS hinzuzufügen
 
 Du kannst hier auch weitere Angaben machen und zum Beispiel einen längeren Titel angeben oder eine URL zum Event hinterlegen.
 
-Wenn [Forschungsbereiche](https://wiki.osiris-app.de/users/topics/) oder [Schlagwörter](https://wiki.osiris-app.de/users/content/keywords/) in eurer Instanz aktiviert sind, kannst du im unteren Bereich des Formulars dein Event mit vorhandenen verknüpfen.
+Wenn [Forschungsbereiche](/users/topics/) oder [Schlagwörter](/users/content/keywords/) in eurer Instanz aktiviert sind, kannst du im unteren Bereich des Formulars dein Event mit vorhandenen verknüpfen.
 
 ![Verknüpfung Events](screenshots_events/verknüpfung_events.png)
 ///caption
@@ -65,4 +65,4 @@ Im unteren Bereich der Event-Seite hast du die Möglichkeit, das Event mit Aktiv
 Hier kannst du dem Event eine Aktivität hinzufügen
 ///
 
-Mit einem Klick auf **:heavy_plus_sign: Beitrag hinzufügen** wirst du direkt zur [Aktivität hinzufügen](https://wiki.osiris-app.de/users/content/create_content/) Seite weitergeleitet. Hier ist der Aktivitäts-Typ *Vortrag* vorausgewählt und schon passend für das Event ausgefüllt. 
+Mit einem Klick auf **:heavy_plus_sign: Beitrag hinzufügen** wirst du direkt zur [Aktivität hinzufügen](/users/content/create_content/) Seite weitergeleitet. Hier ist der Aktivitäts-Typ *Vortrag* vorausgewählt und schon passend für das Event ausgefüllt. 

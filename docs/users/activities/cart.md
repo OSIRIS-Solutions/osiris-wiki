@@ -8,7 +8,7 @@ tags:
 # Download-Sammlung
 
 
-Wenn du nicht die Option der [erweiterten Suche](https://wiki.osiris-app.de/users/activities/advanced-search/) zum Erstellen einer individuellen Liste der Aktivitäten nutzen möchtest, kannst du auf der Seite **Alle Aktivitäten** den Einkaufswagen nutzen, um Einträge diesem hinzuzufügen.
+Wenn du nicht die Option der [erweiterten Suche](/users/activities/advanced-search/) zum Erstellen einer individuellen Liste der Aktivitäten nutzen möchtest, kannst du auf der Seite **Alle Aktivitäten** den Einkaufswagen nutzen, um Einträge diesem hinzuzufügen.
 
 ![Auswahl Einkaufswagen](screenshots/activities_chosen_cart.png)
 ///caption

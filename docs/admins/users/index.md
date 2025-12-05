@@ -32,7 +32,7 @@ Ehemalige Mitarbeitende müssen nicht zentral angelegt werden, um für Altdaten 
 
 ## Attribute synchronisieren (LDAP)
 
-Eine Anleitung dazu, wie man die Attribute (z. B. Name, Organisationseinheit, etc.) von Personen mit dem LDAP synchronisiert findet ihr [hier](https://wiki.osiris-app.de/technical/user-management/ldap/#synchronisation-der-nutzerattribute).
+Eine Anleitung dazu, wie man die Attribute (z. B. Name, Organisationseinheit, etc.) von Personen mit dem LDAP synchronisiert findet ihr [hier](/technical/user-management/ldap/#synchronisation-der-nutzerattribute).
 
 
 

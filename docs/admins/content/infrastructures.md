@@ -29,9 +29,9 @@ Infrastrukturen sind in OSIRIS standardmäßig aufgebaut und enthalten Datenfeld
 Auf der Seite **Datenfelder für Infrastrukturen** kannst du vorgegebene Felder inaktivieren und benutzerdefinierte Felder aktivieren 
 ///
 
-Auf dieser Seite findest du auch deine [benutzerdefinierten Felder](https://wiki.osiris-app.de/admins/content/custom-fields/), die du hier dem Formular für Infrastrukturen hinzufügen kannst.  
+Auf dieser Seite findest du auch deine [benutzerdefinierten Felder](/admins/content/custom-fields/), die du hier dem Formular für Infrastrukturen hinzufügen kannst.  
 
-Es gibt zudem die Möglichkeit die Auswahl der Werte in den Dropdowns anzupassen. Dafür kannst du auf der [Vokabular-Seite](https://wiki.osiris-app.de/admins/content/vocabulary/) Werte ändern oder auch hinzufügen.
+Es gibt zudem die Möglichkeit die Auswahl der Werte in den Dropdowns anzupassen. Dafür kannst du auf der [Vokabular-Seite](/admins/content/vocabulary/) Werte ändern oder auch hinzufügen.
 
 ![infrastructures_vocabulary](screenshots/infrastructures_vocabulary.png)
 ///caption

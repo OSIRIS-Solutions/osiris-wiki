@@ -51,5 +51,5 @@ Hier kannst du bestimmen, wie oft Nutzende eine Zusammenfassung per Mail erhalte
 
 Die Nutzenden erhalten in der von ihnen gewählten Regelmäßigkeit eine Mai mit Aktivitäts-Hinweisen, ungelesenen Nachrichten und ob OSIRIS aktualisiert wurde. 
 
-Um dieses Feature aktivieren zu können, muss ein CRON-Job konfiguriert werden. Die Anleitung dazu findest du [hier](https://wiki.osiris-app.de/technical/configure/email/).  
+Um dieses Feature aktivieren zu können, muss ein CRON-Job konfiguriert werden. Die Anleitung dazu findest du [hier](/technical/configure/email/).  
 Die bevorzugte Sprache (Deutsch/Englisch) wird bei Umstellung im Interface ab Version 1.6.0 ebenfalls in der Datenbank gespeichert und für die Mails verwendet.

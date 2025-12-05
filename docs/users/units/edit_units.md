@@ -15,7 +15,7 @@ Unter dem Tag **Allgemein** kannst du der Einheit eine Beschreibung hinzufügen.
 Allgemeine Einstellungen, die du für die Einheit vornehmen kannst
 ///
 
-Zudem kannst du hier bestimmen, ob die Einheit öffentlich angezeigt wird und sie als inaktiv markieren, falls diese Einheit nicht mehr aktiv am Institut ist. Die Pflichtfelder wie Name und Abkürzung können hier auch noch geändert werden, genauso wie die Farbe. Du kannst dieser Einheit eine **Kostenstelle** hinzufügen und mit verfügbaren [Forschungsbereichen](https://wiki.osiris-app.de/users/topics/) verknüpfen.
+Zudem kannst du hier bestimmen, ob die Einheit öffentlich angezeigt wird und sie als inaktiv markieren, falls diese Einheit nicht mehr aktiv am Institut ist. Die Pflichtfelder wie Name und Abkürzung können hier auch noch geändert werden, genauso wie die Farbe. Du kannst dieser Einheit eine **Kostenstelle** hinzufügen und mit verfügbaren [Forschungsbereichen](/users/topics/) verknüpfen.
 
 ## Personal
 
@@ -34,7 +34,7 @@ Alle hinzugefügten Personen werden unter **Direkt zugeordnete Personen** aufgel
 Liste der zugeordneten Personen mit weiteren Einstellungsmöglichkeiten und der Anzeige von Admin-Rechten
 ///
 
-In der Liste kannst du sehen, welche Position die Person hat und seit wann sie der Einheit zugehörig ist. Dieses [Datum](https://wiki.osiris-app.de/users/units/connections) kann nur von der Person selbst angepasst werden.  
+In der Liste kannst du sehen, welche Position die Person hat und seit wann sie der Einheit zugehörig ist. Dieses [Datum](/users/units/connections) kann nur von der Person selbst angepasst werden.  
 Bei Aktionen kommst du über den **Ansehen** Button direkt auf das Profil der Person. Du kannst die Person hier auch aus der Liste löschen und ihr Editoren-Rechte an dieser Organisationseinheit geben. Falls die Person Administratoren-Rechte, und somit sowieso die Editoren-Rechte an Organisationseinheiten hat, wird dir das statt des Editor-Buttons angezeigt.
 
 ## Forschung

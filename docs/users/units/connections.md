@@ -23,7 +23,7 @@ Auf dieser Seite werden all die Organisationseinheiten aufgelistet, denen du zug
 Hier kannst du aus einem Dropdown Menü deinem Profil eine Organisationseinheit hinzufügen und direkt den Zeitraum, den du für diese tätig bist bzw. warst, angeben
 ///
 
-Befindet sich die hinzuzufügende Einheit nicht in der Liste, kannst du selbst eine neue Organisationseinheit [erstellen](https://wiki.osiris-app.de/users/units/edit_units/), falls du die Rechte dafür hast. Ist dies nicht der Fall, kontaktiere bitte eure Administration.
+Befindet sich die hinzuzufügende Einheit nicht in der Liste, kannst du selbst eine neue Organisationseinheit [erstellen](/users/units/edit_units/), falls du die Rechte dafür hast. Ist dies nicht der Fall, kontaktiere bitte eure Administration.
 
 Du kannst hier angeben, ob du in der Einheit wissenschaftlich tätig bist oder nicht. Wenn du eine Einheit als **wissenschaftlich** auf deinem Profil markierst, werden alle dir zugehörigen Forschungsaktivitäten mit dieser Einheit verknüpft. Diese werden dann auf der Organisationseinheiten-Seite unter dem Tab **Aktivitäten** aufgelistet und die Organisationseinheit wird unten rechts in der erweiterten Ansicht der Aktivität angezeigt.  
 Dies gilt allerdings nur für Aktivitäten, die in den Zeitraum fallen, den du hier für die Einheit angibst.  

@@ -24,10 +24,10 @@ Hier kannst du eine neue Organisation anlegen
 
 Du kannst die Organisation manuell oder mithilfe der ROR-ID ([Research Organisation Registry](https://ror.org/)) hinterlegen. Auf der ROR-Seite kannst du einfach nach dem Institut suchen und den Link in OSIRIS kopieren. OSIRIS füllt dann alle Fächer automatisch aus. Falls du die Organisation, die du hinzufügen möchtest, nicht im ROR Verzeichnis findest, kannst du sie auch manuell hinzufügen. Hierbei ist der Name, das Land und die Art der Organisation notwendig, wobei dir bei der Art durch ein Dropdown-Menü Möglichkeiten vorgeschlagen werden. Um das Institut auch auf der Kooperations-Karte darstellen zu können, kannst du hier auch die genauen Koordinaten angeben.  
 
-Wenn du eine neue [Infrastruktur](http://127.0.0.1:8000/users/infrastructures/) anlegst und **Verbundinfrastruktur** wählst, kannst du hier auch weitere Organisationen über ein einfaches Suchfeld in OSIRIS hinzufügen. Wenn du eine Organisation hier hinzufügst, wird sie automatisch auf der Organisationen-Seite gelistet.  
+Wenn du eine neue [Infrastruktur](/users/infrastructures/) anlegst und **Verbundinfrastruktur** wählst, kannst du hier auch weitere Organisationen über ein einfaches Suchfeld in OSIRIS hinzufügen. Wenn du eine Organisation hier hinzufügst, wird sie automatisch auf der Organisationen-Seite gelistet.  
 
 ## Verknüpfungen
 
-Hinterlegte Organisationen sind vor allem dafür da, [Projekte](http://127.0.0.1:8000/users/projects/) und [Infrastrukturen](http://127.0.0.1:8000/users/infrastructures/) abzubilden und die Kooperationspartner korrekt anzugeben. Sowohl bei den Infrastrukturen als auch bei den Anträgen kannst du direkt nach der Organisation oder die ROR-ID zur Hilfe nehmen.  
+Hinterlegte Organisationen sind vor allem dafür da, [Projekte](/users/projects/) und [Infrastrukturen](/users/infrastructures/) abzubilden und die Kooperationspartner korrekt anzugeben. Sowohl bei den Infrastrukturen als auch bei den Anträgen kannst du direkt nach der Organisation oder die ROR-ID zur Hilfe nehmen.  
 Alle Verknüpfungen werden auf der OSIRIS-Seite der Organisation aufgelistet. Hier kannst du die Organisation auch noch im Nachhinein bearbeiten.
 

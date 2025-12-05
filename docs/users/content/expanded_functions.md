@@ -9,7 +9,7 @@ tags:
 
 ## Dateien hochladen
 
-Du kannst zu jeder Aktivität in OSIRIS wichtige Dokumente hinterlegen. Dafür gehst du in der [erweiterten Ansicht](https://wiki.osiris-app.de/users/activities/expanded_view/) der Aktivität auf **Datei hochladen** und gelangst zu folgendem Widget:
+Du kannst zu jeder Aktivität in OSIRIS wichtige Dokumente hinterlegen. Dafür gehst du in der [erweiterten Ansicht](/users/activities/expanded_view/) der Aktivität auf **Datei hochladen** und gelangst zu folgendem Widget:
 
 ![Datei hochladen Widget](screenshots_create_content/upload.png)
 ///caption

@@ -8,7 +8,7 @@ tags:
 <!-- md:version 1.6.0 -->
 <!-- md:feature -->
 
-Mit dieser neuen Funktion kannst du von OSIRIS in regelmäßigen Abständen E-Mails erhalten, die dich über ausstehende Aktivitäten, Nachrichten und mögliche Updates informiert. Diese Funktion muss zentral von der Administration eingeschaltet werden. Eine Erklärung dafür findest du [hier](http://127.0.0.1:8000/admins/email/#email-digest). 
+Mit dieser neuen Funktion kannst du von OSIRIS in regelmäßigen Abständen E-Mails erhalten, die dich über ausstehende Aktivitäten, Nachrichten und mögliche Updates informiert. Diese Funktion muss zentral von der Administration eingeschaltet werden. Eine Erklärung dafür findest du [hier](/admins/email/#email-digest). 
 
 In deinem Profil kannst du selbst bestimmen, wie oft du Mails erhältst. Dafür gehst du auf deiner Startseite auf **Bearbeite Profil** und wählst dann **Kontakt** aus.
 

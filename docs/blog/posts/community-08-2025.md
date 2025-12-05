@@ -21,7 +21,7 @@ Um kleinere Hotfixes und Änderungen besser teilen zu können, verwendet OSIRIS 
 
 ## OSIRIS Version 1.5.0. - Was ist noch neu?
 
-Neben denen im Blogpost vom [31.07.2025](http://127.0.0.1:8000/blog/2025/07/31/osiris-version-150-ist-jetzt-verf%C3%BCgbar/) aufgezählten Neuerungen in OSIRIS v1.5.0 haben wir über weitere Änderungen gesprochen. Ein paar davon sind hier aufgelistet:
+Neben denen im Blogpost vom [31.07.2025](/blog/2025/07/31/osiris-version-150-ist-jetzt-verf%C3%BCgbar/) aufgezählten Neuerungen in OSIRIS v1.5.0 haben wir über weitere Änderungen gesprochen. Ein paar davon sind hier aufgelistet:
 
 - **Autoren-Formatierungen** haben keinen Bindestrich mehr und es wurde eine Komagetrennte Namensvariante hinzugefügt
 - Nutzer können jetzt **gelöscht** werden, es wird aber weiterhin empfohlen die Funktion des Inaktivieren von Nutzenden zu wählen

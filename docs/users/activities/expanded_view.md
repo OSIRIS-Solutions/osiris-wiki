@@ -17,7 +17,7 @@ Neben dem Titel und den Autoren siehst du darunter erste Informationen zum Eintr
 
 Im Folgenden werden alle wichtigen Buttons auf dieser Seite näher erklärt:
 
-1. Sammeln: Über diesen Button kannst du die Aktivität deinem [Einkaufswagen](https://wiki.osiris-app.de/users/activities/cart/) hinzufügen
+1. Sammeln: Über diesen Button kannst du die Aktivität deinem [Einkaufswagen](/users/activities/cart/) hinzufügen
 2. Download: Dieser Button bietet dir das *Word* oder *BibTex*-Format zum Download an. Zudem kannst du anpassen, welche Autoren hervorgehoben werden
 3. Vorschau: Eine Vorschau wie diese Aktivität extern im Portfolio aussehen wird
 4. Allgemein: Hier siehst du alle eingetragenen Details zu der Aktivität und die Felder, die vom Urheber nicht ausgefüllt wurden

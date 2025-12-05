@@ -508,7 +508,7 @@ Wie häufig und in welchem Umfang gibt es Systemupdates? Müssen die Updates üb
 
 Bugfixes werden immer schnellstmöglich eingespielt. Wenn ihr OSIRIS selbst hostet und allein wartet, könnt ihr die Updates natürlich auch nach eurem Belieben einspielen. Falls ihr Services von OSIRIS Solutions in Anspruch nehmt, werden Updates ebenfalls mit euch abgestimmt. 
 
-Wie man OSIRIS aktualisiert erfahrt ihr [im OSIRIS-Wiki](https://wiki.osiris-app.de/technical/update/).
+Wie man OSIRIS aktualisiert erfahrt ihr [im OSIRIS-Wiki](/technical/update/).
 
 ---
 

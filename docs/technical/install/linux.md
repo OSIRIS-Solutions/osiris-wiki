@@ -219,7 +219,7 @@ http://<deine-server-ip>/
 
 Du solltest eine rote Box sehen mit dem Hinweis, dass OSIRIS noch installiert werden muss. Keine Panik, damit ist nur die Datenbank gemeint. Klicke auf "Installieren" und OSIRIS wird die Datenbank anlegen und alles vorbereiten.  
 
-:warning: Wenn ihr eine Fehlermeldung bekommt und der Installationspfad nicht gefunden wird, überprüft ob die **.htaccess**-Datei vorhanden ist und wie unter [4.2](https://wiki.osiris-app.de/technical/install/linux/#42-htaccess-beachten) beschrieben aussieht. Zudem sollte der Pfad auf "/" gesetzt sein. 
+:warning: Wenn ihr eine Fehlermeldung bekommt und der Installationspfad nicht gefunden wird, überprüft ob die **.htaccess**-Datei vorhanden ist und wie unter [4.2](/technical/install/linux/#42-htaccess-beachten) beschrieben aussieht. Zudem sollte der Pfad auf "/" gesetzt sein. 
  
 
 Zum Schluss sollte die Login-Seite von OSIRIS laden und die Installation somit abgeschlossen sein! 🎉

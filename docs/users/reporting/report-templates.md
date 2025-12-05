@@ -76,7 +76,7 @@ Möchtest du zudem alle Poster auflisten, erstellst du einen neuen Aktivitäts-B
 {"$and":[{"type":"poster"}]}
 ```
 
-Wenn du komplexere Filteroptionen nutzen möchtest, nimmst du am besten die [erweiterte Suche](https://wiki.osiris-app.de/users/activities/advanced-search/) zur Hilfe. Hier kannst du verschiedene Filter anwenden und dir den entsprechenden MongoDB Befehl mit einem Klick auf **Zeige Filter** rüber kopieren. Als Beispiel werden wir hier nach dem Vornamen *Martinique* filtern.
+Wenn du komplexere Filteroptionen nutzen möchtest, nimmst du am besten die [erweiterte Suche](/users/activities/advanced-search/) zur Hilfe. Hier kannst du verschiedene Filter anwenden und dir den entsprechenden MongoDB Befehl mit einem Klick auf **Zeige Filter** rüber kopieren. Als Beispiel werden wir hier nach dem Vornamen *Martinique* filtern.
 
 ```bash
 {"$and":[{"authors.first":"Martinique"}]}

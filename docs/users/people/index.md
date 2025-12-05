@@ -5,11 +5,11 @@ status: false
 # Personen in OSIRIS
 
 OSIRIS kann nicht nur dafür genutzt werden, um einen Überblick über alle Aktivitäten im Institut zu behalten, sondern auch um Mitarbeitende zu verwalten und Abteilungen zu organisieren.  
-Unter **Personen** könnt ihr das gesamte, in OSIRIS registrierte Kollegium einsehen und mit verschiedenen Hilfsmitteln durchsuchen. Du kannst selbst beeinflussen mit welchen **Schlagwörtern** oder **Expertisen** du in OSIRIS gefunden werden kannst, indem du dein [Profil](https://wiki.osiris-app.de/users/profile/start/#profil-bearbeiten) entsprechend bearbeitest.  
+Unter **Personen** könnt ihr das gesamte, in OSIRIS registrierte Kollegium einsehen und mit verschiedenen Hilfsmitteln durchsuchen. Du kannst selbst beeinflussen mit welchen **Schlagwörtern** oder **Expertisen** du in OSIRIS gefunden werden kannst, indem du dein [Profil](/users/profile/start/#profil-bearbeiten) entsprechend bearbeitest.  
 
 ## Filter nach Organisationseinheiten
 
-Rechts neben den aufgelisteten Profilen findest du die Möglichkeit, das Kollegium nach [Organisationseinheiten](https://wiki.osiris-app.de/users/people/units/) zu durchsuchen. Klickst du auf eine verfügbare Organisationseinheit, werden dir alle Profile in OSIRIS angezeigt, die dieser zugehörig sind.
+Rechts neben den aufgelisteten Profilen findest du die Möglichkeit, das Kollegium nach [Organisationseinheiten](/users/people/units/) zu durchsuchen. Klickst du auf eine verfügbare Organisationseinheit, werden dir alle Profile in OSIRIS angezeigt, die dieser zugehörig sind.
 
 ![Filter Organisationseinheit](screenshots/orga_einheiten_suche.png)
 ///caption

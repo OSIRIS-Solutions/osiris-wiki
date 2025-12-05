@@ -9,7 +9,7 @@ tags:
 <!-- md:version 1.4.1 -->
 <!-- md:feature -->
 
-Forschungsinfrastrukturen sind wie Projekte eine eigene Entität in OSIRIS, die zentral eingeschaltet werden muss. Falls du Forschungsinfrastrukturen in OSIRIS pflegen möchtest, diese Funktion aber noch nicht aktiviert ist, kontaktiere bitte deinen OSIRIS-Administrator. Dieser kann die Anleitung zur Aktivierung [hier](https://wiki.osiris-app.de/admins/content/infrastructures/) finden.
+Forschungsinfrastrukturen sind wie Projekte eine eigene Entität in OSIRIS, die zentral eingeschaltet werden muss. Falls du Forschungsinfrastrukturen in OSIRIS pflegen möchtest, diese Funktion aber noch nicht aktiviert ist, kontaktiere bitte deinen OSIRIS-Administrator. Dieser kann die Anleitung zur Aktivierung [hier](/admins/content/infrastructures/) finden.
 
 
 !!! info "Hinweis"

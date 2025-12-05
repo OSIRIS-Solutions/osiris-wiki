@@ -18,7 +18,7 @@ Die neuste Version von OSIRIS bringt euch neue Features und Verbesserungen von b
 
 ### Der neue Formular-Builder
 
-Der neue Formular-Builder bietet euch die Möglichkeit, die Aktivitätsformulare freier zu gestalten und eigene Bezeichnungen für Felder und Hilfetexte einzustellen. Eine genauere Erklärung findet ihr im [Wiki](https://wiki.osiris-app.de/admins/content/activities/#formular-builder) und ein Tutorial auf unserem [YouTube-Kanal](https://www.youtube.com/watch?v=I1ZT2vlRFeA&t=13s).
+Der neue Formular-Builder bietet euch die Möglichkeit, die Aktivitätsformulare freier zu gestalten und eigene Bezeichnungen für Felder und Hilfetexte einzustellen. Eine genauere Erklärung findet ihr im [Wiki](/admins/content/activities/#formular-builder) und ein Tutorial auf unserem [YouTube-Kanal](https://www.youtube.com/watch?v=I1ZT2vlRFeA&t=13s).
 
 ### Verschlagwortung von Aktivitäten
 
@@ -26,11 +26,11 @@ Bis jetzt konnte die Administration nur personenbezogene Schlagwörter definiere
 
 ### Qualiäts-Workflows
 
-Ein oft gewünschtes Feature steht nun endlich zur Verfügung: Die Qualitäts-Workflows. Mit den Workflows könnt ihr Prüf- und Freigabeprozesse abbilden und den Fortschritt verfolgen und auf neue wie auch schon bestehende Aktivitäten anwenden. Eine Anleitung zur Nutzung findet ihr [hier](https://wiki.osiris-app.de/admins/workflows/workflows/).
+Ein oft gewünschtes Feature steht nun endlich zur Verfügung: Die Qualitäts-Workflows. Mit den Workflows könnt ihr Prüf- und Freigabeprozesse abbilden und den Fortschritt verfolgen und auf neue wie auch schon bestehende Aktivitäten anwenden. Eine Anleitung zur Nutzung findet ihr [hier](/admins/workflows/workflows/).
 
 ### Mail Digest
 
-Mit der neuen Mail Digest Funktion können eure Nutzenden regelmäßig über Benachrichtigungen in OSIRIS per Mail informiert werden. Weitere Infos dazu findet ihr [hier](https://wiki.osiris-app.de/admins/email/),
+Mit der neuen Mail Digest Funktion können eure Nutzenden regelmäßig über Benachrichtigungen in OSIRIS per Mail informiert werden. Weitere Infos dazu findet ihr [hier](/admins/email/),
 
 ### Weitere Neuerungen
 

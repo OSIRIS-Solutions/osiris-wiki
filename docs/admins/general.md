@@ -18,7 +18,7 @@ Du kannst auf dieser Seite auch bestimmen, wie die **affiliierten Autor:innen** 
 
 ## Funktionen
 
-Hier findest du viele verschiedene Anwendungen, die mit einem Klick aktiviert bzw. deaktiviert werden können. Du kannst zum Beispiel die [Quartalsweise Berichterstattung](https://wiki.osiris-app.de/users/reporting/quarterly-reporting/) aktivieren, sowie [Projekte&Anträge*](https://wiki.osiris-app.de/admins/content/projects/) und [Lehrveranstaltungen](https://wiki.osiris-app.de/users/courses/). Wenn du eine Funktion aktivierst, musst du anschließend noch die entsprechenden Rechte unter &#8594 Rollen und Rechte vergeben. Per default ist zunächst kein Recht vergeben.
+Hier findest du viele verschiedene Anwendungen, die mit einem Klick aktiviert bzw. deaktiviert werden können. Du kannst zum Beispiel die [Quartalsweise Berichterstattung](/users/reporting/quarterly-reporting/) aktivieren, sowie [Projekte&Anträge*](/admins/content/projects/) und [Lehrveranstaltungen](/users/courses/). Wenn du eine Funktion aktivierst, musst du anschließend noch die entsprechenden Rechte unter &#8594 Rollen und Rechte vergeben. Per default ist zunächst kein Recht vergeben.
 
 ## Institut
 

@@ -36,4 +36,4 @@ Historie mit Details zu Änderungen an dem Antrag
 
 Unter dem Tab **Dokumente** kannst du deinem Antrag verschieden Unterlagen hinzufügen und somit zentral für alle Beteiligten zur Verfügung stellen.
 
-Wie du siehst, wird dein Projekt auch automatisch [Organisationseinheiten](https://wiki.osiris-app.de/users/units/) hinzugefügt. Dies richtet sich nach den Personen, die mit dem Projekt verknüpft worden sind.
+Wie du siehst, wird dein Projekt auch automatisch [Organisationseinheiten](/users/units/) hinzugefügt. Dies richtet sich nach den Personen, die mit dem Projekt verknüpft worden sind.

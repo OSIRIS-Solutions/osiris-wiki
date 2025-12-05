@@ -31,7 +31,7 @@ Um all deine Kooperationspartner auf einer Weltkarte darstellen zu können, kann
 So sieht die Seite mit deinen Kooperationspartnern für dein Projekt aus
 ///
 
-Die Verlinkungen der Einrichtungen werden zukünftig auf der jeweiligen Seite der [Organisation](https://wiki.osiris-app.de/users/organisations/) aufgeführt. Zudem werden Institute, die du hier manuell hinzufügst, mit in die Auflistung von Organisationen aufgenommen. 
+Die Verlinkungen der Einrichtungen werden zukünftig auf der jeweiligen Seite der [Organisation](/users/organisations/) aufgeführt. Zudem werden Institute, die du hier manuell hinzufügst, mit in die Auflistung von Organisationen aufgenommen. 
 
 ## Aktivitäten verlinken
 
@@ -55,5 +55,5 @@ Hier kannst du deinem Antrag oder deinem Projekt weitere Personen hinzufügen un
 ///
 
 Wenn du deinem Antrag mehrere Personen hinzugefügt hast und dieses nach der Bewilligung in ein Projekt umwandelst, werden diese automatisch mit dem Projekt verlinkt. Personen, die anschließend dem Projekt hinzufügst, werden allerdings nicht rückwirkend mit dem Antrag verlinkt.  
-Du kannst den Personen im Projekt verschiedene Rollen aus dem Dropdown-Menü zuordnen. Sollte dir hier eine Rolle fehlen, kontaktiere eure Administration. Diese kann das [Vokabular](https://wiki.osiris-app.de/admins/content/vocabulary/) für Projektrollen anpassen.  
+Du kannst den Personen im Projekt verschiedene Rollen aus dem Dropdown-Menü zuordnen. Sollte dir hier eine Rolle fehlen, kontaktiere eure Administration. Diese kann das [Vokabular](/admins/content/vocabulary/) für Projektrollen anpassen.  
 Zudem kannst du rechts in der Tabelle bestimmen, für welche Organisationseinheit die Personen in diesem Projekt aktiv sind. Ist eine Person in mehreren Abteilungen tätig oder zum Beispiel Führungskraft einer übergeordneten Einheit, im Projekt aber aktiv für eine Arbeitsgruppe, kannst du dies in der Tabelle entsprechend anpassen. 

@@ -47,7 +47,7 @@ Um eine **Person** mit einem Forschungsbereich zu verknüpfen, gehst du auf das 
 So wird der verlinkte Forschungsbereich im Profil angezeigt
 ///
 
-Wenn du eine neue Aktivität in OSIRIS hinzufügst, werden dir die Forschungsbereiche unten zur Auswahl angezeigt. Du kannst auch noch im Nachhinein Aktivitäten mit den Bereichen verknüpfen. Die Filteroptionen bei [Alle Aktivitäten](https://wiki.osiris-app.de/users/activities/) haben sich um die Forschungsbereiche erweitert.
+Wenn du eine neue Aktivität in OSIRIS hinzufügst, werden dir die Forschungsbereiche unten zur Auswahl angezeigt. Du kannst auch noch im Nachhinein Aktivitäten mit den Bereichen verknüpfen. Die Filteroptionen bei [Alle Aktivitäten](/users/activities/) haben sich um die Forschungsbereiche erweitert.
 
 Auch **Events**, **Organisationseinheiten** und **Infrastrukturen** lassen sich mit Forschungsbereichen auf den jeweiligen Seiten verknüpfen, sowie danach filtern. 
 

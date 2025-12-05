@@ -14,7 +14,7 @@ Im Folgenden werden die unterschiedlichen Buttons in deiner Startseite erklärt:
 
 1. Aktivität hinzufügen: Dieser Button leitet dich sofort auf die *Füge Aktivität hinzu* Seite
 2. Meine Aktivitäten: Hier siehst du die Auflistung aller Aktivitäten, die mit dir verknüpft sind
-3. Mein Jahr: Du wirst auf die *Mein Jahr* Seite weitergeleitet, die dir anhand einer Zeitleiste eine Übersicht über deine Aktivitäten gibt. Das aktuelle Quartal ist gelb markiert, so wie die dazugehörigen Aktivitäten. Weitere Erklärungen findest du [hier](https://wiki.osiris-app.de/users/profile/scientist_view/)
+3. Mein Jahr: Du wirst auf die *Mein Jahr* Seite weitergeleitet, die dir anhand einer Zeitleiste eine Übersicht über deine Aktivitäten gibt. Das aktuelle Quartal ist gelb markiert, so wie die dazugehörigen Aktivitäten. Weitere Erklärungen findest du [hier](/users/profile/scientist_view/)
 4. Vorschau: Hier siehst du eine Vorschau deines Profils, wie es im Portfolio aussehen wird
 5. Meine Errungenschaften: Falls *Errungenschaften* von der Administration aktiviert wurden kannst du deine hier sehen
 6. Bearbeite Profil: Hier kannst du dein Profil bearbeiten. Näheres dazu findest du im nächsten Abschnitt

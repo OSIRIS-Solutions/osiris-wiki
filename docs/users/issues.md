@@ -51,7 +51,7 @@ Bitte überprüfe, ob die Arbeit bereits abgeschlossen wurde. Ist dies der Fall,
 
 ## Quartal freigeben
 
-Wenn diese Funktion von der Administration aktiviert wurde, fordert dich OSIRIS am Ende jedes Quartals dazu auf, deine Aktivitäten zu überprüfen und das Quartal für das Controlling freizugeben. Mehr Informationen zu den Quartalsberichten findest du [hier](https://wiki.osiris-app.de/users/reporting/quarterly-reporting/) und [hier](https://wiki.osiris-app.de/users/profile/scientist_view/).
+Wenn diese Funktion von der Administration aktiviert wurde, fordert dich OSIRIS am Ende jedes Quartals dazu auf, deine Aktivitäten zu überprüfen und das Quartal für das Controlling freizugeben. Mehr Informationen zu den Quartalsberichten findest du [hier](/users/reporting/quarterly-reporting/) und [hier](/users/profile/scientist_view/).
 
 ## Aktivitäten ohne Enddatum
 
