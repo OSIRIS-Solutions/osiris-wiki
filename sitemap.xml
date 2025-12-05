@@ -568,6 +568,13 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://wiki.osiris-app.de/en/users/people/guests/"/>
     </url>
     <url>
+        <loc>https://wiki.osiris-app.de/users/profile/claim_activity/</loc>
+        <lastmod>2025-12-05</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://wiki.osiris-app.de/users/profile/claim_activity/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://wiki.osiris-app.de/en/users/profile/claim_activity/"/>
+    </url>
+    <url>
         <loc>https://wiki.osiris-app.de/users/profile/maildigest/</loc>
         <lastmod>2025-12-05</lastmod>
         <changefreq>daily</changefreq>
@@ -1266,6 +1273,13 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://wiki.osiris-app.de/en/users/people/guests/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://wiki.osiris-app.de/users/people/guests/"/>
+    </url>
+    <url>
+        <loc>https://wiki.osiris-app.de/en/users/profile/claim_activity/</loc>
+        <lastmod>2025-12-05</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://wiki.osiris-app.de/en/users/profile/claim_activity/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://wiki.osiris-app.de/users/profile/claim_activity/"/>
     </url>
     <url>
         <loc>https://wiki.osiris-app.de/en/users/profile/maildigest/</loc>
