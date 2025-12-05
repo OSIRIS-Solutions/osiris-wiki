@@ -14,6 +14,6 @@ Hier kannst du die Funktion **Events** deaktivieren, wenn du sie nicht nutzen m�
 
 Unter dem Unterpunkt **Aktivitäten** kannst du den Rollen das Recht **Events erstellen und verwalten** zuordnen, sodass bestimmte Personen Events in OSIRIS erstellen können. 
 
-Weitere Erklärungen zu Events findest du [hier](https://wiki.osiris-app.de/users/events/).
+Weitere Erklärungen zu Events findest du [hier](/users/events/).
 
 
