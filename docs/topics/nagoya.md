@@ -1,5 +1,8 @@
 # Nagoya Protocol Compliance
 
+<!-- md:version 1.7.0 -->
+<!-- md:feature -->
+
 Das Nagoya-Protokoll ist ein internationales Abkommen, das darauf abzielt, eine gerechte und ausgewogene Aufteilung der Vorteile aus der Nutzung genetischer Ressourcen sicherzustellen. Die Einhaltung des Nagoya-Protokolls ist für Organisationen, die mit der Nutzung genetischer Ressourcen befasst sind, unerlässlich, um rechtliche Probleme zu vermeiden und nachhaltige Praktiken zu fördern.
 
 OSIRIS kann so konfiguriert werden, dass die Einhaltung des Nagoya-Protokolls gewährleistet ist. Dazu musst du zunächst das Nagoya-Protokoll-Modul in den allgemeinen Einstellungen von OSIRIS aktivieren und den Rollen, die mit den ABS-Compliance-Beauftragten verbunden sind, die Berechtigung `nagoya.view` erteilen.
