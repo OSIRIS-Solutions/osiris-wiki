@@ -712,12 +712,6 @@
         <lastmod>2025-12-08</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://wiki.osiris-app.de/blog/"/>
-    </url>
-    <url>
-        <loc>https://wiki.osiris-app.de/blog/</loc>
-        <lastmod>2025-12-08</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="de" href="https://wiki.osiris-app.de/blog/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://wiki.osiris-app.de/en/blog/"/>
     </url>
     <url>
@@ -734,134 +728,74 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://wiki.osiris-app.de/en/blog/2025/12/02/osiris-solutions-officially-supports-the-barcelona-declaration/"/>
     </url>
     <url>
-        <loc>https://wiki.osiris-app.de/blog/2025/04/04/community-meeting-on-04042025/</loc>
-        <lastmod>2025-12-08</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="de" href="https://wiki.osiris-app.de/blog/2025/04/04/community-meeting-on-04042025/"/>
-    </url>
-    <url>
         <loc>https://wiki.osiris-app.de/blog/2025/04/04/community-meeting-am-04042025/</loc>
         <lastmod>2025-12-08</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://wiki.osiris-app.de/blog/2025/04/04/community-meeting-am-04042025/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://wiki.osiris-app.de/en/blog/2025/04/04/community-meeting-on-04042025/"/>
-    </url>
-    <url>
-        <loc>https://wiki.osiris-app.de/blog/2025/06/18/community-meeting-on-18062025/</loc>
-        <lastmod>2025-12-08</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="de" href="https://wiki.osiris-app.de/blog/2025/06/18/community-meeting-on-18062025/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://wiki.osiris-app.de/en/blog/2025/04/04/community-meeting-am-04042025/"/>
     </url>
     <url>
         <loc>https://wiki.osiris-app.de/blog/2025/06/18/community-meeting-am-18062025/</loc>
         <lastmod>2025-12-08</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://wiki.osiris-app.de/blog/2025/06/18/community-meeting-am-18062025/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://wiki.osiris-app.de/en/blog/2025/06/18/community-meeting-on-18062025/"/>
-    </url>
-    <url>
-        <loc>https://wiki.osiris-app.de/blog/2025/08/18/community-meeting-on-13082025/</loc>
-        <lastmod>2025-12-08</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="de" href="https://wiki.osiris-app.de/blog/2025/08/18/community-meeting-on-13082025/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://wiki.osiris-app.de/en/blog/2025/06/18/community-meeting-am-18062025/"/>
     </url>
     <url>
         <loc>https://wiki.osiris-app.de/blog/2025/08/18/community-meeting-am-13082025/</loc>
         <lastmod>2025-12-08</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://wiki.osiris-app.de/blog/2025/08/18/community-meeting-am-13082025/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://wiki.osiris-app.de/en/blog/2025/08/18/community-meeting-on-13082025/"/>
-    </url>
-    <url>
-        <loc>https://wiki.osiris-app.de/blog/2025/10/11/community-meeting-on-09102025/</loc>
-        <lastmod>2025-12-08</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="de" href="https://wiki.osiris-app.de/blog/2025/10/11/community-meeting-on-09102025/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://wiki.osiris-app.de/en/blog/2025/08/18/community-meeting-am-13082025/"/>
     </url>
     <url>
         <loc>https://wiki.osiris-app.de/blog/2025/10/11/community-meeting-am-09102025/</loc>
         <lastmod>2025-12-08</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://wiki.osiris-app.de/blog/2025/10/11/community-meeting-am-09102025/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://wiki.osiris-app.de/en/blog/2025/10/11/community-meeting-on-09102025/"/>
-    </url>
-    <url>
-        <loc>https://wiki.osiris-app.de/blog/2025/07/31/osiris-version-150-is-now-available/</loc>
-        <lastmod>2025-12-08</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="de" href="https://wiki.osiris-app.de/blog/2025/07/31/osiris-version-150-is-now-available/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://wiki.osiris-app.de/en/blog/2025/10/11/community-meeting-am-09102025/"/>
     </url>
     <url>
         <loc>https://wiki.osiris-app.de/blog/2025/07/31/osiris-version-150-ist-jetzt-verf%C3%BCgbar/</loc>
         <lastmod>2025-12-08</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://wiki.osiris-app.de/blog/2025/07/31/osiris-version-150-ist-jetzt-verf%C3%BCgbar/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://wiki.osiris-app.de/en/blog/2025/07/31/osiris-version-150-is-now-available/"/>
-    </url>
-    <url>
-        <loc>https://wiki.osiris-app.de/blog/2025/08/25/-osiris-151-is-here/</loc>
-        <lastmod>2025-12-08</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="de" href="https://wiki.osiris-app.de/blog/2025/08/25/-osiris-151-is-here/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://wiki.osiris-app.de/en/blog/2025/07/31/osiris-version-150-ist-jetzt-verf%C3%BCgbar/"/>
     </url>
     <url>
         <loc>https://wiki.osiris-app.de/blog/2025/08/25/-osiris-151-ist-da/</loc>
         <lastmod>2025-12-08</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://wiki.osiris-app.de/blog/2025/08/25/-osiris-151-ist-da/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://wiki.osiris-app.de/en/blog/2025/08/25/-osiris-151-is-here/"/>
-    </url>
-    <url>
-        <loc>https://wiki.osiris-app.de/blog/2024/07/21/the-way-to-osiris-portfolio/</loc>
-        <lastmod>2025-12-08</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="de" href="https://wiki.osiris-app.de/blog/2024/07/21/the-way-to-osiris-portfolio/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://wiki.osiris-app.de/en/blog/2025/08/25/-osiris-151-ist-da/"/>
     </url>
     <url>
         <loc>https://wiki.osiris-app.de/blog/2024/07/21/der-weg-zu-osiris-portfolio/</loc>
         <lastmod>2025-12-08</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://wiki.osiris-app.de/blog/2024/07/21/der-weg-zu-osiris-portfolio/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://wiki.osiris-app.de/en/blog/2024/07/21/the-way-to-osiris-portfolio/"/>
-    </url>
-    <url>
-        <loc>https://wiki.osiris-app.de/blog/2024/07/28/a-first-look-at-portfolio/</loc>
-        <lastmod>2025-12-08</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="de" href="https://wiki.osiris-app.de/blog/2024/07/28/a-first-look-at-portfolio/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://wiki.osiris-app.de/en/blog/2024/07/21/der-weg-zu-osiris-portfolio/"/>
     </url>
     <url>
         <loc>https://wiki.osiris-app.de/blog/2024/07/28/ein-erster-blick-auf-portfolio/</loc>
         <lastmod>2025-12-08</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://wiki.osiris-app.de/blog/2024/07/28/ein-erster-blick-auf-portfolio/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://wiki.osiris-app.de/en/blog/2024/07/28/a-first-look-at-portfolio/"/>
-    </url>
-    <url>
-        <loc>https://wiki.osiris-app.de/blog/2024/04/08/why-we-developed-osiris/</loc>
-        <lastmod>2025-12-08</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="de" href="https://wiki.osiris-app.de/blog/2024/04/08/why-we-developed-osiris/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://wiki.osiris-app.de/en/blog/2024/07/28/ein-erster-blick-auf-portfolio/"/>
     </url>
     <url>
         <loc>https://wiki.osiris-app.de/blog/2024/04/08/warum-wir-osiris-entwickelt-haben/</loc>
         <lastmod>2025-12-08</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://wiki.osiris-app.de/blog/2024/04/08/warum-wir-osiris-entwickelt-haben/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://wiki.osiris-app.de/en/blog/2024/04/08/why-we-developed-osiris/"/>
-    </url>
-    <url>
-        <loc>https://wiki.osiris-app.de/blog/2024/05/02/why-we-founded-osiris-solutions/</loc>
-        <lastmod>2025-12-08</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="de" href="https://wiki.osiris-app.de/blog/2024/05/02/why-we-founded-osiris-solutions/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://wiki.osiris-app.de/en/blog/2024/04/08/warum-wir-osiris-entwickelt-haben/"/>
     </url>
     <url>
         <loc>https://wiki.osiris-app.de/blog/2024/05/02/warum-wir-osiris-solutions-gegr%C3%BCndet-haben/</loc>
         <lastmod>2025-12-08</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://wiki.osiris-app.de/blog/2024/05/02/warum-wir-osiris-solutions-gegr%C3%BCndet-haben/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://wiki.osiris-app.de/en/blog/2024/05/02/why-we-founded-osiris-solutions/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://wiki.osiris-app.de/en/blog/2024/05/02/warum-wir-osiris-solutions-gegr%C3%BCndet-haben/"/>
     </url>
     <url>
         <loc>https://wiki.osiris-app.de/blog/archive/2025/</loc>
@@ -885,13 +819,6 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://wiki.osiris-app.de/en/blog/category/portfolio/"/>
     </url>
     <url>
-        <loc>https://wiki.osiris-app.de/blog/category/about-us/</loc>
-        <lastmod>2025-12-08</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="de" href="https://wiki.osiris-app.de/blog/category/about-us/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://wiki.osiris-app.de/en/blog/category/about-us/"/>
-    </url>
-    <url>
         <loc>https://wiki.osiris-app.de/blog/category/%C3%BCber-uns/</loc>
         <lastmod>2025-12-08</lastmod>
         <changefreq>daily</changefreq>
@@ -904,20 +831,6 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://wiki.osiris-app.de/blog/page/2/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://wiki.osiris-app.de/en/blog/page/2/"/>
-    </url>
-    <url>
-        <loc>https://wiki.osiris-app.de/blog/page/3/</loc>
-        <lastmod>2025-12-08</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="de" href="https://wiki.osiris-app.de/blog/page/3/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://wiki.osiris-app.de/en/blog/page/3/"/>
-    </url>
-    <url>
-        <loc>https://wiki.osiris-app.de/blog/archive/2025/page/2/</loc>
-        <lastmod>2025-12-08</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="de" href="https://wiki.osiris-app.de/blog/archive/2025/page/2/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://wiki.osiris-app.de/en/blog/archive/2025/page/2/"/>
     </url>
     <url>
         <loc>https://wiki.osiris-app.de/en/</loc>
@@ -1631,12 +1544,6 @@
         <lastmod>2025-12-08</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://wiki.osiris-app.de/en/blog/"/>
-    </url>
-    <url>
-        <loc>https://wiki.osiris-app.de/en/blog/</loc>
-        <lastmod>2025-12-08</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://wiki.osiris-app.de/en/blog/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://wiki.osiris-app.de/blog/"/>
     </url>
     <url>
@@ -1653,23 +1560,11 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://wiki.osiris-app.de/blog/2025/12/02/osiris-solutions-unterst%C3%BCtzt-offiziell-die-barcelona-declaration/"/>
     </url>
     <url>
-        <loc>https://wiki.osiris-app.de/en/blog/2025/04/04/community-meeting-on-04042025/</loc>
-        <lastmod>2025-12-08</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://wiki.osiris-app.de/en/blog/2025/04/04/community-meeting-on-04042025/"/>
-    </url>
-    <url>
         <loc>https://wiki.osiris-app.de/en/blog/2025/04/04/community-meeting-am-04042025/</loc>
         <lastmod>2025-12-08</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://wiki.osiris-app.de/en/blog/2025/04/04/community-meeting-am-04042025/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://wiki.osiris-app.de/blog/2025/04/04/community-meeting-am-04042025/"/>
-    </url>
-    <url>
-        <loc>https://wiki.osiris-app.de/en/blog/2025/06/18/community-meeting-on-18062025/</loc>
-        <lastmod>2025-12-08</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://wiki.osiris-app.de/en/blog/2025/06/18/community-meeting-on-18062025/"/>
     </url>
     <url>
         <loc>https://wiki.osiris-app.de/en/blog/2025/06/18/community-meeting-am-18062025/</loc>
@@ -1679,23 +1574,11 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://wiki.osiris-app.de/blog/2025/06/18/community-meeting-am-18062025/"/>
     </url>
     <url>
-        <loc>https://wiki.osiris-app.de/en/blog/2025/08/18/community-meeting-on-13082025/</loc>
-        <lastmod>2025-12-08</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://wiki.osiris-app.de/en/blog/2025/08/18/community-meeting-on-13082025/"/>
-    </url>
-    <url>
         <loc>https://wiki.osiris-app.de/en/blog/2025/08/18/community-meeting-am-13082025/</loc>
         <lastmod>2025-12-08</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://wiki.osiris-app.de/en/blog/2025/08/18/community-meeting-am-13082025/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://wiki.osiris-app.de/blog/2025/08/18/community-meeting-am-13082025/"/>
-    </url>
-    <url>
-        <loc>https://wiki.osiris-app.de/en/blog/2025/10/11/community-meeting-on-09102025/</loc>
-        <lastmod>2025-12-08</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://wiki.osiris-app.de/en/blog/2025/10/11/community-meeting-on-09102025/"/>
     </url>
     <url>
         <loc>https://wiki.osiris-app.de/en/blog/2025/10/11/community-meeting-am-09102025/</loc>
@@ -1705,23 +1588,11 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://wiki.osiris-app.de/blog/2025/10/11/community-meeting-am-09102025/"/>
     </url>
     <url>
-        <loc>https://wiki.osiris-app.de/en/blog/2025/07/31/osiris-version-150-is-now-available/</loc>
-        <lastmod>2025-12-08</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://wiki.osiris-app.de/en/blog/2025/07/31/osiris-version-150-is-now-available/"/>
-    </url>
-    <url>
         <loc>https://wiki.osiris-app.de/en/blog/2025/07/31/osiris-version-150-ist-jetzt-verf%C3%BCgbar/</loc>
         <lastmod>2025-12-08</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://wiki.osiris-app.de/en/blog/2025/07/31/osiris-version-150-ist-jetzt-verf%C3%BCgbar/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://wiki.osiris-app.de/blog/2025/07/31/osiris-version-150-ist-jetzt-verf%C3%BCgbar/"/>
-    </url>
-    <url>
-        <loc>https://wiki.osiris-app.de/en/blog/2025/08/25/-osiris-151-is-here/</loc>
-        <lastmod>2025-12-08</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://wiki.osiris-app.de/en/blog/2025/08/25/-osiris-151-is-here/"/>
     </url>
     <url>
         <loc>https://wiki.osiris-app.de/en/blog/2025/08/25/-osiris-151-ist-da/</loc>
@@ -1731,23 +1602,11 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://wiki.osiris-app.de/blog/2025/08/25/-osiris-151-ist-da/"/>
     </url>
     <url>
-        <loc>https://wiki.osiris-app.de/en/blog/2024/07/21/the-way-to-osiris-portfolio/</loc>
-        <lastmod>2025-12-08</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://wiki.osiris-app.de/en/blog/2024/07/21/the-way-to-osiris-portfolio/"/>
-    </url>
-    <url>
         <loc>https://wiki.osiris-app.de/en/blog/2024/07/21/der-weg-zu-osiris-portfolio/</loc>
         <lastmod>2025-12-08</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://wiki.osiris-app.de/en/blog/2024/07/21/der-weg-zu-osiris-portfolio/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://wiki.osiris-app.de/blog/2024/07/21/der-weg-zu-osiris-portfolio/"/>
-    </url>
-    <url>
-        <loc>https://wiki.osiris-app.de/en/blog/2024/07/28/a-first-look-at-portfolio/</loc>
-        <lastmod>2025-12-08</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://wiki.osiris-app.de/en/blog/2024/07/28/a-first-look-at-portfolio/"/>
     </url>
     <url>
         <loc>https://wiki.osiris-app.de/en/blog/2024/07/28/ein-erster-blick-auf-portfolio/</loc>
@@ -1757,23 +1616,11 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://wiki.osiris-app.de/blog/2024/07/28/ein-erster-blick-auf-portfolio/"/>
     </url>
     <url>
-        <loc>https://wiki.osiris-app.de/en/blog/2024/04/08/why-we-developed-osiris/</loc>
-        <lastmod>2025-12-08</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://wiki.osiris-app.de/en/blog/2024/04/08/why-we-developed-osiris/"/>
-    </url>
-    <url>
         <loc>https://wiki.osiris-app.de/en/blog/2024/04/08/warum-wir-osiris-entwickelt-haben/</loc>
         <lastmod>2025-12-08</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://wiki.osiris-app.de/en/blog/2024/04/08/warum-wir-osiris-entwickelt-haben/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://wiki.osiris-app.de/blog/2024/04/08/warum-wir-osiris-entwickelt-haben/"/>
-    </url>
-    <url>
-        <loc>https://wiki.osiris-app.de/en/blog/2024/05/02/why-we-founded-osiris-solutions/</loc>
-        <lastmod>2025-12-08</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://wiki.osiris-app.de/en/blog/2024/05/02/why-we-founded-osiris-solutions/"/>
     </url>
     <url>
         <loc>https://wiki.osiris-app.de/en/blog/2024/05/02/warum-wir-osiris-solutions-gegr%C3%BCndet-haben/</loc>
@@ -1804,13 +1651,6 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://wiki.osiris-app.de/blog/category/portfolio/"/>
     </url>
     <url>
-        <loc>https://wiki.osiris-app.de/en/blog/category/about-us/</loc>
-        <lastmod>2025-12-08</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://wiki.osiris-app.de/en/blog/category/about-us/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://wiki.osiris-app.de/blog/category/about-us/"/>
-    </url>
-    <url>
         <loc>https://wiki.osiris-app.de/en/blog/category/%C3%BCber-uns/</loc>
         <lastmod>2025-12-08</lastmod>
         <changefreq>daily</changefreq>
@@ -1823,19 +1663,5 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://wiki.osiris-app.de/en/blog/page/2/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://wiki.osiris-app.de/blog/page/2/"/>
-    </url>
-    <url>
-        <loc>https://wiki.osiris-app.de/en/blog/page/3/</loc>
-        <lastmod>2025-12-08</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://wiki.osiris-app.de/en/blog/page/3/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://wiki.osiris-app.de/blog/page/3/"/>
-    </url>
-    <url>
-        <loc>https://wiki.osiris-app.de/en/blog/archive/2025/page/2/</loc>
-        <lastmod>2025-12-08</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://wiki.osiris-app.de/en/blog/archive/2025/page/2/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://wiki.osiris-app.de/blog/archive/2025/page/2/"/>
     </url>
 </urlset>
