@@ -1,0 +1,39 @@
+---
+status: false
+tags:
+    - Settings
+---
+
+# General settings
+
+In the **General settings** you can configure everything to do with the institute and the OSIRIS site itself.
+
+## General
+
+Under &#8594 General you can set the **Start year**. OSIRIS uses this year as the basis for creating illustrations and only includes contributions that were added during or after this year. You can add activities that took place before this year, but these will not be included in the illustrations.
+
+You will also find the **API-Key** here, or you can generate one to protect access to all data available in the database.
+
+On this page you can also determine how the **affiliated authors** are formatted in the activities. The default setting is **bold**.
+
+## Functions
+
+Here you will find many different applications that can be activated or deactivated with one click. For example, you can activate [Quarterly reporting](/users/reporting/quarterly-reporting/), [Projects&applications*](/admins/content/projects/) and [Courses](/users/courses/). If you activate a function, you must then assign the corresponding rights under &#8594 Roles and rights. By default, no rights are initially assigned.
+
+## Institute
+
+Under the Institute tab, you can make general settings for the institute and specify regular expressions for the institute that are used to automatically search for publications etc. in the online repositories.
+
+## Logo
+
+OSIRIS allows you to upload the institute's logo here and thus customise the layout.
+
+## Colours
+
+Here you can set institute-specific colours so that OSIRIS is adapted to your institute.
+
+## Countries
+
+This tab contains a list of all countries with their abbreviations that are used in OSIRIS.
+
+
