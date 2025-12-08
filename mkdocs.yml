@@ -149,6 +149,9 @@ theme:
     - content.action.view
   custom_dir: overrides
     # - navigation.indexes
+hooks:
+  - overrides/hooks/shortcodes.py
+  - overrides/hooks/patch_i18n.py
 plugins:
   - i18n:
       docs_structure: suffix
@@ -192,8 +195,6 @@ plugins:
   - blog:
       blog_toc: true
   # - awesome-nav
-hooks:
-  - overrides/hooks/shortcodes.py
 extra_css:
   - stylesheets/extra.css
 extra:
