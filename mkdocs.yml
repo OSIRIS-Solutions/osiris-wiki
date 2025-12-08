@@ -153,6 +153,8 @@ hooks:
   - overrides/hooks/shortcodes.py
   - overrides/hooks/patch_i18n.py
 plugins:
+  - blog:
+      blog_toc: true
   - i18n:
       docs_structure: suffix
       languages:
@@ -192,8 +194,6 @@ plugins:
   # - git-authors
   - tags
   # - social
-  - blog:
-      blog_toc: true
   # - awesome-nav
 extra_css:
   - stylesheets/extra.css
