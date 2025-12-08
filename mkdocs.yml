@@ -160,6 +160,27 @@ plugins:
         - locale: en
           name: English
           build: true
+          nav_translations:
+            Überblick: Overview
+            Themen: Topics
+            Technik: Technical
+            Installation: Installation
+            Konfiguration: Configuration
+            Nutzerverwaltung: User Management
+            Admins: Admins
+            Einstellungen: Settings
+            Inhalte: Content
+            Rollen und Rechte: Rights and Roles
+            Nutzer: Users
+            Profil: Profile
+            Organisationseinheiten: Organizational Units
+            Aktivitäten: Activities
+            Projekte: Projects
+            Personen: Persons
+            Infrastrukturen: Infrastructures
+            Berichte: Reports
+            FAQs: FAQ
+            Blog: Blog
   - privacy
   - search
   - meta
