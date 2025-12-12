@@ -5171,14 +5171,14 @@ Once XAMPP has been installed, start the programme and click on "Start" for Apac
 </li>
 <li>
 <p>download the <a href="https://pecl.php.net/package/mongodb">MongoDB PHP Driver</a>. To do this, scroll to version 1.13.0 in the list and click on the blue Windows box with "DLL". At the bottom of the list, select the PHP 8.1 Thread Safe version for your system (usually x64). The DLL file must then be copied to the following folder in your Xampp directory ...\xampp\php\ext
-If this is successful, you still need to activate the driver. To do this, search for the php.ini file in the directory ...\xampp\php (<img alt="❗" class="twemoji" src="../../../../assets/external/cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2757.svg" title=":exclamation:"> Attention: if you do not display the file extensions in Windows, the file may simply be called "php". As there are several such files, it makes sense to display the file extensions).<br />
+If this is successful, you still need to activate the driver. To do this, search for the php.ini file in the directory ...\xampp\php (<img alt="❗" class="twemoji" src="../../../../assets/external/cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2757.svg" title=":exclamation:"> Attention: if you do not display the file extensions in Windows, the file may simply be called "php". As there are several such files, it makes sense to display the file extensions).<br />
 Open the php.ini file with the editor of your choice (e.g. Notepad++) and add the line "extension=php_mongodb.dll". For the sake of clarity, you should insert the line where the other extensions are listed (approximately line 950). However, this is not absolutely necessary.  </p>
 </li>
 <li>
 <p>install <a href="https://git-scm.com/download/win">Git for Windows</a>. Leave all default settings in the installation menu. Then open the folder ...\xampp\htdocs.<br />
 The website is loaded into this folder. First delete all files in the folder. Then right-click in the empty directory and click on "Git Bash Here". A command window opens. Enter the following command:
 <code>git clone https://github.com/JKoblitz/osiris.git</code>
-<img alt="❗" class="twemoji" src="../../../../assets/external/cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2757.svg" title=":exclamation:"> Watch out! You cannot paste the code here with Ctrl+V. If you try to do this anyway, an "invisible character" will form and the subsequent code will no longer work. However, you can insert the code by left-clicking.
+<img alt="❗" class="twemoji" src="../../../../assets/external/cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2757.svg" title=":exclamation:"> Watch out! You cannot paste the code here with Ctrl+V. If you try to do this anyway, an "invisible character" will form and the subsequent code will no longer work. However, you can insert the code by left-clicking.
 All files from the Git repository should now be copied into the directory.  </p>
 </li>
 <li>
