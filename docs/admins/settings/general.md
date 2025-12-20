@@ -16,10 +16,6 @@ Du findest hier auch den **API-Key**, bzw. kannst einen generieren, um den Zugri
 
 Du kannst auf dieser Seite auch bestimmen, wie die **affiliierten Autor:innen** in den Aktivitäten formatiert werden. Standardmäßig ist **fett** eingestellt.
 
-## Funktionen
-
-Hier findest du viele verschiedene Anwendungen, die mit einem Klick aktiviert bzw. deaktiviert werden können. Du kannst zum Beispiel die [Quartalsweise Berichterstattung](/users/reporting/quarterly-reporting/) aktivieren, sowie [Projekte&Anträge*](/admins/content/projects/) und [Lehrveranstaltungen](/users/courses/). Wenn du eine Funktion aktivierst, musst du anschließend noch die entsprechenden Rechte unter &#8594 Rollen und Rechte vergeben. Per default ist zunächst kein Recht vergeben.
-
 ## Institut
 
 Unter dem Instituts-Tab kannst du allgemeine Einstellungen zum Institut vornehmen, sowie Regular Expressions für das Institut angeben, mit denen in den Online-Repositorien automatisch nach Publikationen etc. gesucht wird. 

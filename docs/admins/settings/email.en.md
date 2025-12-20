@@ -7,7 +7,7 @@ tags:
 
 <!-- md:version 1.5.0 -->
 
-OSIRIS offers an easy way to send e-mails for certain events, such as notifications about new projects or project changes.
+OSIRIS offers an easy way to send emails for certain events, such as notifications about new projects or project changes.
 
 !!! info "Note"
     Emails are currently used for project notifications and for the email digest. Further notifications will follow in future versions.
@@ -20,7 +20,7 @@ If you want to use the local mail server, you should first make sure that it is 
 
 You can use Postfix or Exim, for example. These mail servers are usually already pre-installed on most Linux distributions and can be easily configured. You can find more information on configuration in the documentation for your Linux distribution or on the respective mail server websites.
 
-For a local mail server, you do not need to make any further settings in the admin area under Settings &#8594 Email. OSIRIS then automatically uses the local mail server to send emails. You could only adjust the sender address that is used for all emails. This is set to `noreply@osiris-app.de` by default.
+For a local mail server, you do not need to make any further settings in the admin area. OSIRIS then automatically uses the local mail server to send emails. You could only adjust the sender address that is used for all emails. This is set to `noreply@osiris-app.de` by default.
 
 ## SMTP server
 
@@ -35,7 +35,7 @@ You can find the email settings in the admin area under Settings &#8594 Email. Y
 
 ## Test email dispatch
 
-Further down in the email settings area you will find the option to send a test email. Here you can check whether the email settings are correct and whether sending emails works. To do this, simply enter an email address to which the test email should be sent and click on "Send test email". If everything is configured correctly, the email should arrive in your inbox within a few minutes.
+Further down in the email settings area you will find the option to send a test email. Here you can check whether the email settings are correct and if sending emails works. To do this, simply enter an email address to which the test email should be sent and click on **Send test email**. If everything is configured correctly, the email should arrive in your inbox within a few minutes.
 
 ## Email digest
 
@@ -44,12 +44,12 @@ Further down in the email settings area you will find the option to send a test 
 
 OSIRIS can automatically send digest emails to users to inform them about pending activities and messages. To activate this function, go to **Settings &#8594 Email** in the admin area.
 
-![mail_digest](mail_digest.png)
+![mail_digest](screenshots/mail_digest_en.png)
 ///caption
 Here you can determine how often users receive a summary by email. This setting can be customised by the user when activated
 ///
 
-Users receive a May with activity notifications, unread messages and whether OSIRIS has been updated at the frequency they have selected.
+Users receive a mail with activity notifications, unread messages and whether OSIRIS has been updated at the frequency they have selected in their profile.
 
 To activate this feature, a CRON job must be configured. You can find the instructions for this [here](/technical/configure/email/).  
 The preferred language (German/English) is also saved in the database and used for the mails when the interface is changed from version 1.6.0.

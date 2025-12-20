@@ -49,9 +49,10 @@ nav:
   - Admins:
     - admins/index.md
     - Einstellungen: 
-      - admins/general.md
-      - admins/email.md
-      - admins/legal-and-links.md
+      - admins/settings/general.md
+      - admins/settings/functions.md
+      - admins/settings/email.md
+      - admins/settings/legal-and-links.md
     - Inhalte:
       - admins/content/index.md
       - admins/content/activities.md
@@ -92,6 +93,7 @@ nav:
       - users/content/drafts.md
       - users/content/keywords.md
       - users/content/expanded_functions.md
+    - users/advanced-search.md
     - users/issues.md
     - users/topics.md
     - users/workflows.md
@@ -107,6 +109,7 @@ nav:
       - users/activities/index.md
       - users/activities/expanded_view.md
       - users/activities/advanced-search.md
+      - users/activities/journals.md
       - users/activities/pivot.md
       - users/activities/cart.md
     - Projekte:
