@@ -1,5 +1,5 @@
 
-# Template syntax for citation styles in OSIRIS
+# Template syntax
 
 This documentation describes the template syntax that can be used to define individual citation styles in OSIRIS.
 It is intended for people who want to replicate the official citation style of their institution (e.g., for publications) as accurately as possible.

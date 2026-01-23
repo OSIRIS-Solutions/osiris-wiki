@@ -1,5 +1,5 @@
 
-# Template-Syntax für Zitationsstile in OSIRIS
+# Template-Syntax
 
 Diese Dokumentation beschreibt die Template-Syntax, mit der in OSIRIS individuelle Zitationsstile definiert werden können.
 Sie richtet sich an Personen, die den offiziellen Zitationsstil ihres Instituts (z. B. für Publikationen) möglichst genau nachbauen möchten.
@@ -165,4 +165,3 @@ Nicht unterstützt wird bisher:
 - Explizite else-Zweige
 
 ➡️ Ziel ist Nachvollziehbarkeit und Wartbarkeit, nicht Turing-Vollständigkeit.
-

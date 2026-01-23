@@ -61,6 +61,7 @@ nav:
       - admins/content/custom-fields.md
       - admins/content/vocabulary.md
       - admins/content/keywords.md
+      - admins/content/templates.md
       - admins/content/tools.md
       - admins/content/infrastructures.md
     - Workflows:
