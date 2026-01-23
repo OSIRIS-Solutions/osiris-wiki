@@ -13,6 +13,10 @@
         <link rel="canonical" href="https://wiki.osiris-app.de/admins/content/templates/">
       
       
+        <link rel="prev" href="../keywords/">
+      
+      
+        <link rel="next" href="../tools/">
       
       
         
@@ -27,7 +31,7 @@
     
     
       
-        <title>Template-Syntax für Zitationsstile in OSIRIS - OSIRIS Wiki</title>
+        <title>Template-Syntax - OSIRIS Wiki</title>
       
     
     
@@ -70,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#template-syntax-fur-zitationsstile-in-osiris" class="md-skip">
+        <a href="#template-syntax" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -105,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Template-Syntax für Zitationsstile in OSIRIS
+              Template-Syntax
             
           </span>
         </div>
@@ -268,10 +272,12 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../../" class="md-tabs__link">
           
   
@@ -1755,24 +1761,29 @@
       
   
   
+    
   
   
+  
     
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
             
   
   
@@ -1790,7 +1801,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             
@@ -2003,6 +2014,8 @@
                 
   
   
+    
+  
   
   
     
@@ -2013,11 +2026,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" checked>
         
           
           <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
@@ -2038,7 +2051,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -2240,6 +2253,258 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Template-Syntax
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Template-Syntax
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#grundprinzip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Grundprinzip
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-feld-platzhalter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Feld-Platzhalter
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-fallback-prioritat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Fallback / Priorität
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Fallback / Priorität">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#literal-als-fallback" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Literal als Fallback
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#feld-als-fallback" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Feld als Fallback
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regel-zur-auflosung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Regel zur Auflösung
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-konditionale-blocke" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Konditionale Blöcke %...%
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Konditionale Blöcke %...%">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#einzelnes-feld" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Einzelnes Feld
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#und-bedingung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UND-Bedingung (&amp;)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oder-bedingung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ODER-Bedingung (|)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#negation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Negation (!)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sonderfall-platzhalterwert-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sonderfall: Platzhalterwert -
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-automatische-bereinigung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Automatische Bereinigung
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-die-sprache-der-templates" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Die Sprache der Templates
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-grenzen-der-aktuellen-syntax" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Grenzen der aktuellen Syntax
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -5176,6 +5441,64 @@
   
 
 
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Willkommen
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../../" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Admins
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Inhalte
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
               
               <article class="md-content__inner md-typeset">
                 
@@ -5199,7 +5522,7 @@
   
 
 
-<h1 id="template-syntax-fur-zitationsstile-in-osiris">Template-Syntax für Zitationsstile in OSIRIS</h1>
+<h1 id="template-syntax">Template-Syntax</h1>
 <p>Diese Dokumentation beschreibt die Template-Syntax, mit der in OSIRIS individuelle Zitationsstile definiert werden können.
 Sie richtet sich an Personen, die den offiziellen Zitationsstil ihres Instituts (z. B. für Publikationen) möglichst genau nachbauen möchten.</p>
 <h2 id="grundprinzip">Grundprinzip</h2>
@@ -5323,7 +5646,7 @@ Müller J. Titel. 2024.</p>
     <span class="md-icon" title="Letztes Update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="23. Januar 2026 07:48:49 UTC">23. Januar 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="23. Januar 2026 08:36:04 UTC">23. Januar 2026</span>
   </span>
 
     
