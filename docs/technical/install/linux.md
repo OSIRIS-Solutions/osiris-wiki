@@ -162,7 +162,18 @@ Bei Problemen:
 composer update --ignore-platform-reqs
 ```
 
-### 3.4 Konfiguration anpassen
+### 3.4 Uploads-Verzeichnis anlegen
+Erstelle das `uploads`-Verzeichnis und setze die richtigen Berechtigungen:
+
+```bash
+mkdir uploads
+sudo chown -R www-data:www-data uploads
+sudo chmod -R 755 uploads
+```
+
+Dieses Verzeichnis wird von OSIRIS verwendet, um hochgeladene Dateien zu speichern, es gibt aber immer wieder Probleme mit Git, weshalb dieses leere Verzeichnis nicht im Repository enthalten ist.
+
+### 3.5 Konfiguration anpassen
 
 
 Die Konfiguration von OSIRIS ist in der Datei `CONFIG.php` zu finden. Diese Datei ist im Git-Repository nicht enthalten, da sie an die jeweilige Installation angepasst werden muss. Kopiere die `CONFIG.default.php` und benenne sie in `CONFIG.php` um.
