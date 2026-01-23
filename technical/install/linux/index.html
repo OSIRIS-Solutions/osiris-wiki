@@ -1302,10 +1302,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#34-konfiguration-anpassen" class="md-nav__link">
+  <a href="#34-uploads-verzeichnis-anlegen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.4 Konfiguration anpassen
+        3.4 Uploads-Verzeichnis anlegen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-konfiguration-anpassen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5 Konfiguration anpassen
       
     </span>
   </a>
@@ -5359,10 +5370,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#34-konfiguration-anpassen" class="md-nav__link">
+  <a href="#34-uploads-verzeichnis-anlegen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.4 Konfiguration anpassen
+        3.4 Uploads-Verzeichnis anlegen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-konfiguration-anpassen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5 Konfiguration anpassen
       
     </span>
   </a>
@@ -5691,7 +5713,16 @@ composer<span class="w"> </span>update
 <p>Bei Problemen:</p>
 <div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>composer<span class="w"> </span>update<span class="w"> </span>--ignore-platform-reqs
 </code></pre></div></td></tr></table></div>
-<h3 id="34-konfiguration-anpassen">3.4 Konfiguration anpassen</h3>
+<h3 id="34-uploads-verzeichnis-anlegen">3.4 Uploads-Verzeichnis anlegen</h3>
+<p>Erstelle das <code>uploads</code>-Verzeichnis und setze die richtigen Berechtigungen:</p>
+<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>mkdir<span class="w"> </span>uploads
+sudo<span class="w"> </span>chown<span class="w"> </span>-R<span class="w"> </span>www-data:www-data<span class="w"> </span>uploads
+sudo<span class="w"> </span>chmod<span class="w"> </span>-R<span class="w"> </span><span class="m">755</span><span class="w"> </span>uploads
+</code></pre></div></td></tr></table></div>
+<p>Dieses Verzeichnis wird von OSIRIS verwendet, um hochgeladene Dateien zu speichern, es gibt aber immer wieder Probleme mit Git, weshalb dieses leere Verzeichnis nicht im Repository enthalten ist.</p>
+<h3 id="35-konfiguration-anpassen">3.5 Konfiguration anpassen</h3>
 <p>Die Konfiguration von OSIRIS ist in der Datei <code>CONFIG.php</code> zu finden. Diese Datei ist im Git-Repository nicht enthalten, da sie an die jeweilige Installation angepasst werden muss. Kopiere die <code>CONFIG.default.php</code> und benenne sie in <code>CONFIG.php</code> um.</p>
 <div class="admonition warning">
 <p class="admonition-title">Wichtig!</p>
@@ -5766,7 +5797,7 @@ sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class=
     <span class="md-icon" title="Letztes Update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="5. Dezember 2025 08:37:07 UTC">5. Dezember 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="23. Januar 2026 09:44:33 UTC">23. Januar 2026</span>
   </span>
 
     
