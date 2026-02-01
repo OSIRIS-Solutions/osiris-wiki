@@ -1,6 +1,551 @@
 # Neuigkeiten
 
-<span class="badge float-right">24.08.2025</span>
+
+<time datetime="2026-01-18">01.02.2026</time>
+<a class="anchor" href="#version-1.8.0" id="version-1.8.0"></a>
+
+## Version 1.8.0
+
+Es gibt viele neue Funktionen und Verbesserungen, insbesondere im Bereich Customization, Portfolio und Organisationen. Hier die Highlights:
+
+### Design & Customization
+Bislang war es nur möglich, das Logo und die Farben von OSIRIS anzupassen. Mit diesem Update haben wir die Customization-Funktionen deutlich erweitert:
+- **Eigene Schriftarten**: Ihr könnt jetzt eigene Schriftarten in OSIRIS verwenden, um das Erscheinungsbild noch besser an eure CI anzupassen.
+- **Icons**: wählt aus drei verschiedenen Icon-Stilen (Standard, Gefüllt oder Zweifarbig).
+- **Viele Elemente anpassen**: z.B. die Dicke und Farbe von Rahmen, die Rundung von Ecken, Schatten, Icons und vieles mehr.
+- **Kopfzeile**: Ihr könnt jetzt die Kopfzeile anpassen, z.B. die Höhe verändern, die Logos komplett in den Footer verschieben oder das OSIRIS-Logo einfärben.
+
+
+### Portfolio
+
+OSIRIS Portfolio wurde um einige nützliche Funktionen erweitert:
+
+- Es gibt jetzt die Möglichkeit, ein öffentliches Portfolio direkt in OSIRIS zu aktivieren. Diese Funktion kann im Admin-Bereich unter "Generelle Einstellungen" > "Funktionen" aktiviert werden. Das öffentliche Portfolio ist auch ohne Login von der Startseite aus zugänglich.
+- Die Forschungsbereiche wurden hinzugefügt und können jetzt im Portfolio und in der API angezeigt werden. Sie haben eine schnell zugängliche Übersichtsseite und werden auch in allen verknüpften Entitäten angezeigt (Aktivitäten, Projekte, Personen, Gruppen).
+- Infrastrukturen wurden hinzugefügt und können jetzt im Portfolio und in der API angezeigt werden. Sie haben eine eigene Seite im Portfolio und werden auch in verknüpften Aktivitäten und auf der persönlichen Seite vom Betriebspersonal angezeigt.
+- Es wurde ein neuer Tab mit Kooperationspartnern hinzugefügt, der eine Weltkarte mit den Standorten der Partner anzeigt. Diese Karte wurde verbessert, um den verfügbaren Platz besser zu nutzen und auf großen Bildschirmen ansprechender auszusehen. Außerdem unterstützt die Karte jetzt die Aggregation von Partnern je nach Zoomstufe, um die Übersichtlichkeit zu erhöhen.
+- Es wurden weitere Einstellungen für persönliche Profile hinzugefügt, z.B. die Möglichkeit, die Anzeige von weiteren Aktivitäten oder Lehraktivitäten zu deaktivieren.
+- Es wurden weitere Vorschauoptionen hinzugefügt.
+
+Es ist nun außerdem möglich, die **URL zum externen Portfolio** anzupassen. So könnt ihr z.B. eine eigene Domain verwenden oder das Portfolio einfacher in eine bestehende Webseite integrieren. Dazu gibt es im Admin-Bereich unter "Generelle Einstellungen" > "Portfolio" ein neues Feld "Portfolio Basis-URL". Wenn dieses ausgefüllt ist, wird diese URL für alle Links verwendet, die in Portfolio generiert werden. Andernfalls wird die OSIRIS versuchen, eine relative URL zu verwenden.
+
+### Organisationen und Projekt-Kollaborationen
+
+- Es ist nun möglich, Logos für Organisationen hochzuladen, die dann in verschiedenen Bereichen von OSIRIS angezeigt werden (z.B. in Projekten, auf der Organisationsseite, in der erweiterten Suche).
+- Für eine bessere User Experience beim manuellen Anlegen von Organisationen, können die Koordinaten jetzt automatisch über den angegebenen Standort (wahlweise inkl. des Landes) bezogen werden. Dabei wird die aktuelle UI-Sprache verwendet, um die bestmöglichen Ergebnisse zu erzielen.
+- Auf der Übersichtsseite einer Organisation wird neben einem überarbeiteten Layout jetzt auch eine Karte mit den Standort der Organisation angezeigt.
+- Synonyme wurden für Organisationen hinzugefügt zur besseren Auffindbarkeit, z.B. kann dann die Deutsche Forschungsgemeinschaft auch über "DFG" gefunden werden. Die Synonyme werden ebenfalls über ROR bezogen.
+- Der Kollaborationsbereich in Projekten grundlegend überarbeitet und fügt sich damit nahtlos in das neue Organisationsmanagement ein. Es kann zuerst in bereits bestehende Organisationen gesucht und diese dann als Kollaborationspartner hinzugefügt werden. Alternativ können auch neue Organisationen direkt im Projekt angelegt werden.
+
+### Lehrveranstaltungen
+
+Lehrveranstaltungen wurden grundsätzlich überarbeitet und bieten nun mehr Möglichkeiten
+- Die Übersichtsseite zeigt jetzt alle Lehrveranstaltungen in einer Tabelle an, die deutlich übersichtlicher ist und mehr Informationen bietet.
+- Jede Lehrveranstaltung hat jetzt eine eigene Seite, auf der alle Details angezeigt werden, inkl. aller verknüpften Aktivitäten. Dabei werden Aktivitäten mit dem Modul `supervisors` auch mit ihren Semesterwochenstunden angezeigt.
+- Es gibt auch eine neue Seite, um existierende Lehrveranstaltungen zu bearbeiten. Dazu wurde ein neues Recht hinzugefügt (Lehrveranstaltungen bearbeiten), das standardmäßig an alle Nutzenden vergeben wird (wie es zuvor auch war).
+- Verknüpfung mit Organisationen:
+  - Anstatt Organisationen händisch einzugeben, können diese jetzt aus dem Organisationsmanagement ausgewählt werden. Alternativ gibt es einen Link, um neue Organisationen anzulegen. 
+  - Es gibt auch eine Vorschlagsliste, die die 5 am häufigsten zu Lehrveranstaltungen hinzugefügten Organisationen anzeigt, um die Bearbeitung zu vereinfachen.
+  - Auf der Seite der Organisationen werden alle verknüpften Lehrveranstaltungen angezeigt.
+  - Die Organisation wird auch auf der Statistik-Seite der Lehrveranstaltungen angezeigt.
+
+> Bitte beachte, dass wir die Organisationen nicht automatisch hinzufügen können, wenn ihr bereits Lehrveranstaltungen habt. Diese müsst ihr manuell bearbeiten, um die Organisationen zu verknüpfen. Allerdings werden bestehende Organisationen beibehalten und weiterhin angezeigt.
+
+### Projekte und Anträge
+
+**Finanzen** 
+*(Aufgrund der Sensibilität dieser Daten sind sie ausschließlich im Antrag zu sehen und nicht im Projekt selbst)*
+
+- Die Drittmitteleinnahmen wurden in ein neues Format überführt, das nun neben den geplanten auch die tatsächlich verausgabten Mittel pro Jahr erfasst.
+- Es gibt jetzt eine Übersicht über die Finanzen eines Projekts, die geplante und verausgabte Mittel pro Jahr anzeigt und diese analysiert und visualisiert.
+- In einer neuen Finanzübersicht können Admins und Projektverantwortliche verschiedene Finanzberichte generieren, z.B. geplante vs. verausgabte Mittel. Es gibt ein neues Zugriffsrecht dafür (Finanzinformationen sehen), das standardmäßig nicht vergeben ist.
+
+**Formulare & Eingaben**
+
+- Die maximale Länge für Projekt-Kurzbezeichnungen von 30 auf 100 Zeichen erhöht
+- Dafür wurde ein neues Akronym-Feld ergänzt: dieses wird mit dem Kurztitel kombiniert, falls vorhanden
+- Fehler behoben: Projekttyp wurde im Projektformular nicht angezeigt
+- Es wurde die Möglichkeit hinzugefügt, Projekte und Anträge als Verbundvorhaben zu kennzeichnen. Dabei wurde sich am KDSF-Datenmodell orientiert. Bei Verbundvorhaben wird nun ebenfalls nach dem Identifier und dem Titel des Verbunds, sowie nach der Sprecherrolle gefragt. Wenn ihr das Datenmodul "Verbundvorhaben" nutzen wollt, müsst ihr es zunächst in der Konfiguration aktivieren. Geht dazu auf Inhalte > Projekte und wählt die entsprechende Projektkategorie aus. Auf der zweiten Seite könnt ihr das Modul für alle Phasen aktivieren, bei denen es eine Rolle spielen soll (z.B. Beantragt, Bewilligt, Projektphase).
+- Es gibt nun auch eine Möglichkeit, ein Förderprogramm-Feld zu nutzen, das eine Liste statt eines Freifeldes verwendet. Dabei werden vordefinierte Förderprogramme aus einer Vokabularliste verwendet, die im Admin-Bereich verwaltet werden kann.
+
+### Dokumente von Aktivitäten
+
+Die Dokumentenverwaltung bei Aktivitäten wurde auf das neue System migriert und dadurch deutlich verbessert:
+- Der Bereich "Dokumente" in Aktivitäten wurde komplett überarbeitet und bietet jetzt eine deutlich bessere Übersicht und Handhabung.
+- Es ist nun möglich, die Art der Dokumente anzugeben und eine Beschreibung hinzuzufügen.
+- Für die Arten von Dokumenten gibt es jetzt eine Vokabularliste, die im Admin-Bereich verwaltet werden kann.
+- Es gibt einen neuen Bereich "Dokumente", in dem alle Dokumente aus Aktivitäten und Projekten zentral angezeigt werden. Außerdem kann in dieser Liste nach Dokumentarten und Dateitypen gefiltert werden. Dazu wurde ein neues Zugriffsrecht (Dokumente sehen) dem Bereich "Ansichten" hinzugefügt, das standardmäßig nicht vergeben ist.
+
+### Aktivitäten verknüpfen
+
+- Es wurde die Möglichkeit hinzugefügt, Aktivitäten miteinander zu verknüpfen, um Beziehungen wie "ist eine Übersetzung von", "ist eine erweiterte Version von" oder "ist ein Preprint von" abzubilden. Dabei können beliebige Aktivitätstypen miteinander verknüpft werden.
+- Die Verknüpfungen können in beide Richtungen angezeigt werden und sind in der Aktivität unter einem eigenen Abschnitt zu finden.
+- Die Arten von Verknüpfungen sind im Moment noch nicht konfigurierbar, aber es sind bereits einige gängige Beziehungen vordefiniert. Wir möchten gern erst weiteres Feedback sammeln, bevor wir hier mehr Flexibilität einbauen.
+
+### Organisationseinheiten
+
+- Die Forschungsfeldklassifikation des KDSF wurde nun auch den Einheiten in OSIRIS hinzugefügt. Dadurch können Einheiten bestimmten Forschungsfeldern zugeordnet werden, was die KDSF-Konformität weiter verbessert.
+- Ein Fehler wurde behoben, durch den Klammersetzung in Einheitennamen die Darstellung als Organigramm verhindert hat. Außerdem unterstützt das Organigramm jetzt auch die deutschen Namen von Einheiten.
+
+### Journale
+
+- Es wurde die Möglichkeit hinzugefügt, Journale zu löschen. Dazu gibt es ein neues Zugriffsrecht (Journale löschen), das standardmäßig nicht vergeben ist. Man kann nur Journale löschen, die nicht mit Aktivitäten verknüpft sind.
+
+### Visualisierungen
+
+Die Visualisierung "Abteilungs-Netzwerk" wurde überarbeitet und in "Aktivitäten-Netzwerk" umbenannt, um besser die neue Flexibilität widerzuspiegeln.
+- Dabei kann nach verschiedenen Entitäten gruppiert werden. Im Moment werden Organisationen (1. und 2. Level) und Forschungsbereiche unterstützt, weitere folgen eventuell in zukünftigen Versionen. Vorschläge sind willkommen!
+- Es können nun Aktivitäten verschiedener Kategorien (z.B. Publikationen, Vorträge, Medienbeiträge) visualisiert werden
+- Das Startjahr kann jetzt frei gewählt werden (default: 5 Jahre zurück)
+- Das fertige Netzwerk kann jetzt als PNG oder SVG heruntergeladen werden.
+
+### Weitere Verbesserungen & Bugfixes
+- Auf der Seite eines Custom-Fields wird jetzt angezeigt, welche Aktivitäts- und Projekttypen dieses Feld verwenden und ob es mit Infrastrukturen oder Personen verknüpft ist.
+- Die Abfrage der Erst- und Letztautoren wurde aus dem normalen "Authors"-Modul entfernt
+- Wenn die Edition (ein Datenfeld in Aktivitäten) leer oder keine Nummer ist, wird jetzt kein Suffix mehr angezeigt (z.B. 8th, 2nd, 1st).
+- Es ist jetzt nicht mehr möglich, leere Autoren oder Herausgeber hinzuzufügen. Die Fehlermeldungen werden jetzt auch auf Deutsch übersetzt.
+- Das Layout der News-Seite wurde verbessert.
+
+----
+
+<time datetime="2025-12-17">17.12.2025</time>
+<a class="anchor" href="#version-1.7.1" id="version-1.7.1"></a>
+
+## Version 1.7.1
+
+In dieser Version wurden im Wesentlichen Fehler behoben und kleinere Verbesserungen vorgenommen:
+
+- Die Module `supervisors` und `supervisor-thesis` speichern jetzt nicht mehr in die Autorenliste. Dadurch lassen sich jetzt bei einer Aktivität sowohl Betreuer:innen als auch Autor:innen unabhängig voneinander erfassen. Dazu wurden im gesamten Code überall Optimierungen vorgenommen, um diese Trennung zu gewährleisten. Nach Betreuenden kann jetzt auch in der erweiterten Suche gefiltert werden.
+- Es wurde ein Fehler behoben durch den Aktivitätstypen, die nicht öffentlich sichtbar sein sollten, trotzdem über die exakte ID aufgerufen werden konnten.
+- Für Aktivitätstypen, die nicht im Portfolio angezeigt werden sollen, gibt es jetzt auch nicht mehr die Option, sie auszublenden. Dies verhindert Verwirrung, da sie ohnehin nicht sichtbar sind.
+- Die **Templates** wurden erweitert:
+  - Die Conditional Templates unterstützen jetzt auch mehrere Bedingungen mit `&` (und) bzw. `|` (oder).
+  - Es gibt nun die Möglichkeit, im Falle das ein Feld leer ist ein anderes Feld zu nutzen (z.B. `{field1|field2}`). Sollte field1 leer sein, wird field2 genutzt. Sollte field2 kein Name eines Feldes sein, wird der Text so ausgegeben. Die Textausgabe kann mit Anführungszeichen erzwungen werden: `{field1| "Default Text"}`
+- In der Personen-Übersicht kann jetzt auch nach Rollen gefiltert werden.
+- Die Historie wurde verbessert und sollte jetzt zwei unterschiedlich leere Werte nicht mehr als Unterschied erkennen (z.B. "" und []). Außerdem können einige Werte jetzt besser dargestellt werden (z.B. Open Access), da hier keine Icons mehr für die Darstellung in Listen verwendet werden. Des Weiteren können jetzt auch boolsche Werte in der Historie angezeigt werden.
+
+
+---
+
+<time datetime="2025-12-08">08.12.2025</time>
+<a class="anchor" href="#version-1.7.0" id="version-1.7.0"></a>
+
+## Version 1.7.0
+
+### Neues Modul: Nagoya / ABS Compliance
+
+OSIRIS unterstützt jetzt vollständig den Prozess rund um das Nagoya-Protokoll und nationale ABS-Regelungen.
+Das neue Modul hilft Forschenden und ABS-Beauftragten, alle relevanten Schritte nachvollziehbar, vollständig und revisionssicher abzubilden.
+
+Hier die Highlights:
+
+- **Country Review:** Bewertung aller beteiligten Länder (Nagoya-Party, eigene ABS-Maßnahmen, Kommentare).
+- **Scope-Erfassung für Forschende:** Geographischer, zeitlicher, materieller und nutzungsbezogener Scope — inklusive Unterstützung fürmehrere Probensammlungen pro Land.
+- **ABS-Evaluation (A/B/C):** Klassifikation pro Land sowie automatische Projektklassifikation.
+- **Permits & Dokumente:** Erfassung von PIC, MAT, Community Consent und weiteren Genehmigungen. Upload & Verwaltung von Dokumenten direkt in OSIRIS.
+- **Geteilte Notizen:** Für Kommunikation zwischen Projektteam und ABS-Compliance-Team.
+- **Dashboard für ABS-Teams:** Überblick über offene Bewertungen, fehlende Scopes, offene Permits und eingereichte Unterlagen.
+
+Mehr Infos zum Nagoya-Modul findet ihr in unserem [Wiki](https://wiki.osiris-app.de/topics/nagoya/).
+
+
+### Erweiterte Suche für fast alles
+
+Die erweiterte Suche wurde erweitert und verbessert:
+
+- Die gespeicherten Suchen lassen sich jetzt mit einzelnen Rollen oder Global teilen (Achtung: nur mit der neuen Berechtigung `queries.global`). Geteilte Queries sind mit einem kleinen Flag gekennzeichnet, werden nach unten sortiert und können nicht bearbeitet werden. Um bei so vielen Queries den Überblick zu behalten, gibt es jetzt eine Suchfunktion.
+- Es wurden ein paar Probleme mit verschachtelten Queries behoben, die nun auch in der Vorschau korrekt angezeigt werden.
+- Der Bereich für die Auswahl der Spalten lässt sich jetzt ebenfalls durchsuchen, um schneller die gewünschten Spalten zu finden.
+- Es wurden ein paar kleinere Verbesserungen vorgenommen, durch die es jetzt noch stabiler laufen sollte.
+
+Und weil das so gut funktioniert, wurde die erweiterte Suche jetzt auch auf folgende Bereiche ausgeweitet:
+- **Projekte und Anträge**
+- **Events**
+- **Journals**
+- **Nutzende**
+
+Ihr findet dazu neu gestaltete Suchseiten, indem ihr auf die Lupe mit dem Plus in der jeweiligen Übersicht klickt.
+
+### DOI-Mappings für Publikationstypen
+
+- Admins können jetzt im Admin-Bereich unter Inhalte > Aktivitäten > DOI-Zuordnung eigene Mappings für Publikationstypen aus CrossRef und DataCite definieren.
+- Diese Mappings werden verwendet, wenn eine Aktivität über eine DOI importiert wird, um den entsprechenden Aktivitätstyp in OSIRIS zu bestimmen.
+- Dadurch können spezifische Publikationstypen besser abgebildet werden, z.B. "preprint" oder "conference-paper".
+
+> Achtung: Beta-Feature. Bitte testet es ausgiebig und gebt uns Feedback, damit wir es weiter verbessern können!
+
+### Verbesserungen & Bugfixes
+
+- Einige Verbesserungen und Bugfixes bei den neuen Gästeaccounts (z.B. Suchfunktion in der Nutzerübersicht, Markierung in Tabellen, werden beim Synchronisieren nicht mehr deaktiviert).
+- Organisationen-Feld: korrektes Layout + Möglichkeit, gesetzte Werte zu löschen
+- ISSN-Feld im Aktivitäten-Formular bricht nicht mehr das ganze Formular ab
+- Tags funktionieren wieder zuverlässig
+- „Online ahead of print“ kann wieder deaktiviert werden
+- Letzter Social-Link ist wirklich löschbar
+- Ampersands & Quotes verursachen keine Fehler mehr in Journal-/Aktivitätsfeldern
+- Projekt-/Personen-Dropdowns liefern keine leeren Auswahlen mehr
+- Wichtiger Fix im Activity-Type-Handling
+- Gruppen-Synonyme nutzen jetzt Semikolon statt Komma (Kollisionsvermeidung)
+- Portfolio: Keine Hervorhebung mehr, wenn Einträge ausgeblendet sind
+- LDAP-Sync: zuverlässige Aktualisierung von Units, inkl. Einheiten-Synonyme
+- Fix für ungültige Gastaccounts, wenn „gültig bis“ leer ist
+- Array-Dokument-Fehler beim Rendering behoben
+- Diverse Verbesserungen an der JSON-Ausgabe
+- Fix für kaputten Link zur Attribute-Preview
+- u.v.m.
+
+Eine Übersicht über alle geschlossenen Issues findet ihr [hier](https://github.com/OSIRIS-Solutions/osiris/milestone/7)
+
+---
+
+<time datetime="2025-11-16">16.11.2025</time>
+<a class="anchor" href="#version-1.6.2" id="version-1.6.2"></a>
+
+## Version 1.6.2
+
+Dieses Update bringt viele Verbesserungen in Performance, Formularlogik, LDAP-Synchronisation, Journals, Events, Reports und UI-Design. Hier die wichtigsten Änderungen:
+
+### Verbesserte Infrastruktur-Statistiken
+
+In diesem Update haben wir die Handhabung der Infrastruktur-Statistiken überarbeitet und ein Migrationsskript hinzugefügt, um bestehende Statistiken in ein neues Format zu überführen.
+
+Infrastruktur-Statistiken sind jetzt deutlich flexibler. Man konnte zuvor bereits verschiedene Statistikfelder definieren, aber diese wurden immer auf alle Infrastrukturen angewendet. Jetzt können Statistiken individuell für jede Infrastruktur definiert und verwaltet werden.
+
+Außerdem ist es möglich, den Zeitraum für die Erhebung der Statistiken festzulegen, z.B. jährlich, vierteljährlich, monatlich oder unregelmäßig. Dies ermöglicht eine genauere und kontextbezogenere Erfassung der Daten. Bei der unregelmäßigen Erfassung wird das Datum der Erhebung gespeichert, sodass man im Nachhinein nachvollziehen kann, wann die Daten erfasst wurden. Wenn der Zeitpunkt der Erhebung erneut verwendet wird, dann werden die bestehenden Daten überschrieben.
+
+Diese neue Flexibilität ermöglicht es, die Statistiken besser an die spezifischen Anforderungen und Gegebenheiten der jeweiligen Infrastruktur anzupassen. Die Abbildungen wurden entsprechend angepasst, um die neuen Möglichkeiten zu unterstützen.
+
+Diese neuen Statistiken reflektieren sich auch in den Benachrichtigungen, die Reporter erhalten, wenn sie ihre Statistiken aktualisieren müssen. Irreguläre Statistiken werden dabei nicht in den Benachrichtigungen angezeigt, es wurde jedoch ein Shortcut zum Hinzufügen-Menü hinzugefügt, um die Erfassung zu erleichtern.
+
+
+### Tabellen & Downloads
+- Verbesserte Tabellenfunktionalität:
+  - bessere Stabilität
+  - mehr Download-Optionen (z.B. PDF), Excel mehr verbreitet (z.B. bei Journalen, Events, ...)
+  - Teilweise Drucken-Funktionalität hinzugefügt
+  - Seitenlänge kann angepasst werden
+  - Statistik-Tabellen haben jetzt ebenfalls Download- und Druck-Buttons
+- Viele Abbildungen lassen sich jetzt ebenfalls als PNG oder SVG herunterladen (z.B. Konfetti-Timelines, Koautoren-Netzwerke, Wordclouds), weitere folgen in kommenden Versionen
+
+
+### LDAP, Nutzer & Rollen
+
+**Guest Accounts**
+
+Neu: Vollständiges Management für Gastkonten
+- Anlegen, Bearbeiten & Löschen von Gastaccounts
+- Neue UI-Seiten zur Verwaltung
+- Gäste können sich anmelden, wenn LDAP fehlschlägt
+- Gastkonten können ein Ablaufdatum haben
+- Gastkonten bekommen automatisch die "guest"-Rolle zugewiesen. Diese wurde angelegt, hat aber per Default keine Rechte.
+
+**LDAP-Synchronisation**
+
+- UI der Synchronisation verbessert
+- Ein LDAP-Timeout führt dazu, dass die Synchronisation abgebrochen wird, sollte LDAP nicht erreichbar sein
+- Synchronisation von Einheiten wurde verbessert: 
+  - Synonyme für Einheiten hinzugefügt und berücksichtigt
+  - Wiederaktivierte Einheiten werden nicht gelöscht
+  - Bei neuen Einheiten wird jetzt nicht mehr angenommen, dass der aktuelle Tag der Start der Zugehörigkeit ist
+  - In der Synchronisations-Vorschau gibt es jetzt eine Warnung, wenn Einheiten nicht gefunden werden
+  - Neue Sync-Zeitstempel in der UI
+
+
+### Events
+- Events können jetzt zentral deaktiviert werden (Einstellungen > Features)
+- Länder wurden zu Events hinzugefügt
+- Event-Handling in "Aktivität hinzufügen" wurde verbessert: 
+  - Duplikate werden jetzt anhand von Titel und Startdatum erkannt und verhindert
+  - Fehlermeldungen werden jetzt korrekt ausgegeben (#253)
+  - Typauswahl und Länder wurden ebenfalls hinzugefügt
+  - Der Event-Select wurde deutlich verbessert, zeigt jetzt alle verfügbaren Events in einem durchsuchbaren Dropdown an
+  - Beim Auswählen eines Events werden automatisch Titel, Datum, Ort und Land vorausgefüllt. Dies wird jetzt im UI deutlicher kommuniziert mit einem Hinweistext und einer kurzzeitigen Markierung der Datenfelder
+
+
+### Formulare & Eingaben
+- Checkboxen in Personen-Feldern funktionieren wieder korrekt (#240)
+- Hilfe-Texte werden jetzt per Hover angezeigt und erscheinen links (#288)
+- Bei Forschungsinteressen werden jetzt auch deutsche Vorschläge korrekt gezeigt (#286)
+- Nutzer:innen können Aktivitäten nicht mehr highlighten, wenn sie keine Autor:innen sind (#290)
+- Wenn eine hervorgehobene Aktivität versteckt wird, wird sie nicht mehr über die Portfolio-API ausgeliefert
+- Das Label für Forschungsreisen erscheint jetzt auch, wenn Forschungsbereiche deaktiviert sind (#282)
+- Man kann jetzt auch Zeitschriften ohne ISSN hinzufügen
+- Magazine (nicht-standardisierte Journals) haben eine Vorschlagsliste bekommen
+- Journale können jetzt zentral umbenannt werden (Einstellungen > Features)
+- Bei Projektanträgen werden jetzt die Formularfelder von "Bewilligt" durch die Felder aus "Beantragt" vorausgefüllt
+- Wenn eine Aktivität über eine DOI geladen wird, deren Typ es aber nicht gibt, wird stattdessen jetzt eine Warnmeldung angezeigt, die den Nutzenden auffordert, einen passenden Typ auszuwählen
+- Affiliation-Check berücksichtigt nun auch affiliierte Herausgeber:innen (#292)
+- Das Default-Icon von Aktivitäten wurde angepasst
+- Der volle Link ist nun der Standard in Templates, der abgekürzte Link kann als "link-short" verwendet werden und ist Standard in der Tabellen-Ansicht
+
+
+### Warteschlange
+- Problem behoben: persönliche Warteschlange war nicht für alle Nutzer:innen sichtbar
+- Warteschlange wird nicht mehr versteckt, wenn Nutzer:innen eine Warteschlange-Warnung in ihren Benachrichtigungen haben
+- Gesamte Warteschlange nur noch für Editor-Berechtigte sichtbar
+- Editoren können jetzt trotzdem ihre eigene Warteschlange sehen
+
+### Reports & Report Builder
+- Neue Standardvariablen für Zeitfilter im Report Builder
+- Tabellen im Report Builder können jetzt sortiert werden
+- Zeitlimit im Report Builder verbessert, um langfristige Aktivitäten zu erfassen
+
+
+### Einstellungen, UI & Design
+- Rendering-Sprache als globale Einstellung hinzugefügt (#267)
+- Layout der Feature-Einstellung wurde angepasst und verbessert
+- Icons auf Duotone umgestellt
+- Typografie vereinheitlicht, Header mit Icons versehen
+
+### Weitere Verbesserungen
+- Man kann Forschungsbereiche jetzt inaktivieren
+- Backend-Admin erhält garantiert Admin-Rechte
+- Wenn Journal-Namen Klammern enthalten, bricht das Rendern nicht mehr ab
+- Icons in Hinweis- und Fehlermeldungen werden jetzt in allen Browsern korrekt angezeigt
+- Die Portfolio-Vorschau funktioniert jetzt auch mit HTTPS
+
+---
+
+<time datetime="2025-11-02">02.11.2025</time>
+<a class="anchor" href="#version-1.6.1" id="version-1.6.1"></a>
+
+## Version 1.6.1
+
+Wir haben viele kleinere Verbesserungen vorgenommen:
+
+- Die Benutzeroberfläche für das Feature-Management wurde verbessert, indem die Features in Kategorien gruppiert und mit Beschreibungen versehen wurden. Dies erleichtert es Administratoren, die verfügbaren Funktionen zu verstehen und zu verwalten.
+- Es wurde eine Möglichkeit hinzugefügt, Events zentral auszuschalten. Dies kann im Admin-Bereich unter "Generelle Einstellungen" > "Funktionen" konfiguriert werden. Wenn diese Option deaktiviert ist, werden Events in der Navigation und auf der Startseite nicht mehr angezeigt.
+- Im Bereich News der eigenen Profilseite können jetzt auch neue Nutzer:innen angezeigt werden. Dies kann im Admin-Bereich unter "Generelle Einstellungen" > "Funktionen" eingestellt werden.
+- Es wird nun deutlicher auf Benachrichtigungen hingewiesen, indem der Button im Header rot hervorgehoben wird, wenn neue Benachrichtigungen vorhanden sind und auf der Startseite des Profils eine Meldung angezeigt wird.
+
+### Bug Fixes
+
+**Formulare & Eingaben**
+- Autoren und Herausgeber werden nur hinzugefügt, wenn das Formular leer ist; alle können nun gelöscht werden, falls nicht benötigt (#254)
+- Pflichtfelder in Projektformularen korrekt markiert (#276)
+- Im Formularbaukasten können jetzt auch Felder gespeichert werden, die nur Herausgeber:innen enthalten
+- Float-Felder in Custom Fields akzeptieren jetzt auch Dezimalzahlen statt nur ganze Zahlen
+- Einige Formular-Labels wurden nicht korrekt durch Nutzereinstellungen überschrieben – dies wurde behoben. Autoren- und Herausgeberüberschriften werden nun korrekt angezeigt
+- Es ist nicht mehr möglich, ein Custom Field language zu nennen (verursachte Probleme mit MongoDB)
+- Ein Problem wurde behoben, durch das einige Seiten unter bestimmten PHP-Einstellungen nicht geladen werden konnten
+- Tippfehler („Ablehnung“) und kleinere Schreibfehler korrigiert (#275, #277)
+
+**Aktivitäten & Darstellung**
+- Rendering-Fehler bei Journalnamen mit Klammern behoben
+- Der „keine Personen“-Hinweis erscheint nicht mehr, wenn Herausgeber:innen vorhanden sind
+- Links zu Einheiten in Aktivitäten korrigiert
+- Der Link auf der Startseite zum Sperren von Aktivitäten funktioniert wieder
+- Länder von Kollaboratoren werden jetzt in der UI-Sprache angezeigt (#273)
+- Assoziierte Partner sind jetzt auf der Kollaborationskarte sichtbar und farblich hervorgehoben (#274)
+- Rohdaten werden nicht mehr als HTML interpretiert (#259)
+- Spaltennamen in Statistiken und im Feld supervisor-thesis korrigiert (#270)
+- SWS können im Autoren-Editor wieder bearbeitet werden
+
+**Benutzer & Organisationseinheiten**
+- UX beim Hinzufügen von Organisationseinheiten verbessert
+- Einheiten im Autoren-Editor erscheinen nur noch einmal (#268)
+- Unterschiedliche Mitarbeiterzahlen auf Gruppenseiten behoben (#258)
+- Werte für Expertise, CV und Forschungsinteressen können im Personen-Editor jetzt auch leer gesetzt werden
+
+**Projekte & Vorschläge**
+- Projekt-Typen werden nach Aktualisierungsdatum sortiert
+- "Projektantrag hinzufügen" ist nun der neue Standard, wenn verfügbar
+- Konfetti-Timeline in Projekten lässt sich korrekt filtern
+
+**APIs & Dokumentation**
+- Englische API-Dokumentation für Portfolio hinzugefügt (#266)
+
+---
+
+
+
+<time datetime="2025-10-12">12.10.2025</time>
+<a class="anchor" href="#version-1.6.0" id="version-1.6.0"></a>
+
+## Version 1.6.0
+
+#### <i class="ph ph-seal-check"></i> Neue Qualitäts-Workflows für Aktivitäten
+
+OSIRIS 1.6.0 führt ein vollständig neues System für Qualitäts- und Prüf-Workflows ein – flexibel, offen und direkt in der Aktivität integriert:
+- Admins können eigene Workflows definieren und beliebigen Aktivitätskategorien zuordnen.
+- Jeder Workflow besteht aus frei konfigurierbaren Schritten, denen Rollen und Organisationseinheiten zugewiesen werden können.
+- Schritte können parallel oder sequenziell ablaufen – ideal für Freigaben durch Abteilungsleitungen und Bibliothek.
+- Workflow-Schritte lassen sich bei Bedarf auf die eigene Organisationseinheit beschränken.
+- Fertige Workflows können nachträglich bestehenden Aktivitäten zugewiesen („migriert“) werden.
+- Der Abschluss aller Schritte führt automatisch zum Status „verified“, über den zentral gefiltert werden kann.
+- Aktivitäten können optional nach bestimmten Schritten gesperrt werden.
+
+👉 Damit lassen sich interne Prüf- und Freigabeprozesse direkt in OSIRIS abbilden – von der Datenerfassung bis zur Veröffentlichung.
+
+**Neues Workflow-UI in der Aktivität**
+
+Ein neues Workflow-Widget wurde zu Aktivitäten hinzugefügt, die Teil eines Workflows sind:
+
+- Kompakte Schritt-Leiste mit visuellem Fortschritt, Icons und Tooltips.
+- Aktuell laufende Schritte werden hervorgehoben, abgeschlossene nach vorne sortiert.
+- Ein schmaler, fixierter Fortschrittsbalken oben im Interface zeigt den Workflow-Status jederzeit an.
+- Bei abgeschlossenen Workflows färbt sich die Leiste grün, bei Zurückweisungen rot.
+- Klick auf die Leiste öffnet das vollständige Workflow-Widget mit allen Details.
+- Dieses zeigt alle Schritte, Zuständige, Status und eventuelle Kommentare an.
+- Die einzelnen Schritte des Workflows werden in der Historie der Aktivität protokolliert.
+
+**Neues Reviewer-Interface**
+
+Für Rollen mit Prüfaufgaben (z. B. Abteilungsleitungen, Bibliothek) gibt es ein übersichtliches neues Reviewer-Dashboard:
+- Zeigt alle aktuell zu prüfenden Aktivitäten auf einen Blick.
+- Filter nach Kategorie, Rolle, Organisationseinheit oder Status.
+- Schnell-Aktionen zum Freigeben oder Zurückweisen direkt aus der Liste.
+- Benachrichtigungen erscheinen automatisch in der Seitenleiste und in der Navigation.
+
+**Möglichkeit, Aktivitäten zurückzuweisen**
+
+Prüfer:innen können Aktivitäten zurückweisen, wenn z. B. Angaben fehlen oder unklar sind. Wird eine Aktivität zurückgewiesen, passiert Folgendes:
+- Der Workflow-Status wechselt auf „rejected“.
+- Prüfer:innen können einen Kommentar hinterlassen und damit die Aktivität zur Bearbeitung freigeben.
+- Autor:innen erhalten eine Nachricht in ihren Benachrichtigungen mit Kommentar.
+- Nach Überarbeitung können sie die Aktivität per Klick erneut zur Prüfung einreichen. Dabei können sie ebenfalls einen Kommentar hinterlassen.
+- Alle bisherigen Freigaben bleiben erhalten – kein Datenverlust, kein Neustart des Workflows.
+
+**Filter für Workflow-Status**
+
+- Damit Filter und Übersichten korrekt funktionieren, gibt es ein neues Recht zum Anzeigen von Workflows, das standardmäßig nicht zugewiesen ist. Nur wer dieses Recht hat, sieht alle Workflows und kann sie nutzen.
+- In der Aktivitäten-Übersicht gibt es jetzt einen neuen Filter für den Workflow-Status (pending, in-progress, verified, rejected). Außerdem gibt es im Quartalfeld einen Indikator, wenn eine Aktivität Teil eines Workflows ist, der den Status anzeigt.
+- In der erweiterten Suche gibt es ebenfalls einen Filter für den Workflow-Status.
+- Im Download-Bereich gibt es einen neuen Filter für den Workflow-Status.
+- In den allgemeinen Einstellungen gibt es jetzt einen Neuen Tab für Portfolio (wenn eingeschaltet), in dem Admins festlegen können, welche Aktivitäten im Portfolio angezeigt werden. Es gibt drei Optionen:
+  - Alle Aktivitäten (Standard)
+  - Nur genehmigte Aktivitäten (nur Aktivitäten mit dem Status verified)
+  - Genehmigte Aktivitäten und Aktivitäten ohne Workflow (Aktivitäten mit dem Status verified und Aktivitäten, die keinem Workflow zugeordnet sind)
+
+**Migration & Datenmodell**
+
+- Alte Workflows können per Migration entfernt oder zurückgesetzt werden (über das Workflow-Interface).
+- Automatische Initialisierung bei neu erstellten Aktivitäten.
+
+
+#### <i class="ph ph-envelope"></i> Neuer Mail-Digest (Benachrichtigungs-Zusammenfassung)
+
+OSIRIS versendet nun auf Wunsch automatische Digest-E-Mails – übersichtlich, zweisprachig und im OSIRIS-Design:
+
+- Enthält eine Übersicht offener Aktivitäten, Nachrichten und Aufgaben (alles was man in den Benachrichtigungen sieht).
+- Frequenz pro Nutzer einstellbar: none, daily, weekly, monthly.
+- Standardverhalten kann global von Admins festgelegt werden.
+- Versand erfolgt automatisch über den Cron-Job `/cron/digest`.
+- Mails sind zweisprachig (DE/EN), vollständig UTF-8-kodiert und nutzen das OSIRIS-Design.
+
+#### <i class="ph ph-file-text"></i> Entwürfe für Aktivitäten
+- Nutzer:innen können Aktivitäten als Entwurf speichern und später fertigstellen.
+- Entwürfe sind nur für die erstellende Person sichtbar.
+- Entwürfe können jederzeit geladen, bearbeitet und gespeichert werden.
+- Wenn ein Entwurf gespeichert wird, wird automatisch eine neue Aktivität erstellt und der Entwurf gelöscht.
+- Dieses Feature kann im Admin-Bereich unter "Funktionen" ein- und ausgeschaltet werden.
+
+#### <i class="ph ph-tag"></i> Schlagworte für Aktivitäten, Projekte und Events
+
+- Aktivitäten können nun mit Schlagworten versehen werden, um sie besser zu kategorisieren und zu finden.
+- Es kann in alle Aktivitäten nach Schlagworten gefiltert werden.
+- Schlagworte lassen sich in der Detailansicht von Aktivitäten hinzufügen. Sie können aber auch bei der Erstellung oder Bearbeitung von Aktivitäten hinzugefügt werden. Dazu wurde ein neues Datenfeld `tags` hinzugefügt.
+- Dem Rechte-Management wurde ein neues Recht `activities.tags` hinzugefügt, das standardmäßig nicht vergeben ist. Nur wer dieses Recht hat, kann Schlagworte zu Aktivitäten hinzufügen oder entfernen. Dies gilt auch immer nur dann, wenn die Aktivität selbst auch bearbeitet werden darf. 
+- Schlagworte lassen sich zentral im Admin-Bereich unter "Inhalte" > "Schlagworte" verwalten. Dort können Admins neue Schlagworte hinzufügen, bestehende bearbeiten oder löschen.
+- Dieses Feature kann im Admin-Bereich unter "Funktionen" ein- und ausgeschaltet werden.
+- Schlagworte können zu Aktivitäten, Projekten, und Events hinzugefügt werden. 
+
+#### <i class="ph ph-file-text"></i> Verbesserter Report-Builder
+
+Der Report-Builder wurde überarbeitet und bietet nun eine verbesserte Benutzeroberfläche sowie zusätzliche Funktionen zur Anpassung von Berichten.
+
+- Es wurden neue **Variablen für Berichte** hinzugefügt, die im Report-Template verwendet werden können. Diese Variablen können im Report-Builder definiert werden und ermöglichen es, dynamische Inhalte in den Bericht einzufügen. Sowohl die Vorschau als auch der generierte Bericht unterstützen diese Variablen.
+- Es wurde ein neuer Baustein hinzugefügt, mit dem man eine Tabelle mit Aktivitäten und einem beliebigen weiteren Datenfeld erstellen kann. Dies ermöglicht es, Berichte zu erstellen, die spezifische Informationen zu Aktivitäten enthalten, die für den Bericht relevant sind, zum Beispiel Impact-Faktoren, Publikationsarten oder andere benutzerdefinierte Felder.
+- Die Unterstützung für **Textbausteine** wurde verbessert. Textbausteine können jetzt formatierten Text enthalten, der im Bericht korrekt dargestellt wird. Dies ermöglicht es, Berichte mit ansprechenderen und besser strukturierten Textinhalten zu erstellen.
+- Sowohl der Aktivitäten- als auch der Impact-Faktor-Baustein unterstützen jetzt **Sortierungen** (gewünscht von IfL). Es wird dabei zwischen aufsteigender und absteigender Sortierung unterschieden.
+- Die Zeitbegrenzung ist jetzt standardmäßig ausgewählt, um Verwirrung zu vermeiden.
+- Die Benutzeroberfläche wurde verbessert, indem Klapp- und Kopierfunktionen hinzugefügt wurden. Außerdem gibt es jetzt Dropdown-Menüs für Aggregationen und eine bessere Beschreibung der Bausteine.
+- Die Aggregations-Tabellen wurden verbessert, indem korrekte Namen für Felder und Werte verwendet werden. Auch leere Felder werden jetzt besser dargestellt. Außerdem sorgt das "Entwirren" von Array-Feldern dazu, dass diese einzeln gezählt werden können. Man kann also jetzt zum Beispiel nach Einheiten oder Forschungsbereichen aggregieren, auch wenn diese als Mehrfachauswahl definiert sind.
+
+
+#### <i class="ph ph-textbox"></i> Neue Datenfelder
+- Es wurden neue Datenfelder für Aktivitäten hinzugefügt:
+  - **Funding Type**: Ein Dropdown-Feld, das es ermöglicht, den Typ der Finanzierung auszuwählen. Die möglichen Werte können im Vokabular unter "funding-type" definiert werden und sind die gleichen wie bei Projekten.
+  - **Schlagworte**: Ein Mehrfachauswahl-Feld, das es ermöglicht, Schlagworte zu Aktivitäten hinzuzufügen. Die möglichen Werte können im Admin-Bereich unter "Inhalte" > "Schlagworte" verwaltet werden.
+  - **Projekte**: Ein Mehrfachauswahl-Feld, das es ermöglicht, Projekte mit Aktivitäten zu verknüpfen. Es können mehrere Projekte ausgewählt werden und die über die DOI zur Verfügung gestellten Funding-Nummern werden automatisch mit den Projekten abgeglichen und verknüpft. Es gibt ein neues Recht, um Projekte mit Aktivitäten zu verknüpfen, ohne sie bearbeiten zu können.
+
+
+#### <i class="ph ph-lock"></i> Auth-Token für Nutzerregistrierung
+- Es wurde ein Auth-Token für die Auth-Nutzerregistrierung eingeführt. Dieser Token kann verwendet werden, um die Registrierung neuer Nutzer zu validieren und sicherzustellen, dass nur autorisierte Anfragen bearbeitet werden.
+- Der Token kann in der URL zur Registrierungsseite übergeben werden und wird dort überprüft. Bei erfolgreicher Validierung kann der Nutzer mit der Registrierung fortfahren.
+- Dies erhöht die Sicherheit des Registrierungsprozesses und verhindert Missbrauch durch unautorisierte Zugriffe.
+
+
+#### <i class="ph ph-list-checks"></i> Erweiterung für Conditional Templates
+
+Die Vorlagenlogik wurde erweitert, um bedingtes Rendern basierend auf **mehreren Feldern** zu unterstützen:
+
+- Verwende `&`, um zu verlangen, dass **alle** Felder vorhanden sind.
+- Verwende `|`, um zu rendern, wenn **ein beliebiges** Feld vorhanden ist.
+
+**Beispiele:**
+- `%title Titel: %` → wird nur gerendert, wenn `title` gesetzt ist.  
+- `%title&authors by %` → wird nur gerendert, wenn **sowohl** `title` als auch `authors` ausgefüllt sind  
+- `%journal|conference In: %` → wird gerendert, wenn **entweder** `journal` oder `conference` vorhanden ist
+
+Dadurch werden flexiblere und kontextsensitive Vorlagen möglich, ohne dass zusätzliche Codelogik hinzugefügt werden muss.
+
+
+#### Bug Fixes und Verbesserungen
+- Es wurde die Visualisierung der Netzwerke von Organisationseinheiten gefixt
+- Autor:innen mit mehreren Vornamen werden jetzt korrekt abgekürzt
+- Es wurde ein Problem behoben, durch das man beim Kopieren einer Aktivität eine deaktivierte Kategorie auswählen konnte
+- Die Dokumentation wurde durch das neue Wiki unter https://wiki.osiris-app.de/ ersetzt. Die alten Links zu den Hilfeseiten wurden aktualisiert.
+- Die Darstellung der Weltkarte von Kooperationspartnern wurde verbessert, indem das Layout-Styling angepasst und die Größe der Karte automatisch an den verfügbaren Platz angepasst wird. Dadurch sieht die Karte jetzt besonders auf großen Bildschirmen besser aus und nutzt den verfügbaren Platz optimal.
+- Es wurde ein Problem behoben, durch das Custom Fields ohne Wert immer '-' ausgegeben haben.
+  - Die Logik ist, dass ein Custom Field das explizit leer gelassen wurde, auch als leer gerendert wird. Wenn das Feld jedoch gar nicht existiert, z.B. bei neuen Aktivitäten oder weil das Feld später dazugekommen ist, dann wird der angegebene Default-Wert verwendet.
+
+
+---
+
+
+<time datetime="2025-09-30">30.09.2025</time>
+<a class="anchor" href="#version-1.5.2" id="version-1.5.2"></a>
+
+## Version 1.5.2
+
+- **Neue Conditional Templates**: mit `%field text%` wird der Text jetzt nur noch gezeigt, wenn das entsprechende Feld nicht leer ist. Beispiel: `%details Details:%` rendert "Details:" nur, wenn das Details-Feld nicht leer ist.
+- **Weiteres bei Listen**: Custom Fields mit dem Typ "Liste" können jetzt so eingestellt werden, dass man "Weiteres" auswählen und spezifizieren kann (über Freitextfeld). Dies funktioniert im Moment noch nicht in Kombination mit Mehrfachauswahl.
+- **Distribute Roles**: die Vergabe von Rollen ist jetzt viel einfacher geworden
+- **Password zurücksetzen**: bei der OSIRIS Auth Nutzerverwaltung ist es ist jetzt für Admins mit entsprechenden Rechten möglich, zentral ein Passwort zurückzusetzen und der Person dann einen erhaltenen Link zuzuschicken
+- **Verbesserte ID-Bereinigung**: OSIRIS ersetzt verbotene Zeichen in IDs (zum Beispiel Leerzeichen und Punkte) jetzt automatisch bei der Eingabe. Dies gilt jetzt auch für Custom Fields, da es hier zuvor zu Problemen kommen konnte, insbesondere wenn diese IDs Leerzeichen oder Punkte enthielten. Besonders Punkte haben in der verwendeten MongoDB-Datenbank zu Problemen geführt.
+- **Formularbaukasten** wurde weiter verbessert:
+  - Für die Vorschau muss nicht mehr gespeichert werden
+  - Die überschriebenen Labels werden auch in der Detail-Tabelle der Aktivität für die Überschriften verwendet
+- Neues Datenfeld **Projekte**: hier können Projekte jetzt direkt im Aktivitätsformular verknüpft werden
+  - Es können mehrere Projekte ausgewählt werden
+  - Die über die DOI zur Verfügung gestellten Funding-Nummern werden automatisch mit den Projekten abgeglichen und verknüpft
+  - Es gibt ein neues Recht, um Projekte mit Aktivitäten zu verknüpfen, ohne sie bearbeiten zu können
+  - Ihr könnt das neue Datenfeld im Formularbaukasten zu euren Aktivitäts-Typen hinzufügen
+- In Aktivitäten: **leere Felder** werden jetzt nicht mehr in der Tabelle sondern als Liste am Fuß der Tabelle dargestellt, um übersichtlicher zu sein
+- Die Maintenance-Message wurde verbessert
+- Der "Aktivität hinzuf."-Knopf ist jetzt auch bei Meine Aktivitäten zu finden
+- Die Printdarstellung wird jetzt auch über die Portfolio-API ausgeliefert
+- Es gibt ein neues Recht, um Projekte mit Aktivitäten zu verknüpfen, ohne sie bearbeiten zu können. Dieses wird automatisch mit dem Recht zum Bearbeiten von Projekten mitgegeben.
+
+#### Fehlerbehebungen:
+- Ein Fehler wurde behoben, durch den Aktivitäten nicht bestätigt werden konnten
+- Ein Fehler wurde behoben, durch den beim Synchronisieren von LDAP-Attributen diese einem zufälligen Nutzer zugeschrieben wurden
+- Aktivität hinzufügen: eine Kategorie auszuwählen wählt jetzt korrekt den ersten Typ aus
+- Emails können jetzt auch ohne SMTP Authentifikation verschickt werden
+- Der Link zu Aktivitäten in Events wurde gefixt
+- Der SWS-Rechner wurde aus dem `supervisor-thesis`-Modul entfernt
+- Die Erweiterte Suche wurde verbessert und sollte nicht mehr so fehleranfällig sein
+- Es wurden ein paar Probleme mit den neuen Autoren-Templates behoben
+- Einige Achievement-Texte wurden verbessert oder auf englisch korrigiert
+- Ein paar weitere Übersetzungs- und Textfehler wurden korrigiert
+- NPM JSCDN wurde entfernt, um die Sicherheit zu verbessern
+- Es werden jetzt nicht zusätzlich volle Adminrechte benötigt, um Nutzer zu synchronisieren
+- Die Karte der Kooperationspartner wurde nicht geladen, wenn Latitude und Longitude des Instituts nicht gesetzt waren. Jetzt wird eine Standard-Position verwendet, um dem vorzubeugen.
+
+---
+
+<time datetime="2025-08-24">24.08.2025</time>
 <a class="anchor" href="#version-1.5.1" id="version-1.5.1"></a>
 
 ## Version 1.5.1
@@ -47,7 +592,7 @@ Mit dem neuen Formbuilder kannst du Formulare für Aktivitäten noch flexibler g
 ---
 
 
-<span class="badge float-right">31.07.2025</span>
+<time datetime="2025-07-31">31.07.2025</time>
 <a class="anchor" href="#version-1.5.0" id="version-1.5.0"></a>
 
 ## Version 1.5.0
@@ -128,7 +673,7 @@ Die Projekte wurden komplett überarbeitet und bilden jetzt den gesamten Projekt
 - Neue **Templates**:
   - Es wurden neue Templates für die Formatierung von Aktivitäten hinzugefügt, insbesondere für Autor:innen und Herausgeberschaften. Dadurch lassen sich auch Autorenschaften im APA-Format und andere Stile einfacher darstellen. Im Bereich Inhalte > Template-Baukasten findet ihr eine Anleitung.
   - Es wurden auch weitere Möglichkeiten hinzugefügt, DOIs auszugeben, z.B. als Link oder nur als Text. Diese können ebenfalls im Template-Baukasten gefunden werden.
-- Es ist nun möglich, die Formatierung der affilierten Autor:innen anzupassen. In den allgemeinen Einstellungen gibt es dazu ein Dropdown-Menü, mit dem ihr anpassen könnt, ob affilierte Autor:innen fett, kursiv oder unterstrichen dargestellt werden sollen, oder eine Mischung davon.
+- Es ist nun möglich, die Formatierung der affiliierten Autor:innen anzupassen. In den allgemeinen Einstellungen gibt es dazu ein Dropdown-Menü, mit dem ihr anpassen könnt, ob affiliierte Autor:innen fett, kursiv oder unterstrichen dargestellt werden sollen, oder eine Mischung davon.
 - Es ist nun möglich, die Sichtbarkeit einzelner Aktivitätskategorien anzupassen. Dazu geht ihr auf Inhalte > Aktivitäten, wählt eine Kategorie (z.B. Publikationen) und klickt auf "Bearbeiten". Dort könnt ihr die Rolle einstellen, die Aktivitäten dieser Kategorie sehen darf. Standardmäßig ist dies auf "Alle" gesetzt, sodass alle Aktivitäten dieser Kategorie für alle Nutzer:innen sichtbar sind. Bitte beachtet, dass Nutzende ihre eigenen Aktivitäten immer sehen können, unabhängig von der Sichtbarkeitseinstellung. Diese Einstellung ist nur auf Kategorie-Ebene möglich, nicht auf Typen-Ebene.
 - Es ist nun möglich, den Upload von Dokumenten für einzelne Aktivitäts-Kategorien zu deaktivieren. Diese Einstellung findet ihr ebenfalls unter Inhalte > Aktivitäten, wenn ihr eine Kategorie bearbeitet. Standardmäßig ist der Upload für alle Kategorien aktiviert. Wenn er deaktiviert ist, wird der Upload-Button in der Detailansicht der Aktivität nicht mehr angezeigt und es können keine Dokumente hochgeladen werden. Vorhandene Dokumente werden nicht gelöscht, werden aber auch nicht mehr angezeigt.
 - Neues Widget für die Auswertung von Aktivitäten: **Konfetti-Timeline**. Das Widget ist im Moment bei Forschungsbereichen und Organisationseinheiten verfügbar, wird aber in Zukunft auch bei anderen Entitäten verfügbar sein. Es zeigt die Aktivitäten in einer Zeitachse an und ermöglicht es, nach Kategorien zu filtern. Der Filter wirkt sich auch auf die darunter liegende Tabelle mit den Aktivitäten aus.
@@ -206,7 +751,7 @@ Die Projekte wurden komplett überarbeitet und bilden jetzt den gesamten Projekt
 
 ---
 
-<span class="badge float-right">13.04.2025</span>
+<time datetime="2025-04-13">13.04.2025</time>
 <a class="anchor" href="#version-1.4.3" id="version-1.4.3"></a>
 
 ## Version 1.4.3
@@ -222,7 +767,7 @@ Die Projekte wurden komplett überarbeitet und bilden jetzt den gesamten Projekt
 
 ---
 
-<span class="badge float-right">03.04.2025</span>
+<time datetime="2025-04-03">03.04.2025</time>
 <a class="anchor" href="#version-1.4.2" id="version-1.4.2"></a>
 
 ## Version 1.4.2
@@ -254,7 +799,7 @@ Es wurden neue Statistiken hinzugefügt, die ähnlich wie die Statistik der Infr
 
 ---
 
-<span class="badge float-right">03.04.2025</span>
+<time datetime="2025-04-03">03.04.2025</time>
 <a class="anchor" href="#version-1.4.1" id="version-1.4.1"></a>
 
 ## Version 1.4.1
@@ -345,7 +890,7 @@ Diese können nur in der PHP-Konfiguration gesetzt werden und sind nicht im Admi
 
 ---
 
-<span class="badge float-right">12.02.2025</span>
+<time datetime="2025-02-12">12.02.2025</time>
 <a class="anchor" href="#version-1.4.0" id="version-1.4.0"></a>
 
 ## Version 1.4.0
@@ -536,7 +1081,7 @@ Die Nutzereinstellungen sind in den letzten Monaten gewachsen und sehr unübersi
 
 ---
 
-<span class="badge float-right">15.08.2024</span>
+<time datetime="2024-08-15">15.08.2024</time>
 <a class="anchor" href="#version-1.3.6" id="version-1.3.6"></a>
 
 ## Version 1.3.6
@@ -583,7 +1128,7 @@ Es wurden erste Schritte unternommen, um Compliance mit dem [Nagoya-Protokoll](h
 
 ---
 
-<span class="badge float-right">23.06.2024</span>
+<time datetime="2024-06-23">23.06.2024</time>
 <a class="anchor" href="#version-1.3.5" id="version-1.3.5"></a>
 
 ## Version 1.3.5
@@ -632,7 +1177,7 @@ Die Synchronisation zu LDAP hat jetzt ein Interface spendiert bekommen, über da
 
 ---
 
-<span class="badge float-right">23.05.2024</span>
+<time datetime="2024-05-23">23.05.2024</time>
 <a class="anchor" href="#version-1.3.4" id="version-1.3.4"></a>
 
 ## Version 1.3.4
@@ -687,7 +1232,7 @@ Es gab außerdem einige UI-Improvements, z.B. beim Festlegen der Leitung einer O
 
 ---
 
-<span class="badge float-right">15.04.2024</span>
+<time datetime="2024-04-15">15.04.2024</time>
 <a class="anchor" href="#version-1.3.3" id="version-1.3.3"></a>
 
 ## Version 1.3.3
@@ -699,7 +1244,7 @@ Sie ist auf der Detailseite einer Aktivität unter dem Reiter _Historie_ verfüg
 
 ---
 
-<span class="badge float-right">22.02.2024</span>
+<time datetime="2024-02-22">22.02.2024</time>
 <a class="anchor" href="#version-1.3.2" id="version-1.3.2"></a>
 
 ## Version 1.3.2
@@ -716,7 +1261,7 @@ In der Dokumentation ist ein neuer Reiter API Docs, unter dem die wichtigsten En
 
 ---
 
-<span class="badge float-right">21.02.2024</span>
+<time datetime="2024-02-21">21.02.2024</time>
 <a class="anchor" href="#version-1.3.1" id="version-1.3.1"></a>
 
 ## Version 1.3.1
@@ -733,7 +1278,7 @@ In dieser Version sind ein paar Fixes zur vorherigen Version, sowie neue Custom 
 
 ---
 
-<span class="badge float-right">09.02.2024</span>
+<time datetime="2024-02-09">09.02.2024</time>
 <a class="anchor" href="#version-1.3.0" id="version-1.3.0"></a>
 
 ## Version 1.3.0
@@ -885,7 +1430,7 @@ Es kann sein, dass einige wenige Einstellungen von Euch nicht in das neue Format
 
 ---
 
-<span class="badge float-right">25.10.2023</span>
+<time datetime="2023-10-25">25.10.2023</time>
 <a class="anchor" href="#version-1.2.2" id="version-1.2.2"></a>
 
 ## Version 1.2.2
@@ -941,7 +1486,7 @@ Es wurden einige generelle Verbesserungen durchgeführt:
 
 ---
 
-<span class="badge float-right">18.10.2023</span>
+<time datetime="2023-10-18">18.10.2023</time>
 <a class="anchor" href="#version-1.2.1" id="version-1.2.1"></a>
 
 ## Version 1.2.1
@@ -950,7 +1495,7 @@ Diese Version beinhaltet vornehmlich Bug Fixes und Optimierungen im Hintergrund.
 
 ---
 
-<span class="badge float-right">04.10.2023</span>
+<time datetime="2023-10-04">04.10.2023</time>
 <a class="anchor" href="#version-1.2.0" id="version-1.2.0"></a>
 
 ## Version 1.2.0
@@ -1109,7 +1654,7 @@ OSIRIS prüft jetzt selbstständig einmal in der Woche (sonntags um 2 Uhr), ob e
 
 ---
 
-<span class="badge float-right">12.05.23</span>
+<time datetime="23-05-12">12.05.23</time>
 <a class="anchor" href="#version-1.1.0" id="version-1.1.0"></a>
 
 ## Version 1.1.0
@@ -1137,7 +1682,7 @@ Dadurch sieht die Seite auf den ersten Blick vielleicht etwas ungewohnt aus, ihr
 
 - Lehrveranstaltungen sind jetzt standardisiert
 - Jedes Modul hat eine einzigartige Modulnummer, über die es leicht gefunden werden kann
-- Es kann für jede Person einzeln der Anteil der SWS angegeben werden (nur bei affilierten Personen notwendig)
+- Es kann für jede Person einzeln der Anteil der SWS angegeben werden (nur bei affiliierten Personen notwendig)
 - Ein SWS-Rechner wurde hinzugefügt
 - Einem Modul können Lehrveranstaltungen (z.B. Praktika, Vorlesungen, Seminare) hinzugefügt werden
 - Gäste, die wegen einer Lehrveranstaltung hier sind (i.e. Studenten), können ebenfalls mit dem Modul verknüpft werden
@@ -1220,7 +1765,7 @@ Dadurch sieht die Seite auf den ersten Blick vielleicht etwas ungewohnt aus, ihr
 
 ---
 
-<span class="badge float-right">02.01.23</span>
+<time datetime="23-01-02">02.01.23</time>
 
 ## Version 1.0
 
@@ -1311,7 +1856,7 @@ OSIRIS geht damit in die Version 1.0 über und verlässt die Betaphase. Wir werd
 
 **24.11.22**
 
-- Das Menü wurde umstrukturiert und farblich etwas einfacher gehalten
+- Das Menü wurde umstrukturiert und farbig etwas einfacher gehalten
 - Neue Icons für Aktivitäten wurden eingeführt
 - Der Knopf zum Hinzufügen von Aktivitäten war anscheinend zu fancy, um ihn wahrzunehmen. Er wurde vereinfacht.
 - Die neue Primärfarbe ist "Osiris"-Orange
@@ -1359,7 +1904,7 @@ Ich habe sehr viel User-Feedback aus der Beta-Phase eingearbeitet, u.a. folgende
 
 - Das Hinzufügen von Aktivitäten wurde verbessert:
   - Die Aktivitäten Publikation, Reviews, Misc und Studierende haben jetzt Unterkategorien, die ausgewählt werden können, nachdem eine Kategorie ausgewählt wurde. Dadurch sollten viele offene Fragen geklärt werden, da die Datenfelder nun etwas flexibler reagieren.
-  - Beispiele wurden hinzugefügt. Wenn man nun auf Beispiele klickt, werden ausgewählte Aktivitäten oberhalb des Formulars angezeigt. Dabei sind Datenfelder farblich gekennzeichnet und beim Hovern wird der Name des Datenfelds angezeigt. Die Datenfelder im Formular sind in der gleichen Farbe gekennzeichnet.
+  - Beispiele wurden hinzugefügt. Wenn man nun auf Beispiele klickt, werden ausgewählte Aktivitäten oberhalb des Formulars angezeigt. Dabei sind Datenfelder farbig gekennzeichnet und beim Hovern wird der Name des Datenfelds angezeigt. Die Datenfelder im Formular sind in der gleichen Farbe gekennzeichnet.
   - Eine Hilfe-Funktion erklärt nun, wie der Autoreneditor funktioniert.
   - Lectures: Es kann jetzt angegeben werden, ob es sich um eine _Invited lecture_ handelt
 
