@@ -66,3 +66,19 @@ Hier kannst du dem Event eine Aktivität hinzufügen
 ///
 
 Mit einem Klick auf **:heavy_plus_sign: Beitrag hinzufügen** wirst du direkt zur [Aktivität hinzufügen](/users/content/create_content/) Seite weitergeleitet. Hier ist der Aktivitäts-Typ *Vortrag* vorausgewählt und schon passend für das Event ausgefüllt. 
+
+
+
+Wenn von den Administratoren die Formulare entsprechend konfiguriert sind, kannst du bei der Erstellung einer Aktivität auch direkt das Event auswählen, mit dem die Aktivität verknüpft werden soll. In diesem Fall wird die Verknüpfung automatisch hergestellt und du musst sie nicht mehr manuell hinzufügen.
+
+![Event-Auswahl direkt beim erstellen](screenshots_events/aktivität_hinzufügen.png)
+///caption
+Mit der Event-Auswahl kannst du die Verknüpfung zwischen Event und Aktivität schon bei der Erstellung der Aktivität herstellen. Dabei kannst du alle in OSIRIS eingetragenen Events durchsuchen und das passende auswählen. Über einen Knopf oben rechts kannst du auch ein neues Event erstellen, falls das passende Event noch nicht in OSIRIS eingetragen ist. Es wird dann automatisch ausgewählt und mit der Aktivität verknüpft.
+///
+
+Bei der Verknüpfung mit dem Event werden außerdem einige Daten der Aktivität automatisch vorausgefüllt. So wird zum Beispiel der Name der Veranstaltung und der Ort ausgefüllt und das Datum der Aktivität automatisch auf das Datum des Events gesetzt. Dadurch sparst du dir einiges an Zeit und musst diese Daten nicht mehr manuell eingeben. Natürlich kannst du die vorausgefüllten Daten auch noch anpassen, falls zum Beispiel der Vortrag nicht am selben Tag wie das Event stattfindet.
+
+![Vorausgefüllte Daten](screenshots_events/event_ausgewählt.png)
+///caption
+Wenn du ein Event bei der Erstellung einer Aktivität auswählst, werden die Zeitspanne, der Name der Veranstaltung und Ort und Land automatisch vorausgefüllt. Die betroffenen Felder werden einige Sekunden lang grün umrandet und es erscheint ein Hinweistext, dass die Daten vom Event übernommen wurden.
+///

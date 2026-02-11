@@ -66,3 +66,19 @@ Here you can add an activity to the event
 ///
 
 By clicking on **:heavy_plus_sign: Add contribution** you will be forwarded directly to the [Add activity](/users/content/create_content/) page. The activity type *lecture* is preselected here and already filled in appropriately for the event.
+
+
+
+If the administrators have configured the forms accordingly, you can also select the event to which the activity should be linked when creating an activity. In this case, the link is created automatically and you no longer need to add it manually.
+
+![Event selection directly during creation](screenshots_events/aktivität_hinzufügen.png)
+///caption
+With the event selection, you can create the link between the event and the activity when you create the activity. You can search through all events entered in OSIRIS and select the appropriate one. You can also create a new event using the button at the top right if the appropriate event is not yet entered in OSIRIS. It will then be automatically selected and linked to the activity.
+///
+
+When linking to the event, some of the activity data is also automatically pre-filled. For example, the name of the event and the location are filled in, and the date of the activity is automatically set to the date of the event. This saves you a lot of time and means you no longer have to enter this data manually. Of course, you can still adjust the pre-filled data if, for example, the lecture does not take place on the same day as the event.
+
+![Pre-filled data](screenshots_events/event_ausgewählt.png)
+///caption
+When you select an event while creating an activity, the time period, name of the event, location, and country are automatically pre-filled. The relevant fields are highlighted in green for a few seconds and a message appears indicating that the data has been transferred from the event.
+//
