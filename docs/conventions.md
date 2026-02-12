@@ -24,5 +24,6 @@ Einige neuere Funktionen werden noch als experimentell betrachtet, was bedeutet,
 
 Es gibt ein paar Features, die nicht standardmäßig in OSIRIS enthalten sind, sondern als Plugins bereitgestellt werden. Diese Plugins sind meistens optional und können als zusätzliche Pakete installiert werden.
 
+### <!-- md:community --> – Community feature { #community data-toc-label="Community feature" } 
 
-
+Mit diesem Symbol werden Funktionen gekennzeichnet, die zusammen mit der OSIRIS-Community entwickelt wurden. Findet mehr über unsere Community auf der [Community-Seite](/topics/community/).

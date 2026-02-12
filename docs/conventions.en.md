@@ -25,4 +25,6 @@ Some newer features are still considered experimental, which means that they may
 There are a few features that are not included in OSIRIS by default, but are provided as plugins. These plugins are usually optional and can be installed as additional packages.
 
 
+### <!-- md:community --> – Community feature { #community data-toc-label="Community feature" } 
 
+This symbol indicates features that were developed in collaboration with the OSIRIS community. Find out more about our community on the [Community page](/topics/community/).

@@ -51,7 +51,7 @@ def on_page_markdown(
         elif type == "setting":      return setting(args)
         elif type == "feature":      return _badge_for_feature(args, page, files)
         elif type == "plugin":       return _badge_for_plugin(args, page, files)
-        elif type == "utility":      return _badge_for_utility(args, page, files)
+        elif type == "community":    return _badge_for_community(args, page, files)
         elif type == "example":      return _badge_for_example(args, page, files)
         elif type == "demo":         return _badge_for_demo(args, page, files) 
 
@@ -163,12 +163,12 @@ def _badge_for_plugin(text: str, page: Page, files: Files):
         text = text
     )
 
-# Create badge for utility
-def _badge_for_utility(text: str, page: Page, files: Files):
-    icon = "material-package-variant"
-    href = _resolve_path("conventions.md#utility", page, files)
+# Create badge for community
+def _badge_for_community(text: str, page: Page, files: Files):
+    icon = "material-hand-heart-outline"
+    href = _resolve_path("conventions.md#community", page, files)
     return _badge(
-        icon = f"[:{icon}:]({href} 'Third-party utility')",
+        icon = f"[:{icon}:]({href} 'Community feature')",
         text = text
     )
 

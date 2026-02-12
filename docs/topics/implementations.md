@@ -5,7 +5,7 @@ tags:
 ---
 # Wer verwendet OSIRIS?
 
-Hier findet ihr eine Liste von Instituten, die OSIRIS bereits nutzen oder gerade dabei sind, OSIRIS einzuführen. 
+Hier findet ihr eine Liste von Instituten, die OSIRIS bereits nutzen oder gerade dabei sind, OSIRIS einzuführen. Diese Liste ist nicht vollständig, da wir nicht von allen Nutzenden erfahren und wir auch nicht Einrichtungen ohne Zustimmung listen dürfen, aber sie soll einen Überblick über die Vielfalt der OSIRIS-Community geben.
 
 !!! tip "Meldet euch!"
     
@@ -14,11 +14,14 @@ Hier findet ihr eine Liste von Instituten, die OSIRIS bereits nutzen oder gerade
     
 ## Aktive Installation
 
-- [Leibniz Institut DSMZ - Deutsche Sammlung für Mikroorganismen und Zellkulturen](https://dsmz.de)
 - [bicc - Bonn International Centre for Conflict Studies](https://bicc.de)
-- [LIB - Leibniz-Institut zur Analyse des Biodiversitätswandels](https://leibniz-lib.de/de/ueber-das-lib.html)
+- [GWZO - Leibniz-Institut für Geschichte und Kultur des östlichen Europa](https://www.gwzo.de/)
 - [IfL - Leibniz-Institut für Länderkunde](https://leibniz-ifl.de/)
-
+- [INP - Leibniz-Institut für Plasmaforschung und Technologie](https://www.inp-greifswald.de/)
+- [Leibniz Institut DSMZ - Deutsche Sammlung für Mikroorganismen und Zellkulturen](https://dsmz.de)
+- [LIB - Leibniz-Institut zur Analyse des Biodiversitätswandels](https://leibniz-lib.de/de/ueber-das-lib.html)
+- [PRIF - Peace Research Institute Frankfurt](https://www.prif.org/)
+- [Weizenbaum-Institut](https://www.weizenbaum-institut.de/)
 
 ## Zurzeit in der Einführung
 
