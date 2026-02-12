@@ -2,11 +2,11 @@
 
 ## Symbols
 
-Some symbols are used in this documentation for illustrative purposes. Please familiarise yourself with the following list of conventions before proceeding:
+Some symbols are used in this documentation for illustrative purposes. Please familiarize yourself with the following list of conventions before proceeding:
 
 ### <!-- md:version --> - Version { data-toc-label="Version" }
 
-The tag symbol in conjunction with a version number indicates when a particular feature or behaviour was added. Make sure you use at least this version if you want to use it.
+The tag symbol in conjunction with a version number indicates when a particular feature or behavior was added. Make sure you use at least this version if you want to use it.
 
 ### <!-- md:feature --> - Optional feature { #feature data-toc-label="Optional feature" }
 
@@ -23,5 +23,6 @@ Some newer features are still considered experimental, which means that they may
 ### <!-- md:plugin --> - Plugin { data-toc-label="Plugin" }
 
 There are a few features that are not included in OSIRIS by default, but are provided as plugins. These plugins are usually optional and can be installed as additional packages.
+
 
 

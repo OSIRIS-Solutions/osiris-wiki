@@ -53,7 +53,7 @@ def on_page_markdown(
         elif type == "plugin":       return _badge_for_plugin(args, page, files)
         elif type == "utility":      return _badge_for_utility(args, page, files)
         elif type == "example":      return _badge_for_example(args, page, files)
-        elif type == "demo":         return _badge_for_demo(args, page, files)
+        elif type == "demo":         return _badge_for_demo(args, page, files) 
 
         # Otherwise, raise an error
         raise RuntimeError(f"Unknown shortcode: {type}")
@@ -247,3 +247,6 @@ def _badge_for_beta(page: Page, files: Files):
     return _badge(
         icon = f"[:{icon}:]({href} 'Beta')"
     )
+
+
+

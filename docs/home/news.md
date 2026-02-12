@@ -10,10 +10,11 @@ Es gibt viele neue Funktionen und Verbesserungen, insbesondere im Bereich Custom
 
 ### Design & Customization
 Bislang war es nur möglich, das Logo und die Farben von OSIRIS anzupassen. Mit diesem Update haben wir die Customization-Funktionen deutlich erweitert:
-- **Eigene Schriftarten**: Ihr könnt jetzt eigene Schriftarten in OSIRIS verwenden, um das Erscheinungsbild noch besser an eure CI anzupassen.
-- **Icons**: wählt aus drei verschiedenen Icon-Stilen (Standard, Gefüllt oder Zweifarbig).
-- **Viele Elemente anpassen**: z.B. die Dicke und Farbe von Rahmen, die Rundung von Ecken, Schatten, Icons und vieles mehr.
-- **Kopfzeile**: Ihr könnt jetzt die Kopfzeile anpassen, z.B. die Höhe verändern, die Logos komplett in den Footer verschieben oder das OSIRIS-Logo einfärben.
+
+* **Eigene Schriftarten**: Ihr könnt jetzt eigene Schriftarten in OSIRIS verwenden, um das Erscheinungsbild noch besser an eure CI anzupassen.
+* **Icons**: wählt aus drei verschiedenen Icon-Stilen (Standard, Gefüllt oder Zweifarbig).
+* **Viele Elemente anpassen**: z.B. die Dicke und Farbe von Rahmen, die Rundung von Ecken, Schatten, Icons und vieles mehr.
+* **Kopfzeile**: Ihr könnt jetzt die Kopfzeile anpassen, z.B. die Höhe verändern, die Logos komplett in den Footer verschieben oder das OSIRIS-Logo einfärben.
 
 
 ### Portfolio
@@ -40,6 +41,7 @@ Es ist nun außerdem möglich, die **URL zum externen Portfolio** anzupassen. So
 ### Lehrveranstaltungen
 
 Lehrveranstaltungen wurden grundsätzlich überarbeitet und bieten nun mehr Möglichkeiten
+
 - Die Übersichtsseite zeigt jetzt alle Lehrveranstaltungen in einer Tabelle an, die deutlich übersichtlicher ist und mehr Informationen bietet.
 - Jede Lehrveranstaltung hat jetzt eine eigene Seite, auf der alle Details angezeigt werden, inkl. aller verknüpften Aktivitäten. Dabei werden Aktivitäten mit dem Modul `supervisors` auch mit ihren Semesterwochenstunden angezeigt.
 - Es gibt auch eine neue Seite, um existierende Lehrveranstaltungen zu bearbeiten. Dazu wurde ein neues Recht hinzugefügt (Lehrveranstaltungen bearbeiten), das standardmäßig an alle Nutzenden vergeben wird (wie es zuvor auch war).
@@ -71,6 +73,7 @@ Lehrveranstaltungen wurden grundsätzlich überarbeitet und bieten nun mehr Mög
 ### Dokumente von Aktivitäten
 
 Die Dokumentenverwaltung bei Aktivitäten wurde auf das neue System migriert und dadurch deutlich verbessert:
+
 - Der Bereich "Dokumente" in Aktivitäten wurde komplett überarbeitet und bietet jetzt eine deutlich bessere Übersicht und Handhabung.
 - Es ist nun möglich, die Art der Dokumente anzugeben und eine Beschreibung hinzuzufügen.
 - Für die Arten von Dokumenten gibt es jetzt eine Vokabularliste, die im Admin-Bereich verwaltet werden kann.
@@ -94,12 +97,14 @@ Die Dokumentenverwaltung bei Aktivitäten wurde auf das neue System migriert und
 ### Visualisierungen
 
 Die Visualisierung "Abteilungs-Netzwerk" wurde überarbeitet und in "Aktivitäten-Netzwerk" umbenannt, um besser die neue Flexibilität widerzuspiegeln.
+
 - Dabei kann nach verschiedenen Entitäten gruppiert werden. Im Moment werden Organisationen (1. und 2. Level) und Forschungsbereiche unterstützt, weitere folgen eventuell in zukünftigen Versionen. Vorschläge sind willkommen!
 - Es können nun Aktivitäten verschiedener Kategorien (z.B. Publikationen, Vorträge, Medienbeiträge) visualisiert werden
 - Das Startjahr kann jetzt frei gewählt werden (default: 5 Jahre zurück)
 - Das fertige Netzwerk kann jetzt als PNG oder SVG heruntergeladen werden.
 
 ### Weitere Verbesserungen & Bugfixes
+
 - Auf der Seite eines Custom-Fields wird jetzt angezeigt, welche Aktivitäts- und Projekttypen dieses Feld verwenden und ob es mit Infrastrukturen oder Personen verknüpft ist.
 - Die Abfrage der Erst- und Letztautoren wurde aus dem normalen "Authors"-Modul entfernt
 - Wenn die Edition (ein Datenfeld in Aktivitäten) leer oder keine Nummer ist, wird jetzt kein Suffix mehr angezeigt (z.B. 8th, 2nd, 1st).
