@@ -1703,6 +1703,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#rendern-der-importierten-daten" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rendern der importierten Daten
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -5141,6 +5152,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#rendern-der-importierten-daten" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rendern der importierten Daten
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -5217,6 +5239,13 @@
       
       
       
+        <a href="../../home/tags/#tag:cron-job" class="md-tag">Cron-Job</a>
+      
+    
+      
+      
+      
+      
         <a href="../../home/tags/#tag:dois" class="md-tag">DOIs</a>
       
     
@@ -5286,6 +5315,20 @@ Dazu habe ich euch ein <a href="https://github.com/JKoblitz/osiris/blob/master/j
 <p>Vorhandene Einträge, deren DOI bereits in der Datenbank hinterlegt ist, werden nicht noch einmal hinzugefügt. Dies kann auch nicht umgangen werden, denn es führt dazu, dass ein Skript, sollte es abgebrochen sein, ohne Änderungen noch mal ausgeführt werden kann.</p>
 <p>Standardmäßig wird auch mittels Levenshtein-Ähnlichkeit nach übereinstimmenden Titeln (mehr als 90% Übereinstimmung) gefiltert. Falls das nicht gewünscht ist, müsst ihr in der <code>import_doi.py</code> den Wert <code>ignoreDupl</code> auf <code>False</code> setzen.</p>
 </div>
+<h2 id="rendern-der-importierten-daten">Rendern der importierten Daten</h2>
+<p><span class="mdx-badge"><span class="mdx-badge__icon"><a href="../../conventions/#version" title="Minimum version"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.41 11.58-9-9A2 2 0 0 0 11 2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 .59 1.42l9 9A2 2 0 0 0 13 22a2 2 0 0 0 1.41-.59l7-7A2 2 0 0 0 22 13a2 2 0 0 0-.59-1.42M13 20l-9-9V4h7l9 9M6.5 5A1.5 1.5 0 1 1 5 6.5 1.5 1.5 0 0 1 6.5 5"/></svg></span></a></span><span class="mdx-badge__text"><a href="../../home/news/#version-1.8.1">1.8.1</a></span></span></p>
+<p>Egal ob ihr Altdaten importiert habt oder kontinuierlich neue Daten aus anderen Quellen (z.B. einem institutionellen Repositorium) hinzufügt, die Daten müssen gerendert werden, damit sie in OSIRIS richtig angezeigt werden können. Dazu müsst ihr eine URL in eurem OSIRIS aufrufen, die den Render-Prozess anstößt. Bei regelmäßigem Import von Daten empfiehlt es sich, diesen Prozess per Cron-Job zu automatisieren.</p>
+<p>Zuerst benötigt ihr den geheimen Schlüssel (CRON_SECRET), den ihr in der CONFIG.php hinterlegen könnt:</p>
+<div class="language-php highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nb">define</span><span class="p">(</span><span class="s1">&#39;CRON_SECRET&#39;</span><span class="p">,</span> <span class="s1">&#39;YOUR_CRON_SECRET&#39;</span><span class="p">);</span>
+</code></pre></div></td></tr></table></div>
+<p>Um den Render-Prozess zu starten, könnt ihr folgenden Befehl in der Kommandozeile ausführen. Dabei wird eine URL in eurem OSIRIS aufgerufen, die den Render-Prozess anstößt. Es werden nur die Daten gerendert, die noch nicht gerendert wurden.</p>
+<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>curl<span class="w"> </span>-s<span class="w"> </span><span class="s2">&quot;https://your-osiris.de/smart-render?key=YOUR_CRON_SECRET&quot;</span>
+</code></pre></div></td></tr></table></div>
+<p>Ersetze <code>https://your-osiris.de</code> durch die URL deiner OSIRIS-Installation und <code>YOUR_CRON_SECRET</code> durch den in den Einstellungen hinterlegten geheimen Schlüssel.</p>
+<div class="admonition info">
+<p class="admonition-title">Was bedeutet Rendern?</p>
+<p>Beim Rendern werden aus den verschiedenen Datenfeldern eines Eintrags (z.B. Titel, Autoren, Abstract, etc.) verschiedene Darstellungen erzeugt, die für die Anzeige in der Benutzeroberfläche von OSIRIS benötigt werden. Dazu gehören z.B. die HTML-Darstellung, die Print-Darstellung für den Export, die Icons, etc. Ohne das Rendern würden die Einträge in OSIRIS nicht korrekt angezeigt werden und beim Aufruf verschiedener Tabellen bekommt ihr eine <strong>"DataTables warning"</strong> angezeigt.</p>
+</div>
 
 
 
@@ -5308,7 +5351,7 @@ Dazu habe ich euch ein <a href="https://github.com/JKoblitz/osiris/blob/master/j
     <span class="md-icon" title="Letztes Update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="27. Juni 2025 14:16:02 UTC">27. Juni 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="13. Februar 2026 07:01:09 UTC">13. Februar 2026</span>
   </span>
 
     
