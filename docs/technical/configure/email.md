@@ -1,6 +1,7 @@
 ---
 tags:
 - E-Mail
+- Cron-Job
 ---
 
 # E-Mail-Digest Einrichtung

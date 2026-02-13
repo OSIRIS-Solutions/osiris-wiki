@@ -1,10 +1,11 @@
 ---
 tags:
-    - data
-    - legacy data
-    - import
-    - OpenAlex
-    - DOIs
+- data
+- legacy data
+- import
+- OpenAlex
+- DOIs
+- Cron-Job
 ---
 
 # Import legacy data
@@ -47,3 +48,29 @@ python jobs/import_doi.py
     Existing entries whose DOI is already stored in the database are not added again. This cannot be bypassed, as it means that if a script is cancelled, it can be executed again without changes.
     
     By default, Levenshtein similarity is also used to filter for matching titles (more than 90% match). If this is not desired, you must set the value `ignoreDupl` in `import_doi.py` to `False`.
+
+
+
+## Rendering the imported data
+
+<!-- md:version 1.8.1 -->
+
+No matter whether you have imported legacy data or are continuously adding new data from other sources (e.g., an institutional repository), the data must be rendered so that they can be displayed correctly in OSIRIS. To do this, you need to call a URL in your OSIRIS that triggers the rendering process. If you regularly import data, it is advisable to automate this process via a cron job.
+
+First, you need the secret key (CRON_SECRET), which you can store in CONFIG.php:
+
+```php
+define('CRON_SECRET', 'YOUR_CRON_SECRET');
+```
+
+To start the rendering process, you can execute the following command in the command line. This will call a URL in your OSIRIS that triggers the rendering process. Only data that has not yet been rendered will be rendered.
+
+```bash
+curl -s "https://your-osiris.de/smart-render?key=YOUR_CRON_SECRET"
+```
+
+Replace `https://your-osiris.de` with the URL of your OSIRIS installation and `YOUR_CRON_SECRET` with the secret key stored in the settings.
+
+
+!!! info "What does rendering mean?"
+    Rendering generates various representations from the different data fields of an entry (e.g., title, authors, abstract, etc.) that are needed for display in the OSIRIS user interface. These include, for example, the HTML representation, the print representation for export, the icons, etc. Without rendering, the entries in OSIRIS would not be displayed correctly, and when calling various tables, you will see a **"DataTables warning"**.

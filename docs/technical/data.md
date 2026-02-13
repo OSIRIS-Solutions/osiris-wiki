@@ -1,10 +1,11 @@
 ---
 tags:
-    - Daten
-    - Altdaten
-    - Import
-    - OpenAlex
-    - DOIs
+- Daten
+- Altdaten
+- Import
+- OpenAlex
+- DOIs
+- Cron-Job
 ---
 
 # Altdaten importieren
@@ -40,10 +41,34 @@ Ihr führt dazu folgende Schritte durch:
 python jobs/import_doi.py
 ```
 
-
-
 !!! info "Anmerkung"
 
     Vorhandene Einträge, deren DOI bereits in der Datenbank hinterlegt ist, werden nicht noch einmal hinzugefügt. Dies kann auch nicht umgangen werden, denn es führt dazu, dass ein Skript, sollte es abgebrochen sein, ohne Änderungen noch mal ausgeführt werden kann.
     
     Standardmäßig wird auch mittels Levenshtein-Ähnlichkeit nach übereinstimmenden Titeln (mehr als 90% Übereinstimmung) gefiltert. Falls das nicht gewünscht ist, müsst ihr in der `import_doi.py` den Wert `ignoreDupl` auf `False` setzen.
+
+
+
+## Rendern der importierten Daten
+
+<!-- md:version 1.8.1 -->
+
+Egal ob ihr Altdaten importiert habt oder kontinuierlich neue Daten aus anderen Quellen (z.B. einem institutionellen Repositorium) hinzufügt, die Daten müssen gerendert werden, damit sie in OSIRIS richtig angezeigt werden können. Dazu müsst ihr eine URL in eurem OSIRIS aufrufen, die den Render-Prozess anstößt. Bei regelmäßigem Import von Daten empfiehlt es sich, diesen Prozess per Cron-Job zu automatisieren.
+
+Zuerst benötigt ihr den geheimen Schlüssel (CRON_SECRET), den ihr in der CONFIG.php hinterlegen könnt:
+
+```php
+define('CRON_SECRET', 'YOUR_CRON_SECRET');
+```
+
+Um den Render-Prozess zu starten, könnt ihr folgenden Befehl in der Kommandozeile ausführen. Dabei wird eine URL in eurem OSIRIS aufgerufen, die den Render-Prozess anstößt. Es werden nur die Daten gerendert, die noch nicht gerendert wurden.
+
+```bash
+curl -s "https://your-osiris.de/smart-render?key=YOUR_CRON_SECRET"
+```
+
+Ersetze `https://your-osiris.de` durch die URL deiner OSIRIS-Installation und `YOUR_CRON_SECRET` durch den in den Einstellungen hinterlegten geheimen Schlüssel.
+
+
+!!! info "Was bedeutet Rendern?"
+    Beim Rendern werden aus den verschiedenen Datenfeldern eines Eintrags (z.B. Titel, Autoren, Abstract, etc.) verschiedene Darstellungen erzeugt, die für die Anzeige in der Benutzeroberfläche von OSIRIS benötigt werden. Dazu gehören z.B. die HTML-Darstellung, die Print-Darstellung für den Export, die Icons, etc. Ohne das Rendern würden die Einträge in OSIRIS nicht korrekt angezeigt werden und beim Aufruf verschiedener Tabellen bekommt ihr eine **"DataTables warning"** angezeigt.
