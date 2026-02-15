@@ -26,3 +26,25 @@ define('AUTHORITY', 'https://login.microsoftonline.com/common');
 define('SCOPES', 'openid profile email User.Read');
 ```
 
+
+## Troubleshooting
+### Fehlermeldung: "Error getting Access token"
+**TLS-Kompatibilität mit Microsoft Azure (Debian Trixie) - 404 Not Found bei Token-Endpoint**
+
+Bei Verwendung von Debian Trixie (oder darauf basierenden Images wie php:8.1-apache) kann die OAuth-Anmeldung mit dem Fehler Error getting Access token fehlschlagen. Ursache ist ein Kompatibilitätsproblem zwischen dem TLS-Stack (curl 8.11+ / OpenSSL 3.3+) und Microsofts Azure-Infrastruktur.
+
+Symptome:
+
+- Token-Request liefert HTTP 404
+- SSL_ERROR_SYSCALL bei Verbindungen zu login.microsoftonline.com
+
+Lösung (Dockerfile anpassen):
+```Dockerfile
+# Statt:
+FROM php:8.1-apache
+
+# Verwende:
+FROM php:8.1-apache-bookworm
+```
+Bookworm nutzt OpenSSL 3.0.x, das mit Azure kompatibel ist.
+Weitere Infos: [curl/curl#14154](https://github.com/curl/curl/issues/14154)
