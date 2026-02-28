@@ -6,7 +6,7 @@ tags:
 
 # Allgemeine Einstellungen
 
-In den **Allgemeinen Einstellungen** kannst du alles rund um das Institut und die OSIRIS Seite an sich konfigurieren. 
+In den **Allgemeinen Einstellungen** kannst du alles rund um das Institut und die OSIRIS Seite konfigurieren. 
 
 ## Allgemein
 
@@ -24,12 +24,9 @@ Unter dem Instituts-Tab kannst du allgemeine Einstellungen zum Institut vornehme
 
 OSIRIS ermöglicht es dir hier das Logo des Instituts hochzuladen und somit das Layout zu individualisieren.
 
-## Farben
-
-Hier kannst du Instituts-typische Farben einstellen, damit OSIRIS eurem Institut angeglichen wird.
 
 ## Länder
 
-Dieser Tab beinhaltet eine Liste aller Länder mit ihren Abkürzungen, die in OSIRIS verwendet werden.
+Dieser Tab beinhaltet eine Liste aller Länder mit ihren Abkürzungen, die in OSIRIS verwendet werden. Die Liste der Weltländer wird zur Verfügung gestellt von [Stefan Gabos' World Country List](https://github.com/stefangabos/world_countries). Bitte klicke auf den Knopf oben, um die Liste automatisch zu aktualisieren. 
 
 

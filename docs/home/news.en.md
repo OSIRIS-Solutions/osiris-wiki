@@ -1,6 +1,62 @@
 # News
 
-**01.02.2026**
+<time datetime="2026-02-10">10.02.2026</time>
+<a class="anchor" href="#version-1.8.1" id="version-1.8.1"></a>
+
+## Version 1.8.1
+
+This update brings important security improvements, many small bug fixes, and noticeable enhancements in settings, organizations, reports, and the admin area.
+
+### Security & Stability
+
+A critical issue has been fixed that allowed users without edit permissions for user profiles to edit, deactivate, or even delete other users’ profiles. We sincerely apologize for this issue and thank OSIRIS user Jochen for bringing it to our attention [#408](https://github.com/OSIRIS-Solutions/osiris/issues/408).
+
+- Consistent escaping of user input on portal pages (People, Infrastructures, Units, Topics) to better protect against malformed or manipulated content (fixes #404)   
+- Improved error handling for file uploads, including maximum size validation (#394)
+- Upload errors and success messages are now rendered correctly
+- Password reset for guest accounts implemented with token validation
+
+### Design, Settings & UI
+
+- New font options, including a header font, in the design settings (#395)
+- Long links are now automatically shortened in some cases
+- Example button (non-functional) removed
+
+### Organizations & Collaborations
+
+- Frequently used organizations are now also suggested in activities
+- Organizations can now be saved with a URL
+- “Create Organization” button removed (was not functional) (#393)
+- All project collaborations can now be removed (#401)
+- Scope display in the project view reactivated (#407)
+
+### Reports & Editor
+
+- Report Builder:
+    - Blocks can now be duplicated again (#391)
+    - Table aggregations are more robust (strings are handled correctly) (#392)
+    - More styling options (bold, links, images)
+    - Default filter is now empty (improved initial behavior in overviews)
+
+- Quill Editor:
+    - Improved handling of empty lines and multi-line content (#387)
+
+- Validation:
+    - Empty strings and line breaks are now handled correctly (#403)
+
+### API, Rendering & Backend
+
+- New “Smart Render” endpoint to re-render content that has not yet been rendered (e.g., externally added activities)
+- Improved getAuthors logic for dynamic fields and API search (including editors & supervisors) (#399)
+
+### Minor Fixes
+
+- Confirmation dialog when deleting custom fields (#389) and improved related user experience
+- More robust text handling in forms
+- Various small UI and display issues fixed
+
+<time datetime="2026-02-01">01.02.2026</time>
+<a class="anchor" href="#version-1.8.0" id="version-1.8.0"></a>
 
 ## Version 1.8.0
 
@@ -146,7 +202,8 @@ The visualization formerly known as “**Department Network**” has been revise
 
 
 
-**17.12.2025**
+<time datetime="2025-12-17">17.12.2025</time>
+<a class="anchor" href="#version-1.7.1" id="version-1.7.1"></a>
 
 ## Version 1.7.1
 
@@ -169,7 +226,8 @@ BIn this version, bug fixes & Minor Improvements were done:
 
 * Activity history has been improved: two differently empty values (e.g., "" and []) are no longer considered different. Certain values, like Open Access, are now displayed more clearly (icons are no longer used in lists). Boolean values can now also be displayed in the history.
 
-**08.12.2025**
+<time datetime="2025-12-08">08.12.2025</time>
+<a class="anchor" href="#version-1.7.0" id="version-1.7.0"></a>
 
 ## Version 1.7.0
 
@@ -226,7 +284,8 @@ You can access the redesigned search pages by clicking the magnifying glass with
 
 > Note: This is a beta feature. Please test it extensively and provide feedback to help us improve it!
 
-**16.11.2025**
+<time datetime="2025-11-16">16.11.2025</time>
+<a class="anchor" href="#version-1.6.2" id="version-1.6.2"></a>
 
 ## Version 1.6.2
 
@@ -385,7 +444,8 @@ Improved table functionality:
 
 * Portfolio preview now works correctly with HTTPS.
 
-**02.11.2025**
+<time datetime="2025-11-02">02.11.2025</time>
+<a class="anchor" href="#version-1.6.1" id="version-1.6.1"></a>
 
 ## Version 1.6.1
 
@@ -460,7 +520,9 @@ We did some minor Improvements:
 
 * English API documentation for the Portfolio added (#266).
 
-**12.10.2025**
+
+<time datetime="2025-10-12">12.10.2025</time>
+<a class="anchor" href="#version-1.6.0" id="version-1.6.0"></a>
 
 ## Version 1.6.0
 
@@ -678,7 +740,8 @@ This enables more flexible and context-sensitive templates without requiring add
 * The new logic ensures that a custom field explicitly left empty is rendered as empty. However, if the field does not exist at all (e.g., in older activities or if it was added later), the defined default value will be used.
 
 
-**30.09.2025**
+<time datetime="2025-09-30">30.09.2025</time>
+<a class="anchor" href="#version-1.5.2" id="version-1.5.2"></a>
 
 ## Version 1.5.2
 
@@ -748,8 +811,8 @@ This enables more flexible and context-sensitive templates without requiring add
 
 * The cooperation partner map previously did not load if the institute’s latitude and longitude were not set. A default position is now used to prevent this issue.
 
-
-**24.08.2025**
+<time datetime="2025-08-24">24.08.2025</time>
+<a class="anchor" href="#version-1.5.1" id="version-1.5.1"></a>
 
 ## Version 1.5.1
 
@@ -801,7 +864,8 @@ Many thanks to Jochen Knaus for thoroughly testing this feature and providing va
 
 * New tooltip help texts in activity forms
 
-**31.07.2025**
+<time datetime="2025-07-31">31.07.2025</time>
+<a class="anchor" href="#version-1.5.0" id="version-1.5.0"></a>
 
 ## Version 1.5.0
 

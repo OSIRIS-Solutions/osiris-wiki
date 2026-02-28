@@ -52,6 +52,7 @@ nav:
     - Einstellungen: 
       - admins/settings/general.md
       - admins/settings/functions.md
+      - admins/settings/design.md
       - admins/settings/email.md
       - admins/settings/legal-and-links.md
     - Inhalte:

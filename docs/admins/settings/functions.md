@@ -10,16 +10,18 @@ Im Admin-Bereich kannst du unter Einstellungen &#8594 Funktionen die Vielfalt an
 
 Hier findest du eine Auflistung aller zur Verfügung stehenden Funktionen:
 
+## Kernfunktionen
+
 ??? note "[OSIRIS Portfolio](https://wiki.osiris-app.de/topics/portfolio/)"
     Das OSIRIS-Portfolio ist eine öffentlich zugängliche Website, die die Forschungsaktivitäten deines Instituts präsentiert. Wenn du das Portfolio hier aktivierst, kannst du die Sichtbarkeitseinstellungen von Nutzerprofilen, Aktivitäten und mehr verwalten. Außerdem wird die Portfolio-API aktiviert, die nur die ausgewählten Informationen bereitstellt. 
 
-??? note "[Projekte&Anträge](/admins/content/projects/)"
+??? note "[Projekte&Anträge](https://wiki.osiris-app.de/admins/content/projects/)"
      OSIRIS kann komplette Projektlebenszyklen verwalten, von der Antragstellung bis zum Projektbericht. Durch die Aktivierung dieser Funktion kannst du Projekte und Anträge innerhalb von OSIRIS erstellen und verwalten. Es ist möglich, eigene Projekttypen zu definieren und Datenfelder zu verwalten. 
 
 ??? note "[Nagoya-Protocol Compliance](https://wiki.osiris-app.de/topics/nagoya/)"
     Das Nagoya-Protokoll ist ein internationales Abkommen, das darauf abzielt, eine gerechte und ausgewogene Aufteilung der Vorteile aus der Nutzung genetischer Ressourcen sicherzustellen. OSIRIS kann so konfiguriert werden, dass die Einhaltung des Nagoya-Protokolls gewährleistet ist.
 
-??? note "[Lehrveranstaltungen](/users/courses/)"
+??? note "[Lehrveranstaltungen](https://wiki.osiris-app.de/users/courses/)"
      Es ist möglich, Lehrveranstaltungen (z.B. an Universitäten) zentral zu verwalten und sie Aktivitäten wie Vorlesungen oder Seminaren hinzuzufügen. Durch die Aktivierung dieser Funktion kannst du Lehrveranstaltungen innerhalb von OSIRIS erstellen und verwalten. Um Lehrveranstaltungen in Aktivitäten zu verwenden, nutze das Datenfeld für Lehrveranstaltungen. 
 
 ??? note "[Forschungsbereiche](https://wiki.osiris-app.de/users/topics/)"
@@ -37,6 +39,8 @@ Hier findest du eine Auflistung aller zur Verfügung stehenden Funktionen:
 ??? note "[Forschungsreisen](https://wiki.osiris-app.de/admins/travel/)"
      Dieses Add-on benötigt einen Aktivitätstypen, dessen ID *travel* ist und der mindestens die folgenden Datenfelder hat: *status* und *countries* oder *country*. 
 
+## Reporting & Qualität
+
 ??? note "[Quartalsweise Berichterstattung](/users/reporting/quarterly-reporting/)"
      OSIRIS erinnert Nutzende alle 3 Monate daran, ihre Aktivitäten zu aktualisieren und für die Berichterstattung zu übermitteln. Im Controlling-Dashboard gibt es dann eine Übersicht über alle Personen, die ihre Daten noch nicht aktualisiert haben. 
 
@@ -49,11 +53,19 @@ Hier findest du eine Auflistung aller zur Verfügung stehenden Funktionen:
 ??? note "[Entwürfe](https://wiki.osiris-app.de/users/content/drafts/)"
      Durch diese Funktion können Nutzende ihre Aktivitäten als Entwürfe speichern und später vervollständigen.
 
+## Importe & Externe Funktionen
+
 ??? note "Importe"
      Hier kannst du den Import von Nutzerdaten aus Google Scholar und/oder OpenAlex erlauben.
 
-??? note "Profile"
-    Hier kannst du die **Anzeige von den neusten Publikationen** und **neuen Kolleg:innen** auf der Startseite von Nutzenden aktivieren/deaktivieren.
+## Profile & Gäste
 
-??? note "Gäste"
+??? note "Neue Publikationen"
+    Hier kannst du die **Anzeige von den neusten Publikationen**  auf der Startseite von Nutzenden aktivieren/deaktivieren
+    
+??? note "Neue Kolleg:innen"    
+     Hier kannst du die Anzeige von **neuen Kolleg:innen** auf der Startseite von Nutzenden aktivieren/deaktivieren.
+
+??? note "Gästeformulare"
+      <!-- md:beta -->
     Hier kannst du aktivieren, ob Gäste in OSIRIS angemeldet werden können und ob es externe Gästeformulare geben soll, um die Registrierung abzuschließen. 

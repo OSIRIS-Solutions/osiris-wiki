@@ -16,9 +16,6 @@ You will also find the **API-Key** here, or you can generate one to protect acce
 
 On this page you can also determine how the **affiliated authors** are formatted in the activities. The default setting is **bold**.
 
-## Functions
-
-Here you will find many different applications that can be activated or deactivated with one click. For example, you can activate [Quarterly reporting](/users/reporting/quarterly-reporting/), [Projects&applications*](/admins/content/projects/) and [Courses](/users/courses/). If you activate a function, you must then assign the corresponding rights under &#8594 Roles and rights. By default, no rights are initially assigned.
 
 ## Institute
 
@@ -28,12 +25,8 @@ Under the Institute tab, you can make general settings for the institute and spe
 
 OSIRIS allows you to upload the institute's logo here and thus customise the layout.
 
-## Colours
-
-Here you can set institute-specific colours so that OSIRIS is adapted to your institute.
 
 ## Countries
 
-This tab contains a list of all countries with their abbreviations that are used in OSIRIS.
-
+This tab contains a list of all countries along with their abbreviations used in OSIRIS. The list of world countries is provided by  [Stefan Gabos' World Country List](https://github.com/stefangabos/world_countries). Please click the button above to automatically update the list.
 
