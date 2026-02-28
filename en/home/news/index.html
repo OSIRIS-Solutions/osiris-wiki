@@ -27,7 +27,7 @@
       
       
       <link rel="icon" href="../../../assets/images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.3">
     
     
       
@@ -612,6 +612,89 @@
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#version-181" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Version 1.8.1
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Version 1.8.1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#security-stability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Security &amp; Stability
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#design-settings-ui" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Design, Settings &amp; UI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#organizations-collaborations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Organizations &amp; Collaborations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reports-editor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reports &amp; Editor
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-rendering-backend" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        API, Rendering &amp; Backend
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#minor-fixes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Minor Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#version-180" class="md-nav__link">
@@ -2916,6 +2999,34 @@
     
   
     Optional Features
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admins/settings/design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Design settings
   
 
     
@@ -6034,6 +6145,89 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#version-181" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Version 1.8.1
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Version 1.8.1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#security-stability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Security &amp; Stability
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#design-settings-ui" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Design, Settings &amp; UI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#organizations-collaborations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Organizations &amp; Collaborations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reports-editor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reports &amp; Editor
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-rendering-backend" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        API, Rendering &amp; Backend
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#minor-fixes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Minor Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#version-180" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -7023,7 +7217,69 @@
 
 
 <h1 id="news">News</h1>
-<p><strong>01.02.2026</strong></p>
+<p><time datetime="2026-02-10">10.02.2026</time>
+<a class="anchor" href="#version-1.8.1" id="version-1.8.1"></a></p>
+<h2 id="version-181">Version 1.8.1</h2>
+<p>This update brings important security improvements, many small bug fixes, and noticeable enhancements in settings, organizations, reports, and the admin area.</p>
+<h3 id="security-stability">Security &amp; Stability</h3>
+<p>A critical issue has been fixed that allowed users without edit permissions for user profiles to edit, deactivate, or even delete other users’ profiles. We sincerely apologize for this issue and thank OSIRIS user Jochen for bringing it to our attention <a href="https://github.com/OSIRIS-Solutions/osiris/issues/408">#408</a>.</p>
+<ul>
+<li>Consistent escaping of user input on portal pages (People, Infrastructures, Units, Topics) to better protect against malformed or manipulated content (fixes #404)   </li>
+<li>Improved error handling for file uploads, including maximum size validation (#394)</li>
+<li>Upload errors and success messages are now rendered correctly</li>
+<li>Password reset for guest accounts implemented with token validation</li>
+</ul>
+<h3 id="design-settings-ui">Design, Settings &amp; UI</h3>
+<ul>
+<li>New font options, including a header font, in the design settings (#395)</li>
+<li>Long links are now automatically shortened in some cases</li>
+<li>Example button (non-functional) removed</li>
+</ul>
+<h3 id="organizations-collaborations">Organizations &amp; Collaborations</h3>
+<ul>
+<li>Frequently used organizations are now also suggested in activities</li>
+<li>Organizations can now be saved with a URL</li>
+<li>“Create Organization” button removed (was not functional) (#393)</li>
+<li>All project collaborations can now be removed (#401)</li>
+<li>Scope display in the project view reactivated (#407)</li>
+</ul>
+<h3 id="reports-editor">Reports &amp; Editor</h3>
+<ul>
+<li>
+<p>Report Builder:</p>
+<ul>
+<li>Blocks can now be duplicated again (#391)</li>
+<li>Table aggregations are more robust (strings are handled correctly) (#392)</li>
+<li>More styling options (bold, links, images)</li>
+<li>Default filter is now empty (improved initial behavior in overviews)</li>
+</ul>
+</li>
+<li>
+<p>Quill Editor:</p>
+<ul>
+<li>Improved handling of empty lines and multi-line content (#387)</li>
+</ul>
+</li>
+<li>
+<p>Validation:</p>
+<ul>
+<li>Empty strings and line breaks are now handled correctly (#403)</li>
+</ul>
+</li>
+</ul>
+<h3 id="api-rendering-backend">API, Rendering &amp; Backend</h3>
+<ul>
+<li>New “Smart Render” endpoint to re-render content that has not yet been rendered (e.g., externally added activities)</li>
+<li>Improved getAuthors logic for dynamic fields and API search (including editors &amp; supervisors) (#399)</li>
+</ul>
+<h3 id="minor-fixes">Minor Fixes</h3>
+<ul>
+<li>Confirmation dialog when deleting custom fields (#389) and improved related user experience</li>
+<li>More robust text handling in forms</li>
+<li>Various small UI and display issues fixed</li>
+</ul>
+<p><time datetime="2026-02-01">01.02.2026</time>
+<a class="anchor" href="#version-1.8.0" id="version-1.8.0"></a></p>
 <h2 id="version-180">Version 1.8.0</h2>
 <p>There are many new features and improvements, especially in the areas of customization, portfolio, and organizations. Here are the highlights:</p>
 <h3 id="design-customization">Design &amp; Customization</h3>
@@ -7217,7 +7473,8 @@
 <p>The layout of the news page has been improved.</p>
 </li>
 </ul>
-<p><strong>17.12.2025</strong></p>
+<p><time datetime="2025-12-17">17.12.2025</time>
+<a class="anchor" href="#version-1.7.1" id="version-1.7.1"></a></p>
 <h2 id="version-171">Version 1.7.1</h2>
 <p>BIn this version, bug fixes &amp; Minor Improvements were done:</p>
 <ul>
@@ -7246,7 +7503,8 @@
 <p>Activity history has been improved: two differently empty values (e.g., "" and []) are no longer considered different. Certain values, like Open Access, are now displayed more clearly (icons are no longer used in lists). Boolean values can now also be displayed in the history.</p>
 </li>
 </ul>
-<p><strong>08.12.2025</strong></p>
+<p><time datetime="2025-12-08">08.12.2025</time>
+<a class="anchor" href="#version-1.7.0" id="version-1.7.0"></a></p>
 <h2 id="version-170">Version 1.7.0</h2>
 <h3 id="new-module-nagoya-abs-compliance">New Module: Nagoya / ABS Compliance</h3>
 <p>OSIRIS now fully supports the processes related to the Nagoya Protocol and national ABS regulations. The new module helps researchers and ABS officers to document all relevant steps in a traceable, complete, and audit-proof manner.</p>
@@ -7312,7 +7570,8 @@
 <blockquote>
 <p>Note: This is a beta feature. Please test it extensively and provide feedback to help us improve it!</p>
 </blockquote>
-<p><strong>16.11.2025</strong></p>
+<p><time datetime="2025-11-16">16.11.2025</time>
+<a class="anchor" href="#version-1.6.2" id="version-1.6.2"></a></p>
 <h2 id="version-162">Version 1.6.2</h2>
 <p>This update includes numerous enhancements in performance, form logic, LDAP synchronization, journals, events, reports, and UI design. Here are the most important changes:</p>
 <h3 id="improved-infrastructure-statistics">Improved Infrastructure Statistics</h3>
@@ -7526,7 +7785,8 @@
 <p>Portfolio preview now works correctly with HTTPS.</p>
 </li>
 </ul>
-<p><strong>02.11.2025</strong></p>
+<p><time datetime="2025-11-02">02.11.2025</time>
+<a class="anchor" href="#version-1.6.1" id="version-1.6.1"></a></p>
 <h2 id="version-161">Version 1.6.1</h2>
 <p>We did some minor Improvements:</p>
 <ul>
@@ -7632,7 +7892,8 @@
 <ul>
 <li>English API documentation for the Portfolio added (#266).</li>
 </ul>
-<p><strong>12.10.2025</strong></p>
+<p><time datetime="2025-10-12">12.10.2025</time>
+<a class="anchor" href="#version-1.6.0" id="version-1.6.0"></a></p>
 <h2 id="version-160">Version 1.6.0</h2>
 <h3 id="new-quality-workflows-for-activities">New Quality Workflows for Activities</h3>
 <p>OSIRIS 1.6.0 introduces a completely new system for quality assurance and review workflows – flexible, open, and directly integrated into activities:</p>
@@ -7923,7 +8184,8 @@ A new permission has been introduced that allows linking projects to activities 
 <p>The new logic ensures that a custom field explicitly left empty is rendered as empty. However, if the field does not exist at all (e.g., in older activities or if it was added later), the defined default value will be used.</p>
 </li>
 </ul>
-<p><strong>30.09.2025</strong></p>
+<p><time datetime="2025-09-30">30.09.2025</time>
+<a class="anchor" href="#version-1.5.2" id="version-1.5.2"></a></p>
 <h2 id="version-152">Version 1.5.2</h2>
 <ul>
 <li>
@@ -8026,7 +8288,8 @@ A new permission has been introduced that allows linking projects to activities 
 <p>The cooperation partner map previously did not load if the institute’s latitude and longitude were not set. A default position is now used to prevent this issue.</p>
 </li>
 </ul>
-<p><strong>24.08.2025</strong></p>
+<p><time datetime="2025-08-24">24.08.2025</time>
+<a class="anchor" href="#version-1.5.1" id="version-1.5.1"></a></p>
 <h2 id="version-151">Version 1.5.1</h2>
 <h3 id="new-form-builder">New Form Builder</h3>
 <p>With the new form builder, you can now design activity forms even more flexibly:</p>
@@ -8094,7 +8357,8 @@ A new permission has been introduced that allows linking projects to activities 
 <p>New tooltip help texts in activity forms</p>
 </li>
 </ul>
-<p><strong>31.07.2025</strong></p>
+<p><time datetime="2025-07-31">31.07.2025</time>
+<a class="anchor" href="#version-1.5.0" id="version-1.5.0"></a></p>
 <h2 id="version-150">Version 1.5.0</h2>
 <p>In this update, projects have been completely revised and made significantly more flexible. Data fields can now be fully defined for both projects and persons. Custom fields are now also available for projects, persons, and infrastructures.</p>
 <h3 id="improvements-in-the-admin-area">Improvements in the Admin Area</h3>
@@ -8446,7 +8710,7 @@ A new permission has been introduced that allows linking projects to activities 
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="February 12, 2026 19:07:57 UTC">February 12, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="February 28, 2026 15:19:10 UTC">February 28, 2026</span>
   </span>
 
     
