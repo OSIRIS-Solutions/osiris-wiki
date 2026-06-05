@@ -1,5 +1,335 @@
 # News
 
+
+<time datetime="2026-06-01">01.06.2026</time>
+<a class="anchor" href="#version-2.0.0" id="version-2.0.0"></a>
+
+## Version 2.0.0
+
+> This update is all about the user experience!
+> It introduces a new home page, a complete overhaul of the activity page, an improved sidebar, and the Command Palette – a new, quick way to navigate and control the platform. We’ve also integrated a brand-new feature that gives you completely new insights into your research activities: the Research Spectrum.
+
+Here are the key new features:
+
+### <i class="ph-duotone ph-house"></i> New home page
+
+Instead of displaying your own profile, the home page now welcomes all users with a clear dashboard view. Relevant information and actions are grouped here to provide a quick overview of upcoming tasks, events and deadlines, notifications and other important information. The home page is divided into different sections, which can display different content depending on the user’s role and permissions.
+
+The information that was previously displayed in the ‘News’ tab of your own profile can now be found here, but has been structured more clearly and supplemented with further relevant information. For example, upcoming events and deadlines are displayed in a compact timeline, allowing you to see at a glance which deadlines are approaching soon and which are further in the future. Notifications and tasks are also clearly displayed to enable quick navigation. The quick access section includes links from the footer as well as your favourites.
+
+New options for customising the home page, as well as additional widgets, are already in the pipeline.
+
+### <i class="ph-duotone ph-sparkle"></i> New activity view
+
+The activity page has been completely restructured.
+
+Instead of a tabular display, content is now shown in a modular and thematic structure:
+
+- Summary
+- Bibliography
+- Key features (e.g. DOI, Open Access, Impact)
+- Research spectrum
+- Keywords
+- Files
+- Links
+- Contributors (separate tab)
+
+The new structure significantly improves readability, particularly for extensive entries, and clearly separates content-related information from administrative controls.
+
+**Switching between the new and classic views**
+
+The previous activity view remains available.
+
+- Users can switch between the new and classic views at any time.
+- A preferred view can be saved as the default in the user profile.
+- If a view other than the saved one is used, a discreet prompt appears offering the option to set it as the new default view.
+- If no preference has yet been set, OSIRIS loads the new view by default.
+
+This enables a smooth transition without disrupting existing workflows.
+
+**Manage links centrally**
+
+All linked elements (projects, infrastructures, activities) have been consolidated into a single ‘Links’ section.
+
+Management now takes place via a dedicated page:
+
+- Overview of all existing links
+- Add new links without nested dialogues
+- Remove links without deleting the activity
+- Clear display of relationship types between activities
+
+The previous logic involving several separate forms has been standardised.
+
+**Improved Contributors View**
+
+Authors, editors, supervisors and other roles are now displayed in a dedicated section.
+
+- Affiliated individuals are visually highlighted.
+- Very long lists of authors are initially displayed in a condensed format.
+- There are options to display only affiliated individuals or all contributors.
+- A graphical overview complements the tabular display.
+
+### <i class="ph-duotone ph-sign-in"></i> Stay logged in
+
+There is now a checkbox during login that allows users to select that they wish to remain logged in. They will then be automatically logged in for 30 days without having to log in again. This makes it easier to access OSIRIS, particularly for users who access it regularly.
+
+Please note that the “Stay logged in” feature is not available when using Microsoft Single Sign-On (SSO), Keycloak and other external authentication services.
+
+### <i class="ph-duotone ph-command"></i> Command Palette
+
+With version 2.0, OSIRIS gains a centralised, quick-access interface: the Command Palette.
+
+It allows you to search across the navigation and data – without having to navigate through menus.
+
+- Access via keyboard shortcuts (e.g. Ctrl + K / Cmd + K)
+- Alternatively via the new search bar in the navigation bar
+- Searches navigation elements as well as central entities such as:
+- Projects
+- People
+- Organisations
+- Infrastructures
+- Journals
+- Events
+- Takes into account activated features and individual permissions
+- Results are updated in real time
+- Fully keyboard-accessible
+
+The Command Palette replaces the previous search bar and creates a consistent, clearly structured search experience.
+
+> **Note:**
+> Individual activities are deliberately not searched for directly via the Command Palette. Due to the high number of such activities and titles that are not always unambiguous, the existing list and advanced search are better suited for this purpose.
+
+### <i class="ph-duotone ph-sidebar"></i> Improved sidebar
+
+The sidebar has been structurally revised and technically rebuilt. At the same time, radical changes have been deliberately avoided so as not to disrupt existing workflows.
+
+Notifications from the top navigation bar have been integrated into a task area in the sidebar. This means that all relevant information and actions are bundled in one place, and you have consistent access to upcoming tasks, notifications and workflow elements at all times. In general, we have redesigned the sidebar so that it is more clearly structured and easier to navigate, without changing the familiar navigation.
+
+**Favourites in the sidebar**
+
+A new feature is the ability to set individual favourites.
+
+In the user settings, up to five navigation elements can be selected and prioritised. These then appear at the top of the sidebar.
+
+- Customisation without altering the overall structure
+- Sortable via drag & drop
+- Takes roles and permissions into account
+- No duplicates in the navigation
+
+In this way, OSIRIS combines a stable basic structure with personal customisation.
+
+### <i class="ph-duotone ph-megaphone"></i> Announcements
+
+With version 2.0, administrators can create centralised announcements that appear on all users’ new home page.
+
+Announcements are suitable for, for example:
+
+- Notifications about maintenance work
+- Information about new features
+- Organisational announcements
+
+Features at a glance:
+
+- Free-text announcements in German and English
+- Optional expiry date
+- Manual activation and deactivation
+- Automatic hiding after expiry
+
+Users can temporarily close announcements or hide them permanently.
+If the content of an announcement is updated, it reappears – ensuring that important changes are not overlooked.
+
+This provides a simple, centralised way to inform all users directly within OSIRIS.
+
+### <i class="ph-duotone ph-megaphone"></i> New News
+
+In addition to announcements, there is another way to communicate important information centrally: news. Unlike announcements, which appear on the home page and of which there can only be one at a time (and which may expire after a certain period), news items have their own section and can also be displayed in a news feed on the home page. They are suitable, for example, for:
+- Information on new features
+- Organisational notices
+- Achievements and milestones
+- Notices regarding events or deadlines
+- Research worthy of special mention
+- And much more
+
+News items can be divided into different categories, which are managed in the vocabulary. They can also be marked as public or internal to control their visibility in the Portfolio API.
+
+
+### <i class="ph-duotone ph-flag"></i> Deadlines
+
+In addition to existing events, deadlines can now also be created centrally. This allows important deadlines to be managed centrally and made visible on the home page to relevant users – for example, submission deadlines for funding applications, evaluations or internal reports.
+
+- Deadlines are not displayed on the home page as a long list, but as a **compact timeline**. This makes it possible to see at a glance which deadlines are approaching soon and which are further in the future. The closer a deadline gets, the more its colour changes from blue/turquoise towards red.
+- Deadlines can be made visible specifically **to certain roles**. For example, deadlines can be displayed only to editors, project managers or specific internal groups. If **no role is selected**, the deadline is visible to all users.
+- In addition to the title and date, deadlines can contain additional information:
+  - **Description** using a rich text editor
+  - **Related links** (e.g. to the submission platform or documentation)
+  - **Types** for categorising the deadline; these can be managed as usual in the **Vocabulary**
+
+The Deadlines feature can be enabled or disabled in the **Feature Settings**. Please note that new permissions are also required to create and delete deadlines (Create Deadlines, Delete Deadlines), which are not assigned by default.
+
+### <i class="ph-duotone ph-feather"></i> Sophie – The Guardian of your data
+
+With version 2.0, OSIRIS gets a new look:
+Sophie guides you through the system.
+
+Sophie, the little Egyptian owl, appears wherever guidance is needed:
+
+- When tables are empty, she encourages users to fill them with content
+- When filtered searches return no results, she provides feedback
+- During maintenance work, she provides updates on the current status
+- When error messages appear (e.g. 404, 403, 500), she explains the situation
+- When actions are successful or confirmed, she offers congratulations or confirmation
+
+Sophie is more than just a mascot – she is an integral part of the user experience, making OSIRIS more human and accessible.
+
+### <i class="ph-duotone ph-lightbulb"></i> Research Spectrum
+
+The new Research Spectrum is based on OpenAlex’s thematic classifications.
+
+For each publication, up to three of the most dominant thematic areas are automatically identified. These are incorporated into OSIRIS in a structured format and presented hierarchically.
+
+- Four levels of analysis: Domain, Field, Subfield and Topic
+- Colour-coded domains for clear visual orientation
+- Filters by time period and domain
+- Relative strength: shows the structural prominence of a topic compared to the strongest topic within the current selection
+- Dedicated detail pages for each topic featuring:
+  - Publication trends
+  - People involved
+  - Organisational units involved
+  - Complete list of publications
+- There are also two powerful visualisation tools:
+  - A sunburst diagram that shows the hierarchical structure of the topics and visualises the relative distribution of publications within the topic areas. Here, you can also filter by time period and explore the various levels interactively.
+  - An evolution chart that shows how the thematic structure of the publications changes over time. Only the 20 most frequent topics are shown to maintain clarity. Here, the visualisation is implemented as a stacked area chart to illustrate the development of topic shares over time. There is also a heatmap showing the prominence of individual topics in different years.
+
+The research spectrum can be calculated for various entities:
+
+- the entire institute
+- organisational units
+- research areas
+- individuals
+- projects
+- external organisations
+
+The topics are structured hierarchically:
+
+- Domain (4 overarching areas)
+- Field
+- Subfield
+- Focus area
+
+Tabs can be used to select the level at which the analysis should be carried out.
+This enables both a broad strategic classification and a fine-grained analysis.
+
+The research spectrum is based entirely on externally calculated topic clusters from OpenAlex.
+
+**Important points:**
+
+- A maximum of three dominant topics are considered per publication.
+- The assignment is carried out algorithmically.
+- This is not an evaluation matrix.
+- Citation counts depend on the age and field of the publication.
+- All relative values depend on the filter applied (e.g. time period).
+
+A detailed info box is available on the overview page.
+
+### <i class="ph-duotone ph-prohibit"></i> Exclude activities from reporting
+
+A new feature has been introduced for authorised users:
+
+Activities can now be excluded from reporting without deleting them.
+
+- The activity remains visible and editable.
+- However, it no longer appears in automatically generated reports.
+- The status is only visible to authorised users; the activity continues to be displayed in all lists and searches.
+- There is a filter in the advanced search to find or exclude activities with this status. However, this filter does not need to be set manually for reports, as it is applied automatically.
+- The decision can be reversed at any time.
+
+This feature enables more nuanced control without data loss. A new permission has also been introduced for this purpose; you can find it in Roles and Permissions under "Metrics and Reports".
+
+### <i class="ph-duotone ph-chart-bar"></i> Improved reports and exports
+
+The report editor has been revamped once again and the user experience has been improved.
+
+- The blocks containing activity lists and activities with an additional field have been removed. They are still supported for backwards compatibility, but new reports cannot be created using these blocks.
+- Instead, there is now a new “List” block. This combines both previous blocks and allows you to display not only activities, but also events, projects and requests. You can also optionally display as many additional fields as you like.
+- A new ‘Table of Contents’ block allows you to automatically generate a table of contents that reflects the structure of a report. Please note that you may be prompted to update the table of contents when opening the Word document.
+- List and table blocks can now be named and are automatically collapsed after saving. This improves clarity, particularly in lengthy reports, and allows you to focus on the most important content. The blocks can be expanded again at any time to edit or view the content.
+- Text blocks now display a preview of the formatted text and can also be edited by clicking on the block. This improves clarity and allows you to view the content directly in context without having to open it first. Headings are thus much easier to recognise, which makes navigation within the report easier.
+- Lists can now also be sorted alphabetically.
+- Several bugs have been fixed, e.g. that blocks could not be copied, that only a maximum of 2 years could appear in the report, and that the filter could not handle OR conditions.
+
+Another new feature is the ability to **customise the layout of reports and other exports**. To do this, go to the admin area under "Reports & Tools" > "Export Design", where you can adjust fonts, font sizes, colours and other design elements for the various export formats (Word, Excel, PDF).
+
+### <i class="ph-duotone ph-sliders"></i> The new admin interface
+
+The admin interface has been completely redesigned and now offers a significantly improved overview and user-friendliness.
+
+- All settings are now organised on a single, clearly laid-out page, rather than being spread across multiple subpages. Many settings have been restructured and grouped into more logical categories. In addition, the visual design of many settings has been harmonised to create a consistent user experience.
+- Vocabulary management has also been completely overhauled and now offers a significantly improved overview. The overview page has been improved and is now searchable. Vocabularies are now edited on individual subpages.
+
+### <i class="ph-duotone ph-key"></i> Keycloak integration
+
+It is now possible to integrate Keycloak and other generic services as external authentication services. This allows users to log in with their Keycloak credentials and enables OSIRIS to be seamlessly integrated into existing identity management systems. The integration has been implemented in addition to existing login options to ensure maximum flexibility. Please note that the ‘Stay logged in’ function is not available when using Keycloak and other external authentication services.
+
+### <i class="ph-duotone ph-quotes"></i> Integration of citation counts
+
+In addition to the number of publications, citation data (OpenAlex) is now also integrated. The average citation counts per publication are displayed on the focus pages. For publications with citation data, the number of citations is shown, together with a timestamp of the last update.
+
+### <i class="ph-duotone ph-bell"></i> Notifications, messages and text
+
+In version 2.0, numerous texts, messages and confirmation dialogues have been revised:
+
+- Error and success messages have been made more precise and easier to understand
+- Confirmation dialogues have been revised to clarify the consequences of an action
+- The page no longer reloads when a dialogue is dismissed
+- More neutral wording (e.g. ‘relevant department’ instead of fixed terms)
+- Consistent visual states for error, success, blank and maintenance
+
+The aim was to make OSIRIS calmer, clearer and more consistent in many small ways – without changing existing workflows.
+
+### <i class="ph-duotone ph-shield"></i> Consistency in permissions and error handling
+
+As part of the overhaul of error messages, the permission logic in OSIRIS was thoroughly reviewed and standardised.
+
+In certain areas, it was previously possible to access content that should not actually be visible due to roles or responsibilities. These inconsistencies have been systematically resolved.
+
+- Standardised checking of access rights
+- Clear distinction between “not found” and “no authorisation”
+- Structured cancellation of actions with consistent error pages
+- Correct HTTP status codes in the background
+- Consistent visual representation of all cancellation scenarios
+- Migrating and re-rendering data is no longer possible for all users, but only for admins. For other roles, only an error message featuring our owl Sophie is displayed when migration is required.
+
+This overhaul ensures greater security, clarity and consistency in the user experience – without altering existing permissions or working methods.
+
+### Further improvements
+
+- The `Updated` and `Updated_by` fields are back! The latest updates and the people responsible are now displayed again in the activity log and can be filtered once more. During the migration, the data was restored from the history, so this information is also available again for older activities.
+- The email settings have been slightly revised and the backend has been completely restructured. The settings from the user interface are now correctly implemented in the MailSender function, and a few misleading phrases in the help texts have been amended.
+- ‘Aria Labels’ have been added to all icons to improve accessibility.
+- The accessibility options have been moved to the ‘Help’ section in the footer to ensure a consistent user experience
+- The colour of links has been standardised and is no longer dependent on the institution’s primary colour, to improve readability. The link colour can be customised in the design settings.
+- Affiliated individuals are now more visually highlighted in the author list to make them easier to identify.
+- An issue has been resolved whereby activities added via other methods were causing error messages in tables.
+- An issue with journal metrics has been resolved, meaning they no longer take an excessive amount of time to load during updates.
+- When a user account is deactivated, all ongoing activities with that user as the sole participant are now correctly identified and terminated to avoid inconsistencies. Participation in ongoing projects is also terminated.
+- Year filter in the download function has been expanded: now more flexible, ranging from 1900 up to and including the following year.
+- Display of units on activity pages has been improved — no more errors if a field is missing.
+- DOI and PubMed lookups are now case-insensitive, making them more robust when spellings vary.
+- Version checks with `version_compare` improved to avoid version string mismatches.
+- DOI values are always stored in lowercase for consistent data records.
+- Smart Render CRON route has been ensured to always load the correct initialisation.
+- CSS variable for affiliation class is always quoted correctly (valid CSS).
+- Template field checks in the backend have been slightly relaxed for greater flexibility.
+- Image data in the portfolio is no longer encoded twice — more efficient display.
+- New /activity-fields API endpoint added — provides all activity fields for frontend use cases.
+- The Teaching API now always returns a string ID and resolves associated organisation names, for clear API responses.
+- It is now possible to change the order of research interests for organisational units. The same applies to the associated activities.
+
+Plus numerous other minor improvements, bug fixes and optimisations that make the overall user experience smoother, clearer and more consistent.
+----
+
+
+
 <time datetime="2026-02-10">10.02.2026</time>
 <a class="anchor" href="#version-1.8.1" id="version-1.8.1"></a>
 
