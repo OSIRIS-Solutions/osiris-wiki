@@ -132,6 +132,9 @@ nav:
       - users/reporting/report-templates.md
       - users/reporting/statistics.md
       - users/reporting/quarterly-reporting.md  
+  - API:
+    - api/index.md
+    - api/activities.md
   - FAQs:
     - FAQs/index.md
   - Blog:
