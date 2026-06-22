@@ -5,3 +5,4 @@ site/
 .venv
 src
 .venv/*
+.vscode/*
