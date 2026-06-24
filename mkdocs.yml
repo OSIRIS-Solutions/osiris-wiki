@@ -111,7 +111,7 @@ nav:
     - Aktivitäten: 
       - users/activities/index.md
       - users/activities/expanded_view.md
-      - users/activities/advanced-search.md
+      # - users/activities/advanced-search.md
       - users/activities/journals.md
       - users/activities/pivot.md
       - users/activities/cart.md
