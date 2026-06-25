@@ -1,25 +1,25 @@
-# name: Deploy MkDocs site to GitHub Pages
+name: Deploy MkDocs site to GitHub Pages
 
-# on:
-#   push:
-#     branches:
-#       - main  # oder master – je nach deinem Branch
+on:
+  push:
+    branches:
+      - main  # oder master – je nach deinem Branch
 
-# jobs:
-#   deploy:
-#     runs-on: ubuntu-latest
-#     steps:
-#       - uses: actions/checkout@v4
-#         with:
-#           fetch-depth: 0  # Holen Sie den gesamten Verlauf, um die Git-Revision-Daten zu erhalten
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Holen Sie den gesamten Verlauf, um die Git-Revision-Daten zu erhalten
 
-#       - name: Setup Python
-#         uses: actions/setup-python@v5
-#         with:
-#           python-version: '3.x'
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
 
-#       - name: Install dependencies
-#         run: pip install mkdocs mkdocs-material mkdocs-git-revision-date-localized-plugin mkdocs-git-authors-plugin "mkdocs-material[imaging]"  mkdocs-awesome-nav mkdocs-static-i18n mike
+      - name: Install dependencies
+        run: pip install mkdocs mkdocs-material mkdocs-git-revision-date-localized-plugin mkdocs-git-authors-plugin "mkdocs-material[imaging]"  mkdocs-awesome-nav mkdocs-static-i18n mike
 
-#       - name: Build and deploy
-#         run: mike gh-deploy --force
+      - name: Build and deploy
+        run: mike deploy --push latest
