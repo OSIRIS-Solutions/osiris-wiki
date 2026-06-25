@@ -147,7 +147,7 @@ theme:
     text: Rubik
   language: de
   features:
-    - navigation.instant
+    # - navigation.instant
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.path

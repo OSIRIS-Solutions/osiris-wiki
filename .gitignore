@@ -4,5 +4,4 @@ site/
 *.pyc
 .venv
 src
-.venv
 .vscode
