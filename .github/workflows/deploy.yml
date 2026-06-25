@@ -22,4 +22,6 @@ jobs:
         run: pip install mkdocs mkdocs-material mkdocs-git-revision-date-localized-plugin mkdocs-git-authors-plugin "mkdocs-material[imaging]"  mkdocs-awesome-nav mkdocs-static-i18n mike
 
       - name: Build and deploy
-        run: mike deploy --push latest
+        run: |
+          mike deploy latest
+          mike set-default latest --push
