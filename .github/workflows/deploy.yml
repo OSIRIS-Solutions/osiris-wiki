@@ -1,9 +1,16 @@
-name: Deploy MkDocs site to GitHub Pages
+name: Deploy MkDocs site with Mike
 
 on:
   push:
-    branches:
-      - main  # oder master – je nach deinem Branch
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: deploy-docs
+  cancel-in-progress: false
 
 jobs:
   deploy:
@@ -11,18 +18,24 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # Holen Sie den gesamten Verlauf, um die Git-Revision-Daten zu erhalten
+          fetch-depth: 0
 
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
+          python-version: "3.x"
 
       - name: Install dependencies
-        run: pip install mkdocs mkdocs-material mkdocs-git-revision-date-localized-plugin mkdocs-git-authors-plugin "mkdocs-material[imaging]"  mkdocs-awesome-nav mkdocs-static-i18n mike
+        run: |
+          pip install mkdocs mkdocs-material \
+            mkdocs-git-revision-date-localized-plugin \
+            mkdocs-git-authors-plugin \
+            "mkdocs-material[imaging]" \
+            mkdocs-awesome-nav mkdocs-static-i18n mike
 
-      - name: Build and deploy
+      - name: Deploy docs
         run: |
           git config user.name "OSIRIS-BOT"
           git config user.email "osiris-bot@osiris-solutions.de"
-          mike deploy --push 2.0 latest
+          mike deploy --push --update-aliases 2.0 latest
+          mike set-default --push latest
