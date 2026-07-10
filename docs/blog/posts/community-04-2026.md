@@ -62,6 +62,6 @@ Sophie ist mehr als ein Maskottchen – sie ist ein integraler Bestandteil der N
 
 Neben all diesen Änderungen bringt das neue Update noch viele weitere Neuerungen mit sich, die das Erlebnis mit OSIRIS zu arbeiten noch einfacher und angenehmer machen. 
 
-Weitere Details zu den Änderungen findet ihr in der [Präsentation](/assets/documents/OSIRIS 2.0.pptx) und unter [Neuigkeiten](https://github.com/OSIRIS-Solutions/osiris/blob/beta/news.md) auf Github.
+Weitere Details zu den Änderungen findet ihr in der [Präsentation](../../assets/documents/OSIRIS 2.0.pptx) und unter [Neuigkeiten](https://github.com/OSIRIS-Solutions/osiris/blob/beta/news.md) auf Github.
 
 :date: Das nächste OSIRIS Community Event wird am **18.06.2026 um 13 Uhr** stattfinden. 

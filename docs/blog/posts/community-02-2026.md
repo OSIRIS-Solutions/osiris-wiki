@@ -60,6 +60,6 @@ Die wichtigsten Punkte:
 
 * Aktivitäten können jetzt miteinander verknüpft werden. Dadurch können Beziehungen wie zum Beispiel "ist eine Übersetzung von" - "ist eine erweiterte Version von" dargestellt werden
 
-Weitere Details und Änderungen findet ihr in der [Präsentation](/assets/documents/OSIRIS 1.8.pptx), sowie unter [Neuigkeiten](https://wiki.osiris-app.de/home/news/) im Wiki.
+Weitere Details und Änderungen findet ihr in der [Präsentation](../../assets/documents/OSIRIS 1.8.pptx), sowie unter [Neuigkeiten](https://wiki.osiris-app.de/home/news/) im Wiki.
 
 :date: Das nächste OSIRIS Community Event wird am **16.04.2026 um 13 Uhr** stattfinden. 

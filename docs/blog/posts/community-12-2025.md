@@ -18,7 +18,7 @@ Das neue Update von OSIRIS ist da und bringt eine neue, von der Community gewün
 
 ### Nagoya Compliance Modul
 
-Die neue Funktion **Nagoya Compliance** wurde in Zusammenarbeit mit der Abteilung Science Policy & Internationalisierung der DSMZ entwickelt. Compliance Prozesse können jetzt komplett in OSIRIS abgebildet und verwaltet werden. Detailliertere Infos dazu findet ihr in dieser [Präsentation](/assets/documents/OSIRIS-Nagoya-Module.pdf).
+Die neue Funktion **Nagoya Compliance** wurde in Zusammenarbeit mit der Abteilung Science Policy & Internationalisierung der DSMZ entwickelt. Compliance Prozesse können jetzt komplett in OSIRIS abgebildet und verwaltet werden. Detailliertere Infos dazu findet ihr in dieser [Präsentation](../../assets/documents/OSIRIS-Nagoya-Module.pdf).
 
 ### Statistiken und Logos für Infrastrukturen jetzt individualisierbar
 
@@ -42,6 +42,6 @@ Das [Wiki](https://wiki.osiris-app.de/en/) steht euch jetzt auch in englischer S
 
 Wir würden neuen Nutzenden in Zukunft gerne Stories von euch - der erfahrenen OSIRIS-Community - zur Verfügung stellen, um Barrieren aus dem Weg zu räumen und den ersten Kontakt etwas zu vereinfachen. Wenn ihr Interesse daran habt, ein Interview über eure bisherigen Erfahrungen mit OSIRIS zu führen, könnt ihr euch gerne [melden](mailto:martinique.frentrup@osiris-solutions.de). 
 
-Weitere Details und Änderungen findet ihr in der [Präsentation](/assets/documents/OSIRIS 1.7.pptx).
+Weitere Details und Änderungen findet ihr in der [Präsentation](../../assets/documents/OSIRIS 1.7.pptx).
 
 :date: Das nächste OSIRIS Community Event wird am **04.02.2026 um 13 Uhr** stattfinden. 
