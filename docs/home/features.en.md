@@ -23,7 +23,7 @@ The free demo is available [**here**](https://www.osiris-demo.de/user/login).
 - OSIRIS offers an add-on that can be used to display research on an external site (portfolio).
 - OSIRIS is being actively developed further, not least because it is the newest member of the CRIS family.
 
-![Untitled](/assets/screenshots/activity.png)
+![Untitled](../assets/screenshots/activity.png)
 
 ---
 
@@ -31,7 +31,7 @@ The free demo is available [**here**](https://www.osiris-demo.de/user/login).
 
 Here you will find an overview of the entities that can be managed in OSIRIS and how they are linked to each other. These entities form the basis for recording, managing and analysing research activities.
 
-Entities Overview](/assets/images/entities.png "Entities Overview")
+Entities Overview](../assets/images/entities.png "Entities Overview")
 
 
 - Persons involved**
@@ -52,7 +52,7 @@ Entities Overview](/assets/images/entities.png "Entities Overview")
     - Software & Data
     - Prices
   
-    The "**Add activity**" page is the centrepiece of OSIRIS. Researchers can add their data manually or automatically via DOI or Pubmed import. Both the categories (publications, posters, etc.) and the activity types (journal article, non-refereed, etc.) can be customised, as can the description text (in orange) and the form fields. More on this in the Customisability section](/assets/screenshots/add-activity.png)
+    The "**Add activity**" page is the centrepiece of OSIRIS. Researchers can add their data manually or automatically via DOI or Pubmed import. Both the categories (publications, posters, etc.) and the activity types (journal article, non-refereed, etc.) can be customised, as can the description text (in orange) and the form fields. More on this in the Customisability section](../assets/screenshots/add-activity.png)
     /// caption
     The "**Add activity**" page is the centrepiece of OSIRIS. Researchers can add their data manually or automatically via DOI or Pubmed import. Both the categories (publications, posters, etc.) and the activity types (journal article, non-refereed, etc.) can be customised, as can the description text (in orange) and the form fields. More on this in the Customisability section.
     ///
@@ -85,17 +85,17 @@ Entities Overview](/assets/images/entities.png "Entities Overview")
     - Statistics (from `v1.4.2`)
     - Applications (from `v1.5.0`)
 
-![Overview of a project proposal in OSIRIS](/assets/screenshots/proposal.png)
+![Overview of a project proposal in OSIRIS](../assets/screenshots/proposal.png)
 /// caption
 Overview of a project application in OSIRIS. The different phases, finances and documents can be seen here.
 ///
 
-![Overview of a project in OSIRIS. In addition to the details shown, you can also display co-operation partners and linked activities](/assets/screenshots/project.png)
+![Overview of a project in OSIRIS. In addition to the details shown, you can also display co-operation partners and linked activities](../assets/screenshots/project.png)
 /// caption
 Overview of a project in OSIRIS. In addition to the details shown, you can also display co-operation partners and linked activities.
 ///
 
-![Cooperation partners of a project. On the left is the list of partners, on the right is an overview map. Your own institute is automatically entered there as long as it is configured correctly](/assets/screenshots/project-map.png)
+![Cooperation partners of a project. On the left is the list of partners, on the right is an overview map. Your own institute is automatically entered there as long as it is configured correctly](../assets/screenshots/project-map.png)
 /// caption
 Cooperation partners of a project. On the left is the list of partners, on the right is an overview map. Your own institute is automatically entered there as long as it is configured correctly.
 ///
@@ -113,7 +113,7 @@ Cooperation partners of a project. On the left is the list of partners, on the r
     
     OSIRIS records activities and organises them by quarter and year, ideal for various reporting queries. There is also the "My Year" page, which prompts researchers once a quarter to review their past activities, add to them if necessary and finally confirm that everything is in order. This in turn is displayed in the reporting dashboard.
 
-    ![Untitled](/assets/screenshots/my-year.png)
+    ![Untitled](../assets/screenshots/my-year.png)
     /// caption
     The "My year" page with the option of releasing the selected quarter. Here, researchers can check their activities and confirm that everything is in order.
     ///
@@ -173,12 +173,12 @@ With **Notes** and **File upload**, OSIRIS can also be used to manage your own r
 
 A reward system also comes into play with **Coins** and **Achievements**. Some researchers love to collect coins and are always happy to see new achievements in their profile. If you don't like it, you don't have to switch it on, as this feature is deactivated by default**. You also have the option of activating it only for yourself if you don't want others to see your coins. Incidentally, coins are generated dynamically and are not saved in the database. So if they are switched off, they cannot be viewed by anyone, not even by admins.
 
-The personal profile page offers many functions and always gives you an overview of your own research (/assets/screenshots/profile.png).
+The personal profile page offers many functions and always gives you an overview of your own research (../assets/screenshots/profile.png).
 ///caption
 The personal profile page offers many functions and always gives you an overview of your own research.
 ///
 
-![Many additional visualisations give you an overview of your own research. ](/assets/screenshots/wordcoud.png)
+![Many additional visualisations give you an overview of your own research. ](../assets/screenshots/wordcoud.png)
 ///caption
 Many additional visualisations give you an overview of your own research.
 ///
@@ -199,7 +199,7 @@ Many additional visualisations give you an overview of your own research.
 
 How reporters can use OSIRIS is actually already described very well in the section Reporting functions. It is only worth mentioning here that in addition to the classic reporting dashboards, OSIRIS also offers a variety of other visualisations, e.g. for individual persons, organisational units, open access and collaborations:
 
-![Untitled](/assets/screenshots/visualisations.png)
+![Untitled](../assets/screenshots/visualisations.png)
 
 ### External visibility of our research - OSIRIS for institutes
 
@@ -211,14 +211,14 @@ One of the most important aspects of a CRIS is its external presentation. How do
 
 Portfolio is an addon to OSIRIS that builds its own website based on the data in your OSIRIS. You can see it as an additional website that presents your research to the public. Portfolio is currently under development in cooperation with the Leibniz Institute DSMZ and is scheduled to go online at the DSMZ later this year. In the screenshot below you can see that the design of Portfolio is not based on that of OSIRIS, but can be customised to your own website.
 
-![Portfolio is an OSIRIS add-on that allows you to prepare your research information for the external presentation of the institute](/assets/images/PORTfolio.png)
+![Portfolio is an OSIRIS add-on that allows you to prepare your research information for the external presentation of the institute](../assets/images/PORTfolio.png)
 /// caption
 Portfolio is an OSIRIS add-on that allows you to prepare your research information for the external presentation of the institute.
 ///
 
-![Untitled](/assets/screenshots/portfolio-profile.png)
+![Untitled](../assets/screenshots/portfolio-profile.png)
 
-With the OSIRIS portfolio it will be possible to integrate ready-made widgets into your website or to generate a complete portfolio page. What you see here is just the prototype](/assets/screenshots/portfolio-publications.png)
+With the OSIRIS portfolio it will be possible to integrate ready-made widgets into your website or to generate a complete portfolio page. What you see here is just the prototype](../assets/screenshots/portfolio-publications.png)
 /// caption
 With the OSIRIS portfolio it will be possible to integrate ready-made widgets into your website or to generate a complete portfolio page. What you see here is just the prototype.
 ///
@@ -239,7 +239,7 @@ Several roles can be assigned to one person. As long as one of the roles has the
 
 A user can transfer the complete maintenance of their profile to another person. This person could be an assistant, secretary or project manager, for example, and then has full access to the profile.
 
-![The roles and rights management in the admin dashboard (new view from `v1.5.0`)](/assets/screenshots//roles-rights.png)
+![The roles and rights management in the admin dashboard (new view from `v1.5.0`)](../assets/screenshots//roles-rights.png)
 /// caption
 The roles and rights management in the admin dashboard (new view from `v1.5.0`)
 ///
@@ -258,7 +258,7 @@ OSIRIS is based on the premise of **avoiding errors during data entry** rather t
 
 In the screenshot below, for example, you can also see how **journals are added in a standardised way**. When you enter a journal, a widget opens. At first, only the upper part is shown, in which all journals already available in OSIRIS are displayed. If the journal you are looking for is not there, you can repeat the search in the online catalogue (OpenAlex) and possible journals will be suggested based on the search. Clicking on a tick not only adds the journal to the publication, but also saves all other information about the journal. As there is no free text at this point, journals cannot be entered incorrectly. The same applies to courses, which can also be managed centrally and associated with activities.
 
-![Widget that opens when you click on the data field shown above. Here you can search for existing journals in OSIRIS and in the online catalogue. This avoids errors](/assets/screenshots/add-journal.png)
+![Widget that opens when you click on the data field shown above. Here you can search for existing journals in OSIRIS and in the online catalogue. This avoids errors](../assets/screenshots/add-journal.png)
 /// caption
 Widget that opens when you click on the data field shown above. Here you can search for existing journals in OSIRIS and in the online catalogue. This avoids errors.
 ///
@@ -288,21 +288,21 @@ There is a whole range of **notifications** in OSIRIS. Users are notified when:
 - ... there is a new update to let you know what has changed.
 - ... a quarter has passed and the activities can now be checked and confirmed.
 
-![Commentary functions in the form for editing an activity](/assets/screenshots/commentary.png)
+![Commentary functions in the form for editing an activity](../assets/screenshots/commentary.png)
 ///caption
 Commentary functions in the form for editing an activity
 ///
 
 ---
 
-![Notifications in the personal profile page for new notifications](/assets/screenshots/notifications.png){width=300}
+![Notifications in the personal profile page for new notifications](../assets/screenshots/notifications.png){width=300}
 ///caption
 Notes on new notifications on the personal profile page
 ///
 
 ---
 
-![Notification of a user about an edit](/assets/screenshots/issues.png)
+![Notification of a user about an edit](../assets/screenshots/issues.png)
 ///caption
 Notification of a user about an edit
 ///
@@ -381,7 +381,7 @@ There are several search functions in OSIRIS. Probably the most frequently used 
 - By time period
 - Other (Online ahead of print)
 
-![An overview of the simple search in OSIRIS](/assets/screenshots/all-activities.png)
+![An overview of the simple search in OSIRIS](../assets/screenshots/all-activities.png)
 ///caption
 Screenshot of the simple search on the "All activities" page
 ///
@@ -396,12 +396,12 @@ You can also save the filter string and the query generates a unique link that y
 
 `Update v1.4.0`: In the advanced search you can now select all **columns** that are saved in the background. These are then displayed in the interface and can be exported as Excel.
 
-![An overview of the advanced search in OSIRIS](/assets/screenshots/advanced-search.png)
+![An overview of the advanced search in OSIRIS](../assets/screenshots/advanced-search.png)
 ///caption
 An overview of the advanced search in OSIRIS
 ///
 
-As of v1.4.0, columns can be selected for display in the search. The interface supports you in this and shows which columns you use for which activity types and which are not filled at all (greyed out)](/assets/screenshots/advanced-search-columns.png)
+As of v1.4.0, columns can be selected for display in the search. The interface supports you in this and shows which columns you use for which activity types and which are not filled at all (greyed out)](../assets/screenshots/advanced-search-columns.png)
 ///caption
 As of v1.4.0, columns can be selected for display in the search. The interface supports you in this and shows which columns you use for which activity types and which are not filled at all (greyed out).
 ///
@@ -424,12 +424,12 @@ In addition to the start year of OSIRIS, the institute can of course also be cus
 
 With `v1.3.0` organisational units (OU) have been completely restructured. Previously there were only "departments", now you can theoretically map the entire organisation chart (see screenshot). A person can be a member of several OUs and an OU can be managed by several people. This gives you many options for aggregating and visualising data. If you do not need all this, it is sufficient to add all employees to the institution only.
 
-A chord diagram shows the collaboration of a department (in this case BID) with the other departments. Publications from 5 years are taken into account](/assets/screenshots/collaboration-chart.png)
+A chord diagram shows the collaboration of a department (in this case BID) with the other departments. Publications from 5 years are taken into account](../assets/screenshots/collaboration-chart.png)
 ///caption
 A chord diagram shows the collaboration between one department (in this case BID) and the other departments. Publications from five years are taken into account.
 ///
 
-A section of the OSIRIS organisation chart view. Working groups can be expanded and collapsed as required](/assets/screenshots/organigram.png)
+A section of the OSIRIS organisation chart view. Working groups can be expanded and collapsed as required](../assets/screenshots/organigram.png)
 ///caption
 A section of the OSIRIS organisation chart view. Workgroups can be expanded and collapsed as required.
 ///
@@ -458,7 +458,7 @@ Finally, you can **deactivate** a type. Of course, types can also be deleted, bu
 
 `Update v1.5.0`: You can now also customise existing vocabularies, such as the access types of infrastructures, the list of possible sponsors of projects or the event type. You can find this setting in the admin area under Contents &#8594 Vocabulary.
 
-An example of how an activity can be configured (/assets/screenshots/configure-activity.jpeg)
+An example of how an activity can be configured (../assets/screenshots/configure-activity.jpeg)
 
 ### Projects
 

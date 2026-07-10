@@ -9,14 +9,14 @@ tags:
 
 There are various interfaces in OSIRIS that make it possible to import and export data. These interfaces are important for integrating data from other systems or for providing data for external applications. Here is an overview of the most important standard interfaces:
 
-![Interfaces overview](/assets/images/interfaces.png "Interfaces overview")
+![Interfaces overview](../assets/images/interfaces.png "Interfaces overview")
 
 
 ## Import an activity using PID
 
 Two PIDs (Persistent Identifier) are currently supported: DOI (Digital Object Identifier) and Pubmed ID. These PIDs can be used to import publications and other research activities into OSIRIS. The import is done on the "Add activity" page by entering the PID in the search bar. OSIRIS then searches for the corresponding activity and imports the data automatically. The following happens in the background:
 
-![Importing an activity using PID](/assets/images/import_pid.png "Importing an activity using PID")
+![Importing an activity using PID](../assets/images/import_pid.png "Importing an activity using PID")
 
 ### Import via DOI
 
@@ -34,4 +34,4 @@ Two PIDs (Persistent Identifier) are currently supported: DOI (Digital Object Id
 
 On 11 June 2025, Julia gave a presentation on the interfaces and standards in OSIRIS. This presentation gives an overview of the different interfaces and how they work and also shows standards available at that time, such as the (KDSF 2.0)[kdsf.md].
 
-[Click here for the presentation!](/assets/documents/OSIRIS Interfaces.pdf){.md-button}
+[Click here for the presentation!](../assets/documents/OSIRIS Interfaces.pdf){.md-button}
