@@ -23,7 +23,7 @@ Zur kostenlosen Demo geht es [**hier**](https://www.osiris-demo.de/user/login).
 - OSIRIS bietet ein Addon an, mit denen die Forschung auf einer externen Seite dargestellt werden kann (Portfolio).
 - OSIRIS wird sehr aktiv weiterentwickelt, nicht zuletzt weil es auch das jüngste Mitglied der CRIS-Familie ist.
 
-![Untitled](/assets/screenshots/activity.png)
+![Untitled](/docs/assets/screenshots/activity.png)
 
 ---
 
