@@ -132,6 +132,8 @@ Ein Feld mit dem Wert `-` gilt als leer
 
 ## 4. Datumsformatierung `{date:format}`
 
+<!-- md:version 2.1.0 --> 
+
 Datumsfelder können mit einem individuellen Format ausgegeben werden. Dazu wird nach dem Feldnamen, getrennt durch einen Doppelpunkt, das gewünschte Datumsformat angegeben.
 
 Verfügbare Datumsfelder:
