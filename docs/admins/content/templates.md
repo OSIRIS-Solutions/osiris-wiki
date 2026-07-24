@@ -130,7 +130,98 @@ Ein Feld mit dem Wert `-` gilt als leer
 → Kondition schlägt fehl
 
 
-## 4. Automatische Bereinigung
+## 4. Datumsformatierung `{date:format}`
+
+Datumsfelder können mit einem individuellen Format ausgegeben werden. Dazu wird nach dem Feldnamen, getrennt durch einen Doppelpunkt, das gewünschte Datumsformat angegeben.
+
+Verfügbare Datumsfelder:
+
+- `date`: Datum einer Aktivität
+- `start`: Startdatum eines Zeitraums
+- `end`: Enddatum eines Zeitraums
+
+### Häufig verwendete Formatzeichen
+
+| Zeichen | Bedeutung | Beispiel |
+|---|---|---|
+| `Y` | Vierstelliges Jahr | `2026` |
+| `y` | Zweistelliges Jahr | `26` |
+| `F` | Vollständiger Monatsname | `July` |
+| `M` | Abgekürzter Monatsname | `Jul` |
+| `m` | Monat mit führender Null | `07` |
+| `n` | Monat ohne führende Null | `7` |
+| `d` | Tag mit führender Null | `04` |
+| `j` | Tag ohne führende Null | `4` |
+
+Weitere Formatzeichen sind in der [PHP-Dokumentation zur Datumsformatierung](https://www.php.net/manual/en/datetime.format.php) beschrieben.
+
+### Beispiele
+
+ISO-Datum:
+
+```
+{date:Y-m-d}
+```
+
+Ergebnis:
+
+```
+2026-07-24
+```
+
+Datum nach APA-Konvention:
+
+```
+({date:Y}, {date:F j})
+```
+
+Ergebnis:
+
+```
+(2026, July 24)
+```
+
+### Datumsbereiche
+
+Start- und Enddatum können unabhängig voneinander formatiert werden:
+
+```
+{start:Y, F j}–{end:Y, F j}
+```
+
+Ergebnis:
+
+```
+2026, July 24–2026, July 26
+```
+
+#### Optionales Enddatum
+
+Bei einem normalen Datumsbereich bedeutet ein fehlendes Enddatum, dass die Aktivität nur am Startdatum stattgefunden hat. Das Enddatum und der Gedankenstrich können deshalb in einen konditionalen Block gesetzt werden:
+
+```
+{start:Y, F j}%end –{end:Y, F j}%
+```
+
+Ist kein Enddatum vorhanden, wird nur das Startdatum ausgegeben.
+
+#### Laufender Datumsbereich
+
+Bei einem laufenden Datumsbereich bedeutet ein fehlendes Enddatum, dass die Aktivität noch andauert. Über einen Literal-Fallback kann dafür ein beliebiger Text eingesetzt werden:
+
+```
+{start:Y, F j}–{end:Y, F j|"Today"}
+```
+
+Für ein deutschsprachiges Template kann die Schreibweise selbst festgelegt werden:
+
+```
+{start:j. F Y}–{end:j. F Y|"heute"}
+```
+
+Dadurch kann für jedes Template individuell entschieden werden, welche Sprache und Großschreibung verwendet werden soll.
+
+## 5. Automatische Bereinigung
 
 Nach der Ersetzung führt OSIRIS eine automatische Format-Bereinigung durch:
 
@@ -152,12 +243,12 @@ Müller J. Titel. 2024.
 Kein händisches Abfangen nötig ✅
 
 
-## 5. Die Sprache der Templates
+## 6. Die Sprache der Templates
 
 Einige Felder können in mehreren Sprachen ausgegeben werden, z. B. der Monat oder die Art der Abschlussarbeit. Standardmäßig wird die Sprache der OSIRIS-Benutzeroberfläche verwendet, was allerdings bei unterschiedlichen Nutzern zu uneinheitlichen Zitaten führen kann. Deshalb empfehlen wirdt, die Sprache der Templates explizit festzulegen. Dies kannst du in den allgemeinen Einstellungen tun. 
 
 
-## 6. Grenzen der aktuellen Syntax
+## 7. Grenzen der aktuellen Syntax
 
 Nicht unterstützt wird bisher:
 - Verschachtelte Konditionen
