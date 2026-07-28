@@ -231,9 +231,6 @@ extra:
       und um die Effektivität unserer Dokumentation zu messen und um festzustellen, ob die
       finden, wonach sie suchen. Mit Ihrer Zustimmung helfen Sie uns, unsere
       unsere Dokumentation zu verbessern.
-  version:
-    provider: mike
-    alias: true
 markdown_extensions:
   - admonition
   - def_list

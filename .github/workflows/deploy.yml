@@ -1,4 +1,4 @@
-name: Deploy MkDocs site with Mike
+name: Deploy MkDocs site to GitHub Pages
 
 on:
   push:
@@ -31,11 +31,10 @@ jobs:
             mkdocs-git-revision-date-localized-plugin \
             mkdocs-git-authors-plugin \
             "mkdocs-material[imaging]" \
-            mkdocs-awesome-nav mkdocs-static-i18n mike
+            mkdocs-awesome-nav mkdocs-static-i18n
 
       - name: Deploy docs
         run: |
           git config user.name "OSIRIS-BOT"
           git config user.email "osiris-bot@osiris-solutions.de"
-          mike deploy --push --update-aliases 2.0 latest
-          mike set-default --push latest
+          mkdocs gh-deploy --force
