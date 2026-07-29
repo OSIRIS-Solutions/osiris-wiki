@@ -23,7 +23,14 @@ nav:
     - topics/nagoya.md
     - topics/organizational-structure.md
     - topics/kdsf.md
-    - topics/works_council.md
+    - Betriebsvereinbarung:
+      - topics/works_council/index.md
+      - topics/works_council/preparation.md
+      - topics/works_council/decisions.md
+      - topics/works_council/bv-core.md
+      - topics/works_council/VVT.md
+      - topics/works_council/final.md
+    # - topics/works_council.md
   - Technik:
     - technical/index.md
     - Installation:
@@ -238,6 +245,8 @@ markdown_extensions:
   - admonition
   - def_list
   - attr_list
+  - footnotes
+  - tables
   - md_in_html
   - pymdownx.highlight:
       linenums: true
