@@ -17,7 +17,7 @@ Du kannst dich aktiv an der Weiterentwicklung von OSIRIS beteiligen, indem du Fe
 
 Alle zwei Monate findet unser **Community Meeting** statt, bei dem die Entwickler einen Einblick in die aktuellen Entwicklungen und Neuigkeiten geben und wir aktuelle Themen besprechen. Du kannst dich einmalig für die Meetings anmelden und bekommst dann regelmäßig Einladungen zu den Meetings. 
 
-[Hier geht's zur Anmeldung!](https://forms.office.com/e/RS8Nay2CLw){ .md-button }
+[Hier geht's zur Anmeldung!](https://ec285048.sibforms.com/v2/serve/MUIFAM2fuDlnjUjkXjlBG_qxCzQIWx4vRSi_cYp8u5Z28kpFQhcmkv0ErzDX4OSMVv8rFUanolvUe_2pXZLB6LbNtl7v29mhZ7u7a5SpN1utJYAofvKPW5h_GHs9xRHu_LbClXxuKW-DJ6j9uR1ygRJVoFAOeiI0TiX3gPOJoEjBEU7Nlc3-JhSjSsSQyrwT0dhCijWvnz9rkB9QNA==){ .md-button }
 
 Falls etwas nicht richtig funktioniert, du einen Fehler gefunden hast oder dir ein neues Feature wünscht, kannst du dies direkt auf GitHub melden. Wir freuen uns über jeden Bug Report, der uns hilft, OSIRIS zu verbessern.
 
