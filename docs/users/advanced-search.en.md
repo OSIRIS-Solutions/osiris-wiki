@@ -74,6 +74,16 @@ Next to the "Select column" function you will find the **Aggregate** button. You
 Here you aggregate the search shown above by "Year". The table shows you the number of entries per year.
 ///
 
+<!-- md:version 2.1.0 -->
+
+### Sums and Means of Numeric Fields
+
+In addition to the aggregations previously available in Advanced Search, which only return counts of matching records, version 2.1.0 now allows you to calculate sums and means for numeric fields. This makes it possible, for example, to calculate average citation factors, total SWS, or the sum of custom fields such as APC costs.
+
+![Aggregations-Mittelwert](screenshots_search/aggregation_mittelwert_en.png)
+///caption
+When you select an aggregation argument, two additional fields appear, allowing you to calculate the mean, median, or sum of a numeric field.
+///
 
 ## Copy search and continue using it
 

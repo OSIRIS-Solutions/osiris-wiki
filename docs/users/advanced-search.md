@@ -75,6 +75,17 @@ Neben der "Spalte auswählen" Funktion findest du den **Aggregieren** Button. Mi
 Hier aggregierst du die oben gezeigte Suche nach "Jahr". Die Tabelle zeigt dir die Anzahl der Einträge pro Jahr an.
 ///
 
+<!-- md:version 2.1.0 -->
+
+### Summen und Mittelwerte numerischer Felder
+
+Neben den bisher verfügbaren Aggregationen in der erweiterten Suche, die ausschließlich Zählungen von Treffern zurückgeben, können ab Version 2.1.0 Summen und Mittelwerte für numerische Felder berechnet werden. Damit lassen sich beispielsweise die durschschnittlichen Cite-Faktoren, aufsummierte SWS oder die Summe von benutzerdefinierten Feldern wie APC-Kosten berechnen.
+
+![Aggregations-Mittelwert](screenshots_search/aggregation_mittelwert.png)
+///caption
+Wenn du ein Argument zur Aggregation auswählst, öffnen sich zwei neue Felder, mit denen du den Mittelwert, Median oder die Summe eines numerischen Feldes berechnen lassen kannst.
+///
+
 
 ## Suche kopieren und weiter verwenden
 
