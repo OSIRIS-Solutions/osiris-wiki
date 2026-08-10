@@ -9,9 +9,6 @@ tags:
 
 OSIRIS bietet eine einfache Möglichkeit, E-Mails für bestimmte Ereignisse zu versenden, wie z.B. Benachrichtigungen über neue Projekte oder Projektänderungen. 
 
-!!! info "Hinweis"
-    E-mails werden zurzeit für Benachrichtigungen zu Projekten und für den E-Mail-Digest verwendet. Weitere Benachrichtigungen werden in zukünftigen Versionen folgen.
-
 Es gibt grundsätzlich zwei Möglichkeiten, E-Mails zu versenden: über einen SMTP-Server oder über den lokalen Mailserver. Wir empfehlen die Verwendung eines SMTP-Servers, da dieser in der Regel zuverlässiger ist und mehr Funktionen bietet. Für Testzwecke könnt ihr aber auch den lokalen Mailserver verwenden, der in der Regel bereits auf dem Server installiert ist.
 
 ## Lokaler Mailserver

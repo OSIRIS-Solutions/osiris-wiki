@@ -18,7 +18,7 @@ Various categories of projects can be created and existing ones edited under **C
 
 In the admin area, you can create different categories of projects. This can be particularly useful if there are other types of projects at your institute in addition to third-party funded projects that you would like to record with OSIRIS.  
 
-![New project](screenshots/project_new.png)
+![New project](screenshots/projekt_neu.png)
 ///caption
 Button to create a new project category
 ///
@@ -32,7 +32,7 @@ As with [Activity categories](/admins/content/activities/#create-new-category), 
 
 In addition to the mandatory information, you can make many different settings for your new category.
 
-![Create project](screenshots/projects_ertsellen.png)
+![Create project](screenshots/projekte_ertsellen.png)
 ///caption
 Here you have the option of making various settings for your new project category
 ///
@@ -44,14 +44,14 @@ Here you have the option of making various settings for your new project categor
 
 Once you have saved your settings, you will be redirected to the phases of your project. The number of different phases depends on whether you have activated the requests function. If this is the case, your project will be divided into four phases. If you deactivate the function, you will only be shown one project phase.
 
-![Project phases](screenshots/project_phases.png)
+![Project phases](screenshots/projekt_phasen.png)
 ///caption
 The four phases of your project with application function
 ///
 
 OSIRIS has defined mandatory fields for each phase that cannot be deactivated. Depending on the phase, you have additional fields to choose from, which you can add to the form to be completed. You can also make these mandatory fields by double-clicking on them - they will then be marked with a red star.
 
-![Example Projects Approved](screenshots/projects_approved.png)
+![Example Projects Approved](screenshots/projekte_bewilligt.png)
 ///caption
 Selection of fields that you can add to the form, here for example the **Short title** field in yellow (optional) and **Full title** in red (mandatory field)
 ///
@@ -68,7 +68,7 @@ You will find many of the predefined fields in the forms to be filled in as drop
 
 There are a variety of rights for **projects and applications** that you can assign individually to user roles. A distinction is made between rights for applications and projects, as well as for specially created entries or all existing entries.
 
-![Projects rights](screenshots/projects_rights.png)
+![Projects rights](screenshots/projekte_rechte.png)
 ///caption
 Overview of the rights for projects and applications that you can assign to the individual user roles in OSIRIS
 ///

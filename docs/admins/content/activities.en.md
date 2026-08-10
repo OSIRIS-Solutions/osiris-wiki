@@ -14,12 +14,12 @@ By default, you will find the following categories and their types in OSIRIS:
 - Publications
 ??? example "Types of publications"
     - Journal Article
-    - Non-refereed
+    - Non-Refereed
     - Book
     - Book Chapter
     - Preprint
     - Thesis
-    - Further publications
+    - Other publications
 
 - Lectures
 ??? example "Types of lectures"
@@ -27,9 +27,9 @@ By default, you will find the following categories and their types in OSIRIS:
 
 - Reviews & Editorials
 ??? example "Types of reviews & editorials"
-    - Peer review
-    - Editorship
-    - Review of a thesis
+    - Peer-Review
+    - Editorial board
+    - Thesis review
     - Other review
 
 - Poster
@@ -38,9 +38,9 @@ By default, you will find the following categories and their types in OSIRIS:
 
 - Students & guests
 ??? example "Types of students & guests"
-    - students
+    - Students
     - Theses
-    - guests
+    - Guests
 
 - Teaching
 ??? example "Types of teaching"
@@ -61,7 +61,7 @@ The categories are marked with a colour, which is also reflected in the list of 
 
 You can add a new category under Contents &#8594 Activities.
 
-![Add category](screenshots/create_category.png)
+![Add category](screenshots/kategorie_erstellen_en.png)
 ///caption
 Page to create a new category
 ///
@@ -69,16 +69,20 @@ Page to create a new category
 First you have to choose a unique ID. By clicking on *must be unique* you will see a list of all IDs assigned. By clicking on *icon* you can choose a suitable icon for your new category by simply copying the corresponding text into the field.   
 On this page, you can also set which roles in OSIRIS can see the activities entered in this category. This is useful for confidential entries, for example. Every user can generate entries for this category and see their own entries, but not the entries of other users in this category. For example, if patents are entered in OSIRIS at your institute, each person should perhaps be able to enter a patent and continue to see this in their own history, but other patent entries will not be displayed.
 
+<!-- md:version 1.6.0 -->
+
+If you have created a workflow for the activity types in this category, you can select it here. The workflow will then be applied to all activities in this category.
+
 ## Create new type
 
 You can add new types to categories. Here, too, you need a unique ID and can choose an icon. The colour of the type adapts to the category. You can also change the colour spontaneously while creating the new type. The description you have chosen will be displayed to users as an info box when creating this type of activity and should describe which entries this template is suitable for.
 
-![create type](screenshots/types_create.png)
+![create type](screenshots/typen_erstellen.png)
 ///caption
 Page to create a new type of activity
 ///
 ---
-![Create type info field](screenshots/types_create_info_field.png)
+![Create type info field](screenshots/typen_erstellen_infofeld.png)
 ///caption
 The description you have selected will then be displayed in the activity template from
 ///
@@ -86,7 +90,7 @@ The description you have selected will then be displayed in the activity templat
 
 Be aware that if you select *This type of activity should be visible in OSIRIS Portfolio*, all activities entered under this type will be visible to the outside world via the website. Once you have saved, your newly created type of activity should appear in the category listing and will be available for any user to make an entry.
 
-![example](screenshots/new_types_example.png)
+![example](screenshots/neue_typen_beispiel.png)
 ///caption
 The newly created category **Volunteering** with the newly created types **Works council** and **Job and family**.
 ///
@@ -98,9 +102,9 @@ The newly created category **Volunteering** with the newly created types **Works
 
  [:simple-youtube: To the video](https://youtu.be/I1ZT2vlRFeA){.md-button}
 
-With the new form builder, you can design the templates for activities even more flexibly. You can access the builder by clicking on *edit* next to the data fields.
+With the new form builder, you can design the templates for activities even more flexibly. You can access the builder by clicking on *edit* next to the data fields. This is only possible once you have already created the activity types.
 
-![Data fields](screenshots/Data fields.png)
+![Data fields](screenshots/Datenfelder.png)
 ///caption
 Clicking on edit takes you to the form builder.
 ///
@@ -119,12 +123,12 @@ You can always display your created form by clicking on *Preview* - remember to 
 At the top right you will see a button that allows you to load existing forms from OSIRIS and customise them according to your requirements.  
 :warning: Your existing form will be overwritten by selecting a template - but only once you save.
 
-![Builder Poster extended](screenshots/builder_poster_extended.png)
+![Builder Poster extended](screenshots/builder_poster_erweitert.png)
 ///caption
 After selecting the **Poster** template, additional fields were added to it to document a presentation. The layout elements were used and headings, descriptions and dividing lines were added so that the two pieces of information could be easily distinguished from each other.
 ///
 
-![Builder Poster extended preview](screenshots/builder_poster_extended_preview.png)
+![Builder Poster extended preview](screenshots/builder_poster_erweitert_vorschau.png)
 ///caption
 Once everything has been saved, you can view a preview of your form.
 ///
@@ -136,10 +140,10 @@ Each field can be edited, marked as a mandatory field or deleted with a single c
 
 ---
 
-![Builder location Help Preview](screenshots/builder_help_location_preview.png)
+![Builder location Help Preview](screenshots/builder_help_location_vorschau.png)
 ///caption
 At the top you can see the **Properties** field for the "location" data field. Here you can add a help text that users will see when filling out the form, as shown in the image below.  
 ///
 
-The properties fields differ depending on the data field, but always contain the **delete** button. You can also customise the width of the data field here.  
+The properties fields differ depending on the data field, but always contain the **delete** button. You can also customize the width of the data field here.  
 Once you have saved all changes, users can find the modified template directly in the activities.

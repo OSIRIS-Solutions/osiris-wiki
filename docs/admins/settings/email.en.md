@@ -9,9 +9,6 @@ tags:
 
 OSIRIS offers an easy way to send emails for certain events, such as notifications about new projects or project changes.
 
-!!! info "Note"
-    Emails are currently used for project notifications and for the email digest. Further notifications will follow in future versions.
-
 There are basically two ways to send emails: via an SMTP server or via the local mail server. We recommend using an SMTP server as this is generally more reliable and offers more functions. For test purposes, however, you can also use the local mail server, which is usually already installed on the server.
 
 ## Local mail server

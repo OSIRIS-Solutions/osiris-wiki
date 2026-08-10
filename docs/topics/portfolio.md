@@ -1,5 +1,5 @@
 ---
-status: draft
+status: false
 tags:
   - Portfolio
   - Website
@@ -9,18 +9,15 @@ tags:
 # Portfolio
 
 
-!!! warning "Seite im Aufbau"
-    Diese Seite befindet sich noch im Aufbau. Wir bitten um Geduld.
-
 ## Was ist OSIRIS Portfolio?
 
 OSIRIS Portfolio ist eine Erweiterung, mit der ihr eure Forschung nach außen darstellen könnt. Portfolio bietet eigene Seiten für jede eurer Organisationseinheiten, vom Institut über die Abteilungen und Gruppen bis hin zu einzelnen Personen, die mit Portfolio eine wunderschöne Profilseite bekommen. Präsentiert werden dabei all eure Errungenschaften, von Publikationen über Drittmittelprojekte bis hin zu Forschungsaktivitäten.
 
 ## Wie Portfolio aufgebaut ist
 
-Im Hintergrund greift Portfolio auf eure OSIRIS-Instanz zu, d.h. ihr stellt die Informationen dar, die ihr in OSIRIS verwaltet. Aus Sicherheitsgründen liefert OSIRIS dabei nur das aus, was nach außen sichtbar sein soll. In OSIRIS könnt ihr direkt einstellen, was ihr sehen wollt und was nicht. Portfolio zeigt dann nur das, was ihr freigegeben habt.
+Im Hintergrund greift Portfolio auf eure OSIRIS-Instanz zu, d.h. ihr stellt die Informationen dar, die ihr in OSIRIS verwaltet. Aus Sicherheitsgründen liefert OSIRIS dabei nur das aus, was nach außen sichtbar sein soll. In OSIRIS könnt ihr direkt einstellen, was ihr sehen wollt und was nicht. Portfolio zeigt dann nur das, was ihr freigegeben habt. Du kannst [hier](https://wiki.osiris-app.de/admins/settings/portfolio_settings) weitere Infos zu den Einstellungen finden.
 
-Im Zentrum von OSIRIS stehen die **Organisationseinheiten** eurer Einrichtung. Diese werden ebenfalls in OSIRIS abgebildet und gepflegt. Auf der Startseite zeigt Portfolio das gesamte Institut mit allen Organisationseinheiten. Nutzende Personen können sich dabei durch eure Organisationsstruktur klicken. Portfolio zeigt die zugehörigen Personen, Projekte, Publikationen und Forschungsaktivitäten, aber auch Forschungsinteressen können direkt in OSIRIS gepflegt werden. Hier seht ihr einen Screenshot von OSIRIS Portfolio:
+Im Zentrum von OSIRIS stehen die [Organisationseinheiten](https://wiki.osiris-app.de/users/units/) eurer Einrichtung. Diese werden ebenfalls in OSIRIS abgebildet und gepflegt. Auf der Startseite zeigt Portfolio das gesamte Institut mit allen Organisationseinheiten. Nutzende Personen können sich dabei durch eure Organisationsstruktur klicken. Portfolio zeigt die zugehörigen Personen, Projekte, Publikationen und Forschungsaktivitäten, aber auch Forschungsinteressen können direkt in OSIRIS gepflegt werden. Hier seht ihr einen Screenshot von OSIRIS Portfolio:
 
 ![OSIRIS Portfolio](../assets/images/overview_portfolio.png)
 ///caption

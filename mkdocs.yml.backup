@@ -1,0 +1,268 @@
+site_name: OSIRIS Wiki
+site_description: OSIRIS ist ein intuitives und offenes Forschungsinformationssystem.
+site_url: https://wiki.osiris-app.de
+repo_url: https://github.com/OSIRIS-Solutions/osiris-wiki
+edit_uri: edit/main/docs/
+repo_name: OSIRIS-Solutions/osiris
+nav:
+  - Überblick: 
+    - index.md
+    - home/about.md
+    - home/features.md
+    - home/news.md
+    - home/contact.md
+    - home/tags.md
+    - conventions.md
+  - Themen:
+    - topics/community.md
+    - topics/interfaces.md
+    - topics/portfolio.md
+    - topics/impact.md
+    - topics/glossary.md
+    - topics/implementations.md
+    - topics/nagoya.md
+    - topics/organizational-structure.md
+    - topics/kdsf.md
+    - topics/works_council.md
+  - Technik:
+    - technical/index.md
+    - Installation:
+      - technical/install/linux.md
+      - technical/install/docker.md
+      - technical/install/windows.md
+      - technical/troubleshooting.md
+    - Konfiguration:
+      - technical/configure/index.md
+      - technical/configure/database.md
+      - technical/configure/workflows.md
+      - technical/configure/email.md
+    - Nutzerverwaltung:
+      - technical/user-management/index.md
+      - technical/user-management/ldap.md
+      - technical/user-management/auth.md
+      - technical/user-management/oauth2.md
+    - technical/backup.md
+    - technical/data.md
+    - technical/migrate.md
+    - technical/update.md
+    - technical/beta.md
+    - technical/test-system.md
+  - Admins:
+    - admins/index.md
+    - System: 
+      - admins/settings/general.md
+      - admins/settings/functions.md
+      - admins/settings/announcements.md
+      - admins/settings/email.md
+      - admins/settings/portfolio_settings.md
+
+    - Darstellung & Branding:
+      - admins/design/logo.md
+      - admins/design/institute.md
+      - admins/design/design.md  
+      - admins/design/legal-and-links.md
+
+    - Inhalte:
+      - admins/content/index.md
+      - admins/content/activities.md
+      - admins/content/projects.md
+      - admins/content/custom-fields.md
+      - admins/content/vocabulary.md
+      - admins/content/keywords.md
+      - admins/content/templates.md
+      - admins/content/tools.md
+      - admins/content/infrastructures.md
+    - Workflows:
+      - admins/workflows/workflows.md
+      - admins/workflows/create_workflow.md
+      - admins/workflows/linked_activities.md
+      - admins/workflows/workflow_handling.md
+
+    - Benutzer & Rollen:
+      - admins/roles/persons.md
+      - admins/roles/roles.md
+      - admins/roles/important-rights.md
+    - admins/reporting/index.md 
+    - Nutzerverwaltung: 
+      - admins/users/index.md
+      - admins/users/reset-password.md
+    - admins/travel.md
+    - admins/events.md
+  - Nutzer:
+    - users/index.md
+    - Profil:
+      - users/profile/start.md
+      - users/profile/scientist_view.md
+      - users/profile/my_activities.md
+      - users/profile/quarter_view.md
+      - users/profile/claim_activity.md
+      - users/profile/maildigest.md
+    - Inhalte:
+      - users/content/create_content.md
+      - users/content/edit_content.md
+      - users/content/drafts.md
+      - users/content/keywords.md
+      - users/content/expanded_functions.md
+    - users/advanced-search.md
+    - users/issues.md
+    - users/topics.md
+    - users/workflows.md
+    - users/events.md
+    - Organisationseinheiten:
+      - users/units/index.md
+      - users/units/new_unit.md
+      - users/units/edit_units.md
+      - users/units/connections.md
+    - users/courses.md
+    - users/organisations.md
+    - Aktivitäten: 
+      - users/activities/index.md
+      - users/activities/expanded_view.md
+      - users/activities/advanced-search.md
+      - users/activities/journals.md
+      - users/activities/pivot.md
+      - users/activities/cart.md
+    - Projekte:
+      - users/projects/index.md
+      - users/projects/new_project.md
+      - users/projects/manage_projects.md
+      - users/projects/project_links.md
+      - users/projects/search.md
+      - users/projects/statistics.md
+    - Personen:
+      - users/people/index.md
+      - users/people/guests.md
+    - Infrastrukturen:
+      - users/infrastructures/index.md
+    - Berichte:
+      - users/reporting/index.md
+      - users/reporting/report-templates.md
+      - users/reporting/statistics.md
+      - users/reporting/quarterly-reporting.md  
+  - FAQs:
+    - FAQs/index.md
+  - Blog:
+    - blog/index.md
+theme:
+  name: material
+  logo: assets/logo_white.png
+  favicon: assets/images/favicon.ico
+  font:
+    text: Rubik
+  language: de
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.path
+    # - navigation.expand
+    # - navigation.footer
+    - content.tabs.link
+    - content.action.edit
+    - content.action.view
+  custom_dir: overrides
+    # - navigation.indexes
+hooks:
+  - overrides/hooks/shortcodes.py
+  - overrides/hooks/patch_i18n.py
+plugins:
+  - blog:
+      blog_toc: true
+  - i18n:
+      docs_structure: suffix
+      languages:
+        - locale: de
+          default: true
+          name: Deutsch
+          build: true
+        - locale: en
+          name: English
+          build: true
+          nav_translations:
+            Überblick: Overview
+            Themen: Topics
+            Technik: Technical
+            Installation: Installation
+            Konfiguration: Configuration
+            Nutzerverwaltung: User Management
+            Admins: Admins
+            System: System
+            Inhalte: Content
+            Benutzer & Rollen: Users & Roles
+            Nutzer: Users
+            Profil: Profile
+            Organisationseinheiten: Organizational Units
+            Aktivitäten: Activities
+            Projekte: Projects
+            Personen: Persons
+            Infrastrukturen: Infrastructures
+            Berichte: Reports
+            FAQs: FAQ
+            Blog: Blog
+  - privacy
+  - search
+  - meta
+  - git-revision-date-localized:
+      enable_creation_date: true
+  # - git-authors
+  - tags
+  # - social
+  # - awesome-nav
+extra_css:
+  - stylesheets/extra.css
+extra:
+  social:
+    - icon: fontawesome/brands/github 
+      link: https://github.com/OSIRIS-Solutions/osiris
+    - icon: fontawesome/solid/globe
+      link: https://osiris-app.de/
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/osiris-solutions-gmbh
+  status:
+    new: Neu hinzugefügt
+    draft: Im Aufbau
+  # alternate:
+  #   - name: English
+  #     link: /en/ 
+  #     lang: en
+  #   - name: Deutsch
+  #     link: /de/
+  #     lang: de
+  consent:
+    title: Cookie consent
+    description: >- 
+      Wir verwenden Cookies, um Ihre wiederholten Besuche und Präferenzen zu erkennen, sowie
+      und um die Effektivität unserer Dokumentation zu messen und um festzustellen, ob die
+      finden, wonach sie suchen. Mit Ihrer Zustimmung helfen Sie uns, unsere
+      unsere Dokumentation zu verbessern.
+markdown_extensions:
+  - admonition
+  - def_list
+  - attr_list
+  - md_in_html
+  - pymdownx.highlight:
+      linenums: true
+      use_pygments: true
+      # line_spans: __span
+      pygments_lang_class: true
+      # auto_title: true
+      extend_pygments_lang:
+        - name: php
+          lang: php
+          options:
+            startinline: true
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.details
+  - pymdownx.blocks.caption
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg

@@ -9,14 +9,14 @@ tags:
 
 Once you have set up your workflow and applied it to activities, the people concerned will be shown the number of activities that require an action from them under **Reviews** in the menu on the left.
 
-![Checks](screenshots_workflows/display_checks.png)
+![Checks](screenshots_workflows/anzeige_überprüfungen.png)
 ///caption
 The menu on the left shows you whether you are currently assigned activities in a workflow that you need to check
 ///
 
 In our example, the first step has been assigned to the **Scientist** role, limited to activities from their own organisational unit. Accordingly, not all publications to be reviewed are displayed to the person for review, but only those that are assigned to the unit.
 
-![My reviews](screenshots_workflows/my_reviews.png)
+![My reviews](screenshots_workflows/meine_überprüfungen.png)
 ///caption
 Display of the reviews
 ///
@@ -27,24 +27,24 @@ Under each activity, you can see the progress of the workflow based on the compl
 
 If the person clicks on the red cross and leaves a comment, they have rejected the current step of the workflow. This is displayed on the one hand in the list of all activities via an icon below the quarterly information and on the other hand in the status bar in the extended activity view.
 
-![Display list rejection](screenshots_workflows/rejection_display.png)
+![Display list rejection](screenshots_workflows/zurückweisung_anzeige.png)
 
 ---
-![Display rejection activity](screenshots_workflows/rejection_activity.png)
+![Display rejection activity](screenshots_workflows/zurückweisung_aktivität.png)
 ///caption
 Display of the rejection in the list of all activities on the one hand and in the extended activity view on the other - the comment is also displayed here for the authors of the activity
 ///
 
 In addition, all authors of this activity receive a warning message:
 
-![warning_rejection](screenshots_workflows/warning_rejection.png)
+![warning_rejection](screenshots_workflows/warnung_zurückweisung.png)
 ///caption
 Warning of rejection with comment for the authors
 ///
 
 Authors can reply directly to the comment here and return the step to the person responsible. However, they can also edit the activity and then return it to the process. The person again receives a message under Reviews and can release the activity or look at it again in detail. In the extended view of the activity, you can click on the status bar to see a detailed view of the process.
 
-![Detailed view](screenshots_workflows/detail_view_review.png)
+![Detailed view](screenshots_workflows/detailanzeige_überprüfung.png)
 ///caption
 Page with the current status of the workflow and the option to confirm the assigned step. The comments submitted for this test step are also displayed here
 ///
@@ -66,11 +66,11 @@ As the next two steps have been given the same indexes, they run in parallel and
 
 Once all steps have been confirmed, the activity is marked as **released**.
 
-![List verified](screenshots_workflows/workflow_accepted_list.png)
+![List verified](screenshots_workflows/workflow_akzeptiert_liste.png)
 
 ---
 
-![View verified](screenshots_workflows/wokflow_accepted_view.png)
+![View verified](screenshots_workflows/wokflow_akzeptiert_ansicht.png)
 
 ///caption
 Display of an approved activity in the list of all activities and in the extended activity view
@@ -83,7 +83,7 @@ For individual activities, click on the status bar in the expanded view. A red b
 
  To perform the action for multiple activities, go to **Content &#8594 Quality workflows** in the admin area, where you will find **Edit applied workflows** in the lower area.
 
-![Edit workflows](screenshots_workflows/workflow_reset.png)
+![Edit workflows](screenshots_workflows/workflow_zurücksetzen.png)
 ///caption
 In this area, you can reset or remove workflows for all activities or selected categories
 ///

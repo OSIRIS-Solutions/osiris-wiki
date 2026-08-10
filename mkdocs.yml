@@ -56,38 +56,54 @@ nav:
     - technical/test-system.md
   - Admins:
     - admins/index.md
-    - Einstellungen: 
+    - System: 
       - admins/settings/general.md
       - admins/settings/functions.md
-      - admins/settings/design.md
+      - admins/settings/announcements.md
       - admins/settings/email.md
-      - admins/settings/legal-and-links.md
-    - Inhalte:
+      - admins/settings/portfolio_settings.md
+    - Darstellung & Branding:
+      - admins/design/logo.md
+      - admins/design/institution.md
+      - admins/design/design.md  
+      - admins/design/legal-and-links.md
+    - Benutzer & Rollen:
+      - admins/user_roles/persons.md
+      - admins/user_roles/roles_rights.md
+      - admins/user_roles/distribute_roles.md
+      - admins/user_roles/roles.md
+      - admins/user_roles/important-rights.md
+      - admins/user_roles/manage_authentication.md
+      - admins/user_roles/create_new_user.md
+    - Datenmodell & Inhalte:
       - admins/content/index.md
       - admins/content/activities.md
       - admins/content/projects.md
-      - admins/content/persons.md
-      - admins/content/custom-fields.md
-      - admins/content/vocabulary.md
-      - admins/content/keywords.md
-      - admins/content/templates.md
-      - admins/content/tools.md
       - admins/content/infrastructures.md
+      - admins/content/journals.md
+    - Benutzerdefinierte Daten:
+      - admins/custom_data/custom-fields.md
+      - admins/custom_data/vocabulary.md
+      - admins/custom_data/keywords.md
+      - admins/custom_data/countries.md
+    - Berichte & Werkzeuge:
+      - admins/reports_tools/reporting.md
+      - admins/reports_tools/export_design.md
+      - admins/reports_tools/field_overview.md
+      - admins/reports_tools/templates.md
     - Workflows:
       - admins/workflows/workflows.md
       - admins/workflows/create_workflow.md
       - admins/workflows/linked_activities.md
       - admins/workflows/workflow_handling.md
-    - Rollen und Rechte:
-      - admins/roles/index.md
-      - admins/roles/roles.md
-      - admins/roles/important-rights.md
-    - admins/reporting/index.md 
-    - Nutzerverwaltung: 
-      - admins/users/index.md
-      - admins/users/reset-password.md
-    - admins/travel.md
-    - admins/events.md
+    - Integrationen:
+      - admins/Integration/orcid.md
+      - admins/Integration/doi.md
+    - Weitere Informationen: 
+      - admins/further_infos/index.md
+      - admins/further_infos/reset-password.md
+      - admins/further_infos/travel.md
+      - admins/further_infos/events.md
   - Nutzer:
     - users/index.md
     - Profil:
@@ -189,9 +205,13 @@ plugins:
             Konfiguration: Configuration
             Nutzerverwaltung: User Management
             Admins: Admins
-            Einstellungen: Settings
-            Inhalte: Content
-            Rollen und Rechte: Rights and Roles
+            System: System
+            Darstellung & Branding: Design & Branding
+            Datenmodell & Inhalte: Data Model & Content
+            Benutzer & Rollen: Users & Roles
+            Benutzerdefinierte Daten: Custom data
+            Berichte & Werkzeuge: Reports & Tools
+            Weitere Informationen: Further Information
             Nutzer: Users
             Profil: Profile
             Organisationseinheiten: Organizational Units

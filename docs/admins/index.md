@@ -5,5 +5,17 @@ title: Einführung
 
 # Anleitung für Inhalt-Administratoren
 
-OSIRIS ist ein Forschungsinformationssystem, das an jedem Institut ohne externe Hilfe eingesetzt und verwaltet werden kann. Es ist trotzdem wichtig eine gewisse Struktur unter den Nutzenden einzuhalten, um das System zu pflegen und individuell einzustellen. Dafür gibt es in OSIRIS die Rolle des Admins. Diese Rolle sollte von einer Person – oder auch von mehreren - eingenommen werden, die OSIRIS hauptsächlich verwaltet und einen guten Überblick über die Bedürfnisse der verschiedenen Abteilungen (z.B. Controlling, HR, Scientists) hat. Denn nur die Rolle des Admins kann die Rechte aller anderen Rollen in OSIRIS beeinflussen, die zentralen Einstellungen ändern, das Layout anpassen und Aktivitätstypen und Kategorien verwalten (solange diese Rechte nicht an eine andere Rolle gegeben werden).  
-In den folgenden Abschnitten findet ihr Erklärungen zu allen Einstellungen und Konfigurationen, die man standardmäßig als Admin vornehmen kann. 
+OSIRIS ist ein Forschungsinformationssystem, das an jedem Institut eigenständig – also ohne externe Unterstützung – eingesetzt und verwaltet werden kann. Dennoch ist es wichtig, eine klare Struktur unter den Nutzenden zu etablieren, um das System effektiv zu pflegen und individuell anzupassen.
+
+Zu diesem Zweck gibt es in OSIRIS die Rolle des Admins. Diese Rolle kann von einer oder mehreren Personen übernommen werden, die sich primär um die Verwaltung des Systems kümmern und gleichzeitig einen guten Überblick über die Anforderungen der verschiedenen Abteilungen (z. B. Controlling, HR, Wissenschaft) besitzen.
+
+Die Admin-Rolle ist zentral, da nur sie die Berechtigungen anderer Rollen beeinflussen, grundlegende Systemeinstellungen ändern, das Layout anpassen sowie Aktivitätstypen und Kategorien verwalten kann - sofern diese Rechte nicht gezielt an andere Rollen delegiert werden. Diese individuellen Einstellungen werden über das Admin-Interface vorgenommen.
+
+<!-- md:version 2.0 -->
+
+![Admin-Interface](admin_interface.png)
+///caption
+Das neu organisierte Admin-Interface steht euch ab Version 2.0 zur Verfügung
+///
+
+In den folgenden Abschnitten werden alle Einstellungen und Konfigurationsmöglichkeiten erläutert, die standardmäßig von Admins vorgenommen werden können.

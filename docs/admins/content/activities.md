@@ -59,7 +59,7 @@ Die Kategorien sind mit einer Farbe markiert, die sich auch in der Auflistung de
 
 ## Neue Kategorie erstellen
 
-Unter Inhalte &#8594 Aktivitäten kannst du eine neue Kategorie hinzufügen.
+Unter Datenmodell & Inhalte &#8594 Aktivitäten kannst du eine neue Kategorie hinzufügen.
 
 ![Kategorie hinzufügen](screenshots/kategorie_erstellen.png)
 ///caption
@@ -68,6 +68,11 @@ Seite, um eine neue Kategorie zu erstellen
 
 Zunächst musst du eine einzigartige ID wählen. Mit einem Klick auf *muss einzigartig sein* siehst du eine Liste aller vergebenen IDs. Mit einem Klick auf *Icon* kannst du dir ein passendes Icon für deine neue Kategorie aussuchen, indem du den entsprechenden Text einfach in das Feld kopierst.   
 Du kannst auf dieser Seite auch einstellen, welche Rollen in OSIRIS die eingetragenen Aktivitäten, die in diese Kategorie fallen, sehen können. Dies ist zum Beispiel nützlich für vertrauliche Einträge. Jeder Nutzende kann für diese Kategorie Einträge generieren und die eigenen sehen, die Einträge anderer Nutzender in dieser Kategorie aber nicht. Werden in eurem Institut beispielsweise Patente in OSIRIS eingetragen, soll vielleicht jede Person in der Lage sein ein Patent einzutragen und dies auch weiterhin im eigenen Verlauf zu sehen, andere Patent-Einträge werden aber nicht angezeigt.
+
+<!-- md:version 1.6.0 -->
+
+Falls du für die Aktivitätstypen in dieser Kategorie einen Workflow erstellt hast, kannst du diesen hier auswählen. Damit wird der Workflow auf alle Aktivitäten in dieser Kategorie angewendet.
+
 
 ## Neuen Typen erstellen
 
@@ -98,7 +103,7 @@ Die neu erstellte Kategorie **ehrenamtliche Engagements** mit den neu erstellten
 
  [:simple-youtube: Zum Video](https://youtu.be/I1ZT2vlRFeA){.md-button}
 
-Mit dem neuen Formular-Builder kannst du die Vorlagen für Aktivitäten noch flexibler gestalten. Du gelangst mit einem Klick auf *bearbeiten* neben den Datenfeldern zu dem Builder.
+Mit dem neuen Formular-Builder kannst du die Vorlagen für Aktivitäten noch flexibler gestalten. Du gelangst mit einem Klick auf *bearbeiten* neben den Datenfeldern zu dem Builder. Dies ist erst möglich, wenn du den Aktivitätstypen schon erstellt hast.
 
 ![Datenfelder](screenshots/Datenfelder.png)
 ///caption
