@@ -160,8 +160,6 @@ nav:
     - api/activities.md
   - FAQs:
     - FAQs/index.md
-  - Blog:
-    - blog/index.md
 theme:
   name: material
   logo: assets/logo_white.png
