@@ -223,6 +223,24 @@ Für ein deutschsprachiges Template kann die Schreibweise selbst festgelegt werd
 
 Dadurch kann für jedes Template individuell entschieden werden, welche Sprache und Großschreibung verwendet werden soll.
 
+### Kompakte Datumsbereiche mit `end-compact`
+
+Mit `end-compact` werden übereinstimmende Bestandteile von Start- und Enddatum nicht wiederholt:
+
+```text
+({start:Y, F j}%end-compact –{end-compact:Y, F j}%)
+```
+
+Je nach Zeitraum entstehen automatisch folgende Ausgaben:
+
+- Gleicher Tag: `(2026, July 24)`
+- Gleicher Monat: `(2026, July 24–26)`
+- Anderer Monat: `(2026, July 30–August 2)`
+- Anderes Jahr: `(2026, December 30–2027, January 2)`
+
+Fehlt das Enddatum oder entspricht es dem Startdatum, bleibt `end-compact` leer. Deshalb sollte auch der Gedankenstrich innerhalb eines konditionalen Blocks stehen.
+
+
 ## 5. Automatische Bereinigung
 
 Nach der Ersetzung führt OSIRIS eine automatische Format-Bereinigung durch:
