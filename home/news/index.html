@@ -11964,7 +11964,7 @@ Sie ist auf der Detailseite einer Aktivität unter dem Reiter <em>Historie</em> 
 <p>Mit einer IDA-Integration wurde begonnen. Um das Feature zu aktivieren, muss in der CONFIG-Datei der folgende Wert auf true gesetzt werden:</p>
 <div class="language-php highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1">// activate IDA integration here</span>
-<span class="nb">define</span><span class="p">(</span><span class="s2">&quot;IDA_INTEGRATION&quot;</span><span class="p">,</span> <span class="k">true</span><span class="p">);</span>
+<span class="nb">define</span><span class="p">(</span><span class="s2">"IDA_INTEGRATION"</span><span class="p">,</span> <span class="k">true</span><span class="p">);</span>
 </code></pre></div></td></tr></table></div>
 <p>Zurzeit wird nur Formular 18.3 als Proof of Concept unterstützt. An weiteren Formularen wird gearbeitet, sobald der Fragenkatalog für das folgende Berichtsjahr feststeht.</p>
 <p>Außerdem wurden einige neue Module hinzugefügt, die für die IDA-Abfrage relevant sind, z.B. gender, nationality, open access status.</p>
@@ -12029,59 +12029,59 @@ Sie ist auf der Detailseite einer Aktivität unter dem Reiter <em>Historie</em> 
 <span class="normal">57</span>
 <span class="normal">58</span>
 <span class="normal">59</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;@context&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://schema.org&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;@graph&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="nt">"@context"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://schema.org"</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">"@graph"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
 <span class="w">    </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;#issue&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;PublicationIssue&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;issueNumber&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;isPartOf&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;#volume&quot;</span>
+<span class="w">      </span><span class="nt">"@id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#issue"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"@type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PublicationIssue"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"issueNumber"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"isPartOf"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">"@id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#volume"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;#volume&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;PublicationVolume&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;volumeNumber&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">19</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;datePublished&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-05&quot;</span>
+<span class="w">      </span><span class="nt">"@id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#volume"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"@type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PublicationVolume"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"volumeNumber"</span><span class="p">:</span><span class="w"> </span><span class="mi">19</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"datePublished"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2023-05"</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Periodical&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;#journal&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Nature Chemical Biology&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;issn&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;1552-4469&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;1552-4450&quot;</span><span class="p">],</span>
-<span class="w">      </span><span class="nt">&quot;publisher&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Nature Pub. Group&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;hasPart&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;#volume&quot;</span>
+<span class="w">      </span><span class="nt">"@type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Periodical"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"@id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#journal"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Nature Chemical Biology"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"issn"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"1552-4469"</span><span class="p">,</span><span class="w"> </span><span class="s2">"1552-4450"</span><span class="p">],</span>
+<span class="w">      </span><span class="nt">"publisher"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Nature Pub. Group"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"hasPart"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">"@id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#volume"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;#record&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ScholarlyArticle&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Metabolism from the magic angle&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;author&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Person&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;givenName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Koblitz&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;familyName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Julia&quot;</span>
+<span class="w">      </span><span class="nt">"@id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#record"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"@type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ScholarlyArticle"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Metabolism from the magic angle"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"author"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">"@type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Person"</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">"givenName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Koblitz"</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">"familyName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Julia"</span>
 <span class="w">      </span><span class="p">},</span>
-<span class="w">      </span><span class="nt">&quot;datePublished&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-05&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">      </span><span class="nt">"datePublished"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2023-05"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"identifier"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
 <span class="w">        </span><span class="p">{</span>
-<span class="w">          </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;PropertyValue&quot;</span><span class="p">,</span>
-<span class="w">          </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;DOI&quot;</span><span class="p">,</span>
-<span class="w">          </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;10.1038/s41589-023-01317-2&quot;</span>
+<span class="w">          </span><span class="nt">"@type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PropertyValue"</span><span class="p">,</span>
+<span class="w">          </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DOI"</span><span class="p">,</span>
+<span class="w">          </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10.1038/s41589-023-01317-2"</span>
 <span class="w">        </span><span class="p">}</span>
 <span class="w">      </span><span class="p">],</span>
-<span class="w">      </span><span class="nt">&quot;pagination&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;538-539&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;isPartOf&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">      </span><span class="nt">"pagination"</span><span class="p">:</span><span class="w"> </span><span class="s2">"538-539"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"isPartOf"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
 <span class="w">        </span><span class="p">{</span>
-<span class="w">          </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;#issue&quot;</span>
+<span class="w">          </span><span class="nt">"@id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#issue"</span>
 <span class="w">        </span><span class="p">},</span>
 <span class="w">        </span><span class="p">{</span>
-<span class="w">          </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;#volume&quot;</span>
+<span class="w">          </span><span class="nt">"@id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#volume"</span>
 <span class="w">        </span><span class="p">},</span>
 <span class="w">        </span><span class="p">{</span>
-<span class="w">          </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;#journal&quot;</span>
+<span class="w">          </span><span class="nt">"@id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#journal"</span>
 <span class="w">        </span><span class="p">}</span>
 <span class="w">      </span><span class="p">]</span>
 <span class="w">    </span><span class="p">}</span>

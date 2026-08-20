@@ -5727,8 +5727,8 @@
 <h1 id="database-connection">Database connection</h1>
 <p>The database connection must also be specified in the CONFIG file. To be able to specify server settings and user names if necessary, the connection string is transferred directly. If you have installed MongoDB with the default settings in the same VM, the default settings should work:</p>
 <div class="language-php highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nb">define</span><span class="p">(</span><span class="s2">&quot;DB_NAME&quot;</span><span class="p">,</span> <span class="s2">&quot;osiris&quot;</span><span class="p">);</span>
-<span class="nb">define</span><span class="p">(</span><span class="s2">&quot;DB_STRING&quot;</span><span class="p">,</span> <span class="s2">&quot;mongodb://localhost:27017/&quot;</span> <span class="o">.</span> <span class="nx">DB_NAME</span> <span class="o">.</span> <span class="s2">&quot;?retryWrites=true&amp;w=majority&quot;</span><span class="p">);</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nb">define</span><span class="p">(</span><span class="s2">"DB_NAME"</span><span class="p">,</span> <span class="s2">"osiris"</span><span class="p">);</span>
+<span class="nb">define</span><span class="p">(</span><span class="s2">"DB_STRING"</span><span class="p">,</span> <span class="s2">"mongodb://localhost:27017/"</span> <span class="o">.</span> <span class="nx">DB_NAME</span> <span class="o">.</span> <span class="s2">"?retryWrites=true&amp;w=majority"</span><span class="p">);</span>
 </code></pre></div></td></tr></table></div>
 <p>You can read more about the connection to the server directly in the <a href="https://www.mongodb.com/docs/php-library/current/tutorial/connecting/">MongoDB documentation</a>.</p>
 

@@ -5956,13 +5956,13 @@ mongorestore<span class="w"> </span>--db<span class="w"> </span>osiris_test<span
 <div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>nano<span class="w"> </span>/path/to/production/test/CONFIG.php
 </code></pre></div></td></tr></table></div>
 <p>Here you must adjust the <code>ROOTPATH</code> constant so that it points to the test system:</p>
-<div class="language-php highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nb">define</span><span class="p">(</span><span class="s1">&#39;ROOTPATH&#39;</span><span class="p">,</span> <span class="s1">&#39;/test&#39;</span><span class="p">);</span>
+<div class="language-php highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nb">define</span><span class="p">(</span><span class="s1">'ROOTPATH'</span><span class="p">,</span> <span class="s1">'/test'</span><span class="p">);</span>
 </code></pre></div></td></tr></table></div>
 <p>Don't forget to also adjust the <code>DB_NAME</code> constant so that it refers to the test database:</p>
-<div class="language-php highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nb">define</span><span class="p">(</span><span class="s1">&#39;DB_NAME&#39;</span><span class="p">,</span> <span class="s1">&#39;osiris_test&#39;</span><span class="p">);</span>
+<div class="language-php highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nb">define</span><span class="p">(</span><span class="s1">'DB_NAME'</span><span class="p">,</span> <span class="s1">'osiris_test'</span><span class="p">);</span>
 </code></pre></div></td></tr></table></div>
 <p>I also recommend setting the constant <code>LIVE</code> to <code>false</code> on the test system. This causes a note to appear directly under the logo at the top indicating that this is the test system. This helps to avoid confusion.</p>
-<div class="language-php highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nb">define</span><span class="p">(</span><span class="s1">&#39;LIVE&#39;</span><span class="p">,</span> <span class="k">false</span><span class="p">);</span>
+<div class="language-php highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nb">define</span><span class="p">(</span><span class="s1">'LIVE'</span><span class="p">,</span> <span class="k">false</span><span class="p">);</span>
 </code></pre></div></td></tr></table></div>
 <h3 id="5-test-the-test-system">5. test the test system</h3>
 <p>You should now be able to access the test system by calling up the URL of your server followed by <code>/test</code>:</p>
@@ -5976,7 +5976,7 @@ mongorestore<span class="w"> </span>--db<span class="w"> </span>osiris_test<span
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nb">AuthType</span><span class="w"> </span>Basic
-<span class="nb">AuthName</span><span class="w"> </span><span class="s2">&quot;Restricted Area&quot;</span>
+<span class="nb">AuthName</span><span class="w"> </span><span class="s2">"Restricted Area"</span>
 <span class="nb">AuthUserFile</span><span class="w"> </span><span class="sx">/path/to/.htpasswd</span>
 <span class="nb">Require</span><span class="w"> </span>valid-user
 </code></pre></div></td></tr></table></div>

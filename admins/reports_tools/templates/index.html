@@ -3459,6 +3459,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#kompakte-datumsbereiche-mit-end-compact" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kompakte Datumsbereiche mit end-compact
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -6117,6 +6128,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#kompakte-datumsbereiche-mit-end-compact" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kompakte Datumsbereiche mit end-compact
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -6285,7 +6307,7 @@ Sie richtet sich an Personen, die den offiziellen Zitationsstil ihres Instituts 
 <h2 field_fallback="field|fallback" id="2-fallback-prioritat">2. Fallback / Priorität</h2>
 <p>Mit <code>|</code> kann ein Fallback definiert werden.</p>
 <h3 id="literal-als-fallback">Literal als Fallback</h3>
-<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>{doi|&quot;ohne DOI&quot;}
+<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>{doi|"ohne DOI"}
 </code></pre></div></td></tr></table></div>
 <ul>
 <li>Wenn doi leer ist → Text ohne DOI</li>
@@ -6423,12 +6445,24 @@ Sie richtet sich an Personen, die den offiziellen Zitationsstil ihres Instituts 
 <p>Ist kein Enddatum vorhanden, wird nur das Startdatum ausgegeben.</p>
 <h4 id="laufender-datumsbereich">Laufender Datumsbereich</h4>
 <p>Bei einem laufenden Datumsbereich bedeutet ein fehlendes Enddatum, dass die Aktivität noch andauert. Über einen Literal-Fallback kann dafür ein beliebiger Text eingesetzt werden:</p>
-<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>{start:Y, F j}–{end:Y, F j|&quot;Today&quot;}
+<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>{start:Y, F j}–{end:Y, F j|"Today"}
 </code></pre></div></td></tr></table></div>
 <p>Für ein deutschsprachiges Template kann die Schreibweise selbst festgelegt werden:</p>
-<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>{start:j. F Y}–{end:j. F Y|&quot;heute&quot;}
+<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>{start:j. F Y}–{end:j. F Y|"heute"}
 </code></pre></div></td></tr></table></div>
 <p>Dadurch kann für jedes Template individuell entschieden werden, welche Sprache und Großschreibung verwendet werden soll.</p>
+<h3 id="kompakte-datumsbereiche-mit-end-compact">Kompakte Datumsbereiche mit <code>end-compact</code></h3>
+<p>Mit <code>end-compact</code> werden übereinstimmende Bestandteile von Start- und Enddatum nicht wiederholt:</p>
+<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>({start:Y, F j}%end-compact –{end-compact:Y, F j}%)
+</code></pre></div></td></tr></table></div>
+<p>Je nach Zeitraum entstehen automatisch folgende Ausgaben:</p>
+<ul>
+<li>Gleicher Tag: <code>(2026, July 24)</code></li>
+<li>Gleicher Monat: <code>(2026, July 24–26)</code></li>
+<li>Anderer Monat: <code>(2026, July 30–August 2)</code></li>
+<li>Anderes Jahr: <code>(2026, December 30–2027, January 2)</code></li>
+</ul>
+<p>Fehlt das Enddatum oder entspricht es dem Startdatum, bleibt <code>end-compact</code> leer. Deshalb sollte auch der Gedankenstrich innerhalb eines konditionalen Blocks stehen.</p>
 <h2 id="5-automatische-bereinigung">5. Automatische Bereinigung</h2>
 <p>Nach der Ersetzung führt OSIRIS eine automatische Format-Bereinigung durch:</p>
 <p>Entfernt werden u. a.:
@@ -6473,7 +6507,7 @@ Müller J. Titel. 2024.</p>
     <span class="md-icon" title="Letztes Update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="24. Juli 2026 07:14:19 UTC">24. Juli 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="20. August 2026 09:34:56 UTC">20. August 2026</span>
   </span>
 
     
