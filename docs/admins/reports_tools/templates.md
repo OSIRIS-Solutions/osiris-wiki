@@ -41,7 +41,79 @@ Einfacher Feldzugriff
 > Für **benutzerdefinierte Felder** gilt: Der Feldname ist die ID, die du bei der Anlage des benutzerdefinierten Feldes vergeben hast.
 
 
-## 2. Fallback / Priorität {field|fallback}
+## 2. Autoren-, Editor- und Supervisor-Templates
+
+Für Autoren, Editoren und Supervisoren gibt es eine eigene Template-Sprache. Damit lassen sich Personenlisten flexibel formatieren.
+
+Die Grundstruktur lautet:
+
+```
+authors-{Namensformat}-{Optionen}
+editors-{Namensformat}-{Optionen}
+supervisors-{Namensformat}-{Optionen}
+```
+
+`authors-`, `editors-` oder `supervisors-` muss immer am Anfang stehen. Danach folgt das Namensformat. Weitere Optionen für Trennzeichen und Personenlimits können mit `-` angehängt und flexibel kombiniert werden.
+
+### Namensformate
+
+| Code | Ausgabe-Beispiel |
+|---|---|
+| `last f.` | Koblitz J. |
+| `last f` | Koblitz J |
+| `f last` | J Koblitz |
+| `f. last` | J. Koblitz |
+| `last first` | Koblitz, Julia |
+| `first last` | Julia Koblitz |
+| `last, f.` | Koblitz, J. |
+| `last, f` | Koblitz, J |
+| `last, first` | Koblitz, Julia |
+
+### Trennzeichen
+
+| Code | Wirkung |
+|---|---|
+| *(kein Code)* | Komma und „and“: A, B and C |
+| `amp` | Ersetzt „and“ durch „&“: A, B & C |
+| `amp+comma` | Verwendet „, &“ als letzten Trenner: A, B, & C |
+| `semicolon` | Verwendet Semikolons statt Kommas: A; B and C |
+
+### Personenlimit
+
+| Code | Bedeutung |
+|---|---|
+| *(kein Code)* | Alle Personen anzeigen |
+| `etal6` | Maximal 6 Personen anzeigen, danach „et al.“ |
+| `ellipses5` | Bis zu 4 Personen und die letzte Person anzeigen; dazwischen wird gegebenenfalls „...“ verwendet |
+
+Die Zahl kann an das gewünschte Limit angepasst werden, zum Beispiel `etal3` oder `ellipses10`.
+
+### Editor-Suffix
+
+Editor-Suffixe gelten **nur für `editors-`**. Bei `authors-` und `supervisors-` werden sie nicht verwendet.
+
+| Code | Wirkung |
+|---|---|
+| `eds` | Immer „(eds.)“ nach der Liste |
+| `ed` | „(ed.)“ bei einer Person, sonst „(eds.)“ |
+| `Eds` | Immer „(Eds.)“ nach der Liste |
+| `Ed` | „(Ed.)“ bei einer Person, sonst „(Eds.)“ |
+
+### Beispielkombinationen
+
+| Format | Ausgabe-Beispiel |
+|---|---|
+| `authors-last f.` | Koblitz J., Stark T. and Miller L. |
+| `editors-first last-amp-ed` | Julia Koblitz, Tony Stark & Lois Miller (eds.) |
+| `authors-last, f-etal3` | Koblitz, J, Stark, T, Miller, L et al. |
+| `authors-last first-amp+comma` | Koblitz, Julia, Stark, Tony, & Miller, Lois |
+| `editors-f. last-semicolon-Eds` | J. Koblitz; T. Stark and L. Miller (Eds.) |
+| `supervisors-last f.-semicolon-ellipses5` | Koblitz J.; Stark T.; Miller L.; Wayne B. ... Parker P. |
+
+Falls eine benötigte Formatierung noch nicht abgebildet werden kann, kann dafür ein Ticket auf GitHub erstellt werden.
+
+
+## 3. Fallback / Priorität {field|fallback}
 
 Mit `|` kann ein Fallback definiert werden.
 
@@ -53,7 +125,7 @@ Mit `|` kann ein Fallback definiert werden.
 
 - Wenn doi leer ist → Text ohne DOI
 - Literale müssen in Anführungszeichen stehen (`"`)
-- Wichtig: Dies gilt nur für das Fallback, nicht für konditionale Blöcke! Dort müssen Literale nicht in Anführungszeichen stehen und Felder müssen dafür in `{}` gesetzt werden. Der Grund für diese Inkonsistenz ist, dass eine verschachtelung mehrerer `{}` schwer lesbar und fehleranfällig wäre.
+- Wichtig: Dies gilt nur für das Fallback, nicht für konditionale Blöcke! Dort müssen Literale nicht in Anführungszeichen stehen und Felder müssen dafür in `{}` gesetzt werden. Der Grund für diese Inkonsistenz ist, dass eine Verschachtelung mehrerer `{}` schwer lesbar und fehleranfällig wäre.
 
 ### Feld als Fallback
 
@@ -72,7 +144,7 @@ Mit `|` kann ein Fallback definiert werden.
    - sonst → Literal
 
 
-## 3. Konditionale Blöcke %...%
+## 4. Konditionale Blöcke %...%
 
 Konditionale Blöcke werden nur ausgegeben, wenn bestimmte Felder existieren.
 
@@ -130,7 +202,7 @@ Ein Feld mit dem Wert `-` gilt als leer
 → Kondition schlägt fehl
 
 
-## 4. Datumsformatierung `{date:format}`
+## 5. Datumsformatierung `{date:format}`
 
 <!-- md:version 2.1.0 --> 
 
@@ -241,7 +313,7 @@ Je nach Zeitraum entstehen automatisch folgende Ausgaben:
 Fehlt das Enddatum oder entspricht es dem Startdatum, bleibt `end-compact` leer. Deshalb sollte auch der Gedankenstrich innerhalb eines konditionalen Blocks stehen.
 
 
-## 5. Automatische Bereinigung
+## 6. Automatische Bereinigung
 
 Nach der Ersetzung führt OSIRIS eine automatische Format-Bereinigung durch:
 
@@ -263,12 +335,12 @@ Müller J. Titel. 2024.
 Kein händisches Abfangen nötig ✅
 
 
-## 6. Die Sprache der Templates
+## 7. Die Sprache der Templates
 
-Einige Felder können in mehreren Sprachen ausgegeben werden, z. B. der Monat oder die Art der Abschlussarbeit. Standardmäßig wird die Sprache der OSIRIS-Benutzeroberfläche verwendet, was allerdings bei unterschiedlichen Nutzern zu uneinheitlichen Zitaten führen kann. Deshalb empfehlen wirdt, die Sprache der Templates explizit festzulegen. Dies kannst du in den allgemeinen Einstellungen tun. 
+Einige Felder können in mehreren Sprachen ausgegeben werden, z. B. der Monat oder die Art der Abschlussarbeit. Standardmäßig wird die Sprache der OSIRIS-Benutzeroberfläche verwendet, was allerdings bei unterschiedlichen Nutzern zu uneinheitlichen Zitaten führen kann. Deshalb empfehlen wir, die Sprache der Templates explizit festzulegen. Dies kannst du in den allgemeinen Einstellungen tun.
 
 
-## 7. Grenzen der aktuellen Syntax
+## 8. Grenzen der aktuellen Syntax
 
 Nicht unterstützt wird bisher:
 - Verschachtelte Konditionen
