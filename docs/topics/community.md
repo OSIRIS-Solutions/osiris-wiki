@@ -41,7 +41,7 @@ Du kannst auch an diesem Wiki mitarbeiten, indem du Verbesserungsvorschläge mac
 
 Du kannst OSIRIS auch durch finanzielle Unterstützung helfen, zum Beispiel indem du Support-Leistungen in Anspruch nimmst oder uns direkt unterstützt. Dadurch trägst du dazu bei, dass OSIRIS weiterentwickelt und gewartet wird. Um unsere Dienstleistungen in Anspruch zu nehmen, kontaktiere uns bitte direkt.
 
-[Hier geht's zum Kontaktformular!](https://osiris-solutions.de/contact/){.md-button }
+[Hier geht's zum Kontaktformular!](https://osiris-solutions.de/#contact/){.md-button }
 
 
 ## Beiträge aus vergangenen Community Meetings

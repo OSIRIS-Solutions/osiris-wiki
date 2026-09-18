@@ -25,9 +25,9 @@ title: Welcome
 
 !!! info "Interested in our community?"
     
-    We have founded an [OSIRIS community](https://forms.office.com/e/RS8Nay2CLw) where we exchange ideas and work together on OSIRIS. There you will also find the latest information about OSIRIS and can network with other users.
+    We have founded an [OSIRIS community](https://ec285048.sibforms.com/v2/serve/MUIFAAv5RN6fDJdfvkxMQEQ5oR53eHAcVJg5a1y50PL0DjhtN2TcYqGEWfyM4TnXXLTScl5e4prfdg6h622vhbGQWm-dlCB0GOp5Gd5RTz5aOexxSlvFbOQ9MGulWMWtRTlQhCDNfICnG0D4TgIsImOaGZboCRSTPQgD2UoXC4RhTfrFJEXxP-7AmP5eADhI35XmCa-SpTcHU2JcnA==) where we exchange ideas and work together on OSIRIS. There you will also find the latest information about OSIRIS and can network with other users.
 
-    [Click here to register!](https://forms.office.com/e/RS8Nay2CLw){ .md-button .md-button--primary }
+    [Click here to register!](https://ec285048.sibforms.com/v2/serve/MUIFAAv5RN6fDJdfvkxMQEQ5oR53eHAcVJg5a1y50PL0DjhtN2TcYqGEWfyM4TnXXLTScl5e4prfdg6h622vhbGQWm-dlCB0GOp5Gd5RTz5aOexxSlvFbOQ9MGulWMWtRTlQhCDNfICnG0D4TgIsImOaGZboCRSTPQgD2UoXC4RhTfrFJEXxP-7AmP5eADhI35XmCa-SpTcHU2JcnA==){ .md-button .md-button--primary }
 
 !!! info "Our YouTube channel"
 

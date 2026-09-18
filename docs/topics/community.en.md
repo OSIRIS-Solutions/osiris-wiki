@@ -17,7 +17,7 @@ You can actively participate in the further development of OSIRIS by giving feed
 
 Our **Community Meeting** takes place every two months, where the developers give an insight into the latest developments and news and we discuss current topics. You can register for the meetings once and then receive regular invitations to the meetings.
 
-[Click here to register!](https://forms.office.com/e/RS8Nay2CLw){ .md-button }
+[Click here to register!](https://ec285048.sibforms.com/v2/serve/MUIFAAv5RN6fDJdfvkxMQEQ5oR53eHAcVJg5a1y50PL0DjhtN2TcYqGEWfyM4TnXXLTScl5e4prfdg6h622vhbGQWm-dlCB0GOp5Gd5RTz5aOexxSlvFbOQ9MGulWMWtRTlQhCDNfICnG0D4TgIsImOaGZboCRSTPQgD2UoXC4RhTfrFJEXxP-7AmP5eADhI35XmCa-SpTcHU2JcnA==){ .md-button }
 
 If something is not working properly, you have found a bug or would like to see a new feature, you can report this directly on GitHub. We are happy about every bug report that helps us to improve OSIRIS.
 
@@ -41,7 +41,7 @@ You can also contribute to this wiki by making suggestions for improvements or w
 
 You can also help OSIRIS through financial support, for example by using support services or supporting us directly. By doing so, you help to ensure that OSIRIS is further developed and maintained. To make use of our services, please contact us directly.
 
-[Click here for the contact form!](https://osiris-solutions.de/contact/){.md-button }
+[Click here for the contact form!](https://osiris-solutions.de/#contact/){.md-button }
 
 
 ## Contributions from past Community Meetings

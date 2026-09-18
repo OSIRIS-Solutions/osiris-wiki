@@ -66,6 +66,6 @@ Auch Farben, Schriftart und Design von Portfolio selbst sind anpassbar.
 
 Portfolio ist eine Erweiterung von OSIRIS und kann von euch genutzt werden, wenn ihr bereits OSIRIS einsetzt. Wenn ihr OSIRIS noch nicht nutzt, könnt ihr Portfolio zusammen mit OSIRIS einführen. Wir helfen euch gerne dabei, OSIRIS und Portfolio in eurer Einrichtung zu etablieren.
 
-Portfolio ist ein Open-Source-Projekt und kann von euch selbst gehostet werden. Wir bieten euch aber auch an, Portfolio als Software-as-a-Service zu nutzen. In diesem Fall kümmern wir uns um die Installation und Wartung von Portfolio und ihr könnt euch auf eure Forschung konzentrieren.
+Wir bieten Portfolio als Software-as-a-Service an und kümmern uns um die Installation, Anpassung und Wartung von Portfolio, sodass ihr euch auf eure Forschung konzentrieren könnt.
 
-Wenn ihr Portfolio nutzen möchtet, [sprecht uns einfach an](http://osiris-solutions.de/contact). Wir beraten euch gerne und zeigen euch, wie Portfolio in eurer Einrichtung eingesetzt werden kann.
+Wenn ihr Portfolio nutzen möchtet, ihr Fragen habt oder eine Demo wünscht, dann [sprecht uns einfach an](https://osiris-solutions.de/#contact). Wir beraten euch gerne und zeigen euch, wie Portfolio in eurer Einrichtung eingesetzt werden kann.

@@ -66,6 +66,6 @@ Overview of a person page customised to the DSMZ corporate design.
 
 Portfolio is an extension of OSIRIS and can be used by you if you already use OSIRIS. If you are not yet using OSIRIS, you can introduce Portfolio together with OSIRIS. We will be happy to help you establish OSIRIS and Portfolio in your organisation.
 
-Portfolio is an open source project and can be hosted by you. However, we also offer you the option of using Portfolio as Software-as-a-Service. In this case, we take care of the installation and maintenance of Portfolio and you can concentrate on your research.
+We offer Portfolio as Software-as-a-Service and take care of the installation, customisation and maintenance of Portfolio, so that you can focus on your research.
 
-If you would like to use Portfolio, [simply contact us](http://osiris-solutions.de/contact). We will be happy to advise you and show you how Portfolio can be used in your organisation.
+If you’d like to use Portfolio, have any questions or would like a demo, then [just get in touch](https://osiris-solutions.de/#contact). We’d be happy to advise you and show you how Portfolio can be used at your institution.
