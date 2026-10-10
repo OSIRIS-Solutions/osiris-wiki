@@ -1,4 +1,6 @@
-# API Basics
+# OSIRIS API Basics
+
+For the separate `/portfolio/` endpoints, see [Portfolio API Basics](portfolio/index.md). An [API overview](overview.md) compares the two APIs.
 
 The OSIRIS API provides programmatic access to research information stored in OSIRIS. It can be used to retrieve activities, projects, persons, organizational structures, events, and other data managed by the system.
 
@@ -67,7 +69,6 @@ The structure of `data` depends on the endpoint. Person details and person unit 
 | Aggregation | Number of groups before slicing. |
 | Full streamed exports and activity table | Number of streamed records. |
 | Publication HTML | Number returned after the endpoint's own `limit`. |
-| Reviews | Number of source activities, not grouped person rows. |
 | Conferences, events, deadlines, spectrum activities | Currently always `0`, even when `data` contains rows. |
 | OpenAlex topics | Number of retained matches, capped at 20, before shared slicing. |
 
@@ -172,7 +173,7 @@ Applications consuming enveloped responses should check the JSON `status` before
 
 ## Endpoints
 
-- [Activities](activities.md): compact records, [HTML citations](activities/html.md), [activity table](activities/all.md), [spectrum](activities/spectrum.md), [reviews](activities/reviews.md), and [duplicate detection](activities/duplicates.md).
+- [Activities](activities.md): compact records, [HTML citations](activities/html.md), [activity table](activities/all.md), [spectrum](activities/spectrum.md), and [duplicate detection](activities/duplicates.md).
 - [Persons](persons.md): list, [details](persons/profile.md), and [unit memberships](persons/units.md).
 - [Projects](projects.md), [proposals](proposals.md), and [funding-number lookup](projects/funding-numbers.md).
 - [Conferences](conferences.md), [events](events.md), and [deadlines](deadlines.md).
@@ -181,4 +182,4 @@ Applications consuming enveloped responses should check the JSON `status` before
 - [Search and aggregation](search/index.md), with separate pages for all six entity endpoints.
 - [Google Scholar](integrations/google-scholar.md) and [OpenAlex topics](research/openalex-topics.md).
 
-This documentation covers all 28 concrete GET endpoints declared with `/api/` in `routes/api/api.php`. The POST enrichment route is outside this GET endpoint reference.
+This documentation covers all 27 concrete GET endpoints declared with `/api/` in `routes/api/api.php`. The POST enrichment route is outside this GET endpoint reference.

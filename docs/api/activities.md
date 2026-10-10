@@ -227,6 +227,5 @@ For authenticated sessions without an `apikey` query parameter, OSIRIS also appl
 - [Publication citations](activities/html.md)
 - [Activity table](activities/all.md)
 - [Research spectrum activities](activities/spectrum.md)
-- [Reviews](activities/reviews.md)
 - [Duplicate detection](activities/duplicates.md)
 - [Activity search and aggregation](activities/search.md)

@@ -157,42 +157,110 @@ nav:
       - users/reporting/statistics.md
       - users/reporting/quarterly-reporting.md  
   - API:
-    - api/index.md
-    - Activities:
-      - api/activities.md
-      - api/activities/html.md
-      - api/activities/all.md
-      - api/activities/spectrum.md
-      - api/activities/duplicates.md
-      - api/activities/search.md
-    - Persons:
-      - api/persons.md
-      - api/persons/profile.md
-      - api/persons/units.md
-      - api/persons/search.md
-    - Projects:
-      - api/projects.md
-      - api/projects/funding-numbers.md
-      - api/projects/search.md
-    - Proposals:
-      - api/proposals.md
-      - api/proposals/search.md
-    - Events:
-      - api/conferences.md
-      - api/events.md
-      - api/deadlines.md
-      - api/conferences/search.md
-    - Journals:
-      - api/journals.md
-      - api/journals/records.md
-      - api/journals/search.md
-    - api/teaching.md
-    - api/infrastructures.md
-    - api/organizations.md
-    - api/search/index.md
-    - Integrations and Research:
-      - api/integrations/google-scholar.md
-      - api/research/openalex-topics.md
+    - api/overview.md
+    - OSIRIS API:
+      - api/index.md
+      - Activities:
+        - api/activities.md
+        - api/activities/html.md
+        - api/activities/all.md
+        - api/activities/spectrum.md
+        - api/activities/duplicates.md
+        - api/activities/search.md
+      - Persons:
+        - api/persons.md
+        - api/persons/profile.md
+        - api/persons/units.md
+        - api/persons/search.md
+      - Projects:
+        - api/projects.md
+        - api/projects/funding-numbers.md
+        - api/projects/search.md
+      - Proposals:
+        - api/proposals.md
+        - api/proposals/search.md
+      - Events:
+        - api/conferences.md
+        - api/events.md
+        - api/deadlines.md
+        - api/conferences/search.md
+      - Journals:
+        - api/journals.md
+        - api/journals/records.md
+        - api/journals/search.md
+      - api/teaching.md
+      - api/infrastructures.md
+      - api/organizations.md
+      - api/search/index.md
+      - Integrations and Research:
+        - api/integrations/google-scholar.md
+        - api/research/openalex-topics.md
+    - Portfolio API:
+      - api/portfolio/index.md
+      - api/portfolio/settings.md
+      - Publications & Activities:
+        - api/portfolio/publications.md
+        - api/portfolio/activities.md
+        - api/portfolio/all-activities.md
+        - api/portfolio/activities/profile.md
+      - Persons:
+        - api/portfolio/persons.md
+        - api/portfolio/persons/profile.md
+        - api/portfolio/persons/images.md
+        - api/portfolio/persons/publications.md
+        - api/portfolio/persons/activities.md
+        - api/portfolio/persons/all-activities.md
+        - api/portfolio/persons/projects.md
+        - api/portfolio/persons/teaching.md
+        - api/portfolio/persons/infrastructures.md
+        - api/portfolio/persons/spectrum.md
+      - Units:
+        - api/portfolio/units.md
+        - api/portfolio/units/profile.md
+        - api/portfolio/units/research.md
+        - api/portfolio/units/numbers.md
+        - api/portfolio/units/staff.md
+        - api/portfolio/units/publications.md
+        - api/portfolio/units/activities.md
+        - api/portfolio/units/all-activities.md
+        - api/portfolio/units/projects.md
+        - api/portfolio/units/teaching.md
+        - api/portfolio/units/spectrum.md
+        - api/portfolio/units/collaborators-map.md
+        - api/portfolio/units/collaborators-by-country.md
+        - api/portfolio/units/cooperation.md
+      - Projects:
+        - api/portfolio/projects.md
+        - api/portfolio/projects/profile.md
+        - api/portfolio/projects/staff.md
+        - api/portfolio/projects/publications.md
+        - api/portfolio/projects/activities.md
+        - api/portfolio/projects/all-activities.md
+        - api/portfolio/projects/collaborators-map.md
+      - Topics & Spectrum:
+        - api/portfolio/topics.md
+        - api/portfolio/topics/profile.md
+        - api/portfolio/topics/staff.md
+        - api/portfolio/topics/units.md
+        - api/portfolio/topics/projects.md
+        - api/portfolio/topics/publications.md
+        - api/portfolio/topics/activities.md
+        - api/portfolio/topics/all-activities.md
+        - api/portfolio/topics/spectrum.md
+        - api/portfolio/topics/collaborators-map.md
+        - api/portfolio/spectrum.md
+      - Infrastructures:
+        - api/portfolio/infrastructures.md
+        - api/portfolio/infrastructures/profile.md
+        - api/portfolio/infrastructures/activities.md
+      - Events & News:
+        - api/portfolio/events.md
+        - api/portfolio/conferences.md
+        - api/portfolio/news.md
+        - api/portfolio/news/profile.md
+      - Search & Collaborations:
+        - api/portfolio/search-index.md
+        - api/portfolio/collaborators-map.md
   - FAQs:
     - FAQs/index.md
 theme:
