@@ -73,3 +73,8 @@ EDITOR=nano crontab -e
 
 Die Ausgabe sollte euch zeigen, dass ein neuer Cron-Job installiert wurde. Im folgenden werden jeden Sonntag neue Publikationen zu euer Warteliste hinzugefügt.
 
+
+
+## Forschungsspektrum aktualisieren
+
+Für die erstmalige Ergänzung von OpenAlex-Themen und Zitationszahlen sowie die regelmäßige Aktualisierung des Forschungsspektrums folge der [Anleitung zum Forschungsspektrum](../research-spectrum.md). Der dort beschriebene tägliche Job ergänzt bestehende Publikationen und läuft unabhängig vom Queue-Workflow.

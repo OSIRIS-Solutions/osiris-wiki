@@ -18,22 +18,20 @@ or as HTTP header:
 X-API-Key: YOUR_API_KEY
 ```
 
-
-### Parameters
+#### Parameters
 
 | Parameter | Type | Description |
 |---|---|---|
 | `apikey` | string | API key, if required. |
 | `json` | string | JSON-encoded MongoDB filter. Overrides `filter` if both are provided. |
-| `filter` | object/array | Alternative filter parameter. Mainly useful for internal calls. |
+| `filter` | object/array | Alternative MongoDB filter using bracket notation, e.g. `filter[year]=2025`. Values supplied this way are strings; use `json` for typed values. |
 | `columns[]` | array | Optional list of fields to return. |
 | `aggregate` | string | Groups activities by the given field and returns counts. |
-| `full` | boolean | Returns full activity records as streamed JSON. |
+| `full` | flag | Returns full activity records as streamed JSON when present, including `full=0`. Ignored if `aggregate` is present. |
 | `limit` | integer | Limits the number of returned records. |
-| `offset` | integer | Skips records when `limit` is used. |
+| `offset` | integer | Number of rows to skip when `limit` is used. Defaults to `0`; negative values become `0`. |
 
-
-### Default Response
+#### Default Response
 
 Without additional parameters, the endpoint returns a compact activity list.
 
@@ -47,7 +45,7 @@ GET /api/activities?apikey=YOUR_API_KEY
   "count": 1,
   "data": [
     {
-      "id": "665ef1234567890abcdef123",
+      "id": "665ef1234567890abcdef1234",
       "activity": "Rendered activity entry",
       "icon": "ph-book-open",
       "type": "Publication",
@@ -69,8 +67,7 @@ Default fields:
 | `subtype` | Rendered activity subtype. |
 | `year` | Activity year. |
 
-
-### Selecting Columns
+#### Selecting Columns
 
 Use `columns[]` to request specific fields.
 
@@ -84,7 +81,7 @@ Some fields are read from the rendered activity representation:
 web, print, icon, type, subtype, authors, title, departments
 ```
 
-All other fields are read directly from the activity record.
+All other fields are read directly from the activity record. Do not explicitly select `columns[]=id` if you need the generated MongoDB ID: this replaces it with the stored `id` field.
 
 Example:
 
@@ -98,7 +95,7 @@ GET /api/activities?apikey=YOUR_API_KEY&columns[]=title&columns[]=doi&columns[]=
   "count": 1,
   "data": [
     {
-      "id": "665ef1234567890abcdef123",
+      "id": "665ef1234567890abcdef1234",
       "title": "Rendered publication title",
       "doi": "10.1234/example",
       "year": 2025
@@ -107,8 +104,7 @@ GET /api/activities?apikey=YOUR_API_KEY&columns[]=title&columns[]=doi&columns[]=
 }
 ```
 
-
-### Filtering
+#### Filtering
 
 Use the `json` parameter to pass a MongoDB filter.
 
@@ -141,34 +137,22 @@ Example with MongoDB operator:
 }
 ```
 
+#### Pagination
 
-### Pagination
-
-Pagination is available through the global `limit` and `offset` parameters.
+The compact list and aggregation use the shared `limit` and `offset` parameters. `count` contains the number of matching rows before slicing (the number of groups for aggregation).
 
 ```http
-GET /api/activities?apikey=YOUR_API_KEY&limit=50&offset=100
+GET /api/activities?apikey=YOUR_API_KEY&limit=50
 ```
 
-The `count` field contains the total number of matching records before pagination is applied.
+`offset=100` skips the first 100 matching rows, and the response reports the integer `offset: 100`. Pagination also applies when `count <= limit`; offsets at or beyond the end return an empty array. Full exports ignore both parameters. See [API Basics](index.md#pagination).
 
-```json
-{
-  "limit": 50,
-  "offset": 100,
-  "status": 200,
-  "count": 350,
-  "data": []
-}
-```
-
-
-### Aggregation
+#### Aggregation
 
 Use `aggregate` to group activities by one field.
 
 ```http
-GET /api/activities?apikey=YOUR_API_KEY&aggregate=year
+GET /api/activities?apikey=YOUR_API_KEY&aggregate=year&json=%7B%22year%22%3A%7B%22%24gte%22%3A2020%7D%7D
 ```
 
 ```json
@@ -194,16 +178,17 @@ Aggregation can be combined with filters:
 GET /api/activities?apikey=YOUR_API_KEY&aggregate=year&json=%7B%22type%22%3A%22publication%22%7D
 ```
 
+The current implementation requires a non-empty filter for this aggregation: without one, the empty PHP array passed to MongoDB as `$match` can cause a database error and a non-JSON response. Use an explicit filter as above, or [activity search](activities/search.md) for unfiltered aggregation.
+
 If the aggregation field contains `authors`, OSIRIS unwinds the `authors` array before grouping.
 
 Example:
 
 ```http
-GET /api/activities?apikey=YOUR_API_KEY&aggregate=authors.user
+GET /api/activities?apikey=YOUR_API_KEY&aggregate=authors.user&json=%7B%22type%22%3A%22publication%22%7D
 ```
 
-
-### Full Export
+#### Full Export
 
 Use `full=1` to retrieve full activity records.
 
@@ -218,7 +203,7 @@ This returns streamed JSON:
   "status": 200,
   "data": [
     {
-      "_id": "665ef1234567890abcdef123",
+      "_id": {"$oid": "665ef1234567890abcdef1234"},
       "type": "publication",
       "year": 2025
     }
@@ -229,88 +214,19 @@ This returns streamed JSON:
 
 This mode is intended for exports or synchronization. It may return large datasets.
 
+#### Response Behavior
 
+Compact records are sorted by `year` descending. Projected fields may be omitted when the corresponding stored or rendered field is missing. Rendered fields contain display text or HTML and depend on the OSIRIS language and configuration; `icon` can contain HTML rather than an icon class alone.
 
-## `GET /api/html`
+Full records are sorted by `_id` descending and retain all stored fields, including `_id` in MongoDB Extended JSON form (`{"$oid":"..."}`). The presence of `full` activates this mode; `columns[]`, `limit`, and `offset` are ignored. `count` is the number of streamed records.
 
-Returns publication records as pre-rendered HTML citations.
+For authenticated sessions without an `apikey` query parameter, OSIRIS also applies the user's activity visibility filter, even if the API key was supplied as a header.
 
-This endpoint is intended for websites and external systems that want to display publication lists without implementing their own citation formatting.
+#### Related Endpoints
 
-The returned HTML is generated by OSIRIS and can be embedded directly into web pages.
-
-
-### Parameters
-
-| Parameter | Type | Description |
-|---|---|---|
-| `apikey` | string | API key, if required. |
-| `limit` | integer | Maximum number of publications returned. |
-
-
-### Returned Publications
-
-The endpoint currently returns publications matching the following criteria:
-
-- Activity type is `publication`
-- Publication year is greater than or equal to the start year (OSIRIS setting)
-- At least one author is marked as affiliated
-
-
-### Example Request
-
-```http
-GET /api/html?apikey=YOUR_API_KEY&limit=10
-```
-
-
-### Example Response
-
-```json
-{
-  "status": 200,
-  "count": 1,
-  "data": [
-    {
-      "id": "6458fcb30d695c593828763f",
-      "html": "\u003Cb\u003EKoblitz J.\u003C/b\u003E (2023) Metabolism from the magic angle. \u003Ci\u003ENature Chemical Biology\u003C/i\u003E ",
-      "year": 2023,
-      "departments": [
-        "BID"
-      ],
-      "link": "https://dx.doi.org/10.1038/s41589-023-01317-2"
-    },
-  ]
-}
-```
-
-
-### Returned Fields
-
-| Field | Description |
-|---|---|
-| `id` | Activity ID |
-| `html` | Pre-rendered publication citation in HTML format |
-| `year` | Publication year |
-| `departments` | Associated departments |
-| `link` | DOI, PubMed, or external URL if available |
-
-
-### Link Resolution
-
-The `link` field is automatically generated using the following priority:
-
-1. DOI
-2. PubMed ID
-3. External URL stored in the publication record
-
-If none of these values are available, `link` is returned as `null`.
-
-
-### Typical Use Cases
-
-- Institutional publication lists
-- Research group websites
-- Personal profile pages
-- Public publication portals
-- Automated content integration into CMS systems
+- [Publication citations](activities/html.md)
+- [Activity table](activities/all.md)
+- [Research spectrum activities](activities/spectrum.md)
+- [Reviews](activities/reviews.md)
+- [Duplicate detection](activities/duplicates.md)
+- [Activity search and aggregation](activities/search.md)

@@ -50,6 +50,7 @@ nav:
       - technical/user-management/oauth2.md
     - technical/backup.md
     - technical/data.md
+    - technical/research-spectrum.md
     - technical/migrate.md
     - technical/update.md
     - technical/beta.md
@@ -157,7 +158,41 @@ nav:
       - users/reporting/quarterly-reporting.md  
   - API:
     - api/index.md
-    - api/activities.md
+    - Activities:
+      - api/activities.md
+      - api/activities/html.md
+      - api/activities/all.md
+      - api/activities/spectrum.md
+      - api/activities/duplicates.md
+      - api/activities/search.md
+    - Persons:
+      - api/persons.md
+      - api/persons/profile.md
+      - api/persons/units.md
+      - api/persons/search.md
+    - Projects:
+      - api/projects.md
+      - api/projects/funding-numbers.md
+      - api/projects/search.md
+    - Proposals:
+      - api/proposals.md
+      - api/proposals/search.md
+    - Events:
+      - api/conferences.md
+      - api/events.md
+      - api/deadlines.md
+      - api/conferences/search.md
+    - Journals:
+      - api/journals.md
+      - api/journals/records.md
+      - api/journals/search.md
+    - api/teaching.md
+    - api/infrastructures.md
+    - api/organizations.md
+    - api/search/index.md
+    - Integrations and Research:
+      - api/integrations/google-scholar.md
+      - api/research/openalex-topics.md
   - FAQs:
     - FAQs/index.md
 theme:
@@ -262,6 +297,8 @@ markdown_extensions:
   - attr_list
   - footnotes
   - tables
+  - toc:
+      toc_depth: 3
   - md_in_html
   - pymdownx.highlight:
       linenums: true

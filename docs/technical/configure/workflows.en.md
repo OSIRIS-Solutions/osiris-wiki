@@ -73,3 +73,8 @@ EDITOR=nano crontab -e
 
 The output should show you that a new cron job has been installed. In the following, new publications will be added to your waiting list every Sunday.
 
+
+
+## Update the research spectrum
+
+For the initial fetch of OpenAlex topics and citation counts and regular research spectrum updates, follow the [research spectrum guide](../research-spectrum.md). Its daily job enriches existing publications and runs independently of the queue workflow.
