@@ -27,7 +27,7 @@ To install OSIRIS in a Docker container, you must create the Docker environment 
 docker-compose -f docker-compose.dev.yml up -d
 ```
 
-You can then access OSIRIS in the browser at `http://localhost:8080` (or at the address of the server on which Docker is running).
+You can then access OSIRIS in the browser at `http://localhost:8081` (or at the address of the server on which Docker is running).
  
 
 **For a production environment**
@@ -36,3 +36,4 @@ You can then access OSIRIS in the browser at `http://localhost:8080` (or at the 
 docker-compose -f docker-compose.prod.yml up -d
 ```
 
+You can then access OSIRIS in the browser at `http://localhost:8080` (or at the address of the server on which Docker is running).
