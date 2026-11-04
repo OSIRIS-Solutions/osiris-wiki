@@ -16,8 +16,8 @@ OSIRIS ist eine Webanwendung, die auf einem Linux-Server läuft. Die Installatio
  
 * Linux-Server mit Root-Rechten (wird hier nicht weiter beschrieben)
 * Webserver (Apache2 empfohlen)
-* PHP 8.x
-* MongoDB Server (getestet mit Version 5, 6 und 7)
+* PHP 8.x (8.4 empfohlen)
+* MongoDB Server (getestet mit Version 5, 6, 7 und 8)
 * Composer
 * Git
 
