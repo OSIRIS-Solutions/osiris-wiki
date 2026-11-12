@@ -38,3 +38,10 @@ Außerdem müsst ihr den Pfad auch in der `.htaccess`-Datei anpassen:
 ```apache
 RewriteBase /osiris
 ```
+
+
+## Ausgehender Proxy
+
+<!-- md:version 2.1.5 -->
+
+Wenn euer Server externe Dienste nur über einen Proxy erreichen kann, findet ihr die optionalen Einstellungen in der [Proxy-Konfiguration](proxy.md).

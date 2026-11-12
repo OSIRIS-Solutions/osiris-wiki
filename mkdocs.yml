@@ -43,6 +43,7 @@ nav:
       - technical/configure/database.md
       - technical/configure/workflows.md
       - technical/configure/email.md
+      - technical/configure/proxy.md
     - Nutzerverwaltung:
       - technical/user-management/index.md
       - technical/user-management/ldap.md
