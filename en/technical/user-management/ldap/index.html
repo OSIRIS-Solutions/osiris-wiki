@@ -1802,10 +1802,82 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#filter-usersinside" class="md-nav__link">
+  <a href="#choose-active-directory-or-openldap" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Filter users:inside
+        Choose Active Directory or OpenLDAP
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Choose Active Directory or OpenLDAP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-active-directory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example: Active Directory
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-openldap-with-users-in-different-subtrees" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example: OpenLDAP with users in different subtrees
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#search-base-bind-method-and-domain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Search base, bind method and domain
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#administrator-rights-and-other-roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Administrator rights and other roles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#local-guest-accounts-alongside-ldap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Local guest accounts alongside LDAP
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#filter-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Filter users
       
     </span>
   </a>
@@ -9355,10 +9427,82 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#filter-usersinside" class="md-nav__link">
+  <a href="#choose-active-directory-or-openldap" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Filter users:inside
+        Choose Active Directory or OpenLDAP
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Choose Active Directory or OpenLDAP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-active-directory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example: Active Directory
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-openldap-with-users-in-different-subtrees" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example: OpenLDAP with users in different subtrees
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#search-base-bind-method-and-domain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Search base, bind method and domain
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#administrator-rights-and-other-roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Administrator rights and other roles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#local-guest-accounts-alongside-ldap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Local guest accounts alongside LDAP
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#filter-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Filter users
       
     </span>
   </a>
@@ -9514,29 +9658,173 @@
 <h1 id="user-administration-with-ldap">User administration with LDAP</h1>
 <p><span class="mdx-badge"><span class="mdx-badge__icon"><a href="../../../conventions/#version" title="Minimum version"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.41 11.58-9-9A2 2 0 0 0 11 2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 .59 1.42l9 9A2 2 0 0 0 13 22a2 2 0 0 0 1.41-.59l7-7A2 2 0 0 0 22 13a2 2 0 0 0-.59-1.42M13 20l-9-9V4h7l9 9M6.5 5A1.5 1.5 0 1 1 5 6.5 1.5 1.5 0 0 1 6.5 5"/></svg></span></a></span><span class="mdx-badge__text"><a href="../../../home/news/#version-1.0.0">1.0.0</a></span></span>
 <span class="mdx-badge"><span class="mdx-badge__icon"><a href="../../../conventions/#feature" title="Optional feature"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg></span></a></span></span></p>
-<p>OSIRIS currently works preferably with <a href="https://www.redhat.com/de/topics/security/what-is-ldap-authentication">LDAP authentication</a>, which is used by most institutions for user administration.</p>
-<p>The LDAP settings must also be specified in the configuration. If you do not know which settings you need to make yourself, it is best to ask your IT department.</p>
-<div class="language-php highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">CONFIG.php</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span>
-<span class="normal">7</span>
-<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nb">define</span><span class="p">(</span><span class="s1">'USER_MANAGEMENT'</span><span class="p">,</span> <span class="s1">'LDAP'</span><span class="p">);</span>
+<p>OSIRIS supports Microsoft Active Directory and OpenLDAP. LDAP verifies login credentials; profiles, roles and permissions are managed in OSIRIS. All settings below belong in <code>CONFIG.php</code>. These configurations do not require changes to <code>php/LDAPInterface.php</code>.</p>
+<h2 id="choose-active-directory-or-openldap">Choose Active Directory or OpenLDAP</h2>
+<p>Keep <code>USER_MANAGEMENT</code> set to <code>LDAP</code> in both cases. <code>OPEN_LDAP</code> selects the user attributes:</p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Login attribute</th>
+<th>Unique identifier</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>OPEN_LDAP = false</code> (default)</td>
+<td><code>samaccountname</code></td>
+<td><code>objectguid</code></td>
+</tr>
+<tr>
+<td><code>OPEN_LDAP = true</code></td>
+<td><code>uid</code></td>
+<td><code>entryuuid</code></td>
+</tr>
+</tbody>
+</table>
+<p><code>OPEN_LDAP</code> also changes other profile attributes, for example from <code>description</code> to <code>department</code> for the organisational unit. It does not provide arbitrary configuration of an individual login attribute. For an OpenLDAP directory using <code>uid</code>, there is no need to replace <code>samaccountname</code> in the source code.</p>
+<h3 id="example-active-directory">Example: Active Directory</h3>
+<div class="language-php highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">CONFIG.php</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nb">define</span><span class="p">(</span><span class="s1">'USER_MANAGEMENT'</span><span class="p">,</span> <span class="s1">'LDAP'</span><span class="p">);</span>
+<span class="nb">define</span><span class="p">(</span><span class="s1">'OPEN_LDAP'</span><span class="p">,</span> <span class="k">false</span><span class="p">);</span>
+<span class="nb">define</span><span class="p">(</span><span class="s1">'ADMIN'</span><span class="p">,</span> <span class="s1">'musterfrau'</span><span class="p">);</span>
 
-<span class="nb">define</span><span class="p">(</span><span class="s2">"LDAP_IP"</span><span class="p">,</span> <span class="s2">"100.10.100.0"</span><span class="p">);</span>
-<span class="nb">define</span><span class="p">(</span><span class="s2">"LDAP_PORT"</span><span class="p">,</span> <span class="mi">389</span><span class="p">);</span>
-<span class="nb">define</span><span class="p">(</span><span class="s2">"LDAP_USER"</span><span class="p">,</span> <span class="s2">"osiris"</span><span class="p">);</span>
-<span class="nb">define</span><span class="p">(</span><span class="s2">"LDAP_DOMAIN"</span><span class="p">,</span> <span class="s2">"@domain.local"</span><span class="p">);</span>
-<span class="nb">define</span><span class="p">(</span><span class="s2">"LDAP_PASSWORD"</span><span class="p">,</span> <span class="s2">"ldap_password"</span><span class="p">);</span>
-<span class="nb">define</span><span class="p">(</span><span class="s2">"LDAP_BASEDN"</span><span class="p">,</span> <span class="s2">"OU=Users,OU=DSMZ,DC=dsmz,DC=local"</span><span class="p">);</span>
+<span class="nb">define</span><span class="p">(</span><span class="s1">'LDAP_IP'</span><span class="p">,</span> <span class="s1">'ldap.example.org'</span><span class="p">);</span>
+<span class="nb">define</span><span class="p">(</span><span class="s1">'LDAP_PORT'</span><span class="p">,</span> <span class="mi">389</span><span class="p">);</span>
+<span class="nb">define</span><span class="p">(</span><span class="s1">'LDAP_USE_TLS'</span><span class="p">,</span> <span class="k">true</span><span class="p">);</span>
+<span class="nb">define</span><span class="p">(</span><span class="s1">'LDAP_USER'</span><span class="p">,</span> <span class="s1">'osiris'</span><span class="p">);</span>
+<span class="nb">define</span><span class="p">(</span><span class="s1">'LDAP_PASSWORD'</span><span class="p">,</span> <span class="s1">'service_account_password'</span><span class="p">);</span>
+<span class="nb">define</span><span class="p">(</span><span class="s1">'LDAP_DOMAIN'</span><span class="p">,</span> <span class="s1">'@example.org'</span><span class="p">);</span>
+<span class="nb">define</span><span class="p">(</span><span class="s1">'LDAP_BASEDN'</span><span class="p">,</span> <span class="s1">'DC=example,DC=org'</span><span class="p">);</span>
+<span class="nb">define</span><span class="p">(</span><span class="s1">'LDAP_BIND_METHOD'</span><span class="p">,</span> <span class="s1">'username'</span><span class="p">);</span>
 </code></pre></div></td></tr></table></div>
-<h2 id="filter-usersinside">Filter users:inside</h2>
+<p><code>LDAP_USER</code> is a service account for searching and reading the directory. It does not need LDAP administrator rights. <code>ADMIN</code>, in contrast, is the username of the person administering OSIRIS. These accounts serve different purposes.</p>
+<h3 id="example-openldap-with-users-in-different-subtrees">Example: OpenLDAP with users in different subtrees</h3>
+<div class="language-php highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">CONFIG.php</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nb">define</span><span class="p">(</span><span class="s1">'USER_MANAGEMENT'</span><span class="p">,</span> <span class="s1">'LDAP'</span><span class="p">);</span>
+<span class="nb">define</span><span class="p">(</span><span class="s1">'OPEN_LDAP'</span><span class="p">,</span> <span class="k">true</span><span class="p">);</span>
+<span class="nb">define</span><span class="p">(</span><span class="s1">'ADMIN'</span><span class="p">,</span> <span class="s1">'musterfrau'</span><span class="p">);</span> <span class="c1">// uid of the OSIRIS administrator</span>
+
+<span class="nb">define</span><span class="p">(</span><span class="s1">'LDAP_IP'</span><span class="p">,</span> <span class="s1">'ldap.example.org'</span><span class="p">);</span>
+<span class="nb">define</span><span class="p">(</span><span class="s1">'LDAP_PORT'</span><span class="p">,</span> <span class="mi">389</span><span class="p">);</span>
+<span class="nb">define</span><span class="p">(</span><span class="s1">'LDAP_USE_TLS'</span><span class="p">,</span> <span class="k">true</span><span class="p">);</span>
+<span class="nb">define</span><span class="p">(</span><span class="s1">'LDAP_USER'</span><span class="p">,</span> <span class="s1">'cn=osiris,ou=services,dc=example,dc=org'</span><span class="p">);</span>
+<span class="nb">define</span><span class="p">(</span><span class="s1">'LDAP_PASSWORD'</span><span class="p">,</span> <span class="s1">'service_account_password'</span><span class="p">);</span>
+<span class="nb">define</span><span class="p">(</span><span class="s1">'LDAP_DOMAIN'</span><span class="p">,</span> <span class="s1">''</span><span class="p">);</span>
+<span class="nb">define</span><span class="p">(</span><span class="s1">'LDAP_BASEDN'</span><span class="p">,</span> <span class="s1">'dc=example,dc=org'</span><span class="p">);</span>
+<span class="nb">define</span><span class="p">(</span><span class="s1">'LDAP_BIND_METHOD'</span><span class="p">,</span> <span class="s1">'dn'</span><span class="p">);</span>
+</code></pre></div></td></tr></table></div>
+<p>OSIRIS searches for <code>(uid=username)</code> beneath <code>LDAP_BASEDN</code>, including all subtrees. This can find both <code>uid=musterfrau,ou=research,dc=example,dc=org</code> and <code>uid=mustermann,ou=administration,dc=example,dc=org</code>. Choose a common search base containing all required users. Usernames must be unique within that search base.</p>
+<p>The examples use StartTLS on port 389. If your server uses LDAPS, set <code>LDAP_USE_SSL</code> to <code>true</code>, <code>LDAP_USE_TLS</code> to <code>false</code> and use the appropriate port, usually 636. The hostname and certificate trust must match your server.</p>
+<h2 id="search-base-bind-method-and-domain">Search base, bind method and domain</h2>
+<p>Login takes three steps:</p>
+<ol>
+<li>OSIRIS binds with <code>LDAP_USER</code> and <code>LDAP_PASSWORD</code> to search the directory.</li>
+<li>It searches beneath <code>LDAP_BASEDN</code> for the entered username, using <code>samaccountname</code> or <code>uid</code> depending on <code>OPEN_LDAP</code>.</li>
+<li>It verifies the entered password by binding again as the user found.</li>
+</ol>
+<p><code>LDAP_BIND_METHOD</code> selects the identifier for this second bind:</p>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Identifier</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>username</code> (default)</td>
+<td>Entered username</td>
+</tr>
+<tr>
+<td><code>dn</code></td>
+<td>Full DN from the search result; suitable for different subtrees</td>
+</tr>
+<tr>
+<td><code>userPrincipalName</code></td>
+<td><code>userPrincipalName</code> attribute from the search result; for Active Directory</td>
+</tr>
+</tbody>
+</table>
+<p><code>LDAP_DOMAIN</code> is <strong>not the search base</strong>. The bind function applies it to both binds using these rules:</p>
+<table>
+<thead>
+<tr>
+<th>Configuration or identifier</th>
+<th>Behaviour</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Identifier starts exactly with <code>cn=</code></td>
+<td>Used unchanged</td>
+</tr>
+<tr>
+<td><code>LDAP_DOMAIN</code> contains <code>%s</code></td>
+<td>Identifier is inserted into the template, e.g. <code>uid=%s,ou=people,dc=example,dc=org</code></td>
+</tr>
+<tr>
+<td>Otherwise</td>
+<td><code>LDAP_DOMAIN</code> is appended to the identifier, e.g. <code>musterfrau@example.org</code></td>
+</tr>
+<tr>
+<td><code>LDAP_DOMAIN</code> is empty</td>
+<td>Identifier remains unchanged</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Current limitation with full DNs</p>
+<p>The bind function currently recognises only the lowercase prefix <code>cn=</code> as a full DN automatically. If a DN starts with <code>uid=</code> or <code>CN=</code>, a non-empty <code>LDAP_DOMAIN</code> may therefore be appended or applied as a template even with <code>LDAP_BIND_METHOD = 'dn'</code>. For the OpenLDAP example above, leave <code>LDAP_DOMAIN</code> empty and specify <code>LDAP_USER</code> as the full service account DN. The constant must still be defined.</p>
+</div>
+<p><code>OPEN_LDAP = true</code> changes the attributes but does not automatically select DN-based login. For a branched OpenLDAP directory, also set <code>LDAP_BIND_METHOD = 'dn'</code> and configure the domain accordingly.</p>
+<h2 id="administrator-rights-and-other-roles">Administrator rights and other roles</h2>
+<p>LDAP verifies credentials. <strong>OSIRIS roles are not automatically imported from LDAP groups or role attributes.</strong> New LDAP profiles initially have no additional roles beyond the general user role.</p>
+<p>Configure the first administrator in <code>CONFIG.php</code>:</p>
+<div class="language-php highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">CONFIG.php</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nb">define</span><span class="p">(</span><span class="s1">'ADMIN'</span><span class="p">,</span> <span class="s1">'musterfrau'</span><span class="p">);</span>
+</code></pre></div></td></tr></table></div>
+<p>If <code>musterfrau</code> is the OSIRIS username of the LDAP account (<code>uid</code> or <code>samaccountname</code>), that person automatically receives the <code>admin</code> role after successful login. Match the exact spelling, including case. <code>ADMIN</code> does not create a local account or replace password verification.</p>
+<p>Assign further roles and administrator rights in OSIRIS via <strong>Roles &amp; Rights</strong> or the <strong>Account</strong> section of the user profile. These assignments are stored in OSIRIS and also apply to LDAP logins. See <a href="../../../admins/user_roles/distribute_roles/">Distribute roles</a>.</p>
+<h2 id="local-guest-accounts-alongside-ldap">Local guest accounts alongside LDAP</h2>
+<p><span class="mdx-badge"><span class="mdx-badge__icon"><a href="../../../conventions/#version" title="Minimum version"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.41 11.58-9-9A2 2 0 0 0 11 2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 .59 1.42l9 9A2 2 0 0 0 13 22a2 2 0 0 0 1.41-.59l7-7A2 2 0 0 0 22 13a2 2 0 0 0-.59-1.42M13 20l-9-9V4h7l9 9M6.5 5A1.5 1.5 0 1 1 5 6.5 1.5 1.5 0 0 1 6.5 5"/></svg></span></a></span><span class="mdx-badge__text"><a href="../../../home/news/#version-1.6.2">1.6.2</a></span></span></p>
+<p>With <code>USER_MANAGEMENT = 'LDAP'</code>, you can also use local accounts without an LDAP entry. Open <strong>Guest accounts</strong> in the admin area (<code>/admin/guest-account</code>) and select <strong>Add guest account</strong> to create an account with a username, local password and profile details. An optional validity end date limits access; leave it empty for an unlimited account.</p>
+<p>Both account types use the same login form:</p>
+<ol>
+<li>OSIRIS attempts LDAP login.</li>
+<li>If that attempt returns a failed login, OSIRIS checks the local guest account, its password and any validity end date.</li>
+</ol>
+<p>This is the existing login cascade <strong>LDAP → guest account</strong>. There is no additional fallback to the <code>AUTH</code> add-on; you do not need to switch user management. Use separate guest usernames that are not already assigned in LDAP.</p>
+<p>Permissions for these accounts are also managed in OSIRIS. To create a local administrator, assign the additional <code>admin</code> role to the guest account or configure its username as <code>ADMIN</code>. The “guest account” label does not restrict additional role assignments. These login accounts are separate from <a href="../../../users/people/guests/">managing guest visits</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Not a guaranteed emergency login during an LDAP outage</p>
+<p>Guest authentication follows an unsuccessful LDAP login. If LDAP connection setup or StartTLS throws an exception, the current flow does not reach the guest check. A guest account therefore does not guarantee emergency access during an LDAP outage.</p>
+</div>
+<h2 id="filter-users">Filter users</h2>
 <p><span class="mdx-badge"><span class="mdx-badge__icon"><a href="../../../conventions/#version" title="Minimum version"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.41 11.58-9-9A2 2 0 0 0 11 2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 .59 1.42l9 9A2 2 0 0 0 13 22a2 2 0 0 0 1.41-.59l7-7A2 2 0 0 0 22 13a2 2 0 0 0-.59-1.42M13 20l-9-9V4h7l9 9M6.5 5A1.5 1.5 0 1 1 5 6.5 1.5 1.5 0 0 1 6.5 5"/></svg></span></a></span><span class="mdx-badge__text"><a href="../../../home/news/#version-1.3.6">1.3.6</a></span></span></p>
 <p>You can also specify which users should be synchronised from the LDAP server. To do this, you can set the <code>LDAP_FILTER</code> parameter in <code>CONFIG.php</code>. For example:</p>
 <div class="language-php highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">CONFIG.php</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nb">define</span><span class="p">(</span><span class="s2">"LDAP_FILTER"</span><span class="p">,</span> <span class="s2">"(objectClass=person)"</span><span class="p">);</span>
 </code></pre></div></td></tr></table></div>
+<p><strong>This filter applies to fetching and synchronising user lists, not to the individual user search during login.</strong> It therefore does not restrict login access. A filter using an LDAP attribute such as <code>role=employee</code> does not assign an OSIRIS role either.</p>
 <p>This filter ensures that only users with the object class <code>person</code> are synchronised. You can customise the filter to use other criteria that apply to your users.</p>
 <p>Here are a few examples of frequently used filters:</p>
 <div class="language-php highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">CONFIG.php</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
@@ -9561,8 +9849,6 @@
 <p>You can find more information on LDAP filters in the <a href="https://ldap.com/ldap-filters/">LDAP documentation</a>.</p>
 <h2 id="possible-pitfalls">Possible pitfalls</h2>
 <p>Problems can occur if the LDAP password contains a character that is interpreted as code. This is the case, for example, if the password contains a dollar sign ($). In this case, the character must be escaped with a backslash () or the string must be set with single inverted commas. The password would then look like this: <code>define("LDAP_PASSWORD", "\$uperSecret");</code> or <code>define("LDAP_PASSWORD", '$uperSecret');</code>.</p>
-<p>For the LDAP domain, either a domain with <code>@</code> or a base DN must be specified, for which the user name must then be specified with <code>%s</code>. This then looks like this:
-<code>define("LDAP_DOMAIN", "uid=%s,ou=people,dc=strong,dc=com");</code></p>
 <h2 id="synchronisation-of-the-user-attributes">Synchronisation of the user attributes</h2>
 <p><span class="mdx-badge"><span class="mdx-badge__icon"><a href="../../../conventions/#version" title="Minimum version"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.41 11.58-9-9A2 2 0 0 0 11 2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 .59 1.42l9 9A2 2 0 0 0 13 22a2 2 0 0 0 1.41-.59l7-7A2 2 0 0 0 22 13a2 2 0 0 0-.59-1.42M13 20l-9-9V4h7l9 9M6.5 5A1.5 1.5 0 1 1 5 6.5 1.5 1.5 0 0 1 6.5 5"/></svg></span></a></span><span class="mdx-badge__text"><a href="../../../home/news/#version-1.4.1">1.4.1</a></span></span></p>
 <p>This feature is only available for synchronisation with LDAP.</p>
@@ -9575,11 +9861,11 @@
 <div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>crontab<span class="w"> </span>-e
 </code></pre></div></td></tr></table></div>
 <p>Then add the following line to run the synchronisation daily at 2:30 am:</p>
-<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>30 2 * * * /usr/bin/php /path/to/osiris/jobs/synchronise_users.php &gt;&gt; /var/log/osiris_sync.log 2&gt;&amp;1
+<div class="language-text highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>30 2 * * * /usr/bin/php /path/to/osiris/jobs/synchronize_users.php &gt;&gt; /var/log/osiris_sync.log 2&gt;&amp;1
 </code></pre></div></td></tr></table></div>
 <p>Note: Replace <code>/path/to/osiris/</code> with the directory in which you have installed OSIRIS.</p>
 <p>You can also test the command manually:</p>
-<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>php<span class="w"> </span>/path/to/osiris/jobs/synchronise_users.php
+<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>php<span class="w"> </span>/path/to/osiris/jobs/synchronize_users.php
 </code></pre></div></td></tr></table></div>
 <p>This allows you to check whether the synchronisation is running correctly before it is started automatically via CRON.</p>
 <p>If the synchronisation was successful, you will find a timestamp with the last successful synchronisation exactly where you previously defined the fields.</p>
@@ -9605,7 +9891,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="December 8, 2025 05:42:26 UTC">December 8, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 22, 2026 16:34:04 UTC">November 22, 2026</span>
   </span>
 
     
