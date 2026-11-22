@@ -14,7 +14,7 @@ OSIRIS funktioniert zurzeit mit drei unterschiedlichen Möglichkeiten der Nutzer
 
 `LDAP` 
 
-:   **LDAP**: über ein Active Directory werden die Nutzer zentral verwaltet und mittels [LDAP-Authentifizierung](https://www.redhat.com/de/topics/security/what-is-ldap-authentication) werden die Daten an OSIRIS weitergegeben. Falls es euch möglich ist, solltet ihr diese Einstellung verwenden, da sie einerseits Arbeit spart (Nutzer müssen nicht manuell angelegt werden) und andererseits auch mehr Sicherheit bietet. [Lies mehr zur LDAP-Schnittstelle](ldap.md).
+:   **LDAP**: Über Microsoft Active Directory oder OpenLDAP werden die Nutzer zentral verwaltet und mittels [LDAP-Authentifizierung](https://www.redhat.com/de/topics/security/what-is-ldap-authentication) werden die Daten an OSIRIS weitergegeben. Falls es euch möglich ist, solltet ihr diese Einstellung verwenden, da sie einerseits Arbeit spart (Nutzer müssen nicht manuell angelegt werden) und andererseits auch mehr Sicherheit bietet. [Lies mehr zur LDAP-Schnittstelle](ldap.md).
 
 `AUTH` 
 

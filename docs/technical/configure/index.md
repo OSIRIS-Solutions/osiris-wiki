@@ -17,6 +17,8 @@ Damit OSIRIS läuft müssen die wichtigen Einstellungen vorgenommen werden. Dazu
 Die Variable `ADMIN` definiert den Nutzernamen des Administrators.
 Per Default kann dort nur ein Admin angegeben werden, dieser kann aber durch Bearbeitung eines Nutzerprofils anderen Nutzern ebenfalls Admin-Rechte geben.
 
+Das gilt auch bei LDAP-Anmeldung: Tragt den exakten Nutzernamen des LDAP-Accounts ein (`uid` bei OpenLDAP bzw. `samaccountname` bei Active Directory). Nach erfolgreicher Anmeldung erhält dieser Account automatisch die Rolle `admin`. `ADMIN` ist nicht der technische Suchaccount `LDAP_USER` und legt keinen lokalen Login an. Weitere Rollen verwaltet ihr in OSIRIS, nicht im LDAP. Siehe [LDAP: Admin-Rechte und weitere Rollen](../user-management/ldap.md#admin-rechte-und-weitere-rollen).
+
 
 ### Relativer Pfad
 

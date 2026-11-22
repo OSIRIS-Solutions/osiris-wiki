@@ -14,7 +14,7 @@ OSIRIS currently works with three different options for user administration, whi
 
 `LDAP`
 
-:   **LDAP**: The users are managed centrally via an Active Directory and the data is forwarded to OSIRIS using [LDAP authentication](https://www.redhat.com/de/topics/security/what-is-ldap-authentication). If you can, you should use this setting as it saves work (users do not have to be created manually) and also offers more security. [Read more about the LDAP interface](ldap.md).
+:   **LDAP**: Users are managed centrally via Microsoft Active Directory or OpenLDAP and the data is forwarded to OSIRIS using [LDAP authentication](https://www.redhat.com/de/topics/security/what-is-ldap-authentication). If you can, you should use this setting as it saves work (users do not have to be created manually) and also offers more security. [Read more about the LDAP interface](ldap.md).
 
 AUTH
 

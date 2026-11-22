@@ -17,6 +17,8 @@ The important settings must be made for OSIRIS to run. To do this, the file [CON
 The variable `ADMIN` defines the user name of the administrator.
 By default, only one admin can be specified here, but this admin can also grant admin rights to other users by editing a user profile.
 
+This also applies to LDAP login: enter the exact LDAP username (`uid` for OpenLDAP or `samaccountname` for Active Directory). After successful login, this account automatically receives the `admin` role. `ADMIN` is separate from the service account `LDAP_USER` and does not create a local login. Further roles are managed in OSIRIS, not in LDAP. See [LDAP: Administrator rights and other roles](../user-management/ldap.md#administrator-rights-and-other-roles).
+
 
 ### Relative path
 
