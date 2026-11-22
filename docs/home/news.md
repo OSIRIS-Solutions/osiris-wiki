@@ -1,12 +1,470 @@
-# Neuigkeiten
-
+<time datetime="2026-12-XX">XX.12.2026</time>
 <a class="anchor" href="#version-3.0.0" id="version-3.0.0"></a>
 
 ## Version 3.0.0 (Beta)
 
-Die Dokumentation für **OSIRIS 3.0.0** wird während der Beta ergänzt. Neue und geänderte Funktionen sind auf den jeweiligen Seiten mit ihrer Mindestversion gekennzeichnet; dies ist noch keine Ankündigung einer stabilen Veröffentlichung.
+OSIRIS 3.0 erweitert die Mehrsprachigkeit und vereinheitlicht die konfigurierbaren Erfassungsformulare. Mit Initiativen und Objectives, dem Ressourcen-Hub und einer zentralen Dokumentenbibliothek kommen neue Möglichkeiten für die Zusammenarbeit im Institut hinzu. Die Version umfasst außerdem einen redaktionellen News-Workflow und die parallele Anmeldung über Single Sign-On.
 
-Neu sind [Initiativen und Objectives](../users/initiatives/index.md), etwa für Missionen und strategische Arbeitsgruppen. Die [fachliche Einordnung](../topics/organizational-structure.md) und die [Admin-Anleitung](../admins/content/initiatives.md) erklären Konzept und Konfiguration.
+### Mehrsprachigkeit
+
+Die Oberfläche bietet neben Englisch und Deutsch auch Italienisch, Japanisch, Spanisch, Französisch, Polnisch und Niederländisch. Welche Sprachen zur Auswahl stehen, legt die Einrichtung unter „Administration → Sprachen“ fest. Fehlende Übersetzungen von Sprach-Keys fallen auf die Ausgangssprache zurück; einzelne neue Bereiche verwenden weiterhin englische und deutsche Texte.
+
+Beschriftungen lassen sich dort je Sprache suchen und für die eigene Einrichtung überschreiben. So können beispielsweise Initiativen als „Missionen“ oder „Arbeitsgruppen“ bezeichnet werden. Eigene Übersetzungen werden getrennt von den mitgelieferten Sprachdateien gespeichert und können wieder auf den Standard zurückgesetzt werden. Platzhalter in Meldungen bleiben bei der Bearbeitung erhalten.
+
+Mehrsprachige Inhalte erhalten einen gemeinsamen Sprachumschalter, wenn die entsprechenden Felder im Form-Builder direkt aufeinander folgen. Pflichtangaben beziehen sich auf die englische Ausgangssprache; weitere Übersetzungen sind optional. Die Anzeige berücksichtigt die gewählte Sprache und fällt bei fehlenden Übersetzungen auf die Ausgangssprache zurück.
+
+Auch Position, Forschungsprofil, Biografie, Ausbildung und Forschungsinteressen in Personenprofilen sowie Namen, Beschreibungen und Forschungsangaben von Organisationseinheiten unterstützen Sprachfelder. Für bestehende englische und deutsche Angaben steht eine Migration bereit.
+
+Eigene Datenfelder der Formate „Normaler Text“, „Langer Text“ und „Text mit Formatierung“ können als mehrsprachig konfiguriert werden. Die Eingabe bietet dann einen Sprachumschalter. Neue Felder können direkt mehrsprachig angelegt werden. Bestehende Textfelder werden über eine separate, bewusst zu bestätigende Aktion dauerhaft konvertiert; vorhandene Texte bleiben dabei als englische Ausgangswerte erhalten. Bestehende Filter und gespeicherte Suchen verwenden weiterhin den englischen Wert; zusätzliche Übersetzungen werden bei der Anzeige entsprechend der Oberflächensprache aufgelöst. Die Konvertierung kann nicht rückgängig gemacht werden. Das normale Speichern der Feldkonfiguration löst keine Datenmigration aus.
+
+
+### Initiativen
+
+Mit Initiativen lassen sich gemeinsame Vorhaben wie Missionen, strategische Programme oder bereichsübergreifende Arbeitsgruppen in OSIRIS abbilden. Sie bündeln Personen, Projekte und Aktivitäten rund um ein gemeinsames Anliegen und können durch konkrete Ziele – sogenannte Objectives – untergliedert werden.
+
+Zur Einordnung: **Organisationseinheiten (Units)** bilden die organisatorische Hierarchie ab. **Forschungsbereiche (Topics)** beschreiben thematische Schwerpunkte. **Initiativen** bündeln gemeinsame Vorhaben mit eigener Laufzeit, optionalen Mitgliedern und Zielen. Die passende Bezeichnung kann die Einrichtung selbst wählen.
+
+Die Funktion lässt sich im Admin-Bereich aktivieren. Initiativen erhalten einen eigenen Navigationsbereich mit Übersichts- und Detailansichten. Ihr Erfassungsformular wird über den Form-Builder konfiguriert, einschließlich eigener Datenfelder, Beschriftungen und Pflichtfelder. Mehrsprachige Angaben sowie optionale Personenzuordnungen mit Rollen, etwa Mitglied oder Leitung, werden unterstützt.
+
+Objectives gehören jeweils zu genau einer Initiative. Sie erhalten eine Kennung, einen Titel, eine Beschreibung, einen über das Vokabular konfigurierbaren Typ und eine Laufzeit. Objectives haben eigene Detail- und Bearbeitungsseiten. Von der Initiative aus führen Links direkt zu den zugehörigen Objectives und deren verknüpften Inhalten. Beim Anlegen wird die Laufzeit der Initiative als Vorgabe übernommen. Die Nutzung von Objectives ist optional.
+
+Über die neuen Formularmodule können Aktivitäten, Projekte, Anträge, Events, Deadlines und Infrastrukturen mehreren Initiativen oder Objectives zugeordnet werden. Bei der Auswahl von Objectives werden die zugehörigen Initiativen automatisch mitgespeichert; zusätzliche direkte Initiativenzuordnungen werden ohne Doppelungen ergänzt. Bei Aktivitäten, Projekten, Anträgen und Events stehen beide Zuordnungen in den erweiterten Suchen als Filter und Tabellenspalten zur Verfügung. Im Report-Builder können sie als zusätzliche Spalten und zur Gruppierung verwendet werden.
+
+Die Objective-Auswahl bietet ein durchsuchbares Dropdown, das die Einträge nach Initiative gruppiert. Ausgewählte Objectives bleiben als entfernbare Karten sichtbar. Die Suche berücksichtigt Initiative, Kennung, Titel und Beschreibung; Tastaturbedienung und beschriftete Bedienelemente unterstützen die Auswahl auch ohne Maus.
+
+Bei Aktivitäten folgt die reguläre Auswahl dem Aktivitätsdatum und passt sich bei Datumsänderungen unmittelbar an. Auch nachträgliche Zuordnungen zu vergangenen Laufzeiten sind damit möglich. Mit dem zusätzlichen Recht „Initiativen und Objectives außerhalb der Laufzeit zuordnen“ öffnet „Alle anzeigen“ die vollständige Auswahl mit Suchfunktion. Bereits gespeicherte Zuordnungen bleiben bei Datumsänderungen erhalten. Objectives außerhalb des passenden Zeitraums zeigen statt ihrer Beschreibung einen kompakten Hinweis.
+
+Initiativen und Objectives können archiviert und wiederhergestellt werden. Abgelaufene Einträge werden gekennzeichnet; vergangene Initiativen bleiben über die Übersicht erreichbar. Vorhandene Verknüpfungen bleiben erhalten. Lese- und Bearbeitungsrechte werden über das bestehende Rollen- und Rechtesystem vergeben.
+
+Die Statistikseite bietet Auswertungen für ein Jahr, einen frei gewählten Zeitraum oder einen Stichtag. Wenn Objectives vorhanden sind, kann zwischen Initiativen und Objectives umgeschaltet werden. Verfügbar sind ein Balkendiagramm nach Inhaltstyp, eine Übersicht der Zuordnungszahlen und eine aufklappbare Liste der gezählten Inhalte. Tabellen lassen sich nach Excel exportieren; für die Weiterverarbeitung steht zusätzlich ein CSV-Download der Zuordnungszahlen bereit.
+
+Gezählt werden Inhalte, deren Datum oder Laufzeit den gewählten Zeitraum überschneidet. Mehrfachzuordnungen werden je Initiative beziehungsweise Objective gezählt; Summen über mehrere Zeilen sind daher keine eindeutigen Gesamtzahlen. Nicht datierbare Inhalte werden mit einem Hinweis ausgelassen. Die Auswertung verwendet die aktuell gespeicherten Daten und Beziehungen und rekonstruiert keine früheren Datenstände.
+
+Initiativen und Objectives sind außerdem über die OSIRIS-Suche erreichbar. Die zugehörigen Inhaltstabellen auf den Detailseiten bieten Excel-Exporte.
+
+### Gemeinsamer Formular-Builder
+
+Neben Aktivitäten und Initiativen verwenden jetzt auch Projekte, Anträge, Events, Deadlines und Infrastrukturen den Formular-Builder. Unter „Administration → Weitere Datenmodelle“ werden die gemeinsamen Einstellungen für Initiativen, Events, Deadlines und Infrastrukturen gebündelt; Projektformulare bleiben nach Projekttyp und Phase konfigurierbar.
+
+Systemfelder können innerhalb des Formulars verschoben, aber nicht entfernt oder für einzelne Rollen ausgeblendet werden. Wo das System einen Wert benötigt, bleibt die Pflichtangabe erhalten. Andere Felder lassen sich als Pflicht- oder Kann-Feld konfigurieren. Einsprachige und mehrsprachige Varianten desselben Datenfelds können nicht gleichzeitig verwendet werden.
+
+### Projekte
+
+Die Erfassungsformulare für Projekte und Projektanträge verwenden jetzt den Form-Builder. Im Admin-Bereich lässt sich für jeden Projekttyp und jede Phase ein eigenes Formular zusammenstellen. Felder können angeordnet, beschriftet und als Pflichtfelder festgelegt werden; Überschriften, Hinweise und Trennlinien helfen bei der Strukturierung. Systemseitig benötigte Felder bleiben erhalten und können innerhalb des Formulars positioniert werden. Die Detailansichten übernehmen ebenfalls die konfigurierte Feldreihenfolge, Beschriftungen und Gliederung.
+
+Bestehende Formularkonfigurationen werden einschließlich Abschnitten und Pflichtfeldern übernommen. Die Feldreihenfolge bleibt erhalten; ein vorhandenes Kommentarfeld wird bei der Migration ans Formularende gesetzt. Anschließend bleibt seine Position im Form-Builder frei anpassbar. Die bisherige Konfiguration bleibt während der Umstellung zusätzlich erhalten.
+
+Kurznamen, Titel und Zusammenfassungen können mehrsprachig erfasst werden. Vorhandene Texte werden als englische Ausgangswerte übernommen; bisherige deutsche Texte bleiben als Übersetzungen erhalten. Deutsche Übersetzungen sind künftig optional.
+
+Das Personenfeld bündelt die Zuordnung von Personen, Rollen und Organisationseinheiten. Bei Projekten gilt standardmäßig die gesamte Projektlaufzeit; abweichende Mitgliedschaftszeiträume lassen sich über ein Uhr-Symbol festlegen. Bei Anträgen werden diese Datumsfelder nicht angezeigt. Für die Ablehnungsphase ist keine erneute Personenzuordnung erforderlich.
+
+Mit dem zusätzlichen Recht „Frühere Antragsphasen korrigieren“ lassen sich bereits durchlaufene Phasen eines Antrags nachträglich bearbeiten, etwa zur Korrektur importierter Altdaten. Das normale Bearbeitungsrecht für den jeweiligen Antrag bleibt Voraussetzung. Der aktuelle Status und die bewilligte Laufzeit bleiben bei der Korrektur beantragter Angaben erhalten; es wird kein erneuter Statuswechsel ausgelöst. Die bearbeitete Phase wird in der Historie vermerkt. Gemeinsam verwendete Felder wie Titel und Personen bleiben gemeinsame Angaben des Antrags.
+
+Eine zusätzliche Entwurfsphase (`draft`) ist für einen späteren institutsinternen Freigabeprozess vorbereitet. Der bisherige Ablauf bleibt erhalten: Neue Anträge starten weiterhin als beantragt. Ein Draft-Genehmigungsprozess ist in dieser Version noch nicht enthalten.
+
+
+### Events
+
+Auch die Erfassungsformulare für Events verwenden jetzt den Form-Builder. Im Admin-Bereich werden die Event-Felder zusammen mit den Initiativen unter den weiteren Datenmodell-Einstellungen verwaltet. Eine gemeinsame Formularkonfiguration gilt für alle Veranstaltungstypen. Felder lassen sich anordnen, beschriften und als Pflichtfelder festlegen; Überschriften, Hinweise und Trennlinien strukturieren das Formular. Kurztitel, Veranstaltungstyp, Zeitraum und Ort bleiben als Systemfelder erhalten und können innerhalb des Formulars positioniert werden.
+
+Die Konfiguration wird sowohl im regulären Event-Editor als auch beim Anlegen eines Events aus einer Aktivität heraus verwendet. Damit stehen an beiden Stellen auch eigene Datenfelder, Personenzuordnungen sowie Verknüpfungen mit Initiativen und Objectives zur Verfügung. Die Event-Detailansicht berücksichtigt die konfigurierte Feldauswahl, Beschriftung und Reihenfolge. Initiativen und Objectives sind außerdem in der erweiterten Event-Suche als Filter und Spalten verfügbar.
+
+Beim Anlegen kann man sich mit „Ich nehme teil“ direkt als teilnehmende Person eintragen lassen. Dieser Shortcut steht ausschließlich für neue Events zur Verfügung. Die weitere Verwaltung der eigenen Teilnahme erfolgt über die Event-Detailseite.
+
+Beim Upgrade wird der bisherige Formularaufbau als Standardkonfiguration übernommen. Bereits angepasste Formulardefinitionen behalten ihre Einstellungen; die bisherigen Eventdaten und Speicherfelder bleiben erhalten. Für eintägige Events kann das Enddatum leer bleiben und wird beim Speichern auf das Startdatum gesetzt.
+
+### Deadlines
+
+Auch Deadlines verwenden jetzt den Form-Builder. Unter den weiteren Datenmodell-Einstellungen lassen sich Felder, Beschriftungen und Reihenfolge konfigurieren sowie eigene Datenfelder und Verknüpfungen mit Personen, Initiativen und Objectives ergänzen. Titel, Termin und Typ bleiben als verschiebbare Systemfelder erhalten. Der Typ wird weiterhin über das Vokabular `deadline-type` gepflegt.
+
+Editor und Detailansicht übernehmen die Formularkonfiguration. Die Zielgruppen-Rollen bleiben als separate Einstellung erhalten; auch Fristanzeige und Kalenderexport stehen weiterhin zur Verfügung. Beim Upgrade wird das bisherige Formular als Standard übernommen, ohne vorhandene Deadlines oder bereits angepasste Formularkonfigurationen zu verändern.
+
+### Infrastrukturen
+
+Die Stammdatenformulare für Infrastrukturen verwenden jetzt ebenfalls den Form-Builder. Die bisherige Feldauswahl einschließlich eigener Datenfelder wird übernommen. Name, ID und Laufzeit bleiben als positionierbare Systemfelder erhalten. Personenverwaltung und Statistik-Einstellungen bleiben separate Bereiche; die Partner- und Koordinatorauswahl für Verbundinfrastrukturen bleibt erhalten. Neue Instanzen erhalten ein Standardformular.
+
+Namen, Untertitel und Beschreibungen werden als Sprachfelder gespeichert. Bisherige Texte werden nach Englisch übernommen, deutsche Angaben bleiben als optionale Übersetzungen erhalten. Das neue Modul `subtitle-loc` ermöglicht mehrsprachige Untertitel auch in anderen dafür freigegebenen Formularen. Die KDSF-Zuordnungen bleiben als technisches Mapping erhalten; die Kennzeichnungen in der Infrastruktur-Oberfläche entfallen.
+
+### Zugehörigkeiten in Personenprofilen
+
+Der neue Profilreiter „Zugehörigkeiten“ bündelt Forschungsbereiche, Organisationseinheiten und direkte Mitgliedschaften in Initiativen. Aktuelle, zukünftige und vergangene Zugehörigkeiten werden getrennt dargestellt. Eine Zeitleiste zeigt auch frühere Einheitenzugehörigkeiten und getrennte Mitgliedschaftszeiträume derselben Einheit. Ist nur ein Enddatum bekannt, erscheint eine Markierung; undatierte und abgeleitete Zugehörigkeiten bleiben ohne erfundenen Zeitraum sichtbar. Verlauf und Historie verwenden die einheitlichen aufklappbaren Akkordeons. Aus untergeordneten Einheiten abgeleitete Zugehörigkeiten sind ausdrücklich als solche gekennzeichnet.
+
+Initiativen erscheinen hier, wenn die Person über das Personenfeld der Initiative zugeordnet wurde und die notwendigen Sichtbarkeitsrechte vorliegen. Verknüpfte Publikationen oder Projekte allein begründen keine Mitgliedschaft.
+
+### Neue Datenfelder
+
+Der Form-Builder bietet zusätzliche Standardmodule für Texte, Personen und Verknüpfungen. Welche Module zur Auswahl stehen, richtet sich nach der Entität und bei Projekten nach der jeweiligen Phase. Die technischen Modulnamen sind hier zur Orientierung im Feldkatalog angegeben; die angezeigten Beschriftungen lassen sich im Form-Builder anpassen.
+
+| Modul | Verwendung |
+| --- | --- |
+| Name (`name`) | Ein allgemeines Namensfeld, etwa für den Kurznamen einer Initiative oder eines Projekts. |
+| Beschreibung (`description`) | Eine Beschreibung mit Textformatierung für Aktivitäten, Initiativen und Projekte. |
+| Name, mehrsprachig (`name-loc`) | Ein Name mit getrennten Eingaben für die konfigurierten Inhaltssprachen. |
+| Untertitel, mehrsprachig (`subtitle-loc`) | Ein Untertitel in den konfigurierten Inhaltssprachen, unter anderem für Infrastrukturen. |
+| Titel, mehrsprachig (`title-loc`) | Ein mehrsprachiger Titel für Aktivitäten, Initiativen und Projekte. |
+| Zusammenfassung, mehrsprachig (`abstract-loc`) | Eine mehrsprachige Zusammenfassung für Aktivitäten und Projekte. |
+| Beschreibung, mehrsprachig (`description-loc`) | Eine mehrsprachige Beschreibung mit Textformatierung. |
+| Webseite (`website`) | Ein allgemeines Feld für einen Weblink, verfügbar für Aktivitäten, Initiativen, Projekte und Anträge. |
+| Personen (`persons`) | Personen zu Aktivitäten, Initiativen oder Events zuordnen, unabhängig von bibliografischen Autorenpositionen. |
+| Personen mit Rollen (`persons-role`) | Personenzuordnung für Aktivitäten, Initiativen und Events mit Rollen aus dem Vokabular „Personenrollen“. Vorgaben sind Mitglied, Leitung und Co-Leitung; das Vokabular kann erweitert werden. |
+| Projektpersonen (`persons-project`) | Personen mit Projektrolle und Organisationseinheiten zu Projekten oder Anträgen zuordnen. Bei Projekten lassen sich abweichende Mitgliedschaftszeiträume ergänzen. |
+| Rolle des Instituts (`institute-role`) | Die Rolle des eigenen Instituts im Projekt über ein konfigurierbares Vokabular auswählen. |
+| Projektlaufzeit (`project-date`) | Projektbeginn und -ende gemeinsam erfassen, einschließlich der vorhandenen Hilfen zur Eingabe der Laufzeit. |
+| Beantragte Projektlaufzeit (`project-date-proposed`) | Beantragten Beginn und beantragtes Ende gemeinsam erfassen. Dieses Modul ist für die entsprechenden frühen Projektphasen vorgesehen. |
+| Initiativen (`initiatives`) | Einen Eintrag direkt einer oder mehreren Initiativen zuordnen. |
+| Objectives (`objectives`) | Einen Eintrag einem oder mehreren Objectives zuordnen; die zugehörigen Initiativen werden automatisch mitgespeichert. |
+| Event-Kurztitel (`event-title`) | Einfaches Textfeld für den Kurztitel eines Events; speichert im bisherigen Feld `title`. |
+| Vollständiger Eventtitel (`title_full`) | Optionaler vollständiger Titel eines Events. |
+| Veranstaltungstyp (`event-type`) | Auswahl aus dem bestehenden Vokabular „Veranstaltungstyp“; speichert weiterhin in `type`. |
+| Event-Beschreibung (`event-description`) | Beschreibung eines Events mit den bisherigen vollständigen Formatierungsmöglichkeiten; speichert in `description`. |
+| Event-Webseite (`url`) | Weblink eines Events im bisherigen Feld `url`. |
+| Event-Sichtbarkeit im Portfolio (`event-public`) | Checkbox für die öffentliche Freigabe eines Events im Feld `public`. Bei aktiviertem Portfolio ist sie für neue Events standardmäßig angekreuzt. |
+| Deadline-Titel, Termin und Typ (`deadline-title`, `deadline-date`, `deadline-type`) | Die bisherigen Deadline-Pflichtangaben als positionierbare Systemmodule. |
+| Infrastruktur-ID und Laufzeit (`infrastructure-id`, `infrastructure-date`) | Die eindeutige Infrastruktur-ID und der zugehörige Zeitraum. |
+| Infrastrukturangaben (`infrastructure-category`, `infrastructure-type`, `infrastructure-access`, `infrastructure-link`, `contact-email`, `infrastructure-collaborative`) | Kategorie, Typ, Zugang, Webseite, Kontaktadresse und Angaben zu Verbundinfrastrukturen. |
+
+Die mehrsprachigen Textmodule ersetzen im jeweiligen Formular ihre einsprachige Variante; beide Varianten desselben Feldes können nicht gleichzeitig verwendet werden. Pflichtangaben beziehen sich auf die Ausgangssprache, weitere Übersetzungen sind optional. Die oben beschriebenen mehrsprachigen Custom Fields ergänzen diese Standardmodule um frei definierbare Textfelder.
+
+`persons` und `persons-role` sind alternative Darstellungen derselben Personenzuordnung und können ebenfalls nicht gleichzeitig im selben Formular verwendet werden. Bei Aktivitäten werden verknüpfte OSIRIS-Personen auch für die Zuordnung der Aktivität zu den betreffenden Personen berücksichtigt.
+
+Mit dem Umzug der Projektformulare sind außerdem die bisherigen projektspezifischen Eingaben als Module im Form-Builder verfügbar:
+
+- **Allgemeine Angaben:** Akronym (`acronym`), interne ID (`internal_number`), Zweck (`purpose`), Art des Projekts (`project_type`), Kommentar (`comment`), Projektbild (`image`) und Zustimmung zur öffentlichen Präsentation (`public`).
+- **Verfahrensdaten:** Einreichungsdatum (`submission_date`), Bewilligungsdatum (`approval_date`) und Ablehnungsdatum (`rejection_date`).
+- **Förderung und Zusammenarbeit:** Fördererkategorie (`funder`), Förderorganisation (`funding_organization`), Förderprogramm als Freitext oder Auswahl (`funding_program`, `funding_program_select`), Förderkennzeichen (`funding_number`), Verbundprojekt (`joint_project`) und Koordinator-Einrichtung (`coordinator`). Für Stipendien stehen die passende Förderorganisationsauswahl (`scholarship`) und die Universitätsauswahl aus dem Organisationskatalog (`university`) zur Verfügung.
+- **Fördersummen:** Beantragte und bewilligte Summen für das Gesamtprojekt, das eigene Institut und Teilprojekte (`grant_sum_proposed`, `grant_income_proposed`, `grant_subproject_proposed`, `grant_sum`, `grant_income`, `grant_subproject`).
+- **Fachliche Zuordnung:** Forschung in oder über bestimmte Länder (`research-countries`), Forschungsbereiche (`topics`) und KDSF-Forschungsfelder (`kdsf-ffk`).
+- **Personal und Ressourcen:** Geplante Personalmaßnahmen (`personnel`), eigener Personaleinsatz (`in-kind`) und zusätzliche Ressourcen (`ressources`).
+- **Nagoya-Protokoll:** Erfassung der Nagoya-Relevanz und der betroffenen Länder (`nagoya`).
+
+Projektpersonen werden außerhalb der Ablehnungsphase als Systemfeld eingebunden. Weitere systemseitig benötigte Felder hängen von der Projektphase ab; ihre Position im Formular bleibt konfigurierbar.
+
+
+### Schnittstellen
+
+Die OSIRIS-API bietet Listen-, Detail- und Beziehungsendpunkte für Initiativen und Objectives. API-Clients benötigen das Leserecht `initiatives.read`; für verknüpfte Inhalte gelten zusätzlich deren eigene Leserechte. Die Endpunkte dienen der Abfrage der Daten. Die neuen Endpunkte sind im API-Bereich des Wikis dokumentiert.
+
+Auch die Portfolio-API stellt freigegebene Initiativen und Objectives sowie deren öffentliche Inhalte bereit. Die Detailantwort einer Initiative enthält die freigegebenen Objectives und Anzahlen der verknüpften öffentlichen Inhalte. Sichtbarkeitsregeln der Formularfelder werden berücksichtigt; interne Personenzuordnungen und Bearbeitungsinformationen werden nicht als rohe Metadaten veröffentlicht. Ein Objective wird nur ausgegeben, wenn auch seine Initiative öffentlich freigegeben ist. Öffentliche Portfolio-Seiten selbst sind eine getrennte Erweiterung.
+
+Forschungsbereiche werden aus den expliziten Zuordnungen der Initiative übernommen. Das optionale Forschungsspektrum wird dagegen aus den zugehörigen öffentlichen Publikationen abgeleitet.
+
+Lokalisierte API-Felder berücksichtigen die angefragte Sprache; `lang=all` ermöglicht bei den entsprechend umgestellten Ausgaben die vollständigen Sprachwerte. Die Portfolio-API für Aktivitäten liefert auch Typ und Subtyp in der angeforderten Sprache. Aktivitätslisten lassen sich zusätzlich nach Aktivitätskategorie filtern. Über `/portfolio/activities/details` können Aktivitätsdetails gebündelt mit Cursor-Paginierung abgerufen werden; pro Anfrage sind bis zu 500 Einträge möglich.
+
+### Anmeldung mit Single Sign-On
+
+- Single Sign-On über OpenID Connect, beispielsweise mit Life Science Login, kann nun parallel zum OSIRIS Auth-Addon verwendet werden. Die Zugangsdaten werden weiterhin in `CONFIG.php` konfiguriert; bei `USER_MANAGEMENT = 'AUTH'` erscheint eine zusätzlich konfigurierte OAuth-Anmeldung als weitere Option auf der Login-Seite.
+- Bestehende Profile können in den eigenen Account-Einstellungen mit einem SSO-Konto verknüpft werden. Profilinformationen und Zuordnungen bleiben erhalten; die E-Mail-Adresse wird aus SSO übernommen. Die Zuordnung erfolgt über eine stabile SSO-Kennung und bleibt dadurch auch bei Änderungen des externen Nutzernamens oder der E-Mail-Adresse bestehen.
+- Neue SSO-Nutzer:innen bestätigen die Kontoerstellung ausdrücklich und ergänzen fehlende Profilangaben. Die Einstellungen zur Selbstregistrierung und ein gegebenenfalls erforderliches Registrierungstoken gelten auch für die SSO-Registrierung.
+- Im Parallelbetrieb bleibt ein vorhandenes OSIRIS-Passwort beim Verknüpfen erhalten. Auch direkt über SSO registrierte Personen können in ihren Account-Einstellungen ein lokales Passwort festlegen. „Passwort vergessen“ und der Passwort-Reset durch berechtigte Admins stehen ebenfalls für SSO-Konten zur Verfügung. Bereits früher entfernte Passwörter müssen neu gesetzt werden.
+- Die Anmeldung unterstützt gemeinsame Fehlermeldungen für ungültige Zugangsdaten. Passwort-Reset-Anfragen erhalten bei unbekannten Konten, nach dem Versand und innerhalb der Wartefrist dieselbe neutrale Rückmeldung. Innerhalb der Wartefrist wird keine weitere E-Mail versendet und der vorhandene Rücksetzlink bleibt gültig.
+
+### Überarbeiteter Anmeldebereich
+
+Der gesamte Anmeldebereich wurde neu gestaltet. Anmeldung, Registrierung, Passwort-Reset sowie die Auswahl und Verknüpfung einer SSO-Anmeldung verwenden nun eine gemeinsame, responsive Oberfläche. Die neue Darstellung verbessert die Orientierung, berücksichtigt Tastaturbedienung, hohe Kontraste und reduzierte Bewegungen und funktioniert auch auf kleinen Bildschirmen zuverlässig.
+
+Ist das öffentliche OSIRIS Portfolio aktiviert, wird es auf der Anmeldeseite als eigenständiger Einstieg angeboten. Besucher:innen können dadurch direkt zur öffentlichen Forschungsdarstellung wechseln, ohne sich zuvor anmelden zu müssen.
+
+### Redaktioneller Workflow für Neuigkeiten
+
+Neuigkeiten können jetzt für verschiedene **Outlets** aufbereitet werden, beispielsweise für die Webseite, einen Newsletter oder Social Media. Der redaktionelle Workflow lässt sich unter „Administration → Features“ ausdrücklich aktivieren. Ohne Aktivierung bleibt die bisherige Nutzung der Neuigkeiten erhalten.
+
+Im Admin-Bereich werden die Outlets mit deutsch- und englischsprachigen Namen und Beschreibungen eingerichtet. Für jedes Outlet lässt sich festlegen, ob Titel, Teaser und Beitrag benötigt werden und ob freigegebene Fassungen in Portfolio erscheinen dürfen. Die Portfolio-Ausgabe des Originalbeitrags wird unabhängig davon konfiguriert.
+
+Autor:innen wählen beim Anlegen einer Neuigkeit die gewünschten Outlets aus. Die Redaktion wird über die OSIRIS-Inbox benachrichtigt und findet offene Vorgänge mit ihrem Status in einer eigenen **Redaktionsübersicht**. Sie kann für jedes Outlet einen eigenen Text erstellen, weitere Outlets ergänzen oder einzelne Anfragen mit Begründung ablehnen. Die Inhalte des Originals lassen sich per Klick übernehmen; Verknüpfungen zu Personen, Aktivitäten und weiteren Informationen gelten gemeinsam für alle Fassungen.
+
+Der Originalbeitrag bleibt unabhängig von den redaktionellen Fassungen bearbeitbar. Änderungen daran überschreiben keine Outlet-Texte und heben bestehende Freigaben nicht auf. Englisch steht im Outlet-Editor an erster Stelle; ist nur eine Sprache befüllt, wird diese zunächst vorausgewählt. Die Beiträge unterstützen formatierten Text, Links und eingebettete Bilder.
+
+Optional kann die Redaktion alle fertig vorbereiteten Fassungen gemeinsam zur **Autorenprüfung** versenden. Die Autor:innen erhalten eine Benachrichtigung und können zustimmen oder Änderungswünsche zurückmelden. Eine Zustimmung gibt die Fassungen unmittelbar frei. Alternativ kann die Redaktion direkt freigeben oder eine ausstehende Prüfung ausdrücklich beenden und ohne Rückmeldung abschließen.
+
+Portfolio erhält ausschließlich die dafür konfigurierten Originalbeiträge und freigegebenen Outlet-Fassungen. Die Auswahl **„Nur intern“** verhindert jede Portfolio-Ausgabe. Bestehende Neuigkeiten behalten ihre bisherige Freigabe, solange ihre Veröffentlichungsauswahl nicht ausdrücklich geändert wird.
+
+Für Berichte steht mit eigener Berechtigung ein **Export nach HTML oder Word** zur Verfügung. Die Auswahl lässt sich nach Outlet einschließlich Originalbeitrag, Zeitraum und Sprache filtern. Das gemeinsame Titelbild sowie zusätzliche Bilder und Links im Beitrag werden in den Export übernommen.
+
+
+### Ressourcen-Hub
+
+Mit dem neuen **Ressourcen-Hub** können Einrichtungen interne und externe Angebote an einem zentralen Ort bündeln. Die Bezeichnung und das Icon lassen sich frei konfigurieren – so kann der Hub beispielsweise auch als „Provider Lounge“ oder mit einem anderen einrichtungsspezifischen Namen auftreten. Das Feature kann vollständig aktiviert oder deaktiviert werden.
+
+Die Inhalte werden im Admin-Bereich als frei sortierbare Karten gepflegt. Jede Karte kann ein Icon, deutsch- und englischsprachige Titel und Inhalte sowie mehrere Links enthalten. Für die Darstellung stehen zwei Ansichten zur Verfügung:
+
+- Eine responsive Kartenansicht stellt alle Inhalte übersichtlich und direkt zugänglich dar.
+- Optional kann ein Hintergrundbild als interaktive **Image-Map** verwendet werden. Die Karten werden dafür in einem visuellen Editor auf dem Bild positioniert. Ihre Titel bleiben auf der Image-Map sichtbar; beim Anklicken öffnet sich ein Popover mit dem vollständigen Inhalt und allen Links.
+
+Beide Ansichten greifen auf dieselben Inhalte zurück. Nutzer:innen können zwischen ihnen wechseln; die bevorzugte Darstellung wird im eigenen Profil gespeichert. Der Ressourcen-Hub kann außerdem als persönlicher Startbildschirm ausgewählt werden.
+
+Der Hub ist in die Navigation und die OSIRIS-Suche integriert. Dort können nicht nur die Übersichtsseite, sondern auch einzelne Karten über ihre Titel, Inhalte und Linkbezeichnungen gefunden werden. Ein Suchtreffer führt direkt zur betreffenden Karte: In der Kartenansicht wird sie hervorgehoben, in der Image-Map wird der zugehörige Hotspot mit seinen Informationen geöffnet.
+
+### Zentrale Dokumentenbibliothek
+
+Mit der neuen **zentralen Dokumentenbibliothek** lassen sich allgemein benötigte Dateien einmalig in OSIRIS hinterlegen und anschließend über einen stabilen internen Link an verschiedenen Stellen verwenden. Geeignet ist sie beispielsweise für Richtlinien, Vorlagen, Handreichungen, Präsentationen oder Informationsmaterialien. Wird eine Datei ersetzt, bleibt ihr Link bestehen.
+
+Die Verwaltung ist bewusst vom allgemeinen Admin-Bereich getrennt. Über das Recht `documents.manage` kann sie auch Personen aus Bereichen wie Kommunikation, Personal oder Verwaltung zugänglich gemacht werden, ohne ihnen Zugriff auf sämtliche OSIRIS-Einstellungen zu geben. Berechtigte Personen können Dokumente hochladen, ihre Metadaten bearbeiten, die zugehörige Datei ersetzen oder den Eintrag vollständig löschen. Neben Titel und Kurzbeschreibung können eine Kategorie und frei wählbare Schlagwörter gepflegt werden; außerdem hält OSIRIS fest, wer eine Datei wann angelegt beziehungsweise zuletzt hochgeladen hat.
+
+Nutzer:innen mit dem Recht `documents.central` finden die zentralen Inhalte in einer eigenen Kartenansicht innerhalb des Dokumentenbereichs. Die Bibliothek bietet:
+
+- eine Suche über Titel, Beschreibung, Kategorie, Schlagwörter und Dateiname,
+- Filter nach Kategorie, Dateityp und Schlagwort,
+- verschiedene Sortierungen,
+- eine Vorschau für unterstützte Bilddateien sowie passende Dateisymbole für andere Formate,
+- Funktionen zum Öffnen, Herunterladen und Kopieren eines stabilen Links.
+
+Zentrale und bereits mit anderen OSIRIS-Inhalten verknüpfte Dokumente bleiben voneinander getrennt und können – abhängig von den persönlichen Rechten – über eigene Reiter aufgerufen werden. Die zentralen Dokumente sind außerdem in die OSIRIS-Suche integriert. Ein Treffer führt direkt zur betreffenden, hervorgehobenen Dokumentkarte in der Bibliothek.
+
+Die zentrale Bibliothek unterstützt auch SVG-Dateien. Sie werden als Download ausgeliefert und nicht direkt als aktive Grafik im Browser geöffnet.
+
+Der Zugriff auf die Dateien erfolgt ausschließlich über geschützte Routen. Dabei werden sowohl die Anmeldung als auch die notwendigen Berechtigungen geprüft; ein direkter öffentlicher Zugriff auf Dateien im Upload-Verzeichnis ist nicht vorgesehen.
+
+### Aktivitätstypen kopieren
+
+Bestehende Aktivitätstypen können jetzt im Admin-Bereich kopiert und als Ausgangspunkt für einen neuen Typ verwendet werden. OSIRIS übernimmt dabei die vorhandene Konfiguration einschließlich der Formularfelder und befüllt das neue Formular entsprechend vor. Anschließend müssen nur noch die neue ID, Bezeichnungen und gegebenenfalls abweichende Einstellungen angepasst werden. Das erleichtert insbesondere die Einrichtung mehrerer ähnlich aufgebauter Aktivitätstypen.
+
+
+### Kontakt-Button in Personenprofilen
+
+Ein neuer **Kontakt-Button** ermöglicht die direkte Kontaktaufnahme per E-Mail, Slack, Microsoft Teams oder Matrix. Im Admin-Bereich unter „Personen“ lässt sich das Feature aktivieren und festlegen, welche Kontaktwege die Einrichtung anbietet.
+
+Der Button verwendet die bereits im Profil hinterlegte E-Mail-Adresse und die Links bei den sozialen Medien. Slack und Teams können dort nun ebenfalls ergänzt werden. Zur Auswahl stehen nur Kontaktwege, die von der Einrichtung freigegeben und im jeweiligen Profil hinterlegt sind; eine erneute Eingabe der Kontaktangaben ist nicht nötig.
+
+Bei aktivierter Funktion ist der Button standardmäßig eingeschaltet. Nutzer:innen können in ihren Profileinstellungen einen bevorzugten Kontaktweg wählen oder den Button deaktivieren. Der Hauptbutton öffnet den bevorzugten Kontaktweg; über den Pfeil daneben lassen sich weitere verfügbare Kontaktmöglichkeiten auswählen. Ist kein freigegebener Kontaktweg hinterlegt, wird kein Button angezeigt.
+
+### Weitere Entwicklungen
+
+- Beim Öffnen der OSIRIS-Info im Admin-Bereich werden die hinterlegten Datenbankindizes angelegt beziehungsweise bestätigt. Die Prüfung ist außerdem über die Index-Migration erreichbar; die Indexdefinitionen werden für das neue Sprachdatenmodell noch überprüft.
+- Aktive Filter der zentralen Dokumentenbibliothek werden in der URL gespeichert. Gefilterte Ansichten, beispielsweise für eine bestimmte Kategorie oder ein Schlagwort, können dadurch als stabiler Link geteilt und später erneut geöffnet werden.
+- Der Hintergrundjob zum Abruf von OpenAlex-Daten unterstützt einen optionalen API-Key als Bearer-Token aus der Job-Konfiguration. Fehlgeschlagene Abrufe werden nicht länger dauerhaft als abgeschlossen behandelt, sondern bei einem späteren Durchlauf erneut versucht.
+- Die Sophie-Illustrationen wurden in einem einheitlichen Stil überarbeitet. Auch die Darstellungen der Fehlerseiten wurden entsprechend aktualisiert und übersichtlicher angeordnet.
+
+### Hinweise zum Upgrade und Beta-Test
+
+Neue Installationen erhalten Standardformulare für einen Drittmittel-Projekttyp, Events, Deadlines, Initiativen und Infrastrukturen. Vorhandene institutionelle Formularkonfigurationen werden bei der Initialisierung nicht überschrieben. Beim Upgrade werden die bisherigen Projekt- und Infrastrukturkonfigurationen übernommen; Events und Deadlines erhalten die entsprechende Standarddefinition.
+
+Bestehende Texte werden bei der Sprachmigration grundsätzlich als Englisch behandelt, bisherige deutsche Angaben bleiben als optionale Übersetzungen erhalten. Personenprofile, Organisationseinheiten und das Positionsvokabular werden beim allgemeinen Upgrade auf 3.0 ebenfalls migriert. Die Route `/migrate/localization` bleibt für einen gesonderten oder wiederholten Durchlauf verfügbar; bereits vorhandene Sprachwerte werden dabei beibehalten. Die Migration von Projekt-, Antrags- und Infrastrukturtexten ist in die jeweilige Formularmigration eingebunden. Schnittstellenanbindungen und eigene Abfragen müssen die neuen Sprachfelder berücksichtigen.
+
+Die PHP-Abhängigkeiten müssen beim Update anhand der mitgelieferten `composer.lock` aktualisiert werden; die neue SSO-Anbindung verwendet eine zusätzliche OpenID-Connect-Bibliothek.
+
+Die Draftphase ist nur vorbereitet. Historische Datenstände von Initiativenzuordnungen werden durch die Statistik nicht rekonstruiert. Die öffentlichen Portfolio-Ansichten sind unabhängig von den bereits vorhandenen API-Endpunkten zu ergänzen.
+
+### Bugfixes
+
+- Die Portfolio-API für Aktivitäten löst Typ- und Subtypbezeichnungen in der angeforderten Sprache auf. Bei der gemeinsamen Detailausgabe bleiben auch verknüpfte Projektnamen und -titel mehrsprachig.
+- HTML- und Word-Berichte exportieren auch einzelne Listeneinträge. Fehlerhafte Bausteine werden mit Hinweisen behandelt, ohne nachfolgende Inhalte vollständig zu überspringen; Warnungen und temporäre Dateien werden gesondert behandelt.
+- Lehrveranstaltungen werden in Personenprofilen wieder korrekt sortiert.
+- Die Jahres- und Aktivitätsspalten in Journalansichten erhalten verlässliche Standardinhalte.
+- Projektdetails können auch dann fehlerfrei angezeigt werden, wenn kein Startdatum hinterlegt ist.
+- Forschungsprofil und Ausbildung werden auch bei unerwarteten oder leeren Werten zuverlässig im Nutzerprofil dargestellt.
+- Die ORCID-Validierung wurde gegen fehlende Werte abgesichert.
+- Weitere kleinere Robustheitskorrekturen verhindern Fehlermeldungen bei unvollständigen Einheiten- und Baumzuordnungen.
+
+
+<time datetime="2026-10-27">27.10.2026</time>
+<a class="anchor" href="#version-2.1.3" id="version-2.1.3"></a>
+
+## Version 2.1.3
+
+### Hinzugefügt oder Verändert:
+- Das Admin Dashboard wurde um die Sektion *Informationen* erweitert. Dort können nun übersichtlich Informationen zur Version und Konfiguration von **OSIRIS** und **PHP** angezeigt werden.
+- Das Admin Dashboard wurde um die Sektion *Datenbank* erweitert. Hier kann direkt per Klick das Re-Rendern der Datenbank ausgeführt werden.
+- Das ORCID-Feature wurde ein wenig erweitert. Es ist nun möglich einzelne Aktivitäten mit *Überspringen* vorerst abzulehnen. Diese werden daraufhin aus der Importliste entfernt. Mit *Übersprungene Werke anzeigen* können diese jederzeit wieder angezeigt und importiert werden. [#625](https://github.com/OSIRIS-Solutions/osiris/issues/625)
+- Wir haben auf der Startseite die Eventübersicht angepasst. Es werden nun Events nur noch 2 Monate im Voraus gezeigt und die Sortierung ist geändert. [#629](https://github.com/OSIRIS-Solutions/osiris/issues/629)
+- In der Admin Einstellung des ORCID Features wird ab sofort das Client Secret nach dem Speichern nicht mehr im Klartext angezeigt.
+- Es gibt nun in *CONFIG.php* die Möglichkeit eine Basis URL für die OSIRIS Instanz zu setzen. Die Variable heißt `BASE_URL` und soll aus Protokoll und Hostnamen bestehen, z.B. `https://osiris-demo.de/`. Damit wird die dynamische Bestimmung des Protokolls und Hostnamens überschrieben. Falls diese Variable nicht konfiguriert wird, bleibt die bisher genutzte dynamische Bestimmung bestehen. Diese neue Variable löst das Probleme aus Issue [#628](https://github.com/OSIRIS-Solutions/osiris/issues/628).
+- Die Sicherheit von Dokumenten wurde verbessert, sodass sich hochgeladene Dateien nicht mehr direkt über die URL abrufen lassen, wenn man keine Berechtigung dazu hat.
+
+### Sonstige Bugfixes:
+- Fix Bug [#600](https://github.com/OSIRIS-Solutions/osiris/issues/600) - Antragsteller eines Projekts konnten das Projekt nach dem erstellen nicht bearbeiten 
+- Fix Bug [#606](https://github.com/OSIRIS-Solutions/osiris/issues/606) - Ein Modal im Formular-Builder war nicht korrekt schließbar.
+- Fix Bug [#602](https://github.com/OSIRIS-Solutions/osiris/issues/602) - In der klassischen Ansicht einer Aktivität konnten Dateien nicht hochgeladen werden.
+- Fix Bug [#627](https://github.com/OSIRIS-Solutions/osiris/issues/627) - Fehlendes Protokoll im Recovery-Link
+
+
+
+<time datetime="2026-10-02">02.10.2026</time>
+<a class="anchor" href="#version-2.1.2" id="version-2.1.2"></a>
+
+## Version 2.1.2
+
+Wir haben Probleme mit dem Autoren- und Einheiten-Matching von Aktivitäten behoben [#619](https://github.com/OSIRIS-Solutions/osiris/issues/619). Außerdem haben wir ein paar kleinere Verbesserungen bei Projekten vorgenommen und ein Problem mit dem Date-Template behoben [#603](https://github.com/OSIRIS-Solutions/osiris/issues/603).
+
+
+<time datetime="2026-08-18">18.08.2026</time>
+<a class="anchor" href="#version-2.1.1" id="version-2.1.1"></a>
+
+## Version 2.1.1
+
+Im letzten Release hat unser Git leider zwei kleine Fehler eingebaut, die wir mit diesem Patch behoben haben:
+
+1. Die neue News-Seite zeigte verknüpfte Informationen sehr rudimentär an (Hier ist uns ein ganzer Commit abhanden gekommen).
+2. Auf der Journal-Bearbeiten-Seite fehlte nach dem Merge einfach eine Zeile, wodurch die ganze Seite nicht mehr geladen wurde.
+
+Beide Probleme sind nun behoben. Für die Unannehmlichkeiten möchten wir uns entschuldigen und danken allen, die uns auf die Probleme hingewiesen haben.
+
+
+<time datetime="2026-08-14">14.08.2026</time>
+<a class="anchor" href="#version-2.1.0" id="version-2.1.0"></a>
+
+## Version 2.1.0
+
+> In diesem Update liegt der Fokus vermehrt auf der neuen Schnittstelle zu ORCID und dem neuen OSIRIS Portfolio.
+> Mehr Informationen zu Portfolio findet ihr [auf der offiziellen Seite](https://osiris-portfolio.de).
+
+### ORCID Integration
+
+OSIRIS unterstützt nun die direkte Verknüpfung mit ORCID. Personen können in ihrem Profil eine verifizierte ORCID iD hinterlegen und so sicherstellen, dass das verknüpfte ORCID-Profil tatsächlich zu ihnen gehört.
+
+Nach erfolgreicher Verknüpfung können Publikationen und andere Aktivitäten automatisch aus ORCID in OSIRIS importiert werden. Wie bereits bei Crossref und DataCite lässt sich in den Admin-Einstellungen festlegen, welchen Aktivitätstypen in OSIRIS die verschiedenen ORCID-Typen zugeordnet werden sollen.
+
+Der Import ist direkt über die Startseite und das eigene Profil erreichbar. Bereits importierte ORCID-Einträge werden erkannt, um Duplikate zu vermeiden; durch Zwischenspeicherung lädt die Importübersicht zudem schneller.
+
+Zur Aktivierung der Integration müssen zunächst die ORCID-Zugangsdaten – Client-ID und API-Key – in den Admin-Einstellungen unter „Integrationen“ hinterlegt werden.
+
+
+### Portfolio-API
+
+Die Portfolio-API wurden um zusätzliche Inhalte und Konfigurationsmöglichkeiten erweitert:
+
+- Es gibt einen neuen **Such-Index**, der die Suche nach Personen, Projekten, Infrastrukturen, Veranstaltungen und Themen ermöglicht. Der Suchindex wird für die allgemeine Suche im neuen Portfolio verwendet. 
+- Das **Forschungs-Spektrum** kann nun in Portfolios eingebunden werden. Dafür gibt es eine neue Einstellung im Portfolio-Bereich. Neben einer Übersicht stehen Beschreibungen und Schlagwörter der Themen zur Verfügung; die Themen werden außerdem im Portfolio-Suchindex berücksichtigt.
+- **Veranstaltungen** können jetzt über die Portfolio-API ausgegeben und in Portfolio dargestellt werden. Einzelne Veranstaltungen lassen sich beim Anlegen und Bearbeiten freigeben.
+
+### Neuigkeiten
+
+Die Verwaltung von Neuigkeiten wurde übersichtlicher gestaltet und um Verknüpfungen zu weiteren OSIRIS-Inhalten erweitert. Auf diese Weise lässt sich die Forschungskommunikation gezielt mit den relevanten Inhalten verknüpfen. Neuigkeiten können nun mit folgenden Entitäten verknüpft werden:
+- Personen
+- Aktivitäten
+- Projekte
+- Infrastrukturen
+- Veranstaltungen
+- Forschungsbereiche
+
+Je nach Bedarf kann eine der Verknüpfungen auf der Seite auch besonders hervorgehoben werden. All diese Verknüpfungen werden in der Portfolio-API ausgegeben und können in Portfolio dargestellt werden.
+
+Zusätzlich gibt die Portfolio-API auch bei allen verknüpften Entitäten an, dass es eine Neuigkeit gibt, die mit der Entität verknüpft ist. So können beispielsweise in Portfolio bei einer Person alle Neuigkeiten angezeigt werden, die mit dieser Person verknüpft sind. Dies ermöglicht eine gezielte Kommunikation von Forschungsergebnissen und Aktivitäten.
+
+### Organisationen
+
+Organisationen können nun als **Kooperationspartner** gekennzeichnet werden, auch wenn sie keinem Projekt zugeordnet werden. Optional lassen sich Beginn und Ende der Kooperation hinterlegen; die Angaben werden in der Organisationsansicht angezeigt und auch für die Kooperationskarte in Portfolio ausgeliefert.
+
+### Einheiten
+
+Bei Organisationseinheiten können nun mehrere Bilder hochgeladen und mit deutsch- und englischsprachigen Bildunterschriften, Aufnahmedatum und Bildnachweis versehen werden. Die Bilder werden als Galerie unterhalb der Beschreibung angezeigt und lassen sich in einer Vollbildansicht öffnen. Für eine schnelle Darstellung erzeugt OSIRIS beim Upload automatisch verkleinerte Vorschaubilder.
+
+Einzelne Bilder können explizit als **öffentlich** freigegeben werden. Nur freigegebene Bilder werden über die Portfolio-API ausgeliefert; dort stehen sowohl das Original als auch das Vorschaubild über vollständige Weblinks zur Verfügung.
+
+### Erweiterung der Journale
+
+Die Journalverwaltung wurde grundlegend erweitert und übersichtlicher gestaltet. Im Admin-Dashboard gibt es nun einen eigenen Bereich für Journal-Einstellungen. Dort können die Bezeichnung von Journalen, der Abruf von Metriken und zusätzliche Datenfelder zentral konfiguriert werden.
+
+- Alle Journal-bezogenen Einstellungen sind nun an einem Ort gebündelt und können zentral verwaltet werden, inkl. der Konfiguration von Journal-Metriken, benutzerdefinierten Feldern und der Änderung des Anzeigenamens von Journalen.
+- Der bisherige „Impact Factor“ wurde in „Cite Factor“ umbenannt. Die Bezeichnung lässt sich für Deutsch und Englisch individuell anpassen.
+- **Benutzerdefinierte Felder** können für Journale aktiviert werden, beispielsweise für APC-Kosten, Währungen, Transformationsverträge oder interne Klassifikationen. Die Werte lassen sich im Journal-Editor pflegen und werden in der Detailansicht angezeigt.
+- In der Journalübersicht können benutzerdefinierte Felder als zusätzliche Spalten eingeblendet, durchsucht und exportiert werden.
+- Die Journal-Detailseite wurde überarbeitet und zeigt neben Publikationen jetzt auch weitere Aktivitäten, die mit dem Journal verknüpft sind.
+
+Zusätzlich steht eine neue **Statistikseite für Journale** zur Verfügung. Die Auswertungen können auf ein Berichtsjahr oder einen frei wählbaren Zeitraum eingeschränkt werden und basieren auf den mit den Journalen verknüpften Publikationen. Neben den meistgenutzten Journalen werden unter anderem Verlage, Länder, Open-Access-Status, Kategorien, Quartile und Journal-Metriken ausgewertet. Numerische benutzerdefinierte Felder können ebenfalls statistisch zusammengefasst und grafisch dargestellt werden.
+
+Auch die **Journal-API** wurde erweitert: Konfigurierte benutzerdefinierte Felder werden nun über `/api/journals` ausgegeben. Gleichzeitig wurde die Abfrage optimiert, sodass der Endpunkt insbesondere bei vielen verknüpften Publikationen deutlich schneller reagiert.
+
+### Forschungs-Spektrum
+
+Das automatisch zugewiesene Forschungsspektrum lässt sich jetzt nachträglich bearbeiten. Dazu gibt es ein Bearbeiten-Symbol neben dem Forschungsspektrum einer Publikation. Damit können die automatisch zugewiesenen Themen entfernt oder neue hinzugefügt werden. Manuell können maximal 5 Themen zugewiesen werden.
+Die Änderungen werden in der Datenbank gespeichert und sind für alle Nutzer:innen sichtbar. Es ist jederzeit möglich, die Änderungen wieder rückgängig zu machen und die automatisch zugewiesenen Themen wiederherzustellen. 
+
+Die Popups des Forschungs-Spektrums wurden um einen Link erweitert, mit dem sich die zugehörigen Publikationen anzeigen lassen. Die Links führen auf entsprechende Filter in der erweiterten Suche, sodass die Publikationen direkt weiter analysiert werden können. Das erleichtert es insbesondere, falsch zugewiesene Themen zu erkennen und zu korrigieren.
+
+### Erweiterte Suche
+
+Neben den bisher verfügbaren **Aggregationen** in der erweiterten Suche, die ausschließlich Zählungen von Treffern zurückgeben, können nun auch **Summen und Mittelwerte** für numerische Felder berechnet werden. Damit lassen sich beispielsweise die durchschnittlichen Cite-Faktoren, aufsummierte SWS oder die Summe von benutzerdefinierten Feldern wie APC-Kosten berechnen.
+
+Außerdem wurden der Aktivitätssuche weitere Filter hinzugefügt, um auch nach Nutzernamen, Forschungsspektrum-IDs und Projekt-IDs zu filtern.
+
+### Admin-Einstellungen
+
+Die Admin-Einstellungen wurden überarbeitet und inhaltlich erweitert. Es gibt nun eine neue **Kategorie "Integrationen"**, in der alle Einstellungen zu externen Diensten wie ORCID, OpenAlex, Crossref, etc. gebündelt sind.
+
+Es wurde eine neue Möglichkeit hinzugefügt, **eigenes CSS** zu hinterlegen, um OSIRIS noch weiter optisch an die eigenen Bedürfnisse anzupassen. Das CSS kann in den Admin-Einstellungen unter "Design" hinterlegt werden.
+
+#### Form Builder
+
+- Einzelne Felder in Aktivitätenformularen können nun nur für bestimmte Rollen sichtbar gemacht werden. Standardmäßig bleiben alle Felder für jeden sichtbar. Die Rollensteuerung steht auch für Überschriften und Textbausteine zur Verfügung, sodass sich Formulare gezielter an unterschiedliche Nutzergruppen anpassen lassen.
+- Felder können als **empfohlen** gekennzeichnet werden. Sie sollen später im Formular hervorgehoben werden, bleiben aber freiwillig. Diese Einstellung bereitet eine spätere Berücksichtigung im Qualitätsscore vor.
+- Für geeignete Felder lässt sich festlegen, ob sie in der Metadaten-Tabelle in Portfolio ausgegeben werden.
+
+#### Datumsangaben in Templates
+
+- Datumsangaben in Aktivitäts-Templates können jetzt flexibel formatiert werden, zum Beispiel mit `{date:Y-m-d}` oder `{start:Y, F j}`. Dabei kann sowohl auf `date`, `start` als auch `end` zugegriffen werden.
+- Mit `{end-compact:…}` lassen sich Datumsbereiche kompakt darstellen: Mit dem Start übereinstimmende Jahre und Monate werden nicht wiederholt. Damit sind unter anderem APA-7-konforme Konferenzdaten wie `(2026, July 24–26)` möglich.
+
+
+### Bug Fixes und Verbesserungen
+- Die Bearbeitung von Autor:innen und anderen Mitwirkenden wurde übersichtlicher gestaltet. Bei der Auswahl eines OSIRIS-Nutzers werden Name und Einheiten automatisch übernommen.
+- Geteilte Autorenschaften werden nun zuverlässig als solche gekennzeichnet. [#514](https://github.com/OSIRIS-Solutions/osiris/issues/514)
+- Der Button zum Abruf von Publikationsdaten über eine DOI ist beim Anlegen von Aktivitäten nun leichter zu finden.
+- Bei E-Mail-Adressen, ORCID iDs und Google-Scholar-IDs werden versehentlich eingegebene Leerzeichen automatisch entfernt.
+- Ein Problem wurde behoben, durch das es beim Synchronisieren von Nutzer-Attributen über die Kommandozeile zu Fehlermeldungen kam.
+- Es war nicht möglich, über den Baukasten in der erweiterten Suche nach Einheiten zu filtern.
+- Es war nicht möglich, benutzerdefinierte Felder (Custom Fields) zu löschen. [#560](https://github.com/OSIRIS-Solutions/osiris/issues/560)
+- Die manuell hinzugefügten Einheiten werden jetzt auch für die Berechnung der Gesamteinheiten einer Aktivität berücksichtigt. [#568](https://github.com/OSIRIS-Solutions/osiris/issues/568)
+- Der Excel-Export von Events wurde verbessert und zeigt nun die korrekten Spaltenüberschriften an sowie das richtige Datum an. Titel und Kurztitel wurden hinzugefügt. [#563](https://github.com/OSIRIS-Solutions/osiris/issues/563)
+- Der Export von Datumsfeldern wurde verbessert, wodurch sie in Excel nun korrekt als Datum erkannt werden.
+- Wird der Tag beim Anlegen einer Aktivität nicht angegeben, wird nun nicht mehr automatisch der erste Tag des Monats ausgegeben. Für die Sortierung und Filterung wird weiterhin der 1. des Monats angenommen. [#584](https://github.com/OSIRIS-Solutions/osiris/issues/584)
+- Mit Organisationen verknüpfte Projekte wurden nicht immer auf der Detailansicht der Organisationen angezeigt. [#571](https://github.com/OSIRIS-Solutions/osiris/issues/571)
+- Projektverknüpfungen in der neuen Aktivitätsansicht führen nun wieder auf die korrekte Projektseite. [#574](https://github.com/OSIRIS-Solutions/osiris/issues/574)
+- Verknüpfungen zwischen Projekten und Anträgen funktionieren nun auch dann korrekt, wenn beide unterschiedliche IDs besitzen.
+- Die Aktivitätsliste eines Projekts lässt sich nun wieder als Word herunterladen. [#579](https://github.com/OSIRIS-Solutions/osiris/issues/579)
+- Antworten in Workflows werden nun mit der korrekten Workflow-Stufe in der Historie angezeigt.
+- Die Detailansicht von Infrastrukturen wurde übersichtlicher gestaltet.
+- Der Google-Scholar-Import wird nur noch angezeigt, wenn ein entsprechendes Konto verknüpft ist.
+- Die Versionierung des OSIRIS-Wikis wurde aufgrund mehrerer Probleme zurückgenommen.
+
+
+<time datetime="2026-07-17">17.07.2026</time>
+<a class="anchor" href="#version-2.0.2" id="version-2.0.2"></a>
+    
+## Version 2.0.2
+
+Datenvalidierung im User-Editor und Bugfixes
+
+### User-Editor:
+  - Auf Basis des feature request [#256](https://github.com/OSIRIS-Solutions/osiris/issues/256) gibt es nun Eingabevalidierungen
+  im Editor der Nutzerprofile für nahezu alle Felder im Bereich `Kontakt` mit visuellem Feedback
+  - Wenn Nutzer sich selbst ein neues Passwort vergeben gibt es nun Basisregeln zur Passwortsicherheit und sofortiges Feedback
+  - Ein Bug wurde behoben bei dem die Fehlernachricht bei einem falschen alten Passwort nicht zu sehen war
+
+### Sonstiges
+  - Die Sortierung nach Impact-Faktor wurde in der Journals-Übersicht gefixt [#535](https://github.com/OSIRIS-Solutions/osiris/issues/535)
+  - User Feedback für die Felder `DOI` und `Link` wurde im Activity-Editor hinzugefügt [#533](https://github.com/OSIRIS-Solutions/osiris/issues/533)
+  - Ein fehlerhafter Link von der Startseite zur Eventübersicht wurde gefixt
+  - Es wurde ein Konflikt mit Podman in den Dockerfiles gefixt
+  - Bugs an der Portfolio API wurden behoben - Issues [#544](https://github.com/OSIRIS-Solutions/osiris/issues/544) und [#545](https://github.com/OSIRIS-Solutions/osiris/issues/545)
+  - Abkürzungen von Einheiten können nun 9 Zeichen enthalten (war zuvor limitiert auf 8 Zeichen) [#537](https://github.com/OSIRIS-Solutions/osiris/issues/537)
+  - Style-Verbesserungen
+  - Die Semesterliste in den Statistiken der Lehrveranstaltungen wird nun aus den vorhandenen Daten generiert
+
+Vielen Dank an alle Issue Reporter!
+
+----
+
+<time datetime="2026-06-29">29.06.2026</time>
+<a class="anchor" href="#patch-2.0.1" id="patch-2.0.1"></a>
+
+## Version 2.0.1
+
+Bugfixes und technische Updates
+
+### CVs:
+  - Wenn User neue Einträge in ihren CVs anlegen, wird nun in den Feldern `Von`/`Bis` anstelle von `month` nun das korrekte Format `YYYY-MM` bzw. `JJJJ-MM` angezeigt ([#516](https://github.com/OSIRIS-Solutions/osiris/issues/408))
+  - Es wurde auch ein Bug behoben, bei dem die Eingaben in den Datumsfeldern nicht immer korrekt validiert wurden ([#518](https://github.com/OSIRIS-Solutions/osiris/issues/408))
+
+### OSIRIS Wiki
+
+Das OSIRIS Wiki wird ab sofort versioniert veröffentlicht. Das führt dazu, dass die Links die aus OSIRIS in das Wiki führen, teilweise in 404 enden. Mit diesem Patch werden die Links geupdatet.
+
+### Technisch
+  - Die Build-Dependencies wurden geupdatet
+  - Die Container für Development und Production Umgebungen können nun parallel laufen
+  - Es wird bei neuen Patches das Migrations-Tool nicht mehr aktiviert
+
+----
 
 <time datetime="2026-06-01">01.06.2026</time>
 <a class="anchor" href="#version-2.0.0" id="version-2.0.0"></a>
@@ -96,7 +554,7 @@ Sie ermöglicht es, Navigation und Daten übergreifend zu durchsuchen – ohne d
 - Organisationen
 - Infrastrukturen
 - Journale
-- Veranstaltungen
+- Veranstaltungen und Deadlines
 - Berücksichtigt aktivierte Features und individuelle Berechtigungen
 - Ergebnisse werden in Echtzeit aktualisiert
 - Vollständig keyboard-nutzbar
@@ -280,6 +738,11 @@ Es ist nun möglich, Keycloak und andere generische Dienste als externe Authenti
 
 Zusätzlich zur Anzahl der Publikationen werden nun auch Zitationsdaten (OpenAlex) integriert. Auf den Schwerpunkt-Seiten werden die durchschnittlichen Zitationszahlen pro Publikation dargestellt. In Publikationen mit Zitationsdaten wird die Anzahl der Zitationen angezeigt, zusammen mit einem Zeitstempel der letzten Aktualisierung.
 
+### <i class="ph-duotone ph-globe"></i> Support für Portfolio 2.0
+
+OSIRIS Portfolio wurde ebenfalls komplett überarbeitet, läuft stabiler und bietet viele neue Funktionen. Die neue Version von Portfolio ist nur mit OSIRIS 2.0 aufwärts kompatibel, da sie von einigen neuen Funktionen und Datenstrukturen in OSIRIS 2.0 profitiert. Daher ist die Unterstützung für Portfolio 2.0 ein wichtiger Bestandteil dieses Updates.
+
+Disclaimer: OSIRIS Portfolio ist eine separat lizenzierbare Erweiterung, die nicht automatisch mit OSIRIS 2.0 installiert wird. Bitte kontaktiert uns, wenn ihr Interesse an OSIRIS Portfolio habt oder mehr darüber erfahren möchtet. 
 
 ### <i class="ph-duotone ph-bell"></i> Mitteilungen, Hinweise und Texte
 
@@ -336,8 +799,6 @@ Plus zahlreiche weitere kleinere Verbesserungen, Fehlerbehebungen und Optimierun
 
 ----
 
-
-
 <time datetime="2026-02-10">10.02.2026</time>
 <a class="anchor" href="#version-1.8.1" id="version-1.8.1"></a>
 
@@ -346,6 +807,7 @@ Plus zahlreiche weitere kleinere Verbesserungen, Fehlerbehebungen und Optimierun
 Dieses Update bringt wichtige Sicherheitsverbesserungen, viele kleine Bugfixes sowie spürbare Verbesserungen in Einstellungen, Organisationen, Reports und im Admin-Bereich.
 
 ### Sicherheit & Stabilität
+
 Es wurde ein kritisches Problem behoben, durch das Nutzer:innen ohne Bearbeitungsrechten für Nutzer:innenprofile auch die Profile anderer Nutzer:innen bearbeiten und sogar inaktivieren oder löschen konnten. Wir entschuldigen uns für dieses Problem und bedanken uns bei dem OSIRIS-Nutzer Jochen, der uns darauf aufmerksam gemacht hat [#408](https://github.com/OSIRIS-Solutions/osiris/issues/408).
 
 - Einheitliches Escaping von Nutzereingaben auf Portal-Seiten (Personen, Infrastrukturen, Einheiten, Topics) zur besseren Absicherung gegen fehlerhafte oder manipulierte Inhalte (Fixes #404)
@@ -370,14 +832,14 @@ Es wurde ein kritisches Problem behoben, durch das Nutzer:innen ohne Bearbeitung
 ### Reports & Editor
 
 - Report Builder:
-    - Blöcke lassen sich jetzt wieder duplizieren (#391)
-    - Tabellen-Aggregationen robuster (Strings werden korrekt behandelt) (#392)
-    - Mehr Styling-Optionen (fett, Links, Bilder)
-   -  Standardfilter ist jetzt leer (besseres Startverhalten in Übersichten)
+  - Blöcke lassen sich jetzt wieder duplizieren (#391)
+  - Tabellen-Aggregationen robuster (Strings werden korrekt behandelt) (#392)
+  - Mehr Styling-Optionen (fett, Links, Bilder)
+  - Standardfilter ist jetzt leer (besseres Startverhalten in Übersichten)
 - Quill-Editor:
-    - Bessere Behandlung von Leerzeilen und Mehrzeiligkeit (#387)
+  - Bessere Behandlung von Leerzeilen und Mehrzeiligkeit (#387)
 - Validierung:
-    - Leere Strings und Zeilenumbrüche werden korrekt behandelt (#403)
+  - Leere Strings und Zeilenumbrüche werden korrekt behandelt (#403)
 
 ### API, Rendering & Backend
 
@@ -390,8 +852,9 @@ Es wurde ein kritisches Problem behoben, durch das Nutzer:innen ohne Bearbeitung
 - Text-Handling in Formularen robuster gemacht
 - Diverse kleine UI- und Anzeigeprobleme behoben
 
+---
 
-<time datetime="2026-01-18">01.02.2026</time>
+<time datetime="2026-02-01">01.02.2026</time>
 <a class="anchor" href="#version-1.8.0" id="version-1.8.0"></a>
 
 ## Version 1.8.0
@@ -399,13 +862,19 @@ Es wurde ein kritisches Problem behoben, durch das Nutzer:innen ohne Bearbeitung
 Es gibt viele neue Funktionen und Verbesserungen, insbesondere im Bereich Customization, Portfolio und Organisationen. Hier die Highlights:
 
 ### Design & Customization
+
 Bislang war es nur möglich, das Logo und die Farben von OSIRIS anzupassen. Mit diesem Update haben wir die Customization-Funktionen deutlich erweitert:
 
-* **Eigene Schriftarten**: Ihr könnt jetzt eigene Schriftarten in OSIRIS verwenden, um das Erscheinungsbild noch besser an eure CI anzupassen.
-* **Icons**: wählt aus drei verschiedenen Icon-Stilen (Standard, Gefüllt oder Zweifarbig).
-* **Viele Elemente anpassen**: z.B. die Dicke und Farbe von Rahmen, die Rundung von Ecken, Schatten, Icons und vieles mehr.
-* **Kopfzeile**: Ihr könnt jetzt die Kopfzeile anpassen, z.B. die Höhe verändern, die Logos komplett in den Footer verschieben oder das OSIRIS-Logo einfärben.
+- **Eigene Schriftarten**: Ihr könnt jetzt eigene Schriftarten in OSIRIS verwenden, um das Erscheinungsbild noch besser an eure CI anzupassen.
+- **Icons**: wählt aus drei verschiedenen Icon-Stilen (Standard, Gefüllt oder Zweifarbig).
+- **Viele Elemente anpassen**: z.B. die Dicke und Farbe von Rahmen, die Rundung von Ecken, Schatten, Icons und vieles mehr.
+- **Kopfzeile**: Ihr könnt jetzt die Kopfzeile anpassen, z.B. die Höhe verändern, die Logos komplett in den Footer verschieben oder das OSIRIS-Logo einfärben.
 
+### Custom Fields
+
+- Neues Format: Freitext-Liste
+  - Es wurde ein neuer Typ von Custom-Field hinzugefügt, der eine Liste von Freitextwerten ermöglicht. Dieses Feld funktioniert ähnlich wie das bestehende Synonyme-Feld bei Organisationen, aber es ist allgemeiner und kann für verschiedene Zwecke verwendet werden.
+- Auf der Seite eines Custom-Fields wird jetzt angezeigt, welche Aktivitäts- und Projekttypen dieses Feld verwenden und ob es mit Infrastrukturen oder Personen verknüpft ist.
 
 ### Portfolio
 
@@ -436,7 +905,7 @@ Lehrveranstaltungen wurden grundsätzlich überarbeitet und bieten nun mehr Mög
 - Jede Lehrveranstaltung hat jetzt eine eigene Seite, auf der alle Details angezeigt werden, inkl. aller verknüpften Aktivitäten. Dabei werden Aktivitäten mit dem Modul `supervisors` auch mit ihren Semesterwochenstunden angezeigt.
 - Es gibt auch eine neue Seite, um existierende Lehrveranstaltungen zu bearbeiten. Dazu wurde ein neues Recht hinzugefügt (Lehrveranstaltungen bearbeiten), das standardmäßig an alle Nutzenden vergeben wird (wie es zuvor auch war).
 - Verknüpfung mit Organisationen:
-  - Anstatt Organisationen händisch einzugeben, können diese jetzt aus dem Organisationsmanagement ausgewählt werden. Alternativ gibt es einen Link, um neue Organisationen anzulegen. 
+  - Anstatt Organisationen händisch einzugeben, können diese jetzt aus dem Organisationsmanagement ausgewählt werden. Alternativ gibt es einen Link, um neue Organisationen anzulegen.
   - Es gibt auch eine Vorschlagsliste, die die 5 am häufigsten zu Lehrveranstaltungen hinzugefügten Organisationen anzeigt, um die Bearbeitung zu vereinfachen.
   - Auf der Seite der Organisationen werden alle verknüpften Lehrveranstaltungen angezeigt.
   - Die Organisation wird auch auf der Statistik-Seite der Lehrveranstaltungen angezeigt.
@@ -445,8 +914,8 @@ Lehrveranstaltungen wurden grundsätzlich überarbeitet und bieten nun mehr Mög
 
 ### Projekte und Anträge
 
-**Finanzen** 
-*(Aufgrund der Sensibilität dieser Daten sind sie ausschließlich im Antrag zu sehen und nicht im Projekt selbst)*
+**Finanzen**
+_(Aufgrund der Sensibilität dieser Daten sind sie ausschließlich im Antrag zu sehen und nicht im Projekt selbst)_
 
 - Die Drittmitteleinnahmen wurden in ein neues Format überführt, das nun neben den geplanten auch die tatsächlich verausgabten Mittel pro Jahr erfasst.
 - Es gibt jetzt eine Übersicht über die Finanzen eines Projekts, die geplante und verausgabte Mittel pro Jahr anzeigt und diese analysiert und visualisiert.
@@ -495,13 +964,13 @@ Die Visualisierung "Abteilungs-Netzwerk" wurde überarbeitet und in "Aktivitäte
 
 ### Weitere Verbesserungen & Bugfixes
 
-- Auf der Seite eines Custom-Fields wird jetzt angezeigt, welche Aktivitäts- und Projekttypen dieses Feld verwenden und ob es mit Infrastrukturen oder Personen verknüpft ist.
-- Die Abfrage der Erst- und Letztautoren wurde aus dem normalen "Authors"-Modul entfernt
+- Es wurde ein neues Daten-Feld für Aktivitäten hinzugefügt, das ähnlich wie das "person"-Feld funktioniert, aber statt des Freitext für die Affiliation eine Auswahl aus den Organisationen bietet. Dadurch können Affiliationen standardisiert und besser verwaltet werden. Bitte beachtet, dass dieses Feld nicht zusammen mit den Feldern "persons" oder "organization" verwendet werden kann. Die Felder sind exklusiv zueinander.
+- Die Abfrage der Erst- und Letztautoren wurde aus dem normalen "Authors"-Modul entfernt, da es häufiger zu Verwirrung geführt hat, als dass es geholfen hat. Die Position der Autoren lässt sich im Nachhinein einfach über die Autorenbearbeitung anpassen. Ansonsten können über das "Authors-Table"-Modul weiterhin alle Autoren mit ihrer Position bearbeitet werden.
 - Wenn die Edition (ein Datenfeld in Aktivitäten) leer oder keine Nummer ist, wird jetzt kein Suffix mehr angezeigt (z.B. 8th, 2nd, 1st).
 - Es ist jetzt nicht mehr möglich, leere Autoren oder Herausgeber hinzuzufügen. Die Fehlermeldungen werden jetzt auch auf Deutsch übersetzt.
 - Das Layout der News-Seite wurde verbessert.
 
-----
+---
 
 <time datetime="2025-12-17">17.12.2025</time>
 <a class="anchor" href="#version-1.7.1" id="version-1.7.1"></a>
@@ -518,7 +987,6 @@ In dieser Version wurden im Wesentlichen Fehler behoben und kleinere Verbesserun
   - Es gibt nun die Möglichkeit, im Falle das ein Feld leer ist ein anderes Feld zu nutzen (z.B. `{field1|field2}`). Sollte field1 leer sein, wird field2 genutzt. Sollte field2 kein Name eines Feldes sein, wird der Text so ausgegeben. Die Textausgabe kann mit Anführungszeichen erzwungen werden: `{field1| "Default Text"}`
 - In der Personen-Übersicht kann jetzt auch nach Rollen gefiltert werden.
 - Die Historie wurde verbessert und sollte jetzt zwei unterschiedlich leere Werte nicht mehr als Unterschied erkennen (z.B. "" und []). Außerdem können einige Werte jetzt besser dargestellt werden (z.B. Open Access), da hier keine Icons mehr für die Darstellung in Listen verwendet werden. Des Weiteren können jetzt auch boolsche Werte in der Historie angezeigt werden.
-
 
 ---
 
@@ -541,8 +1009,7 @@ Hier die Highlights:
 - **Geteilte Notizen:** Für Kommunikation zwischen Projektteam und ABS-Compliance-Team.
 - **Dashboard für ABS-Teams:** Überblick über offene Bewertungen, fehlende Scopes, offene Permits und eingereichte Unterlagen.
 
-Mehr Infos zum Nagoya-Modul findet ihr in unserem [Wiki](https://wiki.osiris-app.de/topics/nagoya/).
-
+Mehr Infos zum Nagoya-Modul findet ihr in unserem [Wiki](https://wiki.osiris-app.de/latest/topics/nagoya/).
 
 ### Erweiterte Suche für fast alles
 
@@ -554,6 +1021,7 @@ Die erweiterte Suche wurde erweitert und verbessert:
 - Es wurden ein paar kleinere Verbesserungen vorgenommen, durch die es jetzt noch stabiler laufen sollte.
 
 Und weil das so gut funktioniert, wurde die erweiterte Suche jetzt auch auf folgende Bereiche ausgeweitet:
+
 - **Projekte und Anträge**
 - **Events**
 - **Journals**
@@ -612,8 +1080,8 @@ Diese neue Flexibilität ermöglicht es, die Statistiken besser an die spezifisc
 
 Diese neuen Statistiken reflektieren sich auch in den Benachrichtigungen, die Reporter erhalten, wenn sie ihre Statistiken aktualisieren müssen. Irreguläre Statistiken werden dabei nicht in den Benachrichtigungen angezeigt, es wurde jedoch ein Shortcut zum Hinzufügen-Menü hinzugefügt, um die Erfassung zu erleichtern.
 
-
 ### Tabellen & Downloads
+
 - Verbesserte Tabellenfunktionalität:
   - bessere Stabilität
   - mehr Download-Optionen (z.B. PDF), Excel mehr verbreitet (z.B. bei Journalen, Events, ...)
@@ -622,12 +1090,12 @@ Diese neuen Statistiken reflektieren sich auch in den Benachrichtigungen, die Re
   - Statistik-Tabellen haben jetzt ebenfalls Download- und Druck-Buttons
 - Viele Abbildungen lassen sich jetzt ebenfalls als PNG oder SVG herunterladen (z.B. Konfetti-Timelines, Koautoren-Netzwerke, Wordclouds), weitere folgen in kommenden Versionen
 
-
 ### LDAP, Nutzer & Rollen
 
 **Guest Accounts**
 
 Neu: Vollständiges Management für Gastkonten
+
 - Anlegen, Bearbeiten & Löschen von Gastaccounts
 - Neue UI-Seiten zur Verwaltung
 - Gäste können sich anmelden, wenn LDAP fehlschlägt
@@ -638,26 +1106,26 @@ Neu: Vollständiges Management für Gastkonten
 
 - UI der Synchronisation verbessert
 - Ein LDAP-Timeout führt dazu, dass die Synchronisation abgebrochen wird, sollte LDAP nicht erreichbar sein
-- Synchronisation von Einheiten wurde verbessert: 
+- Synchronisation von Einheiten wurde verbessert:
   - Synonyme für Einheiten hinzugefügt und berücksichtigt
   - Wiederaktivierte Einheiten werden nicht gelöscht
   - Bei neuen Einheiten wird jetzt nicht mehr angenommen, dass der aktuelle Tag der Start der Zugehörigkeit ist
   - In der Synchronisations-Vorschau gibt es jetzt eine Warnung, wenn Einheiten nicht gefunden werden
   - Neue Sync-Zeitstempel in der UI
 
-
 ### Events
+
 - Events können jetzt zentral deaktiviert werden (Einstellungen > Features)
 - Länder wurden zu Events hinzugefügt
-- Event-Handling in "Aktivität hinzufügen" wurde verbessert: 
+- Event-Handling in "Aktivität hinzufügen" wurde verbessert:
   - Duplikate werden jetzt anhand von Titel und Startdatum erkannt und verhindert
   - Fehlermeldungen werden jetzt korrekt ausgegeben (#253)
   - Typauswahl und Länder wurden ebenfalls hinzugefügt
   - Der Event-Select wurde deutlich verbessert, zeigt jetzt alle verfügbaren Events in einem durchsuchbaren Dropdown an
   - Beim Auswählen eines Events werden automatisch Titel, Datum, Ort und Land vorausgefüllt. Dies wird jetzt im UI deutlicher kommuniziert mit einem Hinweistext und einer kurzzeitigen Markierung der Datenfelder
 
-
 ### Formulare & Eingaben
+
 - Checkboxen in Personen-Feldern funktionieren wieder korrekt (#240)
 - Hilfe-Texte werden jetzt per Hover angezeigt und erscheinen links (#288)
 - Bei Forschungsinteressen werden jetzt auch deutsche Vorschläge korrekt gezeigt (#286)
@@ -673,26 +1141,28 @@ Neu: Vollständiges Management für Gastkonten
 - Das Default-Icon von Aktivitäten wurde angepasst
 - Der volle Link ist nun der Standard in Templates, der abgekürzte Link kann als "link-short" verwendet werden und ist Standard in der Tabellen-Ansicht
 
-
 ### Warteschlange
+
 - Problem behoben: persönliche Warteschlange war nicht für alle Nutzer:innen sichtbar
 - Warteschlange wird nicht mehr versteckt, wenn Nutzer:innen eine Warteschlange-Warnung in ihren Benachrichtigungen haben
 - Gesamte Warteschlange nur noch für Editor-Berechtigte sichtbar
 - Editoren können jetzt trotzdem ihre eigene Warteschlange sehen
 
 ### Reports & Report Builder
+
 - Neue Standardvariablen für Zeitfilter im Report Builder
 - Tabellen im Report Builder können jetzt sortiert werden
 - Zeitlimit im Report Builder verbessert, um langfristige Aktivitäten zu erfassen
 
-
 ### Einstellungen, UI & Design
+
 - Rendering-Sprache als globale Einstellung hinzugefügt (#267)
 - Layout der Feature-Einstellung wurde angepasst und verbessert
 - Icons auf Duotone umgestellt
 - Typografie vereinheitlicht, Header mit Icons versehen
 
 ### Weitere Verbesserungen
+
 - Man kann Forschungsbereiche jetzt inaktivieren
 - Backend-Admin erhält garantiert Admin-Rechte
 - Wenn Journal-Namen Klammern enthalten, bricht das Rendern nicht mehr ab
@@ -716,6 +1186,7 @@ Wir haben viele kleinere Verbesserungen vorgenommen:
 ### Bug Fixes
 
 **Formulare & Eingaben**
+
 - Autoren und Herausgeber werden nur hinzugefügt, wenn das Formular leer ist; alle können nun gelöscht werden, falls nicht benötigt (#254)
 - Pflichtfelder in Projektformularen korrekt markiert (#276)
 - Im Formularbaukasten können jetzt auch Felder gespeichert werden, die nur Herausgeber:innen enthalten
@@ -726,6 +1197,7 @@ Wir haben viele kleinere Verbesserungen vorgenommen:
 - Tippfehler („Ablehnung“) und kleinere Schreibfehler korrigiert (#275, #277)
 
 **Aktivitäten & Darstellung**
+
 - Rendering-Fehler bei Journalnamen mit Klammern behoben
 - Der „keine Personen“-Hinweis erscheint nicht mehr, wenn Herausgeber:innen vorhanden sind
 - Links zu Einheiten in Aktivitäten korrigiert
@@ -737,22 +1209,23 @@ Wir haben viele kleinere Verbesserungen vorgenommen:
 - SWS können im Autoren-Editor wieder bearbeitet werden
 
 **Benutzer & Organisationseinheiten**
+
 - UX beim Hinzufügen von Organisationseinheiten verbessert
 - Einheiten im Autoren-Editor erscheinen nur noch einmal (#268)
 - Unterschiedliche Mitarbeiterzahlen auf Gruppenseiten behoben (#258)
 - Werte für Expertise, CV und Forschungsinteressen können im Personen-Editor jetzt auch leer gesetzt werden
 
 **Projekte & Vorschläge**
+
 - Projekt-Typen werden nach Aktualisierungsdatum sortiert
 - "Projektantrag hinzufügen" ist nun der neue Standard, wenn verfügbar
 - Konfetti-Timeline in Projekten lässt sich korrekt filtern
 
 **APIs & Dokumentation**
+
 - Englische API-Dokumentation für Portfolio hinzugefügt (#266)
 
 ---
-
-
 
 <time datetime="2025-10-12">12.10.2025</time>
 <a class="anchor" href="#version-1.6.0" id="version-1.6.0"></a>
@@ -762,6 +1235,7 @@ Wir haben viele kleinere Verbesserungen vorgenommen:
 #### <i class="ph ph-seal-check"></i> Neue Qualitäts-Workflows für Aktivitäten
 
 OSIRIS 1.6.0 führt ein vollständig neues System für Qualitäts- und Prüf-Workflows ein – flexibel, offen und direkt in der Aktivität integriert:
+
 - Admins können eigene Workflows definieren und beliebigen Aktivitätskategorien zuordnen.
 - Jeder Workflow besteht aus frei konfigurierbaren Schritten, denen Rollen und Organisationseinheiten zugewiesen werden können.
 - Schritte können parallel oder sequenziell ablaufen – ideal für Freigaben durch Abteilungsleitungen und Bibliothek.
@@ -787,6 +1261,7 @@ Ein neues Workflow-Widget wurde zu Aktivitäten hinzugefügt, die Teil eines Wor
 **Neues Reviewer-Interface**
 
 Für Rollen mit Prüfaufgaben (z. B. Abteilungsleitungen, Bibliothek) gibt es ein übersichtliches neues Reviewer-Dashboard:
+
 - Zeigt alle aktuell zu prüfenden Aktivitäten auf einen Blick.
 - Filter nach Kategorie, Rolle, Organisationseinheit oder Status.
 - Schnell-Aktionen zum Freigeben oder Zurückweisen direkt aus der Liste.
@@ -795,6 +1270,7 @@ Für Rollen mit Prüfaufgaben (z. B. Abteilungsleitungen, Bibliothek) gibt es ei
 **Möglichkeit, Aktivitäten zurückzuweisen**
 
 Prüfer:innen können Aktivitäten zurückweisen, wenn z. B. Angaben fehlen oder unklar sind. Wird eine Aktivität zurückgewiesen, passiert Folgendes:
+
 - Der Workflow-Status wechselt auf „rejected“.
 - Prüfer:innen können einen Kommentar hinterlassen und damit die Aktivität zur Bearbeitung freigeben.
 - Autor:innen erhalten eine Nachricht in ihren Benachrichtigungen mit Kommentar.
@@ -817,7 +1293,6 @@ Prüfer:innen können Aktivitäten zurückweisen, wenn z. B. Angaben fehlen oder
 - Alte Workflows können per Migration entfernt oder zurückgesetzt werden (über das Workflow-Interface).
 - Automatische Initialisierung bei neu erstellten Aktivitäten.
 
-
 #### <i class="ph ph-envelope"></i> Neuer Mail-Digest (Benachrichtigungs-Zusammenfassung)
 
 OSIRIS versendet nun auf Wunsch automatische Digest-E-Mails – übersichtlich, zweisprachig und im OSIRIS-Design:
@@ -829,6 +1304,7 @@ OSIRIS versendet nun auf Wunsch automatische Digest-E-Mails – übersichtlich, 
 - Mails sind zweisprachig (DE/EN), vollständig UTF-8-kodiert und nutzen das OSIRIS-Design.
 
 #### <i class="ph ph-file-text"></i> Entwürfe für Aktivitäten
+
 - Nutzer:innen können Aktivitäten als Entwurf speichern und später fertigstellen.
 - Entwürfe sind nur für die erstellende Person sichtbar.
 - Entwürfe können jederzeit geladen, bearbeitet und gespeichert werden.
@@ -840,10 +1316,10 @@ OSIRIS versendet nun auf Wunsch automatische Digest-E-Mails – übersichtlich, 
 - Aktivitäten können nun mit Schlagworten versehen werden, um sie besser zu kategorisieren und zu finden.
 - Es kann in alle Aktivitäten nach Schlagworten gefiltert werden.
 - Schlagworte lassen sich in der Detailansicht von Aktivitäten hinzufügen. Sie können aber auch bei der Erstellung oder Bearbeitung von Aktivitäten hinzugefügt werden. Dazu wurde ein neues Datenfeld `tags` hinzugefügt.
-- Dem Rechte-Management wurde ein neues Recht `activities.tags` hinzugefügt, das standardmäßig nicht vergeben ist. Nur wer dieses Recht hat, kann Schlagworte zu Aktivitäten hinzufügen oder entfernen. Dies gilt auch immer nur dann, wenn die Aktivität selbst auch bearbeitet werden darf. 
+- Dem Rechte-Management wurde ein neues Recht `activities.tags` hinzugefügt, das standardmäßig nicht vergeben ist. Nur wer dieses Recht hat, kann Schlagworte zu Aktivitäten hinzufügen oder entfernen. Dies gilt auch immer nur dann, wenn die Aktivität selbst auch bearbeitet werden darf.
 - Schlagworte lassen sich zentral im Admin-Bereich unter "Inhalte" > "Schlagworte" verwalten. Dort können Admins neue Schlagworte hinzufügen, bestehende bearbeiten oder löschen.
 - Dieses Feature kann im Admin-Bereich unter "Funktionen" ein- und ausgeschaltet werden.
-- Schlagworte können zu Aktivitäten, Projekten, und Events hinzugefügt werden. 
+- Schlagworte können zu Aktivitäten, Projekten, und Events hinzugefügt werden.
 
 #### <i class="ph ph-file-text"></i> Verbesserter Report-Builder
 
@@ -857,19 +1333,18 @@ Der Report-Builder wurde überarbeitet und bietet nun eine verbesserte Benutzero
 - Die Benutzeroberfläche wurde verbessert, indem Klapp- und Kopierfunktionen hinzugefügt wurden. Außerdem gibt es jetzt Dropdown-Menüs für Aggregationen und eine bessere Beschreibung der Bausteine.
 - Die Aggregations-Tabellen wurden verbessert, indem korrekte Namen für Felder und Werte verwendet werden. Auch leere Felder werden jetzt besser dargestellt. Außerdem sorgt das "Entwirren" von Array-Feldern dazu, dass diese einzeln gezählt werden können. Man kann also jetzt zum Beispiel nach Einheiten oder Forschungsbereichen aggregieren, auch wenn diese als Mehrfachauswahl definiert sind.
 
-
 #### <i class="ph ph-textbox"></i> Neue Datenfelder
+
 - Es wurden neue Datenfelder für Aktivitäten hinzugefügt:
   - **Funding Type**: Ein Dropdown-Feld, das es ermöglicht, den Typ der Finanzierung auszuwählen. Die möglichen Werte können im Vokabular unter "funding-type" definiert werden und sind die gleichen wie bei Projekten.
   - **Schlagworte**: Ein Mehrfachauswahl-Feld, das es ermöglicht, Schlagworte zu Aktivitäten hinzuzufügen. Die möglichen Werte können im Admin-Bereich unter "Inhalte" > "Schlagworte" verwaltet werden.
   - **Projekte**: Ein Mehrfachauswahl-Feld, das es ermöglicht, Projekte mit Aktivitäten zu verknüpfen. Es können mehrere Projekte ausgewählt werden und die über die DOI zur Verfügung gestellten Funding-Nummern werden automatisch mit den Projekten abgeglichen und verknüpft. Es gibt ein neues Recht, um Projekte mit Aktivitäten zu verknüpfen, ohne sie bearbeiten zu können.
 
-
 #### <i class="ph ph-lock"></i> Auth-Token für Nutzerregistrierung
+
 - Es wurde ein Auth-Token für die Auth-Nutzerregistrierung eingeführt. Dieser Token kann verwendet werden, um die Registrierung neuer Nutzer zu validieren und sicherzustellen, dass nur autorisierte Anfragen bearbeitet werden.
 - Der Token kann in der URL zur Registrierungsseite übergeben werden und wird dort überprüft. Bei erfolgreicher Validierung kann der Nutzer mit der Registrierung fortfahren.
 - Dies erhöht die Sicherheit des Registrierungsprozesses und verhindert Missbrauch durch unautorisierte Zugriffe.
-
 
 #### <i class="ph ph-list-checks"></i> Erweiterung für Conditional Templates
 
@@ -879,14 +1354,15 @@ Die Vorlagenlogik wurde erweitert, um bedingtes Rendern basierend auf **mehreren
 - Verwende `|`, um zu rendern, wenn **ein beliebiges** Feld vorhanden ist.
 
 **Beispiele:**
-- `%title Titel: %` → wird nur gerendert, wenn `title` gesetzt ist.  
-- `%title&authors by %` → wird nur gerendert, wenn **sowohl** `title` als auch `authors` ausgefüllt sind  
+
+- `%title Titel: %` → wird nur gerendert, wenn `title` gesetzt ist.
+- `%title&authors by %` → wird nur gerendert, wenn **sowohl** `title` als auch `authors` ausgefüllt sind
 - `%journal|conference In: %` → wird gerendert, wenn **entweder** `journal` oder `conference` vorhanden ist
 
 Dadurch werden flexiblere und kontextsensitive Vorlagen möglich, ohne dass zusätzliche Codelogik hinzugefügt werden muss.
 
-
 #### Bug Fixes und Verbesserungen
+
 - Es wurde die Visualisierung der Netzwerke von Organisationseinheiten gefixt
 - Autor:innen mit mehreren Vornamen werden jetzt korrekt abgekürzt
 - Es wurde ein Problem behoben, durch das man beim Kopieren einer Aktivität eine deaktivierte Kategorie auswählen konnte
@@ -895,9 +1371,7 @@ Dadurch werden flexiblere und kontextsensitive Vorlagen möglich, ohne dass zus�
 - Es wurde ein Problem behoben, durch das Custom Fields ohne Wert immer '-' ausgegeben haben.
   - Die Logik ist, dass ein Custom Field das explizit leer gelassen wurde, auch als leer gerendert wird. Wenn das Feld jedoch gar nicht existiert, z.B. bei neuen Aktivitäten oder weil das Feld später dazugekommen ist, dann wird der angegebene Default-Wert verwendet.
 
-
 ---
-
 
 <time datetime="2025-09-30">30.09.2025</time>
 <a class="anchor" href="#version-1.5.2" id="version-1.5.2"></a>
@@ -924,6 +1398,7 @@ Dadurch werden flexiblere und kontextsensitive Vorlagen möglich, ohne dass zus�
 - Es gibt ein neues Recht, um Projekte mit Aktivitäten zu verknüpfen, ohne sie bearbeiten zu können. Dieses wird automatisch mit dem Recht zum Bearbeiten von Projekten mitgegeben.
 
 #### Fehlerbehebungen:
+
 - Ein Fehler wurde behoben, durch den Aktivitäten nicht bestätigt werden konnten
 - Ein Fehler wurde behoben, durch den beim Synchronisieren von LDAP-Attributen diese einem zufälligen Nutzer zugeschrieben wurden
 - Aktivität hinzufügen: eine Kategorie auszuwählen wählt jetzt korrekt den ersten Typ aus
@@ -957,7 +1432,7 @@ Mit dem neuen Formbuilder kannst du Formulare für Aktivitäten noch flexibler g
 
 👉 Damit wird die Konfiguration von Aktivitätsformularen so einfach wie nie!
 
-*Vielen Dank an Jochen Knaus, der dieses Feature auf Herz und Nieren getestet hat und uns wertvolles Feedback gegeben hat! 🙏*
+_Vielen Dank an Jochen Knaus, der dieses Feature auf Herz und Nieren getestet hat und uns wertvolles Feedback gegeben hat! 🙏_
 
 #### <i class="ph ph-selection-background"></i> Verbesserte Auswahlfelder (Multi-Select)
 
@@ -969,7 +1444,6 @@ Mit dem neuen Formbuilder kannst du Formulare für Aktivitäten noch flexibler g
 
 - Es gibt jetzt ein neues Modul `supervisor-thesis`, das als Autorenfeld dient (speichert in Autoren). Es ist komplementär zum `supervisor`-Feld, das Semesterwochenstunden benötigt. Das neue Feld speichert stattdessen die Rolle des Betreuenden.
 - Auch im Autoren-/Editor-Interface werden Betreuende korrekt angezeigt.
-
 
 #### <i class="ph ph-highlighter"></i> Herausgeber-Probleme behoben
 
@@ -983,9 +1457,7 @@ Mit dem neuen Formbuilder kannst du Formulare für Aktivitäten noch flexibler g
 - Verbesserte Darstellung von gruppierten Listen mit neuem CSS
 - Neue Tooltip-Hilfen in Aktivitäts-Formularen
 
-
 ---
-
 
 <time datetime="2025-07-31">31.07.2025</time>
 <a class="anchor" href="#version-1.5.0" id="version-1.5.0"></a>
@@ -1018,7 +1490,7 @@ Es wurde eine Möglichkeit hinzugefügt, den **Footer** der Seite anzupassen. Di
 - Es wurde ein neues Datenfeld "Schlagworte" hinzugefügt, das ähnlich wie Expertise verwendet werden kann, allerdings mit einem definierten Vokabular arbeitet. Wie genau dieses Datenfeld heißen soll, kann ebenfalls im Admin-Bereich definiert werden.
 - Es kann festgelegt werden, ob sich Nutzer:innen selbst registrieren dürfen oder ob dies nur Admins möglich ist.
 - Die Auswahl von Organisationseinheiten bei der Zuordnung von Personen wurde verbessert.
-- Beim Anlegen einer Person wird jetzt nicht mehr nach dem Passwort gefragt, wenn als User-Management nicht das `AUTH`-Addon ausgewählt ist, z.B. wenn LDAP oder OAUTH2 verwendet wird.
+- Beim Anlegen einer Person wird jetzt nicht mehr nach dem Passwort gefragt, wenn als User-Management nicht das `AUTH`-Addon ausgewählt ist, z.B. wenn LDAP oder OAUTH verwendet wird.
 
 #### <i class="ph ph-cube-transparent"></i> Forschungsinfrastrukturen
 
@@ -2285,14 +2757,13 @@ OSIRIS geht damit in die Version 1.0 über und verlässt die Betaphase. Wir werd
   - Es kann nun eine Abteilung ausgewählt werden
   - Ein genauer Zeitraum (Monat/Jahr) kann ausgewählt werden
   - Man kann nun einstellen, ob und was fett markiert werden soll
-  - BibTex-Export funktioniert jetzt
+  - BibTeX-Export funktioniert jetzt
 
 **17.11.22**
 
 Ich habe sehr viel User-Feedback aus der Beta-Phase eingearbeitet, u.a. folgendes:
 
 - Neue Aktivitäten wurden hinzugefügt:
-
   - Software
   - Lehre (Vorlesungen und Praktika)
   - Reviews von Grant Proposals und Abschlussarbeiten
@@ -2396,7 +2867,7 @@ Dieses Update bezieht sich ausschließlich auf die Ansicht des Controllings
 
 - Publikationen können jetzt hinzugefügt werden. Sowohl Journal-Artikel als auch Bücher funktionieren.
 - Auf das Löschen von Publikationen wurde bewusst verzichtet. Vielleicht fügt man die Funktion ein, ermöglicht es aber nur begrenzten User-Gruppen (z.B. Admin und Controlling)
-- Export von Publikationen in Word und BibTex wurde hinzugefügt.
+- Export von Publikationen in Word und BibTeX wurde hinzugefügt.
 
 **29.07.22**
 
