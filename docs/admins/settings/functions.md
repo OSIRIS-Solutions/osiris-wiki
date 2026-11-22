@@ -68,4 +68,10 @@ Hier findest du eine Auflistung aller zur Verfügung stehenden Funktionen:
 
 ??? note "Gästeformulare"
       <!-- md:beta -->
-    Hier kannst du aktivieren, ob Gäste in OSIRIS angemeldet werden können und ob es externe Gästeformulare geben soll, um die Registrierung abzuschließen. 
+    Hier kannst du aktivieren, ob Gäste in OSIRIS angemeldet werden können und ob es externe Gästeformulare geben soll, um die Registrierung abzuschließen.
+
+## Initiativen und Objectives
+
+<!-- md:version 3.0.0 -->
+
+Ab OSIRIS **3.0.0** (Beta) kannst du hier Initiativen aktivieren. Das Institut kann sie über die Sprachverwaltung beispielsweise „Missionen“ oder „Arbeitsgruppen“ nennen. Objectives sind eine optionale Untergliederung ohne eigenen Funktionsschalter. Formular und Zuordnungsfelder richtest du anschließend unter [Initiativen konfigurieren](../content/initiatives.md) ein; prüfe außerdem die Rechte der vorgesehenen Rollen.

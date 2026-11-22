@@ -183,3 +183,7 @@ Applications consuming enveloped responses should check the JSON `status` before
 - [Google Scholar](integrations/google-scholar.md) and [OpenAlex topics](research/openalex-topics.md).
 
 This documentation covers all 27 concrete GET endpoints declared with `/api/` in `routes/api/api.php`. The POST enrichment route is outside this GET endpoint reference.
+
+## Initiatives and Objectives
+
+See [Initiatives and Objectives](initiatives.md) for list, detail, parent/objective and related-content endpoints. These routes use the `initiatives.read` client scope, preserve numeric-looking strings, and set HTTP status codes alongside JSON status.

@@ -28,7 +28,4 @@ Neben den fünf Standard-Rollen können auch weitere hinzugefügt werden. Dies i
 Widget um eine neue Rolle zu erstellen oder bestehende zu löschen
 ///
 
-Die PA-Rolle ist die einzige der Standard-Rollen, die gelöscht werden kann. 
-
-
-
+Die HR-Rolle ist die einzige der Standard-Rollen, die gelöscht werden kann.

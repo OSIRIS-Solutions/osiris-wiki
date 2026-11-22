@@ -28,5 +28,5 @@ In addition to the five standard roles, other roles can also be added. This is p
 Widget to create a new role or delete an existing one
 ///
 
-The PA role is the only one of the standard roles that can be deleted.
+The HR role is the only one of the standard roles that can be deleted.
 

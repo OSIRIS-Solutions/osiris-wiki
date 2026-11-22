@@ -66,4 +66,10 @@ Here you will find a list of all available features:
 
 ??? note "Guests forms"
      <!-- md:beta -->
-    Here you can activate whether guests can be registered in OSIRIS and whether there should be external guest forms to complete the registration. 
+    Here you can activate whether guests can be registered in OSIRIS and whether there should be external guest forms to complete the registration.
+
+## Initiatives and objectives
+
+<!-- md:version 3.0.0 -->
+
+From OSIRIS **3.0.0** (beta), you can enable initiatives here. Through language management, the institute can call them “missions” or “working groups”. Objectives are an optional subdivision without a separate feature switch. Follow [Configure initiatives](../content/initiatives.md) to set up the form and selectors, and review the intended roles' permissions.

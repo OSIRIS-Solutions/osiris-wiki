@@ -122,8 +122,9 @@ The Portfolio helper sets `Access-Control-Allow-Origin: *` and allows GET. Its a
 
 ## Endpoint Reference
 
-All 56 concrete GET endpoints in `routes/api/portfolio.php` are documented separately, including every combination of context and endpoint in the grouped routes. The commented-out unit infrastructure route is not an active endpoint.
+The active GET endpoints in `routes/api/portfolio.php` are documented in the pages below, including the grouped context routes. The commented-out unit infrastructure route is not an active endpoint.
 
+- [Initiatives and Objectives](initiatives.md), including publication rules and related content
 - [Settings](settings.md)
 - [Publications](publications.md), [activities](activities.md), and [all activities](all-activities.md)
 - [Persons](persons.md), [units](units.md), [projects](projects.md), and [topics](topics.md), with related endpoints under each entity

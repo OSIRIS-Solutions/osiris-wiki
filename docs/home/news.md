@@ -1,5 +1,13 @@
 # Neuigkeiten
 
+<a class="anchor" href="#version-3.0.0" id="version-3.0.0"></a>
+
+## Version 3.0.0 (Beta)
+
+Die Dokumentation für **OSIRIS 3.0.0** wird während der Beta ergänzt. Neue und geänderte Funktionen sind auf den jeweiligen Seiten mit ihrer Mindestversion gekennzeichnet; dies ist noch keine Ankündigung einer stabilen Veröffentlichung.
+
+Neu sind [Initiativen und Objectives](../users/initiatives/index.md), etwa für Missionen und strategische Arbeitsgruppen. Die [fachliche Einordnung](../topics/organizational-structure.md) und die [Admin-Anleitung](../admins/content/initiatives.md) erklären Konzept und Konfiguration.
+
 <time datetime="2026-06-01">01.06.2026</time>
 <a class="anchor" href="#version-2.0.0" id="version-2.0.0"></a>
 

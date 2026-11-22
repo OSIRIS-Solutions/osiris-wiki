@@ -1,100 +1,93 @@
 # Organisational structures in OSIRIS
 
-What options are available for mapping research areas in OSIRIS? And which option is best suited to which structure? In this article, I would like to present the two options and briefly explain their respective advantages and disadvantages. At the end, I will provide a brief decision-making guide to help you choose the right option.
+Research areas, organisational units and initiatives answer different questions: **What do we research? How is our institute organised? And which shared endeavours do we pursue?** The three structures can be used alongside each other.
 
-In principle, research areas can be mapped in OSIRIS in two different ways. Which option makes sense depends largely on the structure of your institute and the desired evaluation mode.
+!!! info "Initiatives available from version 3.0.0"
+    Initiatives and their optional objectives are available from OSIRIS **3.0.0**. Their appearance and interaction may still change during the beta. Research areas and organisational units are also available in earlier versions.
 
-## 1. Research areas as separate entities (cross-sectional)
+## 1. Research areas: themes across the organisation
 
-OSIRIS offers research areas as separate entities. These function as cross-sectional areas across the entire organisation.
+Research areas (`topics`) describe an institute's research themes. They cut across its organisational structure: people from different departments can belong to the same research area. An item can have several research areas.
 
-A research area can be linked to:
+Assignments are maintained explicitly, for example on people, activities or projects. They do not follow automatically from membership of an organisational unit or initiative.
 
-- People
-- Organisational units (any hierarchical level)
-- Activities
-- Projects
-- Events
-- Other objects
+**Example:** Two departments work on “Climate change”. A research area connects their people and results regardless of organisational affiliation.
 
-The link is flexible and is created directly when the respective objects are created or edited. It is also possible for an object to be assigned to several research areas.
+Use research areas to present research themes and analyse results across departments. Their flexibility requires explicit maintenance of assignments.
 
-### When does this make sense?
+[Research area guide](../users/topics.md)
 
-This option is particularly suitable if:
+## 2. Organisational units: the institutional hierarchy
 
-- Research areas do not fit strictly into the organisational structure.
-- Individuals or projects belong to multiple research areas.
-- Research areas are defined as strategic or thematic clusters.
-- Cross-sectional evaluations across different units are desired.
+Organisational units (`units`) represent the institute's structure, for example institute → department → working group. People are assigned to units, optionally with membership dates. The hierarchy also establishes affiliation to parent units.
 
-### Example
+For activities, OSIRIS considers the linked people and the applicable rules for assigning units over time. Results can therefore be attributed to organisational units without requiring a strategic assignment for each activity.
 
-An institute has the following structure:
+**Example:** A person works in “Climate modelling”, a working group within the “Earth systems” department. Both units can be relevant to organisational reporting.
 
-- Department A
-- Department B
+Use units for institutional responsibility, leadership and organisational reporting. A thematic group should not become a unit solely because it is also called a “working group”.
 
-Both departments work partly in the field of climate change research.
-Here, the research area "climate change" can be created as a separate entity and assigned to individual persons, projects or activities of both departments.
+[Organisational unit guide](../users/units/index.md)
 
-Advantage: Flexible and precise assignment.
-Disadvantage: Higher maintenance effort, as assignments must be made actively.
+## 3. Initiatives: missions, working groups and shared goals
 
-## 2. Mapping research areas via organisational units
+<!-- md:version 3.0.0 -->
+<!-- md:feature -->
 
-Alternatively, research areas can be modelled directly as organisational units.
+Initiatives (`initiatives`) are a separate, optional structure available from **version 3.0.0**. They bring together shared endeavours and their results. An institute can call them **missions** or **working groups**, for example. Their purpose matters more than their name: a working group may be a permanent organisational unit or a cross-departmental initiative.
 
-This is particularly useful if:
+An initiative's form is configured using the form builder. Alongside its name and period, it can include a description, members with roles, regions or partners. Membership is optional and separate from contributing to linked activities.
 
-- The structure is clearly hierarchical.
-- Individuals are clearly assigned to a research area.
-- There is no need for discussion regarding the assignment.
-- All activities are to be automatically assigned to the individual's research area.
+### Optional objectives
 
-### Example
+An initiative can contain several objectives. Each objective belongs to exactly one initiative and has fixed inputs for its identifier, title, description, type and period. Objectives do not have their own memberships.
 
-Structure:
+Contents are explicitly assigned to one or more initiatives or objectives. Administrators determine which selector is offered and whether selection is required in each form. Selecting an objective automatically links its parent initiative as well. A project assignment alone does not replace this selection.
 
-- Research area A
-- Working group 1
-- Working group 2
-- Research area B
+### Ideas for using initiatives
 
-Individuals are permanently assigned to a research area (or a subordinate unit).
-All activities are automatically assigned to the corresponding research area via the organisational unit.
+<!-- md:version 3.0.0 -->
 
-Advantage: Less maintenance effort, automatic assignment.
-Disadvantage: Less flexible for interdisciplinary or cross-thematic structures.
+From **OSIRIS 3.0.0**, initiatives can support many forms of shared work. The following examples offer inspiration and can be adapted to your institution.
 
-## 3. Evaluations
+| Potential use | Example initiative | Possible objectives |
+| --- | --- | --- |
+| Strategic research programmes | “Healthy cities” | Study environmental pressures, develop prevention approaches |
+| Collaboration across institutions | A shared research focus across several institutions | Combine methods, establish a common evidence base |
+| Distributed infrastructure networks | Collaboration around a scientific application area | Make resources interoperable, provide reference data |
+| Communities of practice | A spatial transcriptomics community | Compare methods, develop shared standards |
+| Temporary task forces | Collaboration addressing an emerging scientific or societal challenge | Review existing knowledge, publish recommendations |
+| Open science programmes | “Open and reproducible research” | Make research data accessible, establish reproducible workflows |
+| Knowledge transfer and policy advice | A climate adaptation exchange platform | Advise municipalities, involve practitioners, develop recommendations |
+| Early-career networks | A cross-institutional postdoc network | Organise mentoring, run joint events |
+| Regional partnerships | A research network for a coastal region | Coordinate monitoring, involve local stakeholders |
+| Internal development | A programme for sustainable research operations | Study resource consumption, trial improvements |
+| Recurring shared activities | Joint expeditions or measurement campaigns | Bring together individual campaigns and their results |
+| Exploratory research | “New ideas for the bioeconomy” | Explore approaches, build collaborations, prepare follow-on work |
 
-Both variants enable comprehensive evaluations and have very similarly structured overview pages.
+An initiative can bring together several projects, people and different types of results, and can outlast individual funded projects. This can be useful for cross-institutional research alliances and distributed infrastructure networks, for example.
 
-The desired evaluation:
+These examples do not prescribe a fixed model. An initiative can represent a strategic programme, a community, a shared endeavour or a temporary collaboration. Your institution determines the relevant information and assignments through configurable forms. Initiatives can also be used without members or objectives. Objectives may describe specific goals or contributions grouped by theme; they do not have to be measurable annual targets.
 
-> "Which research area created which activities during the course of the year?"
+OSIRIS documents relationships and results. An initiative alone does not provide task allocation, scheduling or progress management.
 
-is easily possible in both variants.
+### Periods and analysis
 
-- In variant 1, the evaluation is carried out via a direct link to the research area.
-- In variant 2, the evaluation is carried out via the organisational unit (including hierarchy, if applicable).
+Completed and archived initiatives and objectives retain their relationships. For activities, the regular selection follows the activity date, allowing earlier results to be entered retrospectively.
 
-Technically, both can be implemented equally well – the decisive factor is the organisational logic within the institute.
+OSIRIS provides linked contents, filters, reports, exports, API access and statistics. Mission planning and target-versus-actual comparisons remain in external systems. Analysis of past periods uses the currently stored data and relationships; it does not reconstruct a previous database state.
 
-## 4. Decision-making aid
+[Using initiatives](../users/initiatives/index.md) · [Configuring initiatives](../admins/content/initiatives.md)
 
-| Question                                                               | Recommendation           |
-| ---------------------------------------------------------------------- | ------------------------ |
-| Are research areas cross-thematic?                                     | Use separate entity      |
-| Do individuals clearly belong to one or more research areas?           | Use organisational units |
-| Is research assigned solely on the basis of individuals' affiliations? | Use organisational units |
-| Do many individuals work in an interdisciplinary manner?               | Use separate entity      |
-| Should the assignment be as automatic as possible?                     | Use organisational units |
+## Which structure fits?
 
-## 5. Brief summary
+| Question | Suitable structure |
+| --- | --- |
+| What do we research, independently of departments? | Research areas |
+| Who belongs where organisationally, including membership periods? | Organisational units |
+| Which shared endeavours, missions or strategic working groups do we pursue? | Initiatives, from 3.0.0 |
+| Which specific goals within an endeavour do our results support? | Objectives of an initiative, from 3.0.0 |
+| Should results be attributed organisationally through personal affiliations? | Organisational units |
+| Should researchers explicitly select a contribution to an endeavour or goal? | Initiatives or objectives, from 3.0.0 |
 
-- Hierarchical, stable structure → Organisational units
-- Thematic, flexible structure → Own research areas
-
-In case of doubt, a hybrid form may also be useful – the most important thing is to realistically assess the maintenance effort for the researchers.
+There is no need to choose just one structure for the whole institute. A publication can be attributed to an organisational unit, assigned to a research area and linked to an initiative's objective. These relationships express different things and do not replace each other.

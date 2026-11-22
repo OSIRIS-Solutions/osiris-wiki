@@ -1,100 +1,92 @@
 # Organisationsstrukturen in OSIRIS
 
-Welche Möglichkeiten gibt es, Forschungsbereiche in OSIRIS abzubilden? Und welche Variante ist für welche Struktur sinnvoll? In diesem Beitrag möchte ich die beiden Möglichkeiten vorstellen und kurz erläutern, welche Vor- und Nachteile sie jeweils haben. Am Ende gebe ich eine kleine Entscheidungshilfe, die dir bei der Wahl der passenden Variante helfen soll.
+Forschungsbereiche, Organisationseinheiten und Initiativen beantworten unterschiedliche Fragen: **Zu welchem Thema forschen wir? Wie ist unser Institut aufgebaut? Und welche gemeinsamen Vorhaben verfolgen wir?** Die drei Strukturen können nebeneinander verwendet werden.
 
-Prinzipiell können in OSIRIS Forschungsbereiche auf zwei unterschiedliche Arten abgebildet werden. Welche Variante sinnvoll ist, hängt stark von der Struktur eures Instituts und dem gewünschten Auswertungsmodus ab.
+!!! info "Initiativen ab Version 3.0.0"
+    Initiativen und ihre optionalen Objectives stehen ab OSIRIS **3.0.0** zur Verfügung. In der Beta können Darstellung und Bedienung noch angepasst werden. Forschungsbereiche und Organisationseinheiten gibt es bereits in früheren Versionen.
 
-## 1. Forschungsbereiche als eigene Entität (Querschnitt)
+## 1. Forschungsbereiche: thematische Querschnitte
 
-OSIRIS bietet Forschungsbereiche als eigenständige Entität an. Diese funktionieren als Querschnitt über die gesamte Organisation.
+Forschungsbereiche (`topics`, auf Englisch häufig *Research areas*) beschreiben die Themen, zu denen ein Institut arbeitet. Sie liegen quer zur Organisationsstruktur: Personen aus mehreren Abteilungen können demselben Forschungsbereich angehören. Ein Inhalt kann mehrere Forschungsbereiche haben.
 
-Ein Forschungsbereich kann verknüpft werden mit:
+Die Zuordnung wird ausdrücklich gepflegt, etwa an Personen, Aktivitäten oder Projekten. Sie folgt nicht automatisch aus einer Mitgliedschaft in einer Organisationseinheit oder Initiative.
 
-- Personen
-- Organisationseinheiten (beliebiger Hierarchieebene)
-- Aktivitäten
-- Projekten
-- Events
-- weiteren Objekten
+**Beispiel:** Zwei Abteilungen arbeiten zu „Klimawandel“. Der Forschungsbereich verbindet ihre Personen und Ergebnisse unabhängig von der organisatorischen Zuordnung.
 
-Die Verknüpfung ist flexibel und erfolgt direkt bei der Erstellung oder Bearbeitung der jeweiligen Objekte. Es ist auch möglich, dass ein Objekt mehreren Forschungsbereichen zugeordnet wird.
+Diese Struktur passt, wenn ihr Forschung thematisch sichtbar machen und über Abteilungsgrenzen hinweg auswerten möchtet. Die flexiblen Zuordnungen müssen dafür aktiv gepflegt werden.
 
-### Wann ist das sinnvoll?
+[Anleitung zu Forschungsbereichen](../users/topics.md)
 
-Diese Variante eignet sich besonders, wenn:
+## 2. Organisationseinheiten: institutionelle Hierarchie
 
-- Forschungsbereiche nicht streng hierarchisch zur Organisationsstruktur passen.
-- Personen oder Projekte mehreren Forschungsbereichen angehören.
-- Forschungsbereiche als strategische oder thematische Cluster definiert sind.
-- Querschnittsauswertungen über verschiedene Einheiten hinweg gewünscht sind.
+Organisationseinheiten (`units`) bilden den Aufbau des Instituts ab, etwa Institut → Abteilung → Arbeitsgruppe. Personen werden Einheiten zugeordnet; Mitgliedschaften können mit Zeiträumen versehen werden. Über die Hierarchie ergeben sich auch Zugehörigkeiten zu übergeordneten Einheiten.
 
-### Beispiel
+Bei Aktivitäten berücksichtigt OSIRIS die Personenzuordnungen und die dafür geltenden zeitlichen Zuordnungsregeln. So lassen sich Ergebnisse organisatorischen Einheiten zurechnen, ohne für jede Aktivität eine strategische Zuordnung festlegen zu müssen.
 
-Ein Institut hat folgende Struktur:
+**Beispiel:** Eine Person arbeitet in der Arbeitsgruppe „Klimamodellierung“ innerhalb der Abteilung „Erdsysteme“. Beide Einheiten können für organisatorische Auswertungen relevant sein.
 
-- Abteilung A
-- Abteilung B
+Diese Struktur passt für institutionelle Verantwortung, Leitung und organisatorische Berichte. Ein thematischer Querschnitt sollte nicht allein deshalb als Einheit angelegt werden, weil er ebenfalls „Arbeitsgruppe“ heißt.
 
-Beide Abteilungen arbeiten teilweise im Forschungsbereich Klimawandel.
-Hier kann der Forschungsbereich „Klimawandel“ als eigene Entität angelegt und einzelnen Personen, Projekten oder Aktivitäten beider Abteilungen zugeordnet werden.
+[Anleitung zu Organisationseinheiten](../users/units/index.md)
 
-Vorteil: Flexible und präzise Zuordnung.
-Nachteil: Höherer Pflegeaufwand, da Zuordnungen aktiv vorgenommen werden müssen.
+## 3. Initiativen: Missionen, Arbeitsgruppen und gemeinsame Ziele
 
-## 2. Forschungsbereiche über Organisationseinheiten abbilden
+<!-- md:version 3.0.0 -->
+<!-- md:feature -->
 
-Alternativ können Forschungsbereiche direkt als Organisationseinheiten modelliert werden.
+Initiativen (`initiatives`) sind ab **Version 3.0.0** eine eigene, optionale Struktur. Sie bündeln gemeinsame Vorhaben und deren Ergebnisse. Ein Institut kann sie beispielsweise **Missionen** oder **Arbeitsgruppen** nennen. Entscheidend ist ihre Aufgabe, nicht der Name: Eine Arbeitsgruppe kann eine feste Organisationseinheit oder eine abteilungsübergreifende Initiative sein.
 
-Dies ist besonders sinnvoll, wenn:
+Das Formular einer Initiative wird im Form-Builder konfiguriert. Es kann neben Name und Laufzeit beispielsweise Beschreibung, Mitglieder mit Rollen, Regionen oder Partner enthalten. Personenmitgliedschaften sind optional und unabhängig davon, wer an verknüpften Aktivitäten mitwirkt.
 
-- Die Struktur klar hierarchisch ist.
-- Personen eindeutig einem Forschungsbereich zugeordnet sind.
-- Es keinen Diskussionsbedarf bei der Zuordnung gibt.
-- Alle Aktivitäten automatisch dem Forschungsbereich der Person zugerechnet werden sollen.
+### Optionale Objectives
 
-### Beispiel
+Eine Initiative kann mehrere Objectives enthalten. Jedes Objective gehört genau zu einer Initiative und hat feste Eingaben für Kennung, Titel, Beschreibung, Typ und Laufzeit. Eigene Personenmitgliedschaften gibt es auf dieser Ebene nicht.
 
-Struktur:
+Inhalte werden bewusst einer oder mehreren Initiativen beziehungsweise Objectives zugeordnet. Welches Auswahlfeld angeboten wird und ob eine Auswahl verpflichtend ist, bestimmt die Administration im jeweiligen Formular. Eine Objective-Zuordnung stellt automatisch auch den Bezug zu ihrer Initiative her. Eine Projektzuordnung allein ersetzt diese Auswahl nicht.
 
-- Forschungsbereich A
-- Arbeitsgruppe 1
-- Arbeitsgruppe 2
-- Forschungsbereich B
+### Ideen für den Einsatz
 
-Personen sind fest einem Forschungsbereich (bzw. einer darunterliegenden Einheit) zugeordnet.
-Alle Aktivitäten werden automatisch über die Organisationseinheit dem entsprechenden Forschungsbereich zugerechnet.
+<!-- md:version 3.0.0 -->
 
-Vorteil: Weniger Pflegeaufwand, automatische Zuordnung.
-Nachteil: Weniger flexibel bei interdisziplinären oder themenübergreifenden Strukturen.
+Ab **OSIRIS 3.0.0** könnt ihr Initiativen für viele Formen gemeinsamer Arbeit nutzen. Die folgenden Beispiele sind Anregungen; sie lassen sich an eure Einrichtung anpassen.
 
-## 3. Auswertungen
+| Möglicher Anwendungsfall | Beispiel für eine Initiative | Mögliche Objectives |
+| --- | --- | --- |
+| Strategische Forschungsprogramme | „Gesunde Städte“ | Umweltbelastungen untersuchen, Präventionsansätze entwickeln |
+| Institutsübergreifende Zusammenarbeit | Gemeinsamer Forschungsschwerpunkt mehrerer Einrichtungen | Methoden zusammenführen, gemeinsame Datengrundlage schaffen |
+| Verteilte Infrastrukturnetzwerke | Zusammenarbeit zu einem wissenschaftlichen Anwendungsgebiet | Ressourcen interoperabel machen, Referenzdaten bereitstellen |
+| Zeitlich begrenzte Taskforces | Zusammenarbeit zu einer neuen wissenschaftlichen oder gesellschaftlichen Herausforderung | Wissensstand zusammentragen, Handlungsempfehlungen veröffentlichen |
+| Open-Science-Programme | „Offene und reproduzierbare Forschung“ | Forschungsdaten zugänglich machen, reproduzierbare Arbeitsabläufe etablieren |
+| Transfer und Politikberatung | Austauschplattform zu Klimaanpassung | Kommunen beraten, Praxispartner einbinden, Empfehlungen entwickeln |
+| Nachwuchsnetzwerke | Institutsübergreifendes Postdoc-Netzwerk | Mentoring organisieren, gemeinsame Veranstaltungen durchführen |
+| Regionale Partnerschaften | Forschungsnetzwerk für eine Küstenregion | Monitoring abstimmen, lokale Akteure beteiligen |
+| Interne Weiterentwicklung | Programm für nachhaltigen Forschungsbetrieb | Ressourcenverbrauch untersuchen, Maßnahmen erproben |
+| Wiederkehrende Gemeinschaftsaufgaben | Gemeinsame Expeditionen oder Messkampagnen | Einzelne Kampagnen mit ihren Ergebnissen bündeln |
+| Explorative Forschung | „Neue Ideen für die Bioökonomie“ | Ansätze erproben, Kooperationen aufbauen, Folgevorhaben vorbereiten |
 
-Beide Varianten ermöglichen umfangreiche Auswertungen und haben jeweils sehr ähnlich strukturierte Übersichtsseiten.
+Eine Initiative kann mehrere Projekte, Personen und unterschiedliche Ergebnisarten unter einem gemeinsamen Dach verbinden und länger bestehen als einzelne Förderprojekte. Das ist beispielsweise für institutsübergreifende Forschungsverbünde und verteilte Infrastrukturnetzwerke interessant.
 
-Die gewünschte Auswertung:
+Die Beispiele legen kein festes Modell vor: Eine Initiative kann ein strategisches Programm, eine Community, ein gemeinsames Vorhaben oder eine zeitlich begrenzte Zusammenarbeit abbilden. Welche Angaben und Zuordnungen dafür sinnvoll sind, bestimmt eure Einrichtung über die konfigurierbaren Formulare. Auch Initiativen ohne Mitglieder oder ohne Objectives sind möglich. Objectives können konkrete Ziele oder thematisch gegliederte Beiträge beschreiben; sie müssen keine messbaren Jahresziele sein.
 
-> „Welcher Forschungsbereich hat im Laufe des Jahres welche Aktivitäten angelegt?“
+OSIRIS dokumentiert dabei Zusammenhänge und Ergebnisse. Aufgabenverteilung, Terminplanung und Fortschrittssteuerung werden durch die Initiative allein nicht abgebildet.
 
-ist in beiden Varianten problemlos möglich.
+### Laufzeiten und Auswertung
 
-- Bei Variante 1 erfolgt die Auswertung über die direkte Verknüpfung mit dem Forschungsbereich.
-- Bei Variante 2 erfolgt die Auswertung über die Organisationseinheit (ggf. inklusive Hierarchie).
+Abgeschlossene und archivierte Initiativen und Objectives bleiben mit ihren Verknüpfungen erhalten. Bei Aktivitäten richtet sich die reguläre Auswahl nach dem Aktivitätsdatum, damit auch vergangene Ergebnisse nachgetragen werden können.
 
-Technisch ist beides gleichwertig umsetzbar – entscheidend ist die organisatorische Logik im Institut.
+OSIRIS stellt zugehörige Inhalte, Filter, Berichte, Exporte, API-Zugriffe und eine Statistik bereit. Missionsplanung und Plan-Ist-Vergleiche verbleiben in externen Systemen. Eine Auswertung vergangener Zeiträume verwendet die heute gespeicherten Daten und Beziehungen; sie rekonstruiert keinen früheren Datenbankstand.
 
-## 4. Entscheidungshilfe
+[Initiativen nutzen](../users/initiatives/index.md) · [Initiativen konfigurieren](../admins/content/initiatives.md)
 
-| Frage                                                                        | Empfehlung                    |
-| ---------------------------------------------------------------------------- | ----------------------------- |
-| Sind Forschungsbereiche thematische Querschnitte?                            | Eigene Entität nutzen         |
-| Gehören Personen eindeutig zu einem oder mehreren Forschungsbereichen?       | Organisationseinheiten nutzen |
-| Erfolgt die Zuordnung der Forschung nur über die Zugehörigkeit der Personen? | Organisationseinheiten nutzen |
-| Arbeiten viele Personen interdisziplinär?                                    | Eigene Entität nutzen         |
-| Soll die Zuordnung möglichst automatisch erfolgen?                           | Organisationseinheiten nutzen |
+## Welche Struktur passt?
 
-## 5. Kurzfazit
+| Frage | Passende Struktur |
+| --- | --- |
+| Zu welchen Themen forschen wir, unabhängig von Abteilungen? | Forschungsbereiche |
+| Wer gehört organisatorisch wohin, gegebenenfalls mit zeitlicher Historie? | Organisationseinheiten |
+| Welche gemeinsamen Vorhaben, Missionen oder strategischen Arbeitsgruppen verfolgen wir? | Initiativen, ab 3.0.0 |
+| Welche konkreten Ziele innerhalb eines Vorhabens unterstützen unsere Ergebnisse? | Objectives einer Initiative, ab 3.0.0 |
+| Sollen Ergebnisse aus Personenmitgliedschaften organisatorisch zugerechnet werden? | Organisationseinheiten |
+| Sollen Forschende bewusst einen Beitrag zu einem Vorhaben oder Ziel auswählen? | Initiativen oder Objectives, ab 3.0.0 |
 
-- Hierarchische, stabile Struktur → Organisationseinheiten
-- Thematische, flexible Struktur → Eigene Forschungsbereiche
-
-Im Zweifel kann auch eine Mischform sinnvoll sein – wichtig ist vor allem, den Pflegeaufwand für die Forschenden realistisch einzuschätzen.
+Ihr müsst euch nicht institutweit für nur eine Struktur entscheiden: Eine Publikation kann einer Organisationseinheit zugerechnet, einem Forschungsbereich zugeordnet und mit einem Objective einer Initiative verknüpft sein. Diese Beziehungen drücken unterschiedliche Dinge aus und ersetzen einander nicht.

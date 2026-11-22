@@ -4,7 +4,7 @@
 
 Some symbols are used in this documentation for illustrative purposes. Please familiarize yourself with the following list of conventions before proceeding:
 
-### <!-- md:version --> - Version { data-toc-label="Version" }
+### <!-- md:version --> - Version { #version data-toc-label="Version" }
 
 The tag symbol in conjunction with a version number indicates when a particular feature or behavior was added. Make sure you use at least this version if you want to use it.
 

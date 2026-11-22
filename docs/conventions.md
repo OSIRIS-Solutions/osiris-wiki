@@ -4,7 +4,7 @@
 
 In dieser Dokumentation werden einige Symbole zu Illustrationszwecken verwendet. Bitte mache dich mit der folgenden Liste von Konventionen vertraut, bevor du fortfährst:
 
-### <!-- md:version --> – Version { data-toc-label="Version" }
+### <!-- md:version --> – Version { #version data-toc-label="Version" }
 
 Das Tagsymbol in Verbindung mit einer Versionsnummer zeigt an, wann ein bestimmtes Feature oder Verhalten hinzugefügt wurde. Stelle sicher, dass du mindestens diese Version verwenden, wenn du es nutzen möchtest.
 

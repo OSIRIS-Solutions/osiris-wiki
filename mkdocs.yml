@@ -81,6 +81,7 @@ nav:
       - admins/content/index.md
       - admins/content/activities.md
       - admins/content/projects.md
+      - admins/content/initiatives.md
       - admins/content/infrastructures.md
       - admins/content/journals.md
     - Benutzerdefinierte Daten:
@@ -124,6 +125,11 @@ nav:
     - users/advanced-search.md
     - users/issues.md
     - users/topics.md
+    - Initiativen und Objectives:
+      - users/initiatives/index.md
+      - users/initiatives/manage.md
+      - users/initiatives/linking.md
+      - users/initiatives/statistics.md
     - users/workflows.md
     - users/events.md
     - Organisationseinheiten:
@@ -161,6 +167,7 @@ nav:
     - api/overview.md
     - OSIRIS API:
       - api/index.md
+      - api/initiatives.md
       - Activities:
         - api/activities.md
         - api/activities/html.md
@@ -198,6 +205,7 @@ nav:
         - api/research/openalex-topics.md
     - Portfolio API:
       - api/portfolio/index.md
+      - api/portfolio/initiatives.md
       - api/portfolio/settings.md
       - Publications & Activities:
         - api/portfolio/publications.md
@@ -317,6 +325,7 @@ plugins:
             Nutzer: Users
             Profil: Profile
             Organisationseinheiten: Organizational Units
+            Initiativen und Objectives: Initiatives and Objectives
             Aktivitäten: Activities
             Projekte: Projects
             Personen: Persons
